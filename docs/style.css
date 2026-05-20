@@ -2994,10 +2994,16 @@ h3 { color: var(--text-primary); }
 @media (min-width: 1280px) {
     .container { padding-left: 4rem !important; padding-right: 4rem !important; }
 }
-/* Section vertical rhythm on the homepage hero */
-.hero-luxury { padding: 40px 0 28px !important; }
-@media (min-width: 640px) { .hero-luxury { padding: 56px 0 36px !important; } }
-@media (min-width: 960px) { .hero-luxury { padding: 80px 0 48px !important; } }
+/* Section vertical AND horizontal rhythm on the homepage hero.
+   Batch 6 shipped vertical-only padding (top 0 bottom), which made the
+   eyebrow / H1 / subhead / moat line / stat tiles / chip row hug the
+   left+right edges of the hero card. Add horizontal padding that scales
+   with the breakpoint — tighter than the outer .container gutter so the
+   nesting reads as a card-within-a-container. */
+.hero-luxury { padding: 48px 28px 36px !important; }
+@media (min-width: 640px)  { .hero-luxury { padding: 56px 36px 40px !important; } }
+@media (min-width: 960px)  { .hero-luxury { padding: 80px 56px 48px !important; } }
+@media (min-width: 1280px) { .hero-luxury { padding: 96px 72px 56px !important; } }
 
 /* ===========================================================================
    BATCH 7 — Mobile universals (M0 from mobile spec)
