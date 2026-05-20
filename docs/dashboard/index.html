@@ -352,6 +352,48 @@ a:hover { color: var(--text-primary); }
     border-top: 1px solid var(--bg-elevated); text-align: center;
 }
 
+/* ===== Light mode for dashboard (since this page is self-contained
+   and doesn't load the global style.css, its tokens need their own
+   light-mode override block.) ===== */
+html[data-theme="light"] {
+    --bg-base:        #FAFBFC;
+    --bg-elevated:    #FFFFFF;
+    --bg-overlay:     #F1F5F9;
+    --bg-canvas:      #FFFFFF;
+
+    --border-subtle:    rgba(15, 23, 42, 0.06);
+    --border-default:   rgba(15, 23, 42, 0.12);
+    --border-emphasis:  rgba(15, 23, 42, 0.20);
+
+    --text-primary:    #0F172A;
+    --text-secondary:  #475569;
+    --text-tertiary:   #6B7280;
+    --text-muted:      #94A3B8;
+
+    --accent-primary: #10B981;
+    --accent-warning: #F59E0B;
+    --accent-danger:  #EF4444;
+    --accent-info:    #2563EB;
+    --accent-gold:    #B45309;
+}
+html[data-theme="light"] .sidebar {
+    background: #FAFBFC;
+    border-right-color: rgba(15, 23, 42, 0.10);
+}
+html[data-theme="light"] .results,
+html[data-theme="light"] .kpi-tile,
+html[data-theme="light"] .chart-card {
+    background: #FFFFFF;
+    border-color: rgba(15, 23, 42, 0.10);
+}
+html[data-theme="light"] .master-table tr:hover td { background: rgba(15, 23, 42, 0.04); }
+html[data-theme="light"] .master-table thead th { background: #FFFFFF; color: var(--text-secondary); }
+html[data-theme="light"] .results-status { color: #2563EB; }
+html[data-theme="light"] .master-table .ind { background: rgba(37, 99, 235, 0.10); color: #2563EB; }
+html[data-theme="light"] .compare-fab { color: white; }
+html[data-theme="light"] .filters-trigger { background: #FFFFFF; }
+html[data-theme="light"] .sidebar-backdrop { background: rgba(15, 23, 42, 0.5); }
+
 /* ===== Mobile dashboard overhaul ===== */
 /* Filters trigger button — only visible on mobile */
 .filters-trigger {
