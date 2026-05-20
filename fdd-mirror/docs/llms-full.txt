@@ -6,7 +6,7 @@
 FranchiseDepth analyzes Item 19 (financial performance representations), Item 7 (investment ranges), and Item 20 (outlet growth) data from state-registered FDDs. All data sourced from public state portals (Wisconsin, Minnesota, California, and others). Every number on the site links to the source PDF page.
 
 ## Coverage
-- 461 franchise brands (expanding)
+- 469 franchise brands (expanding)
 - Home services category primary; expanding to food QSR + others
 - US-only franchises
 

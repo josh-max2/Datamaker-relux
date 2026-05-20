@@ -54,7 +54,8 @@
 {% block content %}
 <article class="brand-page">
     <header class="brand-header">
-        <h1 id="top">{{ brand.brand_name or brand.legal_name }}</h1>
+        <p class="eyebrow">{{ (brand.industry|industry_label) if brand.industry else 'Franchise' }} · {{ latest_fdd.filing_year }} FDD</p>
+        <h1 id="top" class="display">{{ brand.brand_name or brand.legal_name }}</h1>
         <p class="legal-name">
             Legal entity: <strong>{{ brand.legal_name }}</strong>
             {% if brand.state_of_inc %}({{ brand.state_of_inc }}){% endif %}

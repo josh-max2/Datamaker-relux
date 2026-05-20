@@ -166,158 +166,226 @@ def render_html(brands: list[dict]) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FranchiseDepth Dashboard — Internal Decision Support</title>
 <meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js" defer></script>
 <style>
+:root {{
+    --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+    --font-display: 'Source Serif 4', Georgia, serif;
+    --font-mono:    'IBM Plex Mono', 'JetBrains Mono', 'SF Mono', monospace;
+    --bg-base:     #0A0E14;
+    --bg-elevated: #131923;
+    --bg-overlay:  #1C2332;
+    --bg-canvas:   var(--bg-canvas);
+    --border-subtle:   rgba(255, 255, 255, 0.06);
+    --border-default:  rgba(255, 255, 255, 0.10);
+    --border-emphasis: rgba(255, 255, 255, 0.16);
+    --text-primary:   #F2F3F5;
+    --text-secondary: #9CA3AF;
+    --text-tertiary:  #6B7280;
+    --text-muted:     #4B5563;
+    --accent-primary: var(--accent-primary);
+    --accent-warning: #F59E0B;
+    --accent-danger:  #EF4444;
+    --accent-info:    #60A5FA;
+    --accent-gold:    #D4AF37;
+    --ease: cubic-bezier(0.4, 0, 0.2, 1);
+    --dur-fast: 150ms; --dur: 200ms;
+}}
 * {{ box-sizing: border-box; }}
 body {{
     margin: 0; padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #0f172a; color: #e2e8f0; line-height: 1.5;
+    font-family: var(--font-body);
+    background: var(--bg-base); color: var(--text-primary); line-height: 1.55;
     min-height: 100vh;
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
 }}
-a {{ color: #38bdf8; }}
+a {{ color: var(--accent-info); transition: color var(--dur-fast) var(--ease); }}
+a:hover {{ color: var(--text-primary); }}
 
 /* ===== Hero ===== */
 .hero {{
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    border-bottom: 1px solid #334155;
-    padding: 24px;
+    background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-base) 100%);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 40px 24px 28px;
 }}
 .hero-inner {{ max-width: 1500px; margin: 0 auto; }}
-.hero h1 {{ margin: 0 0 4px; font-size: 26px; color: #f8fafc; letter-spacing: -0.01em; }}
-.hero .lede {{ margin: 0 0 18px; color: #94a3b8; font-size: 14px; }}
-.hero .lede strong {{ color: #38bdf8; }}
+.hero .eyebrow {{
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    margin: 0 0 16px;
+}}
+.hero h1 {{
+    margin: 0 0 12px;
+    font-family: var(--font-display);
+    font-size: clamp(32px, 4.2vw, 48px);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}}
+.hero .lede {{ margin: 0 0 22px; color: var(--text-secondary); font-size: 16px; max-width: 720px; }}
+.hero .lede strong {{
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    color: var(--text-primary);
+    font-weight: 500;
+}}
+.hero .dot {{ color: var(--text-muted); margin: 0 8px; }}
 .preset-chips {{ display: flex; flex-wrap: wrap; gap: 8px; }}
 .chip {{
-    background: #1e3a5f; color: #93c5fd;
-    border: 1px solid #38bdf8; border-radius: 999px;
+    background: rgba(96, 165, 250, 0.12); color: var(--accent-info);
+    border: 1px solid var(--accent-info); border-radius: 999px;
     padding: 6px 14px; cursor: pointer; font-size: 13px; font-weight: 600;
     transition: all .15s;
 }}
-.chip:hover {{ background: #38bdf8; color: #0f172a; }}
-.chip.active {{ background: #38bdf8; color: #0f172a; }}
+.chip:hover {{ background: var(--accent-info); color: var(--bg-base); }}
+.chip.active {{ background: var(--accent-info); color: var(--bg-base); }}
 
 /* ===== Layout: sidebar + main ===== */
 .layout {{ display: grid; grid-template-columns: 240px 1fr; max-width: 1500px; margin: 0 auto; }}
 .sidebar {{
-    background: #0f172a; border-right: 1px solid #334155;
+    background: var(--bg-base); border-right: 1px solid var(--border-default);
     padding: 18px 14px;
     position: sticky; top: 0; align-self: start;
     height: calc(100vh); overflow-y: auto;
 }}
 .sidebar h3 {{
     margin: 0 0 8px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;
-    color: #94a3b8; font-weight: 600;
+    color: var(--text-secondary); font-weight: 600;
 }}
 .main {{ padding: 18px 24px; }}
 
 @media (max-width: 900px) {{
   .layout {{ grid-template-columns: 1fr; }}
-  .sidebar {{ position: static; height: auto; border-right: none; border-bottom: 1px solid #334155; }}
+  .sidebar {{ position: static; height: auto; border-right: none; border-bottom: 1px solid var(--border-default); }}
 }}
 
 /* ===== Filters ===== */
 .filter-group {{ margin-bottom: 16px; }}
 .filter-group label {{
-    display: block; font-size: 11px; color: #94a3b8;
+    display: block; font-size: 11px; color: var(--text-secondary);
     text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; font-weight: 600;
 }}
 .sidebar input, .sidebar select {{
     width: 100%; padding: 6px 9px;
-    background: #1e293b; border: 1px solid #334155; border-radius: 4px;
-    color: #e2e8f0; font-size: 13px; font-family: inherit;
+    background: var(--bg-elevated); border: 1px solid var(--border-default); border-radius: 4px;
+    color: var(--text-primary); font-size: 13px; font-family: inherit;
 }}
 .filter-range {{ display: flex; gap: 4px; align-items: center; }}
 .filter-range input {{ min-width: 0; }}
-.filter-range .dash {{ color: #64748b; font-size: 11px; }}
+.filter-range .dash {{ color: var(--text-tertiary); font-size: 11px; }}
 .btn {{
-    background: #334155; color: #e2e8f0; border: none; border-radius: 4px;
+    background: var(--border-default); color: var(--text-primary); border: none; border-radius: 4px;
     padding: 6px 12px; cursor: pointer; font-size: 12px; font-weight: 600;
     font-family: inherit;
 }}
-.btn:hover {{ background: #475569; }}
-.btn-primary {{ background: #1d4ed8; color: white; }}
-.btn-primary:hover {{ background: #2563eb; }}
+.btn:hover {{ background: var(--border-emphasis); }}
+.btn-primary {{ background: var(--accent-info); color: white; }}
+.btn-primary:hover {{ background: var(--accent-info); }}
 
 /* ===== KPI strip ===== */
 .kpi-strip {{
     display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px;
 }}
 .kpi-tile {{
-    background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 14px 16px;
+    background: var(--bg-elevated); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 20px 22px;
+    transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease);
 }}
+.kpi-tile:hover {{ border-color: var(--border-emphasis); transform: translateY(-1px); }}
 .kpi-tile h4 {{
-    margin: 0 0 4px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;
-    color: #94a3b8; font-weight: 600;
+    margin: 0 0 8px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--text-tertiary); font-weight: 600;
 }}
-.kpi-tile .kpi-val {{ font-size: 28px; font-weight: 700; color: #38bdf8; line-height: 1; }}
-.kpi-tile .kpi-sub {{ color: #94a3b8; font-size: 12px; margin-top: 4px; }}
+.kpi-tile .kpi-val {{
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 36px; font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+}}
+.kpi-tile .kpi-sub {{
+    color: var(--text-secondary);
+    font-size: 12px; margin-top: 6px;
+    font-variant-numeric: tabular-nums;
+}}
 
 /* ===== Charts row ===== */
 .charts-row {{
     display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 20px;
 }}
 .chart-card {{
-    background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 14px;
+    background: var(--bg-elevated); border: 1px solid var(--border-default); border-radius: 8px; padding: 14px;
 }}
 .chart-card h3 {{
     margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em;
-    color: #cbd5e1; font-weight: 600;
+    color: var(--text-secondary); font-weight: 600;
 }}
 .chart-wrap {{ height: 220px; position: relative; }}
 @media (max-width: 1100px) {{ .charts-row {{ grid-template-columns: 1fr; }} }}
 
 /* ===== Master table ===== */
 .results {{
-    background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 14px 16px;
+    background: var(--bg-elevated); border: 1px solid var(--border-default); border-radius: 8px; padding: 14px 16px;
 }}
 .results-header {{
     display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;
 }}
 .results-header h3 {{
     margin: 0; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em;
-    color: #cbd5e1; font-weight: 600;
+    color: var(--text-secondary); font-weight: 600;
 }}
-.results-status {{ color: #38bdf8; font-size: 13px; font-variant-numeric: tabular-nums; }}
+.results-status {{ color: var(--accent-info); font-size: 13px; font-variant-numeric: tabular-nums; }}
 .master-table {{ width: 100%; border-collapse: collapse; font-size: 13px; }}
 .master-table th {{
-    text-align: left; color: #94a3b8; font-weight: 600;
-    padding: 8px 10px 8px 0; border-bottom: 1px solid #334155;
+    text-align: left; color: var(--text-secondary); font-weight: 600;
+    padding: 8px 10px 8px 0; border-bottom: 1px solid var(--border-default);
     font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;
     cursor: pointer; user-select: none; white-space: nowrap;
-    position: sticky; top: 0; background: #1e293b; z-index: 1;
+    position: sticky; top: 0; background: var(--bg-elevated); z-index: 1;
 }}
 .master-table th.sortable::after {{ content: " ↕"; opacity: 0.4; font-size: 10px; }}
-.master-table th.sort-asc::after  {{ content: " ↑"; opacity: 1; color: #38bdf8; }}
-.master-table th.sort-desc::after {{ content: " ↓"; opacity: 1; color: #38bdf8; }}
+.master-table th.sort-asc::after  {{ content: " ↑"; opacity: 1; color: var(--accent-info); }}
+.master-table th.sort-desc::after {{ content: " ↓"; opacity: 1; color: var(--accent-info); }}
 .master-table td {{
-    padding: 7px 10px 7px 0; border-bottom: 1px solid #1e293b; color: #e2e8f0;
+    padding: 7px 10px 7px 0; border-bottom: 1px solid var(--bg-elevated); color: var(--text-primary);
 }}
-.master-table td.num {{ text-align: right; font-variant-numeric: tabular-nums; }}
-.master-table tr:hover td {{ background: #0f172a; }}
-.master-table a {{ color: #f8fafc; text-decoration: none; font-weight: 500; }}
-.master-table a:hover {{ color: #38bdf8; text-decoration: underline; }}
+.master-table td.num {{ text-align: right; font-variant-numeric: tabular-nums; font-family: var(--font-mono); }}
+.master-table td {{ font-family: var(--font-body); }}
+.master-table tr:hover td {{ background: var(--bg-base); }}
+.master-table a {{ color: var(--text-primary); text-decoration: none; font-weight: 500; }}
+.master-table a:hover {{ color: var(--accent-info); text-decoration: underline; }}
 .master-table .ind {{
-    display: inline-block; background: #1e3a5f; color: #93c5fd;
+    display: inline-block; background: rgba(96, 165, 250, 0.12); color: var(--accent-info);
     padding: 1px 6px; border-radius: 3px; font-size: 10px; white-space: nowrap;
 }}
 .empty {{
-    padding: 40px 20px; text-align: center; color: #64748b; font-size: 14px;
+    padding: 40px 20px; text-align: center; color: var(--text-tertiary); font-size: 14px;
 }}
-.empty .ttl {{ color: #cbd5e1; font-size: 16px; margin-bottom: 6px; }}
+.empty .ttl {{ color: var(--text-secondary); font-size: 16px; margin-bottom: 6px; }}
 
 /* Color-coded cells */
-.val-good {{ color: #34d399; font-weight: 600; }}
-.val-warn {{ color: #fbbf24; font-weight: 600; }}
-.val-bad  {{ color: #f87171; font-weight: 600; }}
-.val-muted {{ color: #64748b; }}
+.val-good {{ color: var(--accent-primary); font-weight: 600; }}
+.val-warn {{ color: var(--accent-warning); font-weight: 600; }}
+.val-bad  {{ color: var(--accent-danger); font-weight: 600; }}
+.val-muted {{ color: var(--text-tertiary); }}
 
 /* Tooltip */
 [data-tip] {{ position: relative; }}
 [data-tip]:hover::after {{
     content: attr(data-tip);
     position: absolute; bottom: 100%; left: 0; transform: translateY(-4px);
-    background: #0f172a; border: 1px solid #475569; color: #e2e8f0;
+    background: var(--bg-base); border: 1px solid var(--border-emphasis); color: var(--text-primary);
     padding: 5px 9px; font-size: 11px; font-weight: 400;
     border-radius: 4px; white-space: normal; width: 240px;
     line-height: 1.4; text-transform: none; letter-spacing: 0; z-index: 10;
@@ -326,17 +394,17 @@ a {{ color: #38bdf8; }}
 
 /* CSV button positioning */
 .actions {{ display: flex; gap: 8px; }}
-.meta {{ color: #64748b; font-size: 11px; margin-top: 12px; }}
+.meta {{ color: var(--text-tertiary); font-size: 11px; margin-top: 12px; }}
 
 /* Multi-select compare */
 .compare-fab {{
     position: fixed; bottom: 24px; right: 24px; z-index: 50;
-    background: #1d4ed8; color: white; border: none; border-radius: 999px;
+    background: var(--accent-info); color: white; border: none; border-radius: 999px;
     padding: 14px 24px; font-size: 14px; font-weight: 700; font-family: inherit;
     cursor: pointer; box-shadow: 0 4px 16px rgba(29,78,216,0.4);
     transition: all .15s;
 }}
-.compare-fab:hover {{ background: #2563eb; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(29,78,216,0.5); }}
+.compare-fab:hover {{ background: var(--accent-info); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(29,78,216,0.5); }}
 .master-table input[type="checkbox"] {{ cursor: pointer; }}
 
 /* Modal */
@@ -346,52 +414,52 @@ a {{ color: #38bdf8; }}
     padding: 40px 20px;
 }}
 .modal-inner {{
-    background: #0f172a; border: 1px solid #334155; border-radius: 12px;
+    background: var(--bg-base); border: 1px solid var(--border-default); border-radius: 12px;
     max-width: 1400px; width: 100%; padding: 0;
 }}
 .modal-header {{
     display: flex; justify-content: space-between; align-items: center;
-    padding: 16px 24px; border-bottom: 1px solid #334155;
+    padding: 16px 24px; border-bottom: 1px solid var(--border-default);
 }}
-.modal-header h2 {{ margin: 0; font-size: 20px; color: #f8fafc; }}
+.modal-header h2 {{ margin: 0; font-size: 20px; color: var(--text-primary); }}
 .modal-body {{ padding: 20px 24px 24px; overflow-x: auto; }}
 .compare-table {{ width: 100%; border-collapse: collapse; font-size: 13px; }}
 .compare-table th, .compare-table td {{
-    padding: 10px 12px; border-bottom: 1px solid #1e293b;
+    padding: 10px 12px; border-bottom: 1px solid var(--bg-elevated);
     text-align: left; vertical-align: top;
 }}
 .compare-table th {{
-    background: #1e293b; color: #94a3b8;
+    background: var(--bg-elevated); color: var(--text-secondary);
     font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;
 }}
 .compare-table .row-label {{
-    background: #0f172a; color: #94a3b8; font-size: 11px;
+    background: var(--bg-base); color: var(--text-secondary); font-size: 11px;
     text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;
     width: 150px;
 }}
 .compare-table td:not(.row-label) {{ font-variant-numeric: tabular-nums; }}
 .compare-table .brand-cell {{
-    color: #38bdf8; font-weight: 700; font-size: 14px; text-transform: none; letter-spacing: 0;
+    color: var(--accent-info); font-weight: 700; font-size: 14px; text-transform: none; letter-spacing: 0;
 }}
-.compare-table .brand-cell a {{ color: #38bdf8; text-decoration: none; }}
+.compare-table .brand-cell a {{ color: var(--accent-info); text-decoration: none; }}
 .compare-table .brand-cell a:hover {{ text-decoration: underline; }}
 
 /* Growth badge in main table */
-.growth-up   {{ color: #34d399; font-weight: 600; }}
-.growth-down {{ color: #f87171; font-weight: 600; }}
-.growth-flat {{ color: #cbd5e1; }}
+.growth-up   {{ color: var(--accent-primary); font-weight: 600; }}
+.growth-down {{ color: var(--accent-danger); font-weight: 600; }}
+.growth-flat {{ color: var(--text-secondary); }}
 
 /* Watchlist star */
 .star {{
-    cursor: pointer; color: #475569; font-size: 16px; user-select: none;
+    cursor: pointer; color: var(--border-emphasis); font-size: 16px; user-select: none;
     background: none; border: none; padding: 0; font-family: inherit;
 }}
-.star:hover {{ color: #fbbf24; }}
-.star.active {{ color: #fbbf24; }}
+.star:hover {{ color: var(--accent-warning); }}
+.star.active {{ color: var(--accent-warning); }}
 
 /* Sparkline */
 .sparkline {{ width: 100%; height: 50px; display: block; }}
-.worst-floor {{ background: #44141414; color: #fca5a5; font-weight: 600; }}
+.worst-floor {{ background: #44141414; color: var(--accent-danger); font-weight: 600; }}
 
 /* KPI strip: 2 tiles wide */
 .kpi-2 {{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }}
@@ -400,52 +468,52 @@ a {{ color: #38bdf8; }}
 .cols-menu-wrap {{ position: relative; display: inline-block; }}
 .cols-menu {{
     position: absolute; top: calc(100% + 4px); right: 0; z-index: 20;
-    background: #0f172a; border: 1px solid #334155; border-radius: 6px;
+    background: var(--bg-base); border: 1px solid var(--border-default); border-radius: 6px;
     padding: 10px 12px; min-width: 220px; max-height: 360px; overflow-y: auto;
     box-shadow: 0 8px 24px rgba(0,0,0,0.4);
 }}
 .cols-menu label {{
     display: flex; align-items: center; gap: 8px; padding: 4px 0;
-    font-size: 13px; color: #e2e8f0; cursor: pointer; white-space: nowrap;
+    font-size: 13px; color: var(--text-primary); cursor: pointer; white-space: nowrap;
 }}
-.cols-menu label:hover {{ color: #38bdf8; }}
-.cols-menu input[type="checkbox"] {{ accent-color: #38bdf8; }}
-.cols-menu .sep {{ height: 1px; background: #334155; margin: 6px 0; }}
+.cols-menu label:hover {{ color: var(--accent-info); }}
+.cols-menu input[type="checkbox"] {{ accent-color: var(--accent-info); }}
+.cols-menu .sep {{ height: 1px; background: var(--border-default); margin: 6px 0; }}
 
 /* Bottom-fixed multi-select action bar */
 .action-bar {{
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
-    background: #1e293b; border-top: 1px solid #38bdf8;
+    background: var(--bg-elevated); border-top: 1px solid var(--accent-info);
     padding: 14px 24px; display: none;
     box-shadow: 0 -4px 16px rgba(0,0,0,0.4);
 }}
 .action-bar.active {{ display: flex; align-items: center; gap: 16px; justify-content: space-between; }}
 .action-bar .selected-count {{
-    color: #38bdf8; font-weight: 700; font-size: 14px;
+    color: var(--accent-info); font-weight: 700; font-size: 14px;
 }}
 .action-bar .actions-row {{ display: flex; gap: 8px; }}
 
 /* Filter info icons */
 .info-icon {{
     display: inline-block; width: 14px; height: 14px;
-    background: #334155; color: #94a3b8; border-radius: 50%;
+    background: var(--border-default); color: var(--text-secondary); border-radius: 50%;
     text-align: center; line-height: 14px; font-size: 10px; font-weight: 700;
     margin-left: 4px; cursor: help;
 }}
 .check-label {{ display: flex !important; align-items: center; gap: 8px;
                 text-transform: none !important; font-size: 13px !important;
-                color: #e2e8f0 !important; letter-spacing: 0 !important; cursor: pointer; }}
+                color: var(--text-primary) !important; letter-spacing: 0 !important; cursor: pointer; }}
 .check-label input {{ width: auto !important; }}
 
 /* Item 19 status pill */
-.i19-broad {{ color: #34d399; font-weight: 700; }}
-.i19-thin  {{ color: #fbbf24; font-weight: 700; }}
-.i19-none  {{ color: #64748b; }}
+.i19-broad {{ color: var(--accent-primary); font-weight: 700; }}
+.i19-thin  {{ color: var(--accent-warning); font-weight: 700; }}
+.i19-none  {{ color: var(--text-tertiary); }}
 
 /* Footer */
 .dash-footer {{
-    padding: 14px 24px; color: #64748b; font-size: 12px;
-    border-top: 1px solid #1e293b; text-align: center;
+    padding: 14px 24px; color: var(--text-tertiary); font-size: 12px;
+    border-top: 1px solid var(--bg-elevated); text-align: center;
 }}
 </style>
 </head>
@@ -453,8 +521,9 @@ a {{ color: #38bdf8; }}
 
 <div class="hero">
   <div class="hero-inner">
+    <p class="eyebrow">FranchiseDepth Analytics</p>
     <h1>Find the right franchise.</h1>
-    <p class="lede"><strong id="hero-count">{len(brands)}</strong> brands · 100% with Item 19 / Item 20 / fee data · filter and compare.</p>
+    <p class="lede">Real FDD data across <strong id="hero-count">{len(brands)}</strong> brands<span class="dot">·</span>100% with Item 19, Item 20, and fee data.</p>
     <div class="preset-chips">
       <button class="chip" data-preset="best-roi"        data-tip="100+ outlets, investment low under $200K, royalty under 7%">Best ROI under $200K</button>
       <button class="chip" data-preset="top-food"        data-tip="Industry = food-quick-service, sorted by median revenue">Top food brands</button>
@@ -839,12 +908,12 @@ function renderCharts(filtered) {{
   charts.industry = new Chart(document.getElementById('chartIndustry').getContext('2d'), {{
     type: 'doughnut',
     data: {{ labels: indEntries.map(e => e[0]), datasets: [{{ data: indEntries.map(e => e[1]),
-              backgroundColor: ['#38bdf8','#0ea5e9','#06b6d4','#0891b2','#0e7490','#155e75',
-                                '#34d399','#10b981','#059669','#fbbf24','#f59e0b','#a78bfa'] }}] }},
+              backgroundColor: ['#60A5FA','#60A5FA','#06b6d4','#0891b2','#0e7490','#155e75',
+                                '#10B981','#10B981','#059669','#F59E0B','#f59e0b','#a78bfa'] }}] }},
     options: {{
       plugins: {{
         legend: {{ position: 'right',
-                  labels: {{ color: '#cbd5e1', font: {{ size: 10 }}, boxWidth: 10,
+                  labels: {{ color: '#9CA3AF', font: {{ size: 10 }}, boxWidth: 10,
                             generateLabels: chart => {{
                               const data = chart.data;
                               return data.labels.map((label, i) => ({{
@@ -855,8 +924,8 @@ function renderCharts(filtered) {{
                               }}));
                             }} }} }},
         tooltip: {{
-          backgroundColor: '#0f172a', borderColor: '#475569', borderWidth: 1,
-          titleColor: '#f8fafc', bodyColor: '#e2e8f0', padding: 10,
+          backgroundColor: '#0A0E14', borderColor: 'rgba(255,255,255,0.16)', borderWidth: 1,
+          titleColor: '#F2F3F5', bodyColor: '#F2F3F5', padding: 10,
           callbacks: {{
             label: ctx => {{
               const pct = (100 * ctx.parsed / indTotal).toFixed(1);
@@ -888,10 +957,10 @@ function renderCharts(filtered) {{
   if (charts.investment) charts.investment.destroy();
   charts.investment = new Chart(document.getElementById('chartInvestment').getContext('2d'), {{
     type: 'bar',
-    data: {{ labels: tiers.map(t => t.label), datasets: [{{ data: tCounts, backgroundColor: '#38bdf8' }}] }},
+    data: {{ labels: tiers.map(t => t.label), datasets: [{{ data: tCounts, backgroundColor: '#60A5FA' }}] }},
     options: {{ plugins: {{ legend: {{ display: false }} }}, scales: {{
-        x: {{ ticks: {{ color: '#cbd5e1', font: {{ size: 10 }} }}, grid: {{ color: '#334155' }} }},
-        y: {{ ticks: {{ color: '#cbd5e1', font: {{ size: 10 }} }}, grid: {{ color: '#334155' }}, beginAtZero: true }}
+        x: {{ ticks: {{ color: '#9CA3AF', font: {{ size: 10 }} }}, grid: {{ color: 'rgba(255,255,255,0.10)' }} }},
+        y: {{ ticks: {{ color: '#9CA3AF', font: {{ size: 10 }} }}, grid: {{ color: 'rgba(255,255,255,0.10)' }}, beginAtZero: true }}
     }}, maintainAspectRatio: false }}
   }});
 
@@ -909,10 +978,10 @@ function renderCharts(filtered) {{
   charts.royalty = new Chart(document.getElementById('chartRoyalty').getContext('2d'), {{
     type: 'bar',
     data: {{ labels: rb.map(t => t.label), datasets: [{{ data: rbCounts,
-              backgroundColor: rb.map((_, i) => i < 3 ? '#34d399' : i < 4 ? '#fbbf24' : '#f87171') }}] }},
+              backgroundColor: rb.map((_, i) => i < 3 ? '#10B981' : i < 4 ? '#F59E0B' : '#EF4444') }}] }},
     options: {{ plugins: {{ legend: {{ display: false }} }}, scales: {{
-        x: {{ ticks: {{ color: '#cbd5e1', font: {{ size: 10 }} }}, grid: {{ color: '#334155' }} }},
-        y: {{ ticks: {{ color: '#cbd5e1', font: {{ size: 10 }} }}, grid: {{ color: '#334155' }}, beginAtZero: true }}
+        x: {{ ticks: {{ color: '#9CA3AF', font: {{ size: 10 }} }}, grid: {{ color: 'rgba(255,255,255,0.10)' }} }},
+        y: {{ ticks: {{ color: '#9CA3AF', font: {{ size: 10 }} }}, grid: {{ color: 'rgba(255,255,255,0.10)' }}, beginAtZero: true }}
     }}, maintainAspectRatio: false }}
   }});
 
@@ -963,8 +1032,8 @@ function renderCharts(filtered) {{
       plugins: {{
         legend: {{ display: false }},
         tooltip: {{
-          backgroundColor: '#0f172a', borderColor: '#475569', borderWidth: 1,
-          titleColor: '#f8fafc', bodyColor: '#e2e8f0', padding: 10,
+          backgroundColor: '#0A0E14', borderColor: 'rgba(255,255,255,0.16)', borderWidth: 1,
+          titleColor: '#F2F3F5', bodyColor: '#F2F3F5', padding: 10,
           callbacks: {{
             title: ctx => ctx[0].raw.name,
             label: ctx => {{
@@ -985,20 +1054,20 @@ function renderCharts(filtered) {{
       }},
       scales: {{
         x: {{
-          title: {{ display: true, text: 'Royalty %', color: '#94a3b8' }},
+          title: {{ display: true, text: 'Royalty %', color: '#9CA3AF' }},
           ticks: {{
-            color: '#cbd5e1',
+            color: '#9CA3AF',
             stepSize: 5,
             callback: v => v + '%',
           }},
-          grid: {{ color: '#334155' }},
+          grid: {{ color: 'rgba(255,255,255,0.10)' }},
           min: 0, max: 25,
         }},
         y: {{
-          title: {{ display: true, text: 'Top median revenue (log scale)', color: '#94a3b8' }},
+          title: {{ display: true, text: 'Top median revenue (log scale)', color: '#9CA3AF' }},
           type: 'logarithmic',
           ticks: {{
-            color: '#cbd5e1',
+            color: '#9CA3AF',
             callback: v => {{
               if (v === 1e5)  return '$100K';
               if (v === 1e6)  return '$1M';
@@ -1007,7 +1076,7 @@ function renderCharts(filtered) {{
               return null;  // suppress fractional log ticks (kills the $0M duplicates)
             }},
           }},
-          grid: {{ color: '#334155' }},
+          grid: {{ color: 'rgba(255,255,255,0.10)' }},
           min: 100000,
         }}
       }},
@@ -1055,11 +1124,11 @@ function renderHeader() {{
 
 function renderColsMenu() {{
   const menu = document.getElementById('cols-menu');
-  let html = '<div style="font-size:11px;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">Show columns</div>';
+  let html = '<div style="font-size:11px;color:var(--text-secondary);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">Show columns</div>';
   COLUMNS.forEach(c => {{
     const checked = c.always || visibleColKeys.has(c.key) ? 'checked' : '';
     const disabled = c.always ? 'disabled' : '';
-    html += `<label><input type="checkbox" data-col="${{c.key}}" ${{checked}} ${{disabled}}> ${{escHtml(c.label)}}${{c.always ? ' <span style="color:#64748b;font-size:11px;">(always)</span>' : ''}}</label>`;
+    html += `<label><input type="checkbox" data-col="${{c.key}}" ${{checked}} ${{disabled}}> ${{escHtml(c.label)}}${{c.always ? ' <span style="color:var(--text-tertiary);font-size:11px;">(always)</span>' : ''}}</label>`;
   }});
   html += `<div class="sep"></div>
     <button class="btn" id="cols-default" style="width:100%;">Reset to defaults</button>`;
@@ -1104,7 +1173,7 @@ function renderTable(filtered) {{
     return `<tr>${{cells}}</tr>`;
   }}).join('');
   if (sorted.length > VISIBLE_CAP) {{
-    els.body.innerHTML += `<tr><td colspan="${{colCount}}" style="text-align:center;color:#64748b;padding:14px;">+ ${{(sorted.length - VISIBLE_CAP).toLocaleString()}} more rows hidden — narrow filters or sort to surface them</td></tr>`;
+    els.body.innerHTML += `<tr><td colspan="${{colCount}}" style="text-align:center;color:var(--text-tertiary);padding:14px;">+ ${{(sorted.length - VISIBLE_CAP).toLocaleString()}} more rows hidden — narrow filters or sort to surface them</td></tr>`;
   }}
 }}
 
@@ -1314,7 +1383,7 @@ document.getElementById('compare-btn').addEventListener('click', () => {{
       type: 'line',
       data: {{ labels: b.outlet_history.map(p => p[0]),
               datasets: [{{ data: b.outlet_history.map(p => p[1]),
-                           borderColor: '#38bdf8', backgroundColor: 'rgba(56,189,248,0.15)',
+                           borderColor: '#60A5FA', backgroundColor: 'rgba(56,189,248,0.15)',
                            tension: 0.3, fill: true, pointRadius: 2, borderWidth: 2 }}] }},
       options: {{ plugins: {{ legend: {{ display: false }}, tooltip: {{ callbacks: {{
                     label: ctx => `${{ctx.parsed.x ? ctx.parsed.x : ctx.label}}: ${{ctx.parsed.y.toLocaleString()}} outlets`
