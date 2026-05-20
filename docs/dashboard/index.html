@@ -1081,10 +1081,16 @@ function renderCharts(filtered) {
                   labels: { color: chartTextColor(), font: { size: 10 }, boxWidth: 8, padding: 6,
                             generateLabels: chart => {
                               const data = chart.data;
+                              // CRITICAL: when generateLabels is custom, labels.color is IGNORED.
+                              // Each returned object must specify fontColor explicitly or Chart.js
+                              // falls back to Chart.defaults.color (~#666 dark gray) — which is
+                              // what was rendering as near-black text on dark surface.
+                              const fc = chartTextColor();
                               return data.labels.map((label, i) => ({
                                 text: `${label} (${data.datasets[0].data[i]})`,
                                 fillStyle: data.datasets[0].backgroundColor[i],
                                 strokeStyle: data.datasets[0].backgroundColor[i],
+                                fontColor: fc,
                                 index: i,
                               }));
                             } } },
