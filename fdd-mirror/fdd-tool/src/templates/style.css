@@ -365,48 +365,53 @@ a:hover { color: #1e3a8a; }
     align-items: center;
     margin: 0.5rem -1rem 1.5rem;     /* bleed to edges of viewport on mobile */
     padding: 0.6rem 1rem;
-    background: rgba(241, 245, 249, 0.97);
-    backdrop-filter: saturate(180%) blur(10px);
-    border-top: 1px solid #e2e8f0;
-    border-bottom: 1px solid #e2e8f0;
+    background: rgba(10, 14, 20, 0.88);  /* var(--bg-base) with alpha for blur */
+    backdrop-filter: saturate(160%) blur(12px);
+    -webkit-backdrop-filter: saturate(160%) blur(12px);
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
     font-size: 0.88rem;
     /* Sticky so users don't lose orientation on long pages. */
     position: sticky;
     top: 0;
     z-index: 50;
-    overflow-x: auto;                /* mobile: scroll horizontally rather than wrap to 3 rows */
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
 }
 @media (min-width: 720px) {
     .page-toc {
         margin: 0.5rem 0 1.5rem;
-        border-radius: 6px;
-        border: 1px solid #e2e8f0;
-        flex-wrap: wrap;             /* desktop wraps in place; no sideways scroll */
+        border-radius: 10px;
+        border: 1px solid var(--border-subtle);
+        flex-wrap: wrap;
         overflow-x: visible;
     }
 }
 .page-toc-label {
-    color: #475569;
+    color: var(--text-tertiary);
     font-weight: 600;
     margin-right: 0.25rem;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
 }
 .page-toc a {
-    color: #1d4ed8;
+    color: var(--text-secondary);
     text-decoration: none;
-    padding: 0.2rem 0.6rem;
+    padding: 0.3rem 0.85rem;
     border-radius: 999px;
-    background: #fff;
-    border: 1px solid #cbd5e1;
-    transition: background 0.15s, color 0.15s;
-    white-space: nowrap;             /* don't wrap individual labels in scroll container */
+    background: transparent;
+    border: 1px solid var(--border-default);
+    transition: all var(--dur-fast) var(--ease);
+    white-space: nowrap;
     flex: 0 0 auto;
+    font-weight: 500;
 }
 .page-toc a:hover {
-    background: #1d4ed8;
-    color: #fff;
-    border-color: #1d4ed8;
+    background: var(--bg-overlay);
+    color: var(--text-primary);
+    border-color: var(--border-emphasis);
 }
 
 /* === Cost calculator (F4.7) === */
@@ -2261,3 +2266,14 @@ label { color: var(--text-secondary); }
     border-color: var(--border-default);
     color: var(--text-tertiary);
 }
+
+/* Combined royalty+marketing callout — stronger visual than the per-fee deviation */
+.fee-benchmark-combined {
+    background: rgba(245, 158, 11, 0.10);
+    border-left: 3px solid var(--accent-warning);
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-top: 8px;
+    list-style: none;
+}
+.fee-benchmark-combined strong { color: var(--accent-warning); }

@@ -475,12 +475,14 @@
             </p>
             <ul class="fee-benchmark-list">
                 {% for it in fee_benchmark.deviations %}
-                <li class="fee-benchmark-{{ it.direction }}">
-                    <strong>{{ it.brand_val }}% {{ it.fee }}</strong> is at the
+                <li class="fee-benchmark-{{ it.direction }}{% if it.is_combined %} fee-benchmark-combined{% endif %}">
+                    {% if it.is_combined %}⚠️ {% endif %}<strong>{{ it.brand_val }}% {{ it.fee }}</strong> is at the
                     <strong>{{ it.direction }} end</strong> for this category
                     (median: {{ it.peer_median }}%).
                     {% set dev = (it.deviation_pct if it.deviation_pct >= 0 else -it.deviation_pct)|int %}
-                    {% if it.direction == 'upper' %}
+                    {% if it.is_combined and it.annual_premium_at_500k %}
+                        On $500K revenue, that's <strong>~${{ '{:,}'.format(it.annual_premium_at_500k) }} more per year</strong> than a median {{ fee_benchmark.industry_label }} franchisor takes.
+                    {% elif it.direction == 'upper' %}
                         Over a typical year, this is about {{ dev }}% more in ongoing fees than the category median.
                     {% else %}
                         Over a typical year, this is about {{ dev }}% less in ongoing fees than the category median.

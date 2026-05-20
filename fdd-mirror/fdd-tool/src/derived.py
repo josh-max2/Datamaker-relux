@@ -531,6 +531,26 @@ def fee_benchmark_callout(brand_fees: dict | None, industry_medians: dict,
                 "direction": direction,
                 "deviation_pct": round(deviation_pct, 0),
             })
+    # Combined royalty + marketing check — the "all-in ongoing %" comparison
+    # that buyers actually care about. Surface when COMBINED is >= 3pp above
+    # the combined category median (matches buyer mental model from
+    # 1-800-GOT-JUNK feedback: 8% + 8% = 16% vs ~9% combined services median).
+    combined_brand = (brand_roy or 0) + (brand_mkt or 0)
+    combined_median = (med_roy or 0) + (med_mkt or 0)
+    if combined_brand >= 5 and combined_median >= 3 and (combined_brand - combined_median) >= 3:
+        # On a $500K revenue example, the spread is meaningful enough to flag
+        example_revenue = 500_000
+        annual_premium = int(round(example_revenue * (combined_brand - combined_median) / 100))
+        deviations.append({
+            "fee": "combined royalty + marketing",
+            "brand_val": round(combined_brand, 1),
+            "peer_median": round(combined_median, 1),
+            "direction": "upper",
+            "deviation_pct": round((combined_brand - combined_median) / combined_median * 100, 0),
+            "annual_premium_at_500k": annual_premium,
+            "is_combined": True,
+        })
+
     if not deviations:
         return None
     label = industry_label or "category"
