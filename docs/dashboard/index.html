@@ -351,6 +351,160 @@ a:hover { color: var(--text-primary); }
     padding: 14px 24px; color: var(--text-tertiary); font-size: 12px;
     border-top: 1px solid var(--bg-elevated); text-align: center;
 }
+
+/* ===== Mobile dashboard overhaul ===== */
+/* Filters trigger button — only visible on mobile */
+.filters-trigger {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    margin: 12px 16px 0;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-default);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font: 600 14px/1 var(--font-body);
+    cursor: pointer;
+    min-height: 44px;
+    width: calc(100% - 32px);
+    justify-content: space-between;
+}
+.filters-trigger .filters-count {
+    background: var(--accent-info);
+    color: var(--bg-base);
+    border-radius: 999px;
+    padding: 2px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+.sidebar-backdrop {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+}
+.sidebar-backdrop[aria-hidden="false"] {
+    display: block;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .layout { grid-template-columns: 1fr; }
+    .hero { padding: 24px 16px 12px; }
+    .hero h1 { font-size: clamp(28px, 7vw, 36px); }
+    .hero .lede { font-size: 15px; line-height: 1.4; }
+    .preset-chips { gap: 6px; }
+    .preset-chips .chip { font-size: 12px; padding: 8px 12px; min-height: 36px; }
+
+    .filters-trigger { display: inline-flex; }
+
+    /* Sidebar becomes off-canvas drawer */
+    .sidebar {
+        position: fixed !important;
+        top: 0; right: 0; bottom: 0; left: auto;
+        width: min(86vw, 340px);
+        height: 100vh !important;
+        z-index: 100;
+        transform: translateX(100%);
+        transition: transform 250ms cubic-bezier(0.22, 1, 0.36, 1);
+        border-left: 1px solid var(--border-default);
+        border-right: none !important;
+        border-bottom: none !important;
+        padding: calc(20px + env(safe-area-inset-top, 0px)) 18px calc(20px + env(safe-area-inset-bottom, 0px));
+        box-shadow: -8px 0 24px rgba(0, 0, 0, 0.5);
+        align-self: stretch !important;
+    }
+    .sidebar[aria-hidden="false"] {
+        transform: translateX(0);
+    }
+    .sidebar > h3:first-child {
+        font-size: 13px;
+        padding-right: 40px;
+    }
+    .sidebar .drawer-close {
+        position: absolute;
+        top: calc(14px + env(safe-area-inset-top, 0px));
+        right: 14px;
+        width: 36px; height: 36px;
+        background: transparent;
+        border: 1px solid var(--border-default);
+        border-radius: 8px;
+        color: var(--text-primary);
+        font-size: 18px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sidebar input,
+    .sidebar select { font-size: 16px !important; padding: 10px 12px !important; min-height: 44px; }
+    .sidebar .filter-group { margin-bottom: 18px; }
+    .sidebar .actions { margin-top: 22px; gap: 10px; }
+    .sidebar .btn { min-height: 44px; padding: 0 16px; font-size: 14px; }
+
+    /* Main content */
+    .main { padding: 16px; }
+
+    /* KPI strip — 2 columns on phone */
+    .kpi-strip { grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 16px; }
+    .kpi-tile { padding: 14px 16px; border-radius: 10px; }
+    .kpi-tile .kpi-val { font-size: 26px; }
+    .kpi-tile h4 { font-size: 10px; margin-bottom: 6px; }
+
+    /* Charts — stack 1-col with bounded height */
+    .charts-row { grid-template-columns: 1fr !important; gap: 10px; margin-bottom: 16px; }
+    .chart-card { padding: 12px; border-radius: 10px; }
+    .chart-card h3 { font-size: 11px; margin: 0 0 6px; }
+    .chart-wrap { height: 180px !important; }
+    .chart-wrap[style*="320px"] { height: 240px !important; }
+
+    /* Scatter legend wraps tighter */
+    .chart-legend { font-size: 11px; gap: 10px; padding-top: 6px; }
+
+    /* Quick-filter chips wrap */
+    .preset-chips .chip { font-size: 12px; padding: 7px 11px; }
+
+    /* Results table area */
+    .results { padding: 12px; }
+    .results-header { flex-direction: column; align-items: stretch; gap: 10px; }
+    .results-header h3 { font-size: 12px; }
+    .results-status { font-size: 12px; }
+    .actions { display: flex; gap: 8px; }
+    .actions .btn { flex: 1; min-height: 44px; font-size: 13px; }
+
+    /* Table — horizontal scroll with sticky first col */
+    .master-table { font-size: 12px; min-width: 640px; }
+    .master-table thead th { padding: 10px 8px; font-size: 10px; }
+    .master-table td { padding: 10px 8px; }
+
+    .compare-fab { right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); padding: 12px 18px; font-size: 13px; }
+}
+
+@media (max-width: 420px) {
+    .kpi-tile .kpi-val { font-size: 22px; }
+    .chart-wrap { height: 160px !important; }
+    .preset-chips .chip { font-size: 11px; padding: 6px 10px; }
+}
+
+/* ===== Universal: input min font-size to prevent iOS zoom + touch targets ===== */
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+select,
+textarea {
+    font-size: max(16px, 1rem);
+}
+
+/* ===== Safe-area-inset on header ===== */
+.site-header {
+    padding-top: calc(16px + env(safe-area-inset-top, 0px));
+}
 </style>
     <script>(function(){try{var t=localStorage.getItem('fd-theme');if(!t){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 </head>
@@ -360,7 +514,9 @@ a:hover { color: var(--text-primary); }
   <div class="hero-inner">
     <p class="eyebrow">FranchiseDepth Analytics</p>
     <h1>Find the right franchise.</h1>
-    <p class="lede">Real FDD data across <strong id="hero-count">469</strong> brands<span class="dot">·</span>100% with Item 19, Item 20, and fee data.</p>
+    <p class="lede">Real FDD data across <strong id="hero-count">469</strong> brands<span class="dot">·</span>100% with Item 19, Item 20, and fee data.
+        <a href="/Datamaker-relux/methodology/#thresholds-cutoffs" style="display:inline-block;margin-left:8px;font-size:12px;color:var(--text-secondary);text-decoration:none;border-bottom:1px dotted var(--border-default);">How thresholds are set →</a>
+    </p>
     <div class="preset-chips">
       <button class="chip" data-preset="best-roi"        data-tip="100+ outlets, investment low under $200K, royalty under 7%">Best ROI under $200K</button>
       <button class="chip" data-preset="top-food"        data-tip="Industry = food-quick-service, sorted by median revenue">Top food brands</button>
@@ -372,9 +528,16 @@ a:hover { color: var(--text-primary); }
   </div>
 </div>
 
+<button type="button" class="filters-trigger" id="filters-trigger" aria-controls="dash-sidebar" aria-expanded="false">
+    <span>Filters &amp; search</span>
+    <span class="filters-count" id="filters-count" aria-label="active filters">0</span>
+</button>
+<div class="sidebar-backdrop" id="sidebar-backdrop" aria-hidden="true"></div>
+
 <div class="layout">
 
-<aside class="sidebar">
+<aside class="sidebar" id="dash-sidebar" aria-hidden="true">
+  <button type="button" class="drawer-close" id="drawer-close" aria-label="Close filters">×</button>
   <h3>Filters</h3>
   <div class="filter-group">
     <label>Search</label>
@@ -1309,6 +1472,59 @@ renderColsMenu();
 updateCompareBtn();
 window.addEventListener('load', rerender);  // wait for Chart.js
 rerender();
+
+// ===== Mobile filters drawer =====
+(function () {
+  const trigger = document.getElementById('filters-trigger');
+  const sidebar = document.getElementById('dash-sidebar');
+  const backdrop = document.getElementById('sidebar-backdrop');
+  const closeBtn = document.getElementById('drawer-close');
+  if (!trigger || !sidebar || !backdrop) return;
+
+  let savedScrollY = 0;
+  function openDrawer() {
+    savedScrollY = window.scrollY;
+    sidebar.setAttribute('aria-hidden', 'false');
+    backdrop.setAttribute('aria-hidden', 'false');
+    trigger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer() {
+    sidebar.setAttribute('aria-hidden', 'true');
+    backdrop.setAttribute('aria-hidden', 'true');
+    trigger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+  trigger.addEventListener('click', () =>
+    sidebar.getAttribute('aria-hidden') === 'true' ? openDrawer() : closeDrawer()
+  );
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  backdrop.addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && sidebar.getAttribute('aria-hidden') === 'false') closeDrawer();
+  });
+
+  // Active filter count for the trigger badge
+  function countActiveFilters() {
+    const fields = ['f-search','f-industry','f-inv-min','f-inv-max','f-royalty-min','f-royalty-max','f-outlets','f-state','f-i19','f-watchlist'];
+    let n = 0;
+    for (const id of fields) {
+      const el = document.getElementById(id);
+      if (!el) continue;
+      if (el.type === 'checkbox') { if (el.checked) n++; }
+      else if (el.value && el.value !== '0' && el.value !== '') n++;
+    }
+    const badge = document.getElementById('filters-count');
+    if (badge) {
+      badge.textContent = String(n);
+      badge.style.display = n > 0 ? '' : 'none';
+    }
+  }
+  document.querySelectorAll('.sidebar input, .sidebar select').forEach(el =>
+    el.addEventListener('input', countActiveFilters)
+  );
+  countActiveFilters();
+})();
 </script>
 
 </body>
