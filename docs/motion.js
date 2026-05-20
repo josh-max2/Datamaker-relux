@@ -146,11 +146,90 @@
         });
     }
 
+    /* ---------- freshness tier on .brand-meta badges ---------- */
+    // Parse "X mo old" / "X yr old" / "X year(s) old" from a meta-badge's text
+    // and apply data-tier="positive|warning|negative" per spec thresholds:
+    //   ≤6 mo positive · 6–12 mo warning · >12 mo negative
+    function bootFreshnessTier() {
+        document.querySelectorAll('.brand-meta .meta-badge').forEach(function (el) {
+            if (el.dataset.tierBooted) return;
+            var t = el.textContent || '';
+            var months = null;
+            var m;
+            if ((m = t.match(/(\d+)\s*mo(?:s|nths?)?\s*(?:old|ago)/i))) {
+                months = parseInt(m[1], 10);
+            } else if ((m = t.match(/(\d+)\s*(?:yr|years?)\s*(?:old|ago)/i))) {
+                months = parseInt(m[1], 10) * 12;
+            }
+            if (months == null) return;
+            var tier;
+            if (months <= 6) tier = 'positive';
+            else if (months <= 12) tier = 'warning';
+            else tier = 'negative';
+            el.setAttribute('data-tier', tier);
+            el.dataset.tierBooted = '1';
+        });
+    }
+
+    /* ---------- slash-to-focus search keyboard shortcut ---------- */
+    function bootSearchHotkey() {
+        var input = document.getElementById('header-search-input');
+        if (!input) return;
+        document.addEventListener('keydown', function (e) {
+            if (e.key !== '/') return;
+            var t = e.target;
+            // Don't hijack when user is typing in an input/textarea/contenteditable
+            if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+            e.preventDefault();
+            input.focus();
+            input.select();
+        });
+    }
+
+    /* ---------- compare-page outlet growth coloring ---------- */
+    // The compare page renders growth values like "▲ +4.3%" / "▼ -10.6%" inside <td>s
+    // built by the compare JS. We post-process to add data-tier so existing CSS hooks fire.
+    function bootCompareGrowthColor() {
+        var rows = document.querySelectorAll('#cmp-rows tr, .compare-table tbody tr');
+        rows.forEach(function (row) {
+            // Identify the outlet-growth row by its row label text
+            var labelCell = row.querySelector('th[scope="row"], td:first-child');
+            if (!labelCell) return;
+            var label = (labelCell.textContent || '').toLowerCase();
+            if (label.indexOf('outlet growth') === -1 && label.indexOf('growth') === -1) return;
+            row.querySelectorAll('td').forEach(function (td) {
+                if (td === labelCell) return;
+                var txt = (td.textContent || '').trim();
+                if (!txt || txt === '—') return;
+                var tier = null;
+                if (txt.indexOf('▲') !== -1 || /\+\d/.test(txt))       tier = 'positive';
+                else if (txt.indexOf('▼') !== -1 || /^[-−]\d/.test(txt)) tier = 'negative';
+                if (tier) td.setAttribute('data-tier', tier);
+            });
+        });
+        // Tag the derived "all-in" row for editorial emphasis (NEW 3)
+        rows.forEach(function (row) {
+            var labelCell = row.querySelector('th[scope="row"], td:first-child');
+            if (!labelCell) return;
+            var label = (labelCell.textContent || '').toLowerCase();
+            if (label.indexOf('all-in') !== -1 || label.indexOf('all in %') !== -1) {
+                row.classList.add('row--derived');
+            }
+        });
+    }
+
+    /* ---------- 5-yr net info tooltip wiring ---------- */
+    // Pages inject .info-icon-5yr; this just wires the existing .info[data-tip] popover handler.
+    // The popover JS for .info already exists in the page footer; nothing extra needed here.
+
     function init() {
         bootCountUps();
         bootChartReveal();
         bootAutoTier();
         bootThemeToggle();
+        bootFreshnessTier();
+        bootSearchHotkey();
+        bootCompareGrowthColor();
     }
 
     if (document.readyState === 'loading') {

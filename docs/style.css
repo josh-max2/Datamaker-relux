@@ -5,8 +5,11 @@
 :root {
     /* --- Typography --- */
     --font-body:    'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    --font-display: 'Source Serif 4', 'Tiempos Headline', Georgia, serif;
+    /* Source Serif is killed for product surfaces; --font-display now aliases body.
+       Editorial routes can opt-in via body.editorial-route (kept distinct fallback). */
+    --font-display: var(--font-body);
     --font-mono:    'IBM Plex Mono', 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+    --font-sans:    var(--font-body);   /* v2 spec alias */
 
     /* --- Surfaces (strict dark hierarchy) --- */
     --bg-base:        #0A0E14;   /* page background */
@@ -35,6 +38,20 @@
     --accent:         #6B8AFF;
     --accent-hover:   #8AA3FF;
     --accent-quiet:   rgba(107, 138, 255, 0.12);
+    --accent-faint:   rgba(107, 138, 255, 0.06);  /* v2 spec — softer tint for callout-insight */
+
+    /* --- State heat map sequential ramp (v2 §3) --- */
+    --heat-0: #1A2230;
+    --heat-1: #3B5BBD;
+    --heat-2: #6B8AFF;
+    --heat-3: #A4B8FF;
+    --heat-4: #E0E7FF;
+
+    /* --- Radii (v2 spec) --- */
+    --r-sm: 4px;
+    --r-md: 6px;
+    --r-lg: 8px;
+    --r-xl: 12px;
 
     /* --- Semantic --- */
     --positive:        #10B981;
@@ -2906,6 +2923,46 @@ h3 { color: var(--text-primary); }
 .compare-table .muted { color: var(--text-tertiary); }
 .compare-table .th-note { color: var(--text-tertiary); }
 
+/* --- v2 Batch 3: search bar / kbd hint --- */
+.header-search { position: relative; }
+.search-kbd {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2px 7px 3px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    font: 500 11px/1 var(--font-mono);
+    color: var(--text-secondary);
+    pointer-events: none;
+}
+.header-search input[type="search"] { padding-right: 38px; }
+.header-search input[type="search"]:focus + .search-kbd { display: none; }
+
+/* --- v2 Batch 3: compare-page outlet-growth td tier coloring --- */
+.compare-table td[data-tier="positive"] { color: var(--positive); font-weight: 500; }
+.compare-table td[data-tier="negative"] { color: var(--negative); font-weight: 500; }
+
+/* --- v2 NEW 3: derived row emphasis on compare table --- */
+.compare-table tr.row--derived th[scope="row"] {
+    font-style: italic;
+    color: var(--accent);
+}
+.compare-table tr.row--derived td { font-weight: 500; }
+
+/* --- v2 Batch 3: 5-yr net info icon wrapper inherits .info button styles already --- */
+.calc-metric .info { margin-left: 4px; transform: translateY(-1px); }
+
+/* --- v2 P1 #15: per-column accent stripe on compare brand headers --- */
+.compare-table thead tr th[scope="col"]:nth-of-type(2) { border-bottom: 2px solid var(--viz-1); }
+.compare-table thead tr th[scope="col"]:nth-of-type(3) { border-bottom: 2px solid var(--viz-2); }
+.compare-table thead tr th[scope="col"]:nth-of-type(4) { border-bottom: 2px solid var(--viz-3); }
+.compare-table thead tr th[scope="col"]:nth-of-type(5) { border-bottom: 2px solid var(--viz-4); }
+.compare-table thead tr th[scope="col"]:nth-of-type(6) { border-bottom: 2px solid var(--viz-5); }
+
+
 /* ===========================================================================
    LIGHT MODE — opt-in via [data-theme="light"] on <html>. Default stays dark.
    Boot script in <head> sets the attribute before stylesheet renders.
@@ -3107,16 +3164,19 @@ body.editorial-route h1, body.editorial-route h2 {
     color: var(--text-secondary);
     list-style: none;
 }
-.brand-meta .meta-icon { color: var(--positive); font-weight: 700; }
+/* The inner .meta-icon (✓) is hidden — replaced by the colored dot from ::before */
+.brand-meta .meta-icon { display: none; }
+.brand-meta .meta-badge::before {
+    content: ""; display: inline-block; width: 6px; height: 6px;
+    background: var(--text-tertiary); border-radius: 50%; flex: 0 0 auto;
+}
 .brand-meta .meta-badge.meta-verified { border-color: rgba(16, 185, 129, 0.25); }
-.brand-meta .meta-badge.meta-verified::before {
-    content: ""; display: inline-block; width: 6px; height: 6px;
-    background: var(--positive); border-radius: 50%; margin-right: 2px;
-}
-.brand-meta .meta-badge.meta-date::before {
-    content: ""; display: inline-block; width: 6px; height: 6px;
-    background: var(--text-tertiary); border-radius: 50%; margin-right: 2px;
-}
+.brand-meta .meta-badge.meta-verified::before { background: var(--positive); }
+/* Freshness tier — motion.js parses age and applies data-tier */
+.brand-meta .meta-badge[data-tier="warning"]::before  { background: var(--warning); }
+.brand-meta .meta-badge[data-tier="warning"]          { border-color: rgba(245, 158, 11, 0.25); }
+.brand-meta .meta-badge[data-tier="negative"]::before { background: var(--negative); }
+.brand-meta .meta-badge[data-tier="negative"]         { border-color: rgba(239, 68, 68, 0.25); }
 .brand-meta .meta-badge.meta-reading-time { color: var(--text-tertiary); }
 
 /* --- Density bumps on table rows (spec mention: Carta/Pitchbook 44-48px) --- */
