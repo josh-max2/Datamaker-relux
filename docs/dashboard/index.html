@@ -30,6 +30,18 @@
     --accent-danger:  #EF4444;
     --accent-info:    #5573CC;
     --accent-gold:    #D4AF37;
+    /* v3 semantic tokens — needed so any inline style that uses
+       background: var(--positive) etc. resolves correctly (the dashboard
+       is self-contained and doesn't load /style.css). */
+    --positive:       #10B981;
+    --positive-quiet: rgba(16, 185, 129, 0.12);
+    --warning:        #F59E0B;
+    --warning-quiet:  rgba(245, 158, 11, 0.10);
+    --negative:       #EF4444;
+    --negative-quiet: rgba(239, 68, 68, 0.10);
+    --accent:         #6B8AFF;
+    --accent-hover:   #8AA3FF;
+    --accent-quiet:   rgba(107, 138, 255, 0.12);
     --ease: cubic-bezier(0.4, 0, 0.2, 1);
     --dur-fast: 150ms; --dur: 200ms;
 }
