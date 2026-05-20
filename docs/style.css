@@ -466,6 +466,20 @@ a:hover { color: var(--accent-hover); }
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
+    /* Never shrink and never wrap — sibling .page-toc a chips are flex:0 0 auto,
+       so the label was the only shrinkable child and the inherited
+       overflow-wrap: anywhere from main article wrapped it char-by-char,
+       blowing the sticky bar up to ~1/4 of the mobile viewport. */
+    flex: 0 0 auto;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    word-break: keep-all;
+}
+/* On the narrowest phones, drop the label entirely — every pixel of the
+   sticky horizontal-scroll TOC matters. The chips themselves are
+   self-explanatory. */
+@media (max-width: 480px) {
+    .page-toc-label { display: none; }
 }
 .page-toc a {
     color: var(--text-secondary);
