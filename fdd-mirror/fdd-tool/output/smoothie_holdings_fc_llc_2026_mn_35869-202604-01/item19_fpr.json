@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "average unit volume",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Top 33% of Stores (2 out of 6 Stores)",
+      "outlet_count": 2,
+      "reporting_period": "December 30, 2024 through December 28, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 469457,
+      "value_median": 469457,
+      "value_min": 341633,
+      "value_max": 597281,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 50.0,
+      "page_number": 60,
+      "raw_text": "The top 33% of Stores (2 out of 6 Stores) had an average unit volume of $469,457. The top 33% of Stores (2 out of 6 Stores) had a median unit volume of $469,457. The top 33% of Stores (2 out of 6 Stores) had the highest unit volume of $597,281. The top 33% of Stores (2 out of 6 Stores) had the lowest unit volume of $341,633.",
+      "notes": "Cohort is top 33% by sales ranking. 6 stores qualified (open at least 11 of 12 accounting periods). 50% of stores in this cohort met or exceeded average of $469,457. Data reflects combined Traditional and Non-Traditional stores in TX and NJ. Unaudited, excludes costs."
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "average unit volume",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Bottom 33% of Stores (3 out of 6 Stores)",
+      "outlet_count": 3,
+      "reporting_period": "December 30, 2024 through December 28, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 85159,
+      "value_median": 104174,
+      "value_min": 36348,
+      "value_max": 114954,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 66.7,
+      "page_number": 60,
+      "raw_text": "The bottom 33% of Stores (3 out of 6 Stores) had an average unit volume of $85,159. The bottom 33% of Stores (3 out of 6 Stores) had a median unit volume of $104,174. The bottom 33% of Stores (3 out of 6 Stores) had the highest unit volume of $114,954. The bottom 33% of Stores (3 out of 6 Stores) had the lowest unit volume of $36,348.",
+      "notes": "Cohort is bottom 33% by sales ranking. All stores in this cohort are Non-Traditional Stores. 66.7% of stores met or exceeded average of $85,159. Data reflects TX and NJ stores. Unaudited, excludes costs."
+    }
+  ],
+  "has_item19": true,
+  "confidence": 0.92,
+  "notes": "Item 19 discloses annual unit volume for two performance-ranked cohorts (top 33% and bottom 33%) of 6 qualifying franchised stores open at least 11 of 12 accounting periods between Dec 30, 2024 and Dec 28, 2025. The middle 33% (1 store) is not separately disclosed. All data is sales only; costs excluded. Stores located in TX and NJ. Data is unaudited. No company-owned store data is included."
+}

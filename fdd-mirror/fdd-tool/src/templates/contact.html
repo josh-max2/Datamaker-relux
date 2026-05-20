@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Contact — {{ site_name }}{% endblock %}
+{% block description %}How to reach {{ site_name }}. Data correction requests, partnership inquiries, press, and general questions.{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Contact", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact {{ site_name }}",
+  "url": "{{ canonical_url }}",
+  "isPartOf": { "@type": "WebSite", "name": "{{ site_name }}", "url": "{{ SITE_HOST }}{{ url_for('') }}" }
+}
+</script>
+{% endblock %}
+{% block content %}
+<article>
+    <h1>Contact</h1>
+    <p class="lead">
+        I read every message. Most questions get a reply within 1–2 business days. If you've
+        spotted a data error on a brand page, please include the brand and the field — that
+        gets fixed the fastest.
+    </p>
+
+    <section>
+        <h2>What I can help with</h2>
+        <ul>
+            <li><strong>Data corrections.</strong> Spot a wrong number or a stale filing? Tell me the brand + the field, and I'll re-extract from the source FDD.</li>
+            <li><strong>Adding a brand.</strong> Brand not in the database? Send the franchisor name + a state portal link if you have one, and I'll add it to the queue.</li>
+            <li><strong>Press / interview requests.</strong> Happy to talk franchise data, FDD methodology, or industry trends. Include the publication and angle.</li>
+            <li><strong>Partnership inquiries.</strong> Affiliate networks, franchise consultants, SBA lenders — see the <a href="{{ url_for('affiliate-disclosure/') }}">affiliate disclosure</a> first.</li>
+            <li><strong>General feedback.</strong> What's missing, what's confusing, what would make this site more useful to you.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>What I can't help with</h2>
+        <ul>
+            <li><strong>Direct franchise recommendations.</strong> I don't tell people which franchise to buy — the data is the data; the decision is yours and your attorney's.</li>
+            <li><strong>Forecasting your specific outlet's earnings.</strong> Item 19 is the authoritative source for any forecast; I can't legally project your returns (FTC §436.5(s)).</li>
+            <li><strong>Connecting you with a specific franchisor.</strong> Use the franchisor's official website for that.</li>
+        </ul>
+    </section>
+
+    <section class="contact-form-section">
+        <h2>Send a message</h2>
+        {% if FORMSPREE_ID and FORMSPREE_ID != 'PLACEHOLDER_FORM_ID' %}
+        <form class="contact-form" method="POST" action="https://formspree.io/f/{{ FORMSPREE_ID }}">
+            <label for="contact-name">Your name</label>
+            <input type="text" id="contact-name" name="name" required autocomplete="name">
+
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" required autocomplete="email" placeholder="you@example.com">
+
+            <label for="contact-subject">Subject</label>
+            <select id="contact-subject" name="subject" required>
+                <option value="">— Select —</option>
+                <option>Data correction</option>
+                <option>Add a brand</option>
+                <option>Press / interview</option>
+                <option>Partnership inquiry</option>
+                <option>General feedback</option>
+                <option>Something else</option>
+            </select>
+
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="6" required></textarea>
+
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+            <input type="hidden" name="source" value="contact-page">
+
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-fineprint">
+                Your email is used only to reply. We don't add contact-form senders to a marketing list.
+                See <a href="{{ url_for('privacy/') }}">privacy</a>.
+            </p>
+        </form>
+        {% else %}
+        <div class="form-placeholder">
+            <p><strong>Email me directly.</strong> The contact form is being set up. In the meantime, send a message to <a href="mailto:hello@franchisedepth.com">hello@franchisedepth.com</a>. Include the brand name (if a data correction) or the topic in the subject line so I can prioritize.</p>
+        </div>
+        {% endif %}
+    </section>
+
+    <section>
+        <h2>About this site</h2>
+        <p>
+            {{ site_name }} is an independent project that extracts and presents data from publicly-filed Franchise Disclosure Documents. It is a small operation, so response time may vary. For background on what this site does and how, see the <a href="{{ url_for('about/') }}">about page</a>.
+        </p>
+    </section>
+</article>
+{% endblock %}

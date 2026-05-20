@@ -1,0 +1,10 @@
+{
+  "royalty_pct": null,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 0.42,
+  "marketing_min_monthly": 1041.67,
+  "tech_fee_monthly": 925,
+  "fee_notes": "Primary recurring fee: 50% of monthly Split Profits (gross revenue minus Shared Expenses, defined as GAAP expenses plus approved salary up to $60,000). Not a % of gross sales. Additional monthly: $550 administrative/accounting, $200 IT support, $725 operating systems & failover. Annual software ~$11,000 plus $1,650 upfront. Marketing capped at 3% of average revenue; currently ~0.42% ($12,500 annual). Lease ~$22,000-$38,000/month base plus triple net. Various conditional fees: transfers $30,000; transaction 7% or $50k min; renewals 10% of initial fee.",
+  "raw_excerpt": "Continuing Royalty Fees: 50% of monthly \"Split Profits\"... Administrative and Accounting Fees: Currently $550 per month... IT Support Fee: Currently, $200 per month... Operating Systems & Internet Failover: Approximately $725 per month... Marketing Fee subject to Maximum Annual Cost equal to 3% of average total annual revenue... As of December 31, 2025, we were charging $12,500 in total annual marketing payments (approximately 0.42% of average total annual revenue)... Lease Payments: Approximately $22,000 to $38,000 base rent per month, plus triple net costs.",
+  "confidence": 0.92
+}

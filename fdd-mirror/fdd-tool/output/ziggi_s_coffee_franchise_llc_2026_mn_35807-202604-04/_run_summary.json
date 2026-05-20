@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\ziggi_s_coffee_franchise_llc_2026_mn_35807-202604-04.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0066,
+      "input_tokens": 2289,
+      "cached": 1340,
+      "output_tokens": 223
+    },
+    "item5": {
+      "cost_usd": 0.0074,
+      "input_tokens": 1952,
+      "cached": 1340,
+      "output_tokens": 344
+    },
+    "item6": {
+      "cost_usd": 0.0174,
+      "input_tokens": 2477,
+      "cached": 1340,
+      "output_tokens": 903
+    },
+    "item7": {
+      "cost_usd": 0.0248,
+      "input_tokens": 8971,
+      "cached": 1340,
+      "output_tokens": 98
+    },
+    "item19": {
+      "cost_usd": 0.2764,
+      "input_tokens": 17995,
+      "cached": 1340,
+      "output_tokens": 15070,
+      "images_sent": 7
+    },
+    "item20": {
+      "cost_usd": 0.1407,
+      "input_tokens": 13708,
+      "cached": 1340,
+      "output_tokens": 6882,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.4733
+}

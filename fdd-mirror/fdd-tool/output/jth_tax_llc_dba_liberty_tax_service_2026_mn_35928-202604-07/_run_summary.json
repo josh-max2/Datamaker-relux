@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\jth_tax_llc_dba_liberty_tax_service_2026_mn_35928-202604-07.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0049,
+      "input_tokens": 1811,
+      "cached": 1340,
+      "output_tokens": 207
+    },
+    "item5": {
+      "cost_usd": 0.0068,
+      "input_tokens": 2004,
+      "cached": 1340,
+      "output_tokens": 297
+    },
+    "item6": {
+      "cost_usd": 0.0187,
+      "input_tokens": 3263,
+      "cached": 1340,
+      "output_tokens": 837
+    },
+    "item7": {
+      "cost_usd": 0.0029,
+      "input_tokens": 1647,
+      "cached": 1340,
+      "output_tokens": 104
+    },
+    "item19": {
+      "cost_usd": 0.0381,
+      "input_tokens": 9560,
+      "cached": 1340,
+      "output_tokens": 869,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.255,
+      "input_tokens": 22230,
+      "cached": 1340,
+      "output_tokens": 12792,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3264
+}

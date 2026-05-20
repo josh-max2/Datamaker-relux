@@ -1,0 +1,137 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2025,
+      "outlet_type": "franchised",
+      "outlets_start": 0,
+      "outlets_end": 1,
+      "net_change": 1
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 1,
+      "outlets_end": 2,
+      "net_change": 1
+    },
+    {
+      "year": 2025,
+      "outlet_type": "company-owned",
+      "outlets_start": 2,
+      "outlets_end": 6,
+      "net_change": 4
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 1,
+      "outlets_end": 2,
+      "net_change": 2
+    },
+    {
+      "year": 2025,
+      "outlet_type": "total",
+      "outlets_start": 2,
+      "outlets_end": 7,
+      "net_change": 5
+    }
+  ],
+  "state_year_status": [
+    {
+      "year": 2023,
+      "state": "MA",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2024,
+      "state": "MA",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2025,
+      "state": "MA",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "TOTAL",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2024,
+      "state": "TOTAL",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2025,
+      "state": "TOTAL",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    }
+  ],
+  "confidence": 0.97,
+  "notes": "Table 3 covers franchised outlets only (MA is only state with activity). Table 4 company-owned outlet data also present: Iowa (1\u21921\u21921), New Mexico (0\u21921\u21921), Colorado/Florida/Texas/Wisconsin each opened 1 in 2025."
+}

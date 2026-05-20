@@ -1,0 +1,253 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "total_revenue",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Affiliate-Owned Business",
+      "outlet_count": 2,
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "value_avg": 847478.62,
+      "page_number": 56
+    },
+    {
+      "metric_name": "gross_profit",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Affiliate-Owned Business",
+      "outlet_count": 2,
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "value_avg": 407692.19,
+      "page_number": 56
+    },
+    {
+      "metric_name": "net_profit",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Affiliate-Owned Business",
+      "outlet_count": 2,
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "value_avg": 225585.72,
+      "page_number": 56,
+      "notes": "After disclosed expenses & imputed fees; Affiliate did not pay imputed fees in 2025."
+    },
+    {
+      "metric_name": "average_ticket",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Affiliate-Owned Business",
+      "outlet_count": 2,
+      "reporting_year": 2025,
+      "value_avg": 4458,
+      "value_median": 3463.25,
+      "value_min": 98.56,
+      "value_max": 19490,
+      "pct_above_avg": 35,
+      "page_number": 56
+    },
+    {
+      "metric_name": "transactions",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Affiliate-Owned Business",
+      "outlet_count": 2,
+      "reporting_year": 2025,
+      "value_avg": 214,
+      "page_number": 56
+    },
+    {
+      "metric_name": "total_revenue",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #1 (6 territories)",
+      "outlet_count": 6,
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "value_avg": 712136.5,
+      "page_number": 57
+    },
+    {
+      "metric_name": "average_ticket",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #1 (6 territories)",
+      "outlet_count": 6,
+      "reporting_year": 2025,
+      "value_avg": 3328,
+      "value_median": 2319.44,
+      "value_min": 170.5,
+      "value_max": 18568.32,
+      "pct_above_avg": 27.16,
+      "page_number": 57
+    },
+    {
+      "metric_name": "transactions",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #1 (6 territories)",
+      "outlet_count": 6,
+      "reporting_year": 2025,
+      "value_avg": 254,
+      "page_number": 57
+    },
+    {
+      "metric_name": "total_revenue",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #2 (6 territories)",
+      "outlet_count": 6,
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "value_avg": 478171.24,
+      "page_number": 58
+    },
+    {
+      "metric_name": "average_ticket",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #2 (6 territories)",
+      "outlet_count": 6,
+      "reporting_year": 2025,
+      "value_avg": 3724,
+      "value_median": 2895.1,
+      "value_min": 250,
+      "value_max": 9823.5,
+      "pct_above_avg": 33.1,
+      "page_number": 58
+    },
+    {
+      "metric_name": "transactions",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #2 (6 territories)",
+      "outlet_count": 6,
+      "reporting_year": 2025,
+      "value_avg": 145,
+      "page_number": 58
+    },
+    {
+      "metric_name": "total_revenue",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #3 (3 territories)",
+      "outlet_count": 3,
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "value_avg": 546817.26,
+      "page_number": 59
+    },
+    {
+      "metric_name": "average_ticket",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #3 (3 territories)",
+      "outlet_count": 3,
+      "reporting_year": 2025,
+      "value_avg": 5331,
+      "value_median": 2907.58,
+      "value_min": 215,
+      "value_max": 24539.45,
+      "pct_above_avg": 14.7,
+      "page_number": 59
+    },
+    {
+      "metric_name": "transactions",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #3 (3 territories)",
+      "outlet_count": 3,
+      "reporting_year": 2025,
+      "value_avg": 170,
+      "page_number": 59
+    },
+    {
+      "metric_name": "total_revenue",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #4 (5 territories)",
+      "outlet_count": 5,
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "value_avg": 853996.82,
+      "page_number": 60
+    },
+    {
+      "metric_name": "average_ticket",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #4 (5 territories)",
+      "outlet_count": 5,
+      "reporting_year": 2025,
+      "value_avg": 4508,
+      "value_median": 3500,
+      "value_min": 178.5,
+      "value_max": 54500,
+      "pct_above_avg": 32.6,
+      "page_number": 60
+    },
+    {
+      "metric_name": "transactions",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #4 (5 territories)",
+      "outlet_count": 5,
+      "reporting_year": 2025,
+      "value_avg": 199,
+      "page_number": 60
+    },
+    {
+      "metric_name": "total_revenue",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #5 (4 territories)",
+      "outlet_count": 4,
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "value_avg": 430101.38,
+      "page_number": 61
+    },
+    {
+      "metric_name": "average_ticket",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #5 (4 territories)",
+      "outlet_count": 4,
+      "reporting_year": 2025,
+      "value_avg": 3493,
+      "value_median": 2710,
+      "value_min": 200,
+      "value_max": 16286.67,
+      "pct_above_avg": 38.4,
+      "page_number": 61
+    },
+    {
+      "metric_name": "transactions",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #5 (4 territories)",
+      "outlet_count": 4,
+      "reporting_year": 2025,
+      "value_avg": 125,
+      "page_number": 61
+    },
+    {
+      "metric_name": "total_revenue",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #6 (1 territory, LA/Ventura/Orange County)",
+      "outlet_count": 1,
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "value_avg": 1335875.14,
+      "page_number": 62,
+      "notes": "Opened 11/2022 as Atticlean; transitioned to Insulation Commandos 6/2023. Franchised 2/2024. Operates territory ~30\u00d7 larger than standard; 80\u201385% revenue from LA County."
+    },
+    {
+      "metric_name": "average_ticket",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #6 (1 territory, LA/Ventura/Orange County)",
+      "outlet_count": 1,
+      "reporting_year": 2025,
+      "value_avg": 5306,
+      "value_median": 4166.48,
+      "value_min": 300,
+      "value_max": 38340.5,
+      "pct_above_avg": 34.2,
+      "page_number": 62
+    },
+    {
+      "metric_name": "transactions",
+      "cohort_name": "other",
+      "cohort_raw": "Reporting Franchised Business #6 (1 territory, LA/Ventura/Orange County)",
+      "outlet_count": 1,
+      "reporting_year": 2025,
+      "value_avg": 286,
+      "page_number": 62
+    }
+  ],
+  "confidence": 0.95,
+  "notes": "Six franchised businesses reported complete 2025 data; nine franchisees excluded (not open entire measurement period). Business #6 owned by franchisor principals."
+}

@@ -1,0 +1,6 @@
+{
+  "initial_franchise_fee_low": 10000,
+  "initial_franchise_fee_high": 45000,
+  "fee_notes": "Tier-based: Tier 1 $45,000 (\u2248200k population), Tier 2 $25,000 (50-100k), Tier 3 $15,000 (<50k). Non-refundable lump sum due at signing.",
+  "confidence": 0.95
+}

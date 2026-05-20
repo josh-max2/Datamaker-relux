@@ -1,0 +1,8 @@
+{
+  "royalty_pct": 6,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": 100,
+  "tech_fee_monthly": 250,
+  "fee_notes": "Royalty tiered: 5% on sales >$1M; 4% on sales >$2M. Brand Fund can increase to 2% (90 days notice), minimum $100/territory/month. DLAR: 5% revenue or $1,500/month (month 4+). Tech $250/user/month.",
+  "confidence": 1.0
+}

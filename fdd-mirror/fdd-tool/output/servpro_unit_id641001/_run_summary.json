@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\wi_scrape\\servpro_unit_id641001.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0103,
+      "input_tokens": 2192,
+      "cached": 0,
+      "output_tokens": 249
+    },
+    "item5": {
+      "cost_usd": 0.0103,
+      "input_tokens": 2057,
+      "cached": 0,
+      "output_tokens": 276
+    },
+    "item6": {
+      "cost_usd": 0.0452,
+      "input_tokens": 11478,
+      "cached": 0,
+      "output_tokens": 718
+    },
+    "item7": {
+      "cost_usd": 0.0075,
+      "input_tokens": 1950,
+      "cached": 0,
+      "output_tokens": 113
+    },
+    "item19": {
+      "cost_usd": 0.0163,
+      "input_tokens": 5088,
+      "cached": 0,
+      "output_tokens": 72,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.2465,
+      "input_tokens": 19301,
+      "cached": 0,
+      "output_tokens": 12575,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3362
+}

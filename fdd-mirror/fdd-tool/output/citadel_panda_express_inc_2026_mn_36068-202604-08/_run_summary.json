@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\citadel_panda_express_inc_2026_mn_36068-202604-08.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0059,
+      "input_tokens": 2553,
+      "cached": 1340,
+      "output_tokens": 127
+    },
+    "item5": {
+      "cost_usd": 0.0067,
+      "input_tokens": 1797,
+      "cached": 1340,
+      "output_tokens": 328
+    },
+    "item6": {
+      "cost_usd": 0.0108,
+      "input_tokens": 1644,
+      "cached": 1340,
+      "output_tokens": 635
+    },
+    "item7": {
+      "cost_usd": 0.0149,
+      "input_tokens": 5732,
+      "cached": 1340,
+      "output_tokens": 88
+    },
+    "item19": {
+      "cost_usd": 0.0765,
+      "input_tokens": 12510,
+      "cached": 1340,
+      "output_tokens": 2839,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.2062,
+      "input_tokens": 20383,
+      "cached": 1340,
+      "output_tokens": 9911,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3211
+}

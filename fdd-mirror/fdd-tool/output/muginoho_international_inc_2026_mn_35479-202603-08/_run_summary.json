@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\muginoho_international_inc_2026_mn_35479-202603-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0056,
+      "input_tokens": 1919,
+      "cached": 1340,
+      "output_tokens": 230
+    },
+    "item5": {
+      "cost_usd": 0.008,
+      "input_tokens": 1617,
+      "cached": 1340,
+      "output_tokens": 449
+    },
+    "item6": {
+      "cost_usd": 0.02,
+      "input_tokens": 2903,
+      "cached": 1340,
+      "output_tokens": 992
+    },
+    "item7": {
+      "cost_usd": 0.0048,
+      "input_tokens": 2345,
+      "cached": 1340,
+      "output_tokens": 91
+    },
+    "item19": {
+      "cost_usd": 0.0126,
+      "input_tokens": 5063,
+      "cached": 1340,
+      "output_tokens": 71,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.0928,
+      "input_tokens": 8399,
+      "cached": 1340,
+      "output_tokens": 4749,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.1438
+}

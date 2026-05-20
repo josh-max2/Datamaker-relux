@@ -1,0 +1,445 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 18,
+      "outlets_end": 18,
+      "net_change": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 18,
+      "outlets_end": 18,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 18,
+      "outlets_end": 21,
+      "net_change": 3
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 18,
+      "outlets_end": 21,
+      "net_change": 3
+    },
+    {
+      "year": 2025,
+      "outlet_type": "franchised",
+      "outlets_start": 21,
+      "outlets_end": 79,
+      "net_change": 58
+    },
+    {
+      "year": 2025,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2025,
+      "outlet_type": "total",
+      "outlets_start": 21,
+      "outlets_end": 79,
+      "net_change": 58
+    }
+  ],
+  "state_year_status": [
+    {
+      "year": 2023,
+      "state": "Connecticut",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "Florida",
+      "outlets_start": 4,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 4
+    },
+    {
+      "year": 2023,
+      "state": "New Jersey",
+      "outlets_start": 8,
+      "outlets_opened": 2,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 10
+    },
+    {
+      "year": 2023,
+      "state": "New York",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2023,
+      "state": "Ohio",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2023,
+      "state": "Pennsylvania",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "Virginia",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2023,
+      "state": "TOTAL",
+      "outlets_start": 18,
+      "outlets_opened": 2,
+      "outlets_terminated": 2,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 18
+    },
+    {
+      "year": 2024,
+      "state": "Colorado",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "Connecticut",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "Florida",
+      "outlets_start": 4,
+      "outlets_opened": 2,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 6
+    },
+    {
+      "year": 2024,
+      "state": "New Jersey",
+      "outlets_start": 10,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 10
+    },
+    {
+      "year": 2024,
+      "state": "Pennsylvania",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2024,
+      "state": "Texas",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "Virginia",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "TOTAL",
+      "outlets_start": 18,
+      "outlets_opened": 4,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 21
+    },
+    {
+      "year": 2025,
+      "state": "Arkansas",
+      "outlets_start": 0,
+      "outlets_opened": 2,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2025,
+      "state": "California",
+      "outlets_start": 0,
+      "outlets_opened": 17,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 17
+    },
+    {
+      "year": 2025,
+      "state": "Colorado",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2025,
+      "state": "Connecticut",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "Florida",
+      "outlets_start": 6,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 7
+    },
+    {
+      "year": 2025,
+      "state": "Georgia",
+      "outlets_start": 0,
+      "outlets_opened": 2,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2025,
+      "state": "Maryland",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "Massachusetts",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "Mississippi",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "Missouri",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "Nebraska",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "New Jersey",
+      "outlets_start": 10,
+      "outlets_opened": 2,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 11
+    },
+    {
+      "year": 2025,
+      "state": "North Carolina",
+      "outlets_start": 0,
+      "outlets_opened": 5,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 5
+    },
+    {
+      "year": 2025,
+      "state": "Pennsylvania",
+      "outlets_start": 0,
+      "outlets_opened": 4,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 4
+    },
+    {
+      "year": 2025,
+      "state": "Texas",
+      "outlets_start": 1,
+      "outlets_opened": 12,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 13
+    },
+    {
+      "year": 2025,
+      "state": "Utah",
+      "outlets_start": 0,
+      "outlets_opened": 3,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 3
+    },
+    {
+      "year": 2025,
+      "state": "Virginia",
+      "outlets_start": 2,
+      "outlets_opened": 7,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 9
+    },
+    {
+      "year": 2025,
+      "state": "TOTAL",
+      "outlets_start": 21,
+      "outlets_opened": 60,
+      "outlets_terminated": 2,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 79
+    }
+  ],
+  "confidence": 0.95,
+  "notes": "System-wide growth from 18 outlets (2023) to 79 franchised outlets (2025). Rapid expansion in 2025 with 58 net new franchised units opened across 12 states (California +17, Texas +12, Virginia +7 notably). No company-owned outlets operated 2023\u20132025. Minor terminations (2 in 2025). Transfers: 7 outlets transferred in New Jersey in 2025. See Item 20 Table 5 for projected openings."
+}

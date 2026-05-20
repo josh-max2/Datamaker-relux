@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\uatp_management_llc_2026_mn_36074-202604-05.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0048,
+      "input_tokens": 1706,
+      "cached": 1340,
+      "output_tokens": 217
+    },
+    "item5": {
+      "cost_usd": 0.0077,
+      "input_tokens": 1855,
+      "cached": 1340,
+      "output_tokens": 382
+    },
+    "item6": {
+      "cost_usd": 0.0148,
+      "input_tokens": 2448,
+      "cached": 1340,
+      "output_tokens": 741
+    },
+    "item7": {
+      "cost_usd": 0.0169,
+      "input_tokens": 6377,
+      "cached": 1340,
+      "output_tokens": 93
+    },
+    "item19": {
+      "cost_usd": 0.0978,
+      "input_tokens": 12480,
+      "cached": 1340,
+      "output_tokens": 4268,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.203,
+      "input_tokens": 17490,
+      "cached": 1340,
+      "output_tokens": 10275,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.345
+}

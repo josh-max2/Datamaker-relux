@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\wi_scrape\\fantastic_sams_development_agent_program_id639235.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0097,
+      "input_tokens": 2204,
+      "cached": 0,
+      "output_tokens": 206
+    },
+    "item5": {
+      "cost_usd": 0.0111,
+      "input_tokens": 2425,
+      "cached": 0,
+      "output_tokens": 253
+    },
+    "item6": {
+      "cost_usd": 0.0209,
+      "input_tokens": 2465,
+      "cached": 0,
+      "output_tokens": 902
+    },
+    "item7": {
+      "cost_usd": 0.0066,
+      "input_tokens": 1756,
+      "cached": 0,
+      "output_tokens": 87
+    },
+    "item19": {
+      "cost_usd": 0.0168,
+      "input_tokens": 5142,
+      "cached": 0,
+      "output_tokens": 94,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.0613,
+      "input_tokens": 8301,
+      "cached": 0,
+      "output_tokens": 2425,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.1264
+}

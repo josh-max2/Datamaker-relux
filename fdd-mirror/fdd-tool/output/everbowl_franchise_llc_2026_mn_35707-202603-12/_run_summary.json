@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\everbowl_franchise_llc_2026_mn_35707-202603-12.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0054,
+      "input_tokens": 2020,
+      "cached": 1340,
+      "output_tokens": 199
+    },
+    "item5": {
+      "cost_usd": 0.0093,
+      "input_tokens": 2616,
+      "cached": 1340,
+      "output_tokens": 336
+    },
+    "item6": {
+      "cost_usd": 0.0214,
+      "input_tokens": 4890,
+      "cached": 1340,
+      "output_tokens": 691
+    },
+    "item7": {
+      "cost_usd": 0.008,
+      "input_tokens": 3434,
+      "cached": 1340,
+      "output_tokens": 85
+    },
+    "item19": {
+      "cost_usd": 0.0644,
+      "input_tokens": 8516,
+      "cached": 1340,
+      "output_tokens": 2833,
+      "images_sent": 3
+    },
+    "item20": {
+      "cost_usd": 0.1483,
+      "input_tokens": 13590,
+      "cached": 1340,
+      "output_tokens": 7412,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.2568
+}

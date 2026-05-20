@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": 1000,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": 500,
+  "tech_fee_monthly": 500,
+  "fee_notes": "Royalty: greater of 5% gross sales or $1,000/mo (9% under Franchise Option Program; 2% or $1,000/mo whichever greater for first 24mo under Conversion Franchise Program). Brand Fund: greater of 2% or $500/mo. Tech fee: $500/mo new franchisee, $300/mo for adjacent contiguous territory existing franchisee.",
+  "raw_excerpt": "Royalty Fee The greater of: (a) 5% of Gross Sales of your Franchised Business from the prior month; or (b) $1,000 per month. Brand Fund Fee The greater of: (a) 2% of the Gross Sales of your Franchised Business from the prior month; or (b)$500 per month. Technology Fee $300-$500 per month.",
+  "confidence": 0.98
+}

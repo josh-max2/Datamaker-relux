@@ -1,0 +1,38 @@
+{
+  "pdf": "data\\mn_scrape\\brightstar_franchising_llc_2026_mn_35803-202604-09.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0061,
+      "input_tokens": 2042,
+      "cached": 1340,
+      "output_tokens": 238
+    },
+    "item5": {
+      "cost_usd": 0.0216,
+      "input_tokens": 5949,
+      "cached": 1340,
+      "output_tokens": 490
+    },
+    "item6": {
+      "cost_usd": 0.0245,
+      "input_tokens": 5989,
+      "cached": 1340,
+      "output_tokens": 679
+    },
+    "item7": {
+      "cost_usd": 0.006,
+      "input_tokens": 2798,
+      "cached": 1340,
+      "output_tokens": 83
+    },
+    "item19": {
+      "cost_usd": 0.2928,
+      "input_tokens": 25901,
+      "cached": 1340,
+      "output_tokens": 14581,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.351
+}

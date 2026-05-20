@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 3,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty: greater of $300/week or 6% of Gross Sales. APO: CPS Restaurants and CPSW Walmart Locations pay 3% (1% Marketing Fund + 2% LSM); CPSW non-Walmart pay 4% (1% Marketing Fund + 3% LSM); APO not to exceed 5%. Technology Fee for Walmart Locations: $6.50/month. Digital Menu Board Support Fee for Walmart Locations: $27.50/week.",
+  "raw_excerpt": "Royalty: The greater of (a) $300 or (b) 6% of your Gross Sales. APO: CPSW Walmart Locations and CPS Restaurants: currently 3% of Gross Sales. CPSW Restaurants not in Walmart Locations: currently 4% of Gross Sales.",
+  "confidence": 0.9
+}

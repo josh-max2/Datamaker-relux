@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\paymore_group_llc_2026_mn_36054-202604-04.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0059,
+      "input_tokens": 2155,
+      "cached": 1340,
+      "output_tokens": 203
+    },
+    "item5": {
+      "cost_usd": 0.0089,
+      "input_tokens": 2066,
+      "cached": 1340,
+      "output_tokens": 424
+    },
+    "item6": {
+      "cost_usd": 0.0155,
+      "input_tokens": 2026,
+      "cached": 1340,
+      "output_tokens": 871
+    },
+    "item7": {
+      "cost_usd": 0.0077,
+      "input_tokens": 3346,
+      "cached": 1340,
+      "output_tokens": 85
+    },
+    "item19": {
+      "cost_usd": 0.0605,
+      "input_tokens": 10709,
+      "cached": 1340,
+      "output_tokens": 2132,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.1519,
+      "input_tokens": 13760,
+      "cached": 1340,
+      "output_tokens": 7614,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.2504
+}

@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 10,
+  "royalty_min_monthly": 250,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": 35,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty is tiered: 10% on first $75,000 in Gross Revenues per year (Sept 1\u2013Aug 31) and 8% on Gross Revenues exceeding $75,000. Minimum monthly royalty for Gold Franchise: $250 (years 1\u20132), $400 (years 3\u20134), $500 (years 5\u201310 and renewals). Minimum monthly royalty for Silver Franchise: $250 (years 1\u20132), $300 (years 3\u20134), $350 (years 5\u201310 and renewals). National Marketing Fee is up to 2% of Gross Revenues, currently 1% with a $35/month minimum. Technology Fee is up to $500/year, currently $250/year (annual, not monthly). Technology Fund Fee is up to 1% of Gross Revenues, currently 1% with a $25/month minimum. tech_fee_monthly set to null as the Technology Fee is billed annually ($250/year currently); Technology Fund Fee is a separate percentage-based fee.",
+  "raw_excerpt": "Royalty | 10% on first $75,000 in Gross Revenues and 8% on Gross Revenues in excess of $75,000 each year from September 1 through August 31. For the Gold Franchise, you must pay a minimum monthly royalty of $250 for 1st and 2nd year, $400 for 3rd and 4th year, and $500 during years 5 through 10 and all renewal terms. For the Silver Franchise, you must pay a minimum monthly royalty of $250 for 1st and 2nd year, $300 for 3rd and 4th year and $350 during years 5 through 10 and all renewal terms. | On the 10th day of each month for all Gross Revenues received during the preceding calendar month\nNational Marketing Fee | Up to 2% of Gross Revenues, currently 1% with a minimum of $35 per month. | On the 10th day of each month for the preceding calendar month\nTechnology Fee | Up to $500 per year; currently $250 per year | Upon billing\nTechnology Fund Fee | Up to 1% of Gross Revenues; currently 1% with a minimum of $25 per month. | On the 10th day of each month for the preceding calendar month",
+  "confidence": 0.92
+}

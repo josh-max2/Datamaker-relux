@@ -1,0 +1,6 @@
+{
+  "initial_franchise_fee_low": 50000,
+  "initial_franchise_fee_high": 50000,
+  "fee_notes": "Standard fee $50,000 for single territory (750k-1.25M population). Multi-unit agreements executed simultaneously: $25,000 each. Documented reduction in 2024: 3 agreements reduced from $100k to $75k aggregate. Territory size and fee adjusted accordingly for larger/smaller areas.",
+  "confidence": 0.95
+}

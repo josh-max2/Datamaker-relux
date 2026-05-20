@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 50000,
+  "initial_franchise_fee_high": 75000,
+  "fee_notes": "Single-unit franchise fees (uniform): $75,000 for a Baguette Factory Production Unit, $60,000 for a Production Unit, and $50,000 for a Non-Production Unit. Area Developers receive reduced fees: $60,000 for a Baguette Factory Production Unit, $48,000 for a Production Unit, and $40,000 for a Non-Production Unit. A 50% refund is available if the franchisor terminates for failure to perform pre-opening obligations; no refunds under other circumstances. Area Developers also pay a separate development fee ranging from $20,000 to $184,000 (or higher for more than 10 units), calculated as 50% of the sum of the discounted franchise fees for all units beyond the first.",
+  "raw_excerpt": "You pay us a $75,000 lump sum franchise fee for a Baguette Factory Production Unit, $60,000 for a Production Unit, and $50,000 for a Non-Production Unit when you initially sign the Franchise Agreement. These fees are uniform. We will refund 50% of the franchise fee you paid if we terminate the franchise for failure to perform your pre-opening obligations under the Franchise Agreement, including failure to select a site, failure to develop, and failure to complete training. We do not give refunds under other circumstances.",
+  "confidence": 0.92
+}

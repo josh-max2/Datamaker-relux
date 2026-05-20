@@ -1,0 +1,104 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2025,
+      "outlet_type": "franchised",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    },
+    {
+      "year": 2025,
+      "outlet_type": "company-owned",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    },
+    {
+      "year": 2025,
+      "outlet_type": "total",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    }
+  ],
+  "state_year_status": [
+    {
+      "year": 2023,
+      "state": "TOTAL",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2024,
+      "state": "TOTAL",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2025,
+      "state": "TOTAL",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    }
+  ],
+  "confidence": 0.99,
+  "notes": "No franchised outlets in system 2023-2025. 4 franchise agreements signed but not yet opened as of 12/31/2025 (IN, MA, MO, NV), with 4 projected franchised openings in next fiscal year."
+}

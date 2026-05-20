@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 49950,
+  "initial_franchise_fee_high": 54950,
+  "fee_notes": "Territory fee applies for territories with >4,000 SBEs: $11/SBE up to 500 additional (max $5,500). 20% VetFran discount available for qualified veterans. Multi-unit discounted rates: $24,975\u2013$27,475 with reduced territory fees ($5.50/SBE).",
+  "raw_excerpt": "Initial Fee SBEs Territory Fee\n$49,950 3,000 \u2013 3,500 n/a\n$54,950* 3,501 \u2013 4,000 $11.00/SBE over 4,000*\n\nVetFran Discount: For qualifying veterans or members of the Armed Forces, we offer a 20% one-time discount on the Initial Fee.",
+  "confidence": 0.95
+}

@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 3.5,
+  "royalty_min_monthly": 500,
+  "marketing_fee_pct": 2.25,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty is the greater of $500 or 3.5% of Gross Revenues per month. An additional Service Fee of 0.5% of Gross Revenues is charged monthly. Marketing and Production Fund contribution is currently 2.25% of Gross Revenues (capped at up to 5%). Local and Regional Advertising currently requires spend up to the difference between 3% and other contributions (cap is difference between 5% and Marketing Fund contribution). Combined current advertising/marketing obligation is approximately 3% of Gross Revenues. Promotions costs range from $50\u2013$500/month.",
+  "raw_excerpt": "Royalty Greater of $500 or 3.5% of Gross Revenues per month Payable monthly on 10th day of the next month\nService Fee 0.5% of Gross Revenues Payable monthly on 10th day of the next month\nMarketing and Production Fund Contribution Up to 5% of Gross Revenues (current contribution is 2.25%) Payable monthly on the 10th day of the next month\nLocal and Regional Advertising Up to the difference between 5% and the amount of your contributions to the Marketing and Production Fund. Currently, we require only the difference between 3% and the amount of your other contributions. Weekly or monthly",
+  "confidence": 0.92
+}

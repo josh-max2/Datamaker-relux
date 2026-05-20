@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\smallbizpros_inc_2026_mn_35914-202604-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0058,
+      "input_tokens": 1915,
+      "cached": 1340,
+      "output_tokens": 242
+    },
+    "item5": {
+      "cost_usd": 0.0073,
+      "input_tokens": 1532,
+      "cached": 1340,
+      "output_tokens": 423
+    },
+    "item6": {
+      "cost_usd": 0.0198,
+      "input_tokens": 3311,
+      "cached": 1340,
+      "output_tokens": 897
+    },
+    "item7": {
+      "cost_usd": 0.0037,
+      "input_tokens": 1892,
+      "cached": 1340,
+      "output_tokens": 108
+    },
+    "item19": {
+      "cost_usd": 0.155,
+      "input_tokens": 18578,
+      "cached": 1340,
+      "output_tokens": 6860,
+      "images_sent": 6
+    },
+    "item20": {
+      "cost_usd": 0.1682,
+      "input_tokens": 15834,
+      "cached": 1340,
+      "output_tokens": 8287,
+      "images_sent": 7
+    }
+  },
+  "total_cost_usd": 0.3597
+}

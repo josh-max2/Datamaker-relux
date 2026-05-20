@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\jazzercise_inc_2026_mn_35975-202604-13.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0049,
+      "input_tokens": 1818,
+      "cached": 1340,
+      "output_tokens": 207
+    },
+    "item5": {
+      "cost_usd": 0.0053,
+      "input_tokens": 1322,
+      "cached": 1340,
+      "output_tokens": 333
+    },
+    "item6": {
+      "cost_usd": 0.0142,
+      "input_tokens": 3430,
+      "cached": 1340,
+      "output_tokens": 501
+    },
+    "item7": {
+      "cost_usd": 0.0039,
+      "input_tokens": 2056,
+      "cached": 1340,
+      "output_tokens": 89
+    },
+    "item19": {
+      "cost_usd": 0.0141,
+      "input_tokens": 5498,
+      "cached": 1340,
+      "output_tokens": 83,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.2445,
+      "input_tokens": 18450,
+      "cached": 1340,
+      "output_tokens": 12850,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.287
+}

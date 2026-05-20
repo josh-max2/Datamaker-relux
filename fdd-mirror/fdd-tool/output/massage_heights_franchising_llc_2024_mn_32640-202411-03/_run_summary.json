@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\massage_heights_franchising_llc_2024_mn_32640-202411-03.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0088,
+      "input_tokens": 3106,
+      "cached": 1340,
+      "output_tokens": 209
+    },
+    "item5": {
+      "cost_usd": 0.0074,
+      "input_tokens": 1744,
+      "cached": 1340,
+      "output_tokens": 385
+    },
+    "item6": {
+      "cost_usd": 0.0162,
+      "input_tokens": 3478,
+      "cached": 1340,
+      "output_tokens": 623
+    },
+    "item7": {
+      "cost_usd": 0.0081,
+      "input_tokens": 3460,
+      "cached": 1340,
+      "output_tokens": 92
+    },
+    "item19": {
+      "cost_usd": 0.1291,
+      "input_tokens": 12060,
+      "cached": 1340,
+      "output_tokens": 6435,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.1095,
+      "input_tokens": 11239,
+      "cached": 1340,
+      "output_tokens": 5295,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.2791
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\sir_grout_franchising_llc_2026_mn_35937-202604-10.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0048,
+      "input_tokens": 1890,
+      "cached": 1340,
+      "output_tokens": 182
+    },
+    "item5": {
+      "cost_usd": 0.0056,
+      "input_tokens": 1574,
+      "cached": 1340,
+      "output_tokens": 301
+    },
+    "item6": {
+      "cost_usd": 0.0359,
+      "input_tokens": 5485,
+      "cached": 1340,
+      "output_tokens": 1538
+    },
+    "item7": {
+      "cost_usd": 0.0052,
+      "input_tokens": 2502,
+      "cached": 1340,
+      "output_tokens": 87
+    },
+    "item19": {
+      "cost_usd": 0.0918,
+      "input_tokens": 17167,
+      "cached": 1340,
+      "output_tokens": 2927,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1375,
+      "input_tokens": 12587,
+      "cached": 1340,
+      "output_tokens": 6890,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.2808
+}

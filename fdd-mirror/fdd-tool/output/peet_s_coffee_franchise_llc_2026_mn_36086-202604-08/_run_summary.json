@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\peet_s_coffee_franchise_llc_2026_mn_36086-202604-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0053,
+      "input_tokens": 2014,
+      "cached": 1340,
+      "output_tokens": 193
+    },
+    "item5": {
+      "cost_usd": 0.0048,
+      "input_tokens": 1645,
+      "cached": 1340,
+      "output_tokens": 229
+    },
+    "item6": {
+      "cost_usd": 0.0167,
+      "input_tokens": 4098,
+      "cached": 1340,
+      "output_tokens": 538
+    },
+    "item7": {
+      "cost_usd": 0.0074,
+      "input_tokens": 3170,
+      "cached": 1340,
+      "output_tokens": 98
+    },
+    "item19": {
+      "cost_usd": 0.0653,
+      "input_tokens": 9959,
+      "cached": 1340,
+      "output_tokens": 2603,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.0427,
+      "input_tokens": 8720,
+      "cached": 1340,
+      "output_tokens": 1342,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.1422
+}

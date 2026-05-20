@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}About FranchiseDepth — Independent FDD Data{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "About", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "{{ canonical_url }}#webpage",
+      "name": "About {{ site_name }}",
+      "url": "{{ canonical_url }}",
+      "isPartOf": { "@type": "WebSite", "name": "{{ site_name }}", "url": "{{ SITE_HOST }}{{ url_for('') }}" },
+      "author": { "@type": "Person", "name": "FranchiseDepth Editorial" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "{{ SITE_HOST }}/#organization",
+      "name": "{{ site_name }}",
+      "url": "{{ SITE_HOST }}{{ url_for('') }}",
+      "founder": { "@type": "Person", "name": "FranchiseDepth Editorial" }
+    }
+  ]
+}
+</script>
+{% endblock %}
+{% block description %}FranchiseDepth makes publicly-filed Franchise Disclosure Documents searchable and comparable. What's covered, what isn't, and why this site is independent.{% endblock %}
+{% block content %}
+<article class="about-page">
+    <h1>About FranchiseDepth</h1>
+    <p class="lead">
+        FranchiseDepth makes publicly-filed Franchise Disclosure Documents (FDDs) actually usable for the people who need them most: prospective franchise buyers.
+    </p>
+
+    <h2>Why this exists</h2>
+    <p>
+        About 4,000 US franchise brands publish a Franchise Disclosure Document each year — a 200+ page legal document the Federal Trade Commission requires before they can offer franchises in registration states. The data inside those FDDs is enormously valuable: initial fees, royalty structures, total investment ranges, outlet growth, and (when disclosed) actual revenue and profit figures from operating franchises.
+    </p>
+    <p>
+        But that data is buried. State portals are clunky. PDFs are 200 pages each. Franchisors use a dozen different cohort and metric conventions that make brand-to-brand comparison nearly impossible. Most prospective buyers either pay a franchise consultant (whose compensation depends on placing them) or rely on broker-funded comparison sites that quietly accept "preferred partner" placement fees.
+    </p>
+    <p>
+        FranchiseDepth is the alternative: a free, public, transparently-sourced summary of the structured data inside FDDs, with every figure linked back to the source filing. No "Best Franchise of 2026" rankings. No paid placement. No editorial endorsements. Just data, presented in a form a normal person can compare.
+    </p>
+
+    <h2>Independence</h2>
+    <p>
+        This site is independent. It is not affiliated with any franchisor, franchise broker network, or franchise consulting firm. There are no editorial rankings, no sponsored placements, and no "preferred" brands. The data on a brand page exists only because the franchisor filed a public FDD that we extracted.
+    </p>
+    <p>
+        We are not franchise attorneys. We don't sell franchise consulting. We don't broker introductions. If you need legal advice about a specific franchise opportunity, hire a franchise attorney — they exist for good reason. If you need help evaluating whether a franchise is right for you personally, talk to current franchisees (the FDD's Item 20 includes their contact information).
+    </p>
+
+    <h2>How this site is built</h2>
+    <p>
+        The data extraction methodology, including which Items are extracted, how accuracy is validated, and what is explicitly not collected, is documented on the <a href="{{ url_for('methodology/') }}">methodology page</a>. Every brand page links back to its source FDD filing on the relevant state portal so figures can be independently verified.
+    </p>
+    <p>
+        If anything published here disagrees with the source FDD linked on a brand page, the source is the authoritative version — please flag the discrepancy via the contact page and it will be corrected.
+    </p>
+
+    <h2>What's covered</h2>
+    <p>
+        Per-brand pages currently include data extracted from these FDD Items:
+    </p>
+    <ul>
+        <li><strong>Item 5</strong> — initial franchise fee</li>
+        <li><strong>Item 6</strong> — ongoing fees (royalty, marketing, technology)</li>
+        <li><strong>Item 7</strong> — total estimated initial investment, liquid capital required, net worth required</li>
+        <li><strong>Item 19</strong> — financial performance representations (when disclosed; ~66% of FDDs)</li>
+        <li><strong>Item 20</strong> — outlet counts by state and year, including closures and transfers</li>
+    </ul>
+    <p>
+        These five Items capture the buyer-facing economics of a franchise opportunity. Each brand page surfaces them with: a 100-word plain-English summary, a fact strip with the headline numbers, a fees table, the full Item 19 table with source-page links, an outlet growth chart, a "where they operate" state distribution, an estimated breakeven calculation, a system-health closure-rate badge, and an FAQ section answering the questions buyers actually search for.
+    </p>
+
+    <h2>What's NOT covered (and why)</h2>
+    <p>
+        Some things you might expect on a franchise research site that this site deliberately does not include:
+    </p>
+    <ul>
+        <li><strong>Franchisee testimonials, reviews, or ratings.</strong> They can't be reliably validated, and including them would require trusting third-party sources or accepting submissions that could be manipulated. The FDD's Item 20 contains a federally-required list of current and former franchisees with contact information — that's the authoritative source for firsthand accounts.</li>
+        <li><strong>Editorial rankings.</strong> No "Top 10 Franchises Under $100K." No "Best Franchise to Buy in 2026." These rankings exist on most franchise research sites because they convert well, but they almost always have paid placement behind them. This site presents data and lets you decide.</li>
+        <li><strong>Investment advice.</strong> Data is presented and explained. No recommendation is made about which franchise to buy. That's a personal decision involving capital, time horizon, geography, and risk tolerance.</li>
+        <li><strong>Forward-looking projections.</strong> Every number on this site is historical, extracted from filings franchisors already made. The breakeven estimate is explicitly labeled as a scenario, not a forecast, and uses either the franchisor's own disclosed margins or industry-typical bands — both clearly cited.</li>
+        <li><strong>Brands that haven't filed publicly.</strong> If a franchise doesn't operate in any registration state (rare but it happens), there is no public FDD to extract from. Those brands are absent from this database, not because they're bad, but because the source material doesn't exist.</li>
+    </ul>
+
+    <h2>How this is funded</h2>
+    <p>
+        FranchiseDepth runs on free infrastructure (GitHub Pages). Revenue comes from two affiliate relationships, both disclosed on every brand page and in detail on the <a href="{{ url_for('affiliate-disclosure/') }}">affiliate disclosure page</a>:
+    </p>
+    <ul>
+        <li>Franchise consultant referrals — when you click "Talk to a franchise consultant" and the consultant matches you with a franchise opportunity, the consultant may pay a commission.</li>
+        <li>SBA financing referrals — when you click "Get pre-qualified for SBA financing" and ultimately close a loan, the lender may pay a commission.</li>
+    </ul>
+    <p>
+        Neither relationship influences which brands appear on the site or how their data is presented. Brand pages exist because franchisors filed public FDDs that were extracted, full stop.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+        Get in touch, especially if:
+    </p>
+    <ul>
+        <li>A number on a brand page disagrees with what you see in the source FDD (so it can be corrected)</li>
+        <li>You're a franchisor and want to flag an error in how your data is presented</li>
+        <li>You're a prospective buyer and the site is missing data or context you'd find useful</li>
+        <li>You're a journalist or researcher wanting raw extraction data for analysis</li>
+    </ul>
+    <p>
+        Reach out at <a href="mailto:hello@franchisedepth.com">hello@franchisedepth.com</a>.
+    </p>
+</article>
+{% endblock %}

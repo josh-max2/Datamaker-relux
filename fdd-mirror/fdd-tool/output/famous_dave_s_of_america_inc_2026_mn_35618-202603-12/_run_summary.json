@@ -1,0 +1,13 @@
+{
+  "pdf": "data\\mn_scrape\\famous_dave_s_of_america_inc_2026_mn_35618-202603-12.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0053,
+      "input_tokens": 1709,
+      "cached": 1340,
+      "output_tokens": 254
+    }
+  },
+  "total_cost_usd": 0.0053
+}

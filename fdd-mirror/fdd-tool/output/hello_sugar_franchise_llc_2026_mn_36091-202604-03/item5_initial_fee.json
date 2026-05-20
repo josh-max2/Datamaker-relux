@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 50000,
+  "initial_franchise_fee_high": 160000,
+  "fee_notes": "Single-unit Franchise Agreement: $50,000 Initial Franchise Fee (non-refundable, paid in lump sum at signing) for first Hello Sugar Suite or Hello Sugar Flagship. Under a Development Agreement, a one-time Development Fee replaces the per-unit Initial Franchise Fee: 1 unit = $50,000; 2 units = $90,000; 3 units = $125,000; 4 units = $160,000; each additional unit = $35,000. No additional Initial Franchise Fee is charged at execution of each individual Franchise Agreement under a Development Agreement. Franchisor reserves the right to offer special incentive programs from time to time.",
+  "raw_excerpt": "The Initial Franchise Fee for your first Hello Sugar Suite or Hello Sugar Flagship is $50,000. If you exercise the option to open a Suite before the Flagship is developed, the Initial Franchise Fee is still $50,000.\n\nNumber of Franchised Businesses Development Fee\n1 $50,000\n2 $90,000\n3 $125,000\n4 $160,000\nEach Additional Franchised Business $35,000",
+  "confidence": 0.92
+}

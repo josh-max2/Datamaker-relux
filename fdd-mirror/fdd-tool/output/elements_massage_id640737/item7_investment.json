@@ -1,0 +1,7 @@
+{
+  "total_investment_low": 567239,
+  "total_investment_high": 1097853,
+  "raw_excerpt": "TOTAL ESTIMATED INITIAL INVESTMENT: Traditional Low $567,239 High $1,097,853; Value Engineering Low $524,989 High $711,523",
+  "confidence": 0.95,
+  "notes": "Two studio types: Traditional ($567,239-$1,097,853) and Value Engineering ($524,989-$711,523). Cover page states high as $1,057,853 for Traditional but Item 7 table shows $1,097,853 \u2014 used Item 7 table value as authoritative. Extracted Traditional studio totals as primary."
+}

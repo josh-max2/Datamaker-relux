@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": 300,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": 250,
+  "tech_fee_monthly": 67,
+  "fee_notes": "Royalty: 5% of Gross Revenues or $300/month, greater. Local Advertising: $750/month minimum (not to franchisor ad fund). System Advertising Fee: $250/month or 1% of Gross Revenues, greater. Franchise Support Fee: $1,500/month or 2% of Gross Revenues, greater (dispatch, comms, software, support). Third-party software ~$800/year (~$67/month) plus transaction costs.",
+  "raw_excerpt": "Royalty Fee: 5% of Gross Revenues or $300/month, whichever is greater. Local Advertising: $750/month minimum. System Advertising Fee: $250/month or 1% of Gross Revenues, whichever is greater. Franchise Support Fee: $1,500/month or 2% of Gross Revenues, whichever is greater.",
+  "confidence": 0.95
+}

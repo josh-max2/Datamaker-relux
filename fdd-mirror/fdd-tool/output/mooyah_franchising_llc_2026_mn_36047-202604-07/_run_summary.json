@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\mooyah_franchising_llc_2026_mn_36047-202604-07.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.006,
+      "input_tokens": 2187,
+      "cached": 1340,
+      "output_tokens": 201
+    },
+    "item5": {
+      "cost_usd": 0.0071,
+      "input_tokens": 1737,
+      "cached": 1340,
+      "output_tokens": 370
+    },
+    "item6": {
+      "cost_usd": 0.016,
+      "input_tokens": 4089,
+      "cached": 1340,
+      "output_tokens": 493
+    },
+    "item7": {
+      "cost_usd": 0.0062,
+      "input_tokens": 2833,
+      "cached": 1340,
+      "output_tokens": 85
+    },
+    "item19": {
+      "cost_usd": 0.0405,
+      "input_tokens": 6014,
+      "cached": 1340,
+      "output_tokens": 1738,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.1283,
+      "input_tokens": 11747,
+      "cached": 1340,
+      "output_tokens": 6444,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.2041
+}

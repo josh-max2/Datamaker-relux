@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 25000,
+  "initial_franchise_fee_high": 50000,
+  "fee_notes": "Standard Shop fee is $50,000; Non-Standard Shop fee is $25,000. Area developers prepay a portion credited toward each shop's fee. Development Agreement requires $25,000 per committed restaurant upfront.",
+  "raw_excerpt": "The initial franchise fee for a Standard Shop is $50,000. The initial franchise fee for a Non-Standard Shop is $25,000.",
+  "confidence": 0.9
+}

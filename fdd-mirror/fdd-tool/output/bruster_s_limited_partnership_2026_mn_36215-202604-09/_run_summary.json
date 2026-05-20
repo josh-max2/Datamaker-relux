@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\bruster_s_limited_partnership_2026_mn_36215-202604-09.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0147,
+      "input_tokens": 3474,
+      "cached": 0,
+      "output_tokens": 218
+    },
+    "item5": {
+      "cost_usd": 0.0057,
+      "input_tokens": 1644,
+      "cached": 1340,
+      "output_tokens": 293
+    },
+    "item6": {
+      "cost_usd": 0.0155,
+      "input_tokens": 4029,
+      "cached": 1340,
+      "output_tokens": 470
+    },
+    "item7": {
+      "cost_usd": 0.0138,
+      "input_tokens": 5377,
+      "cached": 1340,
+      "output_tokens": 88
+    },
+    "item19": {
+      "cost_usd": 0.2231,
+      "input_tokens": 14162,
+      "cached": 1340,
+      "output_tokens": 12285,
+      "images_sent": 6
+    },
+    "item20": {
+      "cost_usd": 0.1304,
+      "input_tokens": 11138,
+      "cached": 1340,
+      "output_tokens": 6704,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.4033
+}

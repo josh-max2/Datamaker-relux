@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\purosystem_llc_2025_mn_35251-202601-02.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0049,
+      "input_tokens": 1728,
+      "cached": 1340,
+      "output_tokens": 223
+    },
+    "item5": {
+      "cost_usd": 0.0076,
+      "input_tokens": 2145,
+      "cached": 1340,
+      "output_tokens": 322
+    },
+    "item6": {
+      "cost_usd": 0.0297,
+      "input_tokens": 6677,
+      "cached": 1340,
+      "output_tokens": 888
+    },
+    "item7": {
+      "cost_usd": 0.0206,
+      "input_tokens": 7644,
+      "cached": 1340,
+      "output_tokens": 88
+    },
+    "item19": {
+      "cost_usd": 0.0476,
+      "input_tokens": 11330,
+      "cached": 1340,
+      "output_tokens": 1147,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.1815,
+      "input_tokens": 18289,
+      "cached": 1340,
+      "output_tokens": 8686,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.292
+}

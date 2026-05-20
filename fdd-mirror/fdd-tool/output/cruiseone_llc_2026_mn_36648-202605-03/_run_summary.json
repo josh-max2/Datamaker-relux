@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\cruiseone_llc_2026_mn_36648-202605-03.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0134,
+      "input_tokens": 2916,
+      "cached": 0,
+      "output_tokens": 243
+    },
+    "item5": {
+      "cost_usd": 0.0055,
+      "input_tokens": 1589,
+      "cached": 1340,
+      "output_tokens": 291
+    },
+    "item6": {
+      "cost_usd": 0.0156,
+      "input_tokens": 3519,
+      "cached": 1340,
+      "output_tokens": 576
+    },
+    "item7": {
+      "cost_usd": 0.0048,
+      "input_tokens": 2132,
+      "cached": 1340,
+      "output_tokens": 135
+    },
+    "item19": {
+      "cost_usd": 0.096,
+      "input_tokens": 12289,
+      "cached": 1340,
+      "output_tokens": 4183,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.2435,
+      "input_tokens": 18347,
+      "cached": 1340,
+      "output_tokens": 12806,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3788
+}

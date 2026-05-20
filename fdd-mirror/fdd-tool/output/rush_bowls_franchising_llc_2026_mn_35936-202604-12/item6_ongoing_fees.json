@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 400,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": 133,
+  "tech_fee_monthly": 200,
+  "fee_notes": "Royalty is 6% of weekly Gross Sales or $400/month minimum (Brick/Combo); 6% flat for Food Truck. Brand Fund is 2% or $133/month minimum, capped at 3% with 90-day notice. Local advertising requirement currently 2% of Gross Sales. Tech fee up to $200/month per location, not currently charged.",
+  "raw_excerpt": "Royalty: The greater of (i) 6% of your weekly Gross Sales, or (ii) $400 per month for a Brick Restaurant or a Combo; 6% for a Food Truck. Brand Fund Contribution: The greater of (i) 2% of your weekly Gross Sales, or (ii) $133 per month.",
+  "confidence": 0.96
+}

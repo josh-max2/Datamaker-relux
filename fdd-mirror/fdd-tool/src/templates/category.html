@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}{{ category_label }} Franchises — Cost &amp; Earnings Data{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": category_label, "url": canonical_url}
+]) }}{% endblock %}
+{% block description %}Compare {{ brands|length }} {{ category_label }} franchise brands. Initial fees, royalty rates, total investment ranges, and Item 19 financial performance data.{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "{{ category_label }} Franchises",
+  "description": "Comparison of {{ brands|length }} {{ category_label|lower }} franchise brands.",
+  "url": "{{ canonical_url }}",
+  "isPartOf": { "@type": "WebSite", "name": "{{ site_name }}", "url": "{{ SITE_HOST }}{{ url_for('') }}" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "{{ category_label }} franchise brands",
+    "numberOfItems": {{ brands|length }},
+    "itemListElement": [
+      {% for b in brands %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "url": "{{ SITE_HOST }}{{ url_for('franchise/' ~ b.slug ~ '/') }}",
+        "name": {{ (b.brand_name or b.legal_name)|tojson }}
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+{% endblock %}
+{% block content %}
+<section class="hero">
+    <h1>{{ category_label }} franchises</h1>
+    <p class="lead">{{ brands|length }} brands tracked. Compare fees, investment ranges, and earnings disclosures side-by-side.</p>
+    {% if aggregates %}
+    <div class="aggregates">
+        {% if aggregates.median_royalty is not none %}<div><span class="label">Median royalty</span><span class="value">{{ aggregates.median_royalty }}%</span></div>{% endif %}
+        {% if aggregates.median_initial_fee is not none %}<div><span class="label">Median initial fee</span><span class="value">${{ '{:,.0f}'.format(aggregates.median_initial_fee) }}</span></div>{% endif %}
+        {% if aggregates.median_investment_low is not none %}<div><span class="label">Median low investment</span><span class="value">${{ '{:,.0f}'.format(aggregates.median_investment_low) }}</span></div>{% endif %}
+    </div>
+    {% endif %}
+    {% if has_earnings_page %}
+    <p class="further-reading"><a href="{{ canonical_url }}highest-reported-earnings/">→ Brands in this category ranked by reported revenue (Item 19)</a></p>
+    {% endif %}
+</section>
+
+<section class="budget-filter" aria-labelledby="budget-filter-heading">
+    <h2 id="budget-filter-heading">For your budget</h2>
+    <p class="notes">Show only franchises with a starting total investment at or below your budget. Brands without a disclosed investment range are always shown.</p>
+    <div class="budget-row">
+        <label for="budget-slider">Max total investment:</label>
+        <input type="range" id="budget-slider" min="50000" max="1000000" step="5000" value="1000000">
+        <output id="budget-display" for="budget-slider">$1,000,000</output>
+        <button type="button" id="budget-reset" class="btn btn-secondary btn-sm">Reset</button>
+    </div>
+    <p class="budget-count-line"><span id="budget-count">{{ brands|length }}</span> of {{ brands|length }} brands shown.</p>
+</section>
+
+<section>
+    <h2>Brands in this category</h2>
+    <p class="notes">Click any column header to sort.</p>
+    <div class="table-scroll">
+    <table class="data-table sortable-table" id="category-table">
+        <thead>
+            <tr>
+                <th data-sort="text">Brand</th>
+                <th data-sort="num">Filing year</th>
+                <th data-sort="num">Initial fee</th>
+                <th data-sort="num">Royalty</th>
+                <th data-sort="num">Investment range</th>
+                <th data-sort="bool">Item 19?</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for b in brands %}
+            <tr data-inv-low="{{ b.inv_low or '' }}">
+                <td><a href="{{ url_for('franchise/' ~ b.slug ~ '/') }}">{{ b.brand_name or b.legal_name }}</a></td>
+                <td data-value="{{ b.filing_year or 0 }}">{{ b.filing_year or '—' }}</td>
+                <td data-value="{{ b.fee_low or b.fee_high or 0 }}">
+                    {% if b.fee_low and b.fee_high and b.fee_low != b.fee_high %}
+                        ${{ '{:,.0f}'.format(b.fee_low) }}–${{ '{:,.0f}'.format(b.fee_high) }}
+                    {% elif b.fee_low %}
+                        ${{ '{:,.0f}'.format(b.fee_low) }}
+                    {% elif b.fee_high %}
+                        ${{ '{:,.0f}'.format(b.fee_high) }}
+                    {% else %}—{% endif %}
+                </td>
+                <td data-value="{{ b.royalty_pct or 0 }}">{% if b.royalty_pct %}{{ b.royalty_pct }}%{% else %}—{% endif %}</td>
+                <td data-value="{{ b.inv_low or 0 }}">
+                    {% if b.inv_low and b.inv_high %}${{ '{:,.0f}'.format(b.inv_low) }}–${{ '{:,.0f}'.format(b.inv_high) }}
+                    {% elif b.inv_low %}${{ '{:,.0f}'.format(b.inv_low) }}+
+                    {% else %}—{% endif %}
+                </td>
+                <td data-value="{% if b.has_item19 %}1{% else %}0{% endif %}">{% if b.has_item19 %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+</section>
+
+<script>
+(function() {
+    const table = document.getElementById('category-table');
+    if (!table) return;
+    const tbody = table.querySelector('tbody');
+    const headers = table.querySelectorAll('th[data-sort]');
+    let currentCol = -1, asc = true;
+    headers.forEach((h, idx) => {
+        h.style.cursor = 'pointer';
+        h.addEventListener('click', () => {
+            if (currentCol === idx) asc = !asc; else { currentCol = idx; asc = true; }
+            const rows = Array.from(tbody.rows);
+            const type = h.dataset.sort;
+            rows.sort((a, b) => {
+                let av = a.cells[idx].dataset.value ?? a.cells[idx].innerText;
+                let bv = b.cells[idx].dataset.value ?? b.cells[idx].innerText;
+                if (type === 'num' || type === 'bool') {
+                    av = parseFloat(av) || 0; bv = parseFloat(bv) || 0;
+                    return asc ? av - bv : bv - av;
+                }
+                av = String(av).toLowerCase(); bv = String(bv).toLowerCase();
+                return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+            });
+            rows.forEach(r => tbody.appendChild(r));
+            headers.forEach(x => x.querySelector('.sort-ind')?.remove());
+            const ind = document.createElement('span');
+            ind.className = 'sort-ind'; ind.textContent = asc ? ' ▲' : ' ▼';
+            h.appendChild(ind);
+        });
+    });
+})();
+
+// Budget filter (F3.2)
+(function() {
+    const slider = document.getElementById('budget-slider');
+    const display = document.getElementById('budget-display');
+    const countEl = document.getElementById('budget-count');
+    const resetBtn = document.getElementById('budget-reset');
+    const table = document.getElementById('category-table');
+    if (!slider || !table) return;
+    const tbody = table.querySelector('tbody');
+    const totalRows = tbody.rows.length;
+
+    const fmtUSD = n => '$' + Number(n).toLocaleString('en-US');
+
+    function applyFilter(budget) {
+        let visible = 0;
+        for (const row of tbody.rows) {
+            const raw = row.dataset.invLow;
+            if (raw === '' || raw === '0') {
+                // No disclosed investment — always show, never filter out
+                row.style.display = '';
+                visible++;
+                continue;
+            }
+            const invLow = parseFloat(raw);
+            if (invLow <= budget) {
+                row.style.display = '';
+                visible++;
+            } else {
+                row.style.display = 'none';
+            }
+        }
+        display.textContent = fmtUSD(budget);
+        countEl.textContent = visible;
+        // Sync URL (don't add history entries — replace)
+        const url = new URL(window.location);
+        if (budget >= parseInt(slider.max, 10)) {
+            url.searchParams.delete('budget');
+        } else {
+            url.searchParams.set('budget', budget);
+        }
+        history.replaceState({}, '', url);
+    }
+
+    slider.addEventListener('input', () => applyFilter(parseInt(slider.value, 10)));
+    resetBtn.addEventListener('click', () => {
+        slider.value = slider.max;
+        applyFilter(parseInt(slider.max, 10));
+    });
+
+    // On load: read ?budget= URL param
+    const initial = new URL(window.location).searchParams.get('budget');
+    if (initial) {
+        const n = parseInt(initial, 10);
+        if (!isNaN(n) && n >= parseInt(slider.min, 10) && n <= parseInt(slider.max, 10)) {
+            slider.value = n;
+            applyFilter(n);
+        }
+    }
+})();
+</script>
+{% endblock %}

@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 3.0,
+  "royalty_min_monthly": 2000,
+  "marketing_fee_pct": 0.75,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": null,
+  "fee_notes": "Base Fee is 3% of monthly Gross Sales (min $2,000/mo, max $7,500/mo if using Preferred Supplier paint). Discounts available for Preferred Supplier use (up to 0.9% off) and Performance Standards (0.1875% off). Growth Fee of 3% on quarterly Gross Sales growth vs. Quarterly Base Volume (discounted to 2.5% for 2-4 shops, 2% for 5+ shops). Advertising Fee 0.75% capped at $950/mo. Central Review Fee currently 0% (up to 2% reserved).",
+  "raw_excerpt": "Base Fee 3% of Monthly Gross Sales (A minimum of $2,000 per month, and, only if you use one of our Preferred Suppliers of paint, a maximum of $7,500 per month). Advertising Fee 0.75% of Gross Sales (Maximum $950 per month).",
+  "confidence": 0.92
+}

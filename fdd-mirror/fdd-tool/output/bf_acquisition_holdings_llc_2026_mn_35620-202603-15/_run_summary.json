@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\bf_acquisition_holdings_llc_2026_mn_35620-202603-15.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0052,
+      "input_tokens": 1658,
+      "cached": 1340,
+      "output_tokens": 256
+    },
+    "item5": {
+      "cost_usd": 0.0084,
+      "input_tokens": 2588,
+      "cached": 1340,
+      "output_tokens": 284
+    },
+    "item6": {
+      "cost_usd": 0.0167,
+      "input_tokens": 4812,
+      "cached": 1340,
+      "output_tokens": 394
+    },
+    "item7": {
+      "cost_usd": 0.0062,
+      "input_tokens": 2841,
+      "cached": 1340,
+      "output_tokens": 88
+    },
+    "item19": {
+      "cost_usd": 0.0364,
+      "input_tokens": 7564,
+      "cached": 1340,
+      "output_tokens": 1156,
+      "images_sent": 3
+    },
+    "item20": {
+      "cost_usd": 0.1136,
+      "input_tokens": 14433,
+      "cached": 1340,
+      "output_tokens": 4925,
+      "images_sent": 7
+    }
+  },
+  "total_cost_usd": 0.1865
+}

@@ -1,0 +1,43 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Gross Revenue",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "58 franchised AMRAMP\u00ae Businesses open during majority of 2024 fiscal year (57 US, 3 Canada)",
+      "outlet_count": 58,
+      "reporting_period": "2024 calendar year (January 1 - December 31, 2024)",
+      "value_avg": 546121.98,
+      "value_median": 345320.5,
+      "value_min": 29489,
+      "value_max": 1876712,
+      "percentile_25": 895025.5,
+      "percentile_75": 168267,
+      "pct_above_avg": null,
+      "page_number": 35,
+      "raw_text": "2024 Gross Revenue by AMRAMP\u00ae Business/Territory - Franchised outlets 2-60 (excluding company-owned)",
+      "notes": "Data compiled from individual outlet list. Some outlets marked as Tier 2 (smaller territories, lower sales). Multi-unit franchisees identified by owner codes. One outlet (outlet 60) partial year due to closure/retirement in 2024. Gross Revenue defined as all revenues from products/services per Item 6 definition."
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Gross Revenue",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "2 company-owned AMRAMP\u00ae Businesses open during majority of 2024 fiscal year",
+      "outlet_count": 2,
+      "reporting_period": "2024 calendar year (January 1 - December 31, 2024)",
+      "value_avg": 2126595.5,
+      "value_median": 2126595.5,
+      "value_min": 1461638,
+      "value_max": 2791553,
+      "percentile_25": 1794116.75,
+      "percentile_75": 2459074.25,
+      "pct_above_avg": null,
+      "page_number": 35,
+      "raw_text": "2024 Gross Revenue by AMRAMP\u00ae Business/Territory - Company-owned outlets 1 (Owner J: $2,791,553) and 6 (Owner J: $1,461,638)",
+      "notes": "Data from individual outlet list. Both outlets operated by same owner (Owner J). Affiliate Gordon Industries also operates similar businesses in MA and RI."
+    }
+  ],
+  "confidence": 0.9,
+  "notes": "Item 19 present with historical FPR data. Individual outlet-level Gross Revenue provided for 2024; statistics calculated from raw data. No projections or forward-looking estimates included. Document states 'Some franchisees have sold this amount' and explicitly states no assurance individual will achieve same results."
+}

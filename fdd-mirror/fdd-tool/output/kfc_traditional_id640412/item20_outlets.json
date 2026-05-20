@@ -1,0 +1,68 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 3842,
+      "outlets_end": 3715,
+      "net_change": -127
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 3715,
+      "outlets_end": 3558,
+      "net_change": -157
+    },
+    {
+      "year": 2025,
+      "outlet_type": "franchised",
+      "outlets_start": 3558,
+      "outlets_end": 3404,
+      "net_change": -154
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 46,
+      "outlets_end": 46,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 46,
+      "outlets_end": 79,
+      "net_change": 33
+    },
+    {
+      "year": 2025,
+      "outlet_type": "company-owned",
+      "outlets_start": 79,
+      "outlets_end": 86,
+      "net_change": 7
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 3888,
+      "outlets_end": 3761,
+      "net_change": -127
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 3761,
+      "outlets_end": 3637,
+      "net_change": -124
+    },
+    {
+      "year": 2025,
+      "outlet_type": "total",
+      "outlets_start": 3637,
+      "outlets_end": 3490,
+      "net_change": -147
+    }
+  ],
+  "confidence": 0.9
+}

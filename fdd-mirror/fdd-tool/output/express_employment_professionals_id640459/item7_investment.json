@@ -1,0 +1,7 @@
+{
+  "total_investment_low": 131000,
+  "total_investment_high": 598700,
+  "raw_excerpt": "TOTAL (Note 13) $131,000 to $287,700 [Core Occupations]; TOTAL (Note 13) $303,500 to $598,700 [Professional Occupations]; TOTAL (Note 13) $313,150 to $503,100 [Healthcare Occupations]; TOTAL (Note 13) $39,450 to $74,850 [Branch Office]",
+  "confidence": 0.95,
+  "notes": "Three separate franchise types with distinct investment ranges. Low=$131,000 is Core only; High=$598,700 is Professional only. Healthcare range $313,150-$503,100. Branch Office $39,450-$74,850 (cover page states $30,950-$74,850; Item 7 table used)."
+}

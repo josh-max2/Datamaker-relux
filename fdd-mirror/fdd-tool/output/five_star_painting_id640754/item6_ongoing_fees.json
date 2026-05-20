@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6.0,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2.0,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 333.25,
+  "fee_notes": "License Fee (royalty): 6% of Gross Sales except roll-in sales, with minimum license fees per Fees Chart (amounts not specified in provided text). MAP Fee: 2% of Gross Sales except roll-in sales. Local Marketing Groups: not to exceed 3% Gross Sales. Software System Monthly: $333.25 (CORE, Qvinci, FranConnect, Customer Engagement Platform, Neighborly Franchise Portal, Gmail). Call Center: $349.99-$449.99/month plus $15 per appointment. Additional fees: Annual Convention $1,000, Transfer $7,500 or 5% of sales price, Training $14,900, Renewal $5,000, Amendment $300.",
+  "raw_excerpt": "License Fee: 6% of Gross Sales except for \"roll-in\" sales. In addition, minimum license fees apply. MAP Fee: 2% of Gross Sales except for \"roll-in\" sales. Software System Monthly Fees: Currently, $333.25 per month.",
+  "confidence": 0.88
+}

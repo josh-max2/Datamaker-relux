@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\the_camp_franchise_systems_llc_2026_mn_35917-202604-10.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.005,
+      "input_tokens": 1898,
+      "cached": 1340,
+      "output_tokens": 195
+    },
+    "item5": {
+      "cost_usd": 0.0091,
+      "input_tokens": 2818,
+      "cached": 1340,
+      "output_tokens": 281
+    },
+    "item6": {
+      "cost_usd": 0.0124,
+      "input_tokens": 1460,
+      "cached": 1340,
+      "output_tokens": 778
+    },
+    "item7": {
+      "cost_usd": 0.0039,
+      "input_tokens": 2083,
+      "cached": 1340,
+      "output_tokens": 83
+    },
+    "item19": {
+      "cost_usd": 0.0898,
+      "input_tokens": 11855,
+      "cached": 1340,
+      "output_tokens": 3857,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.0834,
+      "input_tokens": 11833,
+      "cached": 1340,
+      "output_tokens": 3435,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.2036
+}

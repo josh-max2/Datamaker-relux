@@ -1,0 +1,8 @@
+{
+  "royalty_pct": 6,
+  "fee_notes": "Sliding scale royalty: 6% on annual Gross Sales up to $1,272,818; 4% on $1,272,818\u2013$2,545,637; 1.5% above $2,545,637. Minimum royalty = 6% of (annual Gross Sales minus $300,000) if sales below $300,000. Advantage/IDB Centers: $1,000/mo year 1, 1% year 2, 2% year 3, then standard rates. Marketing fund: Image360 2% capped at $16,329/yr; SBT 1% capped at $11,893/yr; Signs Now 2% capped at $17,678/yr. Tech Services Fee $50/mo. CoreBridge $209\u2013$264/mo.",
+  "raw_excerpt": "Royalties: Sliding scale: 6% of Gross Sales in each calendar year up to and including $1,272,818; 4% of Gross Sales in excess of $1,272,818 up to and including $2,545,637; 1.5% of Gross Sales in excess of $2,545,637. Marketing Fund contribution Image360 Centers: 2% of monthly Gross Sales; not to exceed an annual cap of $16,329 for the 2026 calendar year. Technology Services Fee: $50 per month.",
+  "marketing_fee_pct": 2,
+  "tech_fee_monthly": 50,
+  "confidence": 0.95
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\lilian_usa_llc_2026_mn_35982-202604-13.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0045,
+      "input_tokens": 1698,
+      "cached": 1340,
+      "output_tokens": 203
+    },
+    "item5": {
+      "cost_usd": 0.009,
+      "input_tokens": 2032,
+      "cached": 1340,
+      "output_tokens": 436
+    },
+    "item6": {
+      "cost_usd": 0.0038,
+      "input_tokens": 933,
+      "cached": 1340,
+      "output_tokens": 308
+    },
+    "item7": {
+      "cost_usd": 0.0065,
+      "input_tokens": 2969,
+      "cached": 1340,
+      "output_tokens": 83
+    },
+    "item19": {
+      "cost_usd": 0.0327,
+      "input_tokens": 11689,
+      "cached": 1340,
+      "output_tokens": 83,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.142,
+      "input_tokens": 10677,
+      "cached": 1340,
+      "output_tokens": 7575,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.1986
+}

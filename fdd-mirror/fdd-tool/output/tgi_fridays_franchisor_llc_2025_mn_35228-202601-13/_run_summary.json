@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\tgi_fridays_franchisor_llc_2025_mn_35228-202601-13.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0059,
+      "input_tokens": 2378,
+      "cached": 1340,
+      "output_tokens": 161
+    },
+    "item5": {
+      "cost_usd": 0.0063,
+      "input_tokens": 1687,
+      "cached": 1340,
+      "output_tokens": 321
+    },
+    "item6": {
+      "cost_usd": 0.0219,
+      "input_tokens": 4677,
+      "cached": 1340,
+      "output_tokens": 769
+    },
+    "item7": {
+      "cost_usd": 0.0056,
+      "input_tokens": 2603,
+      "cached": 1340,
+      "output_tokens": 96
+    },
+    "item19": {
+      "cost_usd": 0.0682,
+      "input_tokens": 10306,
+      "cached": 1340,
+      "output_tokens": 2728,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.164,
+      "input_tokens": 17487,
+      "cached": 1340,
+      "output_tokens": 7678,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.272
+}

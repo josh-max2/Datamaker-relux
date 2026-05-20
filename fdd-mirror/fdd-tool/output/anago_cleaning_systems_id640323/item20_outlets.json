@@ -1,0 +1,33 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 45,
+      "outlets_end": 47,
+      "net_change": 2
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 47,
+      "outlets_end": 45,
+      "net_change": -2
+    },
+    {
+      "year": 2025,
+      "outlet_type": "franchised",
+      "outlets_start": 45,
+      "outlets_end": 44,
+      "net_change": -1
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    }
+  ],
+  "confidence": 0.85
+}

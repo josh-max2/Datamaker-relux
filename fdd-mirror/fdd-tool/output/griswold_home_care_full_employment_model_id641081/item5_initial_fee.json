@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 49500,
+  "initial_franchise_fee_high": 54500,
+  "fee_notes": "Base fee $49,500 for single territory with population of at least 250,000 or 25,000 seniors (65+). Additional $5,000 to expand territory to 300,000 population. 20% VetFran discount available. 15% discount on additional territories.",
+  "raw_excerpt": "To purchase a single territory with a population the greater of 250,000 individuals or 25,000 senior citizens (aged 65 and older), you must pay GHC an initial franchise fee (the \"Initial Franchise Fee\") of $49,500. You may increase the population in your territory up to 300,000 for an additional $5,000.",
+  "confidence": 0.95
+}

@@ -1,0 +1,429 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 0,
+      "outlets_end": 20,
+      "net_change": 20
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 20,
+      "outlets_end": 62,
+      "net_change": 42
+    },
+    {
+      "year": 2025,
+      "outlet_type": "franchised",
+      "outlets_start": 62,
+      "outlets_end": 68,
+      "net_change": 6
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2025,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 0,
+      "outlets_end": 20,
+      "net_change": 20
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 20,
+      "outlets_end": 62,
+      "net_change": 42
+    },
+    {
+      "year": 2025,
+      "outlet_type": "total",
+      "outlets_start": 62,
+      "outlets_end": 68,
+      "net_change": 6
+    }
+  ],
+  "state_year_status": [
+    {
+      "year": 2023,
+      "state": "Illinois",
+      "outlets_start": 0,
+      "outlets_opened": 5,
+      "outlets_end": 5
+    },
+    {
+      "year": 2023,
+      "state": "Indiana",
+      "outlets_start": 0,
+      "outlets_opened": 3,
+      "outlets_end": 3
+    },
+    {
+      "year": 2023,
+      "state": "Minnesota",
+      "outlets_start": 0,
+      "outlets_opened": 5,
+      "outlets_end": 5
+    },
+    {
+      "year": 2023,
+      "state": "Missouri",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "Ohio",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "Pennsylvania",
+      "outlets_start": 0,
+      "outlets_opened": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2023,
+      "state": "Tennessee",
+      "outlets_start": 0,
+      "outlets_opened": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2023,
+      "state": "Wisconsin",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "California",
+      "outlets_start": 0,
+      "outlets_opened": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "Connecticut",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "Delaware",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "Florida",
+      "outlets_start": 0,
+      "outlets_opened": 3,
+      "outlets_end": 3
+    },
+    {
+      "year": 2024,
+      "state": "Illinois",
+      "outlets_start": 5,
+      "outlets_opened": 4,
+      "outlets_end": 9
+    },
+    {
+      "year": 2024,
+      "state": "Indiana",
+      "outlets_start": 3,
+      "outlets_opened": 3,
+      "outlets_end": 6
+    },
+    {
+      "year": 2024,
+      "state": "Iowa",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "Kansas",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "Maryland",
+      "outlets_start": 0,
+      "outlets_opened": 5,
+      "outlets_end": 5
+    },
+    {
+      "year": 2024,
+      "state": "Michigan",
+      "outlets_start": 0,
+      "outlets_opened": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "Minnesota",
+      "outlets_start": 5,
+      "outlets_opened": 1,
+      "outlets_end": 6
+    },
+    {
+      "year": 2024,
+      "state": "Missouri",
+      "outlets_start": 1,
+      "outlets_opened": 1,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "Nebraska",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "New Mexico",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "North Carolina",
+      "outlets_start": 0,
+      "outlets_opened": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "North Dakota",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "Ohio",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "Pennsylvania",
+      "outlets_start": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "South Dakota",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "Tennessee",
+      "outlets_start": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "Texas",
+      "outlets_start": 0,
+      "outlets_opened": 5,
+      "outlets_end": 5
+    },
+    {
+      "year": 2024,
+      "state": "Virginia",
+      "outlets_start": 0,
+      "outlets_opened": 3,
+      "outlets_end": 3
+    },
+    {
+      "year": 2024,
+      "state": "Wisconsin",
+      "outlets_start": 1,
+      "outlets_opened": 4,
+      "outlets_end": 5
+    },
+    {
+      "year": 2025,
+      "state": "California",
+      "outlets_start": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2025,
+      "state": "Connecticut",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "Delaware",
+      "outlets_start": 1,
+      "outlets_opened": 1,
+      "outlets_end": 2
+    },
+    {
+      "year": 2025,
+      "state": "Florida",
+      "outlets_start": 3,
+      "outlets_ceased_other": 2,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "Illinois",
+      "outlets_start": 9,
+      "outlets_opened": 3,
+      "outlets_end": 12
+    },
+    {
+      "year": 2025,
+      "state": "Indiana",
+      "outlets_start": 6,
+      "outlets_ceased_other": 1,
+      "outlets_end": 5
+    },
+    {
+      "year": 2025,
+      "state": "Iowa",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "Kansas",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "Maryland",
+      "outlets_start": 5,
+      "outlets_opened": 1,
+      "outlets_end": 6
+    },
+    {
+      "year": 2025,
+      "state": "Michigan",
+      "outlets_start": 2,
+      "outlets_opened": 3,
+      "outlets_end": 5
+    },
+    {
+      "year": 2025,
+      "state": "Minnesota",
+      "outlets_start": 6,
+      "outlets_opened": 1,
+      "outlets_end": 7
+    },
+    {
+      "year": 2025,
+      "state": "Missouri",
+      "outlets_start": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2025,
+      "state": "Nebraska",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "New Mexico",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "North Carolina",
+      "outlets_start": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2025,
+      "state": "North Dakota",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "Ohio",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "Pennsylvania",
+      "outlets_start": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2025,
+      "state": "South Dakota",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "Tennessee",
+      "outlets_start": 2,
+      "outlets_opened": 1,
+      "outlets_end": 3
+    },
+    {
+      "year": 2025,
+      "state": "Texas",
+      "outlets_start": 5,
+      "outlets_ceased_other": 3,
+      "outlets_end": 2
+    },
+    {
+      "year": 2025,
+      "state": "Virginia",
+      "outlets_start": 3,
+      "outlets_end": 3
+    },
+    {
+      "year": 2025,
+      "state": "Wisconsin",
+      "outlets_start": 5,
+      "outlets_opened": 1,
+      "outlets_end": 6
+    }
+  ],
+  "confidence": 0.96
+}

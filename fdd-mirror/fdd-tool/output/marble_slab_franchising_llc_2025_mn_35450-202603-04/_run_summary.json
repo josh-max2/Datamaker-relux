@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\marble_slab_franchising_llc_2025_mn_35450-202603-04.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0047,
+      "input_tokens": 1684,
+      "cached": 1340,
+      "output_tokens": 216
+    },
+    "item5": {
+      "cost_usd": 0.0065,
+      "input_tokens": 1687,
+      "cached": 1340,
+      "output_tokens": 338
+    },
+    "item6": {
+      "cost_usd": 0.0128,
+      "input_tokens": 2103,
+      "cached": 1340,
+      "output_tokens": 672
+    },
+    "item7": {
+      "cost_usd": 0.0124,
+      "input_tokens": 4888,
+      "cached": 1340,
+      "output_tokens": 91
+    },
+    "item19": {
+      "cost_usd": 0.256,
+      "input_tokens": 17875,
+      "cached": 1340,
+      "output_tokens": 13734,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.12,
+      "input_tokens": 12791,
+      "cached": 1340,
+      "output_tokens": 5683,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.4124
+}

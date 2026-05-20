@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": 867,
+  "marketing_fee_pct": 0.5,
+  "marketing_min_monthly": 150,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty: greater of tiered percentage (5% <$48k, 4.5% $48k-$96k, 4% >$96k) or minimum ($50/wk yr1, $100/wk yr2, $200/wk yr3+). National Advertising Fund: 0.5% revenue or $150/mo minimum, can increase to 3%. Convention: $2,400/year. Technology fee: up to $1,000/mo if charged.",
+  "raw_excerpt": "Royalty Fee: The greater of the Percentage Royalty or the Minimum Royalty. The 'Percentage Royalty' is 5% of Gross Revenue if below $48,000; 4.5% of Gross Revenue if between $48,000 and $95,999; and 4% of Gross Revenue if above $96,000. The 'Minimum Royalty' is $50 per week per Office during your first year, $100 per week per Office during your second year; and $200 per week per Office thereafter.",
+  "confidence": 0.96
+}

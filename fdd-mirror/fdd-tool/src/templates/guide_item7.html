@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Understanding FDD Item 7: How to Read Total Franchise Investment{% endblock %}
+{% block description %}What Item 7 of a Franchise Disclosure Document actually includes, what's missing, the line items that surprise buyers, and how to use the low/high range without underestimating real-world cost.{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Guides", "url": url_for('guides/')},
+    {"label": "Understanding Item 7", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Understanding FDD Item 7: How to Read Total Franchise Investment",
+  "author": { "@type": "Person", "name": "FranchiseDepth Editorial", "url": "{{ url_for('about/') }}" },
+  "publisher": { "@type": "Organization", "name": "{{ site_name }}" },
+  "dateModified": "{{ generated_at }}",
+  "mainEntityOfPage": "{{ canonical_url }}",
+  "about": "Franchise Disclosure Document Item 7 — Estimated Initial Investment"
+}
+</script>
+{% endblock %}
+{% block content %}
+<article class="guide-page">
+    <header>
+        <h1>Understanding FDD Item 7</h1>
+        <p class="lead">
+            Item 7 is where the franchisor tells you how much it actually costs to open and operate the franchise for the first three months. It looks like a simple cost table. It's not. This guide walks through the line items that surprise buyers, what's missing from the range, and how to use the high end honestly.
+        </p>
+        <p class="byline">
+            <span class="dateline">Page updated {{ generated_at }}</span>
+        </p>
+    </header>
+
+    <section>
+        <h2>What Item 7 is</h2>
+        <p>
+            <a class="jargon" href="{{ url_for('methodology/') }}#g-item7" title="See glossary">Item 7</a> is the "Estimated Initial Investment" section of every <a class="jargon" href="{{ url_for('methodology/') }}#g-fdd" title="See glossary">Franchise Disclosure Document</a>. By federal rule, it must include:
+        </p>
+        <ul>
+            <li>The franchise fee (also disclosed in Item 5)</li>
+            <li>All other expenses the franchisee will incur to begin operating the business</li>
+            <li>Working capital sufficient to operate for at least 3 months — the "additional funds" line</li>
+            <li>A low estimate and a high estimate for each line item</li>
+        </ul>
+        <p>
+            The numbers are presented in a table with a Low column, a High column, footnotes explaining each line, and a Total row at the bottom. The Total row is the number you'll see on most franchise listings and on every brand page on this site.
+        </p>
+    </section>
+
+    <section>
+        <h2>What the range actually represents</h2>
+        <p>
+            The Low column assumes everything goes right: smaller territory, less build-out, cheapest equipment options, lowest market rent. The High column assumes everything is bigger or more expensive: larger territory, premium location, full equipment package, urban-market rent.
+        </p>
+        <p>
+            <strong>Almost no franchisee opens at the Low end.</strong> The Low is structurally optimistic — it assumes you negotiate the best rate on every line and choose the cheapest option for everything. In practice, most new franchisees land in the upper half of the range. When you're stress-testing your financing, use the High end, not the Total midpoint.
+        </p>
+        <p class="callout">
+            <strong>Buyer rule:</strong> Plan against the High end. If you can't afford the High end including 6-12 months of working capital reserves (separate from Item 7's 3-month minimum), the franchise is not actually within your budget — even if the Low end is.
+        </p>
+    </section>
+
+    <section>
+        <h2>Line items that surprise first-time buyers</h2>
+        <p>Each FDD's table is different, but most include a recognizable set of categories. Here are the lines that buyers tend to underestimate or miss:</p>
+
+        <h3>Real estate + build-out</h3>
+        <p>
+            Usually the biggest line. The Low column often assumes a second-generation space (an existing restaurant or retail location with kitchen/plumbing already in place). The High column assumes a raw shell that requires full build-out. The gap between these is often $100K-$300K for retail concepts. If you can't find second-generation space, you can't open at the Low number.
+        </p>
+
+        <h3>Initial inventory</h3>
+        <p>
+            What you need on hand to open the doors. For food brands this is opening food + paper + chemicals; for retail it's the starting product mix; for service brands it's tools and consumables. Often $15K-$80K. The Low column may assume favorable supplier terms (net-30, returns allowed) that new franchisees typically don't get on day one.
+        </p>
+
+        <h3>Equipment + furniture + signage</h3>
+        <p>
+            Franchisor-specified equipment packages, POS systems, security, refrigeration, exterior signs. Often locked to specific approved suppliers — you can't shop around. The Low end may assume used equipment is acceptable for your concept; many franchisors require new.
+        </p>
+
+        <h3>"Additional Funds" (working capital)</h3>
+        <p>
+            The line most buyers misread. This is the 3-month operating-cost cushion the franchisor estimates you'll need before the outlet generates positive cash flow. <strong>Three months is the federal minimum disclosure</strong> — it is not "how long you'll need to live without paying yourself."
+        </p>
+        <p>
+            Real ramp-up is typically 6-18 months for most concepts. The Additional Funds line is the floor of what you need in reserves, not the ceiling. Many failed franchises are franchisees who could afford to open but ran out of personal runway 5-8 months in.
+        </p>
+
+        <h3>Training expenses + travel</h3>
+        <p>
+            Most franchisors require pre-opening training at corporate headquarters. The Low end assumes one trainee, shared rental car, modest hotel. The High end can hit $15K+ for multiple owners + extended training + air travel + meals. If you're an absentee owner sending a manager, factor in their training cost too.
+        </p>
+
+        <h3>Insurance + permits + professional fees</h3>
+        <p>
+            General liability, workers comp, vehicle (if applicable), and depending on category: liquor license, food permits, sales tax registration. Plus the franchise attorney + accountant review fees you should have, even if Item 7 doesn't list them as your obligation.
+        </p>
+
+        <h3>Grand opening marketing</h3>
+        <p>
+            Often a required spend in the first 30-90 days. Usually $5K-$25K. Separate from the ongoing marketing fund contribution (which is in Item 6, not 7).
+        </p>
+    </section>
+
+    <section>
+        <h2>What's NOT in Item 7</h2>
+        <p>
+            Item 7 is "investment to begin operation." It deliberately excludes:
+        </p>
+        <ul>
+            <li><strong>Your owner-operator salary.</strong> If you're funding personal living expenses from the business, that's separate.</li>
+            <li><strong>Loan payments.</strong> Interest + principal on any financing isn't an Item 7 line; it's an ongoing operating cost.</li>
+            <li><strong>Real estate purchase (in most cases).</strong> Item 7 usually assumes you're leasing. If you're buying property, that's separate and often $300K-$2M depending on the concept.</li>
+            <li><strong>Equity in the franchisor.</strong> If the agreement requires you to take equity rather than just pay a fee, that's not always captured here.</li>
+            <li><strong>Personal liquidity / net worth requirements.</strong> Those are in Item 17 (financing) or Item 20 (general qualifications), not Item 7.</li>
+        </ul>
+        <p>
+            The headline-grabbing "$150,000 to open" you'll see on franchise marketing materials is the Item 7 Total. The honest budget number for buyers is closer to <em>Item 7 High + 6-12 months of additional working capital + your living expenses during ramp + closing costs on any financing</em>. Often 1.5-2x the headline.
+        </p>
+    </section>
+
+    <section>
+        <h2>How to use Item 7 well</h2>
+        <ol>
+            <li><strong>Read every line item, not just the Total.</strong> Footnotes change the meaning of the range materially. "Excludes franchisee's travel" or "assumes second-generation space" appear in fine print.</li>
+            <li><strong>Plan against the High end, not the midpoint.</strong> Most new franchisees land in the upper half.</li>
+            <li><strong>Add 6-12 months of working capital beyond Item 7's "Additional Funds".</strong> Item 7's 3 months is the legal minimum, not a realistic ramp-up estimate.</li>
+            <li><strong>Cross-check against Item 19.</strong> If Item 19 shows median outlet revenue of $400K and your gross margin is 15%, you're netting $60K/year before debt service. If your total investment is $400K with 10-year SBA financing at 9%, your debt service alone is ~$60K/year. Item 19 + Item 7 together tell you whether breakeven is plausible at all.</li>
+            <li><strong>Get the High-end number from current franchisees.</strong> Item 20 lists every existing franchisee's contact info. Call 5-10 of them. Ask: "What did your actual all-in cost end up being? What was Item 7 wrong about?"</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Red flags in Item 7</h2>
+        <ul>
+            <li><strong>Very wide Low-to-High spread</strong> (e.g., $80K to $400K). Often a sign that "low" is a unrealistic best-case the franchisor's lawyers wrote for marketing copy.</li>
+            <li><strong>"Additional Funds" line that's a small fraction of the Total.</strong> 3-month working capital should plausibly cover 3 months of operating cost. If it's a tiny number, the franchisor is either under-stating operating cost or assuming you'll generate positive cash flow within 90 days (rare).</li>
+            <li><strong>Heavy footnotes shrinking the range.</strong> "Range assumes…" with multiple qualifiers usually means the disclosed numbers don't represent the typical buyer's experience.</li>
+            <li><strong>No second-generation discount or "varies widely by location" boilerplate</strong> on the real estate line. Real estate cost is genuinely variable, and a franchisor refusing to disclose a representative range is hiding a problem.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How {{ site_name }} reports Item 7</h2>
+        <p>
+            On every <a href="{{ url_for('') }}">brand page</a>, we show the Item 7 Total range (low to high) extracted verbatim from the source FDD, plus the individual line-item breakdown when the franchisor discloses one. Where the FDD includes a footnote that materially changes the interpretation, we include it. Every number links to the source PDF page so you can verify.
+        </p>
+        <p>
+            See <a href="{{ url_for('guides/understanding-item-19/') }}">Understanding FDD Item 19</a> for how to read the earnings side, and the <a href="{{ url_for('methodology/') }}">methodology page</a> for our extraction process.
+        </p>
+    </section>
+</article>
+{% endblock %}

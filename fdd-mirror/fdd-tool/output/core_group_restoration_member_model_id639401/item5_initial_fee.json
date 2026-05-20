@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 25000,
+  "initial_franchise_fee_high": 80000,
+  "fee_notes": "Initial Membership Fee varies by franchise type and territory population. Elite: $60,000\u2013$80,000; Signature: $50,000\u2013$70,000; Main Street: $25,000\u2013$45,000. Non-refundable. Franchisor may finance up to 100% over 12-60 months.",
+  "raw_excerpt": "You must pay us an initial membership fee (\"Initial Membership Fee\") when you sign the Franchise Agreement, which will be based on the population of your Territory. The current Initial Membership Fee is calculated as follows: Territory Population | Initial Membership Fee (Elite) | Initial Membership Fee (Signature) | Initial Membership Fee (Main Street) | Under 750,000 | $60,000 | $50,000 | $25,000 | ... | 2,000,000 or more | $80,000 | $70,000 | $45,000",
+  "confidence": 0.99
+}

@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}SBA 7(a) Franchise Financing: How Eligibility Actually Works Now{% endblock %}
+{% block description %}The SBA Franchise Directory was discontinued in 2023. Eligibility for SBA 7(a) franchise loans is now decided per-lender, per-deal. Here's what changed, what to ask your lender, and what makes a franchisor pass or fail the new criteria.{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Guides", "url": url_for('guides/')},
+    {"label": "SBA 7(a) franchise financing", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "SBA 7(a) Franchise Financing: How Eligibility Actually Works Now",
+  "author": { "@type": "Person", "name": "FranchiseDepth Editorial", "url": "{{ url_for('about/') }}" },
+  "publisher": { "@type": "Organization", "name": "{{ site_name }}" },
+  "dateModified": "{{ generated_at }}",
+  "mainEntityOfPage": "{{ canonical_url }}",
+  "about": "SBA 7(a) loan eligibility for franchise purchases"
+}
+</script>
+{% endblock %}
+{% block content %}
+<article class="guide-page">
+    <header>
+        <h1>SBA 7(a) franchise financing — how eligibility actually works now</h1>
+        <p class="lead">
+            If you're searching for whether a specific franchise is "SBA-eligible," the honest answer is more nuanced than it used to be. The <strong>SBA Franchise Directory was discontinued in 2023</strong>. There's no central list anymore. Eligibility is now decided per-lender, per-deal, using a structured review of the franchisor's FDD. This guide explains what changed, what your lender will check, and what to ask before you waste time on a franchise that won't qualify.
+        </p>
+        <p class="byline">
+            <span class="dateline">Page updated {{ generated_at }}</span>
+        </p>
+    </header>
+
+    <section>
+        <h2>What changed in 2023</h2>
+        <p>
+            Before 2023, the SBA maintained a public "Franchise Directory" — a single list every franchise had to be on for any 7(a) lender to consider an applicant. If the brand wasn't on the directory, no SBA loan. Simple, but slow: brands waited months to get listed and the SBA's review staff was a bottleneck.
+        </p>
+        <p>
+            The SBA deprecated the directory and moved to a <strong>per-lender, per-deal model</strong>. Now individual SBA-preferred lenders independently review each franchisor's most recent FDD against SBA's published criteria (currently in SOP 50 10 7.1, Section A, Chapter 2 — "Affiliation"). If the lender determines the franchisor passes, they can approve the loan. Different lenders can reach different conclusions on the same franchise.
+        </p>
+        <p class="callout">
+            <strong>What this means for buyers:</strong> There's no longer a single "yes/no" answer to "is this franchise SBA eligible." The answer is "ask your specific lender, and a different lender might disagree." Smart buyers shop their deal across 2-3 SBA-preferred lenders to find one that has done deals with the brand recently.
+        </p>
+    </section>
+
+    <section>
+        <h2>What the lender actually checks</h2>
+        <p>
+            SBA's affiliation criteria are about whether the franchisor exerts so much control over the franchisee that the franchisee isn't truly an independent small business. If the lender concludes the franchisee is essentially a glorified employee, the deal can't get SBA backing. The specific items lenders flag, working through the FDD:
+        </p>
+
+        <h3>1. Termination + non-renewal clauses (Item 17)</h3>
+        <p>
+            Can the franchisor terminate the franchise agreement for arbitrary reasons or at any time? If so, that's a control flag — the franchisee doesn't have real autonomy. Lenders look for termination clauses tied to specific, breach-related triggers (royalty non-payment, brand-standard violations) rather than franchisor discretion.
+        </p>
+
+        <h3>2. Forced sale / call rights</h3>
+        <p>
+            Can the franchisor force the franchisee to sell their outlet back at a price the franchisor sets? Or trigger a forced sale on the franchisee's death or disability with the franchisor as the mandatory buyer? Either is usually disqualifying. The franchisee needs to be able to monetize the business they built.
+        </p>
+
+        <h3>3. Excessive franchisor pricing control</h3>
+        <p>
+            If the franchisor mandates specific resale prices to consumers (not "maximum suggested"), that's a control flag. Franchisees generally need pricing autonomy to qualify as independent businesses. Recommended pricing is fine; required pricing usually isn't.
+        </p>
+
+        <h3>4. Captive supply chains with excessive markup</h3>
+        <p>
+            Required-vendor arrangements where the franchisor or its affiliate is the sole supplier <em>and</em> the markup over market is excessive flag as economic-dependency control. Some captive supply is allowed (the franchisor's proprietary product line, e.g.) but the lender will look at how much of total spend goes through franchisor-controlled vendors.
+        </p>
+
+        <h3>5. Transfer restrictions</h3>
+        <p>
+            If the franchisor has unlimited discretion to block the franchisee from selling to a qualified buyer at any price, that's a flag. Standard practice — franchisor right of first refusal, franchisor approval of buyer's qualifications — is fine; absolute veto power isn't.
+        </p>
+
+        <h3>6. Hiring + termination control over franchisee staff</h3>
+        <p>
+            If the franchise agreement requires the franchisor to approve which managers the franchisee hires or fires, that's a strong control flag. Franchisees can be required to maintain operational standards; they can't be required to surrender HR autonomy.
+        </p>
+    </section>
+
+    <section>
+        <h2>How to find out if a specific brand passes</h2>
+        <ol>
+            <li><strong>Ask the franchisor directly.</strong> They know which lenders have approved their brand for SBA financing recently. A franchisor that won't or can't give you specific lender names is a yellow flag — either they have no recent SBA deals, or they don't track which lenders.</li>
+            <li><strong>Talk to current franchisees who used SBA financing.</strong> The <a href="{{ url_for('guides/validating-franchisee-earnings/') }}">validation-calls process</a> covers this. Ask: "Did you use SBA financing? Which lender? Any complications around the SBA review?"</li>
+            <li><strong>Call 2-3 SBA-preferred lenders directly</strong> with the brand name. Ask: "Have you done a 7(a) deal with [Brand] in the last 18 months? Are you currently underwriting them?" Lenders' answers vary — get multiple opinions.</li>
+            <li><strong>Reference the franchisor's Item 10 (Financing)</strong> in their FDD. If the franchisor offers in-house financing as an alternative, that's often a sign they've struggled with SBA — though not always.</li>
+        </ol>
+        <p>
+            <strong>Don't trust generic "SBA-eligible" claims</strong> on the franchisor's marketing materials or third-party "franchise opportunity" sites. Those are often based on the old directory listing and haven't been updated. The only reliable answer comes from a specific lender quoting a specific recent decision.
+        </p>
+    </section>
+
+    <section>
+        <h2>SBA 7(a) loan basics (refresher)</h2>
+        <p>
+            For buyers new to SBA financing — the relevant facts about a 7(a) loan when used to acquire or open a franchise:
+        </p>
+        <ul>
+            <li><strong>Loan size:</strong> Up to $5M, though most franchise deals are $150K–$1.5M</li>
+            <li><strong>Down payment:</strong> Typically 10-20% of the project cost. Lower for cash-flow-strong brands; higher for unproven concepts</li>
+            <li><strong>Term:</strong> Up to 10 years for working capital + equipment, up to 25 years if real estate is included</li>
+            <li><strong>Interest rate:</strong> Variable, tied to Prime + a spread (typically Prime + 2-3%). As of 2026, that puts most franchise 7(a) loans at roughly 9-11%</li>
+            <li><strong>Personal guarantee:</strong> Required from any owner with 20%+ equity in the franchise entity</li>
+            <li><strong>Collateral:</strong> Lender takes blanket lien on business assets; may require personal-asset collateral on larger deals</li>
+            <li><strong>SBA guarantee fee:</strong> Paid at closing, typically 2-3.75% of the guaranteed portion. Fee waiver programs exist for veteran-owned applicants</li>
+        </ul>
+        <p>
+            The single biggest determinant of approval is your personal credit + cash position — not the franchise brand. A 750+ credit score + 30% down + 6 months reserves opens almost every door. The franchise brand matters most when your personal qualifications are marginal.
+        </p>
+    </section>
+
+    <section>
+        <h2>How to stress-test the deal economics before applying</h2>
+        <ol>
+            <li><strong>Compute your debt service:</strong> Use a 7(a) calculator (or a spreadsheet: principal × monthly rate × (1 + monthly rate)^n) ÷ ((1 + monthly rate)^n - 1). For a $300K loan at 10% over 10 years: ≈ $3,965/month, $47,580/year.</li>
+            <li><strong>Subtract from disclosed net profit:</strong> If the franchisor's Item 19 shows median net profit of $85K, but you'll have $47K in debt service, your "free cash" is $38K — before any owner salary, before any unexpected costs.</li>
+            <li><strong>Re-compute breakeven on after-debt-service profit:</strong> See the <a href="{{ url_for('guides/franchise-breakeven-how-long/') }}">breakeven guide</a> for the full framework. Most franchise breakeven horizons stretch 2-3x when you account for financing.</li>
+            <li><strong>Check the worst-case:</strong> If your outlet performs in the bottom quartile of the franchisor's Item 19 (P25 figures), can you still service the loan? If no, you're betting on being above-average — which is what 75% of buyers can't do by definition.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Red flags during the SBA-financing process</h2>
+        <ul>
+            <li><strong>Franchisor strongly steers you to a single "approved" lender</strong> — that lender may have a relationship that doesn't serve you. Always shop 2-3 SBA-preferred lenders independently.</li>
+            <li><strong>Lender pushes you toward a non-SBA loan ("conventional small-business loan")</strong> — usually because the franchise doesn't pass affiliation review and the lender doesn't want to walk you through that. Worth asking why directly.</li>
+            <li><strong>The deal requires unusual collateral</strong> (your house, retirement accounts) — common for marginal applicants, but if the underlying business were strong, the lender wouldn't need it. Reconsider.</li>
+            <li><strong>Franchise broker promises SBA pre-approval before you've seen the FDD</strong> — not how SBA works. Walk away.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Related guides</h2>
+        <ul>
+            <li><a href="{{ url_for('guides/understanding-item-7/') }}">Understanding FDD Item 7</a> — what your loan needs to cover, and what's missing from the headline number</li>
+            <li><a href="{{ url_for('guides/understanding-item-19/') }}">Understanding FDD Item 19</a> — how to read the earnings disclosure</li>
+            <li><a href="{{ url_for('guides/franchise-breakeven-how-long/') }}">How long to break even on a franchise?</a> — debt-adjusted breakeven math</li>
+            <li><a href="{{ url_for('guides/validating-franchisee-earnings/') }}">Validating franchisee earnings</a> — ask current SBA-funded franchisees about their experience</li>
+        </ul>
+    </section>
+</article>
+{% endblock %}

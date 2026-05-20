@@ -1,0 +1,108 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Gross Revenue",
+      "cohort_name": "open_24_plus_mo",
+      "cohort_raw": "40 Reporting Franchisees in 69 territories, open full-time 24+ months as of Dec 31, 2024",
+      "outlet_count": 40,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "value_avg": 2024296,
+      "page_number": 47
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Gross Profit Margin",
+      "cohort_name": "open_24_plus_mo",
+      "cohort_raw": "40 Reporting Franchisees in 69 territories, open full-time 24+ months as of Dec 31, 2024",
+      "outlet_count": 40,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "value_avg": 813837,
+      "page_number": 47
+    },
+    {
+      "metric_name": "ebitda",
+      "metric_raw": "Earnings before Interest, Depreciation and Amortization",
+      "cohort_name": "open_24_plus_mo",
+      "cohort_raw": "40 Reporting Franchisees in 69 territories, open full-time 24+ months as of Dec 31, 2024",
+      "outlet_count": 40,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "value_avg": 44892,
+      "page_number": 47
+    },
+    {
+      "metric_name": "net_profit",
+      "metric_raw": "Average Revenue less Costs and Operating Expenses adjusted for Owner's Related Expenses",
+      "cohort_name": "open_24_plus_mo",
+      "cohort_raw": "40 Reporting Franchisees in 69 territories, open full-time 24+ months as of Dec 31, 2024",
+      "outlet_count": 40,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "value_avg": 204559,
+      "page_number": 47
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Gross Profit Margin percentage",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Top Third (15 of 44 Reporting Franchisees in 74 territories, open 12 months ending Dec 31, 2024)",
+      "outlet_count": 15,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "value_avg": 49.4,
+      "value_median": 48.6,
+      "value_min": 43.8,
+      "value_max": 63.1,
+      "page_number": 50
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Gross Profit Margin percentage",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Middle Third (14 of 44 Reporting Franchisees in 74 territories, open 12 months ending Dec 31, 2024)",
+      "outlet_count": 14,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "value_avg": 40.6,
+      "value_median": 40.7,
+      "value_min": 37.0,
+      "value_max": 43.4,
+      "page_number": 50
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Gross Profit Margin percentage",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Bottom Third (15 of 44 Reporting Franchisees in 74 territories, open 12 months ending Dec 31, 2024)",
+      "outlet_count": 15,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "value_avg": 27.6,
+      "value_median": 31.0,
+      "value_min": -4.8,
+      "value_max": 36.7,
+      "page_number": 50
+    },
+    {
+      "metric_name": "average_ticket",
+      "metric_raw": "Average Contract Sales Price",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "1,946 Residential Projects, 12 months ending Sept 30, 2025",
+      "reporting_period": "12 months ending Sept 30, 2025",
+      "reporting_year": 2025,
+      "value_avg": 45484,
+      "value_median": 36317,
+      "page_number": 52
+    }
+  ],
+  "confidence": 0.92,
+  "notes": "Section A (Gross Sales for 55 franchisees, Sept 2025) numerical tables not included in provided text. Section B from Profit Planning Group benchmarking study (40 franchisees 24+ months, 44 franchisees 12+ months for 2024). Section C project-level data (non-franchisee revenue). Part 1 provides combined expense details; Parts 2\u20137 show percentile/performance tiers."
+}

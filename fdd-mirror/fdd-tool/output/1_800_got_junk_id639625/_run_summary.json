@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\wi_scrape\\1_800_got_junk_id639625.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0102,
+      "input_tokens": 2306,
+      "cached": 0,
+      "output_tokens": 221
+    },
+    "item5": {
+      "cost_usd": 0.0125,
+      "input_tokens": 2585,
+      "cached": 0,
+      "output_tokens": 315
+    },
+    "item6": {
+      "cost_usd": 0.0192,
+      "input_tokens": 3503,
+      "cached": 0,
+      "output_tokens": 580
+    },
+    "item7": {
+      "cost_usd": 0.0071,
+      "input_tokens": 1892,
+      "cached": 0,
+      "output_tokens": 97
+    },
+    "item19": {
+      "cost_usd": 0.1652,
+      "input_tokens": 16541,
+      "cached": 0,
+      "output_tokens": 7706,
+      "images_sent": 7
+    },
+    "item20": {
+      "cost_usd": 0.2288,
+      "input_tokens": 19018,
+      "cached": 0,
+      "output_tokens": 11453,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.4431
+}

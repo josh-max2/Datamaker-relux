@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 74875,
+  "initial_franchise_fee_high": 111900,
+  "fee_notes": "Fee varies by 8 territory population classes (A through DD). Franchisee may qualify for 20% discount with prior pest control experience or 10% for veteran/first responder status (max 25% aggregate discount). Additional payment required if CCO/Trutech assigns existing customer contracts in territory.",
+  "raw_excerpt": "Population <299,999 A $74,875; 300,000 to 599,999 AA $79,600; 600,000 to 899,999 B $84,850; 900,000 to 1,199,999 BB $90,100; 1,200,000 to 1,499,999 C $95,350; 1,500,000 to 1,799,999 CC $100,600; 1,800,000 to 2,099,999 D $105,850; 2,100,000 to 2,400,000 DD $111,900",
+  "confidence": 0.98
+}

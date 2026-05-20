@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 10,
+  "royalty_min_monthly": 750,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 499,
+  "fee_notes": "Royalty is tiered: 10% on Gross Billings up to $1,499,999; 9% on $1,500,000-$2,999,999; 8% on $3,000,000+. Minimum monthly royalty: $750 (months 12-18), $1,000 (months 19-24), $2,000 (month 25+), commencing 12 months after training completion. Default royalty rate increases to 11%. Promotional Fund: 2% of Gross Billings. Technology Fee: $499/month (currently). Other fees include Annual Conference ($975/year), Transfer Fee ($15,000 or $5,000 if existing franchisee), Renewal Fee ($5,000), Local Marketing ($1,000/month minimum for first year), and various other fees itemized in Item 6.",
+  "raw_excerpt": "Royalty: 8% - 10% of Gross Billings. 10% on Gross Billings up to $1,499,999; 9% on Gross Billings between $1,500,000 up to $2,999,999; and 8% on Gross Billings $3,000,000 and above. Minimum monthly royalty $750-$2,000. Promotional Fund: 2% of Gross Billings. Technology Fee: currently $499 per month.",
+  "confidence": 0.97
+}

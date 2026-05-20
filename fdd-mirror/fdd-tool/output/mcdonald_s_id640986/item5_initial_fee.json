@@ -1,0 +1,6 @@
+{
+  "initial_franchise_fee_low": 0,
+  "initial_franchise_fee_high": 45000,
+  "fee_notes": "Standard franchisees pay $45,000. McOpCo companies pay $0. Satellite locations: $0-$500 (Walmart locations pay $0). STO/STR locations: $22,500. Prorated fees available for certain circumstances. Relocation/rebuild: reduced credit. Entire fee refunded if construction not completed within 1 year.",
+  "confidence": 0.96
+}

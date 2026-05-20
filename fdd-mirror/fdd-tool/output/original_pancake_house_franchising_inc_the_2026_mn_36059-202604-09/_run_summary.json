@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\original_pancake_house_franchising_inc_the_2026_mn_36059-202604-09.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0051,
+      "input_tokens": 1908,
+      "cached": 1340,
+      "output_tokens": 198
+    },
+    "item5": {
+      "cost_usd": 0.0066,
+      "input_tokens": 2055,
+      "cached": 1340,
+      "output_tokens": 271
+    },
+    "item6": {
+      "cost_usd": 0.0152,
+      "input_tokens": 2095,
+      "cached": 1340,
+      "output_tokens": 833
+    },
+    "item7": {
+      "cost_usd": 0.0063,
+      "input_tokens": 2856,
+      "cached": 1340,
+      "output_tokens": 91
+    },
+    "item19": {
+      "cost_usd": 0.0137,
+      "input_tokens": 5331,
+      "cached": 1340,
+      "output_tokens": 88,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.1558,
+      "input_tokens": 12985,
+      "cached": 1340,
+      "output_tokens": 8032,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.2027
+}

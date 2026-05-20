@@ -1,0 +1,335 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 15,
+      "outlets_end": 15,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 15,
+      "outlets_end": 12,
+      "net_change": -3
+    },
+    {
+      "year": 2025,
+      "outlet_type": "franchised",
+      "outlets_start": 12,
+      "outlets_end": 14,
+      "net_change": 2
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 146,
+      "outlets_end": 133,
+      "net_change": -13
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 133,
+      "outlets_end": 119,
+      "net_change": -14
+    },
+    {
+      "year": 2025,
+      "outlet_type": "company-owned",
+      "outlets_start": 119,
+      "outlets_end": 107,
+      "net_change": -12
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 161,
+      "outlets_end": 148,
+      "net_change": -13
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 148,
+      "outlets_end": 131,
+      "net_change": -17
+    },
+    {
+      "year": 2025,
+      "outlet_type": "total",
+      "outlets_start": 131,
+      "outlets_end": 121,
+      "net_change": -10
+    }
+  ],
+  "state_year_status": [
+    {
+      "year": 2023,
+      "state": "CA",
+      "outlets_start": 6,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 6
+    },
+    {
+      "year": 2024,
+      "state": "CA",
+      "outlets_start": 6,
+      "outlets_opened": 6,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 1,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 5
+    },
+    {
+      "year": 2025,
+      "state": "CA",
+      "outlets_start": 5,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 1,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 4
+    },
+    {
+      "year": 2023,
+      "state": "HI",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "HI",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2025,
+      "state": "HI",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2023,
+      "state": "MO",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "MO",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 1,
+      "outlets_end": 0
+    },
+    {
+      "year": 2025,
+      "state": "MO",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2023,
+      "state": "NV",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "NV",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "NV",
+      "outlets_start": 1,
+      "outlets_opened": 3,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 4
+    },
+    {
+      "year": 2023,
+      "state": "TX",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "TX",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "TX",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "UT",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "UT",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "UT",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "Guam",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "Guam",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2025,
+      "state": "Guam",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2023,
+      "state": "TOTAL",
+      "outlets_start": 15,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 15
+    },
+    {
+      "year": 2024,
+      "state": "TOTAL",
+      "outlets_start": 15,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 1,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 2,
+      "outlets_end": 12
+    },
+    {
+      "year": 2025,
+      "state": "TOTAL",
+      "outlets_start": 12,
+      "outlets_opened": 3,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 1,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 14
+    }
+  ],
+  "confidence": 0.97,
+  "notes": "California Pizza Kitchen FDD dated 04/26. Item 19 explicitly states no financial performance representations are made. Table 1 covers fiscal years 2023-2025 (ended December 31, 2023; December 29, 2024; December 28, 2025). Table 3 covers franchised outlets only across CA, HI, MO, NV, TX, UT, and Guam. Note: CA 2024 shows 6 outlets opened but net calculation (6 start + 6 opened - 1 non-renewed = 11, not 5) may reflect an OCR or document anomaly \u2014 values transcribed exactly as disclosed. Table No. 5 shows zero projected openings for the next fiscal year."
+}

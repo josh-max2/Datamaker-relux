@@ -1,0 +1,61 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "System-wide Restaurant Average Net Revenues",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "Company-Owned and Franchised Restaurants (89 total, open entire fiscal 2025)",
+      "outlet_count": 89,
+      "reporting_period": "2025 fiscal year ended November 30, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 2816498,
+      "value_median": 2718656,
+      "value_min": 471188,
+      "value_max": 7459051,
+      "pct_above_avg": 46.1,
+      "page_number": 73,
+      "raw_text": "System-wide Restaurant Average Net Revenues $2,816,498; Median $2,718,656; 89 restaurants; 41 above / 48 below average"
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Annual Franchised Restaurant Net Revenues",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "Franchised Restaurants open entire fiscal 2025 (59 total)",
+      "outlet_count": 59,
+      "reporting_period": "2025 fiscal year ended November 30, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 2919786,
+      "value_median": 2831846,
+      "value_min": 471188,
+      "value_max": 7459051,
+      "pct_above_avg": 49.2,
+      "page_number": 73,
+      "raw_text": "Total Number of Franchised Restaurants 59; Average Annual Franchised Restaurant Net Revenues $2,919,786; Median $2,831,846; 29 above / 30 below"
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Restaurant Net Revenues (Company-Owned)",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company-Owned Restaurants open entire fiscal 2025 (30 total)",
+      "outlet_count": 30,
+      "reporting_period": "2025 fiscal year ended November 30, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 2613365,
+      "value_median": 2439747,
+      "value_min": 868149,
+      "value_max": 4555262,
+      "pct_above_avg": 43.3,
+      "page_number": 74,
+      "raw_text": "Total Number of Company-Owned 30; Average Restaurant Net Revenues $2,613,365; Median $2,439,747; 13 above / 17 below"
+    }
+  ],
+  "confidence": 0.95,
+  "notes": "Net Revenues defined as food, liquor, and merchandise sales net of discounts. Excludes ghost kitchen outlets. Figures unaudited for franchisee-reported data; company-owned prepared on GAAP basis."
+}

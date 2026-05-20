@@ -1,0 +1,9 @@
+{
+  "royalty_pct": 7,
+  "royalty_min_monthly": 2500,
+  "marketing_fee_pct": 1,
+  "tech_fee_monthly": 250,
+  "fee_notes": "Royalty is 3.5% of Net Revenue for first 12 months (if in Good Standing), then greater of 7% or Minimum Monthly Royalty. MMR scales: months 0-6 $0, 7-12 $1,500, 13-18 $1,750, 19-24 $2,000, 25+ $2,500. Advertising Fund Fee is 1% (up to 3% at franchisor's discretion). Local Advertising Expense is 3% of Net Revenue (includes Marketing Platform Fee of $300/month). Technology Fee is $250/month plus up to $1,000/month for third-party software.",
+  "raw_excerpt": "Royalty Fee 3.5% of Net Revenue for the first year... Then the greater of 7% of Net Revenue or the Minimum Monthly Royalty beginning the second year... Advertising Fund Fee 1% of Net Revenue up to a maximum of 3% of Net Revenue... Technology Fees $250 per month, per location.",
+  "confidence": 0.95
+}

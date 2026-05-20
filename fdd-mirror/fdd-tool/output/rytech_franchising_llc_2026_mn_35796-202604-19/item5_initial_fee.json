@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 60000,
+  "initial_franchise_fee_high": 80000,
+  "fee_notes": "$60,000 for territory population 300,000-400,000; 20 cents per person over 400,000; max territory 500,000 population = $80,000 max fee. Veterans discount of $10,000 off first franchise. Last fiscal year range was $35,000-$60,000.",
+  "raw_excerpt": "The initial franchise fee is $60,000 for a population between 300,000 and 400,000. After a population of 400,000 is reached, each additional person acquired shall be 20 cents per person. Rytech does not sell territories over 500,000; for a maximum initial franchise fee of $80,000.",
+  "confidence": 0.98
+}

@@ -1,0 +1,3589 @@
+{
+  "manifest": "output\\_pilot_mn_batch2.json",
+  "workers": 4,
+  "started_at": "2026-05-18T23:55:18.323268",
+  "total_wall_clock_sec": 2678.9,
+  "results": [
+    {
+      "pdf": "data\\mn_scrape\\bark_busters_north_america_llc_2026_mn_35617-202603-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\bark_busters_north_america_llc_2026_mn_35617-202603-08",
+      "elapsed_sec": 127.8,
+      "total_cost_usd": 0.2608,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0055,
+          "input_tokens": 1976,
+          "cached": 1340,
+          "output_tokens": 211
+        },
+        "item5": {
+          "cost_usd": 0.0058,
+          "input_tokens": 1559,
+          "cached": 1340,
+          "output_tokens": 315
+        },
+        "item6": {
+          "cost_usd": 0.0222,
+          "input_tokens": 3771,
+          "cached": 1340,
+          "output_tokens": 964
+        },
+        "item7": {
+          "cost_usd": 0.0055,
+          "input_tokens": 2576,
+          "cached": 1340,
+          "output_tokens": 90
+        },
+        "item19": {
+          "cost_usd": 0.0395,
+          "input_tokens": 7246,
+          "cached": 1340,
+          "output_tokens": 1428,
+          "images_sent": 3
+        },
+        "item20": {
+          "cost_usd": 0.1824,
+          "input_tokens": 16739,
+          "cached": 1340,
+          "output_tokens": 9053,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\9round_franchising_llc_2026_mn_36028-202604-07.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\9round_franchising_llc_2026_mn_36028-202604-07",
+      "elapsed_sec": 160.3,
+      "total_cost_usd": 0.2647,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0051,
+          "input_tokens": 1916,
+          "cached": 1340,
+          "output_tokens": 199
+        },
+        "item5": {
+          "cost_usd": 0.0092,
+          "input_tokens": 1913,
+          "cached": 1340,
+          "output_tokens": 473
+        },
+        "item6": {
+          "cost_usd": 0.012,
+          "input_tokens": 2034,
+          "cached": 1340,
+          "output_tokens": 632
+        },
+        "item7": {
+          "cost_usd": 0.0031,
+          "input_tokens": 1733,
+          "cached": 1340,
+          "output_tokens": 98
+        },
+        "item19": {
+          "cost_usd": 0.0128,
+          "input_tokens": 5177,
+          "cached": 1340,
+          "output_tokens": 60,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.2225,
+          "input_tokens": 18108,
+          "cached": 1340,
+          "output_tokens": 11454,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\angry_crab_shack_franchise_llc_2026_mn_35961-202604-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\angry_crab_shack_franchise_llc_2026_mn_35961-202604-08",
+      "elapsed_sec": 168.1,
+      "total_cost_usd": 0.3037,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0059,
+          "input_tokens": 2138,
+          "cached": 1340,
+          "output_tokens": 205
+        },
+        "item5": {
+          "cost_usd": 0.0091,
+          "input_tokens": 2249,
+          "cached": 1340,
+          "output_tokens": 401
+        },
+        "item6": {
+          "cost_usd": 0.0262,
+          "input_tokens": 5682,
+          "cached": 1340,
+          "output_tokens": 849
+        },
+        "item7": {
+          "cost_usd": 0.0145,
+          "input_tokens": 5609,
+          "cached": 1340,
+          "output_tokens": 89
+        },
+        "item19": {
+          "cost_usd": 0.1979,
+          "input_tokens": 20682,
+          "cached": 1340,
+          "output_tokens": 9301,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.0501,
+          "input_tokens": 6953,
+          "cached": 1340,
+          "output_tokens": 2188,
+          "images_sent": 3
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\bq_concepts_llc_2026_mn_35646-202603-13.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\bq_concepts_llc_2026_mn_35646-202603-13",
+      "elapsed_sec": 50.6,
+      "total_cost_usd": 0.0976,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0057,
+          "input_tokens": 2007,
+          "cached": 1340,
+          "output_tokens": 219
+        },
+        "item5": {
+          "cost_usd": 0.0072,
+          "input_tokens": 2407,
+          "cached": 1340,
+          "output_tokens": 240
+        },
+        "item6": {
+          "cost_usd": 0.022,
+          "input_tokens": 5998,
+          "cached": 1340,
+          "output_tokens": 509
+        },
+        "item7": {
+          "cost_usd": 0.0095,
+          "input_tokens": 3771,
+          "cached": 1340,
+          "output_tokens": 121
+        },
+        "item19": {
+          "cost_usd": 0.0136,
+          "input_tokens": 5263,
+          "cached": 1340,
+          "output_tokens": 94,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.0396,
+          "input_tokens": 6407,
+          "cached": 1340,
+          "output_tokens": 1601,
+          "images_sent": 3
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\bf_acquisition_holdings_llc_2026_mn_35620-202603-15.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\bf_acquisition_holdings_llc_2026_mn_35620-202603-15",
+      "elapsed_sec": 81.4,
+      "total_cost_usd": 0.1865,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0052,
+          "input_tokens": 1658,
+          "cached": 1340,
+          "output_tokens": 256
+        },
+        "item5": {
+          "cost_usd": 0.0084,
+          "input_tokens": 2588,
+          "cached": 1340,
+          "output_tokens": 284
+        },
+        "item6": {
+          "cost_usd": 0.0167,
+          "input_tokens": 4812,
+          "cached": 1340,
+          "output_tokens": 394
+        },
+        "item7": {
+          "cost_usd": 0.0062,
+          "input_tokens": 2841,
+          "cached": 1340,
+          "output_tokens": 88
+        },
+        "item19": {
+          "cost_usd": 0.0364,
+          "input_tokens": 7564,
+          "cached": 1340,
+          "output_tokens": 1156,
+          "images_sent": 3
+        },
+        "item20": {
+          "cost_usd": 0.1136,
+          "input_tokens": 14433,
+          "cached": 1340,
+          "output_tokens": 4925,
+          "images_sent": 7
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\bbdi_llc_2026_mn_35769-202604-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\bbdi_llc_2026_mn_35769-202604-08",
+      "elapsed_sec": 171.7,
+      "total_cost_usd": 0.3106,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0059,
+          "input_tokens": 1992,
+          "cached": 1340,
+          "output_tokens": 233
+        },
+        "item5": {
+          "cost_usd": 0.0066,
+          "input_tokens": 1381,
+          "cached": 1340,
+          "output_tokens": 408
+        },
+        "item6": {
+          "cost_usd": 0.0208,
+          "input_tokens": 2290,
+          "cached": 1340,
+          "output_tokens": 1167
+        },
+        "item7": {
+          "cost_usd": 0.0102,
+          "input_tokens": 4139,
+          "cached": 1340,
+          "output_tokens": 93
+        },
+        "item19": {
+          "cost_usd": 0.1893,
+          "input_tokens": 15182,
+          "cached": 1340,
+          "output_tokens": 9827,
+          "images_sent": 6
+        },
+        "item20": {
+          "cost_usd": 0.0778,
+          "input_tokens": 9070,
+          "cached": 1340,
+          "output_tokens": 3615,
+          "images_sent": 4
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\amazing_athletes_franchise_systems_llc_2026_mn_35993-202604-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\amazing_athletes_franchise_systems_llc_2026_mn_35993-202604-08",
+      "elapsed_sec": 303.6,
+      "total_cost_usd": 0.625,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0045,
+          "input_tokens": 1724,
+          "cached": 1340,
+          "output_tokens": 198
+        },
+        "item5": {
+          "cost_usd": 0.0107,
+          "input_tokens": 2416,
+          "cached": 1340,
+          "output_tokens": 474
+        },
+        "item6": {
+          "cost_usd": 0.031,
+          "input_tokens": 8010,
+          "cached": 1340,
+          "output_tokens": 709
+        },
+        "item7": {
+          "cost_usd": 0.0163,
+          "input_tokens": 6225,
+          "cached": 1340,
+          "output_tokens": 84
+        },
+        "item19": {
+          "cost_usd": 0.3817,
+          "input_tokens": 32467,
+          "cached": 1340,
+          "output_tokens": 19196,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.1807,
+          "input_tokens": 15518,
+          "cached": 1340,
+          "output_tokens": 9181,
+          "images_sent": 7
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\closets_unlimited_of_new_jersey_inc_2026_mn_35988-202604-05.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\closets_unlimited_of_new_jersey_inc_2026_mn_35988-202604-05",
+      "elapsed_sec": 71.1,
+      "total_cost_usd": 0.1307,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0058,
+          "input_tokens": 2009,
+          "cached": 1340,
+          "output_tokens": 227
+        },
+        "item5": {
+          "cost_usd": 0.0069,
+          "input_tokens": 1576,
+          "cached": 1340,
+          "output_tokens": 384
+        },
+        "item6": {
+          "cost_usd": 0.022,
+          "input_tokens": 3696,
+          "cached": 1340,
+          "output_tokens": 968
+        },
+        "item7": {
+          "cost_usd": 0.007,
+          "input_tokens": 3110,
+          "cached": 1340,
+          "output_tokens": 87
+        },
+        "item19": {
+          "cost_usd": 0.0254,
+          "input_tokens": 7618,
+          "cached": 1340,
+          "output_tokens": 413,
+          "images_sent": 3
+        },
+        "item20": {
+          "cost_usd": 0.0636,
+          "input_tokens": 8812,
+          "cached": 1340,
+          "output_tokens": 2718,
+          "images_sent": 4
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\brightstar_franchising_llc_2026_mn_35803-202604-09.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\brightstar_franchising_llc_2026_mn_35803-202604-09",
+      "elapsed_sec": 190.3,
+      "total_cost_usd": 0.351,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0061,
+          "input_tokens": 2042,
+          "cached": 1340,
+          "output_tokens": 238
+        },
+        "item5": {
+          "cost_usd": 0.0216,
+          "input_tokens": 5949,
+          "cached": 1340,
+          "output_tokens": 490
+        },
+        "item6": {
+          "cost_usd": 0.0245,
+          "input_tokens": 5989,
+          "cached": 1340,
+          "output_tokens": 679
+        },
+        "item7": {
+          "cost_usd": 0.006,
+          "input_tokens": 2798,
+          "cached": 1340,
+          "output_tokens": 83
+        },
+        "item19": {
+          "cost_usd": 0.2928,
+          "input_tokens": 25901,
+          "cached": 1340,
+          "output_tokens": 14581,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\citadel_panda_express_inc_2026_mn_36068-202604-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\citadel_panda_express_inc_2026_mn_36068-202604-08",
+      "elapsed_sec": 153.1,
+      "total_cost_usd": 0.3211,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0059,
+          "input_tokens": 2553,
+          "cached": 1340,
+          "output_tokens": 127
+        },
+        "item5": {
+          "cost_usd": 0.0067,
+          "input_tokens": 1797,
+          "cached": 1340,
+          "output_tokens": 328
+        },
+        "item6": {
+          "cost_usd": 0.0108,
+          "input_tokens": 1644,
+          "cached": 1340,
+          "output_tokens": 635
+        },
+        "item7": {
+          "cost_usd": 0.0149,
+          "input_tokens": 5732,
+          "cached": 1340,
+          "output_tokens": 88
+        },
+        "item19": {
+          "cost_usd": 0.0765,
+          "input_tokens": 12510,
+          "cached": 1340,
+          "output_tokens": 2839,
+          "images_sent": 5
+        },
+        "item20": {
+          "cost_usd": 0.2062,
+          "input_tokens": 20383,
+          "cached": 1340,
+          "output_tokens": 9911,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\closets_unlimited_of_new_jersey_inc_2026_mn_35990-202604-09.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\closets_unlimited_of_new_jersey_inc_2026_mn_35990-202604-09",
+      "elapsed_sec": 99.6,
+      "total_cost_usd": 0.212,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.006,
+          "input_tokens": 2002,
+          "cached": 1340,
+          "output_tokens": 243
+        },
+        "item5": {
+          "cost_usd": 0.009,
+          "input_tokens": 2040,
+          "cached": 1340,
+          "output_tokens": 431
+        },
+        "item6": {
+          "cost_usd": 0.0143,
+          "input_tokens": 3399,
+          "cached": 1340,
+          "output_tokens": 513
+        },
+        "item7": {
+          "cost_usd": 0.0067,
+          "input_tokens": 3007,
+          "cached": 1340,
+          "output_tokens": 88
+        },
+        "item19": {
+          "cost_usd": 0.1099,
+          "input_tokens": 18008,
+          "cached": 1340,
+          "output_tokens": 3963,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.0661,
+          "input_tokens": 8885,
+          "cached": 1340,
+          "output_tokens": 2874,
+          "images_sent": 4
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\ding_tea_corporation_2025_mn_35679-202603-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\ding_tea_corporation_2025_mn_35679-202603-08",
+      "elapsed_sec": 106.2,
+      "total_cost_usd": 0.1842,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0038,
+          "input_tokens": 1648,
+          "cached": 1340,
+          "output_tokens": 168
+        },
+        "item5": {
+          "cost_usd": 0.0032,
+          "input_tokens": 1067,
+          "cached": 1340,
+          "output_tokens": 244
+        },
+        "item6": {
+          "cost_usd": 0.0077,
+          "input_tokens": 957,
+          "cached": 1340,
+          "output_tokens": 561
+        },
+        "item7": {
+          "cost_usd": 0.007,
+          "input_tokens": 3114,
+          "cached": 1340,
+          "output_tokens": 84
+        },
+        "item19": {
+          "cost_usd": 0.0137,
+          "input_tokens": 5332,
+          "cached": 1340,
+          "output_tokens": 89,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.1488,
+          "input_tokens": 10315,
+          "cached": 1340,
+          "output_tokens": 8097,
+          "images_sent": 5
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\charles_schwab_co_inc_2026_mn_35825-202604-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\charles_schwab_co_inc_2026_mn_35825-202604-08",
+      "elapsed_sec": 342.8,
+      "total_cost_usd": 0.668,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0056,
+          "input_tokens": 2003,
+          "cached": 1340,
+          "output_tokens": 215
+        },
+        "item5": {
+          "cost_usd": 0.0135,
+          "input_tokens": 4200,
+          "cached": 1340,
+          "output_tokens": 299
+        },
+        "item6": {
+          "cost_usd": 0.062,
+          "input_tokens": 13349,
+          "cached": 1340,
+          "output_tokens": 1706
+        },
+        "item7": {
+          "cost_usd": 0.0088,
+          "input_tokens": 3729,
+          "cached": 1340,
+          "output_tokens": 85
+        },
+        "item19": {
+          "cost_usd": 0.3754,
+          "input_tokens": 23776,
+          "cached": 1340,
+          "output_tokens": 20510,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.2027,
+          "input_tokens": 21260,
+          "cached": 1340,
+          "output_tokens": 9503,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\famous_dave_s_of_america_inc_2026_mn_35618-202603-12.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\famous_dave_s_of_america_inc_2026_mn_35618-202603-12",
+      "elapsed_sec": 6.7,
+      "total_cost_usd": 0.0053,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0053,
+          "input_tokens": 1709,
+          "cached": 1340,
+          "output_tokens": 254
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\country_visions_inc_2026_mn_35530-202603-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\country_visions_inc_2026_mn_35530-202603-08",
+      "elapsed_sec": 150.1,
+      "total_cost_usd": 0.2874,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0077,
+          "input_tokens": 2062,
+          "cached": 1340,
+          "output_tokens": 344
+        },
+        "item5": {
+          "cost_usd": 0.0072,
+          "input_tokens": 1715,
+          "cached": 1340,
+          "output_tokens": 378
+        },
+        "item6": {
+          "cost_usd": 0.0215,
+          "input_tokens": 3157,
+          "cached": 1340,
+          "output_tokens": 1042
+        },
+        "item7": {
+          "cost_usd": 0.0061,
+          "input_tokens": 2696,
+          "cached": 1340,
+          "output_tokens": 108
+        },
+        "item19": {
+          "cost_usd": 0.042,
+          "input_tokens": 7977,
+          "cached": 1340,
+          "output_tokens": 1448,
+          "images_sent": 3
+        },
+        "item20": {
+          "cost_usd": 0.2028,
+          "input_tokens": 17525,
+          "cached": 1340,
+          "output_tokens": 10259,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\cmy_franchising_llc_2026_mn_35898-202604-16.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\cmy_franchising_llc_2026_mn_35898-202604-16",
+      "elapsed_sec": 196.2,
+      "total_cost_usd": 0.462,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0029,
+          "input_tokens": 1214,
+          "cached": 1340,
+          "output_tokens": 194
+        },
+        "item5": {
+          "cost_usd": 0.0028,
+          "input_tokens": 980,
+          "cached": 1340,
+          "output_tokens": 231
+        },
+        "item6": {
+          "cost_usd": 0.0118,
+          "input_tokens": 1692,
+          "cached": 1340,
+          "output_tokens": 687
+        },
+        "item7": {
+          "cost_usd": 0.0057,
+          "input_tokens": 2689,
+          "cached": 1340,
+          "output_tokens": 83
+        },
+        "item19": {
+          "cost_usd": 0.2202,
+          "input_tokens": 17261,
+          "cached": 1340,
+          "output_tokens": 11470,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.2186,
+          "input_tokens": 17125,
+          "cached": 1340,
+          "output_tokens": 11392,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\frenchies_llc_2026_mn_35682-202603-09.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\frenchies_llc_2026_mn_35682-202603-09",
+      "elapsed_sec": 85.5,
+      "total_cost_usd": 0.206,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0056,
+          "input_tokens": 1967,
+          "cached": 1340,
+          "output_tokens": 218
+        },
+        "item5": {
+          "cost_usd": 0.0079,
+          "input_tokens": 1785,
+          "cached": 1340,
+          "output_tokens": 409
+        },
+        "item6": {
+          "cost_usd": 0.0081,
+          "input_tokens": 1560,
+          "cached": 1340,
+          "output_tokens": 468
+        },
+        "item7": {
+          "cost_usd": 0.0112,
+          "input_tokens": 4506,
+          "cached": 1340,
+          "output_tokens": 84
+        },
+        "item19": {
+          "cost_usd": 0.0801,
+          "input_tokens": 8049,
+          "cached": 1340,
+          "output_tokens": 3971,
+          "images_sent": 3
+        },
+        "item20": {
+          "cost_usd": 0.0932,
+          "input_tokens": 31286,
+          "cached": 1340,
+          "output_tokens": 199,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\fit_body_boot_camp_inc_2026_mn_35921-202604-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\fit_body_boot_camp_inc_2026_mn_35921-202604-08",
+      "elapsed_sec": 195.5,
+      "total_cost_usd": 0.3493,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0038,
+          "input_tokens": 1469,
+          "cached": 1340,
+          "output_tokens": 199
+        },
+        "item5": {
+          "cost_usd": 0.0086,
+          "input_tokens": 2119,
+          "cached": 1340,
+          "output_tokens": 390
+        },
+        "item6": {
+          "cost_usd": 0.029,
+          "input_tokens": 5808,
+          "cached": 1340,
+          "output_tokens": 1015
+        },
+        "item7": {
+          "cost_usd": 0.0105,
+          "input_tokens": 4265,
+          "cached": 1340,
+          "output_tokens": 90
+        },
+        "item19": {
+          "cost_usd": 0.0549,
+          "input_tokens": 19006,
+          "cached": 1340,
+          "output_tokens": 97,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.2425,
+          "input_tokens": 17994,
+          "cached": 1340,
+          "output_tokens": 11909,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\g6_hospitality_franchising_llc_2026_mn_35471-202603-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\g6_hospitality_franchising_llc_2026_mn_35471-202603-08",
+      "elapsed_sec": 181.7,
+      "total_cost_usd": 0.3372,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0062,
+          "input_tokens": 2041,
+          "cached": 1340,
+          "output_tokens": 249
+        },
+        "item5": {
+          "cost_usd": 0.0102,
+          "input_tokens": 2347,
+          "cached": 1340,
+          "output_tokens": 450
+        },
+        "item6": {
+          "cost_usd": 0.0111,
+          "input_tokens": 1680,
+          "cached": 1340,
+          "output_tokens": 647
+        },
+        "item7": {
+          "cost_usd": 0.0134,
+          "input_tokens": 5100,
+          "cached": 1340,
+          "output_tokens": 116
+        },
+        "item19": {
+          "cost_usd": 0.0544,
+          "input_tokens": 7875,
+          "cached": 1340,
+          "output_tokens": 2295,
+          "images_sent": 3
+        },
+        "item20": {
+          "cost_usd": 0.2418,
+          "input_tokens": 18625,
+          "cached": 1340,
+          "output_tokens": 12638,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\eos_worldwide_franchising_llc_2026_mn_35572-202603-19.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\eos_worldwide_franchising_llc_2026_mn_35572-202603-19",
+      "elapsed_sec": 247.4,
+      "total_cost_usd": 0.4359,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0053,
+          "input_tokens": 1967,
+          "cached": 1340,
+          "output_tokens": 200
+        },
+        "item5": {
+          "cost_usd": 0.007,
+          "input_tokens": 1731,
+          "cached": 1340,
+          "output_tokens": 359
+        },
+        "item6": {
+          "cost_usd": 0.0304,
+          "input_tokens": 5124,
+          "cached": 1340,
+          "output_tokens": 1241
+        },
+        "item7": {
+          "cost_usd": 0.0083,
+          "input_tokens": 3540,
+          "cached": 1340,
+          "output_tokens": 86
+        },
+        "item19": {
+          "cost_usd": 0.138,
+          "input_tokens": 10818,
+          "cached": 1340,
+          "output_tokens": 7278,
+          "images_sent": 4
+        },
+        "item20": {
+          "cost_usd": 0.2469,
+          "input_tokens": 19390,
+          "cached": 1340,
+          "output_tokens": 12826,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\hotworx_franchising_llc_2025_mn_35761-202604-15.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\hotworx_franchising_llc_2025_mn_35761-202604-15",
+      "elapsed_sec": 113.3,
+      "total_cost_usd": 0.2596,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0039,
+          "input_tokens": 1600,
+          "cached": 1340,
+          "output_tokens": 181
+        },
+        "item5": {
+          "cost_usd": 0.0045,
+          "input_tokens": 1390,
+          "cached": 1340,
+          "output_tokens": 264
+        },
+        "item6": {
+          "cost_usd": 0.022,
+          "input_tokens": 5014,
+          "cached": 1340,
+          "output_tokens": 707
+        },
+        "item7": {
+          "cost_usd": 0.0248,
+          "input_tokens": 8971,
+          "cached": 1340,
+          "output_tokens": 100
+        },
+        "item19": {
+          "cost_usd": 0.2044,
+          "input_tokens": 21647,
+          "cached": 1340,
+          "output_tokens": 9536,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\grease_monkey_franchising_llc_2026_mn_35920-202604-05.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\grease_monkey_franchising_llc_2026_mn_35920-202604-05",
+      "elapsed_sec": 242.9,
+      "total_cost_usd": 0.5006,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0067,
+          "input_tokens": 2134,
+          "cached": 1340,
+          "output_tokens": 263
+        },
+        "item5": {
+          "cost_usd": 0.011,
+          "input_tokens": 2834,
+          "cached": 1340,
+          "output_tokens": 408
+        },
+        "item6": {
+          "cost_usd": 0.0117,
+          "input_tokens": 1862,
+          "cached": 1340,
+          "output_tokens": 646
+        },
+        "item7": {
+          "cost_usd": 0.0134,
+          "input_tokens": 5193,
+          "cached": 1340,
+          "output_tokens": 95
+        },
+        "item19": {
+          "cost_usd": 0.2844,
+          "input_tokens": 17317,
+          "cached": 1340,
+          "output_tokens": 15737,
+          "images_sent": 7
+        },
+        "item20": {
+          "cost_usd": 0.1735,
+          "input_tokens": 16094,
+          "cached": 1340,
+          "output_tokens": 8586,
+          "images_sent": 7
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\jake_s_franchising_llc_2026_mn_35615-202603-09.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\jake_s_franchising_llc_2026_mn_35615-202603-09",
+      "elapsed_sec": 113.0,
+      "total_cost_usd": 0.2788,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0056,
+          "input_tokens": 2088,
+          "cached": 1340,
+          "output_tokens": 200
+        },
+        "item5": {
+          "cost_usd": 0.0057,
+          "input_tokens": 1528,
+          "cached": 1340,
+          "output_tokens": 313
+        },
+        "item6": {
+          "cost_usd": 0.0204,
+          "input_tokens": 3216,
+          "cached": 1340,
+          "output_tokens": 955
+        },
+        "item7": {
+          "cost_usd": 0.012,
+          "input_tokens": 4757,
+          "cached": 1340,
+          "output_tokens": 90
+        },
+        "item19": {
+          "cost_usd": 0.0132,
+          "input_tokens": 5171,
+          "cached": 1340,
+          "output_tokens": 85,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.2219,
+          "input_tokens": 17328,
+          "cached": 1340,
+          "output_tokens": 11571,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\kahala_franchising_llc_2026_mn_35612-202603-09.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\kahala_franchising_llc_2026_mn_35612-202603-09",
+      "elapsed_sec": 80.0,
+      "total_cost_usd": 0.1868,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0062,
+          "input_tokens": 2132,
+          "cached": 1340,
+          "output_tokens": 228
+        },
+        "item5": {
+          "cost_usd": 0.0071,
+          "input_tokens": 1869,
+          "cached": 1340,
+          "output_tokens": 339
+        },
+        "item6": {
+          "cost_usd": 0.0236,
+          "input_tokens": 5944,
+          "cached": 1340,
+          "output_tokens": 623
+        },
+        "item7": {
+          "cost_usd": 0.0147,
+          "input_tokens": 5567,
+          "cached": 1340,
+          "output_tokens": 109
+        },
+        "item19": {
+          "cost_usd": 0.0301,
+          "input_tokens": 5699,
+          "cached": 1340,
+          "output_tokens": 1105,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.1052,
+          "input_tokens": 14813,
+          "cached": 1340,
+          "output_tokens": 4291,
+          "images_sent": 7
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\kahala_franchising_llc_2026_mn_35603-202603-14.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\kahala_franchising_llc_2026_mn_35603-202603-14",
+      "elapsed_sec": 113.5,
+      "total_cost_usd": 0.3181,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0062,
+          "input_tokens": 2078,
+          "cached": 1340,
+          "output_tokens": 240
+        },
+        "item5": {
+          "cost_usd": 0.0115,
+          "input_tokens": 3189,
+          "cached": 1340,
+          "output_tokens": 371
+        },
+        "item6": {
+          "cost_usd": 0.0342,
+          "input_tokens": 5638,
+          "cached": 1340,
+          "output_tokens": 1393
+        },
+        "item7": {
+          "cost_usd": 0.0151,
+          "input_tokens": 5686,
+          "cached": 1340,
+          "output_tokens": 113
+        },
+        "item19": {
+          "cost_usd": 0.035,
+          "input_tokens": 7431,
+          "cached": 1340,
+          "output_tokens": 1085,
+          "images_sent": 3
+        },
+        "item20": {
+          "cost_usd": 0.2161,
+          "input_tokens": 38804,
+          "cached": 1340,
+          "output_tokens": 6885,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\hello_garage_franchising_llc_2026_mn_35867-202604-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\hello_garage_franchising_llc_2026_mn_35867-202604-08",
+      "elapsed_sec": 250.7,
+      "total_cost_usd": 0.5637,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0057,
+          "input_tokens": 1866,
+          "cached": 1340,
+          "output_tokens": 251
+        },
+        "item5": {
+          "cost_usd": 0.0119,
+          "input_tokens": 3584,
+          "cached": 1340,
+          "output_tokens": 317
+        },
+        "item6": {
+          "cost_usd": 0.0247,
+          "input_tokens": 5223,
+          "cached": 1340,
+          "output_tokens": 841
+        },
+        "item7": {
+          "cost_usd": 0.0054,
+          "input_tokens": 2561,
+          "cached": 1340,
+          "output_tokens": 89
+        },
+        "item19": {
+          "cost_usd": 0.394,
+          "input_tokens": 13574,
+          "cached": 1340,
+          "output_tokens": 23795,
+          "images_sent": 5
+        },
+        "item20": {
+          "cost_usd": 0.1219,
+          "input_tokens": 11273,
+          "cached": 1340,
+          "output_tokens": 6115,
+          "images_sent": 5
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\kahala_franchising_llc_2026_mn_35614-202603-13.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\kahala_franchising_llc_2026_mn_35614-202603-13",
+      "elapsed_sec": 105.5,
+      "total_cost_usd": 0.2726,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0066,
+          "input_tokens": 2111,
+          "cached": 1340,
+          "output_tokens": 256
+        },
+        "item5": {
+          "cost_usd": 0.0111,
+          "input_tokens": 3348,
+          "cached": 1340,
+          "output_tokens": 312
+        },
+        "item6": {
+          "cost_usd": 0.0211,
+          "input_tokens": 5388,
+          "cached": 1340,
+          "output_tokens": 572
+        },
+        "item7": {
+          "cost_usd": 0.0139,
+          "input_tokens": 5297,
+          "cached": 1340,
+          "output_tokens": 111
+        },
+        "item19": {
+          "cost_usd": 0.0399,
+          "input_tokens": 7436,
+          "cached": 1340,
+          "output_tokens": 1413,
+          "images_sent": 3
+        },
+        "item20": {
+          "cost_usd": 0.18,
+          "input_tokens": 18425,
+          "cached": 1340,
+          "output_tokens": 8557,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\kahala_franchising_llc_2026_mn_35622-202603-11.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\kahala_franchising_llc_2026_mn_35622-202603-11",
+      "elapsed_sec": 77.5,
+      "total_cost_usd": 0.1735,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0058,
+          "input_tokens": 2075,
+          "cached": 1340,
+          "output_tokens": 214
+        },
+        "item5": {
+          "cost_usd": 0.0125,
+          "input_tokens": 3429,
+          "cached": 1340,
+          "output_tokens": 389
+        },
+        "item6": {
+          "cost_usd": 0.0178,
+          "input_tokens": 4490,
+          "cached": 1340,
+          "output_tokens": 533
+        },
+        "item7": {
+          "cost_usd": 0.0166,
+          "input_tokens": 6189,
+          "cached": 1340,
+          "output_tokens": 111
+        },
+        "item19": {
+          "cost_usd": 0.0201,
+          "input_tokens": 5650,
+          "cached": 1340,
+          "output_tokens": 453,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.1006,
+          "input_tokens": 12834,
+          "cached": 1340,
+          "output_tokens": 4381,
+          "images_sent": 6
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\kahala_franchising_llc_2026_mn_35631-202603-11.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\kahala_franchising_llc_2026_mn_35631-202603-11",
+      "elapsed_sec": 56.2,
+      "total_cost_usd": 0.1322,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0065,
+          "input_tokens": 2118,
+          "cached": 1340,
+          "output_tokens": 251
+        },
+        "item5": {
+          "cost_usd": 0.01,
+          "input_tokens": 2680,
+          "cached": 1340,
+          "output_tokens": 370
+        },
+        "item6": {
+          "cost_usd": 0.0198,
+          "input_tokens": 5289,
+          "cached": 1340,
+          "output_tokens": 502
+        },
+        "item7": {
+          "cost_usd": 0.0161,
+          "input_tokens": 6026,
+          "cached": 1340,
+          "output_tokens": 111
+        },
+        "item19": {
+          "cost_usd": 0.0266,
+          "input_tokens": 7768,
+          "cached": 1340,
+          "output_tokens": 463,
+          "images_sent": 3
+        },
+        "item20": {
+          "cost_usd": 0.0532,
+          "input_tokens": 8660,
+          "cached": 1340,
+          "output_tokens": 2054,
+          "images_sent": 4
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\kahala_franchising_llc_2026_mn_35621-202603-14.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\kahala_franchising_llc_2026_mn_35621-202603-14",
+      "elapsed_sec": 101.1,
+      "total_cost_usd": 0.2439,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.006,
+          "input_tokens": 2079,
+          "cached": 1340,
+          "output_tokens": 227
+        },
+        "item5": {
+          "cost_usd": 0.0107,
+          "input_tokens": 3060,
+          "cached": 1340,
+          "output_tokens": 342
+        },
+        "item6": {
+          "cost_usd": 0.0227,
+          "input_tokens": 5411,
+          "cached": 1340,
+          "output_tokens": 672
+        },
+        "item7": {
+          "cost_usd": 0.0154,
+          "input_tokens": 5763,
+          "cached": 1340,
+          "output_tokens": 114
+        },
+        "item19": {
+          "cost_usd": 0.0139,
+          "input_tokens": 5336,
+          "cached": 1340,
+          "output_tokens": 98,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.1752,
+          "input_tokens": 17987,
+          "cached": 1340,
+          "output_tokens": 8326,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\kahala_franchising_llc_2026_mn_35623-202603-13.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\kahala_franchising_llc_2026_mn_35623-202603-13",
+      "elapsed_sec": 108.2,
+      "total_cost_usd": 0.2554,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0069,
+          "input_tokens": 2246,
+          "cached": 1340,
+          "output_tokens": 254
+        },
+        "item5": {
+          "cost_usd": 0.0069,
+          "input_tokens": 1644,
+          "cached": 1340,
+          "output_tokens": 372
+        },
+        "item6": {
+          "cost_usd": 0.0306,
+          "input_tokens": 5459,
+          "cached": 1340,
+          "output_tokens": 1189
+        },
+        "item7": {
+          "cost_usd": 0.0145,
+          "input_tokens": 5414,
+          "cached": 1340,
+          "output_tokens": 122
+        },
+        "item19": {
+          "cost_usd": 0.0139,
+          "input_tokens": 5352,
+          "cached": 1340,
+          "output_tokens": 99,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.1826,
+          "input_tokens": 16938,
+          "cached": 1340,
+          "output_tokens": 9027,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\kahala_franchising_llc_2026_mn_35634-202603-12.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\kahala_franchising_llc_2026_mn_35634-202603-12",
+      "elapsed_sec": 74.5,
+      "total_cost_usd": 0.1887,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.006,
+          "input_tokens": 2076,
+          "cached": 1340,
+          "output_tokens": 229
+        },
+        "item5": {
+          "cost_usd": 0.0118,
+          "input_tokens": 3208,
+          "cached": 1340,
+          "output_tokens": 384
+        },
+        "item6": {
+          "cost_usd": 0.0179,
+          "input_tokens": 4574,
+          "cached": 1340,
+          "output_tokens": 520
+        },
+        "item7": {
+          "cost_usd": 0.0171,
+          "input_tokens": 6328,
+          "cached": 1340,
+          "output_tokens": 115
+        },
+        "item19": {
+          "cost_usd": 0.0414,
+          "input_tokens": 7833,
+          "cached": 1340,
+          "output_tokens": 1435,
+          "images_sent": 3
+        },
+        "item20": {
+          "cost_usd": 0.0945,
+          "input_tokens": 15433,
+          "cached": 1340,
+          "output_tokens": 3456,
+          "images_sent": 7
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\lilian_usa_llc_2026_mn_35982-202604-13.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\lilian_usa_llc_2026_mn_35982-202604-13",
+      "elapsed_sec": 76.9,
+      "total_cost_usd": 0.1986,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0045,
+          "input_tokens": 1698,
+          "cached": 1340,
+          "output_tokens": 203
+        },
+        "item5": {
+          "cost_usd": 0.009,
+          "input_tokens": 2032,
+          "cached": 1340,
+          "output_tokens": 436
+        },
+        "item6": {
+          "cost_usd": 0.0038,
+          "input_tokens": 933,
+          "cached": 1340,
+          "output_tokens": 308
+        },
+        "item7": {
+          "cost_usd": 0.0065,
+          "input_tokens": 2969,
+          "cached": 1340,
+          "output_tokens": 83
+        },
+        "item19": {
+          "cost_usd": 0.0327,
+          "input_tokens": 11689,
+          "cached": 1340,
+          "output_tokens": 83,
+          "images_sent": 5
+        },
+        "item20": {
+          "cost_usd": 0.142,
+          "input_tokens": 10677,
+          "cached": 1340,
+          "output_tokens": 7575,
+          "images_sent": 5
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\menchie_s_group_inc_2025_mn_35343-202601-11.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\menchie_s_group_inc_2025_mn_35343-202601-11",
+      "elapsed_sec": 112.8,
+      "total_cost_usd": 0.2812,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0052,
+          "input_tokens": 1964,
+          "cached": 1340,
+          "output_tokens": 195
+        },
+        "item5": {
+          "cost_usd": 0.0127,
+          "input_tokens": 3802,
+          "cached": 1340,
+          "output_tokens": 328
+        },
+        "item6": {
+          "cost_usd": 0.0148,
+          "input_tokens": 3842,
+          "cached": 1340,
+          "output_tokens": 458
+        },
+        "item7": {
+          "cost_usd": 0.0059,
+          "input_tokens": 2734,
+          "cached": 1340,
+          "output_tokens": 86
+        },
+        "item19": {
+          "cost_usd": 0.0836,
+          "input_tokens": 11788,
+          "cached": 1340,
+          "output_tokens": 3455,
+          "images_sent": 5
+        },
+        "item20": {
+          "cost_usd": 0.1591,
+          "input_tokens": 17123,
+          "cached": 1340,
+          "output_tokens": 7421,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\men_in_kilts_us_llc_2026_mn_35932-202604-09.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\men_in_kilts_us_llc_2026_mn_35932-202604-09",
+      "elapsed_sec": 137.5,
+      "total_cost_usd": 0.2842,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0049,
+          "input_tokens": 1839,
+          "cached": 1340,
+          "output_tokens": 198
+        },
+        "item5": {
+          "cost_usd": 0.0087,
+          "input_tokens": 2406,
+          "cached": 1340,
+          "output_tokens": 343
+        },
+        "item6": {
+          "cost_usd": 0.0392,
+          "input_tokens": 6413,
+          "cached": 1340,
+          "output_tokens": 1575
+        },
+        "item7": {
+          "cost_usd": 0.0029,
+          "input_tokens": 1736,
+          "cached": 1340,
+          "output_tokens": 88
+        },
+        "item19": {
+          "cost_usd": 0.135,
+          "input_tokens": 13915,
+          "cached": 1340,
+          "output_tokens": 6461,
+          "images_sent": 6
+        },
+        "item20": {
+          "cost_usd": 0.0934,
+          "input_tokens": 9632,
+          "cached": 1340,
+          "output_tokens": 4540,
+          "images_sent": 4
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\miracle_method_llc_2026_mn_35950-202604-10.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\miracle_method_llc_2026_mn_35950-202604-10",
+      "elapsed_sec": 111.9,
+      "total_cost_usd": 0.2718,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0046,
+          "input_tokens": 1791,
+          "cached": 1340,
+          "output_tokens": 192
+        },
+        "item5": {
+          "cost_usd": 0.0069,
+          "input_tokens": 1610,
+          "cached": 1340,
+          "output_tokens": 376
+        },
+        "item6": {
+          "cost_usd": 0.0211,
+          "input_tokens": 4317,
+          "cached": 1340,
+          "output_tokens": 786
+        },
+        "item7": {
+          "cost_usd": 0.0061,
+          "input_tokens": 2796,
+          "cached": 1340,
+          "output_tokens": 89
+        },
+        "item19": {
+          "cost_usd": 0.0796,
+          "input_tokens": 15378,
+          "cached": 1340,
+          "output_tokens": 2472,
+          "images_sent": 7
+        },
+        "item20": {
+          "cost_usd": 0.1535,
+          "input_tokens": 20058,
+          "cached": 1340,
+          "output_tokens": 6465,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\mty_franchising_usa_inc_2026_mn_35635-202603-17.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\mty_franchising_usa_inc_2026_mn_35635-202603-17",
+      "elapsed_sec": 68.8,
+      "total_cost_usd": 0.1601,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0059,
+          "input_tokens": 1986,
+          "cached": 1340,
+          "output_tokens": 240
+        },
+        "item5": {
+          "cost_usd": 0.0087,
+          "input_tokens": 2333,
+          "cached": 1340,
+          "output_tokens": 352
+        },
+        "item6": {
+          "cost_usd": 0.019,
+          "input_tokens": 3848,
+          "cached": 1340,
+          "output_tokens": 741
+        },
+        "item7": {
+          "cost_usd": 0.0072,
+          "input_tokens": 3191,
+          "cached": 1340,
+          "output_tokens": 85
+        },
+        "item19": {
+          "cost_usd": 0.0324,
+          "input_tokens": 11549,
+          "cached": 1340,
+          "output_tokens": 93,
+          "images_sent": 5
+        },
+        "item20": {
+          "cost_usd": 0.0868,
+          "input_tokens": 10537,
+          "cached": 1340,
+          "output_tokens": 3392,
+          "images_sent": 5
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\mty_franchising_usa_inc_2026_mn_35609-202603-12.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\mty_franchising_usa_inc_2026_mn_35609-202603-12",
+      "elapsed_sec": 91.4,
+      "total_cost_usd": 0.2355,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.006,
+          "input_tokens": 2117,
+          "cached": 1340,
+          "output_tokens": 216
+        },
+        "item5": {
+          "cost_usd": 0.0127,
+          "input_tokens": 3428,
+          "cached": 1340,
+          "output_tokens": 399
+        },
+        "item6": {
+          "cost_usd": 0.0305,
+          "input_tokens": 6743,
+          "cached": 1340,
+          "output_tokens": 924
+        },
+        "item7": {
+          "cost_usd": 0.0169,
+          "input_tokens": 6432,
+          "cached": 1340,
+          "output_tokens": 83
+        },
+        "item19": {
+          "cost_usd": 0.0346,
+          "input_tokens": 7446,
+          "cached": 1340,
+          "output_tokens": 1060,
+          "images_sent": 3
+        },
+        "item20": {
+          "cost_usd": 0.1349,
+          "input_tokens": 16408,
+          "cached": 1340,
+          "output_tokens": 5950,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\mooyah_franchising_llc_2026_mn_36047-202604-07.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\mooyah_franchising_llc_2026_mn_36047-202604-07",
+      "elapsed_sec": 100.9,
+      "total_cost_usd": 0.2041,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.006,
+          "input_tokens": 2187,
+          "cached": 1340,
+          "output_tokens": 201
+        },
+        "item5": {
+          "cost_usd": 0.0071,
+          "input_tokens": 1737,
+          "cached": 1340,
+          "output_tokens": 370
+        },
+        "item6": {
+          "cost_usd": 0.016,
+          "input_tokens": 4089,
+          "cached": 1340,
+          "output_tokens": 493
+        },
+        "item7": {
+          "cost_usd": 0.0062,
+          "input_tokens": 2833,
+          "cached": 1340,
+          "output_tokens": 85
+        },
+        "item19": {
+          "cost_usd": 0.0405,
+          "input_tokens": 6014,
+          "cached": 1340,
+          "output_tokens": 1738,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.1283,
+          "input_tokens": 11747,
+          "cached": 1340,
+          "output_tokens": 6444,
+          "images_sent": 5
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\mty_franchising_usa_inc_2026_mn_35637-202603-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\mty_franchising_usa_inc_2026_mn_35637-202603-08",
+      "elapsed_sec": 53.6,
+      "total_cost_usd": 0.1173,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0058,
+          "input_tokens": 1965,
+          "cached": 1340,
+          "output_tokens": 232
+        },
+        "item5": {
+          "cost_usd": 0.0054,
+          "input_tokens": 1288,
+          "cached": 1340,
+          "output_tokens": 345
+        },
+        "item6": {
+          "cost_usd": 0.0204,
+          "input_tokens": 4024,
+          "cached": 1340,
+          "output_tokens": 795
+        },
+        "item7": {
+          "cost_usd": 0.0187,
+          "input_tokens": 6993,
+          "cached": 1340,
+          "output_tokens": 86
+        },
+        "item19": {
+          "cost_usd": 0.0126,
+          "input_tokens": 5112,
+          "cached": 1340,
+          "output_tokens": 61,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.0545,
+          "input_tokens": 8219,
+          "cached": 1340,
+          "output_tokens": 2228,
+          "images_sent": 4
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\m_h_franchise_company_inc_2026_mn_35529-202603-12.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\m_h_franchise_company_inc_2026_mn_35529-202603-12",
+      "elapsed_sec": 315.7,
+      "total_cost_usd": 0.7835,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0057,
+          "input_tokens": 2077,
+          "cached": 1340,
+          "output_tokens": 206
+        },
+        "item5": {
+          "cost_usd": 0.0103,
+          "input_tokens": 2544,
+          "cached": 1340,
+          "output_tokens": 420
+        },
+        "item6": {
+          "cost_usd": 0.0228,
+          "input_tokens": 6008,
+          "cached": 1340,
+          "output_tokens": 560
+        },
+        "item7": {
+          "cost_usd": 0.0079,
+          "input_tokens": 3373,
+          "cached": 1340,
+          "output_tokens": 92
+        },
+        "item19": {
+          "cost_usd": 0.5308,
+          "input_tokens": 18149,
+          "cached": 1340,
+          "output_tokens": 31999,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.206,
+          "input_tokens": 17789,
+          "cached": 1340,
+          "output_tokens": 10414,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\original_pancake_house_franchising_inc_the_2026_mn_36059-202604-09.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\original_pancake_house_franchising_inc_the_2026_mn_36059-202604-09",
+      "elapsed_sec": 78.6,
+      "total_cost_usd": 0.2027,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0051,
+          "input_tokens": 1908,
+          "cached": 1340,
+          "output_tokens": 198
+        },
+        "item5": {
+          "cost_usd": 0.0066,
+          "input_tokens": 2055,
+          "cached": 1340,
+          "output_tokens": 271
+        },
+        "item6": {
+          "cost_usd": 0.0152,
+          "input_tokens": 2095,
+          "cached": 1340,
+          "output_tokens": 833
+        },
+        "item7": {
+          "cost_usd": 0.0063,
+          "input_tokens": 2856,
+          "cached": 1340,
+          "output_tokens": 91
+        },
+        "item19": {
+          "cost_usd": 0.0137,
+          "input_tokens": 5331,
+          "cached": 1340,
+          "output_tokens": 88,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.1558,
+          "input_tokens": 12985,
+          "cached": 1340,
+          "output_tokens": 8032,
+          "images_sent": 6
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\oasis_senior_advisors_franchise_systems_llc_2026_mn_36037-202604-13.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\oasis_senior_advisors_franchise_systems_llc_2026_mn_36037-202604-13",
+      "elapsed_sec": 125.3,
+      "total_cost_usd": 0.2951,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0053,
+          "input_tokens": 1907,
+          "cached": 1340,
+          "output_tokens": 215
+        },
+        "item5": {
+          "cost_usd": 0.0064,
+          "input_tokens": 1644,
+          "cached": 1340,
+          "output_tokens": 339
+        },
+        "item6": {
+          "cost_usd": 0.0249,
+          "input_tokens": 4857,
+          "cached": 1340,
+          "output_tokens": 932
+        },
+        "item7": {
+          "cost_usd": 0.0049,
+          "input_tokens": 2435,
+          "cached": 1340,
+          "output_tokens": 84
+        },
+        "item19": {
+          "cost_usd": 0.0778,
+          "input_tokens": 7870,
+          "cached": 1340,
+          "output_tokens": 3853,
+          "images_sent": 3
+        },
+        "item20": {
+          "cost_usd": 0.1757,
+          "input_tokens": 15873,
+          "cached": 1340,
+          "output_tokens": 8781,
+          "images_sent": 7
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\pancheros_franchise_corporation_2026_mn_35562-202603-01.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\pancheros_franchise_corporation_2026_mn_35562-202603-01",
+      "elapsed_sec": 86.6,
+      "total_cost_usd": 0.2023,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0088,
+          "input_tokens": 3179,
+          "cached": 1340,
+          "output_tokens": 190
+        },
+        "item5": {
+          "cost_usd": 0.0046,
+          "input_tokens": 1214,
+          "cached": 1340,
+          "output_tokens": 304
+        },
+        "item6": {
+          "cost_usd": 0.0183,
+          "input_tokens": 4854,
+          "cached": 1340,
+          "output_tokens": 493
+        },
+        "item7": {
+          "cost_usd": 0.0108,
+          "input_tokens": 4355,
+          "cached": 1340,
+          "output_tokens": 89
+        },
+        "item19": {
+          "cost_usd": 0.08,
+          "input_tokens": 12274,
+          "cached": 1340,
+          "output_tokens": 3122,
+          "images_sent": 5
+        },
+        "item20": {
+          "cost_usd": 0.0798,
+          "input_tokens": 8812,
+          "cached": 1340,
+          "output_tokens": 3801,
+          "images_sent": 4
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\oxi_fresh_franchising_co_inc_2026_mn_35994-202604-06.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\oxi_fresh_franchising_co_inc_2026_mn_35994-202604-06",
+      "elapsed_sec": 153.0,
+      "total_cost_usd": 0.3807,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.007,
+          "input_tokens": 2298,
+          "cached": 1340,
+          "output_tokens": 245
+        },
+        "item5": {
+          "cost_usd": 0.0075,
+          "input_tokens": 2217,
+          "cached": 1340,
+          "output_tokens": 295
+        },
+        "item6": {
+          "cost_usd": 0.0209,
+          "input_tokens": 5255,
+          "cached": 1340,
+          "output_tokens": 582
+        },
+        "item7": {
+          "cost_usd": 0.0068,
+          "input_tokens": 2968,
+          "cached": 1340,
+          "output_tokens": 99
+        },
+        "item19": {
+          "cost_usd": 0.0882,
+          "input_tokens": 6325,
+          "cached": 1340,
+          "output_tokens": 4853,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.2505,
+          "input_tokens": 19553,
+          "cached": 1340,
+          "output_tokens": 13033,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\papa_john_s_franchising_llc_2026_mn_35810-202604-11.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\papa_john_s_franchising_llc_2026_mn_35810-202604-11",
+      "elapsed_sec": 119.7,
+      "total_cost_usd": 0.2536,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0056,
+          "input_tokens": 2085,
+          "cached": 1340,
+          "output_tokens": 198
+        },
+        "item5": {
+          "cost_usd": 0.0071,
+          "input_tokens": 2060,
+          "cached": 1340,
+          "output_tokens": 304
+        },
+        "item6": {
+          "cost_usd": 0.016,
+          "input_tokens": 3790,
+          "cached": 1340,
+          "output_tokens": 550
+        },
+        "item7": {
+          "cost_usd": 0.0092,
+          "input_tokens": 3721,
+          "cached": 1340,
+          "output_tokens": 111
+        },
+        "item19": {
+          "cost_usd": 0.2157,
+          "input_tokens": 18478,
+          "cached": 1340,
+          "output_tokens": 10926,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\paris_baguette_family_inc_2026_mn_35764-202604-03.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\paris_baguette_family_inc_2026_mn_35764-202604-03",
+      "elapsed_sec": 116.1,
+      "total_cost_usd": 0.2476,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0057,
+          "input_tokens": 2094,
+          "cached": 1340,
+          "output_tokens": 201
+        },
+        "item5": {
+          "cost_usd": 0.0095,
+          "input_tokens": 2742,
+          "cached": 1340,
+          "output_tokens": 327
+        },
+        "item6": {
+          "cost_usd": 0.0128,
+          "input_tokens": 2745,
+          "cached": 1340,
+          "output_tokens": 545
+        },
+        "item7": {
+          "cost_usd": 0.0084,
+          "input_tokens": 3572,
+          "cached": 1340,
+          "output_tokens": 89
+        },
+        "item19": {
+          "cost_usd": 0.0872,
+          "input_tokens": 10131,
+          "cached": 1340,
+          "output_tokens": 4027,
+          "images_sent": 4
+        },
+        "item20": {
+          "cost_usd": 0.124,
+          "input_tokens": 15267,
+          "cached": 1340,
+          "output_tokens": 5452,
+          "images_sent": 7
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\peet_s_coffee_franchise_llc_2026_mn_36086-202604-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\peet_s_coffee_franchise_llc_2026_mn_36086-202604-08",
+      "elapsed_sec": 60.6,
+      "total_cost_usd": 0.1422,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0053,
+          "input_tokens": 2014,
+          "cached": 1340,
+          "output_tokens": 193
+        },
+        "item5": {
+          "cost_usd": 0.0048,
+          "input_tokens": 1645,
+          "cached": 1340,
+          "output_tokens": 229
+        },
+        "item6": {
+          "cost_usd": 0.0167,
+          "input_tokens": 4098,
+          "cached": 1340,
+          "output_tokens": 538
+        },
+        "item7": {
+          "cost_usd": 0.0074,
+          "input_tokens": 3170,
+          "cached": 1340,
+          "output_tokens": 98
+        },
+        "item19": {
+          "cost_usd": 0.0653,
+          "input_tokens": 9959,
+          "cached": 1340,
+          "output_tokens": 2603,
+          "images_sent": 4
+        },
+        "item20": {
+          "cost_usd": 0.0427,
+          "input_tokens": 8720,
+          "cached": 1340,
+          "output_tokens": 1342,
+          "images_sent": 4
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\paymore_group_llc_2026_mn_36054-202604-04.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\paymore_group_llc_2026_mn_36054-202604-04",
+      "elapsed_sec": 98.1,
+      "total_cost_usd": 0.2504,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0059,
+          "input_tokens": 2155,
+          "cached": 1340,
+          "output_tokens": 203
+        },
+        "item5": {
+          "cost_usd": 0.0089,
+          "input_tokens": 2066,
+          "cached": 1340,
+          "output_tokens": 424
+        },
+        "item6": {
+          "cost_usd": 0.0155,
+          "input_tokens": 2026,
+          "cached": 1340,
+          "output_tokens": 871
+        },
+        "item7": {
+          "cost_usd": 0.0077,
+          "input_tokens": 3346,
+          "cached": 1340,
+          "output_tokens": 85
+        },
+        "item19": {
+          "cost_usd": 0.0605,
+          "input_tokens": 10709,
+          "cached": 1340,
+          "output_tokens": 2132,
+          "images_sent": 4
+        },
+        "item20": {
+          "cost_usd": 0.1519,
+          "input_tokens": 13760,
+          "cached": 1340,
+          "output_tokens": 7614,
+          "images_sent": 6
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\php_franchise_llc_2026_mn_35941-202604-10.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\php_franchise_llc_2026_mn_35941-202604-10",
+      "elapsed_sec": 63.7,
+      "total_cost_usd": 0.126,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.005,
+          "input_tokens": 1845,
+          "cached": 1340,
+          "output_tokens": 205
+        },
+        "item5": {
+          "cost_usd": 0.0107,
+          "input_tokens": 2431,
+          "cached": 1340,
+          "output_tokens": 469
+        },
+        "item6": {
+          "cost_usd": 0.0254,
+          "input_tokens": 4882,
+          "cached": 1340,
+          "output_tokens": 957
+        },
+        "item7": {
+          "cost_usd": 0.0052,
+          "input_tokens": 2493,
+          "cached": 1340,
+          "output_tokens": 88
+        },
+        "item19": {
+          "cost_usd": 0.0403,
+          "input_tokens": 5737,
+          "cached": 1340,
+          "output_tokens": 1782,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.0394,
+          "input_tokens": 7011,
+          "cached": 1340,
+          "output_tokens": 1466,
+          "images_sent": 3
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\papa_murphy_s_international_inc_2026_mn_35626-202603-09.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\papa_murphy_s_international_inc_2026_mn_35626-202603-09",
+      "elapsed_sec": 212.3,
+      "total_cost_usd": 0.4306,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0039,
+          "input_tokens": 1528,
+          "cached": 1340,
+          "output_tokens": 198
+        },
+        "item5": {
+          "cost_usd": 0.0058,
+          "input_tokens": 1476,
+          "cached": 1340,
+          "output_tokens": 332
+        },
+        "item6": {
+          "cost_usd": 0.0217,
+          "input_tokens": 4382,
+          "cached": 1340,
+          "output_tokens": 814
+        },
+        "item7": {
+          "cost_usd": 0.012,
+          "input_tokens": 4765,
+          "cached": 1340,
+          "output_tokens": 91
+        },
+        "item19": {
+          "cost_usd": 0.1966,
+          "input_tokens": 11875,
+          "cached": 1340,
+          "output_tokens": 10975,
+          "images_sent": 5
+        },
+        "item20": {
+          "cost_usd": 0.1904,
+          "input_tokens": 18338,
+          "cached": 1340,
+          "output_tokens": 9268,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\pestmaster_franchise_network_llc_2026_mn_35934-202604-09.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\pestmaster_franchise_network_llc_2026_mn_35934-202604-09",
+      "elapsed_sec": 127.1,
+      "total_cost_usd": 0.2779,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0048,
+          "input_tokens": 1847,
+          "cached": 1340,
+          "output_tokens": 192
+        },
+        "item5": {
+          "cost_usd": 0.0091,
+          "input_tokens": 2422,
+          "cached": 1340,
+          "output_tokens": 364
+        },
+        "item6": {
+          "cost_usd": 0.0309,
+          "input_tokens": 5016,
+          "cached": 1340,
+          "output_tokens": 1296
+        },
+        "item7": {
+          "cost_usd": 0.0094,
+          "input_tokens": 3879,
+          "cached": 1340,
+          "output_tokens": 90
+        },
+        "item19": {
+          "cost_usd": 0.082,
+          "input_tokens": 12049,
+          "cached": 1340,
+          "output_tokens": 3300,
+          "images_sent": 5
+        },
+        "item20": {
+          "cost_usd": 0.1418,
+          "input_tokens": 11792,
+          "cached": 1340,
+          "output_tokens": 7333,
+          "images_sent": 5
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\school_of_rock_franchising_llc_2026_mn_36006-202604-09.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\school_of_rock_franchising_llc_2026_mn_36006-202604-09",
+      "elapsed_sec": 6.6,
+      "total_cost_usd": 0.0053,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0053,
+          "input_tokens": 1912,
+          "cached": 1340,
+          "output_tokens": 209
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\rusty_taco_franchising_llc_2026_mn_36049-202604-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\rusty_taco_franchising_llc_2026_mn_36049-202604-08",
+      "elapsed_sec": 79.6,
+      "total_cost_usd": 0.1699,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0056,
+          "input_tokens": 2052,
+          "cached": 1340,
+          "output_tokens": 203
+        },
+        "item5": {
+          "cost_usd": 0.0053,
+          "input_tokens": 1729,
+          "cached": 1340,
+          "output_tokens": 252
+        },
+        "item6": {
+          "cost_usd": 0.0211,
+          "input_tokens": 4232,
+          "cached": 1340,
+          "output_tokens": 801
+        },
+        "item7": {
+          "cost_usd": 0.0083,
+          "input_tokens": 3531,
+          "cached": 1340,
+          "output_tokens": 87
+        },
+        "item19": {
+          "cost_usd": 0.0395,
+          "input_tokens": 6140,
+          "cached": 1340,
+          "output_tokens": 1649,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.09,
+          "input_tokens": 9476,
+          "cached": 1340,
+          "output_tokens": 4348,
+          "images_sent": 4
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\ringside_development_company_d_b_a_bio_one_colorado_inc_2026_mn_35897-202604-15.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\ringside_development_company_d_b_a_bio_one_colorado_inc_2026_mn_35897-202604-15",
+      "elapsed_sec": 157.8,
+      "total_cost_usd": 0.3731,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0052,
+          "input_tokens": 1861,
+          "cached": 1340,
+          "output_tokens": 218
+        },
+        "item5": {
+          "cost_usd": 0.0077,
+          "input_tokens": 2297,
+          "cached": 1340,
+          "output_tokens": 296
+        },
+        "item6": {
+          "cost_usd": 0.0203,
+          "input_tokens": 4675,
+          "cached": 1340,
+          "output_tokens": 658
+        },
+        "item7": {
+          "cost_usd": 0.0038,
+          "input_tokens": 2042,
+          "cached": 1340,
+          "output_tokens": 87
+        },
+        "item19": {
+          "cost_usd": 0.1082,
+          "input_tokens": 8126,
+          "cached": 1340,
+          "output_tokens": 5828,
+          "images_sent": 3
+        },
+        "item20": {
+          "cost_usd": 0.2279,
+          "input_tokens": 17383,
+          "cached": 1340,
+          "output_tokens": 11958,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\rpm_summit_group_llc_2026_mn_35850-202604-07.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\rpm_summit_group_llc_2026_mn_35850-202604-07",
+      "elapsed_sec": 141.8,
+      "total_cost_usd": 0.3455,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0066,
+          "input_tokens": 2159,
+          "cached": 1340,
+          "output_tokens": 252
+        },
+        "item5": {
+          "cost_usd": 0.0063,
+          "input_tokens": 1718,
+          "cached": 1340,
+          "output_tokens": 316
+        },
+        "item6": {
+          "cost_usd": 0.0277,
+          "input_tokens": 5025,
+          "cached": 1340,
+          "output_tokens": 1082
+        },
+        "item7": {
+          "cost_usd": 0.0024,
+          "input_tokens": 1589,
+          "cached": 1340,
+          "output_tokens": 86
+        },
+        "item19": {
+          "cost_usd": 0.1392,
+          "input_tokens": 21049,
+          "cached": 1340,
+          "output_tokens": 5313,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.1633,
+          "input_tokens": 13750,
+          "cached": 1340,
+          "output_tokens": 8375,
+          "images_sent": 6
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\sir_grout_franchising_llc_2026_mn_35937-202604-10.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\sir_grout_franchising_llc_2026_mn_35937-202604-10",
+      "elapsed_sec": 121.3,
+      "total_cost_usd": 0.2808,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0048,
+          "input_tokens": 1890,
+          "cached": 1340,
+          "output_tokens": 182
+        },
+        "item5": {
+          "cost_usd": 0.0056,
+          "input_tokens": 1574,
+          "cached": 1340,
+          "output_tokens": 301
+        },
+        "item6": {
+          "cost_usd": 0.0359,
+          "input_tokens": 5485,
+          "cached": 1340,
+          "output_tokens": 1538
+        },
+        "item7": {
+          "cost_usd": 0.0052,
+          "input_tokens": 2502,
+          "cached": 1340,
+          "output_tokens": 87
+        },
+        "item19": {
+          "cost_usd": 0.0918,
+          "input_tokens": 17167,
+          "cached": 1340,
+          "output_tokens": 2927,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.1375,
+          "input_tokens": 12587,
+          "cached": 1340,
+          "output_tokens": 6890,
+          "images_sent": 6
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\sir_speedy_llc_2026_mn_35805-202604-13.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\sir_speedy_llc_2026_mn_35805-202604-13",
+      "elapsed_sec": 116.1,
+      "total_cost_usd": 0.2985,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0055,
+          "input_tokens": 2043,
+          "cached": 1340,
+          "output_tokens": 201
+        },
+        "item5": {
+          "cost_usd": 0.0065,
+          "input_tokens": 1779,
+          "cached": 1340,
+          "output_tokens": 322
+        },
+        "item6": {
+          "cost_usd": 0.0164,
+          "input_tokens": 1912,
+          "cached": 1340,
+          "output_tokens": 951
+        },
+        "item7": {
+          "cost_usd": 0.0089,
+          "input_tokens": 3726,
+          "cached": 1340,
+          "output_tokens": 89
+        },
+        "item19": {
+          "cost_usd": 0.0448,
+          "input_tokens": 5944,
+          "cached": 1340,
+          "output_tokens": 2037,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.2164,
+          "input_tokens": 23003,
+          "cached": 1340,
+          "output_tokens": 10068,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\smallbizpros_inc_2026_mn_35914-202604-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\smallbizpros_inc_2026_mn_35914-202604-08",
+      "elapsed_sec": 158.5,
+      "total_cost_usd": 0.3597,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0058,
+          "input_tokens": 1915,
+          "cached": 1340,
+          "output_tokens": 242
+        },
+        "item5": {
+          "cost_usd": 0.0073,
+          "input_tokens": 1532,
+          "cached": 1340,
+          "output_tokens": 423
+        },
+        "item6": {
+          "cost_usd": 0.0198,
+          "input_tokens": 3311,
+          "cached": 1340,
+          "output_tokens": 897
+        },
+        "item7": {
+          "cost_usd": 0.0037,
+          "input_tokens": 1892,
+          "cached": 1340,
+          "output_tokens": 108
+        },
+        "item19": {
+          "cost_usd": 0.155,
+          "input_tokens": 18578,
+          "cached": 1340,
+          "output_tokens": 6860,
+          "images_sent": 6
+        },
+        "item20": {
+          "cost_usd": 0.1682,
+          "input_tokens": 15834,
+          "cached": 1340,
+          "output_tokens": 8287,
+          "images_sent": 7
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\scooter_s_coffee_llc_2026_mn_35835-202604-09.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\scooter_s_coffee_llc_2026_mn_35835-202604-09",
+      "elapsed_sec": 251.7,
+      "total_cost_usd": 0.5914,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0056,
+          "input_tokens": 1982,
+          "cached": 1340,
+          "output_tokens": 219
+        },
+        "item5": {
+          "cost_usd": 0.0069,
+          "input_tokens": 1934,
+          "cached": 1340,
+          "output_tokens": 313
+        },
+        "item6": {
+          "cost_usd": 0.0201,
+          "input_tokens": 4655,
+          "cached": 1340,
+          "output_tokens": 650
+        },
+        "item7": {
+          "cost_usd": 0.0186,
+          "input_tokens": 6942,
+          "cached": 1340,
+          "output_tokens": 95
+        },
+        "item19": {
+          "cost_usd": 0.363,
+          "input_tokens": 23549,
+          "cached": 1340,
+          "output_tokens": 19729,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.1773,
+          "input_tokens": 17237,
+          "cached": 1340,
+          "output_tokens": 8611,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\soccer_shots_franchising_llc_2026_mn_35766-202604-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\soccer_shots_franchising_llc_2026_mn_35766-202604-08",
+      "elapsed_sec": 110.0,
+      "total_cost_usd": 0.3505,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0052,
+          "input_tokens": 1954,
+          "cached": 1340,
+          "output_tokens": 200
+        },
+        "item5": {
+          "cost_usd": 0.0054,
+          "input_tokens": 1688,
+          "cached": 1340,
+          "output_tokens": 261
+        },
+        "item6": {
+          "cost_usd": 0.0215,
+          "input_tokens": 4406,
+          "cached": 1340,
+          "output_tokens": 793
+        },
+        "item7": {
+          "cost_usd": 0.0025,
+          "input_tokens": 1575,
+          "cached": 1340,
+          "output_tokens": 92
+        },
+        "item19": {
+          "cost_usd": 0.1108,
+          "input_tokens": 37069,
+          "cached": 1340,
+          "output_tokens": 217,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.2051,
+          "input_tokens": 17265,
+          "cached": 1340,
+          "output_tokens": 10460,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\speedee_worldwide_llc_2026_mn_35923-202604-06.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\speedee_worldwide_llc_2026_mn_35923-202604-06",
+      "elapsed_sec": 164.9,
+      "total_cost_usd": 0.3616,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0068,
+          "input_tokens": 2115,
+          "cached": 1340,
+          "output_tokens": 272
+        },
+        "item5": {
+          "cost_usd": 0.0078,
+          "input_tokens": 1809,
+          "cached": 1340,
+          "output_tokens": 402
+        },
+        "item6": {
+          "cost_usd": 0.0171,
+          "input_tokens": 1812,
+          "cached": 1340,
+          "output_tokens": 1021
+        },
+        "item7": {
+          "cost_usd": 0.0104,
+          "input_tokens": 4190,
+          "cached": 1340,
+          "output_tokens": 95
+        },
+        "item19": {
+          "cost_usd": 0.245,
+          "input_tokens": 15292,
+          "cached": 1340,
+          "output_tokens": 13516,
+          "images_sent": 6
+        },
+        "item20": {
+          "cost_usd": 0.0745,
+          "input_tokens": 9222,
+          "cached": 1340,
+          "output_tokens": 3361,
+          "images_sent": 4
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\soccer_stars_llc_2026_mn_35995-202604-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\soccer_stars_llc_2026_mn_35995-202604-08",
+      "elapsed_sec": 248.1,
+      "total_cost_usd": 0.6387,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0043,
+          "input_tokens": 1740,
+          "cached": 1340,
+          "output_tokens": 182
+        },
+        "item5": {
+          "cost_usd": 0.0062,
+          "input_tokens": 1942,
+          "cached": 1340,
+          "output_tokens": 266
+        },
+        "item6": {
+          "cost_usd": 0.0292,
+          "input_tokens": 7715,
+          "cached": 1340,
+          "output_tokens": 646
+        },
+        "item7": {
+          "cost_usd": 0.0137,
+          "input_tokens": 5351,
+          "cached": 1340,
+          "output_tokens": 85
+        },
+        "item19": {
+          "cost_usd": 0.4129,
+          "input_tokens": 34682,
+          "cached": 1340,
+          "output_tokens": 20831,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.1724,
+          "input_tokens": 16687,
+          "cached": 1340,
+          "output_tokens": 8395,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\stanley_steemer_international_inc_2026_mn_35913-202604-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\stanley_steemer_international_inc_2026_mn_35913-202604-08",
+      "elapsed_sec": 165.4,
+      "total_cost_usd": 0.3874,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0053,
+          "input_tokens": 1974,
+          "cached": 1340,
+          "output_tokens": 200
+        },
+        "item5": {
+          "cost_usd": 0.0091,
+          "input_tokens": 2308,
+          "cached": 1340,
+          "output_tokens": 386
+        },
+        "item6": {
+          "cost_usd": 0.0328,
+          "input_tokens": 6232,
+          "cached": 1340,
+          "output_tokens": 1182
+        },
+        "item7": {
+          "cost_usd": 0.0083,
+          "input_tokens": 3520,
+          "cached": 1340,
+          "output_tokens": 92
+        },
+        "item19": {
+          "cost_usd": 0.0929,
+          "input_tokens": 10950,
+          "cached": 1340,
+          "output_tokens": 4245,
+          "images_sent": 4
+        },
+        "item20": {
+          "cost_usd": 0.239,
+          "input_tokens": 23214,
+          "cached": 1340,
+          "output_tokens": 11529,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\stanley_industrial_automotive_llc_2026_mn_35960-202604-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\stanley_industrial_automotive_llc_2026_mn_35960-202604-08",
+      "elapsed_sec": 216.8,
+      "total_cost_usd": 0.5063,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0063,
+          "input_tokens": 2062,
+          "cached": 1340,
+          "output_tokens": 250
+        },
+        "item5": {
+          "cost_usd": 0.0078,
+          "input_tokens": 2833,
+          "cached": 1340,
+          "output_tokens": 195
+        },
+        "item6": {
+          "cost_usd": 0.0314,
+          "input_tokens": 4277,
+          "cached": 1340,
+          "output_tokens": 1482
+        },
+        "item7": {
+          "cost_usd": 0.0221,
+          "input_tokens": 8108,
+          "cached": 1340,
+          "output_tokens": 95
+        },
+        "item19": {
+          "cost_usd": 0.1894,
+          "input_tokens": 10825,
+          "cached": 1340,
+          "output_tokens": 10702,
+          "images_sent": 4
+        },
+        "item20": {
+          "cost_usd": 0.2492,
+          "input_tokens": 20208,
+          "cached": 1340,
+          "output_tokens": 12812,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\t_b_franchising_systems_inc_2026_mn_35977-202604-10.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\t_b_franchising_systems_inc_2026_mn_35977-202604-10",
+      "elapsed_sec": 112.3,
+      "total_cost_usd": 0.2695,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0056,
+          "input_tokens": 1783,
+          "cached": 1340,
+          "output_tokens": 255
+        },
+        "item5": {
+          "cost_usd": 0.0066,
+          "input_tokens": 1749,
+          "cached": 1340,
+          "output_tokens": 332
+        },
+        "item6": {
+          "cost_usd": 0.0141,
+          "input_tokens": 3440,
+          "cached": 1340,
+          "output_tokens": 492
+        },
+        "item7": {
+          "cost_usd": 0.0031,
+          "input_tokens": 1765,
+          "cached": 1340,
+          "output_tokens": 96
+        },
+        "item19": {
+          "cost_usd": 0.0646,
+          "input_tokens": 11446,
+          "cached": 1340,
+          "output_tokens": 2256,
+          "images_sent": 5
+        },
+        "item20": {
+          "cost_usd": 0.1756,
+          "input_tokens": 13564,
+          "cached": 1340,
+          "output_tokens": 9232,
+          "images_sent": 6
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\the_camp_franchise_systems_llc_2026_mn_35917-202604-10.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\the_camp_franchise_systems_llc_2026_mn_35917-202604-10",
+      "elapsed_sec": 103.3,
+      "total_cost_usd": 0.2036,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.005,
+          "input_tokens": 1898,
+          "cached": 1340,
+          "output_tokens": 195
+        },
+        "item5": {
+          "cost_usd": 0.0091,
+          "input_tokens": 2818,
+          "cached": 1340,
+          "output_tokens": 281
+        },
+        "item6": {
+          "cost_usd": 0.0124,
+          "input_tokens": 1460,
+          "cached": 1340,
+          "output_tokens": 778
+        },
+        "item7": {
+          "cost_usd": 0.0039,
+          "input_tokens": 2083,
+          "cached": 1340,
+          "output_tokens": 83
+        },
+        "item19": {
+          "cost_usd": 0.0898,
+          "input_tokens": 11855,
+          "cached": 1340,
+          "output_tokens": 3857,
+          "images_sent": 5
+        },
+        "item20": {
+          "cost_usd": 0.0834,
+          "input_tokens": 11833,
+          "cached": 1340,
+          "output_tokens": 3435,
+          "images_sent": 6
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\taco_john_s_international_inc_2026_mn_35721-202603-14.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\taco_john_s_international_inc_2026_mn_35721-202603-14",
+      "elapsed_sec": 111.7,
+      "total_cost_usd": 0.2792,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0062,
+          "input_tokens": 2045,
+          "cached": 1340,
+          "output_tokens": 248
+        },
+        "item5": {
+          "cost_usd": 0.0115,
+          "input_tokens": 2505,
+          "cached": 1340,
+          "output_tokens": 509
+        },
+        "item6": {
+          "cost_usd": 0.0064,
+          "input_tokens": 1444,
+          "cached": 1340,
+          "output_tokens": 376
+        },
+        "item7": {
+          "cost_usd": 0.0256,
+          "input_tokens": 9247,
+          "cached": 1340,
+          "output_tokens": 96
+        },
+        "item19": {
+          "cost_usd": 0.1068,
+          "input_tokens": 12778,
+          "cached": 1340,
+          "output_tokens": 4803,
+          "images_sent": 5
+        },
+        "item20": {
+          "cost_usd": 0.1228,
+          "input_tokens": 11169,
+          "cached": 1340,
+          "output_tokens": 6194,
+          "images_sent": 5
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\the_lash_franchise_holdings_llc_2026_mn_35660-202603-07.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\the_lash_franchise_holdings_llc_2026_mn_35660-202603-07",
+      "elapsed_sec": 113.2,
+      "total_cost_usd": 0.2699,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0061,
+          "input_tokens": 2023,
+          "cached": 1340,
+          "output_tokens": 242
+        },
+        "item5": {
+          "cost_usd": 0.0077,
+          "input_tokens": 1729,
+          "cached": 1340,
+          "output_tokens": 407
+        },
+        "item6": {
+          "cost_usd": 0.009,
+          "input_tokens": 1338,
+          "cached": 1340,
+          "output_tokens": 572
+        },
+        "item7": {
+          "cost_usd": 0.0112,
+          "input_tokens": 4524,
+          "cached": 1340,
+          "output_tokens": 84
+        },
+        "item19": {
+          "cost_usd": 0.0684,
+          "input_tokens": 11646,
+          "cached": 1340,
+          "output_tokens": 2472,
+          "images_sent": 4
+        },
+        "item20": {
+          "cost_usd": 0.1676,
+          "input_tokens": 15076,
+          "cached": 1340,
+          "output_tokens": 8396,
+          "images_sent": 7
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\vi_brandco_llc_2026_mn_35619-202603-14.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\vi_brandco_llc_2026_mn_35619-202603-14",
+      "elapsed_sec": 76.3,
+      "total_cost_usd": 0.2015,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0061,
+          "input_tokens": 2009,
+          "cached": 1340,
+          "output_tokens": 247
+        },
+        "item5": {
+          "cost_usd": 0.0051,
+          "input_tokens": 1606,
+          "cached": 1340,
+          "output_tokens": 260
+        },
+        "item6": {
+          "cost_usd": 0.0128,
+          "input_tokens": 3259,
+          "cached": 1340,
+          "output_tokens": 445
+        },
+        "item7": {
+          "cost_usd": 0.0108,
+          "input_tokens": 4194,
+          "cached": 1340,
+          "output_tokens": 120
+        },
+        "item19": {
+          "cost_usd": 0.0446,
+          "input_tokens": 9505,
+          "cached": 1340,
+          "output_tokens": 1312,
+          "images_sent": 4
+        },
+        "item20": {
+          "cost_usd": 0.1222,
+          "input_tokens": 16818,
+          "cached": 1340,
+          "output_tokens": 5021,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\v_s_barbership_franchise_llc_2026_mn_35880-202604-01.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\v_s_barbership_franchise_llc_2026_mn_35880-202604-01",
+      "elapsed_sec": 87.5,
+      "total_cost_usd": 0.2148,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0061,
+          "input_tokens": 2159,
+          "cached": 1340,
+          "output_tokens": 215
+        },
+        "item5": {
+          "cost_usd": 0.0061,
+          "input_tokens": 1646,
+          "cached": 1340,
+          "output_tokens": 319
+        },
+        "item6": {
+          "cost_usd": 0.0231,
+          "input_tokens": 6596,
+          "cached": 1340,
+          "output_tokens": 461
+        },
+        "item7": {
+          "cost_usd": 0.01,
+          "input_tokens": 4110,
+          "cached": 1340,
+          "output_tokens": 84
+        },
+        "item19": {
+          "cost_usd": 0.0611,
+          "input_tokens": 10433,
+          "cached": 1340,
+          "output_tokens": 2231,
+          "images_sent": 4
+        },
+        "item20": {
+          "cost_usd": 0.1084,
+          "input_tokens": 11242,
+          "cached": 1340,
+          "output_tokens": 5221,
+          "images_sent": 5
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\ubif_franchising_co_2026_mn_35808-202604-10.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\ubif_franchising_co_2026_mn_35808-202604-10",
+      "elapsed_sec": 155.1,
+      "total_cost_usd": 0.3795,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0054,
+          "input_tokens": 2018,
+          "cached": 1340,
+          "output_tokens": 195
+        },
+        "item5": {
+          "cost_usd": 0.0072,
+          "input_tokens": 1806,
+          "cached": 1340,
+          "output_tokens": 357
+        },
+        "item6": {
+          "cost_usd": 0.0229,
+          "input_tokens": 5858,
+          "cached": 1340,
+          "output_tokens": 599
+        },
+        "item7": {
+          "cost_usd": 0.0052,
+          "input_tokens": 2517,
+          "cached": 1340,
+          "output_tokens": 83
+        },
+        "item19": {
+          "cost_usd": 0.0622,
+          "input_tokens": 10540,
+          "cached": 1340,
+          "output_tokens": 2279,
+          "images_sent": 4
+        },
+        "item20": {
+          "cost_usd": 0.2767,
+          "input_tokens": 19783,
+          "cached": 1340,
+          "output_tokens": 14729,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\wavemax_franchise_llc_2026_mn_35930-202604-09.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\wavemax_franchise_llc_2026_mn_35930-202604-09",
+      "elapsed_sec": 129.5,
+      "total_cost_usd": 0.3026,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0057,
+          "input_tokens": 2002,
+          "cached": 1340,
+          "output_tokens": 220
+        },
+        "item5": {
+          "cost_usd": 0.0037,
+          "input_tokens": 1038,
+          "cached": 1340,
+          "output_tokens": 278
+        },
+        "item6": {
+          "cost_usd": 0.0208,
+          "input_tokens": 3664,
+          "cached": 1340,
+          "output_tokens": 897
+        },
+        "item7": {
+          "cost_usd": 0.0131,
+          "input_tokens": 5141,
+          "cached": 1340,
+          "output_tokens": 86
+        },
+        "item19": {
+          "cost_usd": 0.1408,
+          "input_tokens": 26018,
+          "cached": 1340,
+          "output_tokens": 4424,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.1186,
+          "input_tokens": 10939,
+          "cached": 1340,
+          "output_tokens": 5958,
+          "images_sent": 5
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\wnw_franchise_operations_spv_llc_2026_mn_36221-202604-04.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\wnw_franchise_operations_spv_llc_2026_mn_36221-202604-04",
+      "elapsed_sec": 113.6,
+      "total_cost_usd": 0.2415,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0055,
+          "input_tokens": 2343,
+          "cached": 1340,
+          "output_tokens": 138
+        },
+        "item5": {
+          "cost_usd": 0.0123,
+          "input_tokens": 2010,
+          "cached": 1340,
+          "output_tokens": 659
+        },
+        "item6": {
+          "cost_usd": 0.019,
+          "input_tokens": 3343,
+          "cached": 1340,
+          "output_tokens": 839
+        },
+        "item7": {
+          "cost_usd": 0.007,
+          "input_tokens": 3095,
+          "cached": 1340,
+          "output_tokens": 86
+        },
+        "item19": {
+          "cost_usd": 0.0996,
+          "input_tokens": 9812,
+          "cached": 1340,
+          "output_tokens": 4921,
+          "images_sent": 4
+        },
+        "item20": {
+          "cost_usd": 0.0982,
+          "input_tokens": 10973,
+          "cached": 1340,
+          "output_tokens": 4591,
+          "images_sent": 5
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\world_gym_international_llc_2026_mn_35746-202603-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\world_gym_international_llc_2026_mn_35746-202603-08",
+      "elapsed_sec": 58.9,
+      "total_cost_usd": 0.1266,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0049,
+          "input_tokens": 1791,
+          "cached": 1340,
+          "output_tokens": 208
+        },
+        "item5": {
+          "cost_usd": 0.0069,
+          "input_tokens": 1502,
+          "cached": 1340,
+          "output_tokens": 400
+        },
+        "item6": {
+          "cost_usd": 0.0128,
+          "input_tokens": 2162,
+          "cached": 1340,
+          "output_tokens": 662
+        },
+        "item7": {
+          "cost_usd": 0.0028,
+          "input_tokens": 1713,
+          "cached": 1340,
+          "output_tokens": 86
+        },
+        "item19": {
+          "cost_usd": 0.0143,
+          "input_tokens": 5541,
+          "cached": 1340,
+          "output_tokens": 88,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.0849,
+          "input_tokens": 8944,
+          "cached": 1340,
+          "output_tokens": 4114,
+          "images_sent": 4
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\wetzel_s_pretzels_llc_2026_mn_35605-202603-24.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\wetzel_s_pretzels_llc_2026_mn_35605-202603-24",
+      "elapsed_sec": 159.5,
+      "total_cost_usd": 0.3781,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0051,
+          "input_tokens": 1663,
+          "cached": 1340,
+          "output_tokens": 247
+        },
+        "item5": {
+          "cost_usd": 0.0073,
+          "input_tokens": 1982,
+          "cached": 1340,
+          "output_tokens": 331
+        },
+        "item6": {
+          "cost_usd": 0.0244,
+          "input_tokens": 4559,
+          "cached": 1340,
+          "output_tokens": 954
+        },
+        "item7": {
+          "cost_usd": 0.021,
+          "input_tokens": 7797,
+          "cached": 1340,
+          "output_tokens": 85
+        },
+        "item19": {
+          "cost_usd": 0.1427,
+          "input_tokens": 17633,
+          "cached": 1340,
+          "output_tokens": 6230,
+          "images_sent": 7
+        },
+        "item20": {
+          "cost_usd": 0.1776,
+          "input_tokens": 17385,
+          "cached": 1340,
+          "output_tokens": 8602,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\zerorez_franchising_systems_inc_2026_mn_35795-202604-10.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\zerorez_franchising_systems_inc_2026_mn_35795-202604-10",
+      "elapsed_sec": 112.0,
+      "total_cost_usd": 0.274,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0057,
+          "input_tokens": 1951,
+          "cached": 1340,
+          "output_tokens": 230
+        },
+        "item5": {
+          "cost_usd": 0.008,
+          "input_tokens": 2129,
+          "cached": 1340,
+          "output_tokens": 348
+        },
+        "item6": {
+          "cost_usd": 0.0255,
+          "input_tokens": 4776,
+          "cached": 1340,
+          "output_tokens": 988
+        },
+        "item7": {
+          "cost_usd": 0.0052,
+          "input_tokens": 2495,
+          "cached": 1340,
+          "output_tokens": 88
+        },
+        "item19": {
+          "cost_usd": 0.057,
+          "input_tokens": 9801,
+          "cached": 1340,
+          "output_tokens": 2079,
+          "images_sent": 4
+        },
+        "item20": {
+          "cost_usd": 0.1726,
+          "input_tokens": 17339,
+          "cached": 1340,
+          "output_tokens": 8283,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\ziggi_s_coffee_franchise_llc_2026_mn_35807-202604-04.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\ziggi_s_coffee_franchise_llc_2026_mn_35807-202604-04",
+      "elapsed_sec": 186.2,
+      "total_cost_usd": 0.4733,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0066,
+          "input_tokens": 2289,
+          "cached": 1340,
+          "output_tokens": 223
+        },
+        "item5": {
+          "cost_usd": 0.0074,
+          "input_tokens": 1952,
+          "cached": 1340,
+          "output_tokens": 344
+        },
+        "item6": {
+          "cost_usd": 0.0174,
+          "input_tokens": 2477,
+          "cached": 1340,
+          "output_tokens": 903
+        },
+        "item7": {
+          "cost_usd": 0.0248,
+          "input_tokens": 8971,
+          "cached": 1340,
+          "output_tokens": 98
+        },
+        "item19": {
+          "cost_usd": 0.2764,
+          "input_tokens": 17995,
+          "cached": 1340,
+          "output_tokens": 15070,
+          "images_sent": 7
+        },
+        "item20": {
+          "cost_usd": 0.1407,
+          "input_tokens": 13708,
+          "cached": 1340,
+          "output_tokens": 6882,
+          "images_sent": 6
+        }
+      },
+      "status": "ok"
+    }
+  ]
+}

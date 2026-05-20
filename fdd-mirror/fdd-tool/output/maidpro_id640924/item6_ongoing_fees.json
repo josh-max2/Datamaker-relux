@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 800,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 500,
+  "fee_notes": "Continuing Royalty of 6% on monthly Gross Consumer Sales. Minimum Royalty of $800/month applies after first 12 months if monthly GCS falls below $15,000. Brand Fund Fee of 2% on GCS. Technology Fee of $500/month (waived for 2nd+ franchises). Additional Premium Royalty of 2.5% for out-of-territory services. Conversion franchisees pay 2% royalty with $150 minimum for first 2 years. Franchise Option Program participants pay 10% royalty for 10 years. All regular fees subject to annual increases up to 10% (optional services uncapped). Multiple additional optional service fees available (digital marketing, lead generation, software licenses, etc.).",
+  "raw_excerpt": "Continuing Royalty: 6% of monthly Gross Consumer Sales. Minimum Royalty: After the first 12 months of operation of the Franchised Business, if your Gross Consumer Sales is less than $15,000 in any month, you must pay a minimum of $800 or the Continuing Royalty, whichever is greater. Brand Fund Fee: 2% of your Gross Consumer Sales. Technology Fee: $500 per month.",
+  "confidence": 0.96
+}

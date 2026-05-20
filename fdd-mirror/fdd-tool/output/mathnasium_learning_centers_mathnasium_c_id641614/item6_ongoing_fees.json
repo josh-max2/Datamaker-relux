@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 10,
+  "royalty_min_monthly": 1500,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": 250,
+  "tech_fee_monthly": 266,
+  "fee_notes": "Royalty is 10% of monthly Gross Receipts; beginning month 24, greater of 10% or $1,500/month. Base royalty $650/month (begins 6 months after signing, single fee for all centers unless Base Royalty Acquisition). Marketing fee is $250 flat + 2% of Gross Receipts. Separate Digital and Local Marketing Fee minimum $1,000/month (begins 2 months pre-opening). CPI escalator applies to fixed-dollar fees annually up to 3%.",
+  "raw_excerpt": "Monthly Royalty: Initially, 10% of your monthly Gross Receipts... Beginning in the 24th month of operation of the Center, the greater of (i) the 10% monthly royalty or (ii) $1,500. Monthly Marketing Fee: $250 plus 2% of your monthly Gross Receipts. Technology License Fee: Currently, $266 per month per Mathnasium Center.",
+  "confidence": 0.95
+}

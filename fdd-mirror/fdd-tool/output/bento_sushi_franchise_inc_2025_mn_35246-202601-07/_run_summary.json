@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\bento_sushi_franchise_inc_2025_mn_35246-202601-07.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0059,
+      "input_tokens": 2053,
+      "cached": 1340,
+      "output_tokens": 224
+    },
+    "item5": {
+      "cost_usd": 0.0099,
+      "input_tokens": 2422,
+      "cached": 1340,
+      "output_tokens": 419
+    },
+    "item6": {
+      "cost_usd": 0.0154,
+      "input_tokens": 3830,
+      "cached": 1340,
+      "output_tokens": 504
+    },
+    "item7": {
+      "cost_usd": 0.0026,
+      "input_tokens": 1601,
+      "cached": 1340,
+      "output_tokens": 92
+    },
+    "item19": {
+      "cost_usd": 0.013,
+      "input_tokens": 5120,
+      "cached": 1340,
+      "output_tokens": 82,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.1633,
+      "input_tokens": 17175,
+      "cached": 1340,
+      "output_tokens": 7690,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.2101
+}

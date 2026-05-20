@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\papa_murphy_s_international_inc_2026_mn_35626-202603-09.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0039,
+      "input_tokens": 1528,
+      "cached": 1340,
+      "output_tokens": 198
+    },
+    "item5": {
+      "cost_usd": 0.0058,
+      "input_tokens": 1476,
+      "cached": 1340,
+      "output_tokens": 332
+    },
+    "item6": {
+      "cost_usd": 0.0217,
+      "input_tokens": 4382,
+      "cached": 1340,
+      "output_tokens": 814
+    },
+    "item7": {
+      "cost_usd": 0.012,
+      "input_tokens": 4765,
+      "cached": 1340,
+      "output_tokens": 91
+    },
+    "item19": {
+      "cost_usd": 0.1966,
+      "input_tokens": 11875,
+      "cached": 1340,
+      "output_tokens": 10975,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.1904,
+      "input_tokens": 18338,
+      "cached": 1340,
+      "output_tokens": 9268,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.4306
+}

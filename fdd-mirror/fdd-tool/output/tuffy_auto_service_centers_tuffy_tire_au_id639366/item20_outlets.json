@@ -1,0 +1,664 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2022,
+      "outlet_type": "franchised",
+      "outlets_start": 145,
+      "outlets_end": 103,
+      "net_change": -42
+    },
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 103,
+      "outlets_end": 100,
+      "net_change": -3
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 100,
+      "outlets_end": 101,
+      "net_change": 1
+    },
+    {
+      "year": 2022,
+      "outlet_type": "company-owned",
+      "outlets_start": 21,
+      "outlets_end": 60,
+      "net_change": 39
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 60,
+      "outlets_end": 58,
+      "net_change": -2
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 58,
+      "outlets_end": 28,
+      "net_change": -30
+    },
+    {
+      "year": 2022,
+      "outlet_type": "total",
+      "outlets_start": 166,
+      "outlets_end": 163,
+      "net_change": -3
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 163,
+      "outlets_end": 158,
+      "net_change": -5
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 158,
+      "outlets_end": 129,
+      "net_change": -29
+    }
+  ],
+  "state_year_status": [
+    {
+      "year": 2022,
+      "state": "AL",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2023,
+      "state": "AL",
+      "outlets_start": 2,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 1,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "AL",
+      "outlets_start": 2,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 3
+    },
+    {
+      "year": 2022,
+      "state": "AZ",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2023,
+      "state": "AZ",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "AZ",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2022,
+      "state": "FL",
+      "outlets_start": 45,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 17,
+      "outlets_ceased_other": 0,
+      "outlets_end": 29
+    },
+    {
+      "year": 2023,
+      "state": "FL",
+      "outlets_start": 29,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 8,
+      "outlets_ceased_other": 0,
+      "outlets_end": 21
+    },
+    {
+      "year": 2024,
+      "state": "FL",
+      "outlets_start": 21,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 21
+    },
+    {
+      "year": 2022,
+      "state": "IL",
+      "outlets_start": 17,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 1,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 16
+    },
+    {
+      "year": 2023,
+      "state": "IL",
+      "outlets_start": 16,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 17
+    },
+    {
+      "year": 2024,
+      "state": "IL",
+      "outlets_start": 17,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 1,
+      "outlets_end": 16
+    },
+    {
+      "year": 2022,
+      "state": "IN",
+      "outlets_start": 5,
+      "outlets_opened": 0,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 4
+    },
+    {
+      "year": 2023,
+      "state": "IN",
+      "outlets_start": 4,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 4
+    },
+    {
+      "year": 2024,
+      "state": "IN",
+      "outlets_start": 4,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 4
+    },
+    {
+      "year": 2022,
+      "state": "IA",
+      "outlets_start": 8,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 8,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2023,
+      "state": "IA",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2024,
+      "state": "IA",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2022,
+      "state": "MI",
+      "outlets_start": 32,
+      "outlets_opened": 0,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 14,
+      "outlets_ceased_other": 0,
+      "outlets_end": 17
+    },
+    {
+      "year": 2023,
+      "state": "MI",
+      "outlets_start": 17,
+      "outlets_opened": 2,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 1,
+      "outlets_ceased_other": 0,
+      "outlets_end": 17
+    },
+    {
+      "year": 2024,
+      "state": "MI",
+      "outlets_start": 18,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 18
+    },
+    {
+      "year": 2022,
+      "state": "NE",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2023,
+      "state": "NE",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "NE",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2022,
+      "state": "NC",
+      "outlets_start": 3,
+      "outlets_opened": 2,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 5
+    },
+    {
+      "year": 2023,
+      "state": "NC",
+      "outlets_start": 5,
+      "outlets_opened": 2,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 7
+    },
+    {
+      "year": 2024,
+      "state": "NC",
+      "outlets_start": 7,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 7
+    },
+    {
+      "year": 2022,
+      "state": "ND",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "ND",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "ND",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2022,
+      "state": "OK",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2023,
+      "state": "OK",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2024,
+      "state": "OK",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2022,
+      "state": "OH",
+      "outlets_start": 22,
+      "outlets_opened": 1,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 1,
+      "outlets_ceased_other": 0,
+      "outlets_end": 21
+    },
+    {
+      "year": 2023,
+      "state": "OH",
+      "outlets_start": 21,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 1,
+      "outlets_ceased_other": 0,
+      "outlets_end": 20
+    },
+    {
+      "year": 2024,
+      "state": "OH",
+      "outlets_start": 20,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 21
+    },
+    {
+      "year": 2022,
+      "state": "SC",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 1,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "SC",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "SC",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2022,
+      "state": "TN",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2023,
+      "state": "TN",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "TN",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2022,
+      "state": "TX",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "TX",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "TX",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 1,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2022,
+      "state": "VA",
+      "outlets_start": 3,
+      "outlets_opened": 0,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2023,
+      "state": "VA",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "VA",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2022,
+      "state": "WI",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2023,
+      "state": "WI",
+      "outlets_start": 2,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 3
+    },
+    {
+      "year": 2024,
+      "state": "WI",
+      "outlets_start": 3,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 3
+    },
+    {
+      "year": 2022,
+      "state": "TOTAL",
+      "outlets_start": 145,
+      "outlets_opened": 4,
+      "outlets_terminated": 4,
+      "outlets_nonrenewed": 1,
+      "outlets_reacquired": 41,
+      "outlets_ceased_other": 0,
+      "outlets_end": 103
+    },
+    {
+      "year": 2023,
+      "state": "TOTAL",
+      "outlets_start": 103,
+      "outlets_opened": 9,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 11,
+      "outlets_ceased_other": 0,
+      "outlets_end": 100
+    },
+    {
+      "year": 2024,
+      "state": "TOTAL",
+      "outlets_start": 100,
+      "outlets_opened": 3,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 1,
+      "outlets_ceased_other": 0,
+      "outlets_end": 101
+    }
+  ],
+  "confidence": 0.97
+}

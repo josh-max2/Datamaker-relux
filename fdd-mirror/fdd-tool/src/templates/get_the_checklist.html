@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Get the FDD Buyer's Checklist (Free) — FranchiseDepth{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "FDD Buyer's Checklist", "url": canonical_url}
+]) }}{% endblock %}
+{% block description %}Free 4-page PDF: what to look for in a Franchise Disclosure Document, what red flags mean, and what to ask current franchisees. No sales pitch.{% endblock %}
+{% block content %}
+<article>
+    <h1>Get the FDD Buyer's Checklist</h1>
+    <p class="lead">
+        A free 4-page PDF covering what to actually look for in a Franchise Disclosure Document, what red flags mean, and the validation questions to ask current franchisees before you sign anything.
+    </p>
+
+    <section class="checklist-pitch">
+        <h2>What's in the checklist</h2>
+        <ul>
+            <li>Item 5 / Item 6 cost decoding — what's negotiable, what's not</li>
+            <li>Item 7 investment range — line items that often surprise first-time buyers</li>
+            <li>Item 19 — how to read past the headline number to the actual distribution</li>
+            <li>Item 20 — what closure rates and transfer patterns actually tell you</li>
+            <li>10 validation questions to ask current franchisees (from Item 20)</li>
+            <li>3 red-flag patterns the FDD's structure hides in plain sight</li>
+        </ul>
+        <p>
+            Built from {{ total_brands }} extracted FDDs + my background as a Revenue Operations Analyst.
+            No paid placement, no sales calls, no upsell. You get the PDF; we add you to a low-volume
+            (once/month at most) newsletter about new FDD analysis. Unsubscribe in one click any time.
+        </p>
+    </section>
+
+    <section class="checklist-instant-dl">
+        <h2>Prefer the direct download?</h2>
+        <p>The PDF is also publicly hosted — no email required if you'd rather just grab it.</p>
+        <a class="btn btn-secondary" href="{{ url_for('lead-magnets/fdd-buyers-checklist.pdf') }}" download>
+            Download the checklist (PDF, 178 KB)
+        </a>
+        <p class="notes">If you take the direct route, consider subscribing below anyway — we email when new analyses land.</p>
+    </section>
+
+    <section class="lead-form-section">
+        <h2>Send it to me</h2>
+        {% if FORMSPREE_ID and FORMSPREE_ID != 'PLACEHOLDER_FORM_ID' %}
+        <form class="lead-form" method="POST" action="https://formspree.io/f/{{ FORMSPREE_ID }}">
+            <label for="email-checklist">Email address</label>
+            <input type="email" id="email-checklist" name="email" required
+                   placeholder="you@example.com" autocomplete="email">
+
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true"
+                   style="position:absolute;left:-9999px">
+            <input type="hidden" name="source" value="get-the-checklist">
+            <input type="hidden" name="_next" value="{{ SITE_HOST }}{{ url_for('get-the-checklist/thank-you/') }}">
+            <input type="hidden" name="_subject" value="Your FDD Buyer's Checklist PDF">
+
+            <button type="submit" class="btn btn-primary">Email me the checklist</button>
+            <p class="form-fineprint">
+                We'll email you the checklist (one-time) and add you to a low-volume newsletter.
+                Your email is stored only as long as you remain subscribed.
+                <a href="{{ url_for('privacy/') }}">Privacy</a>.
+            </p>
+        </form>
+        {% else %}
+        <div class="form-placeholder">
+            <p><strong>Coming soon.</strong> The lead-capture form is being set up. In the meantime, email <a href="mailto:hello@franchisedepth.com?subject=Send%20me%20the%20FDD%20Buyer%27s%20Checklist">hello@franchisedepth.com</a> with the subject line "Send me the FDD Buyer's Checklist" and we'll mail it to you directly.</p>
+        </div>
+        {% endif %}
+    </section>
+</article>
+{% endblock %}

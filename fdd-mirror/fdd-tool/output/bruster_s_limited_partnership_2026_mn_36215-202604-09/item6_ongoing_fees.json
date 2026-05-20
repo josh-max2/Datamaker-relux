@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 3,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty is 5% of Gross Sales, paid weekly (every Period = 7-day interval, 52 Periods/year) via ACH/EFT. Marketing Contribution is 3% of Gross Sales; franchisor also encourages (but does not require) an additional 3%-5% on local store marketing. Technology Fee is currently $0 (not yet instituted); franchisor reserves the right to charge up to $150/month with no more than 5% annual increase. Management Fee of 6% of Gross Sales (on top of royalty and ad fee) applies only if franchisor temporarily takes over operations. Transfer Fee: $20,000. Relocation Fee: $10,000. Convention no-show Fee: $2,000; regional meeting no-show: $300. Operations Meeting no-show: $200. Interest on late payments: 1.5%/month.",
+  "raw_excerpt": "Royalty | 5% of Gross Sales (Note 2) | Payable on the third day of each Period. (Note 1) | Payments will be collected by electronic funds transfer. See Note 2 regarding Gross Sales. Royalties are paid to Franchisor for the use of the brand and current operating system.\nMarketing Fund Contribution | 3% of Gross Sales | Payable at same time and in same manner as royalties | To be allocated among marketing initiatives, as described in Note 3.\nTechnology Fee | If we institute a technology fee (currently there is no such fee), it would be $150 per month, with no more than a 5% annual increase | Monthly | We reserve the right to charge a Technology Fee in the future upon notice to you.",
+  "confidence": 0.97
+}

@@ -1,0 +1,1387 @@
+[
+  {
+    "key": "littlecaesars",
+    "display": "Little Caesars",
+    "portal_id": null
+  },
+  {
+    "key": "hungryhowies",
+    "display": "Hungry Howies",
+    "portal_id": null
+  },
+  {
+    "key": "roundtablepizza",
+    "display": "Round Table Pizza",
+    "portal_id": null
+  },
+  {
+    "key": "popeyes",
+    "display": "Popeyes",
+    "portal_id": "640387",
+    "legal_name": "POPEYES LOUISIANA KITCHEN, INC.",
+    "trade_name": "POPEYES LOUISIANA KITCHEN",
+    "effective_date": "3/20/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640387&hash=438917875&search=external&type=GENERAL"
+  },
+  {
+    "key": "sonic",
+    "display": "Sonic",
+    "portal_id": "640453",
+    "legal_name": "Sonic Franchising LLC",
+    "trade_name": "Sonic Drive-Ins",
+    "effective_date": "3/26/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640453&hash=675354517&search=external&type=GENERAL"
+  },
+  {
+    "key": "whataburger",
+    "display": "Whataburger",
+    "portal_id": null
+  },
+  {
+    "key": "fiveguys",
+    "display": "Five Guys",
+    "portal_id": "639672",
+    "legal_name": "FIVE GUYS FRANCHISOR, LLC",
+    "trade_name": "FIVE GUYS",
+    "effective_date": "8/27/2025",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=639672&hash=1670141811&search=external&type=GENERAL"
+  },
+  {
+    "key": "wingstop",
+    "display": "Wingstop",
+    "portal_id": "641151",
+    "legal_name": "Wingstop Franchising LLC",
+    "trade_name": "WING-STOP\u00ae",
+    "effective_date": "4/21/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641151&hash=1331403587&search=external&type=GENERAL"
+  },
+  {
+    "key": "buffalowildwings",
+    "display": "Buffalo Wild Wings",
+    "portal_id": "640448",
+    "legal_name": "Buffalo Wild Wings International, Inc.",
+    "trade_name": "Buffalo Wild Wings\u00ae",
+    "effective_date": "3/26/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640448&hash=1464506502&search=external&type=GENERAL"
+  },
+  {
+    "key": "wingzone",
+    "display": "Wing Zone",
+    "portal_id": null
+  },
+  {
+    "key": "wingsover",
+    "display": "Wings Over",
+    "portal_id": null
+  },
+  {
+    "key": "pollotropical",
+    "display": "Pollo Tropical",
+    "portal_id": null
+  },
+  {
+    "key": "deltaco",
+    "display": "Del Taco",
+    "portal_id": null
+  },
+  {
+    "key": "moessouthwestgrill",
+    "display": "Moes Southwest Grill",
+    "portal_id": null
+  },
+  {
+    "key": "chipotle",
+    "display": "Chipotle",
+    "portal_id": null
+  },
+  {
+    "key": "caferio",
+    "display": "Cafe Rio",
+    "portal_id": null
+  },
+  {
+    "key": "jimmyjohns",
+    "display": "Jimmy Johns",
+    "portal_id": null
+  },
+  {
+    "key": "firehousesubs",
+    "display": "Firehouse Subs",
+    "portal_id": "640423",
+    "legal_name": "FIREHOUSE OF AMERICA LLC",
+    "trade_name": "Firehouse Subs\u00ae Restaurant",
+    "effective_date": "3/25/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640423&hash=1721729849&search=external&type=GENERAL"
+  },
+  {
+    "key": "quiznos",
+    "display": "Quiznos",
+    "portal_id": "639852",
+    "legal_name": "Quiz Holdings, LLC",
+    "trade_name": "Quiznos",
+    "effective_date": "10/10/2025",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=639852&hash=2020352501&search=external&type=GENERAL"
+  },
+  {
+    "key": "pennstation",
+    "display": "Penn Station",
+    "portal_id": null
+  },
+  {
+    "key": "schlotzkys",
+    "display": "Schlotzkys",
+    "portal_id": null
+  },
+  {
+    "key": "charleys",
+    "display": "Charleys",
+    "portal_id": "641332",
+    "legal_name": "GOSH ENTERPRISES, INC.",
+    "trade_name": "\"Charleys\u00ae\", \"Charleys Philly Steaks\u00ae\", \"Charley's Grilled Subs\u00ae\", \"Charleys Philly Steaks Wings ? Philly Steaks\u00ae,\" and \"Charleys Cheesesteaks Wings\"",
+    "effective_date": "4/28/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641332&hash=1623850775&search=external&type=GENERAL"
+  },
+  {
+    "key": "smoothieking",
+    "display": "Smoothie King",
+    "portal_id": "640867",
+    "legal_name": "Smoothie King Franchises, Inc.",
+    "trade_name": "Smoothie King",
+    "effective_date": "4/8/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640867&hash=1310965037&search=external&type=GENERAL"
+  },
+  {
+    "key": "jambajuice",
+    "display": "Jamba Juice",
+    "portal_id": "640666",
+    "legal_name": "Jamba Juice Franchisor SPV LLC",
+    "trade_name": "Jamba",
+    "effective_date": "3/31/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640666&hash=632582097&search=external&type=GENERAL"
+  },
+  {
+    "key": "robeks",
+    "display": "Robeks",
+    "portal_id": null
+  },
+  {
+    "key": "auntieannes",
+    "display": "Auntie Annes",
+    "portal_id": null
+  },
+  {
+    "key": "cinnabon",
+    "display": "Cinnabon",
+    "portal_id": "640665",
+    "legal_name": "Cinnabon Franchisor SPV LLC",
+    "trade_name": "Cinnabon",
+    "effective_date": "3/31/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640665&hash=253400931&search=external&type=GENERAL"
+  },
+  {
+    "key": "krispykreme",
+    "display": "Krispy Kreme",
+    "portal_id": null
+  },
+  {
+    "key": "timhortons",
+    "display": "Tim Hortons",
+    "portal_id": "640330",
+    "legal_name": "TIM HORTONS USA INC.",
+    "trade_name": "Tim Hortons",
+    "effective_date": "3/13/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640330&hash=1859508141&search=external&type=GENERAL"
+  },
+  {
+    "key": "starbucks",
+    "display": "Starbucks",
+    "portal_id": null
+  },
+  {
+    "key": "cariboucoffee",
+    "display": "Caribou Coffee",
+    "portal_id": "641334",
+    "legal_name": "Caribou Coffee Development Company, Inc.",
+    "trade_name": "Caribou Coffee",
+    "effective_date": "4/28/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641334&hash=871104232&search=external&type=GENERAL"
+  },
+  {
+    "key": "7brew",
+    "display": "7 Brew",
+    "portal_id": "639247",
+    "legal_name": "Brew Culture Franchise, LLC",
+    "trade_name": "7 BREW",
+    "effective_date": "5/29/2025",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=639247&hash=217517229&search=external&type=GENERAL"
+  },
+  {
+    "key": "dutchbros",
+    "display": "Dutch Bros",
+    "portal_id": null
+  },
+  {
+    "key": "biggbycoffee",
+    "display": "Biggby Coffee",
+    "portal_id": "641503",
+    "legal_name": "Global Orange Development, LLC",
+    "trade_name": "BIGGBY COFFEE",
+    "effective_date": "4/30/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641503&hash=552625668&search=external&type=GENERAL"
+  },
+  {
+    "key": "insomniacookies",
+    "display": "Insomnia Cookies",
+    "portal_id": null
+  },
+  {
+    "key": "maggiemoos",
+    "display": "Maggie Moos",
+    "portal_id": null
+  },
+  {
+    "key": "baskinrobbins",
+    "display": "Baskin Robbins",
+    "portal_id": "640452",
+    "legal_name": "BASKIN ROBBINS FRANCHISING LLC",
+    "trade_name": "Baskin-Robbins",
+    "effective_date": "3/26/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640452&hash=1981991275&search=external&type=GENERAL"
+  },
+  {
+    "key": "dairyqueen",
+    "display": "Dairy Queen",
+    "portal_id": "640430",
+    "legal_name": "American Dairy Queen Corporation",
+    "trade_name": "DQ Grill & Chill",
+    "effective_date": "3/26/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640430&hash=954018507&search=external&type=GENERAL"
+  },
+  {
+    "key": "carvel",
+    "display": "Carvel",
+    "portal_id": "640663",
+    "legal_name": "Carvel Franchisor SPV LLC",
+    "trade_name": "Carvel",
+    "effective_date": "3/31/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640663&hash=1906580343&search=external&type=GENERAL"
+  },
+  {
+    "key": "yogurtland",
+    "display": "Yogurtland",
+    "portal_id": null
+  },
+  {
+    "key": "tuttifrutti",
+    "display": "Tutti Frutti",
+    "portal_id": null
+  },
+  {
+    "key": "16handles",
+    "display": "16 Handles",
+    "portal_id": null
+  },
+  {
+    "key": "ritasitalianice",
+    "display": "Rita's Italian Ice",
+    "portal_id": null
+  },
+  {
+    "key": "dennys",
+    "display": "Dennys",
+    "portal_id": null
+  },
+  {
+    "key": "applebees",
+    "display": "Applebees",
+    "portal_id": null
+  },
+  {
+    "key": "olivegarden",
+    "display": "Olive Garden",
+    "portal_id": null
+  },
+  {
+    "key": "friendlys",
+    "display": "Friendlys",
+    "portal_id": null
+  },
+  {
+    "key": "crackerbarrel",
+    "display": "Cracker Barrel",
+    "portal_id": null
+  },
+  {
+    "key": "wafflehouse",
+    "display": "Waffle House",
+    "portal_id": null
+  },
+  {
+    "key": "bobevans",
+    "display": "Bob Evans",
+    "portal_id": null
+  },
+  {
+    "key": "texasroadhouse",
+    "display": "Texas Roadhouse",
+    "portal_id": null
+  },
+  {
+    "key": "longhornsteakhouse",
+    "display": "LongHorn Steakhouse",
+    "portal_id": null
+  },
+  {
+    "key": "ruthschris",
+    "display": "Ruths Chris",
+    "portal_id": null
+  },
+  {
+    "key": "cheesecakefactory",
+    "display": "Cheesecake Factory",
+    "portal_id": null
+  },
+  {
+    "key": "hooters",
+    "display": "Hooters",
+    "portal_id": "641519",
+    "legal_name": "HOA Future Franchising, LLC",
+    "trade_name": "Hooters",
+    "effective_date": "4/30/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641519&hash=583017255&search=external&type=GENERAL"
+  },
+  {
+    "key": "twinpeaks",
+    "display": "Twin Peaks",
+    "portal_id": null
+  },
+  {
+    "key": "snapfitness",
+    "display": "Snap Fitness",
+    "portal_id": "639261",
+    "legal_name": "Snap Fitness, Inc.",
+    "trade_name": "Snap Fitness",
+    "effective_date": "6/2/2025",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=639261&hash=1140875100&search=external&type=GENERAL"
+  },
+  {
+    "key": "titleboxingclub",
+    "display": "Title Boxing Club",
+    "portal_id": null
+  },
+  {
+    "key": "crunchfitness",
+    "display": "Crunch Fitness",
+    "portal_id": null
+  },
+  {
+    "key": "goldsgym",
+    "display": "Golds Gym",
+    "portal_id": null
+  },
+  {
+    "key": "worldsgym",
+    "display": "Worlds Gym",
+    "portal_id": null
+  },
+  {
+    "key": "curves",
+    "display": "Curves",
+    "portal_id": null
+  },
+  {
+    "key": "cyclebar",
+    "display": "CycleBar",
+    "portal_id": null
+  },
+  {
+    "key": "rowhouse",
+    "display": "Row House",
+    "portal_id": "639455",
+    "legal_name": "Row House Franchising LLC",
+    "trade_name": "Row House",
+    "effective_date": "7/8/2025",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=639455&hash=419944281&search=external&type=GENERAL"
+  },
+  {
+    "key": "campbowwow",
+    "display": "Camp Bow Wow",
+    "portal_id": "641544",
+    "legal_name": "Camp Bow Wow Franchising, Inc.",
+    "trade_name": "Camp Bow Wow",
+    "effective_date": "5/1/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641544&hash=684362422&search=external&type=GENERAL"
+  },
+  {
+    "key": "stretchzone",
+    "display": "Stretch Zone",
+    "portal_id": "641460",
+    "legal_name": "STRETCH ZONE FRANCHISING LLC",
+    "trade_name": "Stretch Zone",
+    "effective_date": "4/30/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641460&hash=415780053&search=external&type=GENERAL"
+  },
+  {
+    "key": "betterhomesandgardens",
+    "display": "Better Homes and Gardens",
+    "portal_id": "640556",
+    "legal_name": "BETTER HOMES & GARDENS REAL ESTATE LLC",
+    "trade_name": "Better Homes and Gardens Real Estate",
+    "effective_date": "3/30/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640556&hash=1744578052&search=external&type=GENERAL"
+  },
+  {
+    "key": "berkshirehathawayhomeservices",
+    "display": "Berkshire Hathaway HomeServices",
+    "portal_id": null
+  },
+  {
+    "key": "weichert",
+    "display": "Weichert",
+    "portal_id": "640315",
+    "legal_name": "WEICHERT REAL ESTATE AFFILIATES INC",
+    "trade_name": "Weichert",
+    "effective_date": "3/13/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640315&hash=36064887&search=external&type=GENERAL"
+  },
+  {
+    "key": "realtyexecutives",
+    "display": "Realty Executives",
+    "portal_id": "641048",
+    "legal_name": "Realty Executives Intl. SVCS. LLC",
+    "trade_name": "Realty Executives",
+    "effective_date": "4/17/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641048&hash=525192399&search=external&type=GENERAL"
+  },
+  {
+    "key": "sothebysinternational",
+    "display": "Sothebys International",
+    "portal_id": "640572",
+    "legal_name": "SOTHEBYS INTERNATIONAL REALTY AFFILIATES LLC",
+    "trade_name": "Sotheby's International Realty",
+    "effective_date": "3/30/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640572&hash=1554212439&search=external&type=GENERAL"
+  },
+  {
+    "key": "engelvolkers",
+    "display": "Engel & Volkers",
+    "portal_id": "641404",
+    "legal_name": "ENGEL & VOLKERS Americas INC",
+    "trade_name": "Engel & V\u00f6lkers Residential Real Estate Brokerage",
+    "effective_date": "4/29/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641404&hash=2005369214&search=external&type=GENERAL"
+  },
+  {
+    "key": "compass",
+    "display": "Compass",
+    "portal_id": "641496",
+    "legal_name": "Compass Margaritaville, LLC",
+    "trade_name": "Compass by Margaritaville",
+    "effective_date": "4/30/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641496&hash=2005593112&search=external&type=GENERAL"
+  },
+  {
+    "key": "exitrealty",
+    "display": "EXIT Realty",
+    "portal_id": "639680",
+    "legal_name": "Upper Midwest Realty Inc",
+    "trade_name": "EXIT Realty Upper Midwest",
+    "effective_date": "9/2/2025",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=639680&hash=1682919118&search=external&type=GENERAL"
+  },
+  {
+    "key": "propertymanagementinc",
+    "display": "Property Management Inc",
+    "portal_id": "640731",
+    "legal_name": "Property Management Incorporated Franchise, LLC",
+    "trade_name": "Property Management Inc.",
+    "effective_date": "4/1/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640731&hash=1914256852&search=external&type=GENERAL"
+  },
+  {
+    "key": "allcountypropertymanagement",
+    "display": "All County Property Management",
+    "portal_id": null
+  },
+  {
+    "key": "realpropertymanagement",
+    "display": "Real Property Management",
+    "portal_id": "640791",
+    "legal_name": "Real Property Management SPV LLC",
+    "trade_name": "Real Property Management",
+    "effective_date": "4/2/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640791&hash=759157378&search=external&type=GENERAL"
+  },
+  {
+    "key": "renterswarehouse",
+    "display": "Renters Warehouse",
+    "portal_id": null
+  },
+  {
+    "key": "webuyuglyhouses",
+    "display": "We Buy Ugly Houses",
+    "portal_id": null
+  },
+  {
+    "key": "expresshomebuyers",
+    "display": "Express Homebuyers",
+    "portal_id": null
+  },
+  {
+    "key": "steamatic",
+    "display": "Steamatic",
+    "portal_id": null
+  },
+  {
+    "key": "rooterman",
+    "display": "Rooter-Man",
+    "portal_id": "641217",
+    "legal_name": "RooterMan, LLC",
+    "trade_name": "Rooter-Man",
+    "effective_date": "4/23/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641217&hash=623718017&search=external&type=GENERAL"
+  },
+  {
+    "key": "mrelectric",
+    "display": "Mr Electric",
+    "portal_id": null
+  },
+  {
+    "key": "handymanconnection",
+    "display": "Handyman Connection",
+    "portal_id": "640331",
+    "legal_name": "Trident Investment Partners, Inc.",
+    "trade_name": "Handyman Connection",
+    "effective_date": "3/13/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640331&hash=151703606&search=external&type=GENERAL"
+  },
+  {
+    "key": "maidbrigade",
+    "display": "MaidBrigade",
+    "portal_id": null
+  },
+  {
+    "key": "twomaids",
+    "display": "Two Maids",
+    "portal_id": "640873",
+    "legal_name": "Two Maids Franchising, LLC",
+    "trade_name": "Two Maids & A Mop",
+    "effective_date": "4/8/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640873&hash=149298462&search=external&type=GENERAL"
+  },
+  {
+    "key": "heavensbest",
+    "display": "Heaven's Best",
+    "portal_id": "640146",
+    "legal_name": "HB Franchises, LLC",
+    "trade_name": "Heaven's Best and Heaven's Best Carpet Cleaning",
+    "effective_date": "1/23/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640146&hash=1577621979&search=external&type=GENERAL"
+  },
+  {
+    "key": "janpro",
+    "display": "Jan-Pro",
+    "portal_id": "639717",
+    "legal_name": "Rendlef Co",
+    "trade_name": "Jan-Pro Franchise Development of Northeast Wisconsin",
+    "effective_date": "9/14/2025",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=639717&hash=1198856090&search=external&type=GENERAL"
+  },
+  {
+    "key": "collegehunkshaulingjunk",
+    "display": "College HUNKS Hauling Junk",
+    "portal_id": "641511",
+    "legal_name": "CHHJ Franchising, L.L.C.",
+    "trade_name": "College Hunks Hauling Junk and College Hunks Moving",
+    "effective_date": "4/30/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641511&hash=1702543886&search=external&type=GENERAL"
+  },
+  {
+    "key": "twomenandatruck",
+    "display": "Two Men and a Truck",
+    "portal_id": "641608",
+    "legal_name": "Two Men and a Truck SPE LLC",
+    "trade_name": "Two Men and a Junk Truck",
+    "effective_date": "5/4/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641608&hash=838791662&search=external&type=GENERAL"
+  },
+  {
+    "key": "bellhops",
+    "display": "Bellhops",
+    "portal_id": null
+  },
+  {
+    "key": "pods",
+    "display": "PODS",
+    "portal_id": null
+  },
+  {
+    "key": "granitetransformations",
+    "display": "Granite Transformations",
+    "portal_id": null
+  },
+  {
+    "key": "kitchentuneup",
+    "display": "Kitchen Tune-Up",
+    "portal_id": "640306",
+    "legal_name": "HFC KTU LLC",
+    "trade_name": "Kitchen Tune-Up",
+    "effective_date": "3/11/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640306&hash=928037889&search=external&type=GENERAL"
+  },
+  {
+    "key": "closetfactory",
+    "display": "Closet Factory",
+    "portal_id": null
+  },
+  {
+    "key": "californiaclosets",
+    "display": "California Closets",
+    "portal_id": null
+  },
+  {
+    "key": "tailoredliving",
+    "display": "Tailored Living",
+    "portal_id": null
+  },
+  {
+    "key": "closetsbydesign",
+    "display": "Closets by Design",
+    "portal_id": "641538",
+    "legal_name": "CBD FRANCHISING, INC.",
+    "trade_name": "CLOSETS BY DESIGN",
+    "effective_date": "4/30/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641538&hash=1369159625&search=external&type=GENERAL"
+  },
+  {
+    "key": "budgetblinds",
+    "display": "Budget Blinds",
+    "portal_id": "640856",
+    "legal_name": "Budget Blinds, LLC",
+    "trade_name": "Budget Blinds",
+    "effective_date": "4/7/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640856&hash=472458250&search=external&type=GENERAL"
+  },
+  {
+    "key": "3dayblinds",
+    "display": "3 Day Blinds",
+    "portal_id": null
+  },
+  {
+    "key": "mosquitosquad",
+    "display": "Mosquito Squad",
+    "portal_id": "641399",
+    "legal_name": "Mosquito Squad Franchising SPE LLC",
+    "trade_name": "Mosquito Squad",
+    "effective_date": "4/29/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641399&hash=528346052&search=external&type=GENERAL"
+  },
+  {
+    "key": "mosquitoauthority",
+    "display": "Mosquito Authority",
+    "portal_id": "641652",
+    "legal_name": "Main Line Brands LLC",
+    "trade_name": "Mosquito Authority",
+    "effective_date": "5/8/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641652&hash=1834866369&search=external&type=GENERAL"
+  },
+  {
+    "key": "trugreen",
+    "display": "TruGreen",
+    "portal_id": null
+  },
+  {
+    "key": "uslawns",
+    "display": "U.S. Lawns",
+    "portal_id": "640840",
+    "legal_name": "US LAWNS INC",
+    "trade_name": "U.S. LAWNS",
+    "effective_date": "4/6/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640840&hash=1318275533&search=external&type=GENERAL"
+  },
+  {
+    "key": "handstone",
+    "display": "Hand & Stone",
+    "portal_id": "640845",
+    "legal_name": "Hand and Stone Franchise LLC",
+    "trade_name": "Hand & Stone Massage and Facial Spa",
+    "effective_date": "4/6/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640845&hash=2025006140&search=external&type=GENERAL"
+  },
+  {
+    "key": "elementsmassage",
+    "display": "Elements Massage",
+    "portal_id": "640737",
+    "legal_name": "ELEMENTS THERAPEUTIC MASSAGE, LLC",
+    "trade_name": "Elements Massage",
+    "effective_date": "4/2/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640737&hash=433969546&search=external&type=GENERAL"
+  },
+  {
+    "key": "sportclips",
+    "display": "SportClips",
+    "portal_id": null
+  },
+  {
+    "key": "haircuttery",
+    "display": "Hair Cuttery",
+    "portal_id": null
+  },
+  {
+    "key": "drybar",
+    "display": "Drybar",
+    "portal_id": "640745",
+    "legal_name": "DB Franchise, LLC",
+    "trade_name": "Drybar",
+    "effective_date": "4/2/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640745&hash=1065043851&search=external&type=GENERAL"
+  },
+  {
+    "key": "floyds99",
+    "display": "Floyds 99",
+    "portal_id": null
+  },
+  {
+    "key": "europeanwaxcenter",
+    "display": "European Wax Center",
+    "portal_id": "641625",
+    "legal_name": "EWC Franchisor LLC",
+    "trade_name": "European Wax Center",
+    "effective_date": "5/5/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641625&hash=220128873&search=external&type=GENERAL"
+  },
+  {
+    "key": "solasalonstudios",
+    "display": "Sola Salon Studios",
+    "portal_id": null
+  },
+  {
+    "key": "cookiecutters",
+    "display": "Cookie Cutters",
+    "portal_id": "640425",
+    "legal_name": "COOKIE CUTTERS FRANCHISING INC",
+    "trade_name": "COOKIE CUTTERS HAIRCUTS FOR KIDS",
+    "effective_date": "3/25/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640425&hash=1573273925&search=external&type=GENERAL"
+  },
+  {
+    "key": "aamco",
+    "display": "AAMCO",
+    "portal_id": null
+  },
+  {
+    "key": "jiffylube",
+    "display": "Jiffy Lube",
+    "portal_id": "640520",
+    "legal_name": "Jiffy Lube International, Inc.",
+    "trade_name": "Jiffy Lube",
+    "effective_date": "3/27/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640520&hash=1407403322&search=external&type=GENERAL"
+  },
+  {
+    "key": "valvolineinstantoilchange",
+    "display": "Valvoline Instant Oil Change",
+    "portal_id": "640069",
+    "legal_name": "Valvoline Instant Oil Change Franchising, Inc.",
+    "trade_name": "Valvoline Instant Oil Change",
+    "effective_date": "12/29/2025",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640069&hash=640855791&search=external&type=GENERAL"
+  },
+  {
+    "key": "bigotires",
+    "display": "Big O Tires",
+    "portal_id": "639420",
+    "legal_name": "Big O Tires, LLC",
+    "trade_name": "Big O Tires",
+    "effective_date": "6/30/2025",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=639420&hash=203652311&search=external&type=GENERAL"
+  },
+  {
+    "key": "tuffytireauto",
+    "display": "Tuffy Tire & Auto",
+    "portal_id": "639366",
+    "legal_name": "Gimex Properties Corp., Inc.",
+    "trade_name": "Tuffy Auto Service Centers/Tuffy Tire & Auto Serv",
+    "effective_date": "6/19/2025",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=639366&hash=271312205&search=external&type=GENERAL"
+  },
+  {
+    "key": "pepboys",
+    "display": "Pep Boys",
+    "portal_id": null
+  },
+  {
+    "key": "expressoilchange",
+    "display": "Express Oil Change",
+    "portal_id": null
+  },
+  {
+    "key": "hilton",
+    "display": "Hilton",
+    "portal_id": null
+  },
+  {
+    "key": "daysinn",
+    "display": "Days Inn",
+    "portal_id": "640621",
+    "legal_name": "DAYS INNS WORLDWIDE INC",
+    "trade_name": "Days Inn, Days Inn by Wyndham, Days Hotel and Days Inn & Suites",
+    "effective_date": "3/31/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640621&hash=1766667238&search=external&type=GENERAL"
+  },
+  {
+    "key": "bestwestern",
+    "display": "Best Western",
+    "portal_id": "640282",
+    "legal_name": "SureStay, Inc.",
+    "trade_name": "\"SureStay Collection by Best Western\u00ae\"",
+    "effective_date": "2/27/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640282&hash=313141447&search=external&type=GENERAL"
+  },
+  {
+    "key": "hamptoninn",
+    "display": "Hampton Inn",
+    "portal_id": "640540",
+    "legal_name": "Hilton Franchise Holding LLC",
+    "trade_name": "Hampton Inn; Hampton Inn and Suites",
+    "effective_date": "3/30/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640540&hash=42514164&search=external&type=GENERAL"
+  },
+  {
+    "key": "hyatt",
+    "display": "Hyatt",
+    "portal_id": "639330",
+    "legal_name": "Hyatt Franchising, L.L.C.",
+    "trade_name": "The StandardX",
+    "effective_date": "6/11/2025",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=639330&hash=1268281041&search=external&type=GENERAL"
+  },
+  {
+    "key": "wyndham",
+    "display": "Wyndham",
+    "portal_id": "640649",
+    "legal_name": "TRYP Hotels Worldwide, Inc.",
+    "trade_name": "TRYP by Wyndham",
+    "effective_date": "3/31/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640649&hash=1949720417&search=external&type=GENERAL"
+  },
+  {
+    "key": "choicehotels",
+    "display": "Choice Hotels",
+    "portal_id": null
+  },
+  {
+    "key": "laquinta",
+    "display": "La Quinta",
+    "portal_id": "640629",
+    "legal_name": "LA QUINTA FRANCHISING LLC",
+    "trade_name": "La Quinta Inn & Suites and La Quinta by Wyndham",
+    "effective_date": "3/31/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640629&hash=1899216290&search=external&type=GENERAL"
+  },
+  {
+    "key": "super8",
+    "display": "Super 8",
+    "portal_id": "640628",
+    "legal_name": "SUPER 8 Worldwide, Inc.",
+    "trade_name": "Super 8, Super 8 by Wyndham",
+    "effective_date": "3/31/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640628&hash=1250533202&search=external&type=GENERAL"
+  },
+  {
+    "key": "redroofinn",
+    "display": "Red Roof Inn",
+    "portal_id": "640917",
+    "legal_name": "Red Roof Franchising, LLC",
+    "trade_name": "Red Roof Inn, Red Roof Inn and Suites, Red Roof PLUS+, Red Roof PLUS+ and Suites",
+    "effective_date": "4/10/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640917&hash=994856466&search=external&type=GENERAL"
+  },
+  {
+    "key": "7eleven",
+    "display": "7-Eleven",
+    "portal_id": null
+  },
+  {
+    "key": "cumberlandfarms",
+    "display": "Cumberland Farms",
+    "portal_id": null
+  },
+  {
+    "key": "wawa",
+    "display": "Wawa",
+    "portal_id": null
+  },
+  {
+    "key": "fedexoffice",
+    "display": "FedEx Office",
+    "portal_id": null
+  },
+  {
+    "key": "mailboxesetc",
+    "display": "Mail Boxes Etc",
+    "portal_id": null
+  },
+  {
+    "key": "goinpostal",
+    "display": "Goin Postal",
+    "portal_id": null
+  },
+  {
+    "key": "postalannex",
+    "display": "Postal Annex",
+    "portal_id": null
+  },
+  {
+    "key": "ediblearrangements",
+    "display": "Edible Arrangements",
+    "portal_id": "639328",
+    "legal_name": "Edible Arrangements, LLC",
+    "trade_name": "EDIBLE\u00ae and EDIBLE ARRANGEMENTS\u00ae",
+    "effective_date": "6/10/2025",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=639328&hash=799587186&search=external&type=GENERAL"
+  },
+  {
+    "key": "wirelesszone",
+    "display": "Wireless Zone",
+    "portal_id": "640656",
+    "legal_name": "Wireless Zone LLC",
+    "trade_name": "Wireless Zone",
+    "effective_date": "3/31/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640656&hash=297858797&search=external&type=GENERAL"
+  },
+  {
+    "key": "aarons",
+    "display": "Aaron's",
+    "portal_id": null
+  },
+  {
+    "key": "rentacenter",
+    "display": "Rent-A-Center",
+    "portal_id": null
+  },
+  {
+    "key": "buddyshomefurnishings",
+    "display": "Buddy's Home Furnishings",
+    "portal_id": null
+  },
+  {
+    "key": "mathnasium",
+    "display": "Mathnasium",
+    "portal_id": "641614",
+    "legal_name": "Mathnasium Franchisor LLC",
+    "trade_name": "Mathnasium Learning Centers, Mathnasium Centers, Mathnasium The Math Learning Center, and Mathnasium",
+    "effective_date": "5/5/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641614&hash=1383796229&search=external&type=GENERAL"
+  },
+  {
+    "key": "huntingtonlearning",
+    "display": "Huntington Learning",
+    "portal_id": "641005",
+    "legal_name": "HUNTINGTON LEARNING CENTERS, INC.",
+    "trade_name": "Huntington Learning Center",
+    "effective_date": "4/16/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641005&hash=1553927880&search=external&type=GENERAL"
+  },
+  {
+    "key": "tutordoctor",
+    "display": "Tutor Doctor",
+    "portal_id": null
+  },
+  {
+    "key": "bestbrains",
+    "display": "Best Brains",
+    "portal_id": null
+  },
+  {
+    "key": "codewiz",
+    "display": "Code Wiz",
+    "portal_id": null
+  },
+  {
+    "key": "madscience",
+    "display": "Mad Science",
+    "portal_id": "639560",
+    "legal_name": "Mad Science Group, Inc.",
+    "trade_name": "Mad Science",
+    "effective_date": "7/31/2025",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=639560&hash=1548998010&search=external&type=GENERAL"
+  },
+  {
+    "key": "goddardschool",
+    "display": "Goddard School",
+    "portal_id": "641500",
+    "legal_name": "Goddard Franchisor LLC (f/k/a Goddard Systems, LLC)",
+    "trade_name": "The Goddard School",
+    "effective_date": "4/30/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641500&hash=676799841&search=external&type=GENERAL"
+  },
+  {
+    "key": "primroseschools",
+    "display": "Primrose Schools",
+    "portal_id": "641260",
+    "legal_name": "PRIMROSE SCHOOL FRANCHISING SPE, LLC",
+    "trade_name": "PRIMROSE SCHOOLS",
+    "effective_date": "4/24/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641260&hash=408363477&search=external&type=GENERAL"
+  },
+  {
+    "key": "kiddieacademy",
+    "display": "Kiddie Academy",
+    "portal_id": "640465",
+    "legal_name": "Kiddie Academy Domestic Franchising, LLC",
+    "trade_name": "Kiddie Academy Educational Child Care",
+    "effective_date": "3/27/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640465&hash=233525670&search=external&type=GENERAL"
+  },
+  {
+    "key": "childrenslighthouse",
+    "display": "Childrens Lighthouse",
+    "portal_id": null
+  },
+  {
+    "key": "lightbridgeacademy",
+    "display": "Lightbridge Academy",
+    "portal_id": "640933",
+    "legal_name": "Lightbridge Franchise Company, LLC",
+    "trade_name": "Lightbridge Academy",
+    "effective_date": "4/10/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640933&hash=1962223597&search=external&type=GENERAL"
+  },
+  {
+    "key": "brighthorizons",
+    "display": "Bright Horizons",
+    "portal_id": null
+  },
+  {
+    "key": "kindercare",
+    "display": "Kindercare",
+    "portal_id": null
+  },
+  {
+    "key": "lapetiteacademy",
+    "display": "La Petite Academy",
+    "portal_id": null
+  },
+  {
+    "key": "britishsoccer",
+    "display": "British Soccer",
+    "portal_id": null
+  },
+  {
+    "key": "jumpbunch",
+    "display": "JumpBunch",
+    "portal_id": null
+  },
+  {
+    "key": "atax",
+    "display": "ATAX",
+    "portal_id": null
+  },
+  {
+    "key": "danielahart",
+    "display": "Daniel Ahart",
+    "portal_id": null
+  },
+  {
+    "key": "spherion",
+    "display": "Spherion",
+    "portal_id": "641749",
+    "legal_name": "Spherion Staffing, LLC",
+    "trade_name": "Spherion Staffing",
+    "effective_date": "5/15/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641749&hash=1514266851&search=external&type=GENERAL"
+  },
+  {
+    "key": "springpersonnel",
+    "display": "Spring Personnel",
+    "portal_id": null
+  },
+  {
+    "key": "cornwelltools",
+    "display": "Cornwell Tools",
+    "portal_id": null
+  },
+  {
+    "key": "petland",
+    "display": "Petland",
+    "portal_id": "641459",
+    "legal_name": "Petland, Inc.",
+    "trade_name": "Petland",
+    "effective_date": "4/30/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641459&hash=1572513013&search=external&type=GENERAL"
+  },
+  {
+    "key": "dogtopia",
+    "display": "Dogtopia",
+    "portal_id": "641000",
+    "legal_name": "Better Together, LLC",
+    "trade_name": "Dogtopia",
+    "effective_date": "4/15/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641000&hash=115475975&search=external&type=GENERAL"
+  },
+  {
+    "key": "k9resorts",
+    "display": "K9 Resorts",
+    "portal_id": null
+  },
+  {
+    "key": "houndstown",
+    "display": "Hounds Town",
+    "portal_id": "641471",
+    "legal_name": "Hounds Town USA, LLC",
+    "trade_name": "Hounds Town USA",
+    "effective_date": "4/30/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641471&hash=1866993730&search=external&type=GENERAL"
+  },
+  {
+    "key": "petsuppliesplus",
+    "display": "Pet Supplies Plus",
+    "portal_id": null
+  },
+  {
+    "key": "fastsigns",
+    "display": "FastSigns",
+    "portal_id": "641543",
+    "legal_name": "FASTSIGNS International, Inc.",
+    "trade_name": "FASTSIGNS",
+    "effective_date": "5/1/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641543&hash=1020200251&search=external&type=GENERAL"
+  },
+  {
+    "key": "signsnow",
+    "display": "Signs Now",
+    "portal_id": "640473",
+    "legal_name": "Alliance Franchise Brands LLC",
+    "trade_name": "Image360, Signs By Tomorrow or Signs Now",
+    "effective_date": "3/27/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640473&hash=848248247&search=external&type=GENERAL"
+  },
+  {
+    "key": "speedproimaging",
+    "display": "Speedpro Imaging",
+    "portal_id": null
+  },
+  {
+    "key": "minutemanpress",
+    "display": "Minuteman Press",
+    "portal_id": "640316",
+    "legal_name": "Minuteman Press International, Inc.",
+    "trade_name": "Minuteman Press",
+    "effective_date": "3/13/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640316&hash=1307462592&search=external&type=GENERAL"
+  },
+  {
+    "key": "alphagraphics",
+    "display": "AlphaGraphics",
+    "portal_id": "641166",
+    "legal_name": "AlphaGraphics, Inc.",
+    "trade_name": "AlphaGraphics",
+    "effective_date": "4/22/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641166&hash=2053806600&search=external&type=GENERAL"
+  },
+  {
+    "key": "tutortime",
+    "display": "Tutor Time",
+    "portal_id": null
+  },
+  {
+    "key": "mrtransmission",
+    "display": "Mr. Transmission",
+    "portal_id": "641403",
+    "legal_name": "Moran Family of Brands, LLC",
+    "trade_name": "Mr. Transmission/Milex",
+    "effective_date": "4/29/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641403&hash=940489031&search=external&type=GENERAL"
+  },
+  {
+    "key": "1800packrat",
+    "display": "1-800-PACK-RAT",
+    "portal_id": null
+  },
+  {
+    "key": "uhaul",
+    "display": "U-Haul",
+    "portal_id": null
+  },
+  {
+    "key": "junkluggers",
+    "display": "Junkluggers",
+    "portal_id": "641531",
+    "legal_name": "Junkluggers Franchising SPE LLC",
+    "trade_name": "The Junkluggers",
+    "effective_date": "4/30/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641531&hash=1093553287&search=external&type=GENERAL"
+  },
+  {
+    "key": "bambu",
+    "display": "Bambu",
+    "portal_id": "640863",
+    "legal_name": "Bambu Franchising LLC",
+    "trade_name": "Bambu",
+    "effective_date": "4/7/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640863&hash=1897997207&search=external&type=GENERAL"
+  },
+  {
+    "key": "bostonspizza",
+    "display": "Bostons Pizza",
+    "portal_id": null
+  },
+  {
+    "key": "zipsdrycleaners",
+    "display": "Zips Dry Cleaners",
+    "portal_id": null
+  },
+  {
+    "key": "topperspizza",
+    "display": "Toppers Pizza",
+    "portal_id": "640952",
+    "legal_name": "Toppers Pizza LLC",
+    "trade_name": "Toppers Pizza",
+    "effective_date": "4/13/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640952&hash=956851294&search=external&type=GENERAL"
+  },
+  {
+    "key": "afcamericanfamilycare",
+    "display": "AFC American Family Care",
+    "portal_id": null
+  },
+  {
+    "key": "usavecarrental",
+    "display": "U-Save Car Rental",
+    "portal_id": null
+  },
+  {
+    "key": "wagnwash",
+    "display": "Wag N Wash",
+    "portal_id": null
+  },
+  {
+    "key": "topgolf",
+    "display": "Topgolf",
+    "portal_id": null
+  },
+  {
+    "key": "wildbirdsunlimited",
+    "display": "Wild Birds Unlimited",
+    "portal_id": null
+  },
+  {
+    "key": "mrmister",
+    "display": "Mr Mister",
+    "portal_id": null
+  },
+  {
+    "key": "mrmisterroofing",
+    "display": "Mr Mister Roofing",
+    "portal_id": null
+  },
+  {
+    "key": "pizzainn",
+    "display": "PIZZA INN",
+    "portal_id": null
+  },
+  {
+    "key": "gooseheadinsurance",
+    "display": "Goosehead Insurance",
+    "portal_id": "640351",
+    "legal_name": "Goosehead Insurance Agency, LLC",
+    "trade_name": "Goosehead Insurance",
+    "effective_date": "3/17/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640351&hash=1495218589&search=external&type=GENERAL"
+  },
+  {
+    "key": "brightwayinsurance",
+    "display": "Brightway Insurance",
+    "portal_id": "641593",
+    "legal_name": "Brightway Insurance, LLC",
+    "trade_name": "Brightway Insurance",
+    "effective_date": "5/4/2026",
+    "status": "Registered",
+    "details_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641593&hash=73079146&search=external&type=GENERAL"
+  }
+]

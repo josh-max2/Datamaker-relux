@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\chick_fil_a_inc_2026_mn_36162-202604-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0051,
+      "input_tokens": 1929,
+      "cached": 1340,
+      "output_tokens": 194
+    },
+    "item5": {
+      "cost_usd": 0.0072,
+      "input_tokens": 2807,
+      "cached": 1340,
+      "output_tokens": 161
+    },
+    "item6": {
+      "cost_usd": 0.0097,
+      "input_tokens": 3383,
+      "cached": 1340,
+      "output_tokens": 210
+    },
+    "item7": {
+      "cost_usd": 0.0075,
+      "input_tokens": 3349,
+      "cached": 1340,
+      "output_tokens": 73
+    },
+    "item19": {
+      "cost_usd": 0.031,
+      "input_tokens": 6371,
+      "cached": 1340,
+      "output_tokens": 1034,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.5029,
+      "input_tokens": 25210,
+      "cached": 1340,
+      "output_tokens": 28724,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.5634
+}

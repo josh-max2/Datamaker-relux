@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 4,
+  "royalty_min_monthly": 400,
+  "marketing_fee_pct": 0.75,
+  "marketing_min_monthly": 1250,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty is greater of 4% of Gross Monthly Revenues or minimum monthly fee (scales by territory size and month: $0-$6,750). National Ad Fund 0.75% of gross revenue. Additional $1,800/mo minimum for marketing new commercial accounts. Placement fee 8% of unit franchise sale proceeds.",
+  "raw_excerpt": "Royalty Fee: The greater of 4% of Gross Monthly Revenues or the minimum monthly fee. National Advertising Fund: .75% of Gross Monthly Revenue. Marketing for Individual Franchised Businesses: $1,250 per month.",
+  "confidence": 0.88
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\oasis_senior_advisors_franchise_systems_llc_2026_mn_36037-202604-13.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0053,
+      "input_tokens": 1907,
+      "cached": 1340,
+      "output_tokens": 215
+    },
+    "item5": {
+      "cost_usd": 0.0064,
+      "input_tokens": 1644,
+      "cached": 1340,
+      "output_tokens": 339
+    },
+    "item6": {
+      "cost_usd": 0.0249,
+      "input_tokens": 4857,
+      "cached": 1340,
+      "output_tokens": 932
+    },
+    "item7": {
+      "cost_usd": 0.0049,
+      "input_tokens": 2435,
+      "cached": 1340,
+      "output_tokens": 84
+    },
+    "item19": {
+      "cost_usd": 0.0778,
+      "input_tokens": 7870,
+      "cached": 1340,
+      "output_tokens": 3853,
+      "images_sent": 3
+    },
+    "item20": {
+      "cost_usd": 0.1757,
+      "input_tokens": 15873,
+      "cached": 1340,
+      "output_tokens": 8781,
+      "images_sent": 7
+    }
+  },
+  "total_cost_usd": 0.2951
+}

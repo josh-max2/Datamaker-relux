@@ -1,0 +1,8 @@
+{
+  "royalty_pct": 8,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": 5200,
+  "tech_fee_monthly": 0,
+  "fee_notes": "Royalty: 8% of gross receipts weekly (4% for first 6 months of new centers). Marketing: $1,200 weekly (~$5,200 monthly, can increase max 10%/year after year 1, no weekly cap). Software license: $799-$973/month (CCC One Base Package). Fleet Addendum reduces marketing to $350/week. Development Incentive Addendum: 1-2-2% royalty tiered over 36 months (subject to $1.1M gross receipt threshold).",
+  "confidence": 0.94
+}

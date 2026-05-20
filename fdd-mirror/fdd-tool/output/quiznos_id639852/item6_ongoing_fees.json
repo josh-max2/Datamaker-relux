@@ -1,0 +1,8 @@
+{
+  "royalty_pct": 5,
+  "marketing_fee_pct": 4,
+  "tech_fee_monthly": 100,
+  "fee_notes": "Royalty 5% of Gross Sales, debited weekly. Marketing Fee currently 4%, capped at 5% max (increases \u22640.5%/year). Technology Fee $100\u2013$400/month. POS Systems Fee $230\u2013$340/terminal/month. Music Fee $40\u2013$50/month. No disclosed royalty or marketing floor minimums.",
+  "raw_excerpt": "Royalty 5% of Gross Sales based on the prior week's Gross Sales. Marketing Fee Currently 4% of Gross Sales. Technology Fee Currently ranges from $100-$400 (plus applicable taxes) per month. POS Systems Fee Currently ranges from $230 to $340 (plus applicable taxes) per terminal per month.",
+  "confidence": 0.95
+}

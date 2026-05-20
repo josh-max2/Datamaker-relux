@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}How to Validate Franchise Earnings Before Signing — A Buyer's Guide{% endblock %}
+{% block description %}Step-by-step playbook for validation calls with current franchisees: who to call, what to ask, what answers to trust, and how to use Item 20 to find the right people.{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Guides", "url": url_for('guides/')},
+    {"label": "Validating Earnings", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Validate Franchise Earnings Before Signing",
+  "author": { "@type": "Person", "name": "FranchiseDepth Editorial", "url": "{{ url_for('about/') }}" },
+  "publisher": { "@type": "Organization", "name": "{{ site_name }}" },
+  "dateModified": "{{ generated_at }}",
+  "mainEntityOfPage": "{{ canonical_url }}",
+  "about": "Franchisee validation calls — how to use FDD Item 20 to talk to current owners"
+}
+</script>
+{% endblock %}
+{% block content %}
+<article class="guide-page">
+    <header>
+        <h1>How to validate franchise earnings before signing</h1>
+        <p class="lead">
+            Validation calls — direct conversations with current franchisees — are the single highest-leverage research you can do before signing. The franchisor's <a class="jargon" href="{{ url_for('methodology/') }}#g-item19" title="See glossary">Item 19</a> is their framing. Validation calls are reality. The FDD literally gives you the phone numbers; most prospective franchisees don't use them.
+        </p>
+        <p class="byline">
+            <span class="dateline">Page updated {{ generated_at }}</span>
+        </p>
+    </header>
+
+    <section>
+        <h2>Why validation calls matter</h2>
+        <p>
+            Three reasons:
+        </p>
+        <ol>
+            <li><strong>You get the unfiltered version.</strong> The franchisor controls Item 19's framing (which cohorts to disclose, which metrics to include, how to label them). A franchisee on the phone has no script. They'll tell you their actual gross sales, their actual margins, and what surprised them.</li>
+            <li><strong>You learn what's not in the FDD.</strong> Required vendors who overcharge. Marketing fund spend that doesn't reach your market. Training that was insufficient. Territory disputes. None of this appears in the FDD; all of it appears in 20 minutes on the phone.</li>
+            <li><strong>It's free.</strong> Franchisees take these calls all the time. Most are happy to share. The ones who refuse to talk tell you something important by refusing.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Where the contacts come from: Item 20</h2>
+        <p>
+            <a class="jargon" href="{{ url_for('methodology/') }}#g-item20" title="See glossary">Item 20</a> of every FDD includes a required list of <em>every current franchisee</em>: name of the franchisee entity, owner name, outlet location, and phone number. The list is exhaustive — not curated, not filtered. It also includes franchisees who terminated, were not renewed, or otherwise exited in the past year (with their last known contact info).
+        </p>
+        <p>
+            That second list — the ones who left — is just as valuable as the first. Maybe more.
+        </p>
+    </section>
+
+    <section>
+        <h2>The call list strategy</h2>
+        <p>Don't just call 3 franchisees the franchisor recommends. Build your own list from Item 20:</p>
+        <ul>
+            <li><strong>5-10 current franchisees</strong>, mixed by tenure: 2 recent (under 1 year), 3-4 mid-tenure (2-5 years), 2-3 long-tenure (5+ years). Different tenures see different parts of the business.</li>
+            <li><strong>3-5 franchisees in similar markets to yours.</strong> Same metro size, similar demographics. A NYC franchisee's experience tells you little about Boise.</li>
+            <li><strong>2-4 franchisees who exited.</strong> Terminated, non-renewed, sold. Use the contact info from the prior-year FDD if the current one only shows them as "former."</li>
+            <li><strong>1-2 franchisees in trouble.</strong> Look for outlets that opened but closed within 2-3 years. Their story is the most informative about downside risk.</li>
+        </ul>
+        <p>
+            That's 11-21 calls total. Plan 20-30 minutes per call. Block out two weeks for the project. It's the most leveraged 10 hours you'll spend in the entire buying process.
+        </p>
+    </section>
+
+    <section>
+        <h2>The 10 questions every validation call should cover</h2>
+        <p>Don't read these like a script — work them in naturally. Save the financial ones for after rapport is built.</p>
+
+        <ol>
+            <li><strong>"What's your honest gross revenue last 12 months? Trailing 12 months gross?"</strong> Compare to the franchisor's Item 19 disclosure for the same cohort.</li>
+            <li><strong>"What's your actual net margin after all fees and overhead, not just COGS?"</strong> Royalty + marketing fund + tech fee + insurance + rent + labor + utilities + supplies. Many franchisees know their gross better than their net.</li>
+            <li><strong>"What did your actual all-in opening cost end up being? What was the franchisor's Item 7 wrong about?"</strong> Item 7 underestimates real cost by 15-40% in our experience. Ask specifically.</li>
+            <li><strong>"How long until you were cash-flow positive? Until you broke even on total investment?"</strong> Compare to franchisor projections (formal or informal).</li>
+            <li><strong>"Are you required to buy from specific suppliers? Are those vendors priced competitively, or are you paying a premium?"</strong> Captive supply chains are a hidden royalty.</li>
+            <li><strong>"How much of the marketing fund spend actually reaches your market?"</strong> Some funds spend nationally only; some funds rebate to local; some are effectively franchisor revenue.</li>
+            <li><strong>"What does the franchisor do well? What do they do poorly?"</strong> Open-ended; lets the franchisee tell you what they actually care about.</li>
+            <li><strong>"If you had to do it again, would you sign? Why or why not?"</strong> The most predictive single question. Listen for hesitation.</li>
+            <li><strong>"What surprised you most after signing — good or bad?"</strong> Surfaces the things that aren't in the FDD.</li>
+            <li><strong>"Who else should I talk to? Anyone in particular I should ask?"</strong> Builds a chain. Often the most candid franchisees recommend other candid franchisees.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>How to interpret the answers</h2>
+
+        <h3>Strong signals (positive)</h3>
+        <ul>
+            <li>Multiple franchisees give consistent revenue and margin figures within ±20% of each other and within the franchisor's Item 19 range.</li>
+            <li>Long-tenure franchisees own multiple outlets and are still adding more.</li>
+            <li>Franchisees describe specific operational support (training, marketing assistance, vendor escalations) with concrete examples.</li>
+            <li>Even unhappy franchisees say "Yes, I'd sign again" — they have specific complaints but overall economics work.</li>
+        </ul>
+
+        <h3>Weak signals (concerning)</h3>
+        <ul>
+            <li>Wide dispersion in revenue among similar-tenure franchisees (3x or more for similar markets) — suggests the brand's success depends heavily on factors the franchisor can't replicate.</li>
+            <li>Franchisees ask <em>you</em> for advice on running their business. The franchisor isn't supporting them.</li>
+            <li>Multiple franchisees describe required vendors as overpriced relative to market.</li>
+            <li>Recent franchisees (under 2 years) are visibly stressed about cash flow; long-tenure ones are not. Suggests the model has changed — what worked 10 years ago doesn't work for new buyers.</li>
+            <li>"I wouldn't sign again." Even one of these warrants drilling deeper.</li>
+        </ul>
+
+        <h3>Hard stops</h3>
+        <ul>
+            <li>You can't reach more than half the franchisees on the list (phones disconnected, no response).</li>
+            <li>The franchisor pressures you to call only "approved" franchisees.</li>
+            <li>Franchisees mention pending litigation against the franchisor and the FDD's Item 3 (Litigation) doesn't disclose it.</li>
+            <li>Multiple franchisees describe the franchisor as unwilling to enforce territorial protections.</li>
+            <li>The Item 20 list is much shorter than the franchisor's marketing materials suggest — they're hiding closed outlets.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>The franchisor will not love this</h2>
+        <p>
+            Most franchisors are fine with validation calls because Item 20 disclosure is mandatory and they know it. But some try to steer you:
+        </p>
+        <ul>
+            <li>Provides a curated list of "validation contacts" who happen to be the top performers</li>
+            <li>Suggests timing constraints ("call them before our discovery day")</li>
+            <li>Offers to make introductions ("let me set up a call with…")</li>
+        </ul>
+        <p>
+            Decline all of this politely and use the Item 20 list directly. You want an unselected sample. If the franchisor is uncomfortable with that, ask yourself why.
+        </p>
+    </section>
+
+    <section>
+        <h2>Documenting what you hear</h2>
+        <p>
+            Take notes during every call. Keep a simple spreadsheet:
+        </p>
+        <ul>
+            <li>Franchisee name + outlet location + tenure</li>
+            <li>Reported gross sales (most recent 12 months)</li>
+            <li>Reported net margin or net profit</li>
+            <li>Actual opening cost</li>
+            <li>Time to breakeven</li>
+            <li>Top 3 positive observations</li>
+            <li>Top 3 negative observations</li>
+            <li>"Would sign again?" (Y / N / qualified)</li>
+        </ul>
+        <p>
+            After 10-15 calls, patterns emerge. The average reported revenue from your sample is a much more reliable forecast for your outlet than the franchisor's Item 19 average — because your sample isn't curated and includes failures.
+        </p>
+    </section>
+
+    <section>
+        <h2>What to do with what you learn</h2>
+        <ol>
+            <li><strong>If validation confirms Item 19 ± 20%</strong>, the disclosed numbers are honest. You can use them for planning with confidence.</li>
+            <li><strong>If validation comes in 30%+ below Item 19</strong>, the franchisor's Item 19 cohort was cherry-picked. Re-do your breakeven math using the validation numbers.</li>
+            <li><strong>If validation reveals issues the FDD doesn't disclose</strong> (supply chain pricing, territorial disputes, support gaps), factor those into your decision — and into negotiation if you proceed.</li>
+            <li><strong>If validation produces consistent "no, I wouldn't sign again" responses</strong>, walk away. No fee discount or territorial bonus is worth signing into a brand where the existing operators wish they hadn't.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>How {{ site_name }} helps</h2>
+        <p>
+            For every brand we track, the source FDD is one click away from the brand page (the "View filing on state portal" link in Sources). The Item 20 list lives inside that PDF — every franchisee name, location, and phone number for that brand. The franchisor's official site usually doesn't make Item 20 easy to find. We make the source one click away.
+        </p>
+        <p>
+            See <a href="{{ url_for('guides/understanding-item-19/') }}">Understanding Item 19</a> for context on what the franchisor disclosed, and <a href="{{ url_for('guides/understanding-item-7/') }}">Understanding Item 7</a> for the cost side of the same conversation.
+        </p>
+    </section>
+</article>
+{% endblock %}

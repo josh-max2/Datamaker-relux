@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\angry_crab_shack_franchise_llc_2026_mn_35961-202604-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0059,
+      "input_tokens": 2138,
+      "cached": 1340,
+      "output_tokens": 205
+    },
+    "item5": {
+      "cost_usd": 0.0091,
+      "input_tokens": 2249,
+      "cached": 1340,
+      "output_tokens": 401
+    },
+    "item6": {
+      "cost_usd": 0.0262,
+      "input_tokens": 5682,
+      "cached": 1340,
+      "output_tokens": 849
+    },
+    "item7": {
+      "cost_usd": 0.0145,
+      "input_tokens": 5609,
+      "cached": 1340,
+      "output_tokens": 89
+    },
+    "item19": {
+      "cost_usd": 0.1979,
+      "input_tokens": 20682,
+      "cached": 1340,
+      "output_tokens": 9301,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.0501,
+      "input_tokens": 6953,
+      "cached": 1340,
+      "output_tokens": 2188,
+      "images_sent": 3
+    }
+  },
+  "total_cost_usd": 0.3037
+}

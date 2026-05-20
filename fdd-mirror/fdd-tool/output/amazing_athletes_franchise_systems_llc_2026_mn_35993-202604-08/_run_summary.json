@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\amazing_athletes_franchise_systems_llc_2026_mn_35993-202604-08.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0045,
+      "input_tokens": 1724,
+      "cached": 1340,
+      "output_tokens": 198
+    },
+    "item5": {
+      "cost_usd": 0.0107,
+      "input_tokens": 2416,
+      "cached": 1340,
+      "output_tokens": 474
+    },
+    "item6": {
+      "cost_usd": 0.031,
+      "input_tokens": 8010,
+      "cached": 1340,
+      "output_tokens": 709
+    },
+    "item7": {
+      "cost_usd": 0.0163,
+      "input_tokens": 6225,
+      "cached": 1340,
+      "output_tokens": 84
+    },
+    "item19": {
+      "cost_usd": 0.3817,
+      "input_tokens": 32467,
+      "cached": 1340,
+      "output_tokens": 19196,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1807,
+      "input_tokens": 15518,
+      "cached": 1340,
+      "output_tokens": 9181,
+      "images_sent": 7
+    }
+  },
+  "total_cost_usd": 0.625
+}

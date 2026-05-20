@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6.0,
+  "royalty_min_monthly": 1500,
+  "marketing_fee_pct": 2.0,
+  "marketing_min_monthly": 500,
+  "tech_fee_monthly": 650,
+  "fee_notes": "Royalty tiered: 6% on monthly GR up to $83,300, 5% on GR above $83,300; min $500/mo months 7-12, $1,500/mo thereafter, no minimum first 6 months. Marketing fund capped at 3% GR; min may increase with CPI. Tech fee $650/mo first territory, $200/mo each additional. Local Advertising Services Program Fee: $3,000/mo first 6 months, $2,500/mo thereafter (franchisor retains greater of $300 or 10% as management fee).",
+  "raw_excerpt": "Royalty: You must pay the greater of: (a) 6.0% - 5.0% of your Gross Revenue for the immediately preceding month or (b) $500 per month per territory for the second six months and $1,500 per month per territory thereafter. Technology Fee: Currently $650 per month per territory for the first territory, $200 for second and subsequent territories.",
+  "confidence": 0.95
+}

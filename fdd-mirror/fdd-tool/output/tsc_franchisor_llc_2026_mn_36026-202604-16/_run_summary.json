@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\tsc_franchisor_llc_2026_mn_36026-202604-16.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0059,
+      "input_tokens": 2053,
+      "cached": 1340,
+      "output_tokens": 222
+    },
+    "item5": {
+      "cost_usd": 0.0078,
+      "input_tokens": 1840,
+      "cached": 1340,
+      "output_tokens": 394
+    },
+    "item6": {
+      "cost_usd": 0.0234,
+      "input_tokens": 3595,
+      "cached": 1340,
+      "output_tokens": 1083
+    },
+    "item7": {
+      "cost_usd": 0.0087,
+      "input_tokens": 3671,
+      "cached": 1340,
+      "output_tokens": 87
+    },
+    "item19": {
+      "cost_usd": 0.1676,
+      "input_tokens": 13628,
+      "cached": 1340,
+      "output_tokens": 8687,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.2526,
+      "input_tokens": 20595,
+      "cached": 1340,
+      "output_tokens": 12963,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.466
+}

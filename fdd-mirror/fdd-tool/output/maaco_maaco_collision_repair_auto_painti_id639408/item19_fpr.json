@@ -1,0 +1,155 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Gross Receipts",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Top 50% (highest average gross receipts for 2024 Fiscal Year)",
+      "outlet_count": 159,
+      "reporting_period": "2024 Fiscal Year (Dec 31, 2023 - Dec 28, 2024)",
+      "value_avg": 2226532,
+      "value_median": 1762542,
+      "value_min": 1348304,
+      "value_max": 10463135,
+      "pct_above_avg": 33,
+      "page_number": 74
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Gross Receipts",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Bottom 50% (lowest average gross receipts for 2024 Fiscal Year)",
+      "outlet_count": 158,
+      "reporting_period": "2024 Fiscal Year (Dec 31, 2023 - Dec 28, 2024)",
+      "value_avg": 1001411,
+      "value_median": 1044398,
+      "value_min": 445821,
+      "value_max": 1342652,
+      "pct_above_avg": 56,
+      "page_number": 75
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Trade %",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Top 50%",
+      "outlet_count": 159,
+      "reporting_period": "2024 Fiscal Year",
+      "value_avg": 36,
+      "value_median": 44
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Trade %",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Bottom 50%",
+      "outlet_count": 158,
+      "reporting_period": "2024 Fiscal Year",
+      "value_avg": 36,
+      "value_median": 27
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Conversion %",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Top 50%",
+      "outlet_count": 159,
+      "reporting_period": "2024 Fiscal Year",
+      "value_avg": 53,
+      "value_median": 54
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Conversion %",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Bottom 50%",
+      "outlet_count": 158,
+      "reporting_period": "2024 Fiscal Year",
+      "value_avg": 53,
+      "value_median": 53
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Retention %",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Top 50%",
+      "outlet_count": 159,
+      "reporting_period": "2024 Fiscal Year",
+      "value_avg": 50,
+      "value_median": 52
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Retention %",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Bottom 50%",
+      "outlet_count": 158,
+      "reporting_period": "2024 Fiscal Year",
+      "value_avg": 50,
+      "value_median": 48
+    },
+    {
+      "metric_name": "transactions",
+      "metric_raw": "Estimates",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Top 50%",
+      "outlet_count": 159,
+      "reporting_period": "2024 Fiscal Year",
+      "value_avg": 1102,
+      "value_median": 1205
+    },
+    {
+      "metric_name": "transactions",
+      "metric_raw": "Estimates",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Bottom 50%",
+      "outlet_count": 158,
+      "reporting_period": "2024 Fiscal Year",
+      "value_avg": 1102,
+      "value_median": 997
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Retail Cars",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Top 50%",
+      "outlet_count": 159,
+      "reporting_period": "2024 Fiscal Year",
+      "value_avg": 514,
+      "value_median": 577
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Retail Cars",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Bottom 50%",
+      "outlet_count": 158,
+      "reporting_period": "2024 Fiscal Year",
+      "value_avg": 514,
+      "value_median": 450
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Total Cars",
+      "cohort_name": "performance_anchised",
+      "cohort_raw": "Top 50%",
+      "outlet_count": 159,
+      "reporting_period": "2024 Fiscal Year",
+      "value_avg": 869,
+      "value_median": 1063
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Total Cars",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Bottom 50%",
+      "outlet_count": 158,
+      "reporting_period": "2024 Fiscal Year",
+      "value_avg": 869,
+      "value_median": 672
+    }
+  ],
+  "confidence": 0.89,
+  "notes": "Part A represents 317 centers open 2+ years as of FY2024 end (Dec 28, 2024). 46 centers excluded (11 <2 years, 33 no reporting, 2 satellite format). 19 centers closed during FY2024 (none <12 months). Average center tenure 25.9 years. Also reports 5 centers open 1-2 years (avg $841,818 GR, 40% met average). Part B (new center ramp) text present but numerical tables not provided in source text."
+}

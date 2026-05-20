@@ -1,0 +1,10 @@
+{
+  "royalty_pct": null,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 200,
+  "fee_notes": "Non-traditional structure: all commissions flow to Brightway first. Franchisee retains 80% of New Business commissions and 50% of Renewal Business commissions. Enhanced commission program allows up to 85% retention on New Business. Tech fees: $200/month per location + $209/month per active user + $75/month per inactive user + $90/user/month for Brightway Fusion (capped at $450/month). Advertising Fund not currently charged but may not exceed 3% of Brightway Sales Commissions if established.",
+  "raw_excerpt": "Sales Commissions \u2013 New Business: 20% of Brightway Sales Commissions on New Business (you retain the remaining 80%). Sales Commissions \u2013 Renewal Business: 50% of Brightway Sales Commissions on Renewal Business (you retain the remaining 50%).",
+  "confidence": 0.92
+}

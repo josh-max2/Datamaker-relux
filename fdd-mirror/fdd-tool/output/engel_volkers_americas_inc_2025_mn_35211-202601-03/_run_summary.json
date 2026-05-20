@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\engel_volkers_americas_inc_2025_mn_35211-202601-03.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0058,
+      "input_tokens": 1991,
+      "cached": 1340,
+      "output_tokens": 230
+    },
+    "item5": {
+      "cost_usd": 0.0088,
+      "input_tokens": 2243,
+      "cached": 1340,
+      "output_tokens": 382
+    },
+    "item6": {
+      "cost_usd": 0.0335,
+      "input_tokens": 7174,
+      "cached": 1340,
+      "output_tokens": 1037
+    },
+    "item7": {
+      "cost_usd": 0.016,
+      "input_tokens": 6054,
+      "cached": 1340,
+      "output_tokens": 98
+    },
+    "item19": {
+      "cost_usd": 0.0137,
+      "input_tokens": 5352,
+      "cached": 1340,
+      "output_tokens": 83,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.2231,
+      "input_tokens": 22486,
+      "cached": 1340,
+      "output_tokens": 10618,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3009
+}

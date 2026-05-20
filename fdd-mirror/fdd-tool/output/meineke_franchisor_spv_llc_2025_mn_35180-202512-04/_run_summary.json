@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\meineke_franchisor_spv_llc_2025_mn_35180-202512-04.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0058,
+      "input_tokens": 2041,
+      "cached": 1340,
+      "output_tokens": 220
+    },
+    "item5": {
+      "cost_usd": 0.0085,
+      "input_tokens": 2090,
+      "cached": 1340,
+      "output_tokens": 388
+    },
+    "item6": {
+      "cost_usd": 0.0357,
+      "input_tokens": 7325,
+      "cached": 1340,
+      "output_tokens": 1158
+    },
+    "item7": {
+      "cost_usd": 0.0041,
+      "input_tokens": 2072,
+      "cached": 1340,
+      "output_tokens": 101
+    },
+    "item19": {
+      "cost_usd": 0.2815,
+      "input_tokens": 16988,
+      "cached": 1340,
+      "output_tokens": 15607,
+      "images_sent": 7
+    },
+    "item20": {
+      "cost_usd": 0.2399,
+      "input_tokens": 20751,
+      "cached": 1340,
+      "output_tokens": 12085,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.5755
+}

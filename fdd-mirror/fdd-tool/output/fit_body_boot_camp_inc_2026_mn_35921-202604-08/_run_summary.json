@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\fit_body_boot_camp_inc_2026_mn_35921-202604-08.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0038,
+      "input_tokens": 1469,
+      "cached": 1340,
+      "output_tokens": 199
+    },
+    "item5": {
+      "cost_usd": 0.0086,
+      "input_tokens": 2119,
+      "cached": 1340,
+      "output_tokens": 390
+    },
+    "item6": {
+      "cost_usd": 0.029,
+      "input_tokens": 5808,
+      "cached": 1340,
+      "output_tokens": 1015
+    },
+    "item7": {
+      "cost_usd": 0.0105,
+      "input_tokens": 4265,
+      "cached": 1340,
+      "output_tokens": 90
+    },
+    "item19": {
+      "cost_usd": 0.0549,
+      "input_tokens": 19006,
+      "cached": 1340,
+      "output_tokens": 97,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.2425,
+      "input_tokens": 17994,
+      "cached": 1340,
+      "output_tokens": 11909,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3493
+}

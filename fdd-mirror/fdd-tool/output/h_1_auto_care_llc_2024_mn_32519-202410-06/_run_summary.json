@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\h_1_auto_care_llc_2024_mn_32519-202410-06.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0054,
+      "input_tokens": 1963,
+      "cached": 1340,
+      "output_tokens": 210
+    },
+    "item5": {
+      "cost_usd": 0.0058,
+      "input_tokens": 1309,
+      "cached": 1340,
+      "output_tokens": 368
+    },
+    "item6": {
+      "cost_usd": 0.018,
+      "input_tokens": 4374,
+      "cached": 1340,
+      "output_tokens": 564
+    },
+    "item7": {
+      "cost_usd": 0.008,
+      "input_tokens": 3410,
+      "cached": 1340,
+      "output_tokens": 94
+    },
+    "item19": {
+      "cost_usd": 0.0362,
+      "input_tokens": 8054,
+      "cached": 1340,
+      "output_tokens": 1047,
+      "images_sent": 3
+    },
+    "item20": {
+      "cost_usd": 0.1306,
+      "input_tokens": 16105,
+      "cached": 1340,
+      "output_tokens": 5727,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.2041
+}

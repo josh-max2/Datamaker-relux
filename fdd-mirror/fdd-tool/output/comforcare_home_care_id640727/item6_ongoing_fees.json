@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5.0,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 1.0,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 100,
+  "fee_notes": "Standard Offering royalty: 5% of Gross Sales with minimum per month. Reduced Initial Fee Offering royalty: 6% to 7% of Gross Sales with minimum per month depending on month of operation. General Service Fee: 1% of Gross Sales with minimum per two-week period. National Advertising Fee: 1% of Gross Sales with minimum per two-week period (franchisor reserves right to increase to 2% with 60 days notice). Client Management Software: $480/month. Technology Fee: $100/month. Telehealth Fees: up to $500/month (third-party vendors). Electronic Claims Management: varies (third-party vendors).",
+  "raw_excerpt": "Royalty Fee Standard Offering 5% of Gross Sales with Minimum Royalty Fee per month. General Service Fee 1% of Gross Sales with Minimum General Service Fee per two-week billing period. National Advertising Fee 1% of Gross Sales with Minimum National Advertising Fee per two-week billing period. Client Management Software Fee $480 per month. Technology Fee $100 per month.",
+  "confidence": 0.85
+}

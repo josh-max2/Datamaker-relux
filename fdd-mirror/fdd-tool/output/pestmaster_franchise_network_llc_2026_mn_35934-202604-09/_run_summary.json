@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\pestmaster_franchise_network_llc_2026_mn_35934-202604-09.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0048,
+      "input_tokens": 1847,
+      "cached": 1340,
+      "output_tokens": 192
+    },
+    "item5": {
+      "cost_usd": 0.0091,
+      "input_tokens": 2422,
+      "cached": 1340,
+      "output_tokens": 364
+    },
+    "item6": {
+      "cost_usd": 0.0309,
+      "input_tokens": 5016,
+      "cached": 1340,
+      "output_tokens": 1296
+    },
+    "item7": {
+      "cost_usd": 0.0094,
+      "input_tokens": 3879,
+      "cached": 1340,
+      "output_tokens": 90
+    },
+    "item19": {
+      "cost_usd": 0.082,
+      "input_tokens": 12049,
+      "cached": 1340,
+      "output_tokens": 3300,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.1418,
+      "input_tokens": 11792,
+      "cached": 1340,
+      "output_tokens": 7333,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.2779
+}

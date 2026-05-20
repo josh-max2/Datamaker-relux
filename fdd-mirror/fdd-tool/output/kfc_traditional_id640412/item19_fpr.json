@@ -1,0 +1,17 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "annual Net Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "2,227 outlets (2,167 franchised, 60 company-owned) with drive-thru, built/remodeled in American Showman or Next Gen image, open 12+ months as of FYE 2025",
+      "outlet_count": 2227,
+      "reporting_period": "fiscal year ended December 29, 2025",
+      "value_min": 387000,
+      "value_max": 3379000,
+      "page_number": 51
+    }
+  ],
+  "confidence": 0.85
+}

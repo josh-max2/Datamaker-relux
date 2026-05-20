@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\mrs_fields_franchising_llc_2024_mn_32610-202411-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0054,
+      "input_tokens": 1955,
+      "cached": 1340,
+      "output_tokens": 210
+    },
+    "item5": {
+      "cost_usd": 0.007,
+      "input_tokens": 1651,
+      "cached": 1340,
+      "output_tokens": 381
+    },
+    "item6": {
+      "cost_usd": 0.0155,
+      "input_tokens": 3534,
+      "cached": 1340,
+      "output_tokens": 567
+    },
+    "item7": {
+      "cost_usd": 0.0098,
+      "input_tokens": 3978,
+      "cached": 1340,
+      "output_tokens": 96
+    },
+    "item19": {
+      "cost_usd": 0.1216,
+      "input_tokens": 10686,
+      "cached": 1340,
+      "output_tokens": 6210,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.2256,
+      "input_tokens": 14753,
+      "cached": 1340,
+      "output_tokens": 12333,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.3849
+}

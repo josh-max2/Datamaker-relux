@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\wetzel_s_pretzels_llc_2026_mn_35605-202603-24.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0051,
+      "input_tokens": 1663,
+      "cached": 1340,
+      "output_tokens": 247
+    },
+    "item5": {
+      "cost_usd": 0.0073,
+      "input_tokens": 1982,
+      "cached": 1340,
+      "output_tokens": 331
+    },
+    "item6": {
+      "cost_usd": 0.0244,
+      "input_tokens": 4559,
+      "cached": 1340,
+      "output_tokens": 954
+    },
+    "item7": {
+      "cost_usd": 0.021,
+      "input_tokens": 7797,
+      "cached": 1340,
+      "output_tokens": 85
+    },
+    "item19": {
+      "cost_usd": 0.1427,
+      "input_tokens": 17633,
+      "cached": 1340,
+      "output_tokens": 6230,
+      "images_sent": 7
+    },
+    "item20": {
+      "cost_usd": 0.1776,
+      "input_tokens": 17385,
+      "cached": 1340,
+      "output_tokens": 8602,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3781
+}

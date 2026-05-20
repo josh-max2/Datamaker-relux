@@ -1,0 +1,38 @@
+{
+  "pdf": "data\\mn_scrape\\synergy_homecare_franchising_llc_2026_mn_35841-202604-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0066,
+      "input_tokens": 2133,
+      "cached": 1340,
+      "output_tokens": 254
+    },
+    "item5": {
+      "cost_usd": 0.0054,
+      "input_tokens": 1585,
+      "cached": 1340,
+      "output_tokens": 283
+    },
+    "item6": {
+      "cost_usd": 0.0282,
+      "input_tokens": 4849,
+      "cached": 1340,
+      "output_tokens": 1153
+    },
+    "item7": {
+      "cost_usd": 0.0036,
+      "input_tokens": 1968,
+      "cached": 1340,
+      "output_tokens": 86
+    },
+    "item19": {
+      "cost_usd": 0.1174,
+      "input_tokens": 11316,
+      "cached": 1340,
+      "output_tokens": 5803,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.1611
+}

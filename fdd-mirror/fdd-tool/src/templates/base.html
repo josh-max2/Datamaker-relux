@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- fd-fingerprint:{{ page_fingerprint() }} -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if GSC_VERIFICATION_TOKEN %}<meta name="google-site-verification" content="{{ GSC_VERIFICATION_TOKEN }}">{% endif %}
+    {% if BING_VERIFICATION_TOKEN %}<meta name="msvalidate.01" content="{{ BING_VERIFICATION_TOKEN }}">{% endif %}
+    {% if FLEXOFFERS_VERIFICATION_TOKEN %}<meta name="fo-verify" content="{{ FLEXOFFERS_VERIFICATION_TOKEN }}">{% endif %}
+    {% if IMPACT_VERIFICATION_TOKEN %}<meta name="impact-site-verification" value="{{ IMPACT_VERIFICATION_TOKEN }}">{% endif %}
+    <title>{% block title %}{{ site_name }}{% endblock %}</title>
+    <meta name="description" content="{% block description %}Franchise financial performance data from publicly filed FDDs.{% endblock %}">
+
+    {# --- Open Graph (Facebook, LinkedIn, iMessage, Slack) --- #}
+    <meta property="og:title" content="{% block og_title %}{{ self.title() }}{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}{{ self.description() }}{% endblock %}">
+    <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+    <meta property="og:url" content="{{ SITE_HOST }}{{ canonical_url }}">
+    <meta property="og:image" content="{{ SITE_HOST }}{{ url_for('og-image.png') }}">
+    <meta property="og:site_name" content="{{ site_name }}">
+
+    {# --- Twitter / X --- #}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ self.og_title() }}">
+    <meta name="twitter:description" content="{{ self.og_description() }}">
+    <meta name="twitter:image" content="{{ SITE_HOST }}{{ url_for('og-image.png') }}">
+
+    {% block schema %}{% endblock %}
+    <link rel="canonical" href="{{ SITE_HOST }}{{ canonical_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('favicon-32.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('favicon.ico') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('apple-touch-icon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('style.css') }}">
+    {% block head_extra %}{% endblock %}
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="{{ url_for('') }}">{{ site_name }}</a>
+            <div class="header-search" role="search">
+                <input type="search" id="header-search-input" placeholder="Search brands…"
+                       aria-label="Search franchise brands" autocomplete="off">
+                <ul id="header-search-results" class="header-search-results" role="listbox" hidden></ul>
+            </div>
+            <nav>
+                <a href="{{ url_for('') }}">All Brands</a>
+                <a href="{{ url_for('reports/') }}">Reports</a>
+                <a href="{{ url_for('compare/') }}">Compare</a>
+                <a href="{{ url_for('recent/') }}">Recent</a>
+                <a href="{{ url_for('category/home-services/') }}">Home Services</a>
+                <a href="{{ url_for('guides/') }}">Guides</a>
+                <a href="{{ url_for('methodology/') }}">Methodology</a>
+                <a href="{{ url_for('about/') }}">About</a>
+            </nav>
+        </div>
+    </header>
+    {% block breadcrumbs %}{% endblock %}
+    <main class="container" id="main-content">
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            {% if FORMSPREE_ID and FORMSPREE_ID != 'PLACEHOLDER_FORM_ID' %}
+            <form class="footer-signup" method="POST" action="https://formspree.io/f/{{ FORMSPREE_ID }}" aria-label="Newsletter signup">
+                <label for="footer-email"><strong>Get new FDD analyses</strong> — low-volume newsletter (once/month at most).</label>
+                <div class="footer-signup-row">
+                    <input type="email" id="footer-email" name="email" required
+                           placeholder="you@example.com" autocomplete="email">
+                    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+                    <input type="hidden" name="source" value="footer-newsletter">
+                    <input type="hidden" name="_next" value="{{ SITE_HOST }}{{ url_for('get-the-checklist/thank-you/') }}">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </div>
+                <p class="footer-signup-fineprint">Unsubscribe any time. See <a href="{{ url_for('privacy/') }}">privacy</a>.</p>
+            </form>
+            {% endif %}
+            <p class="ftc-disclosure">
+                <strong>FTC Affiliate Disclosure (16 CFR Part 255):</strong>
+                Some links on this site are affiliate links — we may receive a commission if you
+                click a referral CTA (e.g., "Talk to a franchise consultant" or "Get pre-qualified
+                for SBA financing") and ultimately work with that partner. This does not change the
+                price you pay, and it does not influence which brands we cover or how we present
+                their data. <a href="{{ url_for('affiliate-disclosure/') }}">Read the full disclosure</a>.
+            </p>
+            <p class="disclaimer">
+                Data sourced from publicly filed Franchise Disclosure Documents (FDDs) on state registration portals.
+                Historical results do not guarantee future performance. This is not investment advice.
+                Always consult a qualified franchise attorney and financial advisor before investing in a franchise.
+            </p>
+            <nav class="footer-nav" aria-label="Legal">
+                <a href="{{ url_for('privacy/') }}">Privacy</a> ·
+                <a href="{{ url_for('terms/') }}">Terms</a> ·
+                <a href="{{ url_for('affiliate-disclosure/') }}">Affiliate disclosure</a> ·
+                <a href="{{ url_for('methodology/') }}">Methodology</a> ·
+                <a href="{{ url_for('about/') }}">About</a> ·
+                <a href="{{ url_for('contact/') }}">Contact</a> ·
+                <a href="#" onclick="window.fdOpenConsent();return false;">Cookie preferences</a>
+            </nav>
+            <p class="meta">
+                {{ total_brands }} brands · {{ total_records }} financial performance records · Generated {{ generated_at }}.
+            </p>
+        </div>
+    </footer>
+    <script src="{{ url_for('consent.js') }}"></script>
+    {% if GA4_MEASUREMENT_ID %}
+    <script src="{{ url_for('ga4.js') }}" data-ga4-id="{{ GA4_MEASUREMENT_ID }}"></script>
+    {% endif %}
+    {% if CLARITY_PROJECT_ID %}
+    <script src="{{ url_for('clarity.js') }}" data-clarity-id="{{ CLARITY_PROJECT_ID }}"></script>
+    {% endif %}
+    <script id="brand-index-data" type="application/json">{{ brand_index_json|safe }}</script>
+    <script>
+    // Global header search (F3.5)
+    (function() {
+        const input = document.getElementById('header-search-input');
+        const results = document.getElementById('header-search-results');
+        const dataEl = document.getElementById('brand-index-data');
+        if (!input || !results || !dataEl) return;
+        let brands = [];
+        try { brands = JSON.parse(dataEl.textContent); } catch (e) { return; }
+
+        function clearResults() {
+            results.innerHTML = '';
+            results.hidden = true;
+        }
+
+        function render(matches) {
+            if (!matches.length) {
+                results.innerHTML = '<li class="hsr-empty">No matching brands.</li>';
+                results.hidden = false;
+                return;
+            }
+            results.innerHTML = matches.map((b, i) =>
+                `<li role="option" data-idx="${i}"><a href="${b.url}"><span class="hsr-name">${escapeHtml(b.name)}</span><span class="hsr-industry">${escapeHtml(b.industry)}</span></a></li>`
+            ).join('');
+            results.hidden = false;
+        }
+
+        function escapeHtml(s) {
+            return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+        }
+
+        function search(q) {
+            q = q.trim().toLowerCase();
+            if (q.length < 1) { clearResults(); return; }
+            const matches = brands
+                .filter(b => b.name.toLowerCase().includes(q) || b.industry.toLowerCase().includes(q))
+                .slice(0, 8);
+            render(matches);
+        }
+
+        input.addEventListener('input', () => search(input.value));
+        input.addEventListener('focus', () => { if (input.value) search(input.value); });
+        input.addEventListener('keydown', e => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                const first = results.querySelector('li a');
+                if (first) window.location = first.href;
+            } else if (e.key === 'Escape') {
+                clearResults();
+                input.blur();
+            }
+        });
+        document.addEventListener('click', e => {
+            if (!input.contains(e.target) && !results.contains(e.target)) clearResults();
+        });
+    })();
+    </script>
+</body>
+</html>

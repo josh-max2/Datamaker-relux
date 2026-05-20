@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\restoration_1_franchise_holding_llc_2024_mn_32704-202412-03.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.005,
+      "input_tokens": 1764,
+      "cached": 1340,
+      "output_tokens": 224
+    },
+    "item5": {
+      "cost_usd": 0.0118,
+      "input_tokens": 3458,
+      "cached": 1340,
+      "output_tokens": 337
+    },
+    "item6": {
+      "cost_usd": 0.0184,
+      "input_tokens": 4179,
+      "cached": 1340,
+      "output_tokens": 630
+    },
+    "item7": {
+      "cost_usd": 0.01,
+      "input_tokens": 4076,
+      "cached": 1340,
+      "output_tokens": 96
+    },
+    "item19": {
+      "cost_usd": 0.2226,
+      "input_tokens": 12491,
+      "cached": 1340,
+      "output_tokens": 12583,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.2093,
+      "input_tokens": 17642,
+      "cached": 1340,
+      "output_tokens": 10664,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.4771
+}

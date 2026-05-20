@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5.0,
+  "royalty_min_monthly": 1000,
+  "marketing_fee_pct": 2.0,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty is tiered: 5% of monthly gross revenue up to $350,000/month or $1,000/month whichever is greater, then 4.5% of revenue above $350,001/month. National Marketing Fund up to 2% of gross revenue per month. Accounts Receivable Fee 1.5% of revenues collected, deducted weekly. Additional fees include training ($500/person/day), web training ($149/session), annual conference ($250/person), renewal ($2,000), transfer ($0-5,000), and computer/equipment maintenance up to $1,000/year.",
+  "raw_excerpt": "Royalty Fee: 5% of Monthly Gross Revenue of $350,000 per month or less or $1,000 per month, whichever is greater and then 4.5% of Monthly Gross Revenue greater than $350,001 per month. National Marketing Fund: 2% of Gross Revenue per month. Accounts Receivable Fee: 1.5% of Gross Revenues collected on your behalf Deducted from your weekly remittance.",
+  "confidence": 0.92
+}

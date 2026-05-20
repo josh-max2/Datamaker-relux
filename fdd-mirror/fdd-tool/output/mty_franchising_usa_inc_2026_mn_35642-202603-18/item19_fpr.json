@@ -1,0 +1,21 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Gross Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All franchised outlets",
+      "outlet_count": 6,
+      "reporting_period": "December 1, 2024 through November 30, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 2311053,
+      "value_median": 2240648,
+      "pct_above_avg": 50,
+      "raw_text": "All franchised outlets $2,311,053 $2,240,648 6 3 50% 3 50%"
+    }
+  ],
+  "confidence": 0.97
+}

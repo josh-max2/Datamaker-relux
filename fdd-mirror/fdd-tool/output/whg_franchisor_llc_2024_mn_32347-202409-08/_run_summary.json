@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\whg_franchisor_llc_2024_mn_32347-202409-08.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0069,
+      "input_tokens": 2345,
+      "cached": 1340,
+      "output_tokens": 234
+    },
+    "item5": {
+      "cost_usd": 0.0066,
+      "input_tokens": 1720,
+      "cached": 1340,
+      "output_tokens": 336
+    },
+    "item6": {
+      "cost_usd": 0.0363,
+      "input_tokens": 8746,
+      "cached": 1340,
+      "output_tokens": 913
+    },
+    "item7": {
+      "cost_usd": 0.0052,
+      "input_tokens": 2239,
+      "cached": 1340,
+      "output_tokens": 143
+    },
+    "item19": {
+      "cost_usd": 0.014,
+      "input_tokens": 5374,
+      "cached": 1340,
+      "output_tokens": 100,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.0471,
+      "input_tokens": 9184,
+      "cached": 1340,
+      "output_tokens": 1543,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.1162
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\yoga_six_franchise_spv_llc_2025_mn_35411-202602-01.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.007,
+      "input_tokens": 2286,
+      "cached": 1340,
+      "output_tokens": 250
+    },
+    "item5": {
+      "cost_usd": 0.0153,
+      "input_tokens": 4053,
+      "cached": 1340,
+      "output_tokens": 450
+    },
+    "item6": {
+      "cost_usd": 0.0116,
+      "input_tokens": 1629,
+      "cached": 1340,
+      "output_tokens": 687
+    },
+    "item7": {
+      "cost_usd": 0.0155,
+      "input_tokens": 5936,
+      "cached": 1340,
+      "output_tokens": 90
+    },
+    "item19": {
+      "cost_usd": 0.2912,
+      "input_tokens": 18802,
+      "cached": 1340,
+      "output_tokens": 15891,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1825,
+      "input_tokens": 17777,
+      "cached": 1340,
+      "output_tokens": 8852,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.523
+}

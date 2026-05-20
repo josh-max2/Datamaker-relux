@@ -1,0 +1,50 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Total for Income",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company-controlled franchise (Tyler Holding Group LLC, San Diego)",
+      "outlet_count": 1,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 2461000.46,
+      "page_number": 58
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Gross Profit",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company-controlled franchise (Tyler Holding Group LLC)",
+      "outlet_count": 1,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 2117557.82,
+      "page_number": 58
+    },
+    {
+      "metric_name": "net_profit",
+      "metric_raw": "Net Income",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company-controlled franchise (Tyler Holding Group LLC)",
+      "outlet_count": 1,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 730173.41,
+      "page_number": 59
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Average Revenues",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "22 franchisees with 12+ months operations, 2.24 locations per franchisee avg",
+      "outlet_count": 22,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 1871033,
+      "value_median": 637709,
+      "value_min": 196578,
+      "value_max": 11027444,
+      "pct_above_avg": 23,
+      "page_number": 60
+    }
+  ],
+  "confidence": 0.9
+}

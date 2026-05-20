@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 7500,
+  "initial_franchise_fee_high": 25000,
+  "fee_notes": "$7,500 for rural density (<15,000 pop, >2 miles from area >5,000); $15,000 for medium density (15,000-50,000 pop, >2 miles from area >50,000); $25,000 for high density (>50,000 pop). Not refundable. EXIT Realty Upper Midwest retains 75%; EXIT gets 25%.",
+  "raw_excerpt": "you must pay EXIT Realty Upper Midwest an Initial Fee that ranges from Seven Thousand Five Hundred Dollars ($7,500) to Twenty-Five Thousand Dollars ($25,000), depending on the geographical size and population",
+  "confidence": 0.98
+}

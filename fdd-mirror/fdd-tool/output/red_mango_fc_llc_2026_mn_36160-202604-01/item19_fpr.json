@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "average unit volume",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Top 25% of Stores (6 out of 25 Stores)",
+      "outlet_count": 6,
+      "reporting_period": "December 30, 2024 to December 28, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 860441,
+      "value_median": 803139,
+      "value_min": 717060,
+      "value_max": 1228414,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 33.3,
+      "page_number": 53,
+      "raw_text": "The top 25% of Stores (6 out of 25 Stores) had an average unit volume of $860,441. The top 25% of Stores (6 out of 25 Stores) had a median unit volume of $803,139. The top 25% of Stores (6 out of 25 Stores) had the highest unit volume of $1,228,414. The top 25% of Stores (6 out of 25 Stores) had the lowest unit volume of $717,060.",
+      "notes": "Top 25% cohort includes 5 Traditional Stores and 1 Non-Traditional Store (located on a college campus). pct_above_avg from Note 3: 2 of 6 (33.3%) met or exceeded the average of $860,441. Value_min reflects 'lowest unit volume' and value_max reflects 'highest unit volume' within the top 25% cohort."
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "average unit volume",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Bottom 25% of Stores (7 out of 25 Stores)",
+      "outlet_count": 7,
+      "reporting_period": "December 30, 2024 to December 28, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 121637,
+      "value_median": 99349,
+      "value_min": 33998,
+      "value_max": 210154,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 42.9,
+      "page_number": 53,
+      "raw_text": "The bottom 25% of Stores (7 out of 25 Stores) had an average unit volume of $121,637. The bottom 25% of Stores (7 out of 25 Stores) had a median unit volume of $99,349. The bottom 25% of Stores (7 out of 25 Stores) had the highest unit volume of $210,154. The bottom 25% of Stores (7 out of 25 Stores) had the lowest unit volume of $33,998.",
+      "notes": "Bottom 25% cohort includes 3 Non-Traditional Stores (1 in a casino, 1 in a retail supercenter, 1 in a grocery store); all located inside a c-store with only 1-2 machines and a topping bar. pct_above_avg from Note 3: 3 of 7 (42.9%) met or exceeded the average of $121,637. Value_min reflects 'lowest unit volume' and value_max reflects 'highest unit volume' within the bottom 25% cohort. Data is sales only; excludes costs and expenses per Note 5. Compiled from unaudited franchisee-reported information per Note 6."
+    }
+  ],
+  "has_item19": true,
+  "confidence": 0.92,
+  "notes": "Item 19 discloses annual unit volume (gross sales) for the top 25% and bottom 25% performance cohorts among 25 qualifying stores (out of 26 total as of December 28, 2025). One store was excluded for not consistently reporting sales during 2025. The middle 50% cohort (stores ranked 7th\u201318th) is not separately reported. Data reflects sales only and excludes costs/expenses. FDD filing year is 2026; reporting period covers fiscal year ending December 28, 2025."
+}

@@ -1,0 +1,13 @@
+{
+  "pdf": "data\\mn_scrape\\arby_s_restaurant_group_llc_2024_mn_32462-202410-05.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0052,
+      "input_tokens": 1952,
+      "cached": 1340,
+      "output_tokens": 195
+    }
+  },
+  "total_cost_usd": 0.0052
+}

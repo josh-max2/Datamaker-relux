@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\tmc_franchise_corporation_2024_mn_33485-202504-03.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0058,
+      "input_tokens": 1778,
+      "cached": 1340,
+      "output_tokens": 184
+    },
+    "item5": {
+      "cost_usd": 0.0137,
+      "input_tokens": 2855,
+      "cached": 1340,
+      "output_tokens": 438
+    },
+    "item6": {
+      "cost_usd": 0.0438,
+      "input_tokens": 8225,
+      "cached": 1340,
+      "output_tokens": 1108
+    },
+    "item7": {
+      "cost_usd": 0.0081,
+      "input_tokens": 2749,
+      "cached": 1340,
+      "output_tokens": 95
+    },
+    "item19": {
+      "cost_usd": 0.1535,
+      "input_tokens": 15404,
+      "cached": 1340,
+      "output_tokens": 7395,
+      "images_sent": 6
+    },
+    "item20": {
+      "cost_usd": 0.0792,
+      "input_tokens": 14105,
+      "cached": 1340,
+      "output_tokens": 2702,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.3042
+}

@@ -1,0 +1,9 @@
+{
+  "royalty_min_monthly": 842,
+  "royalty_pct": 8,
+  "marketing_fee_pct": 3,
+  "marketing_min_monthly": 900,
+  "tech_fee_monthly": 799,
+  "fee_notes": "Monthly fee $842/month with annual CPI increase; franchisor reserves right to replace with up to 8% Gross Revenue royalty. Marketing fee currently $900/month, capped at greater of $900 or 3% Gross Revenue. Tech fee $799/month with 10% annual compounding increase. AF Coaching $149 (1-3 centers) or $109 (4+ centers) per month. Additional non-recurring fees: Grand Opening/Ramp Up $11,000-$23,000 (market tier dependent), on-site training $4,000, technology inspection $550.",
+  "confidence": 0.9
+}

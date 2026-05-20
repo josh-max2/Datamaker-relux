@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 3.25,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2.0,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty structure is complex: for traditional locations, the greater of 3.25% of net sales or $175/week (royalty) PLUS the greater of 3.25% of net sales or $175/week (service compensation) \u2014 effectively 6.5% combined or $350/week minimum. For non-traditional locations, the greater of 3.25% of net sales or $75/week (royalty) PLUS the greater of 3.25% of net sales or $75/week (service compensation) \u2014 effectively 6.5% combined or $150/week minimum. GPI may increase continuing fees to 6.5% of net sales if franchisee operates a competing food business (traditional) or receives a second default letter. Ad Fund capped at 2% of net sales but may be increased by majority vote of all franchised and company-operated locations. Cooperative advertising is a separate pro-rata share of media cost in applicable markets. Weekly minimum floors: $175/week per fee type for traditional ($350/week total), $75/week per fee type for non-traditional ($150/week total).",
+  "raw_excerpt": "Continuing Fees Royalties of greater of 3.25% of net sales or $175 for each week and service compensation of greater of 3.25% of net sales or $175 for each week for a traditional location; royalties of greater of 3.25% of net sales or $75 for each week and service compensation of greater of 3.25% of net sales or $75 for each week for a non-traditional location | Wednesday after the end of each week | Net sales defined in Footnote 2. Also see Footnote 3.\nAd Fund Contribution Not to exceed 2% of net sales unless increase approved by majority of company-operated and franchised locations | Wednesday after the end of each week | Footnote 6\nCooperative Advertising Pro-rata share of media cost | When required by media outlets | Footnote 5",
+  "confidence": 0.82
+}

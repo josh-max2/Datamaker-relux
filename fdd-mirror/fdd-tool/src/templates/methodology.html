@@ -1,0 +1,242 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Methodology — How FranchiseDepth extracts FDD data{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Methodology", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ canonical_url }}#webpage",
+      "name": "Methodology — {{ site_name }}",
+      "url": "{{ canonical_url }}",
+      "description": "Data sources, extraction pipeline, validation, refresh schedule, data dictionary, and known limitations for {{ site_name }}.",
+      "isPartOf": { "@type": "WebSite", "name": "{{ site_name }}", "url": "{{ SITE_HOST }}{{ url_for('') }}" },
+      "author": { "@type": "Person", "name": "FranchiseDepth Editorial" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "{{ SITE_HOST }}/#organization",
+      "name": "{{ site_name }}",
+      "url": "{{ SITE_HOST }}{{ url_for('') }}"
+    }
+  ]
+}
+</script>
+{% endblock %}
+{% block description %}Detailed methodology for the FranchiseDepth FDD database: sources, extraction pipeline, validation, refresh schedule, data dictionary, and known limitations.{% endblock %}
+{% block content %}
+<article class="methodology">
+    <h1>Methodology</h1>
+    <p class="lead">
+        Every figure on this site is extracted from a publicly-filed Franchise Disclosure Document. This page documents how that happens — the source portals we scrape, the prompts we use to extract structured data, the validation discipline we apply, the limitations we know about, and the refresh schedule we follow.
+    </p>
+
+    <h2>1. Data sources</h2>
+    <p>
+        Franchise Disclosure Documents are filed with state securities regulators in 14 US "registration states." Each state runs its own filing portal with its own UX and download mechanism. We pull from these portals in priority order:
+    </p>
+    <ul>
+        <li><strong>Wisconsin DFI Franchise Search</strong> (<code>apps.dfi.wi.gov/apps/FranchiseSearch</code>) — currently 1,879 active franchisor registrations. Our primary source today. Stateful ASP.NET form requires browser automation (Playwright) to navigate.</li>
+        <li><strong>Minnesota CARDS</strong> (<code>cards.web.commerce.state.mn.us</code>) — modern document portal with direct PDF URLs. Used for cross-state validation and for brands not registered in WI.</li>
+        <li><strong>Planned: California DFPI DOCQNET</strong> — largest single state by filing volume. Different UI requires its own scraper module.</li>
+        <li><strong>Planned: Indiana SOS, NASAA EFD</strong> — Indiana has a clean modern portal (2019+ filings only); NASAA is a multi-state depository for franchisors that file in several states.</li>
+    </ul>
+    <p>
+        FDDs are public records. Item 19 data is published by the franchisor with full knowledge it will be read by the public; republishing the structured data is not infringement. Where the franchisor's narrative text in the source PDF is copyrighted (the writing, not the data), we summarize methodology in our own words and link back to the source filing rather than reproducing FDD prose verbatim.
+    </p>
+
+    <h2>2. What we extract</h2>
+    <p>
+        Per FDD, we parse five specific Items from the FTC's required disclosure structure:
+    </p>
+    <table class="data-table">
+        <thead><tr><th>Item</th><th>What it covers</th><th>Our extracted fields</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Item 5</strong></td><td>Initial franchise fee</td><td>fee low, fee high, fee notes</td></tr>
+            <tr><td><strong>Item 6</strong></td><td>Ongoing fees</td><td>royalty %, marketing fee %, technology fee monthly, fee notes</td></tr>
+            <tr><td><strong>Item 7</strong></td><td>Estimated initial investment</td><td>total investment low, total investment high, liquid capital required, net worth required</td></tr>
+            <tr><td><strong>Item 19</strong></td><td>Financial performance representations (when disclosed; ~66% of FDDs)</td><td>per-cohort records: metric, cohort name + raw description, outlet count, reporting period, avg, median, min, max, percentile 25, percentile 75, % above average</td></tr>
+            <tr><td><strong>Item 20</strong></td><td>Outlet activity (always required)</td><td>yearly summary by outlet type (franchised, company-owned, total); state-by-state activity: starts, opens, terminations, non-renewals, reacquisitions, ceased other reasons, ends</td></tr>
+        </tbody>
+    </table>
+    <p>
+        We don't republish narrative text from the FDD. We extract structured facts only — numbers, table rows, dates. The franchisor's writing remains theirs; the data remains public.
+    </p>
+
+    <h2>3. How extraction works</h2>
+    <ol>
+        <li><strong>Scrape:</strong> The Wisconsin scraper (<a href="https://github.com/josh-max2/Parser/blob/main/fdd-tool/src/scrapers/wisconsin.py" rel="me">source</a>) uses Playwright + Chromium to navigate the stateful ASP.NET portal. It searches by brand name, filters to currently-Registered filings (skipping Expired), and clicks the per-filing Download button which triggers a server-side POST that returns the PDF.</li>
+        <li><strong>Hash + dedup:</strong> Every downloaded PDF is SHA-256 hashed. The same franchisor often files near-identical FDDs across multiple states; we extract only the first instance and reuse outputs for SHA matches.</li>
+        <li><strong>Section detection:</strong> For each FDD, a Python regex locates the body page ranges for Items 5, 6, 7, 19, and 20 by matching the canonical FTC heading text (e.g., "FINANCIAL PERFORMANCE REPRESENTATIONS"). The regex tolerates several format variations including comma-separated titles ("FINANCIAL PERFORMANCE, REPRESENTATIONS"), unicode dashes rendered as "?" by PDF text extraction, and Table-of-Contents pages that would otherwise produce false matches.</li>
+        <li><strong>Cover-page detection:</strong> A separate scoring heuristic identifies the FDD cover page (where the legal name, state of incorporation, address, and issuance date live). This is distinct from "body start" because the cover usually appears before the legal preamble + state addenda + table of contents.</li>
+        <li><strong>LLM extraction:</strong> The relevant pages for each Item are sent to Anthropic's Claude Sonnet 4.6 with an item-specific structured-output prompt. For Items 19 and 20, we also include rasterized page images at 1.7× scale — Claude's vision capability handles tabular content that doesn't extract cleanly as text.</li>
+        <li><strong>Structured output validation:</strong> The model returns JSON conforming to a per-item schema with a self-rated 0.0-1.0 confidence score. A lenient parser handles common JSON escape issues (unescaped quotes inside strings, trailing commas, multi-line strings without escapes); on the rare unrecoverable parse failure, the raw model output is retained for manual review rather than silently dropped.</li>
+        <li><strong>Database ingest:</strong> JSON outputs are merged into a SQLite database via an idempotent upsert pattern. Brand entities are keyed by slug; FDDs by SHA-256.</li>
+        <li><strong>Site generation:</strong> A Jinja2-based static-site generator renders one HTML page per brand + category aggregation pages + index. Pages include schema.org Article markup with author, dateModified, and FAQPage entries for AI search engine citations.</li>
+    </ol>
+
+    <h2>4. Validation discipline</h2>
+    <p>
+        We've validated the pipeline on four reference FDDs spanning distinct failure modes: a single-cohort case (Crumbl 2023), a no-FPR-disclosed case (Service Experts 2025), a multi-cohort stress test (ReBath 2025), and a scanned-PDF case (Servpro 2014) that exposes the pipeline's current OCR gap. We then ran a 20-brand pilot of home-services franchisors from Wisconsin to test the prompts across the natural variance of real filings.
+    </p>
+    <p>
+        On every numeric value we've manually spot-checked against the source PDF, the extracted value has matched. The 4-FDD + 20-brand validation surfaced and fixed three real bugs: section regex too strict on dash + comma variations (JDog, Two Men); missing cohort enum value for multi-unit ownership groups (Mr. Handyman, Merry Maids); JSON escape errors silently dropping otherwise-valid extractions (Anago).
+    </p>
+    <p>
+        Extraction at scale will hit edge cases we haven't seen yet. If you spot a number that's wrong, click the page-number link on the relevant Item 19 row to open the source filing and verify. We'd rather you trust the source than trust us.
+    </p>
+
+    <h2>5. Refresh schedule</h2>
+    <p>
+        Franchisors are required to file an updated FDD annually if they wish to continue offering franchises in a registration state. Our refresh approach matches that cadence:
+    </p>
+    <ul>
+        <li><strong>Quarterly batch refresh:</strong> every 3 months, the scraper re-checks every brand currently in our database for a newer Registered filing. If found, the new PDF is downloaded, deduped against the existing version by SHA-256, and re-extracted only if the hash changed. This catches mid-year amendments and renewal filings.</li>
+        <li><strong>New-brand backfill:</strong> the scrape loop runs continuously against the WI active-filings list and ingests any brand that has a currently-Registered filing and isn't already in our database.</li>
+        <li><strong>Page-level "last verified" stamps:</strong> every brand page displays its source FDD's filing year and issuance date prominently in the header so visitors know exactly how fresh the data is. Stale data is the #1 trust killer in franchise research; we'd rather acknowledge our refresh latency than hide it.</li>
+    </ul>
+
+    <h2>6. Estimated breakeven — how it's calculated</h2>
+    <p>
+        For brands that disclose Item 19, the breakeven estimate combines existing-data inputs in this preference order:
+    </p>
+    <ol>
+        <li><strong>Directly-reported net profit (dollars).</strong> If the FDD reports actual net profit per outlet in dollar terms, we use those figures directly.</li>
+        <li><strong>Directly-reported net income margin percent.</strong> If the FDD reports a net income margin (e.g., "Average Net Income 9.8%"), we apply it to the reported revenue.</li>
+        <li><strong>Industry-typical margin applied to reported revenue.</strong> When no profit figure is disclosed, we apply an industry-typical operating margin band to the broadest reported revenue cohort.</li>
+    </ol>
+    <p>
+        Industry-typical operating margin bands we apply when option 3 is needed:
+    </p>
+    <ul>
+        <li>Food / QSR: 8–15%</li>
+        <li>Home services (plumbing, HVAC, cleaning, restoration, roofing, painting, handyman, outdoor): 18–30%</li>
+        <li>Senior care, remodeling, moving: 15–25%</li>
+        <li>Real estate brokerage: 10–20%</li>
+        <li>Other / unclassified: 10–20%</li>
+    </ul>
+    <p>
+        The formula is straightforward: investment midpoint divided by estimated annual profit equals years to breakeven. We deliberately prefer broad cohorts (e.g., "all franchised outlets") over performance-anchored quartile cohorts ("Top 10%") for the optimistic side, because applying high margins to the top 10% of outlets produces unrealistically fast breakeven times that don't represent a typical buyer's experience.
+    </p>
+    <p>
+        This is an arithmetic estimate, not a forecast, not a guarantee. Actual breakeven varies widely by location, owner involvement, financing terms, local market conditions, and operating discipline. If a brand doesn't disclose Item 19, we don't estimate breakeven and we say so plainly.
+    </p>
+
+    <h2 id="section-7">7. System health badge — how it's calculated</h2>
+    <p>
+        From Item 20's required state-by-state outlet activity table, we compute closure rate as:
+    </p>
+    <pre>closure_rate = (terminations + non-renewals + ceased-other) / total outlet-years</pre>
+    <p>
+        Buckets are purely arithmetic, with no human judgment in the categorization:
+    </p>
+    <ul>
+        <li>🟢 <strong>Stable</strong>: closure rate &lt; 3%</li>
+        <li>🟡 <strong>Mixed</strong>: closure rate 3–7%</li>
+        <li>🔴 <strong>Contracting</strong>: closure rate &gt; 7%</li>
+    </ul>
+    <p>
+        Transfers between franchisees don't count as closures (the outlet continues operating under a new owner). Reacquisitions by the franchisor also don't count. The labels are descriptive of the closure rate, not editorial judgments about the franchise's quality — a "Contracting" badge on a niche brand undergoing a strategic refocus isn't the same as one on a brand losing buyer trust, and we leave that interpretation to the reader plus their conversations with current franchisees.
+    </p>
+
+    <h2>8. Data dictionary</h2>
+    <table class="data-table">
+        <thead><tr><th>Field</th><th>Source</th><th>Notes</th></tr></thead>
+        <tbody>
+            <tr><td>legal_name</td><td>FDD cover page</td><td>Full legal entity name including suffix (LLC, Inc., Corp.)</td></tr>
+            <tr><td>brand_name</td><td>FDD cover page</td><td>Public-facing trade name (what customers know)</td></tr>
+            <tr><td>state_of_inc</td><td>FDD cover page</td><td>State of incorporation (Delaware, Utah, etc.)</td></tr>
+            <tr><td>filing_year</td><td>FDD cover page</td><td>Year on the FDD cover</td></tr>
+            <tr><td>effective_date</td><td>FDD cover page / receipt</td><td>Issuance date stated by franchisor; format YYYY-MM-DD</td></tr>
+            <tr><td>initial_franchise_fee_low/high</td><td>Item 5</td><td>USD; if single value, both fields equal that value</td></tr>
+            <tr><td>royalty_pct</td><td>Item 6</td><td>Percent of gross sales</td></tr>
+            <tr><td>marketing_fee_pct</td><td>Item 6</td><td>Percent of gross sales (brand fund / ad fund)</td></tr>
+            <tr><td>total_investment_low/high</td><td>Item 7 totals row</td><td>USD; sum of all line items</td></tr>
+            <tr><td>liquid_capital_required</td><td>Item 7</td><td>USD; separately disclosed if franchisor specifies it</td></tr>
+            <tr><td>cohort_name</td><td>Item 19 normalization</td><td>Enum: all_franchised, open_lt_12mo, open_12_24mo, open_24_plus_mo, open_36_plus_mo, open_48_plus_mo, open_60_plus_mo, tenure_year_anchored, performance_anchored, ownership_group_anchored, small_format, large_format, other</td></tr>
+            <tr><td>cohort_raw</td><td>Item 19 source</td><td>Verbatim cohort label from the FDD (preserves nuance lost in normalization)</td></tr>
+            <tr><td>value_avg, value_median, value_min, value_max</td><td>Item 19 source</td><td>USD; parenthesized values parsed as negative</td></tr>
+            <tr><td>pct_above_avg</td><td>Item 19 source</td><td>"30% of outlets met or exceeded the average gross sales" → 30.0</td></tr>
+            <tr><td>confidence</td><td>LLM self-rating</td><td>0.0–1.0; records below 0.7 flagged for review</td></tr>
+            <tr><td>page_number</td><td>Extraction metadata</td><td>PDF page where the value appears; used for source linking</td></tr>
+        </tbody>
+    </table>
+
+    <h2>9. What we don't have (limitations)</h2>
+    <ul>
+        <li><strong>Scanned PDFs.</strong> Some older filings are scanned images rather than born-digital PDFs. Our preflight survey of 19 modern (2024-2025) MN-filed FDDs found zero scanned outliers, but older historical filings (Servpro 2014, for example) are scanned and produce garbled text. An OCR fallback step is on the backlog; modern filings don't need it.</li>
+        <li><strong>Franchisee testimonials, reviews, or ratings.</strong> We don't include them. Cannot validate them; would compromise our trust framing. Item 20 of every FDD contains the federally-required list of current and former franchisees with contact information — that's the right place to source firsthand accounts.</li>
+        <li><strong>Editorial rankings.</strong> No "Best Franchise 2026" lists. Pure data display, reader decides.</li>
+        <li><strong>Item 21 (financial statements), Items 1-4 narrative, Items 8-18 operational detail.</strong> These exist in the source FDD; we don't currently extract them. Item 1 (parent company, history) is on the roadmap; the operational-detail Items are lower priority.</li>
+        <li><strong>Comparison across filing years for the same brand.</strong> Today the database reflects the most recent Registered filing per brand. Historical trend pages (year-over-year revenue evolution) require ingesting expired filings, which we don't currently do.</li>
+        <li><strong>Brands not in any registration state.</strong> Some franchises operate only in non-registration states. They don't appear in our database because the source material doesn't exist publicly.</li>
+    </ul>
+
+    <h2>10. Update log</h2>
+    <p>
+        Material changes to extraction logic, presentation, or schema. Newest first.
+    </p>
+    <ul>
+        <li><strong>2026-05-17 (late):</strong> Wired the custom domain (franchisedepth.com) and migrated to root URLs. Activated Google Analytics 4, Microsoft Clarity (both consent-gated under Klaro), Formspree (4 form types), Google Search Console + Bing via IndexNow (140 URLs submitted in first push, fanning out to Bing + Yandex + Seznam + Naver). Verification meta tags deployed for GSC, FlexOffers, Impact. Shipped 8 pillar guides (Item 7, Item 19, Item 20, validation calls, breakeven horizon, SBA 7(a) financing, what's negotiable, evaluating discovery day). Added new page types: 51 state pages, 3 highest-reported-earnings rankings (per category), /recent/ index of newest FDDs, /industries/ hub, /contact/, /press/, /guides/ hub. F4.2 ROI walk-forward chart on every brand page with disclosed breakeven. Site grew from 45 → 143 pages with 0 audit issues throughout.</li>
+        <li><strong>2026-05-17 (morning):</strong> Added F1.1 opening summary paragraph, F1.5 FAQ with JSON-LD FAQPage schema, F1.8 author byline + Article schema, F2.3 FTC affiliate disclosure (footer + inline + dedicated page), Open Graph + Twitter Card meta tags, favicon set, 404 page with live brand search, deeper About page, deeper methodology page.</li>
+        <li><strong>2026-05-16:</strong> Added system-health risk badge (🟢🟡🔴 from Item 20 closure rate); estimated breakeven with method disclosure (reported net profit dollars → reported net margin % → industry-typical margin); top-states bar chart; outlet growth bar chart; Item 19 distribution chart; source-page links on Item 19 rows; verified-from timestamp.</li>
+        <li><strong>2026-05-16:</strong> Section regex expanded to tolerate dash + comma variations and unicode dashes (fixes JDog, Two Men extractions); added ownership_group_anchored cohort enum value (fixes Mr. Handyman, Merry Maids extractions); lenient JSON parser fallback (recovers Anago-style escape errors).</li>
+        <li><strong>2026-05-16:</strong> Cohort enum expanded with performance_anchored (Top 10% / Top 25% cohorts) and tenure_year_anchored (Open Prior to 2022 cohorts).</li>
+        <li><strong>2026-05-16:</strong> Initial public site with 24 brands extracted from WI + MN portals.</li>
+    </ul>
+
+    <h2 id="glossary">11. Glossary</h2>
+    <p>Plain-English definitions of jargon used throughout the site. Linked from tooltips on brand pages and comparison pages.</p>
+    <dl class="glossary">
+        <dt id="g-fdd">FDD (Franchise Disclosure Document)</dt>
+        <dd>The 23-section legal document every franchisor must file before selling franchises in a registration state. Updated annually. The source for every number on this site.</dd>
+
+        <dt id="g-item5">Item 5 — Initial fees</dt>
+        <dd>The one-time franchise license fee paid to the franchisor when you sign. Doesn't include equipment, build-out, or working capital — those are Item 7.</dd>
+
+        <dt id="g-item6">Item 6 — Ongoing fees</dt>
+        <dd>Recurring fees: royalty (% of gross sales), marketing/brand fund (% of gross sales), technology fees, transfer fees, etc. Often the difference between a profitable and unprofitable franchise.</dd>
+
+        <dt id="g-item7">Item 7 — Total investment</dt>
+        <dd>The franchisor's estimate of total cost to open and operate the franchise for the first 3 months. Includes initial fee + build-out + equipment + working capital. Always given as a range (low to high).</dd>
+
+        <dt id="g-item19">Item 19 — Financial performance representations (FPR)</dt>
+        <dd>The section where franchisors disclose actual financial performance of existing outlets. <strong>Disclosure is voluntary</strong> — many franchisors omit Item 19 entirely. When present, it's the only legally-vetted earnings data buyers can use.</dd>
+
+        <dt id="g-fpr">FPR (Financial Performance Representation)</dt>
+        <dd>The formal term for the contents of Item 19. Regulated by FTC §436.5(s) — any forecast or projection must come from Item 19; third parties (including this site) can't legally make projections about your specific results.</dd>
+
+        <dt id="g-item20">Item 20 — Outlet activity</dt>
+        <dd>The required state-by-state outlet table showing openings, closures, terminations, non-renewals, transfers, and reacquisitions per year. The source for our closure rate calculation.</dd>
+
+        <dt id="g-royalty">Royalty</dt>
+        <dd>An ongoing percentage of gross sales paid to the franchisor, typically weekly or monthly. Common range: 4-10%. Critical to compare: a 6% vs 10% royalty on $500K annual sales is a $20K/year difference.</dd>
+
+        <dt id="g-liquid-capital">Liquid capital requirement</dt>
+        <dd>The franchisor's minimum cash-on-hand requirement for prospective franchisees. Usually below the total investment — the rest is expected to come from financing.</dd>
+
+        <dt id="g-cohort">Cohort (Item 19)</dt>
+        <dd>A subset of outlets the franchisor groups together for reporting (e.g., "outlets open 1+ years", "Top 25%", "company-owned"). Different cohorts can produce wildly different earnings figures — always check which cohort a number describes.</dd>
+
+        <dt id="g-cohort-types">Cohort types we tag</dt>
+        <dd>We classify cohorts into <code>all_franchised</code>, <code>all_company_owned</code>, <code>open_X_plus_mo</code> (tenure-based), <code>performance_anchored</code> (Top X%), <code>ownership_group_anchored</code>, and <code>tenure_year_anchored</code>. See section 8 (data dictionary) for the full schema.</dd>
+
+        <dt id="g-closure-rate">Closure rate</dt>
+        <dd>(terminations + non-renewals + ceased-other) ÷ total outlet-years across the disclosed reporting years. Transfers and reacquisitions are NOT counted — the outlet continues to operate. Banded green &lt; 3%, yellow 3-7%, red &gt; 7%, purely arithmetic.</dd>
+
+        <dt id="g-breakeven">Arithmetic breakeven scenario</dt>
+        <dd>Total investment midpoint ÷ estimated annual profit. We pick the profit figure in this preference order: franchisor-reported net profit dollars → franchisor-reported net margin % → industry-typical margin. <strong>This is not a projection.</strong> Per FTC §436.5(s), only the franchisor's Item 19 disclosure is an authoritative source.</dd>
+    </dl>
+
+    <h2>Source code</h2>
+    <p>
+        The full extraction pipeline — scraper, extractor, database, site generator — is open at <a href="https://github.com/josh-max2/Parser" rel="me">github.com/josh-max2/Parser</a>. Pull requests and issue reports welcome.
+    </p>
+</article>
+{% endblock %}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\bambu_franchising_llc_2026_mn_35881-202604-11.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0067,
+      "input_tokens": 2172,
+      "cached": 1340,
+      "output_tokens": 251
+    },
+    "item5": {
+      "cost_usd": 0.0066,
+      "input_tokens": 1385,
+      "cached": 1340,
+      "output_tokens": 406
+    },
+    "item6": {
+      "cost_usd": 0.0136,
+      "input_tokens": 3333,
+      "cached": 1340,
+      "output_tokens": 483
+    },
+    "item7": {
+      "cost_usd": 0.0058,
+      "input_tokens": 2650,
+      "cached": 1340,
+      "output_tokens": 95
+    },
+    "item19": {
+      "cost_usd": 0.0144,
+      "input_tokens": 5647,
+      "cached": 1340,
+      "output_tokens": 73,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.1441,
+      "input_tokens": 12154,
+      "cached": 1340,
+      "output_tokens": 7420,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.1912
+}

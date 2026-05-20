@@ -1,0 +1,9 @@
+{
+  "royalty_pct": 5.25,
+  "marketing_fee_pct": 2.5,
+  "marketing_min_monthly": 500,
+  "tech_fee_monthly": 250,
+  "fee_notes": "Royalty is 5.25% of Net Billings for non-National Accounts and 6.25% for National Accounts. Marketing fee is greater of $500/month or 2.5% of prior month Net Billings. Tech (Athena Business System) fee is higher of $250/month or 1% of prior month Net Billings. Microsoft Enterprise Package at $14.50/seat/month additional.",
+  "raw_excerpt": "Royalty/Continuing Fee: (i) 5.25% of monthly Net Billings generated from non-National Accounts and (ii) 6.25% of monthly Net Billings generated from National Accounts. General Marketing Fee: greater of $500 per month or 2.5% of the prior month's Net Billings. Monthly Athena Business System and Email Service Fee: higher of $250 per month or 1% of the prior month's Net Billings.",
+  "confidence": 0.95
+}

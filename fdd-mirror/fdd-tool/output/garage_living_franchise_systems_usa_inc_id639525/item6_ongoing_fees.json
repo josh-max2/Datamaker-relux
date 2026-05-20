@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6.5,
+  "royalty_min_monthly": 2000,
+  "marketing_fee_pct": 3.0,
+  "marketing_min_monthly": 1200,
+  "tech_fee_monthly": null,
+  "fee_notes": "Primary market: 6.5% royalty of gross revenue; Secondary market: $2,000/month fixed royalty. Primary market marketing fee $1,200/month (can increase to 3% GR); Secondary $1,400/month (can increase to $1,600/month). Local marketing required 3-6% GR annually. Marketing cooperatives 3-6% GR as members determine.",
+  "raw_excerpt": "Royalty - Primary Market: 6.5% of Gross Revenue; Secondary Market: $2,000 per month. Marketing Fee - Primary Market: $1,200 per month; Secondary Market: $1,400 per month. Upon notice to you, we may increase the Marketing Fee up to 3% of Gross Revenue for a Primary Market and up to $1,600 per month for a Secondary Market.",
+  "confidence": 0.98
+}

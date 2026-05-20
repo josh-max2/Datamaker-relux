@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 80,
+  "fee_notes": "Royalty Fee is the greater of $125 or 6% of Gross Sales, paid weekly each Friday via EFT based on prior week (Sunday\u2013Saturday) Gross Sales. The $125 minimum is a weekly floor, not monthly. Marketing Fee is 2% of Gross Sales, also paid weekly via EFT. Technology Fee is $80/month, may be adjusted annually by up to 5% with 14 days' prior written notice. Other notable fees: Late fee 10% of amount due; interest on late payments at lesser of 18% per annum or maximum permitted by law; Transfer fee $15,000; Renewal fee 10% of then-current Initial Franchise Fee or $5,000 whichever is greater; Liquidated Damages $250/day for unauthorized menu items; Termination Fee $250/week for each remaining week in the Term; Dispute Resolution non-compliance fee $50,000 plus attorneys' fees.",
+  "raw_excerpt": "Royalty Fee (1) | The greater of $125 or 6% of Gross Sales | Payable each week on Friday (based on Gross Sales of the previous week, Sunday to Saturday) | Payments shall be made via electronic funds transfer (\"EFT\").\nMarketing Fee (1) | 2% of Gross Sales | Payable each week on Friday | Payments shall be made via EFT\nTechnology Fee (2) | $80 | By the 1st day of each month, beginning 30 days after you sign a lease for your Store. | You must pay us, via EFT. The Technology Fee may change from time to time.",
+  "confidence": 0.95
+}

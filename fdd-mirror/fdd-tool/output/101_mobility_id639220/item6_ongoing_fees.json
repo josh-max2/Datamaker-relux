@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 7.0,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2.0,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 125,
+  "fee_notes": "Royalty tiered: 7% up to $500k; 6% from $500k to $1M; 5% over $1M; 7% on outside territory sales; 10% if month-to-month after expiration. Minimum quarterly royalty: $2,100 (Q3-Q4), $3,600 (Q5-Q8), $5,400 (Q9+). Marketing fee currently 2%, can increase to 4% max. Local marketing requirement up to 2% of sales. Technology fee $125/month/territory. Numerous other fees including late fees ($150 + $25/day), annual training ($300/person/day), renewal ($7,500), transfer fees ($1,000-$10,000+).",
+  "raw_excerpt": "Royalty Fee: 7% of Gross Sales from the Franchised Business for up to $500,000 in Gross Sales; 6% of Gross Sales in excess of $500,000 and up to $1 million; 5% of Gross Sales in excess of $1 million. Minimum Royalty Fee: $2,100 for your third full and fourth operating quarters, $3,600 for your fifth through eighth full operating quarters, and $5,400 for each subsequent operating quarter. Marketing Fee: Currently 2% of Gross Sales per week, we have the right to increase this up to 4% of Gross Sales. Technology Fee: Currently, $125 per month per Territory.",
+  "confidence": 0.9
+}

@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 1000,
+  "marketing_fee_pct": 2.5,
+  "marketing_min_monthly": 200,
+  "tech_fee_monthly": 1100,
+  "fee_notes": "Royalty 6% (or 5% per volume scale in notes); $1,000/mo minimum starts month 7, rises to $2,500/mo after month 36. Marketing fee up to 2.5% with $200/mo minimum starting month 7. Operations software $1,100-$2,500/mo. Call center $250/mo + $1.50/min. Territory marketing requirement is 10% of gross revenue (inclusive of National Marketing Fee).",
+  "raw_excerpt": "Royalty Fee: 6% of your Gross Revenue (or 5% based on the scale in the notes below) with $1,000 monthly minimum commencing on the 7th month... National Marketing Fee: Up to 2.5% of your monthly Gross Revenue with $200 monthly minimum... Operations Software \u2013 hosting and Maintenance Monthly Software Support Fee: $1,100 to $2,500 per month",
+  "confidence": 0.95
+}

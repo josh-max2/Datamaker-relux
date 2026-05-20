@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Page not found — {{ site_name }}{% endblock %}
+{% block description %}The requested page couldn't be found. Browse our franchise data by category or search by brand name.{% endblock %}
+{% block content %}
+<section class="hero">
+    <h1>That page doesn't exist.</h1>
+    <p class="lead">
+        The franchise you're looking for might not be in our database yet — we're working through state-filed FDDs and currently cover {{ total_brands }} brands. Try one of these:
+    </p>
+    <nav class="category-chips" aria-label="Browse">
+        <a class="chip" href="{{ url_for('') }}">All brands</a>
+        <a class="chip" href="{{ url_for('category/home-services/') }}">Home services</a>
+        <a class="chip" href="{{ url_for('methodology/') }}">How we extract data</a>
+        <a class="chip" href="{{ url_for('about/') }}">About this site</a>
+    </nav>
+</section>
+
+<section>
+    <h2>Search the database</h2>
+    <p>
+        Type a brand name below. If it's in our database, you'll be able to jump to its page.
+    </p>
+    <input type="search" id="brand-search-404" placeholder="e.g., Mr. Rooter, Crumbl, Servpro…"
+           aria-label="Search brands" autofocus />
+    <ul class="brand-cards" id="brand-results">
+        <!-- Filled in by JS from the embedded list below -->
+    </ul>
+</section>
+
+<script id="brand-data" type="application/json">
+{{ brand_index_json|safe }}
+</script>
+<script>
+(function() {
+    const data = JSON.parse(document.getElementById('brand-data').textContent);
+    const results = document.getElementById('brand-results');
+    const input = document.getElementById('brand-search-404');
+    function render(filter) {
+        const f = (filter || '').trim().toLowerCase();
+        results.innerHTML = '';
+        if (!f) { return; }
+        const hits = data.filter(b => b.name.toLowerCase().includes(f)).slice(0, 12);
+        if (hits.length === 0) {
+            results.innerHTML = '<li class="brand-card"><a><span class="brand-card-title">No matches</span><span class="brand-card-meta">We may not have ingested this brand yet — see Methodology for our coverage approach.</span></a></li>';
+            return;
+        }
+        for (const b of hits) {
+            const li = document.createElement('li');
+            li.className = 'brand-card';
+            li.innerHTML = `<a href="${b.url}"><span class="brand-card-title">${b.name}</span><span class="brand-card-meta">${b.industry}</span></a>`;
+            results.appendChild(li);
+        }
+    }
+    input.addEventListener('input', e => render(e.target.value));
+})();
+</script>
+{% endblock %}

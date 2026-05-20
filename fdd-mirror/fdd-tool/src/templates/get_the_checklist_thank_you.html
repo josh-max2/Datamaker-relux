@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Thanks — Your FDD Buyer's Checklist is ready · FranchiseDepth{% endblock %}
+{% block description %}Your free FDD Buyer's Checklist PDF is ready to download. A confirmation copy has also been emailed to you.{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "FDD Buyer's Checklist", "url": url_for('get-the-checklist/')},
+    {"label": "Thank you", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Thank you — FDD Buyer's Checklist ready",
+  "url": "{{ canonical_url }}",
+  "isPartOf": { "@type": "WebSite", "name": "{{ site_name }}", "url": "{{ SITE_HOST }}{{ url_for('') }}" }
+}
+</script>
+<meta name="robots" content="noindex">
+{% endblock %}
+{% block content %}
+<article class="thank-you">
+    <header class="thank-you-header">
+        <span class="thank-you-badge">✓ Confirmed</span>
+        <h1>Your checklist is ready</h1>
+        <p class="lead">
+            Thanks for subscribing. We've emailed you a confirmation copy, and you can grab the
+            PDF directly below. No login, no paywall.
+        </p>
+    </header>
+
+    <section class="thank-you-download">
+        <a class="btn btn-primary btn-lg" href="{{ url_for('lead-magnets/fdd-buyers-checklist.pdf') }}" download>
+            Download the FDD Buyer's Checklist (PDF, 178 KB)
+        </a>
+        <p class="notes">
+            The PDF is also linked in the confirmation email. Save it somewhere you'll find it —
+            you'll want to come back to the red-flag and validation-question sections every time
+            you read a new FDD.
+        </p>
+    </section>
+
+    <section>
+        <h2>While you're here</h2>
+        <p>The checklist is the framework. The site is the data. A few places to start:</p>
+        <ul>
+            <li><a href="{{ url_for('') }}">Browse all {{ total_brands }} brands</a> — filter by budget, search by name, or use the new "Item 19 disclosed only" toggle.</li>
+            <li><a href="{{ url_for('compare/') }}">Compare two or three brands side-by-side</a> — fees, royalty, total investment, outlet trends.</li>
+            <li><a href="{{ url_for('industries/') }}">Browse by industry</a> — food, fitness, home services, real estate, hospitality.</li>
+            <li><a href="{{ url_for('guides/') }}">Read the deeper guides</a> — Item 7, Item 19, Item 20, SBA financing, breakeven math.</li>
+        </ul>
+    </section>
+
+    <section class="thank-you-followup">
+        <h2>What happens next on email</h2>
+        <p>
+            We send one email a month — at most — usually when a notable FDD lands in the database
+            or we publish a new guide. No drip sequences, no upsells, no resold lists. One-click
+            unsubscribe in every email.
+        </p>
+        <p>
+            If a specific brand or industry would be useful to see on the site, just reply to the
+            confirmation email and tell us. We read every reply.
+        </p>
+    </section>
+</article>
+{% endblock %}

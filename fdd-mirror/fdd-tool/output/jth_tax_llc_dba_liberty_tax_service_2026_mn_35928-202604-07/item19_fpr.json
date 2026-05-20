@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Net Fees",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All Active Offices \u2013 2025 (1,411 Liberty Franchise-Operated Offices for Tax Season 2025)",
+      "outlet_count": 1411,
+      "reporting_period": "January 1 to December 31, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 164860,
+      "value_median": 139486,
+      "value_min": 5306,
+      "value_max": 1145331,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 38.41,
+      "page_number": 60,
+      "raw_text": "All Active Offices \u2013 2025 Net Fees: Highest $1,145,331 / Lowest $5,306 / Average $164,860 / Median $139,486 / # Offices Above Avg 542 / # Offices Below Avg 869 / % Offices Above Avg 38.41%",
+      "notes": "Net Fees = prep fees (preparation and transmission of tax returns, less discounts). Excludes financial product incentive, check printing, bookkeeping, credit repair, etc. Cohort of 1,411 represents 83.2% of 1,696 total franchise locations; excludes processing centers, seasonal offices, and offices not active into tax season 2026."
+    },
+    {
+      "metric_name": "transactions",
+      "metric_raw": "Returns",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All Active Offices \u2013 2025 (1,411 Liberty Franchise-Operated Offices for Tax Season 2025)",
+      "outlet_count": 1411,
+      "reporting_period": "January 1 to December 31, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 586,
+      "value_median": 494,
+      "value_min": 25,
+      "value_max": 4729,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 38.63,
+      "page_number": 60,
+      "raw_text": "All Active Offices \u2013 2025 Returns: Highest 4,729 / Lowest 25 / Average 586 / Median 494 / # Offices Above Avg 545 / # Offices Below Avg 866 / % Offices Above Avg 38.63%",
+      "notes": "Returns = count of Federal Tax Returns transmitted between January 1 and December 31, 2025. Same cohort exclusions as Net Fees record."
+    }
+  ],
+  "has_item19": true,
+  "confidence": 0.95,
+  "notes": "Item 19 discloses one table (Table 1) with two metrics \u2014 Net Fees and Returns \u2014 for 1,411 franchise-operated Liberty Tax offices active during tax season 2025. The franchisor explicitly states no other financial performance representations are made. Data is clearly presented and fully readable with no OCR ambiguity."
+}

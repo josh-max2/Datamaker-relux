@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 23920,
+  "initial_franchise_fee_high": 89900,
+  "fee_notes": "Varies by territory type (Standard or Express) and RFSC count. Standard Base Fee $59,900 (1,600-2,000 RFSCs); Express Base Fee $29,900 (750-1,000 RFSCs). Additional $30 per RFSC over minimums. Standard max 3,000 RFSCs; Express max 1,599 RFSCs. Discounts available: VetFran 20%, first responders $2,500, multiple territories $5,000-$10,000, conversion franchisees up to 60%.",
+  "raw_excerpt": "Standard HOODZ Territory: Initial Franchise Fee $59,900 for 1,600-2,000 RFSCs, plus $30 per RFSC over 2,000 (max 3,000). Express HOODZ Territory: Initial Franchise Fee $29,900 for 750-1,000 RFSCs, plus $30 per RFSC over 1,000 (max 1,599). Discounts available for veterans, first responders, and other qualified buyers.",
+  "confidence": 0.95
+}

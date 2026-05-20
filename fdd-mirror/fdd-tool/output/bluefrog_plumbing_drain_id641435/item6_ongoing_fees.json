@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6.0,
+  "royalty_min_monthly": 1500,
+  "marketing_fee_pct": 2.0,
+  "marketing_min_monthly": 450,
+  "tech_fee_monthly": 399,
+  "fee_notes": "Royalty is tiered for first 12 months (conversion: 3%/2.5%/2%, standard: 6%/5%/4% on tiers of revenue), then 6% with $1,500 monthly minimum thereafter. Brand Fund 2% ongoing with $450 minimum (month 13+). Technology fee $399/month subject to max 15% annual increase. Additional fees: digital marketing $299-$499/month, local advertising up to 2% gross revenue, per-user accounts $10-$25/month, plus miscellaneous operational fees.",
+  "raw_excerpt": "Royalty Fee - Greater of Percentage-Based Royalty Fee or Minimum Royalty Fee - Monthly. Technology Fee $399/month. Brand Fund Contribution - Greater of Percentage-Based Brand Fund Contribution or Minimum Brand Fund Contribution - Monthly.",
+  "confidence": 0.92
+}

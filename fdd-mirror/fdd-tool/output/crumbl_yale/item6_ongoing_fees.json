@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 8.0,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2.0,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 650,
+  "fee_notes": "Royalty is 8% of gross sales, paid weekly. Marketing Fund Fee is 2% of gross sales, paid weekly. Advertising Cooperative is an additional 1%-2% of gross sales if established. Local advertising requirement is currently 0% but may be increased up to 2% of gross sales. Technology Fee is currently $650/month, updated periodically in manuals. Transaction Processing Fee is 2.4%-3% per transaction (majority paid to merchant processor Stripe, currently averaging ~2.36%). All fees marked with * are fixed for the term (increases capped at 50%); unmarked fees may be changed in manuals at franchisor's discretion.",
+  "raw_excerpt": "Royalty*1,3 | 8% of gross sales | Payable weekly to be received by Tuesday of the following week (a sales week runs Monday \u2013 Saturday) | Gross sales include all revenue from the franchise business, but does not include sales tax.\nMarketing Fund Fee*1,2 | 2% of gross sales payable to us | Payable weekly to be received by Tuesday of the following week (a sales week runs Monday \u2013 Saturday) | See Note 2 below.\nAdvertising Cooperative*1,2 | 1% to 2% of gross sales payable to the co-op, if established by us | Payable in accordance with the advertising cooperative's governing documents\nTechnology Fee1 | Currently $650 | Payable monthly to be received by the first Tuesday of the month | This fee will be updated periodically in our manuals\nTransaction Processing Fee1,9 | Currently 2.4% to 3% of each transaction | Payable on each transaction | This fee will be updated periodically in our manuals.",
+  "confidence": 0.97
+}

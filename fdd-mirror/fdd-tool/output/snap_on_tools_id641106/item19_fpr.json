@@ -1,0 +1,115 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Paid Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "ALL REPORTING FRANCHISES - TOP 1/3 (2025)",
+      "outlet_count": 934,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 1143456.78,
+      "value_median": 1072587.48,
+      "value_min": 893016.48,
+      "value_max": 2611824.44
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Paid Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "ALL REPORTING FRANCHISES - MIDDLE 1/3 (2025)",
+      "outlet_count": 934,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 761424.61,
+      "value_median": 756290.69,
+      "value_min": 646062.29,
+      "value_max": 892576.51
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Paid Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "ALL REPORTING FRANCHISES - BOTTOM 1/3 (2025)",
+      "outlet_count": 934,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 484542.33,
+      "value_median": 502248.56,
+      "value_min": 67898.51,
+      "value_max": 646003.08
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Paid Sales",
+      "cohort_name": "ownership_group_anchored",
+      "cohort_raw": "FRANCHISES REPORTING AN EMPLOYEE - TOP 1/3 (2025)",
+      "outlet_count": 309,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 1259251.88,
+      "value_median": 1176681.16,
+      "value_min": 1008906.4,
+      "value_max": 2611824.44
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Paid Sales",
+      "cohort_name": "ownership_group_anchored",
+      "cohort_raw": "FRANCHISES REPORTING AN EMPLOYEE - MIDDLE 1/3 (2025)",
+      "outlet_count": 308,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 857417.72,
+      "value_median": 856213.03,
+      "value_min": 735875.2,
+      "value_max": 1007555.73
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Paid Sales",
+      "cohort_name": "ownership_group_anchored",
+      "cohort_raw": "FRANCHISES REPORTING AN EMPLOYEE - BOTTOM 1/3 (2025)",
+      "outlet_count": 309,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 570198.98,
+      "value_median": 605738.11,
+      "value_min": 67898.51,
+      "value_max": 735360.9
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Paid Sales",
+      "cohort_name": "ownership_group_anchored",
+      "cohort_raw": "FRANCHISES NOT REPORTING AN EMPLOYEE - TOP 1/3 (2025)",
+      "outlet_count": 625,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 1072975.37,
+      "value_median": 1009664.02,
+      "value_min": 838942.98,
+      "value_max": 2465189.47
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Paid Sales",
+      "cohort_name": "ownership_group_anchored",
+      "cohort_raw": "FRANCHISES NOT REPORTING AN EMPLOYEE - MIDDLE 1/3 (2025)",
+      "outlet_count": 625,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 714467.6,
+      "value_median": 710423.88,
+      "value_min": 605307.04,
+      "value_max": 838419.97
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Paid Sales",
+      "cohort_name": "ownership_group_anchored",
+      "cohort_raw": "FRANCHISES NOT REPORTING AN EMPLOYEE - BOTTOM 1/3 (2025)",
+      "outlet_count": 626,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 455566.96,
+      "value_median": 470736.53,
+      "value_min": 119143.43,
+      "value_max": 605257.21
+    }
+  ],
+  "confidence": 0.9,
+  "notes": "2,802 of 3,532 total franchises reported 2025 data. Excludes franchises that operated <12 months or didn't submit complete data. Paid Sales = cash sales + revolving account collections + open account sales + credit sales + sales tax. FDD disclaims no assurance of franchisee results."
+}

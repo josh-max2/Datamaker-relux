@@ -1,0 +1,42 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Gross Revenues",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "65 franchised stores in operation for at least one year as of December 31, 2025",
+      "outlet_count": 65,
+      "reporting_period": "2025 calendar year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 2879481.6,
+      "value_median": 2816216.31,
+      "value_min": 560901.16,
+      "value_max": 7849981.73,
+      "pct_above_avg": 49.2,
+      "page_number": 79,
+      "raw_text": "Average Store Gross Revenues: 2,879,481.60 Median Store Gross Revenues: 2,816,216.31 Low Store Gross Revenues: 560,901.16 High Store Gross Revenues: 7,849,981.73"
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Gross Revenues",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "16 company-owned stores in operation for at least one year as of December 31, 2025",
+      "outlet_count": 16,
+      "reporting_period": "2025 calendar year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1936795.05,
+      "value_median": 1625496.42,
+      "value_min": 732731.41,
+      "value_max": 4237306.09,
+      "pct_above_avg": 43.7,
+      "page_number": 81,
+      "raw_text": "Average Store Gross Revenues: $1,936,795.05 Median Store Gross Revenues: $1,625,496.42 Low Store Gross Revenues: $732,731.41 High Store Gross Revenues: $4,237,306.09"
+    }
+  ],
+  "confidence": 0.97
+}

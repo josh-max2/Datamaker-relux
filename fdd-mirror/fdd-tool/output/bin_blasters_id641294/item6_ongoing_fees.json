@@ -1,0 +1,8 @@
+{
+  "royalty_pct": 6,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": 1500,
+  "tech_fee_monthly": 125,
+  "fee_notes": "Brand Development Fund up to 2% (currently 1%). Technology fee capped at $500/month. Software fee $300/month. Local marketing minimum $1,500/territory/month, scales with additional territories purchased.",
+  "confidence": 0.95
+}

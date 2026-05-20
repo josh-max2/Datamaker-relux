@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\massage_luxe_international_llc_2025_mn_35185-202512-03.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0062,
+      "input_tokens": 2072,
+      "cached": 1340,
+      "output_tokens": 239
+    },
+    "item5": {
+      "cost_usd": 0.0073,
+      "input_tokens": 1780,
+      "cached": 1340,
+      "output_tokens": 372
+    },
+    "item6": {
+      "cost_usd": 0.0374,
+      "input_tokens": 4620,
+      "cached": 1340,
+      "output_tokens": 1809
+    },
+    "item7": {
+      "cost_usd": 0.006,
+      "input_tokens": 2767,
+      "cached": 1340,
+      "output_tokens": 85
+    },
+    "item19": {
+      "cost_usd": 0.3954,
+      "input_tokens": 24942,
+      "cached": 1340,
+      "output_tokens": 21611,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1054,
+      "input_tokens": 9150,
+      "cached": 1340,
+      "output_tokens": 5435,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.5575
+}

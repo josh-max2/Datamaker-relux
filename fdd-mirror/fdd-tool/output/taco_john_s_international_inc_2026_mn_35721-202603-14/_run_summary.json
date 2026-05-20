@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\taco_john_s_international_inc_2026_mn_35721-202603-14.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0062,
+      "input_tokens": 2045,
+      "cached": 1340,
+      "output_tokens": 248
+    },
+    "item5": {
+      "cost_usd": 0.0115,
+      "input_tokens": 2505,
+      "cached": 1340,
+      "output_tokens": 509
+    },
+    "item6": {
+      "cost_usd": 0.0064,
+      "input_tokens": 1444,
+      "cached": 1340,
+      "output_tokens": 376
+    },
+    "item7": {
+      "cost_usd": 0.0256,
+      "input_tokens": 9247,
+      "cached": 1340,
+      "output_tokens": 96
+    },
+    "item19": {
+      "cost_usd": 0.1068,
+      "input_tokens": 12778,
+      "cached": 1340,
+      "output_tokens": 4803,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.1228,
+      "input_tokens": 11169,
+      "cached": 1340,
+      "output_tokens": 6194,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.2792
+}

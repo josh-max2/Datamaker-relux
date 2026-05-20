@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 10,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 100,
+  "fee_notes": "Royalty is 10% of weekly Gross Sales, deducted weekly by franchisor before remitting Adjusted Net Sales. Insurance Withholding is 0.75% of Gross Sales (deducted weekly), covering franchisee under group policy. Host Facility Margin is up to 50% of Gross Sales. Host Facility Rebate is up to 10% of Gross Sales (currently 3%-5%), deducted weekly. National Marketing Fund contribution is up to 2% of Gross Sales, payable weekly once Fund is formed and operational. Website and Data Fee is $100/month per location. All fees are non-refundable and uniformly imposed.",
+  "raw_excerpt": "Royalty Withholding | 10% of your Gross Sales | Deducted weekly | We withhold your Royalty from your Gross Sales before remitting the Adjusted Net Sales to you. See Note 2.\nInsurance Withholding | 0.75% of your Gross Sales | Deducted weekly | We withhold your Insurance from your Gross Sales before remitting the Adjusted Net Sales to you. See Note 2. You must have commercial liability insurance through our group policy. See Note 3.\nNational Marketing Fund | Up to 2% of your Gross Sales | Weekly, when the Royalty Withholding Fee is due | Payable once the Fund is formed and operational\nWebsite and Data Fee | $100 per month per location | Monthly | Fee for accessing our website and programs offered for conducting business such as submitting PO, Audits, Training Materials, and Electronic Documents\nHost Facility Rebate | Up 10% of Gross Sales; currently between 3% and 5% | Deducted weekly | This is additional consideration charged by the Host Facility for having your Sushi Counter in its facility.",
+  "confidence": 0.92
+}

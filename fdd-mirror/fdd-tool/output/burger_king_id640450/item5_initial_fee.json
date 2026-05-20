@@ -1,0 +1,6 @@
+{
+  "initial_franchise_fee_low": 15000,
+  "initial_franchise_fee_high": 50000,
+  "fee_notes": "Prorated by term length with $15,000 minimum; standard $50,000 for 20-year term",
+  "confidence": 0.9
+}

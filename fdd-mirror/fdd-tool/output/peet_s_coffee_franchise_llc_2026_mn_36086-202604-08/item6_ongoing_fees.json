@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 0.5,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 500,
+  "fee_notes": "Royalty is 6% of Gross Sales, paid monthly. Brand Fund Contribution is not currently assessed but if established, the aggregate of Brand Fund Contribution and Local Advertising Expenditure will not exceed 5% of Gross Sales (the \"Marketing Expenditure Cap\"). Local Advertising Expenditure is 0.5% of Gross Sales (subject to change), paid monthly. Technology Fee is $500/month, subject to increase up to 10% per year on a compounding basis. Additional fees include: Transfer Fee (Franchise Agreement) = 50% of then-current standard initial franchise fee; Transfer Fee (Area Development Agreement) = $15,000; Renewal Fee = 50% of then-current standard initial franchise fee; Additional Training Fee = $500/day per person plus reimbursement of direct costs (subject to 10% annual compounding increase); Interest on Late Payment = lesser of 1.5%/month or highest commercial contract rate allowed by law; Development Non-Compliance Fee = 6% of average monthly Gross Sales of all Peet's Stores in prior year per month of non-compliance.",
+  "raw_excerpt": "Royalty | 6% of Gross Sales | Monthly | \"Gross Sales\" is defined in the notes to this table disclosed below.\nBrand Fund Contribution | Not currently assessed (subject to change) | Monthly | If we establish the Brand Fund, you must contribute to the Brand Fund in the amount we designate, provided that the aggregate of the Brand Fund Contribution and the Local Advertising Expenditure will not exceed 5% of your Store's Gross Sales (the \"Marketing Expenditure Cap\").\nLocal Advertising Expenditure | 0.5% of Gross Sales (subject to change) | Monthly | You must spend an amount that we designate from time to time to advertise and promote your Store.\nTechnology Fee | $500 per month (subject to change) | Monthly | The amount of this fee is subject to increase up to 10% per year on a compounding basis.",
+  "confidence": 0.95
+}

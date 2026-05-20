@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\young_rembrandts_franchise_inc_2025_mn_35302-202601-04.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0045,
+      "input_tokens": 1501,
+      "cached": 1340,
+      "output_tokens": 243
+    },
+    "item5": {
+      "cost_usd": 0.0063,
+      "input_tokens": 1588,
+      "cached": 1340,
+      "output_tokens": 343
+    },
+    "item6": {
+      "cost_usd": 0.016,
+      "input_tokens": 3337,
+      "cached": 1340,
+      "output_tokens": 642
+    },
+    "item7": {
+      "cost_usd": 0.0052,
+      "input_tokens": 2504,
+      "cached": 1340,
+      "output_tokens": 86
+    },
+    "item19": {
+      "cost_usd": 0.058,
+      "input_tokens": 9717,
+      "cached": 1340,
+      "output_tokens": 2167,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.1246,
+      "input_tokens": 11135,
+      "cached": 1340,
+      "output_tokens": 6319,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.2146
+}

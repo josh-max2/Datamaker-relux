@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 35000,
+  "initial_franchise_fee_high": 55000,
+  "fee_notes": "Fee varies by territory population size: <500k=$35k, 500k-1M=$45k, 1M-2M=$50k, 2M+=$55k. Veterans receive 10% discount. Multi-unit discounts available: 25% off 2nd unit, 30% off 3rd, 35% off 4th, 40% off 5th+. Credit available for existing customers in territory.",
+  "raw_excerpt": "For each Franchised Business, we charge an Initial Franchise Fee ranging from $35,000 to $55,000 depending on the size of your designated territory. We offer franchises for 4 territory sizes: Less than 500,000 ($35,000), 500,001 to 1,000,000 ($45,000), 1,000,001 to 2,000,000 ($50,000), 2,000,001 and up ($55,000).",
+  "confidence": 0.95
+}

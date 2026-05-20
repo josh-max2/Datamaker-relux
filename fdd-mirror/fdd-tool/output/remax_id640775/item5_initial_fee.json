@@ -1,0 +1,6 @@
+{
+  "initial_franchise_fee_low": 8750,
+  "initial_franchise_fee_high": 35000,
+  "fee_notes": "Standard residential: $8,750 (low-density <20k pop), $17,500 (medium-density 20-70k), $35,000 (high-density 70k+). Commercial: $25,000. Team: $1,000. Financing available with higher fees; 50% down payment required. Incentives available for conversions and existing franchisees; waivers/reductions discretionary.",
+  "confidence": 0.95
+}

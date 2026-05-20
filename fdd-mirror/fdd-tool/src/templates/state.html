@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Franchises operating in {{ state_full }} — {{ brands|length }} brands{% endblock %}
+{% block description %}{{ brands|length }} franchise brands with disclosed outlets in {{ state_full }} ({{ state_code }}). Initial fees, royalty rates, total investment, and outlet counts from publicly filed FDDs.{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": state_full, "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Franchises in {{ state_full }}",
+  "description": "{{ brands|length }} franchise brands operating in {{ state_full }}.",
+  "url": "{{ canonical_url }}",
+  "isPartOf": { "@type": "WebSite", "name": "{{ site_name }}", "url": "{{ SITE_HOST }}{{ url_for('') }}" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Franchises operating in {{ state_full }}",
+    "numberOfItems": {{ brands|length }},
+    "itemListElement": [
+      {% for b in brands %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "url": "{{ SITE_HOST }}{{ url_for('franchise/' ~ b.slug ~ '/') }}",
+        "name": {{ (b.brand_name or b.legal_name)|tojson }}
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+{% endblock %}
+{% block content %}
+<section class="hero">
+    <h1>Franchises operating in {{ state_full }}</h1>
+    <p class="lead">{{ total_outlets|format_int }} franchise outlets across {{ brands|length }} brands have a presence in {{ state_full }} as of the most recent FDD filings. Counts are from each franchisor's Item 20 state-by-state outlet table.</p>
+</section>
+
+<section>
+    <h2>Brands with {{ state_full }} outlets</h2>
+    <p class="notes">Sorted by outlet count in {{ state_full }}, descending. Click any header to re-sort.</p>
+    <div class="table-scroll">
+    <table class="data-table sortable-table" id="state-table">
+        <thead>
+            <tr>
+                <th data-sort="text">Brand</th>
+                <th data-sort="text">Industry</th>
+                <th data-sort="num">Outlets in {{ state_code }}</th>
+                <th data-sort="num">Initial fee</th>
+                <th data-sort="num">Investment range</th>
+                <th data-sort="bool">Item 19?</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for b in brands %}
+            <tr>
+                <td><a href="{{ url_for('franchise/' ~ b.slug ~ '/') }}">{{ b.brand_name or b.legal_name }}</a></td>
+                <td>{{ b.industry|industry_label }}</td>
+                <td data-value="{{ b.outlets_in_state or 0 }}">{{ '{:,}'.format(b.outlets_in_state) }}</td>
+                <td data-value="{{ b.fee_low or 0 }}">
+                    {% if b.fee_low and b.fee_high and b.fee_low != b.fee_high %}
+                        ${{ '{:,.0f}'.format(b.fee_low) }}–${{ '{:,.0f}'.format(b.fee_high) }}
+                    {% elif b.fee_low %}
+                        ${{ '{:,.0f}'.format(b.fee_low) }}
+                    {% else %}—{% endif %}
+                </td>
+                <td data-value="{{ b.inv_low or 0 }}">
+                    {% if b.inv_low and b.inv_high %}${{ '{:,.0f}'.format(b.inv_low) }}–${{ '{:,.0f}'.format(b.inv_high) }}
+                    {% else %}—{% endif %}
+                </td>
+                <td data-value="{% if b.has_item19 %}1{% else %}0{% endif %}">{% if b.has_item19 %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+</section>
+
+<section class="sources">
+    <h3>Source</h3>
+    <p>
+        Outlet counts are from <a class="jargon" href="{{ url_for('methodology/') }}#g-item20" title="The required state-by-state outlet activity table in every FDD.">Item 20</a> of each franchisor's most recent Franchise Disclosure Document. Numbers reflect the latest year disclosed in the FDD, which may lag the current quarter by 6-18 months. See <a href="{{ url_for('methodology/') }}">methodology</a>.
+    </p>
+</section>
+
+<script>
+// Sortable table (same pattern as category page)
+(function() {
+    const table = document.getElementById('state-table');
+    if (!table) return;
+    const tbody = table.querySelector('tbody');
+    const headers = table.querySelectorAll('th[data-sort]');
+    let currentCol = -1, asc = true;
+    headers.forEach((h, idx) => {
+        h.style.cursor = 'pointer';
+        h.addEventListener('click', () => {
+            if (currentCol === idx) asc = !asc; else { currentCol = idx; asc = true; }
+            const rows = Array.from(tbody.rows);
+            const type = h.dataset.sort;
+            rows.sort((a, b) => {
+                let av = a.cells[idx].dataset.value ?? a.cells[idx].innerText;
+                let bv = b.cells[idx].dataset.value ?? b.cells[idx].innerText;
+                if (type === 'num' || type === 'bool') {
+                    av = parseFloat(av) || 0; bv = parseFloat(bv) || 0;
+                    return asc ? av - bv : bv - av;
+                }
+                av = String(av).toLowerCase(); bv = String(bv).toLowerCase();
+                return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+            });
+            rows.forEach(r => tbody.appendChild(r));
+            headers.forEach(x => x.querySelector('.sort-ind')?.remove());
+            const ind = document.createElement('span');
+            ind.className = 'sort-ind'; ind.textContent = asc ? ' ▲' : ' ▼';
+            h.appendChild(ind);
+        });
+    });
+})();
+</script>
+{% endblock %}

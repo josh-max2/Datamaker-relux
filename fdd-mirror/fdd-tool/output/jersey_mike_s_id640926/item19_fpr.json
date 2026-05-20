@@ -1,0 +1,21 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Unit Volume",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "Traditional Franchised Restaurants",
+      "outlet_count": 2606,
+      "reporting_period": "2025 calendar year (Jan 1 \u2013 Dec 28, 2025)",
+      "value_avg": 1367578,
+      "value_median": 1305850,
+      "value_min": 512332,
+      "value_max": 3228616,
+      "pct_above_avg": 44,
+      "page_number": 58,
+      "notes": "Unit Volume defined as total sales of food/beverages/merchandise/services to customers including off-site and catering, less taxes and refunds. Data includes 2,606 Traditional Franchised Restaurants (operating >360 days during measurement period); excluded 583 outlets open <361 days, 8 without designated POS system, 13 non-traditional venues, and 17 company-owned/affiliate-owned."
+    }
+  ],
+  "confidence": 0.95
+}

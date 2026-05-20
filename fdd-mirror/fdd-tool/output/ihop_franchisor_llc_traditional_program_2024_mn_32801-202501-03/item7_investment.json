@@ -1,0 +1,8 @@
+{
+  "total_investment_low": null,
+  "total_investment_high": null,
+  "liquid_capital_required": null,
+  "net_worth_required": null,
+  "raw_excerpt": "No TOTAL row found in the extracted text. The Item 7 table appears to be incomplete \u2014 the text ends mid-table with line items through 'Tray POS Software Fees' but does not include a TOTAL/ESTIMATED TOTAL row.",
+  "confidence": 0.15
+}

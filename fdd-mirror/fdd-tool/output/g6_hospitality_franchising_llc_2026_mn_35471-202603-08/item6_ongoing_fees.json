@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 3,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 400,
+  "fee_notes": "Royalty Fee is 5% of Gross Room Revenues; may be reduced at franchisor discretion for qualifying franchisees. Program Fee (marketing/brand fund) is currently 3% of Gross Room Revenues, may increase up to 0.5% per 12-month period, capped at 5.5%. Reservation Fee is currently 1% of Gross Room Revenues, may increase up to 0.5% per 12-month period, capped at 2%. IT Services Fee is $400/month plus $4.00 per Authorized Guest Room per month. PMS Software Fee is $4.00 per Authorized Guest Room per month. Online Subscription Fee (Training) is $800-$1,200 annually. Portal Access Fee is $3-$5 per user per month. Direct Connect Service/Channel Fees are $1.50-$2.50 per reservation. Motel-specific PPP/Microsite Fee: $299 set-up + $499 annually; Professional Property Photos $699 single brand or $999 dual brands; Content Translation $199 set-up + $99 annually. Sales360 Program Fee is $1,200/month (optional).",
+  "raw_excerpt": "Royalty Fee1 5% of Gross Room Revenues Monthly upon Invoice ...\nProgram Fee1,2 Currently 3% of Gross Room Revenues Monthly upon Invoice ...\nReservation Fee1,3 Currently 1% of Gross Room Revenues Monthly upon Invoice ...\nIT Services Fee Currently $400 per month plus $4.00 per Authorized Guest Room per month Monthly upon invoice ...\nPMS Software Fee Currently $4.00 per Authorized Guest Room per month Monthly upon invoice, in arrears ...\nOnline Subscription Fee \u2013 Training Currently $800 to $1,200 Annually upon invoice ...\nPortal Access Fee Currently, $3 to $5 per user Monthly ...\nDirect Connect Service / Channel Fees Currently, $1.50 to $2.50 per reservation Monthly ...\nMotel-specific Premium Property Page (\"PPP) / Microsite Fee Microsite / PPP $299 set-up and $499 annually; Professional Property Photos, $699 Single Brand or $999 Dual Brands; Content Translation $199 set-up and $99 annually Upon Invoice ...\nSales360 Program Fee Currently $1,200 Monthly, upon Invoice ...",
+  "confidence": 0.88
+}

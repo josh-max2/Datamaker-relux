@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\wings_etc_inc_2026_mn_36096-202604-11.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0065,
+      "input_tokens": 2247,
+      "cached": 1340,
+      "output_tokens": 222
+    },
+    "item5": {
+      "cost_usd": 0.0059,
+      "input_tokens": 1546,
+      "cached": 1340,
+      "output_tokens": 322
+    },
+    "item6": {
+      "cost_usd": 0.025,
+      "input_tokens": 3130,
+      "cached": 1340,
+      "output_tokens": 1284
+    },
+    "item7": {
+      "cost_usd": 0.0048,
+      "input_tokens": 2229,
+      "cached": 1340,
+      "output_tokens": 117
+    },
+    "item19": {
+      "cost_usd": 0.3225,
+      "input_tokens": 16975,
+      "cached": 1340,
+      "output_tokens": 18349,
+      "images_sent": 7
+    },
+    "item20": {
+      "cost_usd": 0.0878,
+      "input_tokens": 8909,
+      "cached": 1340,
+      "output_tokens": 4313,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.4525
+}

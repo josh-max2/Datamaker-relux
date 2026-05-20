@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\oxi_fresh_franchising_co_inc_2026_mn_35994-202604-06.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.007,
+      "input_tokens": 2298,
+      "cached": 1340,
+      "output_tokens": 245
+    },
+    "item5": {
+      "cost_usd": 0.0075,
+      "input_tokens": 2217,
+      "cached": 1340,
+      "output_tokens": 295
+    },
+    "item6": {
+      "cost_usd": 0.0209,
+      "input_tokens": 5255,
+      "cached": 1340,
+      "output_tokens": 582
+    },
+    "item7": {
+      "cost_usd": 0.0068,
+      "input_tokens": 2968,
+      "cached": 1340,
+      "output_tokens": 99
+    },
+    "item19": {
+      "cost_usd": 0.0882,
+      "input_tokens": 6325,
+      "cached": 1340,
+      "output_tokens": 4853,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.2505,
+      "input_tokens": 19553,
+      "cached": 1340,
+      "output_tokens": 13033,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3807
+}

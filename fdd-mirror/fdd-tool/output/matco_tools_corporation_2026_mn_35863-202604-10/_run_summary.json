@@ -1,0 +1,20 @@
+{
+  "pdf": "data\\mn_scrape\\matco_tools_corporation_2026_mn_35863-202604-10.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0058,
+      "input_tokens": 2072,
+      "cached": 1340,
+      "output_tokens": 212
+    },
+    "item19": {
+      "cost_usd": 0.1069,
+      "input_tokens": 35778,
+      "cached": 1340,
+      "output_tokens": 212,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.1127
+}

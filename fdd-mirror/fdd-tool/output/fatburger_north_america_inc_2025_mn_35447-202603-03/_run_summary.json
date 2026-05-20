@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\fatburger_north_america_inc_2025_mn_35447-202603-03.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0046,
+      "input_tokens": 1584,
+      "cached": 1340,
+      "output_tokens": 231
+    },
+    "item5": {
+      "cost_usd": 0.0072,
+      "input_tokens": 1912,
+      "cached": 1340,
+      "output_tokens": 339
+    },
+    "item6": {
+      "cost_usd": 0.0122,
+      "input_tokens": 2696,
+      "cached": 1340,
+      "output_tokens": 515
+    },
+    "item7": {
+      "cost_usd": 0.0064,
+      "input_tokens": 2910,
+      "cached": 1340,
+      "output_tokens": 88
+    },
+    "item19": {
+      "cost_usd": 0.2972,
+      "input_tokens": 16906,
+      "cached": 1340,
+      "output_tokens": 16670,
+      "images_sent": 7
+    },
+    "item20": {
+      "cost_usd": 0.2103,
+      "input_tokens": 13588,
+      "cached": 1340,
+      "output_tokens": 11543,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.5379
+}

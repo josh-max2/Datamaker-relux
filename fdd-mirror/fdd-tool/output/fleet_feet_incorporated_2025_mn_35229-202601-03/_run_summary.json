@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\fleet_feet_incorporated_2025_mn_35229-202601-03.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0053,
+      "input_tokens": 1878,
+      "cached": 1340,
+      "output_tokens": 219
+    },
+    "item5": {
+      "cost_usd": 0.0069,
+      "input_tokens": 1592,
+      "cached": 1340,
+      "output_tokens": 383
+    },
+    "item6": {
+      "cost_usd": 0.0345,
+      "input_tokens": 4820,
+      "cached": 1340,
+      "output_tokens": 1576
+    },
+    "item7": {
+      "cost_usd": 0.0045,
+      "input_tokens": 2280,
+      "cached": 1340,
+      "output_tokens": 83
+    },
+    "item19": {
+      "cost_usd": 0.0742,
+      "input_tokens": 9980,
+      "cached": 1340,
+      "output_tokens": 3192,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.1841,
+      "input_tokens": 16414,
+      "cached": 1340,
+      "output_tokens": 9232,
+      "images_sent": 7
+    }
+  },
+  "total_cost_usd": 0.3095
+}

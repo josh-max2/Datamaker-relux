@@ -1,0 +1,8 @@
+{
+  "royalty_pct": 10,
+  "royalty_min_monthly": 667,
+  "marketing_min_monthly": 125,
+  "fee_notes": "Monthly Service Fee is 10% of gross sales, due 10th of month. Minimum annual royalty of $8,000 applies to Small Format with <$80k annual sales (~$667/month). Tiered rates: 7% stadium/arena, 9% airports/tollways. Marketing Fee is $1,500 annually (~$125/month), billed December. Additional event-based fees include transfer ($500), voluntary termination ($10k-$15k), audit, late charges, etc.",
+  "raw_excerpt": "Monthly Service Fee: 10% of Gross Sales except (a) 7% stadium/arena, (b) 9% airports/tollways, (c) minimum annual aggregate $8,000 for Small Format <$80k sales. Marketing Fee: $1,500 Annually.",
+  "confidence": 0.9
+}

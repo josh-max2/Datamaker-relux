@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\php_franchise_llc_2026_mn_35941-202604-10.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.005,
+      "input_tokens": 1845,
+      "cached": 1340,
+      "output_tokens": 205
+    },
+    "item5": {
+      "cost_usd": 0.0107,
+      "input_tokens": 2431,
+      "cached": 1340,
+      "output_tokens": 469
+    },
+    "item6": {
+      "cost_usd": 0.0254,
+      "input_tokens": 4882,
+      "cached": 1340,
+      "output_tokens": 957
+    },
+    "item7": {
+      "cost_usd": 0.0052,
+      "input_tokens": 2493,
+      "cached": 1340,
+      "output_tokens": 88
+    },
+    "item19": {
+      "cost_usd": 0.0403,
+      "input_tokens": 5737,
+      "cached": 1340,
+      "output_tokens": 1782,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.0394,
+      "input_tokens": 7011,
+      "cached": 1340,
+      "output_tokens": 1466,
+      "images_sent": 3
+    }
+  },
+  "total_cost_usd": 0.126
+}

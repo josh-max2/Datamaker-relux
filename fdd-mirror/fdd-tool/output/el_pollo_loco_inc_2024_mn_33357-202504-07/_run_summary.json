@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\el_pollo_loco_inc_2024_mn_33357-202504-07.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0061,
+      "input_tokens": 2161,
+      "cached": 1340,
+      "output_tokens": 218
+    },
+    "item5": {
+      "cost_usd": 0.0096,
+      "input_tokens": 2773,
+      "cached": 1340,
+      "output_tokens": 329
+    },
+    "item6": {
+      "cost_usd": 0.0408,
+      "input_tokens": 8047,
+      "cached": 1340,
+      "output_tokens": 1352
+    },
+    "item7": {
+      "cost_usd": 0.0146,
+      "input_tokens": 5639,
+      "cached": 1340,
+      "output_tokens": 89
+    },
+    "item19": {
+      "cost_usd": 0.2705,
+      "input_tokens": 14372,
+      "cached": 1340,
+      "output_tokens": 15403,
+      "images_sent": 6
+    },
+    "item20": {
+      "cost_usd": 0.0693,
+      "input_tokens": 11975,
+      "cached": 1340,
+      "output_tokens": 2466,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.411
+}

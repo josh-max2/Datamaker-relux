@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 7,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 599,
+  "fee_notes": "Blended royalty: 7% on first $75k/mo gross revenue, 6% on $75k-$150k, 5% on $150k+. Brand Fund Contribution currently 2%, can increase to 3%. Local Advertising Requirement: greater of 3% of gross revenue or $3,000/mo. Marketing Management Fee $500/mo. Online Local Presence Fee $249/mo.",
+  "raw_excerpt": "Royalty Fee: The greater of: (i) a blended 7%-5% of your Gross Revenue; or (ii) the Minimum Monthly Royalty Fee. Brand Fund Contribution: Currently, 2% of your Gross Revenue. Technology Fee: currently $599 per month.",
+  "confidence": 0.95
+}

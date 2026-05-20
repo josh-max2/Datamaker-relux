@@ -1,0 +1,43 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "annual sales volumes",
+      "cohort_name": "other",
+      "cohort_raw": "All domestic traditional restaurants opened at least 1 year as of December 31, 2025",
+      "outlet_count": 12702,
+      "reporting_period": "2025",
+      "value_avg": 4088000,
+      "value_median": 3917000,
+      "value_min": 1063000,
+      "value_max": 20421000
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "annual sales volumes",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All domestic traditional franchised restaurants opened at least 1 year as of December 31, 2025",
+      "outlet_count": 12212,
+      "reporting_period": "2025",
+      "value_avg": 4057000,
+      "value_median": 3887000,
+      "value_min": 1063000,
+      "value_max": 20421000
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "annual sales volumes",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "All domestic traditional McOpCo restaurants opened at least 1 year as of December 31, 2025",
+      "outlet_count": 490,
+      "reporting_period": "2025",
+      "value_avg": 4871000,
+      "value_median": 4812000,
+      "value_min": 2012000,
+      "value_max": 10562000
+    }
+  ],
+  "confidence": 0.92,
+  "notes": "Pro forma statements excluded (hypothetical examples). Percentage distributions available: All restaurants - 81% above $3M, 75% above $3.2M, 68% above $3.4M; Franchised - 81% above $3M, 75% above $3.2M, 67% above $3.4M; McOpCo - 96% above $3M, 94% above $3.2M, 91% above $3.4M."
+}

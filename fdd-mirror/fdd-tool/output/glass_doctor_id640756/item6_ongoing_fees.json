@@ -1,0 +1,10 @@
+{
+  "royalty_pct": null,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 160.95,
+  "fee_notes": "License Fee: 4% to 7% of Gross Sales with minimum license fees (ranges by service type, special rates for New Construction and roll-in sales). MAP Fee: 2% of Gross Sales with minimum MAP fees. Local Marketing Group contribution: up to 3% of Gross Sales (currently 2% designated for Neighborly brand initiatives). Software System Monthly Fees: $160.95 base (Qvinci, FranConnect, Customer Engagement Platform, Neighborly Franchise Portal, Microsoft Office365 email accounts); additional email/portal users $5.50-$40/month; QuickBooks Online $30-$220/month. Call Center Program: $349.99-$449.99/month plus $15 per booked appointment (mandatory for rollover and after-hours calls). Convention/Reunion: up to $1,000/person (mandatory attendance; $2,000 fee for non-attendance pro-rated). Additional fees: Transfer fee (greater of $7,500 or 5% of sales price), Renewal fee $5,000, Late fees ($10/day on overdue franchise fees, $25/month on software fees), Audit costs if understatement >2%, Training fee for transferred franchise $14,900.",
+  "raw_excerpt": "License Fee: 4% to 7% of Gross Sales... MAP Fee: 2% of Gross Sales... Local Marketing Groups: Not to exceed 3% of Gross Sales... Software System Monthly Fees: $160.95 per month... Call Center Program Fees: $349.99-$449.99/month plus $15 per booked appointment... Convention (Reunion): Up to $1,000... Transfer Fee: The greater of $7,500 or 5% of the sales price.",
+  "confidence": 0.9
+}

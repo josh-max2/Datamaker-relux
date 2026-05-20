@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": 833,
+  "marketing_fee_pct": 3,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 225,
+  "fee_notes": "Royalty tiered: $833/mo (months 1-12), $1,250/mo (months 13-24), $1,667/mo (thereafter). Brand Fund 3% of Gross Sales. Local advertising 6% minimum. Software $225-$400/mo. Cooperative 2% if applicable. Renewal $10,000, maintenance $1,000/yr, phone $300-$450/mo, convention $2,500+.",
+  "raw_excerpt": "Continuing Royalty Fee: The greater of 5% of Gross Sales or $833-$1,667 per month (tiered). Brand Fund Contribution: 3% of Gross Sales. Software Access Fee: $225-$400 monthly.",
+  "confidence": 0.9
+}

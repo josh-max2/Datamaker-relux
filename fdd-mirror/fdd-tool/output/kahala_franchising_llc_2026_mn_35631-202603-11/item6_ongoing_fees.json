@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6.0,
+  "royalty_min_monthly": 1200,
+  "marketing_fee_pct": 4.0,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 55,
+  "fee_notes": "Royalty Fee is the greater of 6% of weekly Gross Sales or $300/week minimum (traditional locations only; non-traditional locations have no minimum). Minimum royalty of $300/week converts to approximately $1,200/month. A Surcharge of up to $10/week may be added for franchises in states with additional reporting requirements (currently only New York). Advertising Fee is up to 4% of weekly Gross Sales; currently assessed at 1% to National Fund plus 1.5% Regional Fund (Phoenix metro) or 0.5% Regional Fund (outside Phoenix). POS Help Desk/Phone Support Maintenance Contract Fee is $55/month. Data/polling fee (tech-related) is up to $75/month. In breach/default, royalty may be increased up to 18% of Gross Sales or 3x the fixed royalty fee.",
+  "raw_excerpt": "Royalty Fee and Surcharge (Notes 1 and 9): Royalty Fee is the greater of the following: (i) 6% of total weekly Gross Sales or (ii) $300 per week. Surcharge is a maximum of $10 per week in addition to the Royalty Fee.\n\nAdvertising Fees (Note 1): Up to 4% of weekly Gross Sales. Currently, Advertising Fee are deposited as follows: 1% to the National fund; and 1.5% to the Regional Fund for franchises located within the Phoenix metropolitan area, and 0.5% to the Regional Fund for franchises located outside of the Phoenix metropolitan area.\n\nData Fees (Notes 1 and 6): Up to $75 per month (Subject to reasonable annual and/or service enhancement increases).\n\nPOS Help Desk Phone Support Maintenance Contract Fee: $55 per month.",
+  "confidence": 0.88
+}

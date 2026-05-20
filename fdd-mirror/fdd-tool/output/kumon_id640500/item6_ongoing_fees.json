@@ -1,0 +1,6 @@
+{
+  "fee_notes": "Royalty is per-student model: $30 per newly enrolled student monthly; during Temporary License Period (TLP) $42.75/month per full-payment student, $21.38 per partially exempt/prorated per subject-franchise; after TLP $38/month per full-paying student, $19 per partially exempt/prorated per subject-franchise. New Center Marketing Fee $300/month starting month 7. Kumon Lead Management System tech fee approximately $50/month. Additional fees: insurance ($5.80/Math student/year, changing to $0.58/month on 7/1/2026), shipping, relocation ($2,000), audit, late payment administrative fee (1.5% or $75 minimum monthly), late/inaccurate report fee ($200-$1,000+ monthly).",
+  "marketing_min_monthly": 300,
+  "tech_fee_monthly": 50,
+  "confidence": 0.93
+}

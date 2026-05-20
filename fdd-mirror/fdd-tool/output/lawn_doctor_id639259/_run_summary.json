@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\wi_scrape\\lawn_doctor_id639259.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0095,
+      "input_tokens": 2142,
+      "cached": 0,
+      "output_tokens": 202
+    },
+    "item5": {
+      "cost_usd": 0.0119,
+      "input_tokens": 1724,
+      "cached": 0,
+      "output_tokens": 447
+    },
+    "item6": {
+      "cost_usd": 0.022,
+      "input_tokens": 2818,
+      "cached": 0,
+      "output_tokens": 904
+    },
+    "item7": {
+      "cost_usd": 0.0084,
+      "input_tokens": 2289,
+      "cached": 0,
+      "output_tokens": 104
+    },
+    "item19": {
+      "cost_usd": 0.1505,
+      "input_tokens": 14175,
+      "cached": 0,
+      "output_tokens": 7196,
+      "images_sent": 6
+    },
+    "item20": {
+      "cost_usd": 0.2114,
+      "input_tokens": 18139,
+      "cached": 0,
+      "output_tokens": 10465,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.4136
+}

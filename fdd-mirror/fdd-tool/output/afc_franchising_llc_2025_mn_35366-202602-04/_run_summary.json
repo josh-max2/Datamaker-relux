@@ -1,0 +1,38 @@
+{
+  "pdf": "data\\mn_scrape\\afc_franchising_llc_2025_mn_35366-202602-04.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0056,
+      "input_tokens": 2482,
+      "cached": 1340,
+      "output_tokens": 121
+    },
+    "item5": {
+      "cost_usd": 0.0123,
+      "input_tokens": 2583,
+      "cached": 1340,
+      "output_tokens": 543
+    },
+    "item6": {
+      "cost_usd": 0.0141,
+      "input_tokens": 3789,
+      "cached": 1340,
+      "output_tokens": 426
+    },
+    "item7": {
+      "cost_usd": 0.0108,
+      "input_tokens": 4374,
+      "cached": 1340,
+      "output_tokens": 89
+    },
+    "item19": {
+      "cost_usd": 0.3001,
+      "input_tokens": 13327,
+      "cached": 1340,
+      "output_tokens": 17582,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.343
+}

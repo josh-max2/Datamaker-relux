@@ -1,0 +1,9 @@
+{
+  "royalty_pct": 10,
+  "royalty_min_monthly": 200,
+  "marketing_fee_pct": 2,
+  "tech_fee_monthly": 125,
+  "fee_notes": "Royalty is 10% of Gross Revenues or minimum monthly fee starting year 2 at $200, increasing $100/year up to $700, whichever is greater. National Marketing Fee currently 2%, may increase to 3%. Tech fee ranges $125-$2,500/month based on prior 12-month Gross Revenues. Local website/SEO fee currently $0 but may increase up to $750/month. Minimum local advertising: greater of $7,800 or 5% of Gross Revenues annually.",
+  "raw_excerpt": "Monthly Fee: 10% of Gross Revenues, or a minimum monthly fee starting in year two of $200 and then increasing by $100 each year of operations up to $700, whichever is greater. National Marketing Fee: Currently 2% of Gross Revenues, but we may increase to 3%.",
+  "confidence": 0.95
+}

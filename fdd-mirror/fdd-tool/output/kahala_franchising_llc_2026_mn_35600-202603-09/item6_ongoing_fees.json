@@ -1,0 +1,9 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 1200,
+  "marketing_fee_pct": 1,
+  "tech_fee_monthly": 130,
+  "fee_notes": "Royalty is greater of 6% of weekly gross sales or $300/week (min $300/week = ~$1,300/month for traditional; no minimum for non-traditional). Advertising fee currently 1% of weekly gross sales, capped at 4%. Data fee up to $75/month; POS help desk $55/month (total tech ~$130/month). Surcharge up to $10/week for NY locations.",
+  "raw_excerpt": "Royalty Fee is the greater of the following: (i) 6% of total weekly Gross Sales or (ii) $300 per week. Surcharge is a maximum of $10 per week in addition to the Royalty Fee. Advertising Fees: Up to 4% of weekly Gross Sales. Currently, Advertising Fee is 1% of weekly Gross Sales.",
+  "confidence": 0.92
+}

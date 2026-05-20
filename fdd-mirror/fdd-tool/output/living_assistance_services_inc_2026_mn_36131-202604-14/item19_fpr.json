@@ -1,0 +1,41 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "2025 Yearly Receipts",
+      "cohort_name": "open_lt_12mo",
+      "cohort_raw": "1 - 12 mos longevity as of 12/31/2025",
+      "outlet_count": 7,
+      "reporting_period": "2025 calendar year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": null,
+      "value_median": null,
+      "value_min": 0,
+      "value_max": 250000,
+      "raw_text": "$0-250,000: 7 franchisees in 1-12 mos bucket; Grand Total 7 in this longevity band",
+      "notes": "FDD reports distribution buckets, not averages. All 7 franchisees in 1-12 mo band fell in $0-250K range."
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "2025 Yearly Receipts \u2014 Revenue vs Longevity Chart",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "550 franchisees that operated in calendar year 2025",
+      "outlet_count": 550,
+      "reporting_period": "2025 calendar year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": null,
+      "value_median": null,
+      "value_min": 0,
+      "value_max": null,
+      "raw_text": "Grand Total 550 across all longevity bands and revenue ranges; largest group (508) in 73+ months",
+      "notes": "FDD provides only a frequency distribution table (revenue range \u00d7 longevity band), not averages or medians. Extraction captures cohort counts only; no single-number metric available."
+    }
+  ],
+  "confidence": 0.7,
+  "notes": "Item 19 discloses a Revenue vs Longevity Chart showing frequency counts of 550 franchisees across revenue buckets ($0-250K up to Over $10M) and longevity bands (1-12 mo through 73+ mo). No averages, medians, or percentiles are stated \u2014 only counts per cell. The 73+ months band dominates with 508 of 550 franchisees. No additional FPR is made."
+}

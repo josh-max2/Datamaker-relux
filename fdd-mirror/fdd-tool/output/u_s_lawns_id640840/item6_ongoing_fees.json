@@ -1,0 +1,9 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 650,
+  "marketing_fee_pct": 2,
+  "tech_fee_monthly": 299,
+  "fee_notes": "Royalty is a sliding scale: 6% on monthly Gross Billings up to $62,500; 5% on $62,500.01-$125,000; 4% above $125,000. Non-compliance rate is 7%. Minimum monthly royalty starts at 12-month training anniversary: months 13-18 $450, months 19-24 $550, months 25+ $650. Conversion franchisees pay no royalty on conversion customers for first 365 days. Legacy franchisees renewing/transferring use a separate lower sliding scale (5.5%/4.5%/3.5%/2.5%/2%). Marketing contribution is lesser of 2% of Gross Billings or $625/month cap; cap may increase up to 20% annually but cannot exceed 3%. Tech fee $299/month; CRM fee $250-$450/year; QuickBooks $215-$400/year.",
+  "raw_excerpt": "Royalty: 6% if Gross Billings \u2264$62,500; sliding to 5% then 4% above $125,000. Marketing Contribution: currently lesser of 2% of Gross Billings or $625/month. Technology Fee: currently $299/month.",
+  "confidence": 0.92
+}

@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Mean (Average) Gross Sales of All Included Locations",
+      "cohort_name": "open_12_24mo",
+      "cohort_raw": "Honest1 franchised Centers that have been operating continuously for at least 1 year as of December 31, 2023 under the same owner (59 locations included)",
+      "outlet_count": 59,
+      "reporting_period": "2023 calendar year",
+      "reporting_year": 2023,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1491020,
+      "value_median": 1358038,
+      "value_min": 380226,
+      "value_max": 2917373,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 41,
+      "page_number": 44,
+      "raw_text": "2023 $87,970,193 59 $1,491,020 24 and 41% $1,358,038 $2,917,373 $380,226",
+      "notes": "Cohort defined as franchised centers operating continuously for at least 1 year as of 12/31/2023 under the same owner. 59 of 61 franchised locations included; excluded: 1 closed in 2023, 1 not open all 12 months (under reconstruction), 1 not held by same owner for all 12 months. Total franchised system sales: $87,970,193. 24 locations (41%) met or exceeded the average."
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Mean (Average) Gross Sales Of All Included Locations",
+      "cohort_name": "open_12_24mo",
+      "cohort_raw": "Honest1 franchised Centers that have been operating continuously for at least 1 year as of December 31, 2022 under the same owner (60 locations included)",
+      "outlet_count": 60,
+      "reporting_period": "2022 calendar year",
+      "reporting_year": 2022,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1409886,
+      "value_median": 1320818,
+      "value_min": 430377,
+      "value_max": 2548568,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 42,
+      "page_number": 45,
+      "raw_text": "2022 $84,593,144 60 $1,409,886 25 and 42% $1,320,818 $2,548,568 $430,377",
+      "notes": "Cohort defined as franchised centers operating continuously for at least 1 year as of 12/31/2022 under the same owner. 60 of 62 franchised locations included; excluded: 2 closed in 2022, 1 not open all 12 months (under reconstruction). Total franchised system sales: $84,593,144. 25 locations (42%) met or exceeded the average."
+    }
+  ],
+  "has_item19": true,
+  "confidence": 0.95,
+  "notes": "Item 19 discloses annual gross sales for franchised locations for 2023 and 2022. Both cohorts are defined as locations open at least 1 year continuously under the same owner. The cohort_name 'open_12_24mo' is used as the minimum threshold is 1 year (12 months); however, these are not exclusively 12-24 month locations \u2014 they are all locations open at least 12 months. The closest schema match is 'open_24_plus_mo' could also apply since many have been open longer, but the stated qualifier is 'at least 1 year' so open_12_24mo is used as the lower bound qualifier. No profitability data is disclosed. Franchisor is H-1 Auto Care, LLC (brand: Honest1)."
+}

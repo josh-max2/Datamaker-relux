@@ -1,0 +1,88 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Total Revenue",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "The Sports Bra affiliate-owned location in Portland, Oregon",
+      "outlet_count": 1,
+      "reporting_period": "2023 calendar year",
+      "reporting_year": 2023,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1080590,
+      "raw_text": "Total Revenue $1,080,590 100.0%"
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Total Revenue",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "The Sports Bra affiliate-owned location in Portland, Oregon",
+      "outlet_count": 1,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1090819,
+      "raw_text": "Total Revenue $1,090,819 100.0%"
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Total Revenue",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "The Sports Bra affiliate-owned location in Portland, Oregon",
+      "outlet_count": 1,
+      "reporting_period": "2025 calendar year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 893211,
+      "raw_text": "Total Revenue $893,211 100.0%"
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Total Revenue minus Total Cost of Goods Sold",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "The Sports Bra affiliate-owned location in Portland, Oregon",
+      "outlet_count": 1,
+      "reporting_period": "2023 calendar year",
+      "reporting_year": 2023,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 721191,
+      "raw_text": "Total Revenue $1,080,590 - Total Cost of Goods $359,399 = $721,191",
+      "notes": "Gross profit derived as Total Revenue minus Total COGS; COGS pct 33.3%"
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Total Revenue minus Total Cost of Goods Sold",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "The Sports Bra affiliate-owned location in Portland, Oregon",
+      "outlet_count": 1,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 719717,
+      "raw_text": "Total Revenue $1,090,819 - Total Cost of Goods $371,102 = $719,717",
+      "notes": "Gross profit derived as Total Revenue minus Total COGS; COGS pct 34.0%"
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Total Revenue minus Total Cost of Goods Sold",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "The Sports Bra affiliate-owned location in Portland, Oregon",
+      "outlet_count": 1,
+      "reporting_period": "2025 calendar year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 605966,
+      "raw_text": "Total Revenue $893,211 - Total Cost of Goods $287,245 = $605,966",
+      "notes": "Gross profit derived as Total Revenue minus Total COGS; COGS pct 32.2%"
+    }
+  ],
+  "confidence": 0.95,
+  "notes": "Single affiliate-owned location only; no franchised outlets existed. Affiliate does not pay royalties, operates 5 days/week, is smaller than franchise spec, and does not offer take-out/delivery/catering. 2025 revenue decline notable. No net profit or EBITDA disclosed."
+}

@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Franchise Industries — Browse All Categories{% endblock %}
+{% block description %}{{ categories|length }} franchise industries we track, sorted by brand count. Browse home services, food, retail, and more — every category includes side-by-side cost comparisons, Item 19 disclosures, and historical outlet growth.{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Industries", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Franchise Industries",
+  "description": "{{ categories|length }} franchise industries tracked on {{ site_name }}.",
+  "url": "{{ canonical_url }}",
+  "isPartOf": { "@type": "WebSite", "name": "{{ site_name }}", "url": "{{ SITE_HOST }}{{ url_for('') }}" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Franchise industries",
+    "numberOfItems": {{ categories|length }},
+    "itemListElement": [
+      {% for c in categories %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "url": "{{ SITE_HOST }}{{ url_for('category/' ~ c.slug ~ '/') }}",
+        "name": {{ c.label|tojson }}
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+{% endblock %}
+{% block content %}
+<section class="hero">
+    <h1>Franchise industries</h1>
+    <p class="lead">
+        {{ total_brands }} franchise brands tracked across {{ categories|length }} industries. Every category page compares brands side by side using publicly filed FDD data — initial fees, royalty rates, total investment ranges, and disclosed Item 19 financial performance.
+    </p>
+</section>
+
+<section>
+    <h2>All categories</h2>
+    <p class="notes">Sorted by brand count descending. Click any industry to compare brands within it.</p>
+    <div class="industry-grid">
+        {% for c in categories %}
+        <a class="industry-card" href="{{ url_for('category/' ~ c.slug ~ '/') }}">
+            <span class="industry-name">{{ c.label }}</span>
+            <span class="industry-meta">{{ c.count }} brand{% if c.count != 1 %}s{% endif %}</span>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+
+<section>
+    <h2>Why we organize this way</h2>
+    <p>
+        Franchise opportunities cluster by operational category. A cleaning franchise looks nothing like a remodeling franchise on the inputs side — labor model, ticket size, capital intensity, sales cycle — even when their headline Item 7 ranges overlap. Comparing within a category surfaces the trade-offs honestly; comparing across categories without that context tends to mislead.
+    </p>
+    <p>
+        We currently cover the home-services vertical in depth (cleaning, handyman, plumbing, restoration, remodeling, outdoor, roofing, HVAC, moving). Food service, fitness, retail, and B2B-services verticals are next — see the <a href="{{ url_for('methodology/') }}">methodology page</a> for the extraction process + refresh schedule.
+    </p>
+</section>
+
+<section>
+    <h2>Further reading</h2>
+    <ul>
+        <li><a href="{{ url_for('guides/') }}">Buying guides</a> — how to read an FDD, compute breakeven, validate franchisee earnings, negotiate the agreement</li>
+        <li><a href="{{ url_for('recent/') }}">Recent FDD filings</a> — most recently issued disclosures across the database</li>
+        <li><a href="{{ url_for('methodology/') }}">Methodology</a> — data sources, extraction pipeline, refresh schedule, data dictionary</li>
+    </ul>
+</section>
+{% endblock %}

@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 7,
+  "royalty_min_monthly": 750,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 250,
+  "fee_notes": "Royalty: 7% of Gross Revenues, minimum monthly varies by territory size ($750 <500k, $900 for 500k-1M, $1,250 for 1M-2M, $1,500 for 2M+) starting 13th full calendar month. Advertising Fund: 1% of Gross Revenues. Local Advertising Requirement: $1,000 or 5% of prior month's revenues (whichever greater), spent by franchisee directly. Technology Fee: $250/month, subject to increase. Additional fees include Local/Regional Cooperative (up to 1%), Renewal Fee (20% of then-current initial fee), Training fees, Transfer Fee ($7,500), Late Payment Fee ($100), Interest on Late Payments (18% annual or max legal rate), and other contingent fees.",
+  "raw_excerpt": "Royalty Fee: 7% of Gross Revenues with minimum monthly Royalty of $750 to $1,500 depending on Territory size, beginning 13th full calendar month. Advertising Fund Fee: 1% of Gross Revenues. Technology Fee: Currently $250 per month. Local Advertising Requirement: $1,000 or 5% of your prior month's Gross Revenues, whichever is greater.",
+  "confidence": 0.95
+}

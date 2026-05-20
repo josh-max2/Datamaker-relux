@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\wi_scrape\\weed_man_id641277.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0093,
+      "input_tokens": 1953,
+      "cached": 0,
+      "output_tokens": 232
+    },
+    "item5": {
+      "cost_usd": 0.0108,
+      "input_tokens": 1463,
+      "cached": 0,
+      "output_tokens": 425
+    },
+    "item6": {
+      "cost_usd": 0.0166,
+      "input_tokens": 2868,
+      "cached": 0,
+      "output_tokens": 534
+    },
+    "item7": {
+      "cost_usd": 0.0062,
+      "input_tokens": 1582,
+      "cached": 0,
+      "output_tokens": 98
+    },
+    "item19": {
+      "cost_usd": 0.0513,
+      "input_tokens": 7009,
+      "cached": 0,
+      "output_tokens": 2018,
+      "images_sent": 3
+    },
+    "item20": {
+      "cost_usd": 0.2479,
+      "input_tokens": 17938,
+      "cached": 0,
+      "output_tokens": 12939,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3421
+}

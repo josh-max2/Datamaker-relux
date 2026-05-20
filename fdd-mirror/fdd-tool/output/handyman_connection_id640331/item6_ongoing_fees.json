@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 175,
+  "fee_notes": "Royalty: 6% of Gross Sales. Minimum Royalty: $13,500/HH Group (years 3-5) and $21,000/HH Group (years 6-10). Tech Fee: $175/user/month + 1% of Gross Sales. Brand Development Fund: 2% up to $3M sales, 1.5% for $3M-$5M, 1% over $5M. Local Advertising: 10% year 1, then 8%/<$1M, 7%/$1M-$3M, 5%/>$3M.",
+  "raw_excerpt": "Royalty 6% of Gross Sales... Technology Fee $175 per user per month + 1% of Gross Sales... Brand Development Fund Contributions 2% of Gross Sales up to $3,000,000 of sales.",
+  "confidence": 0.95
+}

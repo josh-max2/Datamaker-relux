@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\sylvan_learning_llc_2024_mn_32609-202411-04.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0092,
+      "input_tokens": 3311,
+      "cached": 1340,
+      "output_tokens": 193
+    },
+    "item5": {
+      "cost_usd": 0.0064,
+      "input_tokens": 1691,
+      "cached": 1340,
+      "output_tokens": 328
+    },
+    "item6": {
+      "cost_usd": 0.0215,
+      "input_tokens": 4157,
+      "cached": 1340,
+      "output_tokens": 843
+    },
+    "item7": {
+      "cost_usd": 0.0053,
+      "input_tokens": 2556,
+      "cached": 1340,
+      "output_tokens": 86
+    },
+    "item19": {
+      "cost_usd": 0.0573,
+      "input_tokens": 10705,
+      "cached": 1340,
+      "output_tokens": 1917,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.2354,
+      "input_tokens": 18134,
+      "cached": 1340,
+      "output_tokens": 12311,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3351
+}

@@ -1,0 +1,6 @@
+{
+  "records": [],
+  "has_item19": false,
+  "confidence": 0.85,
+  "notes": "The pages provided are state addenda (California, Hawaii, Illinois, Maryland, Minnesota, New York, North Dakota, Washington, Wisconsin) and exhibit pages (franchisee lists, state administrators, agents for service of process, brand standards manual table of contents). None of these pages contain Item 19 financial performance representation data. The California addendum (page 172) references Item 19 figures in item 4, stating that 'The Item 19 financial performance representation figures do not reflect the costs of sales, operating expenses...' \u2014 this confirms that an Item 19 section exists elsewhere in the FDD, but the actual Item 19 data pages were not included in the provided content. Because the actual Item 19 section was not provided, has_item19 is set to false for this extraction. If the full FDD were provided, Item 19 data would likely be present."
+}

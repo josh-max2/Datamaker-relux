@@ -1,0 +1,283 @@
+{
+  "manifest": "output\\_pilot_mn_batch4.json",
+  "workers": 4,
+  "started_at": "2026-05-19T00:11:50.954740",
+  "total_wall_clock_sec": 233.7,
+  "results": [
+    {
+      "pdf": "data\\mn_scrape\\new_orleans_brew_llc_2026_mn_35972-202604-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\new_orleans_brew_llc_2026_mn_35972-202604-08",
+      "elapsed_sec": 104.1,
+      "total_cost_usd": 0.194,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0063,
+          "input_tokens": 2073,
+          "cached": 1340,
+          "output_tokens": 245
+        },
+        "item5": {
+          "cost_usd": 0.0064,
+          "input_tokens": 1717,
+          "cached": 1340,
+          "output_tokens": 326
+        },
+        "item6": {
+          "cost_usd": 0.0129,
+          "input_tokens": 1624,
+          "cached": 1340,
+          "output_tokens": 776
+        },
+        "item7": {
+          "cost_usd": 0.0125,
+          "input_tokens": 4833,
+          "cached": 1340,
+          "output_tokens": 109
+        },
+        "item19": {
+          "cost_usd": 0.1559,
+          "input_tokens": 15406,
+          "cached": 1340,
+          "output_tokens": 7555,
+          "images_sent": 6
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\motto_franchising_llc_2025_mn_35220-202601-05.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\motto_franchising_llc_2025_mn_35220-202601-05",
+      "elapsed_sec": 129.2,
+      "total_cost_usd": 0.2765,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0062,
+          "input_tokens": 2037,
+          "cached": 1340,
+          "output_tokens": 244
+        },
+        "item5": {
+          "cost_usd": 0.0062,
+          "input_tokens": 1798,
+          "cached": 1340,
+          "output_tokens": 292
+        },
+        "item6": {
+          "cost_usd": 0.0261,
+          "input_tokens": 6316,
+          "cached": 1340,
+          "output_tokens": 715
+        },
+        "item7": {
+          "cost_usd": 0.0024,
+          "input_tokens": 1544,
+          "cached": 1340,
+          "output_tokens": 95
+        },
+        "item19": {
+          "cost_usd": 0.013,
+          "input_tokens": 5141,
+          "cached": 1340,
+          "output_tokens": 77,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.2227,
+          "input_tokens": 18517,
+          "cached": 1340,
+          "output_tokens": 11386,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\oe_franchising_llc_2025_mn_35500-202603-07.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\oe_franchising_llc_2025_mn_35500-202603-07",
+      "elapsed_sec": 131.9,
+      "total_cost_usd": 0.2731,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0056,
+          "input_tokens": 2093,
+          "cached": 1340,
+          "output_tokens": 194
+        },
+        "item5": {
+          "cost_usd": 0.0149,
+          "input_tokens": 3386,
+          "cached": 1340,
+          "output_tokens": 557
+        },
+        "item6": {
+          "cost_usd": 0.0152,
+          "input_tokens": 1357,
+          "cached": 1340,
+          "output_tokens": 983
+        },
+        "item7": {
+          "cost_usd": 0.0054,
+          "input_tokens": 2561,
+          "cached": 1340,
+          "output_tokens": 92
+        },
+        "item19": {
+          "cost_usd": 0.0915,
+          "input_tokens": 15278,
+          "cached": 1340,
+          "output_tokens": 3287,
+          "images_sent": 6
+        },
+        "item20": {
+          "cost_usd": 0.1405,
+          "input_tokens": 13580,
+          "cached": 1340,
+          "output_tokens": 6891,
+          "images_sent": 6
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\jth_tax_llc_dba_liberty_tax_service_2026_mn_35928-202604-07.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\jth_tax_llc_dba_liberty_tax_service_2026_mn_35928-202604-07",
+      "elapsed_sec": 149.6,
+      "total_cost_usd": 0.3264,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0049,
+          "input_tokens": 1811,
+          "cached": 1340,
+          "output_tokens": 207
+        },
+        "item5": {
+          "cost_usd": 0.0068,
+          "input_tokens": 2004,
+          "cached": 1340,
+          "output_tokens": 297
+        },
+        "item6": {
+          "cost_usd": 0.0187,
+          "input_tokens": 3263,
+          "cached": 1340,
+          "output_tokens": 837
+        },
+        "item7": {
+          "cost_usd": 0.0029,
+          "input_tokens": 1647,
+          "cached": 1340,
+          "output_tokens": 104
+        },
+        "item19": {
+          "cost_usd": 0.0381,
+          "input_tokens": 9560,
+          "cached": 1340,
+          "output_tokens": 869,
+          "images_sent": 4
+        },
+        "item20": {
+          "cost_usd": 0.255,
+          "input_tokens": 22230,
+          "cached": 1340,
+          "output_tokens": 12792,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\venture_x_franchising_llc_2025_mn_35501-202603-07.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\venture_x_franchising_llc_2025_mn_35501-202603-07",
+      "elapsed_sec": 102.6,
+      "total_cost_usd": 0.2463,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.007,
+          "input_tokens": 2391,
+          "cached": 1340,
+          "output_tokens": 231
+        },
+        "item5": {
+          "cost_usd": 0.0115,
+          "input_tokens": 2818,
+          "cached": 1340,
+          "output_tokens": 444
+        },
+        "item6": {
+          "cost_usd": 0.0142,
+          "input_tokens": 2605,
+          "cached": 1340,
+          "output_tokens": 668
+        },
+        "item7": {
+          "cost_usd": 0.0116,
+          "input_tokens": 4614,
+          "cached": 1340,
+          "output_tokens": 89
+        },
+        "item19": {
+          "cost_usd": 0.097,
+          "input_tokens": 12624,
+          "cached": 1340,
+          "output_tokens": 4182,
+          "images_sent": 5
+        },
+        "item20": {
+          "cost_usd": 0.1051,
+          "input_tokens": 11295,
+          "cached": 1340,
+          "output_tokens": 4986,
+          "images_sent": 5
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\pizza_ranch_inc_2026_mn_35828-202604-09.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\pizza_ranch_inc_2026_mn_35828-202604-09",
+      "elapsed_sec": 129.6,
+      "total_cost_usd": 0.3084,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0053,
+          "input_tokens": 1851,
+          "cached": 1340,
+          "output_tokens": 222
+        },
+        "item5": {
+          "cost_usd": 0.0064,
+          "input_tokens": 1697,
+          "cached": 1340,
+          "output_tokens": 331
+        },
+        "item6": {
+          "cost_usd": 0.0102,
+          "input_tokens": 2686,
+          "cached": 1340,
+          "output_tokens": 381
+        },
+        "item7": {
+          "cost_usd": 0.0092,
+          "input_tokens": 3690,
+          "cached": 1340,
+          "output_tokens": 118
+        },
+        "item19": {
+          "cost_usd": 0.1736,
+          "input_tokens": 18983,
+          "cached": 1340,
+          "output_tokens": 8018,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.1037,
+          "input_tokens": 12756,
+          "cached": 1340,
+          "output_tokens": 4606,
+          "images_sent": 6
+        }
+      },
+      "status": "ok"
+    }
+  ]
+}

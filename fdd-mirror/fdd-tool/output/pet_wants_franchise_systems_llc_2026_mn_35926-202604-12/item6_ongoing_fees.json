@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 7,
+  "royalty_min_monthly": 1000,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": 1500,
+  "tech_fee_monthly": 50,
+  "fee_notes": "Royalty minimum is $350/month for first 12 months, then $1,000/month. Local advertising is greater of 2% gross revenues or $1,500/month. National Branding Contribution is 2% of gross revenues or $350/month minimum. Local cooperative advertising up to 3% of gross revenues if cooperative established.",
+  "raw_excerpt": "Royalty 7% of Gross Revenues or $350 monthly minimum for 12 months; $1,000 monthly minimum thereafter, whichever is greater. Local Advertising The greater of 2% of Gross Revenues or $1,500 Monthly. National Branding Contribution 2% of Gross Revenues or $350 monthly minimum, whichever is greater. Technology Fee $50 Monthly.",
+  "confidence": 0.98
+}

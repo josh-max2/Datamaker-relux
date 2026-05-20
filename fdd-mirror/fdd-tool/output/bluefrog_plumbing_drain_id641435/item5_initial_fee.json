@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 59900,
+  "initial_franchise_fee_high": 67400,
+  "fee_notes": "Standard franchise: $59,900 base plus $0.15 per capita over 450,000 population. Range of $59,900-$67,400 typical for most 400k-500k territories. Conversion franchise $22,500-$30,000; micro territory $11,250-$45,000. Discounts available for multiple units, veterans ($9,000 off standard), and add-ons.",
+  "raw_excerpt": "The amount of the Franchise Fee for a standard franchise is $59,900, plus an additional $0.15 multiplied by the population in your Market Territory in excess of 450,000. Most Market Territories have between 400,000 and 500,000 people, resulting in Franchise Fees ranging from $59,900 to 67,400 for a standard franchise.",
+  "confidence": 0.95
+}

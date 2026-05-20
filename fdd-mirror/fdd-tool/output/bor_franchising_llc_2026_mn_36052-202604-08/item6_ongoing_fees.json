@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 7,
+  "royalty_min_monthly": 2000,
+  "marketing_fee_pct": 5,
+  "marketing_min_monthly": 1500,
+  "tech_fee_monthly": 695,
+  "fee_notes": "Royalty min scales: $500/mo yr1, $1000/mo yr2, $2000/mo yr3+. Marketing is Local Advertising Fee (greater of $1,500 or 5% gross sales) plus National Branding Fee (2% gross sales). Tech fee is Technology Maintenance Fee $695/mo. BOR Software Suite Monthly License Fee additional $995/mo.",
+  "raw_excerpt": "Royalty: The greater of 7% of Gross Sales per month or up to $2,000 per month. Local Advertising Fee: The greater of $1,500 or 5% of Gross Sales per month. National Branding Fee: 2% of Gross Sales. Technology Maintenance Fee: $695 per month.",
+  "confidence": 0.97
+}

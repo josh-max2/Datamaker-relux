@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\wi_scrape\\lightspeed_restoration_id640894.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0096,
+      "input_tokens": 2063,
+      "cached": 0,
+      "output_tokens": 226
+    },
+    "item5": {
+      "cost_usd": 0.0106,
+      "input_tokens": 1918,
+      "cached": 0,
+      "output_tokens": 322
+    },
+    "item6": {
+      "cost_usd": 0.0118,
+      "input_tokens": 1945,
+      "cached": 0,
+      "output_tokens": 397
+    },
+    "item7": {
+      "cost_usd": 0.0092,
+      "input_tokens": 2609,
+      "cached": 0,
+      "output_tokens": 91
+    },
+    "item19": {
+      "cost_usd": 0.0781,
+      "input_tokens": 10673,
+      "cached": 0,
+      "output_tokens": 3073,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.1027,
+      "input_tokens": 8686,
+      "cached": 0,
+      "output_tokens": 5108,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.2219
+}

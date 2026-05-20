@@ -1,0 +1,70 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 46,
+      "outlets_end": 36,
+      "net_change": -10
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 36,
+      "outlets_end": 28,
+      "net_change": -8
+    },
+    {
+      "year": 2025,
+      "outlet_type": "franchised",
+      "outlets_start": 28,
+      "outlets_end": 29,
+      "net_change": 1
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2025,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 46,
+      "outlets_end": 36,
+      "net_change": -10
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 36,
+      "outlets_end": 28,
+      "net_change": -8
+    },
+    {
+      "year": 2025,
+      "outlet_type": "total",
+      "outlets_start": 28,
+      "outlets_end": 29,
+      "net_change": 1
+    }
+  ],
+  "state_year_status": [],
+  "confidence": 0.7,
+  "notes": "Table 1 fully extracted. Table 3 (state-by-state status) text not provided in section \u2014 only Table 1 and Table 2 (transfers, all zeros) were included. state_year_status is empty due to missing Table 3 text."
+}

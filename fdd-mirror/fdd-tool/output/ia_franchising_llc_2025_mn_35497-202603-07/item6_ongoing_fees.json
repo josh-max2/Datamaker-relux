@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 500,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": 2500,
+  "tech_fee_monthly": 2000,
+  "fee_notes": "Royalty minimum is $500/month for months 1-12, then $1,000/month thereafter. Marketing Fund Contribution is flat $2,500/month (adjusted for inflation up to 5%/year). Tech fee is $2,000/month for first 5 users plus $75/month per additional user. Local advertising $1,000/month required until 80+ clients.",
+  "raw_excerpt": "Royalty: A monthly fee equal to the greater of a Monthly Minimum Royalty Fee ($500 during months 1-12, $1,000 every month thereafter), or 6% of your Gross Revenues. Marketing Fund Contribution $2,500 monthly. Technology Fee Currently $2,000 per month for the first five (5) users, and an additional $75/month for each additional user after the fifth.",
+  "confidence": 0.96
+}

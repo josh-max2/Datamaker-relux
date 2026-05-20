@@ -1,0 +1,10 @@
+{
+  "royalty_pct": null,
+  "royalty_min_monthly": 350,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": 125,
+  "tech_fee_monthly": 476,
+  "fee_notes": "Tiered monthly royalty ($350 mo.1 to $2,250 mo.37+) plus $0.06/household over 30k. Tiered marketing fee ($125 mo.1-4 to $1,000 mo.24+). Tech fee $476/mo. Annual increases 5% or CPI (greater of). Local marketing minimum 5% annual revenue.",
+  "raw_excerpt": "Royalty: Month 1: $350.00; Month 37+: $2,250.00 plus $0.06 per household excess 30,000. Marketing Fund: Months 1-4: $125; Months 24+: $1,000. Technology Fee: $476/month.",
+  "confidence": 0.95
+}

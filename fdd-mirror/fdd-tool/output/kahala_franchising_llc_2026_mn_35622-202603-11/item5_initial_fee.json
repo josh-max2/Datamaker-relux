@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 5000,
+  "initial_franchise_fee_high": 30000,
+  "fee_notes": "Fee varies by location type and sequence: first traditional location $30,000; second and subsequent traditional locations $17,500; first non-traditional location $7,500; second and subsequent non-traditional locations $5,000. Eligible Military (active, active reserve, or honorably discharged) and 501(c)(3) organizations receive a 20% discount (e.g., first traditional reduced to $24,000, second traditional to $14,000, first non-traditional to $6,000, second non-traditional to $4,000). No refunds under any circumstances. Fee is waived for transfers and renewals. Kahala may periodically reduce the fee for limited time promotions or new programs.",
+  "raw_excerpt": "The initial franchise fee (\"Initial Franchise Fee\") for your first traditional Great Steak restaurant is $30,000. The Initial Franchise Fee is reduced for your second and each subsequent traditional restaurant to $17,500. The Initial Franchise Fee for your first non-traditional Great Steak restaurant location is $7,500. The Initial Franchise Fee is reduced for your second and each subsequent non-traditional Great Steak restaurant to $5,000. If you are currently an active or active reserve member of the U.S. Armed Forces, have been honorably discharged from the U.S. Armed Forces (\"Eligible Military\"), or are a 501(c)(3) organization (\"501(c)(3)\"), you will receive a 20% discount on the Initial Franchise Fee.",
+  "confidence": 0.98
+}

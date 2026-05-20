@@ -1,0 +1,13 @@
+{
+  "pdf": "data\\mn_scrape\\school_of_rock_franchising_llc_2026_mn_36006-202604-09.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0053,
+      "input_tokens": 1912,
+      "cached": 1340,
+      "output_tokens": 209
+    }
+  },
+  "total_cost_usd": 0.0053
+}

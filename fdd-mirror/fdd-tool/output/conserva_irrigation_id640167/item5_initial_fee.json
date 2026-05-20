@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 49500,
+  "initial_franchise_fee_high": 49500,
+  "fee_notes": "Base fee for territories under 300,000 population. Additional Population Fee of $0.165 per person charged for territories exceeding 300,000 (up to 400,000 anticipated). VetFran discount 15%, multi-territory discount $30,000-$40,000 per territory, existing franchisee additional territory discount 20%, employee discount 5-50% based on tenure. Financing up to 80% available in limited circumstances.",
+  "raw_excerpt": "You must pay us an Initial Franchise Fee equal to $49,500, provided that your Territory is less than 300,000 people ('Population Limit'). The Initial Franchise Fee is payable in full when you sign a Franchise Agreement.",
+  "confidence": 0.95
+}

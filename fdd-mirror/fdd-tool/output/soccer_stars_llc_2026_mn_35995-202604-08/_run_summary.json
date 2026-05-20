@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\soccer_stars_llc_2026_mn_35995-202604-08.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0043,
+      "input_tokens": 1740,
+      "cached": 1340,
+      "output_tokens": 182
+    },
+    "item5": {
+      "cost_usd": 0.0062,
+      "input_tokens": 1942,
+      "cached": 1340,
+      "output_tokens": 266
+    },
+    "item6": {
+      "cost_usd": 0.0292,
+      "input_tokens": 7715,
+      "cached": 1340,
+      "output_tokens": 646
+    },
+    "item7": {
+      "cost_usd": 0.0137,
+      "input_tokens": 5351,
+      "cached": 1340,
+      "output_tokens": 85
+    },
+    "item19": {
+      "cost_usd": 0.4129,
+      "input_tokens": 34682,
+      "cached": 1340,
+      "output_tokens": 20831,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1724,
+      "input_tokens": 16687,
+      "cached": 1340,
+      "output_tokens": 8395,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.6387
+}

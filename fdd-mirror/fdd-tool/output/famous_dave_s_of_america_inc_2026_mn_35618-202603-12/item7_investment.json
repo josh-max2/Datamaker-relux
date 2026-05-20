@@ -1,0 +1,7 @@
+{
+  "total_investment_low": 435000,
+  "total_investment_high": 2865000,
+  "raw_excerpt": "Total if premises leased by you: $435,000 - $1,045,000 (Line Service), $689,000 - $1,485,000 (Counter Service), $1,254,500 - $2,865,000 (Full Service). Total if premises purchased by you: $824,500 - $2,020,000 (Line Service), $1,944,000 - $3,147,500 (Counter Service), $3,179,000 - $4,440,000 (Full Service).",
+  "notes": "Multiple format types. Low=$435,000 (Line Service leased), High=$2,865,000 (Full Service leased). Ghost kitchen range: $53,500-$645,000 leased, $53,500-$1,820,000 purchased. Purchase range: $824,500-$4,440,000.",
+  "confidence": 0.92
+}

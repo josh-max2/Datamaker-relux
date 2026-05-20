@@ -1,0 +1,9 @@
+{
+  "royalty_pct": 7,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": 1000,
+  "tech_fee_monthly": 213,
+  "fee_notes": "Royalty is 7% of Gross Revenue for non-reconstruction services; 2% for reconstruction services. Brand Fee is 1%-2%, currently 1%. Local Marketing is greater of 2% or $1,000/month (rolling 3-month average). Tech fee range $173-$253/month (midpoint used). Additional fees: National Account Fee 5% of attributable revenue; Management Fee for Catastrophic Events 15% of attributable revenue.",
+  "raw_excerpt": "Royalty 7% of monthly Gross Revenue from all services except reconstruction services; 2% of monthly Gross Revenue from reconstruction services\nBrand Fee 1% to 2% of monthly Gross Revenue; currently 1%\nTechnology Fee $173 to $253 a month",
+  "confidence": 0.92
+}

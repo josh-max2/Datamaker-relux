@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 60000,
+  "initial_franchise_fee_high": 60000,
+  "fee_notes": "$60,000 for territory up to 250,000 population plus $0.15/person over 250,000. Multi-territory discounts available: 2nd territory $40,000, 3rd-5th $30,000 each. Also includes Initial Training Fee $5,000 and Market Setup Fee $8,500.",
+  "raw_excerpt": "The Initial Franchise Fee is $60,000 for a Territory with a population of 250,000 or less plus $0.15 per person over 250,000.",
+  "confidence": 0.9
+}

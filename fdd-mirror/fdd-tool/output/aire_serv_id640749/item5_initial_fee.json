@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 22500,
+  "initial_franchise_fee_high": 45000,
+  "fee_notes": "Standard minimum fee is $45,000 for territory up to 100,000 population. Rural franchise special pricing available at 50% of minimum ($22,500) for territories 40,000-65,000 population. Additional territory charged at $450 per 1,000 population. Discounts available: VetFran, HVAC license (5%), multi-territory, roll-in (varies). Average fee paid in 2025 was $68,685 (range $39,325\u2013$115,379 including territory variations and discounts).",
+  "raw_excerpt": "The initial franchisee fee you must pay to us is $45,000 (the \"Minimum Initial Franchise Fee\"), which is a fee for a territory of up to 100,000 in population. A \"rural franchise\" is a franchise for a territory (i) with a population size of at least 40,000 and not more than 65,000; (ii) that does not include a city of more than 30,000 in population; and (iii) that is not included within a standard metropolitan statistical area. The lowest initial franchise fee payable for a rural franchise will be 50% of our Minimum Initial Franchise Fee unless the application of the VetFran discount results in a lower fee.",
+  "confidence": 0.92
+}

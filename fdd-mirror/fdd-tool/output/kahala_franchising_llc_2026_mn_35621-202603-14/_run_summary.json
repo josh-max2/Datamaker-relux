@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\kahala_franchising_llc_2026_mn_35621-202603-14.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.006,
+      "input_tokens": 2079,
+      "cached": 1340,
+      "output_tokens": 227
+    },
+    "item5": {
+      "cost_usd": 0.0107,
+      "input_tokens": 3060,
+      "cached": 1340,
+      "output_tokens": 342
+    },
+    "item6": {
+      "cost_usd": 0.0227,
+      "input_tokens": 5411,
+      "cached": 1340,
+      "output_tokens": 672
+    },
+    "item7": {
+      "cost_usd": 0.0154,
+      "input_tokens": 5763,
+      "cached": 1340,
+      "output_tokens": 114
+    },
+    "item19": {
+      "cost_usd": 0.0139,
+      "input_tokens": 5336,
+      "cached": 1340,
+      "output_tokens": 98,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.1752,
+      "input_tokens": 17987,
+      "cached": 1340,
+      "output_tokens": 8326,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.2439
+}

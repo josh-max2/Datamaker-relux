@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\service_experts_mn.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0145,
+      "input_tokens": 3113,
+      "cached": 0,
+      "output_tokens": 190
+    },
+    "item5": {
+      "cost_usd": 0.0108,
+      "input_tokens": 1814,
+      "cached": 0,
+      "output_tokens": 360
+    },
+    "item6": {
+      "cost_usd": 0.0155,
+      "input_tokens": 2871,
+      "cached": 0,
+      "output_tokens": 462
+    },
+    "item7": {
+      "cost_usd": 0.0082,
+      "input_tokens": 2277,
+      "cached": 0,
+      "output_tokens": 89
+    },
+    "item19": {
+      "cost_usd": 0.0525,
+      "input_tokens": 17070,
+      "cached": 0,
+      "output_tokens": 86,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.0825,
+      "input_tokens": 16770,
+      "cached": 0,
+      "output_tokens": 1309,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.1841
+}

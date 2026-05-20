@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Affiliate Disclosure — How FranchiseDepth makes money{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Affiliate Disclosure", "url": canonical_url}
+]) }}{% endblock %}
+{% block description %}FTC-compliant affiliate disclosure for FranchiseDepth. Plain English explanation of which links pay us and how we keep editorial decisions separate.{% endblock %}
+{% block content %}
+<article>
+    <h1>Affiliate disclosure</h1>
+    <p class="lead">
+        Required by the FTC, written in plain English.
+    </p>
+
+    <h2>What this means</h2>
+    <p>
+        FranchiseDepth is funded primarily by affiliate commissions paid when our visitors take certain actions on partner websites. Two specific CTAs on brand pages are affiliate links:
+    </p>
+    <ul>
+        <li><strong>"Talk to a franchise consultant"</strong> — routes to franchise broker partners (e.g., FlexOffers, IFPG-member brokers). We may receive a commission if the broker matches you with a franchise opportunity.</li>
+        <li><strong>"Get pre-qualified for SBA financing"</strong> — routes to SBA-preferred lenders (e.g., ApplePie Capital, Boefly, FranFund via lender networks). We may receive a commission if you ultimately close a loan.</li>
+    </ul>
+
+    <h2>What this does <strong>not</strong> mean</h2>
+    <ul>
+        <li>The price you pay is not affected. Affiliate commissions come from the partner's marketing budget, not from a markup on you.</li>
+        <li>We do not accept payment to include or rank brands. Every brand on this site is here because it filed a publicly-available FDD that we extracted. There is no paid placement.</li>
+        <li>We do not endorse the franchises themselves. Every brand page is data summary plus context — buyers make their own decisions.</li>
+        <li>The data we publish (Item 5/6/7/19/20 figures) comes directly from state-filed FDDs and is not influenced by any commercial relationship.</li>
+    </ul>
+
+    <h2>How we keep these separate</h2>
+    <p>
+        Our extraction pipeline is open source (see <a href="https://github.com/josh-max2/Parser" rel="me">github.com/josh-max2/Parser</a>). It runs against public state portals (Wisconsin DFI, Minnesota CARDS, etc.) and processes whatever filings exist. There is no "preferred brand" code path. The data presented matches the source filings; any number that disagrees with the source PDF (linked on every brand page) should be considered a transcription error and reported.
+    </p>
+
+    <h2>Why we disclose this prominently</h2>
+    <p>
+        The FTC's Endorsement Guides (<a href="https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking" rel="nofollow">16 CFR Part 255</a>) require clear and conspicuous disclosure when a publisher receives material connection (including affiliate commissions) for promoting a product or service. We display this disclosure:
+    </p>
+    <ul>
+        <li>In the footer of every page (always visible)</li>
+        <li>As an italicized note <em>above</em> every affiliate CTA on brand pages (next to the recommendation, not buried)</li>
+        <li>On this dedicated disclosure page (linked from both the footer and inline disclosures)</li>
+    </ul>
+
+    <h2>Questions?</h2>
+    <p>
+        Reach out via the contact information on the <a href="{{ url_for('about/') }}">About page</a>. We'd rather over-communicate on this than fall short of FTC requirements.
+    </p>
+</article>
+{% endblock %}

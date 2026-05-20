@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\oe_franchising_llc_2025_mn_35500-202603-07.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0056,
+      "input_tokens": 2093,
+      "cached": 1340,
+      "output_tokens": 194
+    },
+    "item5": {
+      "cost_usd": 0.0149,
+      "input_tokens": 3386,
+      "cached": 1340,
+      "output_tokens": 557
+    },
+    "item6": {
+      "cost_usd": 0.0152,
+      "input_tokens": 1357,
+      "cached": 1340,
+      "output_tokens": 983
+    },
+    "item7": {
+      "cost_usd": 0.0054,
+      "input_tokens": 2561,
+      "cached": 1340,
+      "output_tokens": 92
+    },
+    "item19": {
+      "cost_usd": 0.0915,
+      "input_tokens": 15278,
+      "cached": 1340,
+      "output_tokens": 3287,
+      "images_sent": 6
+    },
+    "item20": {
+      "cost_usd": 0.1405,
+      "input_tokens": 13580,
+      "cached": 1340,
+      "output_tokens": 6891,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.2731
+}

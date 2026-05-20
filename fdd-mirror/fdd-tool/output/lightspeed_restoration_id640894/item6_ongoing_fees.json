@@ -1,0 +1,10 @@
+{
+  "royalty_pct": null,
+  "royalty_min_monthly": 1000,
+  "marketing_fee_pct": 2.0,
+  "marketing_min_monthly": 500,
+  "tech_fee_monthly": 750,
+  "fee_notes": "Royalty is tiered (see note 2 table, not fully reproduced); minimum royalty is $0 for months 1-6, $500/month for months 7-12, $1,000/month thereafter; minimums may increase annually up to CPI on April 1. Marketing (National Advertising Fund) is greater of 2% of Bank Deposits or $500/month per territory; may increase up to 3% of Bank Deposits or $500. Advertising Cooperative not currently imposed. Technology fee is $750/month for first territory, $250/month for second and subsequent territories; may increase up to 3% annually.",
+  "raw_excerpt": "Royalty2 The greater of: (a) the monthly Royalty fee as calculated in the table in note 2 or (b) a minimum Royalty of $500 per month for months seven through twelve and $1,000 per month thereafter. There is no minimum Royalty payable for the first six months.\nNational Advertising Fund Payment3 The greater of 2% of your Bank Deposits for the preceding month or $500, per territory. May increase but not above the greater than 3% of your Bank Deposits or $500 per month, per territory.\nTechnology Fee Currently $750 per month for first territory; $250 for second and subsequent territories.",
+  "confidence": 0.82
+}

@@ -1,0 +1,203 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 1,
+      "outlets_end": 5,
+      "net_change": 4
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 5,
+      "outlets_end": 15,
+      "net_change": 10
+    },
+    {
+      "year": 2025,
+      "outlet_type": "franchised",
+      "outlets_start": 15,
+      "outlets_end": 15,
+      "net_change": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 1,
+      "outlets_end": 0,
+      "net_change": -1
+    },
+    {
+      "year": 2025,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 2,
+      "outlets_end": 6,
+      "net_change": 4
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 6,
+      "outlets_end": 15,
+      "net_change": 9
+    },
+    {
+      "year": 2025,
+      "outlet_type": "total",
+      "outlets_start": 15,
+      "outlets_end": 15,
+      "net_change": 0
+    }
+  ],
+  "state_year_status": [
+    {
+      "year": 2023,
+      "state": "IN",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "IN",
+      "outlets_start": 1,
+      "outlets_opened": 11,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 12
+    },
+    {
+      "year": 2025,
+      "state": "IN",
+      "outlets_start": 12,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 12
+    },
+    {
+      "year": 2023,
+      "state": "NC",
+      "outlets_start": 0,
+      "outlets_opened": 3,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 3
+    },
+    {
+      "year": 2024,
+      "state": "NC",
+      "outlets_start": 3,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 3
+    },
+    {
+      "year": 2025,
+      "state": "NC",
+      "outlets_start": 3,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 3
+    },
+    {
+      "year": 2023,
+      "state": "WI",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "WI",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2025,
+      "state": "WI",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2023,
+      "state": "TOTAL",
+      "outlets_start": 1,
+      "outlets_opened": 4,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 5
+    },
+    {
+      "year": 2024,
+      "state": "TOTAL",
+      "outlets_start": 5,
+      "outlets_opened": 11,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 15
+    },
+    {
+      "year": 2025,
+      "state": "TOTAL",
+      "outlets_start": 15,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 15
+    }
+  ],
+  "confidence": 0.98,
+  "notes": "The company-owned outlet was owned and operated by an affiliate of the franchisor per footnote in Table 1. Total net change for 2023 shown as +4 in Table 1 but arithmetic (2 start, 6 end) yields +4 \u2014 consistent. 2024 total net change shown as +9 (6 start, 15 end) \u2014 consistent. All data as of December 31 of each applicable year."
+}

@@ -1,0 +1,170 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 0,
+      "outlets_end": 2,
+      "net_change": 2
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 2,
+      "outlets_end": 3,
+      "net_change": 1
+    },
+    {
+      "year": 2025,
+      "outlet_type": "franchised",
+      "outlets_start": 3,
+      "outlets_end": 8,
+      "net_change": 5
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2025,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 0,
+      "outlets_end": 2,
+      "net_change": 2
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 2,
+      "outlets_end": 3,
+      "net_change": 1
+    },
+    {
+      "year": 2025,
+      "outlet_type": "total",
+      "outlets_start": 3,
+      "outlets_end": 8,
+      "net_change": 5
+    }
+  ],
+  "state_year_status": [
+    {
+      "year": 2023,
+      "state": "IL",
+      "outlets_start": 0,
+      "outlets_opened": 2,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "IL",
+      "outlets_start": 2,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 3
+    },
+    {
+      "year": 2025,
+      "state": "IL",
+      "outlets_start": 3,
+      "outlets_opened": 2,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 5
+    },
+    {
+      "year": 2023,
+      "state": "TX",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2024,
+      "state": "TX",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2025,
+      "state": "TX",
+      "outlets_start": 0,
+      "outlets_opened": 3,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 3
+    },
+    {
+      "year": 2023,
+      "state": "TOTAL",
+      "outlets_start": 0,
+      "outlets_opened": 2,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "TOTAL",
+      "outlets_start": 2,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 3
+    },
+    {
+      "year": 2025,
+      "state": "TOTAL",
+      "outlets_start": 3,
+      "outlets_opened": 5,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 8
+    }
+  ],
+  "confidence": 0.98,
+  "notes": "All data as of June 30 of each year. Table 2 shows 3 transfers in Illinois in 2025. Projected openings: FL 1, MI 1, NM 1, OH 1, TX 3 (total 7 projected new franchised outlets next fiscal year, 5 FAs signed but not yet open)."
+}

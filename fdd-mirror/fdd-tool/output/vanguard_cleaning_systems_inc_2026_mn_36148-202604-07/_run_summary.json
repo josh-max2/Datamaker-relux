@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\vanguard_cleaning_systems_inc_2026_mn_36148-202604-07.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.006,
+      "input_tokens": 2011,
+      "cached": 1340,
+      "output_tokens": 240
+    },
+    "item5": {
+      "cost_usd": 0.0155,
+      "input_tokens": 4664,
+      "cached": 1340,
+      "output_tokens": 342
+    },
+    "item6": {
+      "cost_usd": 0.0222,
+      "input_tokens": 4704,
+      "cached": 1340,
+      "output_tokens": 778
+    },
+    "item7": {
+      "cost_usd": 0.0031,
+      "input_tokens": 1811,
+      "cached": 1340,
+      "output_tokens": 86
+    },
+    "item19": {
+      "cost_usd": 0.0635,
+      "input_tokens": 10309,
+      "cached": 1340,
+      "output_tokens": 2410,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.1676,
+      "input_tokens": 15376,
+      "cached": 1340,
+      "output_tokens": 8342,
+      "images_sent": 7
+    }
+  },
+  "total_cost_usd": 0.2779
+}

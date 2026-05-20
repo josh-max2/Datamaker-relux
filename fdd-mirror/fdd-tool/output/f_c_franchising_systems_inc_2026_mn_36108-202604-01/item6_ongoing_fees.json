@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 1000,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": 350,
+  "tech_fee_monthly": 499,
+  "fee_notes": "Royalty is tiered 6% down to 4% based on annual Gross Revenues per Table 6-2; $500/mo minimum in year 1, $1,000/mo thereafter. Local advertising required: greater of 10% GR or $3,000/mo for first 3 years, then greater of 8% GR or $3,000/mo.",
+  "raw_excerpt": "Royalty fee: 6% down to 4% of Gross Revenues; $500 monthly minimum for 1st year; $1,000 monthly minimum thereafter. National Branding Fund: 2% of Gross Revenues; $350 monthly minimum. Technology/Software License Fee: $499 Monthly.",
+  "confidence": 0.95
+}

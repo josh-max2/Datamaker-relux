@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 10,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": 300,
+  "tech_fee_monthly": 449,
+  "fee_notes": "Royalty: Standard 10-12%, Reduced 15%, CCM 6-10% of Gross Sales. National Advertising 1% + $300/mo minimum. Local Marketing 2% + $1,000/mo minimum (to vendors). Tech $449/mo. Google Workspace $18/mo. Accounting $85-$100/mo.",
+  "raw_excerpt": "Royalty Fee: Standard 10-12%, Reduced 15%, CCM 6-10% with minimums. National Advertising Fee: 1% with $300/month minimum. Technology Fee: $449/month. Local Marketing: 2% with $1,000/month minimum.",
+  "confidence": 0.9
+}

@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Recent FDD Filings — {{ site_name }}{% endblock %}
+{% block description %}The most recently filed Franchise Disclosure Documents in our database, sorted by issuance date. Track which franchisors filed updated FDDs and what changed.{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Recent filings", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Recent FDD Filings",
+  "description": "Most recent Franchise Disclosure Documents in {{ site_name }}'s database.",
+  "url": "{{ canonical_url }}",
+  "isPartOf": { "@type": "WebSite", "name": "{{ site_name }}", "url": "{{ SITE_HOST }}{{ url_for('') }}" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ brands|length }},
+    "itemListElement": [
+      {% for b in brands %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "url": "{{ SITE_HOST }}{{ url_for('franchise/' ~ b.slug ~ '/') }}",
+        "name": {{ (b.brand_name or b.legal_name)|tojson }}
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+{% endblock %}
+{% block content %}
+<article>
+    <header>
+        <h1>Recent FDD filings</h1>
+        <p class="lead">
+            {{ brands|length }} franchise brands tracked in our database, sorted by the issuance date of their most recent Franchise Disclosure Document. Newer filings reflect the latest fees, royalty terms, and disclosed financial performance.
+        </p>
+        <p class="byline">
+            <span class="dateline">Page regenerated {{ generated_at }}</span>
+        </p>
+    </header>
+
+    <section>
+        <h2>Most recently issued FDDs</h2>
+        <p class="notes">Click any column header to re-sort. Each row links to the full brand page; the source column links to the actual filing page in the source FDD.</p>
+        <div class="table-scroll">
+        <table class="data-table sortable-table" id="recent-table">
+            <thead>
+                <tr>
+                    <th data-sort="text">Brand</th>
+                    <th data-sort="text">Industry</th>
+                    <th data-sort="num">Filing year</th>
+                    <th data-sort="text">FDD issued</th>
+                    <th data-sort="text">State</th>
+                    <th data-sort="num">Initial fee</th>
+                    <th data-sort="bool">Item 19?</th>
+                    <th data-sort="text">Source</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for b in brands %}
+                <tr>
+                    <td><a href="{{ url_for('franchise/' ~ b.slug ~ '/') }}">{{ b.brand_name or b.legal_name }}</a></td>
+                    <td>{{ b.industry|industry_label }}</td>
+                    <td data-value="{{ b.filing_year or 0 }}">{{ b.filing_year or '—' }}</td>
+                    <td data-value="{{ b.effective_date or '0000-00-00' }}">{{ b.effective_date or '—' }}</td>
+                    <td>{{ b.filing_state or '—' }}</td>
+                    <td data-value="{{ b.fee_low or 0 }}">
+                        {% if b.fee_low and b.fee_high and b.fee_low != b.fee_high %}
+                            ${{ '{:,.0f}'.format(b.fee_low) }}–${{ '{:,.0f}'.format(b.fee_high) }}
+                        {% elif b.fee_low %}
+                            ${{ '{:,.0f}'.format(b.fee_low) }}
+                        {% else %}—{% endif %}
+                    </td>
+                    <td data-value="{% if b.has_item19 %}1{% else %}0{% endif %}">{% if b.has_item19 %}Yes{% else %}No{% endif %}</td>
+                    <td>
+                        {% if b.source_url %}<a href="{{ b.source_url }}" rel="nofollow">{{ b.filing_state }} portal</a>{% else %}—{% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>How "recent" works on this site</h2>
+        <p>
+            Each FDD lists an "issuance date" — the day the franchisor finalized that year's disclosure document. The franchisor must use that filing as the basis for any franchise sale until they issue a new one. Newer filings reflect the franchisor's most current operating economics, fee structure, and outlet performance.
+        </p>
+        <p>
+            We re-scrape state portals on a rolling basis. When a franchisor files a new FDD, we replace our stored version and regenerate the brand page. The brand page byline shows when the source was last verified and when the page was last regenerated.
+        </p>
+        <p>
+            See the <a href="{{ url_for('methodology/') }}">methodology page</a> for the full extraction + refresh pipeline.
+        </p>
+    </section>
+</article>
+
+<script>
+(function() {
+    const table = document.getElementById('recent-table');
+    if (!table) return;
+    const tbody = table.querySelector('tbody');
+    const headers = table.querySelectorAll('th[data-sort]');
+    let currentCol = -1, asc = true;
+    headers.forEach((h, idx) => {
+        h.style.cursor = 'pointer';
+        h.addEventListener('click', () => {
+            if (currentCol === idx) asc = !asc; else { currentCol = idx; asc = (idx === 2 || idx === 3 ? false : true); }
+            const rows = Array.from(tbody.rows);
+            const type = h.dataset.sort;
+            rows.sort((a, b) => {
+                let av = a.cells[idx].dataset.value ?? a.cells[idx].innerText;
+                let bv = b.cells[idx].dataset.value ?? b.cells[idx].innerText;
+                if (type === 'num' || type === 'bool') {
+                    av = parseFloat(av) || 0; bv = parseFloat(bv) || 0;
+                    return asc ? av - bv : bv - av;
+                }
+                av = String(av).toLowerCase(); bv = String(bv).toLowerCase();
+                return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+            });
+            rows.forEach(r => tbody.appendChild(r));
+            headers.forEach(x => x.querySelector('.sort-ind')?.remove());
+            const ind = document.createElement('span');
+            ind.className = 'sort-ind'; ind.textContent = asc ? ' ▲' : ' ▼';
+            h.appendChild(ind);
+        });
+    });
+})();
+</script>
+{% endblock %}

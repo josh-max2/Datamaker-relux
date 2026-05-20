@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\bloomin_blinds_franchise_corp_2025_mn_35423-202602-02.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.005,
+      "input_tokens": 1634,
+      "cached": 1340,
+      "output_tokens": 247
+    },
+    "item5": {
+      "cost_usd": 0.0061,
+      "input_tokens": 1496,
+      "cached": 1340,
+      "output_tokens": 348
+    },
+    "item6": {
+      "cost_usd": 0.0284,
+      "input_tokens": 5181,
+      "cached": 1340,
+      "output_tokens": 1100
+    },
+    "item7": {
+      "cost_usd": 0.0117,
+      "input_tokens": 4652,
+      "cached": 1340,
+      "output_tokens": 90
+    },
+    "item19": {
+      "cost_usd": 0.2042,
+      "input_tokens": 24676,
+      "cached": 1340,
+      "output_tokens": 8918,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1712,
+      "input_tokens": 15504,
+      "cached": 1340,
+      "output_tokens": 8557,
+      "images_sent": 7
+    }
+  },
+  "total_cost_usd": 0.4266
+}

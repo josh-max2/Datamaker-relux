@@ -1,0 +1,38 @@
+{
+  "pdf": "data\\mn_scrape\\hotworx_franchising_llc_2025_mn_35761-202604-15.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0039,
+      "input_tokens": 1600,
+      "cached": 1340,
+      "output_tokens": 181
+    },
+    "item5": {
+      "cost_usd": 0.0045,
+      "input_tokens": 1390,
+      "cached": 1340,
+      "output_tokens": 264
+    },
+    "item6": {
+      "cost_usd": 0.022,
+      "input_tokens": 5014,
+      "cached": 1340,
+      "output_tokens": 707
+    },
+    "item7": {
+      "cost_usd": 0.0248,
+      "input_tokens": 8971,
+      "cached": 1340,
+      "output_tokens": 100
+    },
+    "item19": {
+      "cost_usd": 0.2044,
+      "input_tokens": 21647,
+      "cached": 1340,
+      "output_tokens": 9536,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.2596
+}

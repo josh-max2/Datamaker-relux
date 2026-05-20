@@ -1,0 +1,9 @@
+{
+  "royalty_pct": 8.0,
+  "royalty_min_monthly": 500,
+  "marketing_fee_pct": 1.0,
+  "marketing_min_monthly": 500,
+  "tech_fee_monthly": 600,
+  "fee_notes": "Royalty tiered: 8.0% on $0-$350k YTD, 7.0% on $350k-$750k, 6.0% on $750k-$1M, 5.0% on $1M+. 2.0% for non-core subcontracted. Min $500/mo year 1, $1,000/mo thereafter. Tech fee $250 for 2nd+ territories. Advertising fund may increase to max 3%. All fees subject to annual CPI increase.",
+  "confidence": 0.95
+}

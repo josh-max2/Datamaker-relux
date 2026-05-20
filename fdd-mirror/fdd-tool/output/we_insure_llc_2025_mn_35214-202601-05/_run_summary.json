@@ -1,0 +1,39 @@
+{
+  "pdf": "data\\mn_scrape\\we_insure_llc_2025_mn_35214-202601-05.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.004,
+      "input_tokens": 1408,
+      "cached": 1340,
+      "output_tokens": 225
+    },
+    "item6": {
+      "cost_usd": 0.0331,
+      "input_tokens": 9164,
+      "cached": 1340,
+      "output_tokens": 612
+    },
+    "item7": {
+      "cost_usd": 0.0016,
+      "input_tokens": 1220,
+      "cached": 1340,
+      "output_tokens": 107
+    },
+    "item19": {
+      "cost_usd": 0.0135,
+      "input_tokens": 5264,
+      "cached": 1340,
+      "output_tokens": 91,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.1668,
+      "input_tokens": 13361,
+      "cached": 1340,
+      "output_tokens": 8690,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.219
+}

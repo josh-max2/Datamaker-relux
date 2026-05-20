@@ -1,0 +1,8 @@
+{
+  "royalty_pct": null,
+  "marketing_fee_pct": 0.6,
+  "tech_fee_monthly": 630,
+  "fee_notes": "Non-standard revenue-share model: franchisor retains 40% of Gross Margin (franchisee receives 60%) for temp staffing; 8% of Core/Healthcare Gross Receipts retained; 18% of Professional Direct Hire fees retained. Marketing fund: 0.6% of Gross Margin + 2% of Direct Hire/Search Fees. Tech base: $420/month EDN MRC + $210/month cloud = $630/month minimum; also $41.67/month ESP testing (Core only), $49.50/user/month, $8.28/workstation/month. Average effective royalty ~8.4% of gross sales per Item 19 Table 2.",
+  "raw_excerpt": "Our portion of Core Occupations Gross Margin: 40% of Core Occupations Gross Margin... Express Advertising/Marketing Fund: 0.6% of the Gross Margin... EDN Communication Monthly Recurring Charges (MRC): $420/month; Cloud Computer Fee: $210.00/month",
+  "confidence": 0.82
+}

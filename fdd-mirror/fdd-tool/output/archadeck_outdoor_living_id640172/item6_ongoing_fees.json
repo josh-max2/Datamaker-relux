@@ -1,0 +1,8 @@
+{
+  "royalty_pct": 6.5,
+  "royalty_min_monthly": 2000,
+  "marketing_fee_pct": 1.5,
+  "tech_fee_monthly": 350,
+  "fee_notes": "Royalty tiered: 6.5% ($0\u2013$1M), 5.5% ($1\u2013$2M), 4.5% ($2\u2013$3M), 3.5% (over $3M), with $2,000 minimum Mar\u2013Nov starting year 2. National Branding & Marketing 1.5% of Gross Sales capped at $30,000/year, may increase to 2.5%. Individual Advertising Investment minimum $50,000/year. Digital Marketing currently $300/month up to $750. NGC Contribution 0.25% to $15,000 then 0.10%. Plus optional/conditional fees for bookkeeping, construction services, seminars, audits, transfer, insurance.",
+  "confidence": 0.97
+}

@@ -1,0 +1,28 @@
+{
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Gross Revenue",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "five (5) representative franchised locations operating as of December 31, 2025",
+      "outlet_count": 5,
+      "reporting_period": "2025 calendar year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 2319751,
+      "value_median": 2197292,
+      "value_min": 2039219,
+      "value_max": 2875450,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 40.0,
+      "page_number": 50,
+      "raw_text": "Average Gross Revenue $2,319,751 | Highest Gross Revenue $2,875,450 | Lowest Gross Revenue $2,039,219 | Median Gross Revenue $2,197,292 | two (40%) of the five (5) franchised locations met or exceeded the average Gross Revenue of $2,319,751",
+      "notes": "Cohort is defined as franchisee-owned locations meeting four criteria: open at least 1 year as of 12/31/2025, in a market of at least 1 million people, operating for the full 12 months of 2025, and operating from a dedicated retail showroom staffed full time. Of the six total franchisee-owned locations, five met these criteria. Data is unaudited."
+    }
+  ],
+  "has_item19": true,
+  "confidence": 0.97,
+  "notes": "Item 19 discloses gross revenue for five representative franchised locations for calendar year 2025. All key statistics (average, median, min, max, pct above average) are clearly stated. No company-owned location data was disclosed in Item 19."
+}

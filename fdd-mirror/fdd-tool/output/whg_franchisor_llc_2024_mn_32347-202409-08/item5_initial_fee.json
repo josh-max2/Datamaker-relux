@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 75000,
+  "initial_franchise_fee_high": null,
+  "fee_notes": "Initial Franchise Fee is the greater of $75,000 or $500 per Unit (making the fee variable based on unit count, with $75,000 as the floor). A $10,000 Application Fee is required at application and is credited toward the Initial Franchise Fee if the application is accepted. The Application Fee is non-refundable unless the application is rejected due to proximity to another Chain Facility. The Initial Franchise Fee is also non-refundable. In 2023, no Application Fees or Initial Franchise Fees were collected. Transferees and renewals pay a Relicense Fee equal to the greater of $75,000 or $500 per Unit instead of an Initial Franchise Fee. Administrative Assignments are charged a flat $5,000 Administrative Relicense Fee; assignments to financial institutions or court-appointed receivers are charged $7,500.",
+  "raw_excerpt": "You must pay an \"Initial Franchise Fee\" to us when you sign the Franchise Agreement. The Initial Franchise Fee for a new construction or conversion Chain Facility is equal to the greater of $75,000 or $500 per Unit. If we approve your Franchise Application, the Application Fee will be credited towards your Initial Franchise Fee. We do not intend to refund any Initial Franchise Fee.",
+  "confidence": 0.72
+}

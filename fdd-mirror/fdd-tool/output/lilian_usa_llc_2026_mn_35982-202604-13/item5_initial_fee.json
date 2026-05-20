@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 12000,
+  "initial_franchise_fee_high": 12000,
+  "fee_notes": "The Unit Franchise Fee is $12,000 for a single-unit franchise, paid in a lump sum at signing. Additional initial fees for a single-unit franchise include: Technology Transfer Fee ($20,000), Store Pre-Opening Fee ($17,000), Design Fee ($3,000), Security Deposit ($10,000, potentially refundable), Equipment Fee ($91,000\u2013$103,000), Utensils ($2,500\u2013$3,300), and Initial Inventory ($15,000\u2013$35,000). For an Area Development Franchise, the Area Development Fee is $100,000 (nonrefundable, paid in lump sum at signing), with additional fees including Technology Transfer Fee ($20,000), Store Pre-Opening Fee ($17,000), Design Fee ($3,000), Security Deposit ($30,000, potentially refundable), Equipment Fee ($181,000\u2013$217,000), Utensils ($7,500\u2013$9,900), and Initial Inventory ($90,000\u2013$135,000). Under an Area Development Agreement, some initial fees (including franchise fee, technology transfer fee, and pre-opening support fee) may be reduced or waived. All fees except the security deposit are non-refundable.",
+  "raw_excerpt": "1. Unit Franchise Fee: $12,000\nThis fee grants you the right to operate a single Sharetea Shop at an approved location. You must pay the entire franchise fee in a lump sum when you sign the Franchise Agreement.\n...\nB. Initial Fees for an Area Development Franchise\n1. Area Development Fee: $100,000\nYou must pay this fee in a lump sum when you sign the Area Development Agreement.",
+  "confidence": 0.85
+}

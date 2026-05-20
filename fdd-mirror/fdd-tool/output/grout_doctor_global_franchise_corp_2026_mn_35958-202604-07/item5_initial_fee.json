@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 15000,
+  "initial_franchise_fee_high": 20000,
+  "fee_notes": "$0.10 per owner-occupied household; min territory ~150,000 HH ($15,000), max ~200,000 HH ($20,000). Veterans get 50% discount ($0.05/HH); first franchise in each state gets 25% discount ($0.075/HH). Multi-unit buyers pay $0.05/HH at 50% discount. Fee generally non-refundable except training failure (refund minus up to $6,675).",
+  "raw_excerpt": "Your initial franchise fee is based on the number of owner-occupied households in your territory calculated at the rate of $0.10 per household. A minimum territory size is approximately 150,000 owner-occupied households and a maximum territory size is approximately 200,000 owner-occupied households.",
+  "confidence": 0.98
+}

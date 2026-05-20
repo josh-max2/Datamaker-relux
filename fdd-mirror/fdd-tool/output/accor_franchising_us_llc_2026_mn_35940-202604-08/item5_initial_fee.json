@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 20000,
+  "initial_franchise_fee_high": 75000,
+  "fee_notes": "Base fee is $75,000 plus $300 per room over 250 rooms for typical 200-room hotel. Developer Incentive reduces fee to $20,000. If application rejected, fee refunded less $10,000.",
+  "raw_excerpt": "you must pay us in a lump sum an initial franchise fee of $75,000 plus $300 per room for every room over 250 rooms... If your MGallery Hotel qualifies for the Developer Incentive, then the Initial Franchise Fee will be $20,000.",
+  "confidence": 0.97
+}

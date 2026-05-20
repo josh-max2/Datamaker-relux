@@ -1,0 +1,309 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Franchise Comparison Tool — Compare Up to 3 Brands Side-by-Side{% endblock %}
+{% block description %}Interactive franchise comparison tool. Pick any 2 or 3 brands from {{ total_brands }} tracked. Side-by-side fees, royalty, total investment, outlets, and Item 19 disclosure status. Data from publicly filed FDDs.{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Compare", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Franchise Comparison Tool",
+  "url": "{{ canonical_url }}",
+  "isPartOf": { "@type": "WebSite", "name": "{{ site_name }}", "url": "{{ SITE_HOST }}{{ url_for('') }}" }
+}
+</script>
+{% endblock %}
+{% block content %}
+<article class="compare-tool">
+    <header>
+        <h1>Franchise comparison tool</h1>
+        <p class="lead">
+            Pick any 2 or 3 brands from {{ total_brands }} tracked. See fees, royalty, total investment, outlet counts, and Item 19 disclosure status side-by-side. Numbers come from each franchisor's most recent FDD.
+        </p>
+    </header>
+
+    <section class="compare-pickers" aria-labelledby="picker-heading">
+        <h2 id="picker-heading">Pick brands to compare</h2>
+        <div class="compare-picker-grid">
+            <div class="compare-picker" data-slot="0">
+                <label for="picker-0">Brand 1</label>
+                <input type="search" id="picker-0" autocomplete="off" placeholder="Start typing a brand name…" data-slot="0">
+                <ul class="picker-results" id="picker-results-0" role="listbox" hidden></ul>
+                <button type="button" class="picker-clear" data-slot="0" hidden>×</button>
+            </div>
+            <div class="compare-picker" data-slot="1">
+                <label for="picker-1">Brand 2</label>
+                <input type="search" id="picker-1" autocomplete="off" placeholder="Start typing a brand name…" data-slot="1">
+                <ul class="picker-results" id="picker-results-1" role="listbox" hidden></ul>
+                <button type="button" class="picker-clear" data-slot="1" hidden>×</button>
+            </div>
+            <div class="compare-picker" data-slot="2">
+                <label for="picker-2">Brand 3 (optional)</label>
+                <input type="search" id="picker-2" autocomplete="off" placeholder="Start typing a brand name…" data-slot="2">
+                <ul class="picker-results" id="picker-results-2" role="listbox" hidden></ul>
+                <button type="button" class="picker-clear" data-slot="2" hidden>×</button>
+            </div>
+        </div>
+        <p class="notes" id="compare-prompt">Select at least 2 brands to see the comparison.</p>
+        <p class="compare-shortcut" id="compare-shortcut" hidden>
+            <a href="#" id="compare-shortcut-link">→ View the dedicated comparison page (more detail)</a>
+        </p>
+    </section>
+
+    <section id="compare-output" hidden>
+        <div class="compare-output-header">
+            <h2>Comparison</h2>
+            <button type="button" id="compare-share-btn" class="compare-share-btn" aria-label="Copy shareable link to this comparison">
+                <span class="share-icon" aria-hidden="true">🔗</span>
+                <span class="share-label">Copy share link</span>
+            </button>
+        </div>
+        <div class="table-scroll">
+        <table class="data-table compare-table" id="compare-output-table">
+            <thead><tr id="compare-output-head"></tr></thead>
+            <tbody id="compare-output-body"></tbody>
+        </table>
+        </div>
+        <p class="notes" id="compare-output-note"></p>
+    </section>
+
+    <section>
+        <h2>How this tool works</h2>
+        <ul>
+            <li>Data comes from each franchisor's <strong>most recent FDD</strong> as filed with the state.</li>
+            <li>Numbers are <em>what franchisors disclosed</em>, not editorial scoring. We don't pick winners.</li>
+            <li>Breakeven figures are intentionally not shown side-by-side here because the underlying method (reported margin vs industry-typical) can differ between brands. Use each brand's dedicated page for that detail.</li>
+            <li>For 2 brands in the same category, we also auto-generate a dedicated <code>/compare/A-vs-B/</code> page with deeper context, FAQs, and source-PDF links. The shortcut link above takes you there.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Related</h2>
+        <ul>
+            <li><a href="{{ url_for('industries/') }}">All industries</a> — browse by category</li>
+            <li><a href="{{ url_for('') }}">All brands</a> — filter by budget</li>
+            <li><a href="{{ url_for('guides/') }}">Buyer guides</a> — how to read an FDD, compute breakeven, validate franchisee earnings</li>
+        </ul>
+    </section>
+</article>
+
+<script id="compare-brand-index" type="application/json">{{ brand_index_json|safe }}</script>
+<script>
+(function() {
+    const data = JSON.parse(document.getElementById('compare-brand-index').textContent);
+    const byName = new Map(data.map(b => [b.name.toLowerCase(), b]));
+    const bySlug = new Map(data.map(b => [b.slug, b]));
+    const selected = [null, null, null];
+
+    function fmtUSD(n) {
+        if (n == null) return '—';
+        return '$' + Number(n).toLocaleString('en-US');
+    }
+    function fmtRange(lo, hi) {
+        if (lo == null && hi == null) return '—';
+        if (lo != null && hi != null && lo !== hi) return fmtUSD(lo) + '–' + fmtUSD(hi);
+        return fmtUSD(lo != null ? lo : hi);
+    }
+    function fmtPct(n) {
+        return n == null ? '—' : Number(n) + '%';
+    }
+    function fmtInt(n) {
+        return n == null ? '—' : Number(n).toLocaleString('en-US');
+    }
+    function closureBadge(b) {
+        if (b.closure_rate == null) return '—';
+        const tierIcon = b.closure_tier === 'green' ? '🟢' : b.closure_tier === 'yellow' ? '🟡' : '🔴';
+        return tierIcon + ' ' + b.closure_rate + '%';
+    }
+    function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+
+    // Wire up each picker slot
+    for (let i = 0; i < 3; i++) {
+        const input = document.getElementById('picker-' + i);
+        const results = document.getElementById('picker-results-' + i);
+        const clear = document.querySelector('.picker-clear[data-slot="' + i + '"]');
+
+        input.addEventListener('input', () => {
+            const q = input.value.trim().toLowerCase();
+            if (!q) { results.hidden = true; results.innerHTML = ''; return; }
+            const matches = data.filter(b => b.name.toLowerCase().includes(q)).slice(0, 8);
+            if (!matches.length) {
+                results.innerHTML = '<li class="picker-empty">No matching brands.</li>';
+            } else {
+                results.innerHTML = matches.map(b =>
+                    `<li role="option" data-name="${escapeHtml(b.name)}"><span class="hsr-name">${escapeHtml(b.name)}</span><span class="hsr-industry">${escapeHtml(b.industry)}</span></li>`
+                ).join('');
+            }
+            results.hidden = false;
+        });
+
+        results.addEventListener('click', e => {
+            const li = e.target.closest('li[data-name]');
+            if (!li) return;
+            const name = li.dataset.name;
+            const brand = byName.get(name.toLowerCase());
+            if (brand) {
+                selected[i] = brand;
+                input.value = brand.name;
+                results.hidden = true;
+                clear.hidden = false;
+                render();
+                updateShareableUrl();
+            }
+        });
+
+        clear.addEventListener('click', () => {
+            selected[i] = null;
+            input.value = '';
+            clear.hidden = true;
+            render();
+            updateShareableUrl();
+        });
+
+        input.addEventListener('focus', () => {
+            if (input.value) input.dispatchEvent(new Event('input'));
+        });
+    }
+
+    document.addEventListener('click', e => {
+        for (let i = 0; i < 3; i++) {
+            const r = document.getElementById('picker-results-' + i);
+            const input = document.getElementById('picker-' + i);
+            if (!r.contains(e.target) && e.target !== input) r.hidden = true;
+        }
+    });
+
+    function updateShareableUrl() {
+        const slugs = selected.filter(b => b).map(b => b.slug);
+        const url = new URL(window.location);
+        if (slugs.length >= 2) {
+            url.searchParams.set('brands', slugs.join(','));
+        } else {
+            url.searchParams.delete('brands');
+        }
+        history.replaceState({}, '', url);
+    }
+
+    function loadFromUrl() {
+        const param = new URL(window.location).searchParams.get('brands');
+        if (!param) return;
+        const slugs = param.split(',').filter(Boolean).slice(0, 3);
+        slugs.forEach((slug, i) => {
+            const brand = bySlug.get(slug);
+            if (brand && i < 3) {
+                selected[i] = brand;
+                document.getElementById('picker-' + i).value = brand.name;
+                document.querySelector('.picker-clear[data-slot="' + i + '"]').hidden = false;
+            }
+        });
+        render();
+    }
+
+    function render() {
+        const picks = selected.filter(b => b);
+        const prompt = document.getElementById('compare-prompt');
+        const out = document.getElementById('compare-output');
+        const shortcut = document.getElementById('compare-shortcut');
+
+        // Shortcut: when exactly 2 same-category brands picked, link to the
+        // dedicated static /compare/A-vs-B/ page.
+        if (picks.length === 2 && picks[0].industry_slug === picks[1].industry_slug) {
+            const slugs = [picks[0].slug, picks[1].slug].sort();
+            const pairSlug = slugs[0] + '-vs-' + slugs[1];
+            const link = document.getElementById('compare-shortcut-link');
+            link.href = '/compare/' + pairSlug + '/';
+            shortcut.hidden = false;
+        } else {
+            shortcut.hidden = true;
+        }
+
+        if (picks.length < 2) {
+            prompt.hidden = false;
+            out.hidden = true;
+            return;
+        }
+        prompt.hidden = true;
+        out.hidden = false;
+
+        // Build table head
+        const head = document.getElementById('compare-output-head');
+        head.innerHTML = '<th>&nbsp;</th>' + picks.map(b =>
+            `<th scope="col"><a href="${b.url}">${escapeHtml(b.name)}</a></th>`
+        ).join('');
+
+        // Build rows
+        const rows = [
+            ['Industry', b => escapeHtml(b.industry)],
+            ['Source FDD', b => (b.filing_year || '—') + (b.filing_state ? ` (${escapeHtml(b.filing_state)})` : '')],
+            ['Initial franchise fee', b => fmtRange(b.fee_low, b.fee_high)],
+            ['Royalty', b => fmtPct(b.royalty)],
+            ['Marketing / brand fund', b => fmtPct(b.marketing_fee)],
+            ['Tech fee (monthly)', b => fmtUSD(b.tech_fee)],
+            ['All-in % to franchisor', b => b.all_in_pct != null
+                ? `~${b.all_in_pct}% of gross` + (b.tech_fee ? ` + $${b.tech_fee.toLocaleString()}/mo` : '')
+                : '—'],
+            ['Total investment', b => fmtRange(b.inv_low, b.inv_high)],
+            ['Liquid capital required', b => fmtUSD(b.liquid_capital)],
+            ['Total outlets (latest year)', b => fmtInt(b.total_outlets)],
+            ['Outlet growth (recent yr)', b => {
+                if (b.outlet_growth_pct == null) return '—';
+                const arrow = b.outlet_growth_pct > 0 ? '▲' : b.outlet_growth_pct < 0 ? '▼' : '→';
+                const sign = b.outlet_growth_pct > 0 ? '+' : '';
+                return `${arrow} ${sign}${b.outlet_growth_pct}%`;
+            }],
+            ['Operator model', b => b.franchised_pct != null
+                ? `${Math.round(b.franchised_pct)}% franchised`
+                : '—'],
+            ['Geographic reach', b => {
+                if (!b.n_states) return '—';
+                const top = b.top_3_states ? ` · top: ${b.top_3_states.join(', ')}` : '';
+                return `<strong>${b.n_states}</strong> states${top}`;
+            }],
+            ['Closure rate (Item 20)', closureBadge],
+            ['Item 19 disclosed?', b => b.has_item19 ? 'Yes' : 'No'],
+        ];
+        const body = document.getElementById('compare-output-body');
+        body.innerHTML = rows.map(([label, fn]) =>
+            '<tr><th scope="row">' + label + '</th>' +
+            picks.map(b => '<td>' + fn(b) + '</td>').join('') +
+            '</tr>'
+        ).join('');
+
+        const note = document.getElementById('compare-output-note');
+        const sameCat = picks.every(b => b.industry_slug === picks[0].industry_slug);
+        note.textContent = sameCat
+            ? `All ${picks.length} brands are in the ${picks[0].industry} category. Numbers are directly comparable.`
+            : `${picks.length} brands across different categories. Numbers are still factual, but cross-category comparisons need extra context (different cost structures, margins, ramp times).`;
+    }
+
+    const shareBtn = document.getElementById('compare-share-btn');
+    shareBtn.addEventListener('click', async () => {
+        updateShareableUrl();
+        const url = window.location.href;
+        const label = shareBtn.querySelector('.share-label');
+        const original = label.textContent;
+        try {
+            await navigator.clipboard.writeText(url);
+            label.textContent = 'Copied!';
+        } catch (err) {
+            const tmp = document.createElement('textarea');
+            tmp.value = url;
+            document.body.appendChild(tmp);
+            tmp.select();
+            try { document.execCommand('copy'); label.textContent = 'Copied!'; }
+            catch (e) { label.textContent = 'Copy failed'; }
+            document.body.removeChild(tmp);
+        }
+        setTimeout(() => { label.textContent = original; }, 1800);
+    });
+
+    loadFromUrl();
+})();
+</script>
+{% endblock %}

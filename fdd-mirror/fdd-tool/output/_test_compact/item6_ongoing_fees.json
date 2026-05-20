@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 7.5,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": 1200,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty: 3-12% of Gross Revenue depending on products sold and tenure. Brand Fund (regional/national advertising): 1-3% tiered by annual revenue, reduced to 2% on revenue exceeding $1M. Local Advertising: 6% of Gross Revenue (or $1,200 minimum) in year 1, then 4-3% tiered. Opening advertising $5,500. Interest on late payments: lesser of 18% or max legal rate. Convention fees currently $0 (up to $500 possible). Per diem assistance $400/day. Operations manual copies $1/page.",
+  "raw_excerpt": "Royalty Fee is between 3% and 12% of Gross Revenue, depending on the products and services sold and how long an AMRAMP\u00ae Business has operated in the territory. Brand Fund: 1% (if <$300k annual gross revenue), 2% (if $300k-$500k), 3% (if \u2265$500k), reduced to 2% on revenue >$1M. Local Advertising: 6% of Gross Revenue or $1,200 (whichever greater) in year 1, then 4% (if $300k-$500k) or 3% (if \u2265$500k).",
+  "confidence": 0.9
+}

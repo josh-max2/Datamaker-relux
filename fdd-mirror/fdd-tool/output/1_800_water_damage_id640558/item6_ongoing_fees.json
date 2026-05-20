@@ -1,0 +1,8 @@
+{
+  "royalty_pct": 10,
+  "royalty_min_monthly": 500,
+  "marketing_fee_pct": 2,
+  "tech_fee_monthly": 750,
+  "fee_notes": "Tiered royalty for Remediation: 10% up to $500k, 9% $500k-$1M, 8% $1M-$2M, 7% over $2M. Reconstruction: 10% until Remediation >$500k then 3%. Monthly minimum $500 after 13th month. Software $399/mo. Brand Marketing 2% Gross Sales.",
+  "confidence": 0.95
+}

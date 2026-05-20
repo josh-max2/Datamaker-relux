@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 0,
+  "fee_notes": "Royalty is the greater of $100/week minimum or 6% of Gross Revenues weekly (minimum equates to ~$433/month). Marketing Fee is 2% of Gross Revenues weekly, subject to increase up to 3% with notice. Local Advertising minimum is $2,000/month. MarTech Fee is currently $0/month but may be increased up to $500/month with 30 days' notice. Membership Marketing minimum $500/month if program is established (currently no such requirement).",
+  "raw_excerpt": "Royalty Fee (2): Greater of: (a) the Minimum Royalty Fee ($100/week); or (b) 6% of Gross Revenues each week. Weekly, currently the Monday of each week. Franchisor reserves the right to collect monthly with 30 days' notice.\nMarketing Fee (2): 2% of your Gross Revenues each week, which amount is subject to change upon our notice to you. Payable on Monday of each week for the prior week. We reserve the right to increase this contribution to up to 3% of your Gross Revenues each week.\nLocal Advertising: At least $2,000 per month, beginning with the month prior to opening. Monthly local advertising requirement must be spent before the end of each month.\nMarTech Fee: Currently, $0 per month per Studio. Not currently charged. We reserve the right to initiate, increase or change this fee in direct relationship to expenses with 30 days' notice, provided it will not exceed $500 per month.\nMembership Marketing: Minimum $500 per month, if established. Paid Monthly as incurred. Currently there are no Membership Marketing requirements.",
+  "confidence": 0.92
+}

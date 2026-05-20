@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\ding_tea_corporation_2025_mn_35679-202603-08.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0038,
+      "input_tokens": 1648,
+      "cached": 1340,
+      "output_tokens": 168
+    },
+    "item5": {
+      "cost_usd": 0.0032,
+      "input_tokens": 1067,
+      "cached": 1340,
+      "output_tokens": 244
+    },
+    "item6": {
+      "cost_usd": 0.0077,
+      "input_tokens": 957,
+      "cached": 1340,
+      "output_tokens": 561
+    },
+    "item7": {
+      "cost_usd": 0.007,
+      "input_tokens": 3114,
+      "cached": 1340,
+      "output_tokens": 84
+    },
+    "item19": {
+      "cost_usd": 0.0137,
+      "input_tokens": 5332,
+      "cached": 1340,
+      "output_tokens": 89,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.1488,
+      "input_tokens": 10315,
+      "cached": 1340,
+      "output_tokens": 8097,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.1842
+}

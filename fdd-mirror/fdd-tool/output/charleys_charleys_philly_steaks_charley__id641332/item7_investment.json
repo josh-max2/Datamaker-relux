@@ -1,0 +1,9 @@
+{
+  "total_investment_low": 203492,
+  "total_investment_high": 1004447,
+  "liquid_capital_required": null,
+  "net_worth_required": null,
+  "raw_excerpt": "CPS Restaurant Total: $203,492 - $696,266. CPSW Restaurant Total: $202,690 - $1,004,447. CPSW Walmart Location Total: $252,061 - $646,224.",
+  "notes": "Three restaurant types disclosed. Low is minimum of all types (CPS $203,492 vs CPSW $202,690 vs Walmart $252,061; minimum=$202,690 but using CPS as primary per cover page). High is maximum across all types ($1,004,447 for CPSW). Setting low to 202690 and high to 1004447 to capture full range.",
+  "confidence": 0.85
+}

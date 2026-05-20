@@ -1,0 +1,9 @@
+{
+  "royalty_pct": 6,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": 2000,
+  "tech_fee_monthly": 275,
+  "fee_notes": "Royalty 6% of Net Payments weekly. Marketing fee currently 1% of Net Payments subject to 5% combined Marketing Expenditure Cap with local advertising. Local advertising minimum $2,000/month beginning 3 months post-opening. Tech fee $275/month subject to increase up to 1% of Net Payments. Annual training fee $2,400/center for MedTrainer/UpToDate.",
+  "raw_excerpt": "Royalty 6% of Net Payments for the preceding week... Marketing Fee Currently 1% of Net Payments... Local Advertising Requirement At least $2,000 per month... Technology Fee Currently, $275 per month but subject to increase to not more than 1% of the Center's Net Payments.",
+  "confidence": 0.97
+}

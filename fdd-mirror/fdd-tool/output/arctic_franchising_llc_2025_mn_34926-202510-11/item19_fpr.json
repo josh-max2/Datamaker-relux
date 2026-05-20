@@ -1,0 +1,26 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Gross Sales",
+      "cohort_name": "open_12_24mo",
+      "cohort_raw": "Arctic Elevation Studios Open for more than 12 months as of January 1, 2026",
+      "outlet_count": 3,
+      "reporting_period": "12 months ended December 31, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 672400,
+      "value_median": 642090,
+      "value_min": 391855,
+      "value_max": 983255,
+      "pct_above_avg": 66.6,
+      "page_number": 61,
+      "raw_text": "Average Gross Sales: $672,400 Median Gross Sales: $642,090 Lowest Gross Sales: $391,855 Highest Gross Sales: $983,255 Number and Percentage of Studios Attaining or Exceeding Average Gross Sales - 2/3 (66.6%)",
+      "notes": "Combined affiliate and franchisee data (1 affiliate + 2 franchisees). Franchisor states no material differences in gross sales between franchise and company-owned outlets."
+    }
+  ],
+  "confidence": 0.92,
+  "notes": "Item 19 also reports active member counts: avg 246, median 245, low 108, high 393 (2/3 at or above average). Active member metric not captured as a standard schema metric_name but is supplemental operational data."
+}

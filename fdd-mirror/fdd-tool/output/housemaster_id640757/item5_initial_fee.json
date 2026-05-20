@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 42500,
+  "initial_franchise_fee_high": 57924,
+  "fee_notes": "Base fee $0.57/OOH. Min 75k OOHs=$42.5k. VetFran $6k, Heroes $3k, Add'l Concept 10%, Multi-Unit 20%. 2025 range $42,676-$57,924.",
+  "raw_excerpt": "$0.57 per owner-occupied home. 75,000 OOHs typical = $42,500 minimum. 2025 collected $42,676 to $57,924.",
+  "confidence": 0.92
+}

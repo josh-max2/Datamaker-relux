@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": 5000,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 2300,
+  "fee_notes": "Royalty: 5% of gross sales or minimum royalty, whichever is greater. Minimum royalty tiered by months in operation: $0 for months 1\u20136; $1,000/mo for 7\u20139 months; $1,400/mo for 10\u201312 months; $1,800/mo for 13\u201315 months; $2,250/mo for 16\u201318 months; $2,700/mo for 19\u201321 months; $5,000/mo for 22+ months. Marketing: up to 1% of gross sales. Technology Development Fee: $2,300/mo (required). IT as a Service: $130/user/mo (required first 36 months). Additional: Accounting $2,500/mo (first 12 months), Business Development $3,500/mo (first 12 months), software licenses, payroll services, and optional services.",
+  "raw_excerpt": "Royalty Fee: The greater of 5% of total Gross Sales or the Minimum Royalty Fee, payable monthly. National Marketing Fund: Up to 1% of total Gross Sales. Technology Development Fee: $2,300 per month. IT As A Service: $130 per user, per month for the first thirty-six months of operations.",
+  "confidence": 0.9
+}

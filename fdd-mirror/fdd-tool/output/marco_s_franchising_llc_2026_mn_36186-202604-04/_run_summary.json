@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\marco_s_franchising_llc_2026_mn_36186-202604-04.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0145,
+      "input_tokens": 3545,
+      "cached": 0,
+      "output_tokens": 191
+    },
+    "item5": {
+      "cost_usd": 0.0157,
+      "input_tokens": 4218,
+      "cached": 1340,
+      "output_tokens": 441
+    },
+    "item6": {
+      "cost_usd": 0.0327,
+      "input_tokens": 7862,
+      "cached": 1340,
+      "output_tokens": 849
+    },
+    "item7": {
+      "cost_usd": 0.0112,
+      "input_tokens": 4511,
+      "cached": 1340,
+      "output_tokens": 84
+    },
+    "item19": {
+      "cost_usd": 0.0706,
+      "input_tokens": 9862,
+      "cached": 1340,
+      "output_tokens": 2973,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.1912,
+      "input_tokens": 19667,
+      "cached": 1340,
+      "output_tokens": 9055,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3358
+}

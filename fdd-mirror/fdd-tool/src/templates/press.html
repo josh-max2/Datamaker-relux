@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Press &amp; Citations — {{ site_name }}{% endblock %}
+{% block description %}Coverage and citations of {{ site_name }} analysis in trade publications, news, and AI-generated answers.{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Press", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Press & Citations — {{ site_name }}",
+  "url": "{{ canonical_url }}",
+  "isPartOf": { "@type": "WebSite", "name": "{{ site_name }}", "url": "{{ SITE_HOST }}{{ url_for('') }}" }
+}
+</script>
+{% endblock %}
+{% block content %}
+<article class="press-page">
+    <h1>Press &amp; Citations</h1>
+    <p class="lead">
+        Where {{ site_name }} analysis has been cited or referenced. We track both
+        traditional press coverage (journalists, trade publications) and AI Overview /
+        chatbot citations from ChatGPT, Perplexity, Claude, and Google's AI features.
+    </p>
+
+    <section>
+        <h2>Press &amp; trade publication coverage</h2>
+        <p class="notes">No press coverage to report yet. This page will populate as journalists and industry analysts cite our data.</p>
+        <p>
+            If you're a journalist working on a franchise-industry story, you can cite our
+            data freely. Please link back to the specific brand or comparison page you're
+            referencing. For interviews, see <a href="{{ url_for('contact/') }}">contact</a>.
+        </p>
+    </section>
+
+    <section>
+        <h2>AI engine citations</h2>
+        <p class="notes">No tracked citations yet. As AI engines cite us in answer overviews, we'll list specific queries and the answers given.</p>
+        <p>
+            We're set up for AI Overview / chatbot citation in three ways:
+            structured data on every page ({{ "Article" if true else "" }} schema,
+            <a href="{{ url_for('') }}sitemap.xml">XML sitemap</a>, FAQPage schema on
+            brand + comparison pages), <code>llms.txt</code> at the site root advertising
+            cite-able content, and a <a href="{{ url_for('methodology/') }}">methodology
+            page</a> documenting how every figure was sourced.
+        </p>
+    </section>
+
+    <section>
+        <h2>How to cite</h2>
+        <p>If you're using our data in your own writing or research:</p>
+        <ul>
+            <li><strong>Brand-specific data:</strong> "According to {{ site_name }}'s analysis of [Brand]'s [YEAR] FDD ([State] filing)…" — link to the specific brand page.</li>
+            <li><strong>Comparisons:</strong> "{{ site_name }} compared [Brand A] and [Brand B] head-to-head…" — link to the specific compare page.</li>
+            <li><strong>Methodology:</strong> "{{ site_name }} extracts Item 7, Item 19, and Item 20 data from publicly filed FDDs, with source-document deep links on every number." — link to the <a href="{{ url_for('methodology/') }}">methodology page</a>.</li>
+        </ul>
+        <p>We don't require permission for fair-use citation. We do appreciate a link.</p>
+    </section>
+</article>
+{% endblock %}

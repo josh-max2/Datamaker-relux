@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\hello_sugar_franchise_llc_2026_mn_36091-202604-03.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0054,
+      "input_tokens": 2000,
+      "cached": 1340,
+      "output_tokens": 200
+    },
+    "item5": {
+      "cost_usd": 0.0078,
+      "input_tokens": 2200,
+      "cached": 1340,
+      "output_tokens": 321
+    },
+    "item6": {
+      "cost_usd": 0.0253,
+      "input_tokens": 2746,
+      "cached": 1340,
+      "output_tokens": 1378
+    },
+    "item7": {
+      "cost_usd": 0.0052,
+      "input_tokens": 2514,
+      "cached": 1340,
+      "output_tokens": 86
+    },
+    "item19": {
+      "cost_usd": 0.4064,
+      "input_tokens": 32071,
+      "cached": 1340,
+      "output_tokens": 20920,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.2361,
+      "input_tokens": 19378,
+      "cached": 1340,
+      "output_tokens": 12105,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.6862
+}

@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 7,
+  "royalty_min_monthly": 800,
+  "marketing_fee_pct": 1.5,
+  "marketing_min_monthly": 2500,
+  "tech_fee_monthly": 200,
+  "fee_notes": "Royalty: 7% of GPS Revenue, waived first 12 months for new franchisees; minimum royalty $0 (months 1-12), $800 (months 13-24), $1,000 (months 25+). MDF: 1.5% of GPS Revenue with minimum contribution. Local marketing: $2,500/month mandatory. Tech: $200/month base + software subscriptions (Autotask, Office 365, QuickBooks). Additional fees: training, convention, transfer, renewal, insurance, audit, etc.",
+  "raw_excerpt": "Royalty Initial 12 months after Royalty Commencement Date: 7% of GPS Revenue; Beginning in month 13: Greater of 7% of GPS Revenue or Minimum Royalty. Marketing Development Fund: 1.5% of GPS Revenue. Local Marketing Expenditures: Minimum $2,500 per month. Software & Technology fees: Technology Fee $200/month, Autotask $84/month minimum, Office 365 $19.32, QuickBooks Online $90/month.",
+  "confidence": 0.9
+}

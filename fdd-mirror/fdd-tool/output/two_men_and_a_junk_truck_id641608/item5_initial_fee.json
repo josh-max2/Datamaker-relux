@@ -1,0 +1,6 @@
+{
+  "initial_franchise_fee_low": 30000,
+  "initial_franchise_fee_high": 130000,
+  "fee_notes": "Metro: $50,000 base, up to $130,000 for 1M+ population. Mod: $30,000 base, up to $40,000 for 300K+ population. Discounts: Military 20%, Affiliate 15%, Conversion 15%.",
+  "confidence": 0.98
+}

@@ -1,0 +1,10 @@
+{
+  "royalty_pct": null,
+  "royalty_min_monthly": 2083.33,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalties are tiered based on Annual Gross Receipts: 6% of first $1M, 5.5% of $1M-$2M, 5% of $2M-$3M, 4% of $3M-$4M, 3% of $4M-$5M, 2% of $5M+; minimum annual royalty $25,000 per office ($2,083.33 monthly equivalent) due January 15 each year. Additional ongoing fees: Agent Services Fee $75/month per sales associate; renewal fee $5,000; late payment interest 18% p.a.; late fees $200 per delinquent payment; transfer fee 25% of current Initial Franchise Fee; audit cost reimbursement if shortfall >2%.",
+  "raw_excerpt": "Royalties are a percentage of your Annual Gross Receipts calculated in accordance with the following formula: (a) 6% of the initial $1,000,000.00 of Annual Gross Receipts; plus (b) 5.5% of Annual Gross Receipts of $1,000,000.01 or more but less than $2,000,000.00; plus (c) 5% of Annual Gross Receipts in excess of $2,000,000.01 or more but less than $3,000,000.00; plus (d) 4% of Annual Gross Receipts of $3,000,000.01 or more but less than $4,000,000.00; plus (e) 3% of Annual Gross Receipts of $4,000,000.01 or more but less than $5,000,000.00; plus (f) 2% of Annual Gross Receipts of $5,000,000.01 or more, subject to a minimum annual royalty fee equal to $25,000 per office.",
+  "confidence": 0.93
+}

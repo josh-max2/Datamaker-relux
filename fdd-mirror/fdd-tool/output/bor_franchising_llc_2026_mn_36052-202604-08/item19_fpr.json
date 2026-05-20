@@ -1,0 +1,61 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Total Gross Sales",
+      "cohort_name": "open_12_24mo",
+      "cohort_raw": "16 franchised Businesses open for at least 12 months as of December 31, 2023",
+      "outlet_count": 16,
+      "reporting_period": "2023 calendar year",
+      "reporting_year": 2023,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 782625,
+      "value_median": 611925,
+      "value_min": 238685,
+      "value_max": 1615513,
+      "pct_above_avg": 37,
+      "page_number": 38,
+      "raw_text": "2023 $12,522,000 $1,615,513 $238,685 $782,625 $611,925 37% 6"
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Total Gross Sales",
+      "cohort_name": "open_12_24mo",
+      "cohort_raw": "32 franchised Businesses open for at least 12 months as of December 31, 2024",
+      "outlet_count": 32,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 718089,
+      "value_median": 577545,
+      "value_min": 181797,
+      "value_max": 1795465,
+      "pct_above_avg": 40,
+      "page_number": 38,
+      "raw_text": "2024 $22,978,854 $1,795,465 $181,797 $718,089 $577,545 40% 13"
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Total Gross Sales",
+      "cohort_name": "open_12_24mo",
+      "cohort_raw": "62 franchised Businesses open for at least 12 months as of December 31, 2025",
+      "outlet_count": 62,
+      "reporting_period": "2025 calendar year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 653287,
+      "value_median": 548673,
+      "value_min": 68474.65,
+      "value_max": 2125237,
+      "pct_above_avg": 48,
+      "page_number": 38,
+      "raw_text": "2025 $32,011,047 $2,125,237 $68,474.65 $653,287 $548,673 48% 30"
+    }
+  ],
+  "confidence": 0.96,
+  "notes": "Cohort is 'open at least 12 months' for each year. Data from unaudited franchisee financial statements."
+}

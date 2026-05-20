@@ -1,0 +1,167 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Weekly Unit Sales (AWUS)",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All Franchised Stores",
+      "outlet_count": 5757,
+      "reporting_period": "2020 calendar year",
+      "value_avg": 25264,
+      "value_median": 23845,
+      "pct_above_avg": 43
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Weekly Unit Sales (AWUS)",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "All Company-Owned Stores",
+      "outlet_count": 335,
+      "reporting_period": "2020 calendar year",
+      "value_avg": 26579,
+      "value_median": 25776,
+      "pct_above_avg": 53
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Weekly Unit Sales (AWUS)",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All Franchised Stores",
+      "outlet_count": 5965,
+      "reporting_period": "2021 calendar year",
+      "value_avg": 26004,
+      "value_median": 24739,
+      "pct_above_avg": 44
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Weekly Unit Sales (AWUS)",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "All Company-Owned Stores",
+      "outlet_count": 351,
+      "reporting_period": "2021 calendar year",
+      "value_avg": 25399,
+      "value_median": 24683,
+      "pct_above_avg": 46
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Weekly Unit Sales (AWUS)",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All Franchised Stores",
+      "outlet_count": 6232,
+      "reporting_period": "2022 calendar year",
+      "value_avg": 25554,
+      "value_median": 24322,
+      "pct_above_avg": 50
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Weekly Unit Sales (AWUS)",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "All Company-Owned Stores",
+      "outlet_count": 275,
+      "reporting_period": "2022 calendar year",
+      "value_avg": 23663,
+      "value_median": 24248,
+      "pct_above_avg": 52
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Weekly Unit Sales (AWUS)",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All Franchised Stores",
+      "outlet_count": 6371,
+      "reporting_period": "2023 calendar year",
+      "value_avg": 25825,
+      "value_median": 24594,
+      "pct_above_avg": 50
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Weekly Unit Sales (AWUS)",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "All Company-Owned Stores",
+      "outlet_count": 276,
+      "reporting_period": "2023 calendar year",
+      "value_avg": 25509,
+      "value_median": 25535,
+      "pct_above_avg": 50
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Weekly Unit Sales (AWUS)",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All Franchised Stores",
+      "outlet_count": 6518,
+      "reporting_period": "2024 calendar year",
+      "value_avg": 26467,
+      "value_median": 25160,
+      "pct_above_avg": 51
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Weekly Unit Sales (AWUS)",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "All Company-Owned Stores",
+      "outlet_count": 270,
+      "reporting_period": "2024 calendar year",
+      "value_avg": 26120,
+      "value_median": 26264,
+      "pct_above_avg": 50
+    },
+    {
+      "metric_name": "ebitda",
+      "metric_raw": "EBITDA % of Royalty Sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "AWUS <$15,000",
+      "outlet_count": 490,
+      "reporting_period": "2024",
+      "value_avg": 1.7,
+      "pct_above_avg": 48.6
+    },
+    {
+      "metric_name": "ebitda",
+      "metric_raw": "EBITDA % of Royalty Sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "AWUS $15,001\u2013$20,000",
+      "outlet_count": 1135,
+      "reporting_period": "2024",
+      "value_avg": 6.7,
+      "pct_above_avg": 50.4
+    },
+    {
+      "metric_name": "ebitda",
+      "metric_raw": "EBITDA % of Royalty Sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "AWUS $20,001\u2013$25,000",
+      "outlet_count": 1426,
+      "reporting_period": "2024",
+      "value_avg": 10.1,
+      "pct_above_avg": 53.1
+    },
+    {
+      "metric_name": "ebitda",
+      "metric_raw": "EBITDA % of Royalty Sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "AWUS $25,001\u2013$30,000",
+      "outlet_count": 1350,
+      "reporting_period": "2024",
+      "value_avg": 12.1,
+      "pct_above_avg": 51.6
+    },
+    {
+      "metric_name": "ebitda",
+      "metric_raw": "EBITDA % of Royalty Sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "AWUS $30,001+",
+      "outlet_count": 1861,
+      "reporting_period": "2024",
+      "value_avg": 14.7,
+      "pct_above_avg": 49.3
+    }
+  ],
+  "confidence": 0.94,
+  "notes": "AWUS = Average Weekly Unit Sales calculated as total annual Royalty Sales \u00f7 weeks operated. Median provided for 2020\u20132024. EBITDA cohorts defined by AWUS performance buckets. All data for outlets open full year."
+}

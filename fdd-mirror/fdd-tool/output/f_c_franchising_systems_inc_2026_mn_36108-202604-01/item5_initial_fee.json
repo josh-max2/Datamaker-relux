@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 54900,
+  "initial_franchise_fee_high": 54900,
+  "fee_notes": "Base fee for territory 175,000-200,000 population. Additional $500 per 1,000-population unit over 200,000. 10% discount for multi-unit purchasers. Up to 15% veteran discount. Winners' Circle rebate program up to full fee refund based on revenue milestones.",
+  "raw_excerpt": "The franchise fee for a territory with a population of between 175,000 and 200,000 is $54,900. If the population of your territory exceeds 200,000, you must pay an additional $500 for each 1,000-population unit (or any portion of a 1,000-population unit) in excess of 200,000.",
+  "confidence": 0.97
+}

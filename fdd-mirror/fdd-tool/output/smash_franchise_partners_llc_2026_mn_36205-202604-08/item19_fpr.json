@@ -1,0 +1,28 @@
+{
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Gross Sales During the Covered Period",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "107 franchised Smash My Trash Businesses (covering, in the aggregate, 507 Territories) that were in operation during all of the 2025 calendar year (the \"Covered Businesses\")",
+      "outlet_count": 107,
+      "reporting_period": "2025 calendar year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1000040,
+      "value_median": 840477,
+      "value_min": 69247,
+      "value_max": 6889770,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 37.4,
+      "page_number": 69,
+      "raw_text": "Median Gross Sales $840,477\nAverage Gross Sales $1,000,040\nMaximum Gross Sales $6,889,770\nMinimum Gross Sales $69,247\nNumber of Covered Businesses that Exceeded the Average Gross Sales 40\nPercentage of Covered Businesses that Exceeded the Average Gross Sales 37.4%",
+      "notes": "Note 10 states average is computed by dividing total Gross Sales by 110, but only 107 franchises are listed in the table. This discrepancy is noted in the source document. Individual franchise-level gross sales are also disclosed for each of the 107 Covered Businesses. Affiliate-owned businesses were excluded."
+    }
+  ],
+  "has_item19": true,
+  "confidence": 0.92,
+  "notes": "Item 19 discloses gross sales for 107 franchised Covered Businesses for the full 2025 calendar year. Summary statistics (average, median, min, max) are provided at the cohort level. Note 10 in the document states the average is computed by dividing by 110, which is inconsistent with the 107 Covered Businesses listed \u2014 this discrepancy appears in the source document itself and may reflect three additional businesses reported elsewhere or a drafting error. Individual outlet-level gross sales are disclosed for Franchises 1 through 107. No profit, EBITDA, or other financial metrics are disclosed. Only gross sales are represented."
+}

@@ -1,0 +1,8 @@
+{
+  "royalty_pct": 5.5,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": 621,
+  "fee_notes": "Royalty tiered: 5.5% of gross revenue up to $1M/year, 3% above $1M. Quarterly royalty minimum $7,500. Marketing Fund (CMF) 2% of gross revenue, monthly minimum $621, maximum $1,728 per office (as of Jan 1, 2026). Additional fees: transfer $5,000, liquidated damages on early termination (36\u00d7 or remaining term monthly fees), audit $450+/day minimum, late interest at prime+2%.",
+  "raw_excerpt": "Royalty Fees: 5.5% of aggregate Gross Revenue up to $1,000,000 per calendar year; 3% in excess of $1,000,000. Minimum Standard Fees: If quarterly royalties <$7,500, difference due. Commercial Marketing Fund (CMF): 2% of Gross Revenue monthly with minimum $621 and maximum $1,728 per office.",
+  "confidence": 0.92
+}

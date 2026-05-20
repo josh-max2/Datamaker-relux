@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": 4000,
+  "tech_fee_monthly": 1000,
+  "fee_notes": "Royalty Fee is 6% of weekly gross sales, payable weekly on Monday. Advertising Fee is 2-4% of weekly gross sales (currently 2% collected); franchisor may increase up to 4% maximum. Local Advertising minimum is $4,000/month (recommended $8,000-$12,000/month for first six months, $6,000-$8,000/month thereafter). Advertising Cooperative fee is at least 3% of gross sales but not currently assessed. Technology Fee is currently $1,000/month plus any data overage costs, payable monthly. Late fee of $10/day for unpaid royalty fees or overdue reports. Liquidated damages equal to average monthly royalties multiplied by lesser of 24 or remaining months in agreement.",
+  "raw_excerpt": "Royalty Fee (Note 3) | 6% of weekly gross sales | Payable weekly on Monday | Late fee of $10 per day for each day of non-payment of the Royalty Fee and $10 per day for each day a completed royalty report is not submitted.\nAdvertising Fee (Note 4) | 2-4% of weekly gross sales (Currently, 2% is being collected) | Payable weekly on Monday | Collected by us and is non-refundable; we will collect your Advertising Fee via electronic funds transfer. We have the ability to increase this fee to a maximum of 4%.\nLocal Advertising \u2013 Franchise Agreement (Note 5) | $4,000 a month minimum, recommended is $8,000 to $12,000 a month for the first six months and $6,000 to $8,000 a month after the first six months | To be spent weekly by you\nTechnology Fee (Note 6) | The then current fee plus any data overages costs; Currently $1,000 a month plus any data overage costs | Payable monthly | Collected by us monthly. May be adjusted over the term of the Franchise.\nAdvertising Cooperative | At least 3% of gross sales. Not currently assessed. | As determined by the cooperative",
+  "confidence": 0.92
+}

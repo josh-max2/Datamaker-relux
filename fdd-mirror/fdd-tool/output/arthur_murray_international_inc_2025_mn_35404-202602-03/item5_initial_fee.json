@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 25000,
+  "initial_franchise_fee_high": 100000,
+  "fee_notes": "Fee is based on population of granted market area: $25,000 for 0\u2013250,000; $50,000 for 250,001\u2013500,000; $75,000 for 500,001\u20131,000,000; $100,000 for over 1,000,000. Paid in lump sum at signing. Non-refundable. No initial franchise fees were collected during the June 2024 or December 2024 Fiscal Years.",
+  "raw_excerpt": "The initial franchise fee will be based upon the population of the market area we grant you (if any) as follows: Population Franchise Fee a) 0 to 250,000 b) 250,001 to 500,000 $25,000 $50,000 c) 500,001 to 1,000,000 $75,000 d) Over 1,000,000 $100,000 You must pay the initial franchise fee in a lump sum when you sign the Franchise Agreement. We did not collect any initial franchise fees during the June 2024 Fiscal Year nor during the December 2024 Fiscal Year. The initial franchise fee is not refundable.",
+  "confidence": 0.97
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\bq_concepts_llc_2026_mn_35646-202603-13.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0057,
+      "input_tokens": 2007,
+      "cached": 1340,
+      "output_tokens": 219
+    },
+    "item5": {
+      "cost_usd": 0.0072,
+      "input_tokens": 2407,
+      "cached": 1340,
+      "output_tokens": 240
+    },
+    "item6": {
+      "cost_usd": 0.022,
+      "input_tokens": 5998,
+      "cached": 1340,
+      "output_tokens": 509
+    },
+    "item7": {
+      "cost_usd": 0.0095,
+      "input_tokens": 3771,
+      "cached": 1340,
+      "output_tokens": 121
+    },
+    "item19": {
+      "cost_usd": 0.0136,
+      "input_tokens": 5263,
+      "cached": 1340,
+      "output_tokens": 94,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.0396,
+      "input_tokens": 6407,
+      "cached": 1340,
+      "output_tokens": 1601,
+      "images_sent": 3
+    }
+  },
+  "total_cost_usd": 0.0976
+}

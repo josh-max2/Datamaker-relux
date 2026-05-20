@@ -1,0 +1,8 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 5000,
+  "marketing_fee_pct": 2,
+  "fee_notes": "Tiered royalty: 6% up to $1M GR (min $60,000/yr), 5.5% $1M-$2M, 5.0% $2M-$5M, 4.5% $5M-$10M, 4.25% $10M-$20M, 4.0% $20M-$30M, 3.75% above $30M. Tiered marketing/tech fund: 2% up to $2M, 1.875% $2M-$5M, 1.750% $5M-$10M, 1.625% $10M-$30M, 1.50% above $30M. Rates reset January 1 each year.",
+  "raw_excerpt": "Ongoing Royalties: 6% of annual Gross Revenues up to and including $1,000,000, with a minimum annual Royalty of $60,000. National Marketing and Technology Fund Contributions: 2% of annual Gross Revenues up to and including $2,000,000.",
+  "confidence": 0.95
+}

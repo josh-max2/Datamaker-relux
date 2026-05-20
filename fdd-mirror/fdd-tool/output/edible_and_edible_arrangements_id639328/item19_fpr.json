@@ -1,0 +1,43 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Gross Sales",
+      "cohort_name": "open_36_plus_mo",
+      "cohort_raw": "Businesses Open 3 or More Years",
+      "outlet_count": 670,
+      "reporting_period": "fiscal year ending December 31, 2024",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 538054,
+      "value_median": 515984,
+      "value_min": 102925,
+      "value_max": 1435530,
+      "pct_above_avg": 44,
+      "page_number": 65,
+      "raw_text": "Average Gross Sales $538,054; Number of Businesses 670; Number Above Average 295; % Above Average 44%; Median Gross Sales $515,984; Highest Gross Sales $1,435,530; Lowest Gross Sales $102,925"
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Gross Sales",
+      "cohort_name": "open_12_24mo",
+      "cohort_raw": "Businesses Open At Least 1 Year But Less Than 2 Years",
+      "outlet_count": 2,
+      "reporting_period": "fiscal year ending December 31, 2024",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 555881,
+      "value_median": 555881,
+      "value_min": 380460,
+      "value_max": 731302,
+      "pct_above_avg": 50,
+      "page_number": 65,
+      "raw_text": "Average Gross Sales $555,881; Number of Businesses 2; Number Above Average 1; % Above Average 50%; Median Gross Sales $555,881; Highest Gross Sales $731,302; Lowest Gross Sales $380,460"
+    }
+  ],
+  "confidence": 0.97,
+  "notes": "Zero businesses in the 2-3 year cohort. The 1-2 year cohort (open_12_24mo) is used for the 'at least 1 year but less than 2 years' group. Median equals average for 2-outlet cohort (expected). 113 permanently closed businesses and 7 temporarily closed businesses excluded."
+}

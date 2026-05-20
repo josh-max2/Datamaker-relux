@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty is 6% of total net sales, paid weekly. National Advertising Fund is tiered: 2% of net sales for stores in shopping centers or malls, 3% for stores not in shopping centers or malls; franchisor reserves right to increase to 4%. marketing_fee_pct reflects the lower tier (2%); upper tier is 3% (or up to 4%). Local Advertising is an additional 2% of net sales spent on franchisee's own approved advertising. Brand Technology System Support Services fee is $840\u2013$1,500 per year for mandatory services plus up to $3,250/year for optional services (annual fee paid quarterly); no single monthly figure is disclosed, so tech_fee_monthly is null. Late fee on overdue royalty is 1.5% per month plus $25 per week.",
+  "raw_excerpt": "Royalty (1, 2) 6% of total net sales; interest on any overdue amount of 1.5% per month and late fee of $25 per week (3) ... Net sales includes all gross sales from the franchise location, less sales tax and use tax.\n\nNational Advertising Fund (1, 2) Currently: 2% of total net sales for Stores located in shopping centers or malls, or 3% of total net sales for Stores not located in shopping centers or malls ... Affiliate-owned Restaurants also contribute; we reserve the right to increase your required weekly contribution to 4% of Net Sales.\n\nLocal Advertising (5) Currently 2% of total net sales ... You must spend funds on your own advertising that we approve.\n\nBrand Technology System Support Services (6) Currently, $840-$1,500 per year for mandatory services plus up to $3,250 per year for optional services.",
+  "confidence": 0.88
+}

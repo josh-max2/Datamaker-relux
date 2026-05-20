@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 30000,
+  "initial_franchise_fee_high": 50000,
+  "fee_notes": "Fee based on market tier by temp help payroll: Tier 3 ($25M-$100M)=$30k, Tier 2 ($100M-$300M)=$40k, Tier 1 ($300M-$500M)=$50k. Discounts available: 25% veteran, 25% staffing industry experience, 25-35% multiple agreement, up to 100% affiliate employee. Only one discount applies per agreement. Additional $10,000 Professional Services Fee if signing Professional Services Addendum.",
+  "raw_excerpt": "A purchaser of an undeveloped market will pay us a franchise fee that ranges from $30,000 - $50,000, depending on the size of the market.",
+  "confidence": 0.97
+}

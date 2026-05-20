@@ -1,0 +1,70 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2022,
+      "outlet_type": "franchised",
+      "outlets_start": 176,
+      "outlets_end": 217,
+      "net_change": 41
+    },
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 217,
+      "outlets_end": 275,
+      "net_change": 58
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 275,
+      "outlets_end": 304,
+      "net_change": 29
+    },
+    {
+      "year": 2022,
+      "outlet_type": "company-owned",
+      "outlets_start": 78,
+      "outlets_end": 79,
+      "net_change": 1
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 79,
+      "outlets_end": 82,
+      "net_change": 3
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 82,
+      "outlets_end": 82,
+      "net_change": 0
+    },
+    {
+      "year": 2022,
+      "outlet_type": "total",
+      "outlets_start": 254,
+      "outlets_end": 296,
+      "net_change": 42
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 296,
+      "outlets_end": 357,
+      "net_change": 61
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 357,
+      "outlets_end": 386,
+      "net_change": 29
+    }
+  ],
+  "state_year_status": [],
+  "confidence": 0.72,
+  "notes": "Table 1 fiscal years: 2022=Dec 2021-Nov 2022, 2023=Dec 2022-Nov 2023, 2024=Dec 2023-Dec 2024. Company-owned centers are affiliate-owned (AFCLLC), not franchisor-owned. Table 3 (Status of Franchised Outlets) not included in provided text; state_year_status is empty. Table 2 (Transfers) was partially provided but not extracted as it does not map to state_year_status schema."
+}

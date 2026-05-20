@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\aqua_tots_swim_school_holding_llc_2025_mn_35237-202601-03.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0062,
+      "input_tokens": 2211,
+      "cached": 1340,
+      "output_tokens": 215
+    },
+    "item5": {
+      "cost_usd": 0.0049,
+      "input_tokens": 1575,
+      "cached": 1340,
+      "output_tokens": 253
+    },
+    "item6": {
+      "cost_usd": 0.0185,
+      "input_tokens": 3904,
+      "cached": 1340,
+      "output_tokens": 694
+    },
+    "item7": {
+      "cost_usd": 0.0085,
+      "input_tokens": 3563,
+      "cached": 1340,
+      "output_tokens": 95
+    },
+    "item19": {
+      "cost_usd": 0.0143,
+      "input_tokens": 5544,
+      "cached": 1340,
+      "output_tokens": 85,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.138,
+      "input_tokens": 11339,
+      "cached": 1340,
+      "output_tokens": 7171,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.1904
+}

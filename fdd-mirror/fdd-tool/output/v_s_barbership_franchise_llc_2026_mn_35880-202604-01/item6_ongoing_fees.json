@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 150,
+  "fee_notes": "Royalty is tiered: 6% of Gross Sales up to $600,000; 3.5% of Gross Sales above $600,000. Royalties increase to up to 15% during default periods (\"Breaching Royalties\"). Advertising Payment is between 1% and 3% of Gross Sales as determined by franchisor; if less than 3%, franchisee must spend the difference on local store marketing. Computer Software Maintenance Fee is $275\u2013$300/month (to third-party POS provider). Technology Fee is $150/month per location. All fees except Royalties may be modified by franchisor without franchisee approval, subject to 20% annual cap on increases.",
+  "raw_excerpt": "WEEKLY FEES\nRoyalties 1,2 | 6% of Gross Sales up to $600,000; 3.5% of Gross Sales above $600,000. | Payable weekly.\nAdvertising Payment2,3 | Between 1% and 3% of Gross Sales. | Payable weekly. | If your Advertising Payment is less than 3%, you must spend the difference between your Advertising Payment and 3% of your Gross Sales on local store marketing in a manner consistent with our requirements.\nMONTHLY FEES\nComputer Software Maintenance Fee | $275-$300 per month. | Payable monthly to our third-party provider. | This fee includes support and updates to your required POS software.\nTechnology Fee | $150 per month per V's Barbershop | Payable monthly. | This fee includes certain PC support and software updates.",
+  "confidence": 0.92
+}

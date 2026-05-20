@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 49900,
+  "initial_franchise_fee_high": 74900,
+  "fee_notes": "Base fee $49,900 for DOT with population up to 200,000 households. Additional fee of $0.25 per household over 200,000 (max 300,000 households total). Example: 210,000 households = $49,900 + (10,000 \u00d7 $0.25) = $52,400. High estimate $74,900 assumes 300,000 households. Discounts available: veterans 20% off, first responders $2,500 off, conversions $14,900\u2013$34,900 (tiered by revenue), multiple territories at signup $10,000 (Standard) or $5,000 (Conversion). Initial Package Fee $23,500 + sales tax (standard) or $8,500 modified (conversion). Fees non-refundable.",
+  "raw_excerpt": "The Initial Franchise Fee is $49,900 (\"Base Fee\") for a DOT with a population of up to 200,000 households. For a DOT with populations greater than 200,000 households, the Initial Franchise Fee will equal the Base Fee, plus $0.25 for each household over 200,000 (the \"Additional Fee\").",
+  "confidence": 0.95
+}

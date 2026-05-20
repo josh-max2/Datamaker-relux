@@ -1,0 +1,763 @@
+{
+  "first_run_at": "2026-05-17 00:07:27",
+  "brands": {
+    "1-800 WATER DAMAGE": {
+      "brand": "1-800 WATER DAMAGE",
+      "run": 1,
+      "started_at": "2026-05-17 00:07:29",
+      "portal_id": "640558",
+      "legal_name": "1-800 WATER DAMAGE International, LLC",
+      "trade_name": "1-800 WATER DAMAGE",
+      "effective_date": "3/30/2026",
+      "sha256": "3c504230c50b153eebac5a546c23b7b0874b28f856a6e7300d39ef5d6b617181",
+      "pdf_path": "data\\wi_scrape\\1_800_water_damage_id640558.pdf",
+      "was_duplicate": false,
+      "source_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640558&hash=696076814&search=external&type=GENERAL",
+      "extract_returncode": 0,
+      "extract_tail": "text-only, pages 19-26)...\n  saved -> output/item6_ongoing_fees.json  ($0.0269)\n\n[4/6] Item 7 (text-only, pages 26-31)...\n  saved -> output/item7_investment.json  ($0.0154)\n\n[5/6] Item 19 (text+vision, pages 60-64, rasterizing 60-64)...\n  saved -> output/item19_fpr.json  ($0.0844, 5 images)\n\n[6/6] Item 20 (text+vision, pages 64-70, rasterizing 64-70)...\n  saved -> output/item20_outlets.json  ($0.1961, 7 images)\n\nDone. Total cost: $0.3499\nOutputs in: C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\n",
+      "extract_cost_usd": "0.3499",
+      "status": "ok",
+      "elapsed_sec": 148.8
+    },
+    "1-800-Packouts": {
+      "brand": "1-800-Packouts",
+      "run": 1,
+      "started_at": "2026-05-17 00:09:58",
+      "portal_id": "640869",
+      "legal_name": "1-800-Packouts Holdco, LLC",
+      "trade_name": "1-800-Packouts",
+      "effective_date": "4/8/2026",
+      "sha256": "e28c44571c6382c7a166c3f6d28af87dea6b1e5922754b0f44a8aacd7ce68867",
+      "pdf_path": "data\\wi_scrape\\1_800_packouts_id640869.pdf",
+      "was_duplicate": false,
+      "source_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640869&hash=663307600&search=external&type=GENERAL",
+      "extract_returncode": 0,
+      "extract_tail": "text-only, pages 17-24)...\n  saved -> output/item6_ongoing_fees.json  ($0.0201)\n\n[4/6] Item 7 (text-only, pages 24-28)...\n  saved -> output/item7_investment.json  ($0.0141)\n\n[5/6] Item 19 (text+vision, pages 58-62, rasterizing 58-62)...\n  saved -> output/item19_fpr.json  ($0.0782, 5 images)\n\n[6/6] Item 20 (text+vision, pages 62-71, rasterizing 62-69)...\n  saved -> output/item20_outlets.json  ($0.2214, 8 images)\n\nDone. Total cost: $0.3511\nOutputs in: C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\n",
+      "extract_cost_usd": "0.3511",
+      "status": "ok",
+      "elapsed_sec": 182.8
+    },
+    "MIDWEST LAWN CARE LLC": {
+      "brand": "MIDWEST LAWN CARE LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:20:24",
+      "status": "no_active_filing",
+      "n_filings_seen": 19
+    },
+    "WEED MAN": {
+      "brand": "WEED MAN",
+      "run": 2,
+      "started_at": "2026-05-17 00:20:26",
+      "portal_id": "641277",
+      "legal_name": "Turf Holdings Inc",
+      "trade_name": "Weed Man",
+      "effective_date": "4/27/2026",
+      "sha256": "1be2052c369a8187ebbae5ca74490bb10d95e39cc472fd22f78884ba50189154",
+      "pdf_path": "data\\wi_scrape\\weed_man_id641277.pdf",
+      "was_duplicate": false,
+      "source_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=641277&hash=214873516&search=external&type=GENERAL",
+      "extract_returncode": 0,
+      "extract_tail": "text-only, pages 15-20)...\n  saved -> output/item6_ongoing_fees.json  ($0.0166)\n\n[4/6] Item 7 (text-only, pages 20-21)...\n  saved -> output/item7_investment.json  ($0.0062)\n\n[5/6] Item 19 (text+vision, pages 45-47, rasterizing 45-47)...\n  saved -> output/item19_fpr.json  ($0.0513, 3 images)\n\n[6/6] Item 20 (text+vision, pages 47-56, rasterizing 47-54)...\n  saved -> output/item20_outlets.json  ($0.2479, 8 images)\n\nDone. Total cost: $0.3421\nOutputs in: C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\n",
+      "extract_cost_usd": "0.3421",
+      "status": "ok",
+      "elapsed_sec": 172.0
+    },
+    "EMBERS AMERICA LLC": {
+      "brand": "EMBERS AMERICA LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:18",
+      "status": "no_active_filing",
+      "n_filings_seen": 3
+    },
+    "EMBERS AMERICA": {
+      "brand": "EMBERS AMERICA",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:19",
+      "status": "no_active_filing",
+      "n_filings_seen": 3
+    },
+    "UNIGLOBE TRAVEL USA LLC": {
+      "brand": "UNIGLOBE TRAVEL USA LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:22",
+      "status": "no_active_filing",
+      "n_filings_seen": 13
+    },
+    "UNIGLOBE INHOUSE TRAVEL": {
+      "brand": "UNIGLOBE INHOUSE TRAVEL",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:24",
+      "status": "no_active_filing",
+      "n_filings_seen": 5
+    },
+    "SANDELLAS LLC": {
+      "brand": "SANDELLAS LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:27",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "SANDELLAS CAFE": {
+      "brand": "SANDELLAS CAFE",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:29",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "VILLA PIZZA LLC": {
+      "brand": "VILLA PIZZA LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:32",
+      "status": "no_active_filing",
+      "n_filings_seen": 5
+    },
+    "COZZOLIS": {
+      "brand": "COZZOLIS",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:34",
+      "status": "no_active_filing",
+      "n_filings_seen": 5
+    },
+    "HOMES & LAND AFFILIATES LLC": {
+      "brand": "HOMES & LAND AFFILIATES LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:37",
+      "status": "no_active_filing",
+      "n_filings_seen": 7
+    },
+    "RENTAL GUIDE MAGAZINE": {
+      "brand": "RENTAL GUIDE MAGAZINE",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:39",
+      "status": "no_active_filing",
+      "n_filings_seen": 6
+    },
+    "KOPPANG FRANCHISE DEVELOPMENT CO LLC": {
+      "brand": "KOPPANG FRANCHISE DEVELOPMENT CO LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:42",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "MODERNISTIC": {
+      "brand": "MODERNISTIC",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:44",
+      "status": "no_active_filing",
+      "n_filings_seen": 2
+    },
+    "HD FRANCHISING SYSTEMS LLC": {
+      "brand": "HD FRANCHISING SYSTEMS LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:47",
+      "status": "no_active_filing",
+      "n_filings_seen": 3
+    },
+    "HOUSE DOCTORS HANDYMAN SERVICE": {
+      "brand": "HOUSE DOCTORS HANDYMAN SERVICE",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:49",
+      "status": "no_active_filing",
+      "n_filings_seen": 3
+    },
+    "LHG HOLDINGS LLC": {
+      "brand": "LHG HOLDINGS LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:52",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "COMEDYSPORTZ": {
+      "brand": "COMEDYSPORTZ",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:54",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "LEESBURG GROUP LLC": {
+      "brand": "LEESBURG GROUP LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:57",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "YOUR OFFICE USA": {
+      "brand": "YOUR OFFICE USA",
+      "run": 2,
+      "started_at": "2026-05-17 00:23:59",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "KJB 3 LLC": {
+      "brand": "KJB 3 LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:02",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "1 800 GOT JUNK LLC": {
+      "brand": "1 800 GOT JUNK LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:04",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "RUBBISH BOYS": {
+      "brand": "RUBBISH BOYS",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:07",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "CHARTER PRACTICES INTERNATIONAL LLC": {
+      "brand": "CHARTER PRACTICES INTERNATIONAL LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:09",
+      "status": "no_active_filing",
+      "n_filings_seen": 2
+    },
+    "VETSMART": {
+      "brand": "VETSMART",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:12",
+      "status": "no_active_filing",
+      "n_filings_seen": 2
+    },
+    "INTERNET SOURCE MEDIA LLC": {
+      "brand": "INTERNET SOURCE MEDIA LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:14",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "NETSOURCE MEDIA": {
+      "brand": "NETSOURCE MEDIA",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:17",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "OAM NATIONAL LLC": {
+      "brand": "OAM NATIONAL LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:19",
+      "status": "no_active_filing",
+      "n_filings_seen": 2
+    },
+    "OWNERS AUTO MART": {
+      "brand": "OWNERS AUTO MART",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:22",
+      "status": "no_active_filing",
+      "n_filings_seen": 2
+    },
+    "INTERNATIONAL TOP VALUE AUTOMOTIVE LLC": {
+      "brand": "INTERNATIONAL TOP VALUE AUTOMOTIVE LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:24",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "TOP VALUE MUFFLER": {
+      "brand": "TOP VALUE MUFFLER",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:27",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "VISIONS GROUP LLC": {
+      "brand": "VISIONS GROUP LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:29",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "SANTAS CLAUSET": {
+      "brand": "SANTAS CLAUSET",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:32",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "PALMER ARNOLD GOLF MANAGEMENT INTERNATIONAL LLC": {
+      "brand": "PALMER ARNOLD GOLF MANAGEMENT INTERNATIONAL LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:34",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "ARNOLD PALMER GOLF MANAGEMENT INTERNATIONAL LLC": {
+      "brand": "ARNOLD PALMER GOLF MANAGEMENT INTERNATIONAL LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:37",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "WINNERS FRANCHISE SERVICES LLC": {
+      "brand": "WINNERS FRANCHISE SERVICES LLC",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:39",
+      "status": "no_active_filing",
+      "n_filings_seen": 2
+    },
+    "MRS WINNERS": {
+      "brand": "MRS WINNERS",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:42",
+      "status": "no_active_filing",
+      "n_filings_seen": 2
+    },
+    "KILLIAN SPANBAUER FRANCHISE INC": {
+      "brand": "KILLIAN SPANBAUER FRANCHISE INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:44",
+      "status": "no_active_filing",
+      "n_filings_seen": 14
+    },
+    "ATHLETE'S FOOT": {
+      "brand": "ATHLETE'S FOOT",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:47",
+      "status": "no_active_filing",
+      "n_filings_seen": 8
+    },
+    "LEADERSHIP MANAGEMENT INC": {
+      "brand": "LEADERSHIP MANAGEMENT INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:49",
+      "status": "no_active_filing",
+      "n_filings_seen": 8
+    },
+    "SUCCESS MOTIVATION INSTITUTE": {
+      "brand": "SUCCESS MOTIVATION INSTITUTE",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:52",
+      "status": "no_active_filing",
+      "n_filings_seen": 8
+    },
+    "RACO CAR WASH SYSTEMS INC": {
+      "brand": "RACO CAR WASH SYSTEMS INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:54",
+      "status": "no_active_filing",
+      "n_filings_seen": 10
+    },
+    "SPOT NOT CAR WASH": {
+      "brand": "SPOT NOT CAR WASH",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:57",
+      "status": "no_active_filing",
+      "n_filings_seen": 10
+    },
+    "MARTIN FRANCHISES INC": {
+      "brand": "MARTIN FRANCHISES INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:24:59",
+      "status": "no_active_filing",
+      "n_filings_seen": 24
+    },
+    "1 HOUR MARTINIZING": {
+      "brand": "1 HOUR MARTINIZING",
+      "run": 2,
+      "started_at": "2026-05-17 00:25:02",
+      "status": "no_active_filing",
+      "n_filings_seen": 23
+    },
+    "CAR X SERVICE SYSTEMS INC": {
+      "brand": "CAR X SERVICE SYSTEMS INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:25:04",
+      "status": "no_active_filing",
+      "n_filings_seen": 8
+    },
+    "CAR X MUFFLER & BRAKE": {
+      "brand": "CAR X MUFFLER & BRAKE",
+      "run": 2,
+      "started_at": "2026-05-17 00:25:07",
+      "status": "no_active_filing",
+      "n_filings_seen": 8
+    },
+    "PACKAGING STORE INC": {
+      "brand": "PACKAGING STORE INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:25:09",
+      "status": "no_active_filing",
+      "n_filings_seen": 7
+    },
+    "HANDLE WITH CARE PACKAGING STORE": {
+      "brand": "HANDLE WITH CARE PACKAGING STORE",
+      "run": 2,
+      "started_at": "2026-05-17 00:25:12",
+      "status": "no_active_filing",
+      "n_filings_seen": 7
+    },
+    "COST CUTTERS": {
+      "brand": "COST CUTTERS",
+      "run": 2,
+      "started_at": "2026-05-17 00:25:14",
+      "portal_id": "639884",
+      "legal_name": "THE BARBERS, HAIRSTYLING FOR MEN & WOMEN, INC.",
+      "trade_name": "Cost Cutters",
+      "effective_date": "10/20/2025",
+      "sha256": "fe5c00f2158997133789fac4f4cfd279f9ab12f2edc881d60ab0575dc38dcbe3",
+      "pdf_path": "data\\wi_scrape\\cost_cutters_id639884.pdf",
+      "was_duplicate": false,
+      "source_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=639884&hash=1535532836&search=external&type=GENERAL",
+      "extract_returncode": 0,
+      "extract_tail": "text-only, pages 25-27)...\n  saved -> output/item6_ongoing_fees.json  ($0.0139)\n\n[4/6] Item 7 (text-only, pages 29-33)...\n  saved -> output/item7_investment.json  ($0.0131)\n\n[5/6] Item 19 (text+vision, pages 64-65, rasterizing 64-65)...\n  saved -> output/item19_fpr.json  ($0.0369, 2 images)\n\n[6/6] Item 20 (text+vision, pages 65-72, rasterizing 65-72)...\n  saved -> output/item20_outlets.json  ($0.1944, 8 images)\n\nDone. Total cost: $0.2854\nOutputs in: C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\n",
+      "extract_cost_usd": "0.2854",
+      "status": "ok",
+      "elapsed_sec": 124.6
+    },
+    "BARBERS HAIRSTYLING FOR MEN & WOMEN INC": {
+      "brand": "BARBERS HAIRSTYLING FOR MEN & WOMEN INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:27:19",
+      "status": "no_active_filing",
+      "n_filings_seen": 36
+    },
+    "COVERALL NORTH AMERICA INC": {
+      "brand": "COVERALL NORTH AMERICA INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:27:20",
+      "status": "no_active_filing",
+      "n_filings_seen": 16
+    },
+    "COVERALL OF WI INC": {
+      "brand": "COVERALL OF WI INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:27:23",
+      "status": "no_active_filing",
+      "n_filings_seen": 16
+    },
+    "US STRUCTURES INC": {
+      "brand": "US STRUCTURES INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:27:25",
+      "status": "no_active_filing",
+      "n_filings_seen": 16
+    },
+    "ARCHADECK": {
+      "brand": "ARCHADECK",
+      "run": 2,
+      "started_at": "2026-05-17 00:27:28",
+      "portal_id": "640172",
+      "legal_name": "Archadeck Franchisor, LLC",
+      "trade_name": "Archadeck Outdoor Living",
+      "effective_date": "1/28/2026",
+      "sha256": "f8fdba2bd388946376bbaeb8b9259bf2791aeb15228971a9ee1779317a8fd3a0",
+      "pdf_path": "data\\wi_scrape\\archadeck_outdoor_living_id640172.pdf",
+      "was_duplicate": false,
+      "source_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640172&hash=1043020076&search=external&type=GENERAL",
+      "extract_returncode": 0,
+      "extract_tail": "text-only, pages 19-22)...\n  saved -> output/item6_ongoing_fees.json  ($0.0233)\n\n[4/6] Item 7 (text-only, pages 24-25)...\n  saved -> output/item7_investment.json  ($0.0078)\n\n[5/6] Item 19 (text+vision, pages 45-55, rasterizing 45-52)...\n  saved -> output/item19_fpr.json  ($0.1877, 8 images)\n\n[6/6] Item 20 (text+vision, pages 55-59, rasterizing 55-59)...\n  saved -> output/item20_outlets.json  ($0.1642, 5 images)\n\nDone. Total cost: $0.4079\nOutputs in: C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\n",
+      "extract_cost_usd": "0.4079",
+      "status": "ok",
+      "elapsed_sec": 167.1
+    },
+    "WILD BIRD CENTERS OF AMERICA INC": {
+      "brand": "WILD BIRD CENTERS OF AMERICA INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:30:15",
+      "status": "no_active_filing",
+      "n_filings_seen": 24
+    },
+    "WILD BIRD CENTER": {
+      "brand": "WILD BIRD CENTER",
+      "run": 2,
+      "started_at": "2026-05-17 00:30:16",
+      "status": "no_active_filing",
+      "n_filings_seen": 26
+    },
+    "NICAR FRANCHISING INC": {
+      "brand": "NICAR FRANCHISING INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:30:19",
+      "status": "no_active_filing",
+      "n_filings_seen": 10
+    },
+    "GREAT STEAK & FRY CO": {
+      "brand": "GREAT STEAK & FRY CO",
+      "run": 2,
+      "started_at": "2026-05-17 00:30:21",
+      "status": "no_active_filing",
+      "n_filings_seen": 8
+    },
+    "EXPRESS SERVICES INC": {
+      "brand": "EXPRESS SERVICES INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:30:24",
+      "status": "no_active_filing",
+      "n_filings_seen": 19
+    },
+    "EXPRESS SERVICES": {
+      "brand": "EXPRESS SERVICES",
+      "run": 2,
+      "started_at": "2026-05-17 00:30:26",
+      "portal_id": "640459",
+      "legal_name": "Express Services, Inc.",
+      "trade_name": "Express Employment Professionals",
+      "effective_date": "3/27/2026",
+      "sha256": "6a6ddaf4631b7a388c3de929c750ddd012efbfa48c812fd2d6bcc52da770cf36",
+      "pdf_path": "data\\wi_scrape\\express_employment_professionals_id640459.pdf",
+      "was_duplicate": false,
+      "source_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=640459&hash=1278720264&search=external&type=GENERAL",
+      "extract_returncode": 0,
+      "extract_tail": "...\n  saved -> output/item5_initial_fee.json  ($0.0129)\n\n[3/6] Item 6 (text-only, pages 27-45)...\n  saved -> output/item6_ongoing_fees.json  ($0.0528)\n\n[4/6] Item 7 (text-only, pages 47-51)...\n  saved -> output/item7_investment.json  ($0.0160)\n\n[5/6] Item 19: skipped (section not found)\n\n[6/6] Item 20 (text+vision, pages 109-120, rasterizing 109-116)...\n  saved -> output/item20_outlets.json  ($0.2388, 8 images)\n\nDone. Total cost: $0.3301\nOutputs in: C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\n",
+      "extract_cost_usd": "0.3301",
+      "status": "ok",
+      "elapsed_sec": 138.8
+    },
+    "PJR MANAGEMENT INC": {
+      "brand": "PJR MANAGEMENT INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:32:45",
+      "status": "no_active_filing",
+      "n_filings_seen": 12
+    },
+    "DAIRY QUEEN BRAZIER": {
+      "brand": "DAIRY QUEEN BRAZIER",
+      "run": 2,
+      "started_at": "2026-05-17 00:32:46",
+      "status": "no_active_filing",
+      "n_filings_seen": 12
+    },
+    "CELEX GROUP INC": {
+      "brand": "CELEX GROUP INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:32:49",
+      "status": "no_active_filing",
+      "n_filings_seen": 4
+    },
+    "SUCCESSORIES": {
+      "brand": "SUCCESSORIES",
+      "run": 2,
+      "started_at": "2026-05-17 00:32:51",
+      "status": "no_active_filing",
+      "n_filings_seen": 4
+    },
+    "GAF MATERIALS CORP": {
+      "brand": "GAF MATERIALS CORP",
+      "run": 2,
+      "started_at": "2026-05-17 00:32:54",
+      "status": "no_active_filing",
+      "n_filings_seen": 2
+    },
+    "BUILDING MATERIALS CORP OF AMERICA": {
+      "brand": "BUILDING MATERIALS CORP OF AMERICA",
+      "run": 2,
+      "started_at": "2026-05-17 00:32:56",
+      "status": "no_active_filing",
+      "n_filings_seen": 2
+    },
+    "BUNDY AMERICAN CORP": {
+      "brand": "BUNDY AMERICAN CORP",
+      "run": 2,
+      "started_at": "2026-05-17 00:32:59",
+      "status": "no_active_filing",
+      "n_filings_seen": 4
+    },
+    "PRICELESS": {
+      "brand": "PRICELESS",
+      "run": 2,
+      "started_at": "2026-05-17 00:33:01",
+      "portal_id": "639843",
+      "legal_name": "NPR AUTO GROUP, LLC",
+      "trade_name": "PRICELESS, PRICELESS CAR AND TRUCK RENTAL, PRICELESS CAR AND VAN RENTAL",
+      "effective_date": "10/8/2025",
+      "sha256": "766894000fc3c5b5aaa4caf79de467b0b77898f9c11d826493dba5c12b07ac13",
+      "pdf_path": "data\\wi_scrape\\priceless_priceless_car_and_truck_rental_id639843.pdf",
+      "was_duplicate": false,
+      "source_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=639843&hash=90877340&search=external&type=GENERAL",
+      "extract_returncode": 0,
+      "extract_tail": "text-only, pages 16-25)...\n  saved -> output/item6_ongoing_fees.json  ($0.0383)\n\n[4/6] Item 7 (text-only, pages 25-26)...\n  saved -> output/item7_investment.json  ($0.0077)\n\n[5/6] Item 19 (text+vision, pages 56-60, rasterizing 56-60)...\n  saved -> output/item19_fpr.json  ($0.0600, 5 images)\n\n[6/6] Item 20 (text+vision, pages 60-63, rasterizing 60-63)...\n  saved -> output/item20_outlets.json  ($0.0851, 4 images)\n\nDone. Total cost: $0.2168\nOutputs in: C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\n",
+      "extract_cost_usd": "0.2168",
+      "status": "ok",
+      "elapsed_sec": 99.4
+    },
+    "ECW CORP": {
+      "brand": "ECW CORP",
+      "run": 2,
+      "started_at": "2026-05-17 00:34:41",
+      "status": "no_active_filing",
+      "n_filings_seen": 6
+    },
+    "COMPUTERTOTS": {
+      "brand": "COMPUTERTOTS",
+      "run": 2,
+      "started_at": "2026-05-17 00:34:42",
+      "status": "no_active_filing",
+      "n_filings_seen": 12
+    },
+    "AMS FRANCHISE CORP": {
+      "brand": "AMS FRANCHISE CORP",
+      "run": 2,
+      "started_at": "2026-05-17 00:34:45",
+      "portal_id": "639235",
+      "legal_name": "Fantastic Sams Franchise Corporation",
+      "trade_name": "Fantastic Sams Development Agent Program",
+      "effective_date": "5/28/2025",
+      "sha256": "577d01b988648b84339e9ef8bafab8cb48484739ce857219af458d8210e44f42",
+      "pdf_path": "data\\wi_scrape\\fantastic_sams_development_agent_program_id639235.pdf",
+      "was_duplicate": false,
+      "source_url": "https://apps.dfi.wi.gov/apps/FranchiseSearch/details.aspx?id=639235&hash=1133620175&search=external&type=GENERAL",
+      "extract_returncode": 0,
+      "extract_tail": "text-only, pages 16-18)...\n  saved -> output/item6_ongoing_fees.json  ($0.0209)\n\n[4/6] Item 7 (text-only, pages 18-19)...\n  saved -> output/item7_investment.json  ($0.0066)\n\n[5/6] Item 19 (text+vision, pages 41-42, rasterizing 41-42)...\n  saved -> output/item19_fpr.json  ($0.0168, 2 images)\n\n[6/6] Item 20 (text+vision, pages 42-45, rasterizing 42-45)...\n  saved -> output/item20_outlets.json  ($0.0613, 4 images)\n\nDone. Total cost: $0.1264\nOutputs in: C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\n",
+      "extract_cost_usd": "0.1264",
+      "status": "ok",
+      "elapsed_sec": 65.1
+    },
+    "AMERICAN MOBILE SOUND": {
+      "brand": "AMERICAN MOBILE SOUND",
+      "run": 2,
+      "started_at": "2026-05-17 00:35:50",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "AMK SERVICE CORP": {
+      "brand": "AMK SERVICE CORP",
+      "run": 2,
+      "started_at": "2026-05-17 00:35:51",
+      "status": "no_active_filing",
+      "n_filings_seen": 2
+    },
+    "MILLION DOLLAR HOLE IN 1": {
+      "brand": "MILLION DOLLAR HOLE IN 1",
+      "run": 2,
+      "started_at": "2026-05-17 00:35:53",
+      "status": "no_active_filing",
+      "n_filings_seen": 2
+    },
+    "ITALIAN EXPRESS FRANCHISE CORP": {
+      "brand": "ITALIAN EXPRESS FRANCHISE CORP",
+      "run": 2,
+      "started_at": "2026-05-17 00:35:56",
+      "status": "no_active_filing",
+      "n_filings_seen": 2
+    },
+    "PIZZAS BY MARCHELLONI": {
+      "brand": "PIZZAS BY MARCHELLONI",
+      "run": 2,
+      "started_at": "2026-05-17 00:35:58",
+      "status": "no_active_filing",
+      "n_filings_seen": 2
+    },
+    "MIDAS INTERNATIONAL CORP": {
+      "brand": "MIDAS INTERNATIONAL CORP",
+      "run": 2,
+      "started_at": "2026-05-17 00:36:01",
+      "status": "no_active_filing",
+      "n_filings_seen": 15
+    },
+    "MIDAS MUFFLER BRAKE SHIPS": {
+      "brand": "MIDAS MUFFLER BRAKE SHIPS",
+      "run": 2,
+      "started_at": "2026-05-17 00:36:03",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "HIGH TOUCH INVESTMENT CORP": {
+      "brand": "HIGH TOUCH INVESTMENT CORP",
+      "run": 2,
+      "started_at": "2026-05-17 00:36:06",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "HIGH TOUCH HIGH TECH": {
+      "brand": "HIGH TOUCH HIGH TECH",
+      "run": 2,
+      "started_at": "2026-05-17 00:36:08",
+      "status": "no_active_filing",
+      "n_filings_seen": 1
+    },
+    "TOTAL CAR FRANCHISING CORP": {
+      "brand": "TOTAL CAR FRANCHISING CORP",
+      "run": 2,
+      "started_at": "2026-05-17 00:36:11",
+      "status": "no_active_filing",
+      "n_filings_seen": 5
+    },
+    "COLORS ON PARADE": {
+      "brand": "COLORS ON PARADE",
+      "run": 2,
+      "started_at": "2026-05-17 00:36:13",
+      "status": "no_active_filing",
+      "n_filings_seen": 5
+    },
+    "LAS VEGAS GOLF & TENNIS INC": {
+      "brand": "LAS VEGAS GOLF & TENNIS INC",
+      "run": 2,
+      "started_at": "2026-05-17 00:36:16",
+      "status": "no_active_filing",
+      "n_filings_seen": 3
+    },
+    "ST ANDREWS GOLF CORP": {
+      "brand": "ST ANDREWS GOLF CORP",
+      "run": 2,
+      "started_at": "2026-05-17 00:36:18",
+      "status": "no_active_filing",
+      "n_filings_seen": 3
+    },
+    "SHERATON CORP": {
+      "brand": "SHERATON CORP",
+      "run": 2,
+      "started_at": "2026-05-17 00:36:21",
+      "status": "no_active_filing",
+      "n_filings_seen": 19
+    },
+    "4 POINTS HOTELS": {
+      "brand": "4 POINTS HOTELS",
+      "run": 2,
+      "started_at": "2026-05-17 00:36:23",
+      "status": "no_active_filing",
+      "n_filings_seen": 9
+    },
+    "ITT SHERATON CORP": {
+      "brand": "ITT SHERATON CORP",
+      "run": 2,
+      "started_at": "2026-05-17 00:36:26",
+      "status": "no_active_filing",
+      "n_filings_seen": 10
+    },
+    "SHERATON HOTEL SHERATON INN SHERATON ALL SUITES": {
+      "brand": "SHERATON HOTEL SHERATON INN SHERATON ALL SUITES",
+      "run": 2,
+      "started_at": "2026-05-17 00:36:28",
+      "status": "no_active_filing",
+      "n_filings_seen": 10
+    },
+    "RADIOSHACK CORPORATION": {
+      "brand": "RADIOSHACK CORPORATION",
+      "run": 2,
+      "started_at": "2026-05-17 00:36:31",
+      "status": "no_active_filing",
+      "n_filings_seen": 19
+    },
+    "RADIO SHACK": {
+      "brand": "RADIO SHACK",
+      "run": 2,
+      "started_at": "2026-05-17 00:36:33",
+      "status": "no_active_filing",
+      "n_filings_seen": 10
+    },
+    "WINZER CORP": {
+      "brand": "WINZER CORP",
+      "run": 2,
+      "started_at": "2026-05-17 00:36:36",
+      "status": "no_active_filing",
+      "n_filings_seen": 6
+    }
+  },
+  "runs": [
+    {
+      "run_number": 1,
+      "started_at": "2026-05-17 00:07:27",
+      "target": 2,
+      "pool_source": "fallback_hardcoded",
+      "pool_size": 302,
+      "candidates_for_run": 299,
+      "completed_at": "2026-05-17 00:13:03",
+      "successes": 2
+    }
+  ]
+}

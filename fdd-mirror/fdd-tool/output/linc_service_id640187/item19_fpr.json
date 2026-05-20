@@ -1,0 +1,25 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Average Gross Profit by Service Type",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "All 76 Linc Service franchises in operation entire FY 2024, divided by revenue tier: $0\u20133M (14), $3\u20135M (8), $5\u20137M (14), >$7M (40)",
+      "outlet_count": 76,
+      "reporting_period": "Fiscal Year 2024 (November 1, 2023 \u2013 October 31, 2024)",
+      "value_avg": null,
+      "value_median": null,
+      "value_min": null,
+      "value_max": null,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 60.5,
+      "page_number": 44,
+      "raw_text": "Table 1 provides Average Revenue and Average Cost of Sales information for Fiscal Year 2024 for 76 Linc Service franchises which were in operation in the U.S. and certain foreign countries for the entire 12-month period. 46 of 76 franchises (60.5%) surpassed the Average Gross Profit for all services.",
+      "notes": "Table 1 data presented with four service types (GPM, CPM, PROJECT, SPOT) across four revenue tiers. Percentages of franchises exceeding average shown for each cohort. 28 franchises excluded: 13 terminated in FY2024, 15 did not provide statements. Data obtained directly from franchisees, not audited. Includes 57 third-party franchises and 19 affiliate-owned. Locations: 28 US states, 3 Canadian provinces, Mexico, Grand Cayman, Bermuda."
+    }
+  ],
+  "confidence": 0.68,
+  "notes": "Item 19 present with financial performance representation. Table 1 shows gross profit analysis by service type and revenue tier for 76 franchises in FY2024. Actual numerical averages, medians, and performance metrics from the table are not transcribed in provided text excerpt. Document explicitly states no assurance of earnings and encourages consultation with financial advisor."
+}

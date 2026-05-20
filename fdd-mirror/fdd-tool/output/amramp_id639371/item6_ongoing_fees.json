@@ -1,0 +1,11 @@
+{
+  "royalty_pct": 3,
+  "royalty_max_pct": 12,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": 1200,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty 3-12% of Gross Revenue depending on products sold (4%, 6%, 9%, 12% categories) and territory tenure. Brand Fund: 1% (first year or prior GR<$300k), 2% (prior GR $300-500k), 3% (prior GR\u2265$500k), reduced to 2% on GR exceeding $1M. Local Advertising: 6% of GR or $1,200 minimum (first year or prior GR<$300k), 4% (prior GR $300-500k), 3% (prior GR\u2265$500k). Also: Opening Advertising $5,500, Late Payment Interest (lesser of 18% or max legal rate), Convention Fees (currently $0, max $500), Per Diem $400/day, Manual Copy $1/page.",
+  "raw_excerpt": "TYPE OF FEE: Royalty | AMOUNT: Between 3% and 12% of Gross Revenue, depending on products/services and territory tenure | DUE DATE: 5th day following close of each calendar month. TYPE OF FEE: Brand Fund | AMOUNT: 1% if first year or prior GR<$300k; 2% if prior GR $300-500k; 3% if prior GR\u2265$500k (reduced to 2% on GR>$1M) | DUE DATE: When Royalty is paid. TYPE OF FEE: Local Advertising | AMOUNT: 6% of GR or $1,200 whichever greater (first year or prior GR<$300k); 4% (prior GR $300-500k); 3% (prior GR\u2265$500k).",
+  "confidence": 0.92
+}

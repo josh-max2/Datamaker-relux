@@ -1,0 +1,7 @@
+{
+  "royalty_pct": 7.0,
+  "marketing_fee_pct": 2.0,
+  "fee_notes": "Tiered royalty: 4.5% of weekly Gross Sales if week <$20,000; 5.5% if $20,000-$25,000; 7% if >$25,000. Brand Fund max 2% of weekly Gross Sales (actual 1% in FY2024). Tech Fee max 0.25% of weekly Gross Sales (no Tech Fee charged in FY2024). All fees % of weekly gross sales, not fixed monthly amounts. Royalty_pct reflects highest tier applicable to most stores at average volume.",
+  "raw_excerpt": "Royalty 4.5% of the Store's weekly Gross Sales if <$20,000; 5.5% if between $20,000 and $25,000; 7% if more than $25,000. Brand Fund Contributions: maximum 2% of Store's weekly Gross Sales; currently charge that 2%. Technology Fee: maximum 0.25% of Store's weekly Gross Sales; currently charge that 0.25%.",
+  "confidence": 0.97
+}

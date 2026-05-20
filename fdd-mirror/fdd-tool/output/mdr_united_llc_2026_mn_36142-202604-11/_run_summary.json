@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\mdr_united_llc_2026_mn_36142-202604-11.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0064,
+      "input_tokens": 2073,
+      "cached": 1340,
+      "output_tokens": 251
+    },
+    "item5": {
+      "cost_usd": 0.0113,
+      "input_tokens": 2626,
+      "cached": 1340,
+      "output_tokens": 472
+    },
+    "item6": {
+      "cost_usd": 0.0259,
+      "input_tokens": 6214,
+      "cached": 1340,
+      "output_tokens": 725
+    },
+    "item7": {
+      "cost_usd": 0.0084,
+      "input_tokens": 3568,
+      "cached": 1340,
+      "output_tokens": 85
+    },
+    "item19": {
+      "cost_usd": 0.1114,
+      "input_tokens": 12583,
+      "cached": 1340,
+      "output_tokens": 5151,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.2188,
+      "input_tokens": 16922,
+      "cached": 1340,
+      "output_tokens": 11446,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3822
+}

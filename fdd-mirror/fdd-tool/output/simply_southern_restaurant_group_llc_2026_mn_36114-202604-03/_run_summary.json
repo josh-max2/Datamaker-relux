@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\simply_southern_restaurant_group_llc_2026_mn_36114-202604-03.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0065,
+      "input_tokens": 2139,
+      "cached": 1340,
+      "output_tokens": 244
+    },
+    "item5": {
+      "cost_usd": 0.0072,
+      "input_tokens": 1492,
+      "cached": 1340,
+      "output_tokens": 424
+    },
+    "item6": {
+      "cost_usd": 0.0145,
+      "input_tokens": 3512,
+      "cached": 1340,
+      "output_tokens": 505
+    },
+    "item7": {
+      "cost_usd": 0.0091,
+      "input_tokens": 3599,
+      "cached": 1340,
+      "output_tokens": 127
+    },
+    "item19": {
+      "cost_usd": 0.2661,
+      "input_tokens": 19168,
+      "cached": 1340,
+      "output_tokens": 14150,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1258,
+      "input_tokens": 13405,
+      "cached": 1340,
+      "output_tokens": 5947,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.4292
+}

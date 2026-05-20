@@ -1,0 +1,38 @@
+{
+  "pdf": "data\\mn_scrape\\new_orleans_brew_llc_2026_mn_35972-202604-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0063,
+      "input_tokens": 2073,
+      "cached": 1340,
+      "output_tokens": 245
+    },
+    "item5": {
+      "cost_usd": 0.0064,
+      "input_tokens": 1717,
+      "cached": 1340,
+      "output_tokens": 326
+    },
+    "item6": {
+      "cost_usd": 0.0129,
+      "input_tokens": 1624,
+      "cached": 1340,
+      "output_tokens": 776
+    },
+    "item7": {
+      "cost_usd": 0.0125,
+      "input_tokens": 4833,
+      "cached": 1340,
+      "output_tokens": 109
+    },
+    "item19": {
+      "cost_usd": 0.1559,
+      "input_tokens": 15406,
+      "cached": 1340,
+      "output_tokens": 7555,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.194
+}

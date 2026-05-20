@@ -1,0 +1,9 @@
+{
+  "royalty_pct": 7,
+  "royalty_min_monthly": 500,
+  "marketing_fee_pct": 2,
+  "tech_fee_monthly": 650,
+  "fee_notes": "Royalty is greater of 7% of Gross Sales or Minimum Royalty: $500/mo months 1-12, $1,000/mo months 13-24, $1,500/mo months 25+. Tech fee includes field service software tenant account and 3 email licenses; may be waived for contiguous additional territories.",
+  "raw_excerpt": "Base Royalty Greater of 7% of Gross Sales and the applicable Minimum Royalty per month. Brand Fund Fee 2% of Gross Sales. Technology Fee $650 per month.",
+  "confidence": 0.95
+}

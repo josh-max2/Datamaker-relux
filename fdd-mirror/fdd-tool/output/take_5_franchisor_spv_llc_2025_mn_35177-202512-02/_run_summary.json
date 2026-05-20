@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\take_5_franchisor_spv_llc_2025_mn_35177-202512-02.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0073,
+      "input_tokens": 2002,
+      "cached": 1340,
+      "output_tokens": 227
+    },
+    "item5": {
+      "cost_usd": 0.0072,
+      "input_tokens": 1649,
+      "cached": 1340,
+      "output_tokens": 312
+    },
+    "item6": {
+      "cost_usd": 0.0237,
+      "input_tokens": 4861,
+      "cached": 1340,
+      "output_tokens": 606
+    },
+    "item7": {
+      "cost_usd": 0.0133,
+      "input_tokens": 4137,
+      "cached": 1340,
+      "output_tokens": 95
+    },
+    "item19": {
+      "cost_usd": 0.2623,
+      "input_tokens": 20507,
+      "cached": 1340,
+      "output_tokens": 12603,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.2165,
+      "input_tokens": 19274,
+      "cached": 1340,
+      "output_tokens": 9853,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.5303
+}

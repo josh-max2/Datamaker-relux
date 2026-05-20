@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\wi_scrape\\bath_fitter_id639398.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0099,
+      "input_tokens": 2219,
+      "cached": 0,
+      "output_tokens": 215
+    },
+    "item5": {
+      "cost_usd": 0.0096,
+      "input_tokens": 1755,
+      "cached": 0,
+      "output_tokens": 292
+    },
+    "item6": {
+      "cost_usd": 0.0235,
+      "input_tokens": 3953,
+      "cached": 0,
+      "output_tokens": 774
+    },
+    "item7": {
+      "cost_usd": 0.0115,
+      "input_tokens": 3380,
+      "cached": 0,
+      "output_tokens": 92
+    },
+    "item19": {
+      "cost_usd": 0.016,
+      "input_tokens": 4926,
+      "cached": 0,
+      "output_tokens": 81,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.1878,
+      "input_tokens": 17752,
+      "cached": 0,
+      "output_tokens": 8969,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.2583
+}

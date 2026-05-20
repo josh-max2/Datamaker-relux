@@ -1,0 +1,38 @@
+{
+  "pdf": "data\\mn_scrape\\bojangles_opco_llc_2024_mn_32925-202502-04.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0056,
+      "input_tokens": 2049,
+      "cached": 1340,
+      "output_tokens": 203
+    },
+    "item5": {
+      "cost_usd": 0.0153,
+      "input_tokens": 4213,
+      "cached": 1340,
+      "output_tokens": 417
+    },
+    "item6": {
+      "cost_usd": 0.0101,
+      "input_tokens": 1421,
+      "cached": 1340,
+      "output_tokens": 630
+    },
+    "item7": {
+      "cost_usd": 0.0062,
+      "input_tokens": 2753,
+      "cached": 1340,
+      "output_tokens": 104
+    },
+    "item19": {
+      "cost_usd": 0.1521,
+      "input_tokens": 21501,
+      "cached": 1340,
+      "output_tokens": 6084,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.1893
+}

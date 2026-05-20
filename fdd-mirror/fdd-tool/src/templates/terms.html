@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Terms of Service — FranchiseDepth{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Terms of Service", "url": canonical_url}
+]) }}{% endblock %}
+{% block description %}Terms of Service for FranchiseDepth. License, prohibited uses (including automated scraping), disclaimers, limitation of liability, governing law.{% endblock %}
+{% block content %}
+<article>
+    <h1>Terms of Service</h1>
+    <p class="lead">
+        Last updated: {{ generated_at }}.
+    </p>
+    <p>
+        By accessing FranchiseDepth (the "Site"), you agree to these Terms of Service. If you don't agree, please don't use the Site. These Terms apply alongside the <a href="{{ url_for('privacy/') }}">Privacy Policy</a> and <a href="{{ url_for('affiliate-disclosure/') }}">Affiliate Disclosure</a>.
+    </p>
+
+    <h2>1. What this site is (and isn't)</h2>
+    <p>
+        FranchiseDepth republishes structured data extracted from publicly-filed Franchise Disclosure Documents (FDDs). It is an informational resource for prospective franchise buyers, journalists, researchers, and other interested parties. It is:
+    </p>
+    <ul>
+        <li><strong>Not investment advice</strong>. The site presents data; it does not recommend any specific franchise.</li>
+        <li><strong>Not a substitute for reading the actual FDD</strong>. Every brand page links to the source filing on the relevant state portal. For any material decision, read the source.</li>
+        <li><strong>Not legally privileged</strong>. We are not a law firm; nothing on this site constitutes legal advice. Consult a qualified franchise attorney before signing any franchise agreement.</li>
+        <li><strong>Not affiliated</strong> with any franchisor whose data appears on the site, unless explicitly stated.</li>
+    </ul>
+
+    <h2>2. License to use</h2>
+    <p>
+        Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to access and use the Site for personal, non-commercial research purposes (including evaluating franchise investment opportunities for yourself).
+    </p>
+    <p>
+        You may freely link to any page on the Site. You may quote brief excerpts (typically under 200 words per excerpt) with attribution.
+    </p>
+
+    <h2>3. Prohibited uses</h2>
+    <p>
+        You may NOT:
+    </p>
+    <ul>
+        <li>Use any automated means (bots, scrapers, crawlers, headless browsers, etc.) to access, copy, harvest, scrape, or extract any data from this Site, except for: (a) major search engine crawlers operating in good faith and respecting our <code>robots.txt</code>, and (b) your own personal-use browser.</li>
+        <li>Bulk-download, republish, or redistribute substantial portions of the Site's data without prior written permission.</li>
+        <li>Use any data from this Site to train machine learning models, including large language models.</li>
+        <li>Circumvent or attempt to circumvent any rate-limiting, access control, or security measure.</li>
+        <li>Use the Site to harass, defame, or otherwise harm any franchisor or franchisee whose data is presented.</li>
+        <li>Misrepresent the data presented (e.g., screenshot a chart and present it without context or in misleading framing).</li>
+        <li>Use the Site in any manner that violates applicable law, including franchise registration laws, securities laws, or consumer protection laws.</li>
+    </ul>
+    <p>
+        We may, at our sole discretion, block any IP address, user-agent, or other access pattern that we believe is violating these provisions. Repeat or large-scale violators may be referred for legal action under the Computer Fraud and Abuse Act, the DMCA, or applicable state law.
+    </p>
+
+    <h2>4. Data accuracy + your responsibility</h2>
+    <p>
+        We make a good-faith effort to extract data accurately from source FDDs, and our <a href="{{ url_for('methodology/') }}">methodology page</a> describes the extraction and validation process in detail. Despite this:
+    </p>
+    <ul>
+        <li>Extraction errors are possible. If any value on this Site disagrees with the source PDF (linked on every brand page), <strong>the source PDF is authoritative</strong>.</li>
+        <li>FDDs reflect a specific point in time — typically annual. The data on this Site may not reflect changes the franchisor has made since the FDD's issuance date.</li>
+        <li>Estimated breakeven calculations, system-health badges, and similar derived figures are explicitly labeled as estimates or arithmetic exercises, not predictions or guarantees.</li>
+    </ul>
+    <p>
+        You are solely responsible for verifying any data point you intend to act on against the source filing and via direct conversations with current franchisees (whose contact information is required in Item 20 of every FDD).
+    </p>
+
+    <h2>5. Affiliate relationships</h2>
+    <p>
+        The Site includes affiliate links to franchise consulting and SBA financing partners. We may receive a commission when you take certain actions on partner sites. See our <a href="{{ url_for('affiliate-disclosure/') }}">Affiliate Disclosure</a> for the full breakdown. Affiliate relationships do not influence which brands are included on the Site or how their data is presented.
+    </p>
+
+    <h2>6. Disclaimers</h2>
+    <p>
+        THE SITE AND ALL DATA ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR ACCURACY OF DATA.
+    </p>
+    <p>
+        We do not warrant that the Site will be uninterrupted, error-free, secure, or free from viruses or other harmful components.
+    </p>
+
+    <h2>7. Limitation of liability</h2>
+    <p>
+        TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL FRANCHISEDEPTH, ITS OPERATOR, OR ITS AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES RESULTING FROM (A) YOUR ACCESS TO OR USE OF, OR INABILITY TO ACCESS OR USE, THE SITE; (B) ANY CONDUCT OR CONTENT OF ANY THIRD PARTY ON THE SITE; OR (C) UNAUTHORIZED ACCESS, USE, OR ALTERATION OF YOUR TRANSMISSIONS OR CONTENT.
+    </p>
+    <p>
+        Our total liability to you for any claim arising out of or relating to these Terms or the Site is limited to the greater of one hundred dollars (USD $100) or the amount you have paid us in the preceding 12 months (which, for free-to-use visitors, is zero).
+    </p>
+
+    <h2>8. Indemnification</h2>
+    <p>
+        You agree to indemnify and hold harmless FranchiseDepth and its operator from and against any claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or related to your violation of these Terms or your use of the Site.
+    </p>
+
+    <h2>9. Dispute resolution + governing law</h2>
+    <p>
+        These Terms are governed by the laws of the State of Utah, United States, without regard to its conflict-of-laws principles. Any dispute arising out of or relating to these Terms or the Site that cannot be resolved through informal discussion shall be resolved by binding arbitration administered by the American Arbitration Association in Salt Lake County, Utah, under its Commercial Arbitration Rules. Each party shall bear its own costs.
+    </p>
+    <p>
+        Notwithstanding the foregoing, either party may seek injunctive or other equitable relief in any court of competent jurisdiction to prevent or enjoin actual or threatened infringement of intellectual property rights or breach of confidentiality obligations.
+    </p>
+
+    <h2>10. Changes to these Terms</h2>
+    <p>
+        We may update these Terms when site functionality changes, when new third-party services are added, or in response to regulatory requirements. The "Last updated" date at the top reflects the most recent change. Material changes will be flagged in the footer for at least 30 days.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+        Questions about these Terms: <a href="mailto:hello@franchisedepth.com">hello@franchisedepth.com</a>.
+    </p>
+</article>
+{% endblock %}

@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": null,
+  "fee_notes": "Two royalty programs: Program A (new/conversion franchisees) = 5% of Gross Revenue with $6,250/associate/year cap; Program B (existing franchisees pre-Jan 9 2019) = 6% of Gross Revenue with same $6,250 cap. Property Management Fee = 1.5% of Gross Revenue from property management. BMF Program A = 1% up to $1,250/associate threshold then 0.5%; BMF Program B = 1.5% up to $4M then 0.5%.",
+  "raw_excerpt": "PROGRAM A: 5% of \"Gross Revenue\"...PROGRAM B: 6% of \"Gross Revenue\"",
+  "confidence": 0.9
+}

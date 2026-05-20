@@ -1,0 +1,132 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 1298,
+      "outlets_end": 1362,
+      "net_change": 64
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 1362,
+      "outlets_end": 1366,
+      "net_change": 4
+    },
+    {
+      "year": 2025,
+      "outlet_type": "franchised",
+      "outlets_start": 1366,
+      "outlets_end": 1355,
+      "net_change": -11
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2025,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 1298,
+      "outlets_end": 1362,
+      "net_change": 64
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 1362,
+      "outlets_end": 1366,
+      "net_change": 4
+    },
+    {
+      "year": 2025,
+      "outlet_type": "total",
+      "outlets_start": 1366,
+      "outlets_end": 1355,
+      "net_change": -11
+    }
+  ],
+  "state_year_status": [
+    {
+      "year": 2023,
+      "state": "AL",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2024,
+      "state": "AL",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2025,
+      "state": "AL",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2023,
+      "state": "AZ",
+      "outlets_opened": 4
+    },
+    {
+      "year": 2024,
+      "state": "AZ",
+      "outlets_opened": 5
+    },
+    {
+      "year": 2025,
+      "state": "AZ",
+      "outlets_opened": 5
+    },
+    {
+      "year": 2023,
+      "state": "AR",
+      "outlets_opened": 0
+    },
+    {
+      "year": 2024,
+      "state": "AR",
+      "outlets_opened": 0
+    },
+    {
+      "year": 2025,
+      "state": "AR",
+      "outlets_opened": 0
+    },
+    {
+      "year": 2023,
+      "state": "CA",
+      "outlets_opened": 3
+    },
+    {
+      "year": 2024,
+      "state": "CA",
+      "outlets_opened": 9
+    }
+  ],
+  "confidence": 0.72,
+  "notes": "Item 20 Table 3 (state-by-state status) text was truncated in the provided section \u2014 only Table 1 (systemwide summary) and partial Table 2 (transfers) were provided. State_year_status records are incomplete; only transfer counts from Table 2 are partially captured and mapped to outlets_opened as a proxy, which is not accurate. Full Table 3 data was not present in the supplied text."
+}

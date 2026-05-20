@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\men_in_kilts_us_llc_2026_mn_35932-202604-09.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0049,
+      "input_tokens": 1839,
+      "cached": 1340,
+      "output_tokens": 198
+    },
+    "item5": {
+      "cost_usd": 0.0087,
+      "input_tokens": 2406,
+      "cached": 1340,
+      "output_tokens": 343
+    },
+    "item6": {
+      "cost_usd": 0.0392,
+      "input_tokens": 6413,
+      "cached": 1340,
+      "output_tokens": 1575
+    },
+    "item7": {
+      "cost_usd": 0.0029,
+      "input_tokens": 1736,
+      "cached": 1340,
+      "output_tokens": 88
+    },
+    "item19": {
+      "cost_usd": 0.135,
+      "input_tokens": 13915,
+      "cached": 1340,
+      "output_tokens": 6461,
+      "images_sent": 6
+    },
+    "item20": {
+      "cost_usd": 0.0934,
+      "input_tokens": 9632,
+      "cached": 1340,
+      "output_tokens": 4540,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.2842
+}

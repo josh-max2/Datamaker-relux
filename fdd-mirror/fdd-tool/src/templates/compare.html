@@ -1,0 +1,303 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{%- set a_name = a.brand.brand_name or a.brand.legal_name -%}
+{%- set b_name = b.brand.brand_name or b.brand.legal_name -%}
+{% block title %}{{ a_name }} vs {{ b_name }} Franchise — Cost, Royalty, Item 19 Side-by-Side{% endblock %}
+{% block description %}Side-by-side comparison of {{ a_name }} and {{ b_name }} franchises: initial fee, royalty, total investment, total outlets, closure rate, and Item 19 financial-performance disclosure status.{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": category_label, "url": url_for('category/' ~ category_slug ~ '/')},
+    {"label": a_name ~ " vs " ~ b_name, "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ (a_name ~ " vs " ~ b_name ~ " — Franchise Comparison")|tojson }},
+  "author": {
+    "@type": "Person",
+    "name": "FranchiseDepth Editorial",
+    "url": "{{ url_for('about/') }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site_name }}"
+  },
+  "dateModified": "{{ generated_at }}",
+  "about": [
+    { "@type": "Organization", "name": {{ a.brand.legal_name|tojson }}, "alternateName": {{ a_name|tojson }} },
+    { "@type": "Organization", "name": {{ b.brand.legal_name|tojson }}, "alternateName": {{ b_name|tojson }} }
+  ],
+  "mainEntityOfPage": "{{ canonical_url }}"
+}
+</script>
+{% endblock %}
+{% block content %}
+<article class="compare-page">
+    <header class="compare-header">
+        <h1>{{ a_name }} vs {{ b_name }}</h1>
+        <p class="lead">
+            Side-by-side cost and disclosure comparison built from each franchisor's
+            most recent Franchise Disclosure Document. Numbers are verbatim from the source FDDs
+            (not estimates). Use this to narrow the shortlist — then read the full brand page
+            for context, breakeven scenarios, and source-document deep links.
+        </p>
+        <p class="byline">
+            <span class="dateline">Page regenerated {{ generated_at }}</span>
+        </p>
+    </header>
+
+    <section>
+        <div class="table-scroll">
+        <table class="data-table compare-table">
+            <thead>
+                <tr>
+                    <th scope="col">&nbsp;</th>
+                    <th scope="col"><a href="{{ url_for('franchise/' ~ a.brand.slug ~ '/') }}">{{ a_name }}</a></th>
+                    <th scope="col"><a href="{{ url_for('franchise/' ~ b.brand.slug ~ '/') }}">{{ b_name }}</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Industry</th>
+                    <td>{{ a.brand.industry|industry_label }}</td>
+                    <td>{{ b.brand.industry|industry_label }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Source FDD</th>
+                    <td>{{ a.latest_fdd.filing_year }} ({{ a.latest_fdd.filing_state }})</td>
+                    <td>{{ b.latest_fdd.filing_year }} ({{ b.latest_fdd.filing_state }})</td>
+                </tr>
+                <tr>
+                    <th scope="row">Initial franchise fee</th>
+                    <td>
+                        {% if a.fees and (a.fees.initial_franchise_fee_low or a.fees.initial_franchise_fee_high) %}
+                            {% if a.fees.initial_franchise_fee_low and a.fees.initial_franchise_fee_high and a.fees.initial_franchise_fee_low != a.fees.initial_franchise_fee_high %}
+                                ${{ '{:,.0f}'.format(a.fees.initial_franchise_fee_low) }}–${{ '{:,.0f}'.format(a.fees.initial_franchise_fee_high) }}
+                            {% else %}
+                                ${{ '{:,.0f}'.format(a.fees.initial_franchise_fee_low or a.fees.initial_franchise_fee_high) }}
+                            {% endif %}
+                        {% else %}<span class="muted">Not disclosed</span>{% endif %}
+                    </td>
+                    <td>
+                        {% if b.fees and (b.fees.initial_franchise_fee_low or b.fees.initial_franchise_fee_high) %}
+                            {% if b.fees.initial_franchise_fee_low and b.fees.initial_franchise_fee_high and b.fees.initial_franchise_fee_low != b.fees.initial_franchise_fee_high %}
+                                ${{ '{:,.0f}'.format(b.fees.initial_franchise_fee_low) }}–${{ '{:,.0f}'.format(b.fees.initial_franchise_fee_high) }}
+                            {% else %}
+                                ${{ '{:,.0f}'.format(b.fees.initial_franchise_fee_low or b.fees.initial_franchise_fee_high) }}
+                            {% endif %}
+                        {% else %}<span class="muted">Not disclosed</span>{% endif %}
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Royalty</th>
+                    <td>{% if a.fees and a.fees.royalty_pct %}{{ a.fees.royalty_pct }}%{% else %}<span class="muted">—</span>{% endif %}</td>
+                    <td>{% if b.fees and b.fees.royalty_pct %}{{ b.fees.royalty_pct }}%{% else %}<span class="muted">—</span>{% endif %}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Marketing/brand fund fee</th>
+                    <td>{% if a.fees and a.fees.marketing_fee_pct %}{{ a.fees.marketing_fee_pct }}%{% else %}<span class="muted">—</span>{% endif %}</td>
+                    <td>{% if b.fees and b.fees.marketing_fee_pct %}{{ b.fees.marketing_fee_pct }}%{% else %}<span class="muted">—</span>{% endif %}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Tech fee (monthly)</th>
+                    <td>{% if a.fees and a.fees.tech_fee_monthly %}${{ '{:,.0f}'.format(a.fees.tech_fee_monthly) }}{% else %}<span class="muted">—</span>{% endif %}</td>
+                    <td>{% if b.fees and b.fees.tech_fee_monthly %}${{ '{:,.0f}'.format(b.fees.tech_fee_monthly) }}{% else %}<span class="muted">—</span>{% endif %}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Total investment</th>
+                    <td>{% if a.fees and a.fees.total_investment_low and a.fees.total_investment_high %}${{ '{:,.0f}'.format(a.fees.total_investment_low) }}–${{ '{:,.0f}'.format(a.fees.total_investment_high) }}{% else %}<span class="muted">Not disclosed</span>{% endif %}</td>
+                    <td>{% if b.fees and b.fees.total_investment_low and b.fees.total_investment_high %}${{ '{:,.0f}'.format(b.fees.total_investment_low) }}–${{ '{:,.0f}'.format(b.fees.total_investment_high) }}{% else %}<span class="muted">Not disclosed</span>{% endif %}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Liquid capital required</th>
+                    <td>{% if a.fees and a.fees.liquid_capital_required %}${{ '{:,.0f}'.format(a.fees.liquid_capital_required) }}{% else %}<span class="muted">Not separately disclosed</span>{% endif %}</td>
+                    <td>{% if b.fees and b.fees.liquid_capital_required %}${{ '{:,.0f}'.format(b.fees.liquid_capital_required) }}{% else %}<span class="muted">Not separately disclosed</span>{% endif %}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Total outlets (latest year)</th>
+                    <td>{% if a.total_outlets %}{{ '{:,}'.format(a.total_outlets) }}{% else %}<span class="muted">—</span>{% endif %}</td>
+                    <td>{% if b.total_outlets %}{{ '{:,}'.format(b.total_outlets) }}{% else %}<span class="muted">—</span>{% endif %}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Outlet growth <span class="th-note">(recent year)</span></th>
+                    <td>
+                        {% if a.outlet_sparkline and a.outlet_sparkline.pct_change is not none %}
+                            {% if a.outlet_sparkline.direction == 'up' %}▲ +{{ a.outlet_sparkline.pct_change }}%
+                            {% elif a.outlet_sparkline.direction == 'down' %}▼ {{ a.outlet_sparkline.pct_change }}%
+                            {% else %}→ flat{% endif %}
+                            <span class="th-note">({{ a.outlet_sparkline.start_year }}→{{ a.outlet_sparkline.end_year }})</span>
+                        {% else %}<span class="muted">—</span>{% endif %}
+                    </td>
+                    <td>
+                        {% if b.outlet_sparkline and b.outlet_sparkline.pct_change is not none %}
+                            {% if b.outlet_sparkline.direction == 'up' %}▲ +{{ b.outlet_sparkline.pct_change }}%
+                            {% elif b.outlet_sparkline.direction == 'down' %}▼ {{ b.outlet_sparkline.pct_change }}%
+                            {% else %}→ flat{% endif %}
+                            <span class="th-note">({{ b.outlet_sparkline.start_year }}→{{ b.outlet_sparkline.end_year }})</span>
+                        {% else %}<span class="muted">—</span>{% endif %}
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Operator model <span class="th-note">(franchised vs company-owned)</span></th>
+                    <td>
+                        {% set a_mix = a.outlet_summary[-1] if a.outlet_summary else None %}
+                        {% if a_mix and a_mix.franchised is not none and a_mix.total %}
+                            {{ ((a_mix.franchised / a_mix.total) * 100)|round(0)|int }}% franchised
+                            <span class="th-note">({{ a_mix.franchised }} fr · {{ a_mix.company_owned or 0 }} co)</span>
+                        {% else %}<span class="muted">—</span>{% endif %}
+                    </td>
+                    <td>
+                        {% set b_mix = b.outlet_summary[-1] if b.outlet_summary else None %}
+                        {% if b_mix and b_mix.franchised is not none and b_mix.total %}
+                            {{ ((b_mix.franchised / b_mix.total) * 100)|round(0)|int }}% franchised
+                            <span class="th-note">({{ b_mix.franchised }} fr · {{ b_mix.company_owned or 0 }} co)</span>
+                        {% else %}<span class="muted">—</span>{% endif %}
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Geographic reach <span class="th-note">(US states)</span></th>
+                    <td>
+                        {% if a.state_heatmap_stats %}
+                            <strong>{{ a.state_heatmap_stats.states_covered }}</strong> states · top:
+                            {{ a.top_states[:3]|map(attribute='state')|join(', ') }}
+                        {% elif a.top_states %}
+                            <strong>{{ a.top_states|length }}</strong> states · top:
+                            {{ a.top_states[:3]|map(attribute='state')|join(', ') }}
+                        {% else %}<span class="muted">—</span>{% endif %}
+                    </td>
+                    <td>
+                        {% if b.state_heatmap_stats %}
+                            <strong>{{ b.state_heatmap_stats.states_covered }}</strong> states · top:
+                            {{ b.top_states[:3]|map(attribute='state')|join(', ') }}
+                        {% elif b.top_states %}
+                            <strong>{{ b.top_states|length }}</strong> states · top:
+                            {{ b.top_states[:3]|map(attribute='state')|join(', ') }}
+                        {% else %}<span class="muted">—</span>{% endif %}
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Closure rate <span class="th-note">(Item 20)</span></th>
+                    <td>
+                        {% if a.risk_badge %}
+                            {% if a.risk_badge.tier == 'green' %}🟢{% elif a.risk_badge.tier == 'yellow' %}🟡{% else %}🔴{% endif %}
+                            {{ a.risk_badge.rate_pct }}% <span class="th-note">({{ a.risk_badge.closures }} of {{ '{:,}'.format(a.risk_badge.starts) }} outlet-years)</span>
+                        {% else %}<span class="muted">—</span>{% endif %}
+                    </td>
+                    <td>
+                        {% if b.risk_badge %}
+                            {% if b.risk_badge.tier == 'green' %}🟢{% elif b.risk_badge.tier == 'yellow' %}🟡{% else %}🔴{% endif %}
+                            {{ b.risk_badge.rate_pct }}% <span class="th-note">({{ b.risk_badge.closures }} of {{ '{:,}'.format(b.risk_badge.starts) }} outlet-years)</span>
+                        {% else %}<span class="muted">—</span>{% endif %}
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Item 19 (Financial performance)</th>
+                    <td>{% if a.latest_fdd.has_item19 %}Disclosed ({{ a.item19_records|length }} records){% else %}<span class="muted">Not disclosed</span>{% endif %}</td>
+                    <td>{% if b.latest_fdd.has_item19 %}Disclosed ({{ b.item19_records|length }} records){% else %}<span class="muted">Not disclosed</span>{% endif %}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Estimated breakeven <span class="th-note">(arithmetic scenario)</span></th>
+                    <td>
+                        {% if a.breakeven and a.breakeven.low_years %}
+                            <strong>{{ a.breakeven.low_years }}{% if a.breakeven.high_years %} – {{ a.breakeven.high_years }}{% endif %} years</strong>
+                            <span class="th-note">(<a href="{{ url_for('franchise/' ~ a.brand.slug ~ '/') }}#breakeven">how this is calculated</a>)</span>
+                        {% elif a.breakeven and a.breakeven.unprofitable %}<span class="muted">unprofitable on disclosed data</span>
+                        {% else %}<span class="muted">no FPR / data to calculate</span>{% endif %}
+                    </td>
+                    <td>
+                        {% if b.breakeven and b.breakeven.low_years %}
+                            <strong>{{ b.breakeven.low_years }}{% if b.breakeven.high_years %} – {{ b.breakeven.high_years }}{% endif %} years</strong>
+                            <span class="th-note">(<a href="{{ url_for('franchise/' ~ b.brand.slug ~ '/') }}#breakeven">how this is calculated</a>)</span>
+                        {% elif b.breakeven and b.breakeven.unprofitable %}<span class="muted">unprofitable on disclosed data</span>
+                        {% else %}<span class="muted">no FPR / data to calculate</span>{% endif %}
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">All-in % of revenue to franchisor <span class="th-note">(royalty + marketing + tech)</span></th>
+                    <td>
+                        {% set a_roy = a.fees.royalty_pct if a.fees else None %}
+                        {% set a_mkt = a.fees.marketing_fee_pct if a.fees else None %}
+                        {% if a_roy or a_mkt %}
+                            ~{{ ((a_roy or 0) + (a_mkt or 0))|round(1) }}%
+                            <span class="th-note">of gross{% if a.fees and a.fees.tech_fee_monthly %} + ${{ '{:,.0f}'.format(a.fees.tech_fee_monthly) }}/mo tech{% endif %}</span>
+                        {% else %}<span class="muted">—</span>{% endif %}
+                    </td>
+                    <td>
+                        {% set b_roy = b.fees.royalty_pct if b.fees else None %}
+                        {% set b_mkt = b.fees.marketing_fee_pct if b.fees else None %}
+                        {% if b_roy or b_mkt %}
+                            ~{{ ((b_roy or 0) + (b_mkt or 0))|round(1) }}%
+                            <span class="th-note">of gross{% if b.fees and b.fees.tech_fee_monthly %} + ${{ '{:,.0f}'.format(b.fees.tech_fee_monthly) }}/mo tech{% endif %}</span>
+                        {% else %}<span class="muted">—</span>{% endif %}
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Full brand page</th>
+                    <td><a href="{{ url_for('franchise/' ~ a.brand.slug ~ '/') }}">See {{ a_name }} page →</a></td>
+                    <td><a href="{{ url_for('franchise/' ~ b.brand.slug ~ '/') }}">See {{ b_name }} page →</a></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <p class="notes">
+            <strong>How to read this.</strong> Both columns show numbers as the franchisor disclosed them in
+            their most recent FDD. Numbers shown are facts (or "Not disclosed"), not editorial scoring.
+            Breakeven is intentionally not put side-by-side here: the two brands may compute net profit
+            differently (one reports actual margin, the other relies on industry-typical assumptions),
+            so a direct ranking would mislead. Use the brand-page links to see each method explained.
+        </p>
+    </section>
+
+    <section class="cta">
+        <h2>Next steps</h2>
+        <p>Both pages above include the full Item 19 table, outlet growth chart, and source-PDF deep links per row.</p>
+        <p class="affiliate-inline-disclosure"><em>The buttons below are affiliate links. We may earn a commission if you book a consultation or apply for financing — at no cost to you.</em></p>
+        <div class="cta-buttons">
+            <a class="btn btn-secondary" href="#" data-cta="franchise-consultant">Talk to a franchise consultant</a>
+            <a class="btn btn-secondary" href="#" data-cta="sba-loan">Get pre-qualified for SBA financing</a>
+        </div>
+    </section>
+
+    {% if compare_faqs %}
+    <section class="faq">
+        <h2>Frequently asked questions: {{ a_name }} vs {{ b_name }}</h2>
+        {% for faq in compare_faqs %}
+        <details class="faq-item">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer"><p>{{ faq.answer_html|safe }}</p></div>
+        </details>
+        {% endfor %}
+    </section>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {% for faq in compare_faqs %}
+        {
+          "@type": "Question",
+          "name": {{ faq.question|tojson }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ faq.answer_html|striptags|tojson }}
+          }
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ]
+    }
+    </script>
+    {% endif %}
+
+    <section class="sources">
+        <h3>Sources</h3>
+        <ul>
+            <li>{{ a_name }} — {{ a.latest_fdd.filing_year }} FDD ({{ a.latest_fdd.filing_state }}){% if a.latest_fdd.effective_date %}, issued {{ a.latest_fdd.effective_date }}{% endif %}. <a href="{{ a.latest_fdd.source_url }}" rel="nofollow">Filing</a>.</li>
+            <li>{{ b_name }} — {{ b.latest_fdd.filing_year }} FDD ({{ b.latest_fdd.filing_state }}){% if b.latest_fdd.effective_date %}, issued {{ b.latest_fdd.effective_date }}{% endif %}. <a href="{{ b.latest_fdd.source_url }}" rel="nofollow">Filing</a>.</li>
+        </ul>
+        <p>See <a href="{{ url_for('methodology/') }}">methodology</a> for the extraction process.</p>
+    </section>
+</article>
+{% endblock %}

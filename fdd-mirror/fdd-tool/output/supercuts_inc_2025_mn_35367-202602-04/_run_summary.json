@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\supercuts_inc_2025_mn_35367-202602-04.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0059,
+      "input_tokens": 2056,
+      "cached": 1340,
+      "output_tokens": 224
+    },
+    "item5": {
+      "cost_usd": 0.0128,
+      "input_tokens": 3352,
+      "cached": 1340,
+      "output_tokens": 423
+    },
+    "item6": {
+      "cost_usd": 0.016,
+      "input_tokens": 2633,
+      "cached": 1340,
+      "output_tokens": 783
+    },
+    "item7": {
+      "cost_usd": 0.0111,
+      "input_tokens": 4432,
+      "cached": 1340,
+      "output_tokens": 97
+    },
+    "item19": {
+      "cost_usd": 0.0368,
+      "input_tokens": 5898,
+      "cached": 1340,
+      "output_tokens": 1514,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.2471,
+      "input_tokens": 20632,
+      "cached": 1340,
+      "output_tokens": 12585,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3297
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\closets_unlimited_of_new_jersey_inc_2026_mn_35990-202604-09.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.006,
+      "input_tokens": 2002,
+      "cached": 1340,
+      "output_tokens": 243
+    },
+    "item5": {
+      "cost_usd": 0.009,
+      "input_tokens": 2040,
+      "cached": 1340,
+      "output_tokens": 431
+    },
+    "item6": {
+      "cost_usd": 0.0143,
+      "input_tokens": 3399,
+      "cached": 1340,
+      "output_tokens": 513
+    },
+    "item7": {
+      "cost_usd": 0.0067,
+      "input_tokens": 3007,
+      "cached": 1340,
+      "output_tokens": 88
+    },
+    "item19": {
+      "cost_usd": 0.1099,
+      "input_tokens": 18008,
+      "cached": 1340,
+      "output_tokens": 3963,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.0661,
+      "input_tokens": 8885,
+      "cached": 1340,
+      "output_tokens": 2874,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.212
+}

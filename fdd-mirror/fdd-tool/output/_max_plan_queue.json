@@ -1,0 +1,152 @@
+[
+  {
+    "pri": 1,
+    "reason": "stub",
+    "pdf_path": "data\\wi_scrape\\aussie_pet_mobile_id640885.pdf",
+    "brand": "aussie-pet-mobile"
+  },
+  {
+    "pri": 1,
+    "reason": "stub",
+    "pdf_path": "data\\wi_scrape\\five_star_bath_solutions_id640871.pdf",
+    "brand": "five-star-bath-solutions"
+  },
+  {
+    "pri": 1,
+    "reason": "stub",
+    "pdf_path": "data\\wi_scrape\\homewatch_caregivers_id641535.pdf",
+    "brand": "homewatch-caregivers"
+  },
+  {
+    "pri": 1,
+    "reason": "stub",
+    "pdf_path": "data\\wi_scrape\\martinizing_id639404.pdf",
+    "brand": "martinizing"
+  },
+  {
+    "pri": 1,
+    "reason": "stub",
+    "pdf_path": "data\\mn_scrape\\mb_franchise_holdings_inc_2024_mn_32579-202411-10.pdf",
+    "brand": "mb-franchise-holdings-inc-2024-mn-32579-202411-10"
+  },
+  {
+    "pri": 1,
+    "reason": "stub",
+    "pdf_path": "data\\mn_scrape\\school_of_rock_franchising_llc_2026_mn_36006-202604-09.pdf",
+    "brand": "school-of-rock"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2014",
+    "pdf_path": "data\\servpro_2014.pdf",
+    "brand": "servpro"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2023",
+    "pdf_path": "data\\crumbl_yale.pdf",
+    "brand": "crumbl"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\bojangles_opco_llc_2024_mn_32925-202502-04.pdf",
+    "brand": "bojangles"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\carl_s_jr_restaurants_llc_2025_mn_35314-202601-02.pdf",
+    "brand": "carl-s-jr"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\tmc_franchise_corporation_2024_mn_33485-202504-03.pdf",
+    "brand": "circle-k"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\mif_l_l_c_2024_mn_32504-202410-02.pdf",
+    "brand": "city-express-by-marriott"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\code_ninjas_llc_2024_mn_32291-202408-04.pdf",
+    "brand": "code-ninjas"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\h_1_auto_care_llc_2024_mn_32519-202410-06.pdf",
+    "brand": "honest1"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\ihop_franchisor_llc_traditional_program_2024_mn_32801-202501-03.pdf",
+    "brand": "ihop"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\jackson_hewitt_inc_2024_mn_32305-202408-06.pdf",
+    "brand": "jackson-hewitt-tax-service"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\massage_heights_franchising_llc_2024_mn_32640-202411-03.pdf",
+    "brand": "massage-heights"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\mrs_fields_franchising_llc_2024_mn_32610-202411-08.pdf",
+    "brand": "mrs-fields"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\outback_steakhouse_of_florida_llc_2024_mn_32430-202410-01.pdf",
+    "brand": "outback-steakhouse"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\petsmart_veterinary_services_llc_2024_mn_32823-202501-04.pdf",
+    "brand": "petsmart-veterinary-services"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\qdoba_franchisor_llc_2024_mn_32709-202412-09.pdf",
+    "brand": "qdoba"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\restoration_1_franchise_holding_llc_2024_mn_32704-202412-03.pdf",
+    "brand": "restoration-1"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\sylvan_learning_llc_2024_mn_32609-202411-04.pdf",
+    "brand": "sylvan-learning"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\whg_franchisor_llc_2024_mn_32347-202409-08.pdf",
+    "brand": "waterwalk-mb"
+  },
+  {
+    "pri": 2,
+    "reason": "yr2024",
+    "pdf_path": "data\\mn_scrape\\waxing_the_city_franchisor_llc_2024_mn_32583-202411-04.pdf",
+    "brand": "waxing-the-city"
+  }
+]

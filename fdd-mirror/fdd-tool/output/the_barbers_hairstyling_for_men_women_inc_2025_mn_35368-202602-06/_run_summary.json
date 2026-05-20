@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\the_barbers_hairstyling_for_men_women_inc_2025_mn_35368-202602-06.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0079,
+      "input_tokens": 2073,
+      "cached": 1340,
+      "output_tokens": 250
+    },
+    "item5": {
+      "cost_usd": 0.0113,
+      "input_tokens": 2654,
+      "cached": 1340,
+      "output_tokens": 330
+    },
+    "item6": {
+      "cost_usd": 0.0181,
+      "input_tokens": 2710,
+      "cached": 1340,
+      "output_tokens": 769
+    },
+    "item7": {
+      "cost_usd": 0.0104,
+      "input_tokens": 3416,
+      "cached": 1340,
+      "output_tokens": 83
+    },
+    "item19": {
+      "cost_usd": 0.0706,
+      "input_tokens": 19465,
+      "cached": 1340,
+      "output_tokens": 83,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.2509,
+      "input_tokens": 18453,
+      "cached": 1340,
+      "output_tokens": 12352,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3692
+}

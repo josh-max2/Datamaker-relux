@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 4,
+  "royalty_min_monthly": 850,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": 575,
+  "tech_fee_monthly": 80,
+  "fee_notes": "Royalty is 4% of annual Net Revenues with $850/month minimum, reconciled semiannually. Marketing and Technology Fee is $575/month combined (not split), subject to annual increase. POS System fee $80/month to third-party provider.",
+  "raw_excerpt": "Royalty Fee: 4% of your actual annual Net Revenues. Payable $850 per month on the 1st day of each month... Marketing and Technology Fee: As of the date of this Disclosure Document, $575 per month, subject to increase annually... POS System Fee: As of the date of this Disclosure Document, $80 per month",
+  "confidence": 0.92
+}

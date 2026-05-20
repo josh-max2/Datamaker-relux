@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\cheba_hut_franchising_inc_2026_mn_35866-202604-06.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0058,
+      "input_tokens": 2076,
+      "cached": 1340,
+      "output_tokens": 210
+    },
+    "item5": {
+      "cost_usd": 0.0099,
+      "input_tokens": 2530,
+      "cached": 1340,
+      "output_tokens": 392
+    },
+    "item6": {
+      "cost_usd": 0.0086,
+      "input_tokens": 1642,
+      "cached": 1340,
+      "output_tokens": 488
+    },
+    "item7": {
+      "cost_usd": 0.0106,
+      "input_tokens": 4285,
+      "cached": 1340,
+      "output_tokens": 92
+    },
+    "item19": {
+      "cost_usd": 0.1553,
+      "input_tokens": 13035,
+      "cached": 1340,
+      "output_tokens": 7987,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.1101,
+      "input_tokens": 11401,
+      "cached": 1340,
+      "output_tokens": 5302,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.3003
+}

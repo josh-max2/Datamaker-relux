@@ -1,0 +1,62 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Net Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "2,116 franchised Wingstop Restaurants open for operation during the entire 2025 Measured Period",
+      "outlet_count": 2116,
+      "reporting_period": "2025 Measured Period (December 29, 2024 through December 27, 2025)",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 2007626,
+      "value_median": 1890866,
+      "value_min": 584584,
+      "value_max": 5042476,
+      "pct_above_avg": 43,
+      "page_number": 65,
+      "raw_text": "The actual average annual net sales during the 2025 Measured Period for the 2,116 franchised Wingstop Restaurants open for operation during the entire 2025 Measured Period were $2,007,626."
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Net Sales",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "WRI's 55 Wingstop Restaurants open for operation during the entire 2025 Measured Period",
+      "outlet_count": 55,
+      "reporting_period": "2025 Measured Period (December 29, 2024 through December 27, 2025)",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 2496111,
+      "value_median": 2411495,
+      "value_min": 1126897,
+      "value_max": 4038428,
+      "pct_above_avg": 47,
+      "page_number": 65,
+      "raw_text": "The actual average annual net sales during the 2025 Measured Period for WRI's 55 Wingstop Restaurants open for operation during the entire 2025 Measured Period were $2,496,111."
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Net Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All Wingstop Restaurants (both franchised and WRI-owned) open for operation during the entire 2025 Measured Period",
+      "outlet_count": 2171,
+      "reporting_period": "2025 Measured Period (December 29, 2024 through December 27, 2025)",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 2020001,
+      "value_median": 1904215,
+      "value_min": 584584,
+      "value_max": 5042476,
+      "pct_above_avg": 43,
+      "page_number": 65,
+      "raw_text": "The actual average annual net sales (defined below) for the 2025 Measured Period for all Wingstop Restaurants in the system in the United States that were open for operation during the entire 2025 Measured Period, including both franchised and WRI's Restaurants, were $2,020,001.",
+      "notes": "This record covers all system restaurants (franchised + company-owned combined). outlet_count=2171 (55 WRI + 2116 franchised). pct_above_avg=43 is for franchised subset; WRI subset was 62%."
+    }
+  ],
+  "confidence": 0.97,
+  "notes": "Item 19 reports net sales only (no cost/profit data). Excludes 384 franchised + 3 WRI restaurants that opened during the period, 10 franchised temporarily closed 60+ days, and 4 franchised + 1 WRI permanently closed."
+}

@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 0,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 3.0,
+  "marketing_min_monthly": 2000,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty fee is currently $0 but franchisor reserves the right to impose up to 2.5% of Gross Revenues at any time. NMF Contribution (marketing/brand fund) is currently 3% of Gross Sales but can be increased up to 5% of Gross Revenues with written notice. During the Initial NMF Period (first 12 full calendar months), NMF Contribution is a fixed monthly amount based on territory population: <500K=$2,000/mo, 500K-750K=$2,500/mo, 750K-1.25M=$5,000/mo, 1.25M-1.75M=$7,500/mo, 1.75M-2.25M=$10,000/mo, 2.25M+=$12,500/mo. After Initial NMF Period, calculated as NMF Percentage x (prior period Gross Revenues x (5% Set Increase + 100%)) / 12, subject to a floor of the highest monthly NMF Contribution ever due.",
+  "raw_excerpt": "Royalty Fee (Note 2): Currently $0. However, we reserve the right at any time to impose a royalty fee in an amount not to exceed 2.5% of Gross Revenues. If incurred. (Note 2). If we impose a royalty fee, it will be payable when indicated in the Franchise Agreement, based on Gross Revenues for the prior period of time. We may withdraw amounts due by EFT from your designated bank account when due. See Note 2.\n\nNMF Contribution (Note 3): Calculated based on NMF Percentage. (Note 3). Each month. See Note 3.\n\nNote 3: For the period between signing the Franchise Agreement and the 12th full calendar month after that (the 'Initial NMF Period'), the NMF Contribution is calculated as follows each month: Territory Population / Monthly $ / Months / Yearly: <500K / $2,000 / 12 / $24,000; 500K-0.75M / $2,500 / 12 / $30,000; 750K-1.25M / $5,000 / 12 / $60,000; 1.25M-1.75M / $7,500 / 12 / $90,000; 1.75M-2.25M / $10,000 / 12 / $120,000; 2.25M+ / $12,500 / 12 / $150,000. For Calendar Year 1: NMF Percentage (currently 3% of Gross Sales) x (Franchised Business Gross Revenues for the Initial NMF Period x (Set Increase currently 5% + 100%)) / 12. We have the right to periodically make changes to the NMF Percentage (up to 5% of Gross Revenues).",
+  "confidence": 0.88
+}

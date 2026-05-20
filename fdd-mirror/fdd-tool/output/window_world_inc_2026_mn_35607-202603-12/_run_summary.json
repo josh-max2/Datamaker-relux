@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\window_world_inc_2026_mn_35607-202603-12.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0053,
+      "input_tokens": 1963,
+      "cached": 1340,
+      "output_tokens": 199
+    },
+    "item5": {
+      "cost_usd": 0.0044,
+      "input_tokens": 1567,
+      "cached": 1340,
+      "output_tokens": 224
+    },
+    "item6": {
+      "cost_usd": 0.0271,
+      "input_tokens": 6848,
+      "cached": 1340,
+      "output_tokens": 679
+    },
+    "item7": {
+      "cost_usd": 0.01,
+      "input_tokens": 4117,
+      "cached": 1340,
+      "output_tokens": 86
+    },
+    "item19": {
+      "cost_usd": 0.1009,
+      "input_tokens": 12988,
+      "cached": 1340,
+      "output_tokens": 4372,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.2234,
+      "input_tokens": 17473,
+      "cached": 1340,
+      "output_tokens": 11643,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3712
+}

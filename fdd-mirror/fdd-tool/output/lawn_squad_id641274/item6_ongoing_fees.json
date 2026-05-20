@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 7,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 450,
+  "fee_notes": "Royalty: 7% of Gross Revenue with annual minimum (calculated via MPR starting month 13). Brand Fund: 2% of Gross Revenue (max 2%, may be specified differently with notice). Local Marketing: $42,000/year for first 5 years, then greater of 8% of prior year gross revenue or $42,000. Website Fee: $350/month (up 10% increase allowed with 30 days notice). Technology Fee: $450/month base (up to $500/month maximum, plus allocated costs for new tools). Additional fees: Call Center setup $7,600, pre-opening training (variable), opening support ($500/day + expenses if requested), territory infringement penalties (escalating 25%-100% of unauthorized revenue), non-compliance fees ($500-$1,000 per violation).",
+  "raw_excerpt": "Royalty Fee: 7% of Gross Revenue semi-monthly. Brand Fund Contribution: Currently, 2% of Gross Revenue. Local Marketing: $42,000 per calendar year for first 5 years, then greater of 8% of prior year Gross Revenue or $42,000. Website Fee: $350 monthly. Technology Fees: Currently, $450 per month.",
+  "confidence": 0.94
+}

@@ -1,0 +1,327 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 14,
+      "outlets_end": 15,
+      "net_change": 1
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 15,
+      "outlets_end": 16,
+      "net_change": 1
+    },
+    {
+      "year": 2025,
+      "outlet_type": "franchised",
+      "outlets_start": 16,
+      "outlets_end": 17,
+      "net_change": 1
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    },
+    {
+      "year": 2025,
+      "outlet_type": "company-owned",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 15,
+      "outlets_end": 16,
+      "net_change": 1
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 16,
+      "outlets_end": 17,
+      "net_change": 1
+    },
+    {
+      "year": 2025,
+      "outlet_type": "total",
+      "outlets_start": 17,
+      "outlets_end": 18,
+      "net_change": 1
+    }
+  ],
+  "state_year_status": [
+    {
+      "year": 2023,
+      "state": "AZ",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "AZ",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "AZ",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "CO",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "CO",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "CO",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "FL",
+      "outlets_start": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "FL",
+      "outlets_start": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2025,
+      "state": "FL",
+      "outlets_start": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2023,
+      "state": "GA",
+      "outlets_start": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "GA",
+      "outlets_start": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2025,
+      "state": "GA",
+      "outlets_start": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2023,
+      "state": "IA",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "IA",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "IA",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "MO",
+      "outlets_start": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2024,
+      "state": "MO",
+      "outlets_start": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2025,
+      "state": "MO",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "NC",
+      "outlets_start": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2024,
+      "state": "NC",
+      "outlets_start": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2025,
+      "state": "NC",
+      "outlets_start": 2,
+      "outlets_end": 2
+    },
+    {
+      "year": 2023,
+      "state": "OH",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "OH",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "OH",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "SC",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "SC",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "SC",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "TX",
+      "outlets_start": 3,
+      "outlets_end": 3
+    },
+    {
+      "year": 2024,
+      "state": "TX",
+      "outlets_start": 3,
+      "outlets_end": 3
+    },
+    {
+      "year": 2025,
+      "state": "TX",
+      "outlets_start": 3,
+      "outlets_end": 3
+    },
+    {
+      "year": 2023,
+      "state": "VA",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "VA",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "VA",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "WA",
+      "outlets_start": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2024,
+      "state": "WA",
+      "outlets_start": 0,
+      "outlets_opened": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "WA",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "WI",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "WI",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2025,
+      "state": "WI",
+      "outlets_start": 1,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "TOTAL",
+      "outlets_start": 15,
+      "outlets_opened": 1,
+      "outlets_end": 16
+    },
+    {
+      "year": 2024,
+      "state": "TOTAL",
+      "outlets_start": 16,
+      "outlets_opened": 1,
+      "outlets_end": 17
+    },
+    {
+      "year": 2025,
+      "state": "TOTAL",
+      "outlets_start": 17,
+      "outlets_opened": 1,
+      "outlets_end": 18
+    }
+  ],
+  "confidence": 1.0
+}

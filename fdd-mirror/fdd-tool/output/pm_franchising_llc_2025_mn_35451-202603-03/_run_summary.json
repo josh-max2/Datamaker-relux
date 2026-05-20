@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\pm_franchising_llc_2025_mn_35451-202603-03.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0043,
+      "input_tokens": 1604,
+      "cached": 1340,
+      "output_tokens": 207
+    },
+    "item5": {
+      "cost_usd": 0.0059,
+      "input_tokens": 1719,
+      "cached": 1340,
+      "output_tokens": 293
+    },
+    "item6": {
+      "cost_usd": 0.0061,
+      "input_tokens": 1350,
+      "cached": 1340,
+      "output_tokens": 379
+    },
+    "item7": {
+      "cost_usd": 0.0121,
+      "input_tokens": 4780,
+      "cached": 1340,
+      "output_tokens": 91
+    },
+    "item19": {
+      "cost_usd": 0.2178,
+      "input_tokens": 17692,
+      "cached": 1340,
+      "output_tokens": 11226,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1893,
+      "input_tokens": 16653,
+      "cached": 1340,
+      "output_tokens": 9532,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.4356
+}

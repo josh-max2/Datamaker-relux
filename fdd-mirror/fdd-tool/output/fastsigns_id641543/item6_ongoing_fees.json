@@ -1,0 +1,9 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 1250,
+  "marketing_fee_pct": 2,
+  "tech_fee_monthly": 175,
+  "fee_notes": "Royalty (Service Fee) is 6% of Gross Sales with $1,250/month minimum for new franchisees; Conversion/Co-Brand get 3% for first 12 months then 6%. Ad Fee is 2% (1% first year for Conversion/Co-Brand). Tiered rebate structure reduces effective rates at higher sales volumes (e.g., 3.75% royalty + 1% ad fee above $10,258,153).",
+  "raw_excerpt": "Service Fee equal to 6% of Gross Sales...greater of $1,250 or 6% of Gross Sales...Ad Fee equal to 2% of Gross Sales...Technology Fee of $175 per month",
+  "confidence": 0.95
+}

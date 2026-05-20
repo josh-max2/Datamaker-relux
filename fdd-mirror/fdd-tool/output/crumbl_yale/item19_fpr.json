@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Total Revenue",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "324 Crumbl\u00ae locations that operated continuously through all of 2022",
+      "outlet_count": 324,
+      "reporting_period": "2022 calendar year",
+      "value_avg": 1838908.63,
+      "value_median": 1796339.22,
+      "value_min": 589291.38,
+      "value_max": 4022090.82,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 46.3,
+      "page_number": 88,
+      "raw_text": "Total Revenue  $   1,838,908.63   $   4,022,090.82   $   1,796,339.22   $      589,291.38",
+      "notes": "150 out of 324 locations (approx. 46.3%) met or surpassed the average Total Revenue. 10 locations had cost information partially estimated from historical data."
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Gross Profit",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "324 Crumbl\u00ae locations that operated continuously through all of 2022",
+      "outlet_count": 324,
+      "reporting_period": "2022 calendar year",
+      "value_avg": 775510.65,
+      "value_median": 756634.71,
+      "value_min": 164310.15,
+      "value_max": 1981642.03,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 47.2,
+      "page_number": 88,
+      "raw_text": "Gross Profit  $      775,510.65   $   1,981,642.03   $      756,634.71   $      164,310.15",
+      "notes": "153 out of 324 locations (approx. 47.2%) met or surpassed the average Gross Profit. Gross Profit defined as Gross Sales minus cost of goods sold, including food goods, labor, and payroll taxes. 10 locations had Gross Profit partially estimated from historical data."
+    },
+    {
+      "metric_name": "net_profit",
+      "metric_raw": "Net Profit",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "324 Crumbl\u00ae locations that operated continuously through all of 2022",
+      "outlet_count": 324,
+      "reporting_period": "2022 calendar year",
+      "value_avg": 298319.08,
+      "value_median": 256029.93,
+      "value_min": -160202.58,
+      "value_max": 1117012.31,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 42.0,
+      "page_number": 88,
+      "raw_text": "Net Profit  $      298,319.08   $   1,117,012.31   $      256,029.93   $    (160,202.58)",
+      "notes": "136 out of 324 locations (approx. 42.0%) met or surpassed the average Net Profit. Net Profit defined as Gross Profit minus all ordinary and recurring operating expenses, interest, income taxes, depreciation, and amortization. May include officer wages, guaranteed payments, corporate benefits and perks, and other indirect costs. Low store value is negative (loss). 10 locations had Net Profit partially estimated from historical data."
+    }
+  ],
+  "has_item19": true,
+  "confidence": 0.98,
+  "notes": "Three metrics (Total Revenue, Gross Profit, Net Profit) reported for a single cohort of 324 franchised locations open continuously for all of 2022. This represents approximately 47.16% of total traditional franchised locations operating at end of 2022 (687 total). High/Median/Low store values are based on the corresponding Total Revenue column. One non-traditional franchise location was excluded from the dataset. The definition section references '140 Crumbl\u00ae locations' in the context of 'Average Month/Average Monthly' calculations, which appears to be an artifact from a prior version of the FDD and does not affect the 324-location table data extracted here."
+}

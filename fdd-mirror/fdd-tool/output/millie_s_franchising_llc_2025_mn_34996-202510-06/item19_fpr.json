@@ -1,0 +1,64 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "CY 2024 Gross Sales",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Corporate-Owned Shops Operating a Standard 7-day Schedule, 358 Days per Year",
+      "outlet_count": 2,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_min": 495068,
+      "value_max": 593303,
+      "raw_text": "Shop 1 $495,068 Shop 2 $593,303"
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "CY 2024 Gross Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "Franchisee-Owned Shops Operating a Standard 7-day Schedule, 358 Days per Year",
+      "outlet_count": 3,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_min": 513877,
+      "value_max": 624972,
+      "raw_text": "Shop 3 $513,877 Shop 4 $518,402 Shop 5 $624,972"
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "CY 2024 Gross Sales",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company-Owned Seasonal Kiosks and Shops Operating Non-Standard Schedule",
+      "outlet_count": 3,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_min": 83495,
+      "value_max": 320002,
+      "raw_text": "Shop 6 $181,629 Shop 10 $320,002 Shop 11 $83,495",
+      "notes": "Shops 7-9 are missing from the company-owned section; OCR gap between Shop 6 and Shop 10 \u2014 Shops 7, 8, 9 appear under franchisee-owned seasonal section instead."
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "CY 2024 Gross Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "Franchisee-Owned Seasonal Kiosks and Shops Operating Non-Standard Schedule",
+      "outlet_count": 3,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_min": 201939,
+      "value_max": 424335,
+      "raw_text": "Shop 7 $201,939 Shop 8 $221,833 Shop 9 $424,335"
+    }
+  ],
+  "confidence": 0.82,
+  "notes": "Item 19 present with individual outlet gross sales. No averages, medians, or profit figures disclosed. Seasonal kiosks/non-standard schedule shops are no longer sold as individual franchise offerings. 3 partial-year franchisee shops excluded. Company-owned seasonal section shows Shop 6, 10, 11 (Shop 7-9 numbering appears under franchisee seasonal \u2014 numbering gap may reflect OCR issue or intentional ordering)."
+}

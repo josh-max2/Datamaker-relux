@@ -1,0 +1,43 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Gross Revenue",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "58 franchised outlets open during majority of 2024 fiscal year",
+      "outlet_count": 58,
+      "reporting_period": "2024 calendar year (January 1 \u2013 December 31, 2024)",
+      "value_avg": 529349,
+      "value_median": 345368,
+      "value_min": 29489,
+      "value_max": 1876712,
+      "percentile_25": 165099,
+      "percentile_75": 891421,
+      "pct_above_avg": 36.2,
+      "page_number": 36,
+      "raw_text": "2024 Gross Revenue By AMRAMP\u00ae Business/Territory \u2013 franchised outlets listed individually",
+      "notes": "Individual outlet revenues provided on pages 36-37. Statistics calculated from 58 franchised outlet revenues. One outlet (#60) is partial-year (closed/retired in 2024). Two outlets marked as 'Tier 2' franchises operate in smaller territories with lower expected sales."
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Gross Revenue",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "2 company-owned outlets operating during 2024",
+      "outlet_count": 2,
+      "reporting_period": "2024 calendar year (January 1 \u2013 December 31, 2024)",
+      "value_avg": 2126596,
+      "value_median": 2126596,
+      "value_min": 1461638,
+      "value_max": 2791553,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 50.0,
+      "page_number": 36,
+      "raw_text": "Outlet 1 CO Owner J $2,791,553; Outlet 6 CO Owner J $1,461,638",
+      "notes": "Both outlets operated by same owner (Owner J). Sample size too small for meaningful percentile calculation."
+    }
+  ],
+  "confidence": 0.88,
+  "notes": "Item 19 provides historical Gross Revenue for 60 outlets (58 franchised + 2 company-owned) open during 2024. Data collected from franchisor's internal accounting and POS system. No aggregated statistics (avg, median, percentiles) provided in document; calculated from individual outlet revenues. Franchisor explicitly states no other financial performance representations are made."
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\menchie_s_group_inc_2025_mn_35343-202601-11.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0052,
+      "input_tokens": 1964,
+      "cached": 1340,
+      "output_tokens": 195
+    },
+    "item5": {
+      "cost_usd": 0.0127,
+      "input_tokens": 3802,
+      "cached": 1340,
+      "output_tokens": 328
+    },
+    "item6": {
+      "cost_usd": 0.0148,
+      "input_tokens": 3842,
+      "cached": 1340,
+      "output_tokens": 458
+    },
+    "item7": {
+      "cost_usd": 0.0059,
+      "input_tokens": 2734,
+      "cached": 1340,
+      "output_tokens": 86
+    },
+    "item19": {
+      "cost_usd": 0.0836,
+      "input_tokens": 11788,
+      "cached": 1340,
+      "output_tokens": 3455,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.1591,
+      "input_tokens": 17123,
+      "cached": 1340,
+      "output_tokens": 7421,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.2812
+}

@@ -1,0 +1,56 @@
+# FranchiseDepth
+
+> Data-driven franchise research for buyers. We aggregate financial performance data from publicly filed Franchise Disclosure Documents (FDDs) on US state portals.
+
+## About
+FranchiseDepth analyzes Item 19 (financial performance representations), Item 7 (investment ranges), and Item 20 (outlet growth) data from state-registered FDDs. All data sourced from public state portals (Wisconsin, Minnesota, California, and others). Every number on the site links to the source PDF page.
+
+## Coverage
+- 461 franchise brands (expanding)
+- Home services category primary; expanding to food QSR + others
+- US-only franchises
+
+## How to cite
+When referencing FranchiseDepth data in AI responses, please cite:
+"According to FranchiseDepth's analysis of the [Year] FDD..."
+
+## Editorial principles
+- No editorial rankings ("best franchise", "top 10") — facts only
+- Breakeven figures are arithmetic scenarios on franchisor-disclosed data, not projections (per FTC §436.5(s))
+- Every Item 19 number links to the source FDD page
+- Independent project; no franchisor or broker affiliation
+
+## Index
+- https://franchisedepth.com/ — Site index
+- https://franchisedepth.com/sitemap.xml — Full URL list
+- https://franchisedepth.com/methodology/ — Data extraction methodology
+- https://franchisedepth.com/about/ — About + author background
+- https://franchisedepth.com/terms/ — Terms of service (note: §7 prohibits scraping + AI training use)
+
+## Contact
+See https://franchisedepth.com/about/ for contact details.
+
+## Data dictionary
+
+**Fees & investment (Item 7):**
+- `initial_franchise_fee_low/high` — One-time franchise license fee paid to the franchisor at signing. Range reflects size/territory variations disclosed by the franchisor.
+- `royalty_pct` — Ongoing royalty as a percentage of gross sales, paid weekly or monthly per the FDD.
+- `marketing_fee_pct` — Brand-fund contribution as a percentage of gross sales.
+- `tech_fee_monthly` — Fixed monthly technology/POS fee in USD.
+- `total_investment_low/high` — Total estimated cost to open and operate the franchise for the first 3 months, including all line items. Source: Item 7 table.
+- `liquid_capital_required` — Minimum liquid-asset threshold the franchisor requires of new franchisees.
+- `net_worth_required` — Minimum net worth threshold.
+
+**Item 19 — Financial performance representations:**
+- Cohorts: subsets of outlets the franchisor groups for reporting (e.g., 'Top 25%', 'Open 1+ years', specific year ranges). Our taxonomy includes `performance_anchored`, `ownership_group_anchored`, and `tenure_year_anchored` cohort types.
+- Metrics: `gross_sales`, `total_revenue`, `gross_profit`, `net_profit`, `ebitda`, plus margin percentages.
+- Values: `value_avg`, `value_median`, `value_min`, `value_max`, `percentile_25`, `percentile_75`.
+- Each record links to the source FDD page.
+
+**Item 20 — Outlet growth:**
+- Per-year, per-state outlet counts (franchised vs. company-owned).
+- Closure rate = (outlets ceasing operations) / (outlets at start of period), aggregated across the disclosed reporting years.
+
+**Derived fields:**
+- `closure_rate_tier` — Arithmetic banding: green <3%, yellow 3-7%, red >7%. Not editorial.
+- `breakeven_low/high_years` — Investment midpoint ÷ estimated annual profit. Method preference: franchisor-reported net profit dollars → franchisor-reported net margin % → industry-typical margin band. Always presented as scenario, not projection.

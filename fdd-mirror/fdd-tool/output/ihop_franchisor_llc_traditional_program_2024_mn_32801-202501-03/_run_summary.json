@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\ihop_franchisor_llc_traditional_program_2024_mn_32801-202501-03.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0043,
+      "input_tokens": 1711,
+      "cached": 1340,
+      "output_tokens": 187
+    },
+    "item5": {
+      "cost_usd": 0.0126,
+      "input_tokens": 3453,
+      "cached": 1340,
+      "output_tokens": 389
+    },
+    "item6": {
+      "cost_usd": 0.0298,
+      "input_tokens": 3656,
+      "cached": 1340,
+      "output_tokens": 1497
+    },
+    "item7": {
+      "cost_usd": 0.0052,
+      "input_tokens": 2321,
+      "cached": 1340,
+      "output_tokens": 123
+    },
+    "item19": {
+      "cost_usd": 0.0984,
+      "input_tokens": 8300,
+      "cached": 1340,
+      "output_tokens": 5143,
+      "images_sent": 3
+    },
+    "item20": {
+      "cost_usd": 0.2697,
+      "input_tokens": 21632,
+      "cached": 1340,
+      "output_tokens": 13894,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.42
+}

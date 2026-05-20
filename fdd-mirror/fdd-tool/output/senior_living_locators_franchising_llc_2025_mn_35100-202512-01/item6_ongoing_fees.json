@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 8,
+  "royalty_min_monthly": 650,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": 162.5,
+  "tech_fee_monthly": 250,
+  "fee_notes": "Royalty min is $650/month per territory (1 territory=$650, 2=$1300, etc.), waived first 6 months. Marketing fund is greater of 2% or $162.50/territory/month. Tech fee currently $250/month, cap $500/month. Additional local marketing requirement: $1,000/month for first territory plus $500/month per additional territory.",
+  "raw_excerpt": "Royalty 8% of Gross Sales, subject to a Minimum Monthly Royalty Fee Requirement; Brand Development Fund Greater of 2% of Gross Sales or $162.50 per Territory per month; Technology Up to $500 per month, currently $250 per month",
+  "confidence": 0.95
+}

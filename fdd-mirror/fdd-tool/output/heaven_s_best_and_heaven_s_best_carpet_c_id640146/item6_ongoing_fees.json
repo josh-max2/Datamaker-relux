@@ -1,0 +1,10 @@
+{
+  "royalty_pct": null,
+  "royalty_min_monthly": 300,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": 100,
+  "tech_fee_monthly": 450,
+  "fee_notes": "Royalty is flat $300/month per territory up to 200,000 population, then +$1.50 per 1,000 persons over 200k; max 10% annual increase. Advertising fee up to $100/month not currently collected. Website/Software fee $200-$700/month (mid=$450). No royalty percentage of gross sales.",
+  "raw_excerpt": "Royalty Fee $300 per month per franchise territory up to 200,000 persons of population... Advertising Fee Up to $100 per month per territory... Website/Software Fee Then-current rates, currently $200 to $700 per month.",
+  "confidence": 0.92
+}

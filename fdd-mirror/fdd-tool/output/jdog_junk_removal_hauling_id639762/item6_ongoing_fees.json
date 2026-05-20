@@ -1,0 +1,5 @@
+{
+  "royalty_min_monthly": 400,
+  "fee_notes": "Royalty fixed monthly (not percentage-based). Tier 1: $800\u2192$1200\u2192$1600\u2192$2000/mo (months 1-12, 13-24, 25-36, 37+). Tier 2: $400\u2192$600\u2192$800\u2192$1000/mo. Tier 3: $400\u2192$600/mo. Marketing Fund currently $0 (cap $300/mo). Local Advertising Fund currently $0 (if established: 2% prior month sales or $500/mo minimum).",
+  "confidence": 0.9
+}

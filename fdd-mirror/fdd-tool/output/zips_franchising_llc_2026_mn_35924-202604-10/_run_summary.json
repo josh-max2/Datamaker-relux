@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\zips_franchising_llc_2026_mn_35924-202604-10.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0063,
+      "input_tokens": 2269,
+      "cached": 1340,
+      "output_tokens": 206
+    },
+    "item5": {
+      "cost_usd": 0.0063,
+      "input_tokens": 1502,
+      "cached": 1340,
+      "output_tokens": 364
+    },
+    "item6": {
+      "cost_usd": 0.0116,
+      "input_tokens": 1501,
+      "cached": 1340,
+      "output_tokens": 716
+    },
+    "item7": {
+      "cost_usd": 0.0099,
+      "input_tokens": 4020,
+      "cached": 1340,
+      "output_tokens": 95
+    },
+    "item19": {
+      "cost_usd": 0.12,
+      "input_tokens": 12393,
+      "cached": 1340,
+      "output_tokens": 5760,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.0791,
+      "input_tokens": 10790,
+      "cached": 1340,
+      "output_tokens": 3358,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.2332
+}

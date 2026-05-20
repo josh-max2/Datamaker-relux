@@ -1,0 +1,70 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2022,
+      "outlet_type": "franchised",
+      "outlets_start": 109,
+      "outlets_end": 116,
+      "net_change": 7
+    },
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 116,
+      "outlets_end": 115,
+      "net_change": -1
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 115,
+      "outlets_end": 17,
+      "net_change": 2
+    },
+    {
+      "year": 2022,
+      "outlet_type": "company-owned",
+      "outlets_start": 7,
+      "outlets_end": 7,
+      "net_change": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 7,
+      "outlets_end": 7,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 7,
+      "outlets_end": 7,
+      "net_change": 0
+    },
+    {
+      "year": 2022,
+      "outlet_type": "total",
+      "outlets_start": 116,
+      "outlets_end": 123,
+      "net_change": 7
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 123,
+      "outlets_end": 122,
+      "net_change": -1
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 122,
+      "outlets_end": 124,
+      "net_change": 2
+    }
+  ],
+  "state_year_status": [],
+  "confidence": 0.8,
+  "notes": "2024 franchised year-end value shows '17'; probable OCR error (should be 117 per net_change). Table 3 state-level status not provided in source text."
+}

@@ -1,0 +1,92 @@
+{
+  "has_item19": true,
+  "confidence": 0.88,
+  "notes": "Item 19 discloses two company-owned outlets only (Albuquerque, NM and Urbandale, IA); no franchise outlets exist. Data is for 2025 Calendar Year. OCR artifact: 'Direct Gross Profit $1,298764' for Albuquerque appears to be $1,298,764 (comma missing). Insurance % for Albuquerque shows '39%' which appears to be OCR error for '0.39%' based on $8,704/$2,234,921. Each outlet covers ~500,000 population (2 territories equivalent).",
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Gross Sales",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company Owned Outlet: Albuquerque, New Mexico - 2025 Calendar Year",
+      "outlet_count": 1,
+      "reporting_period": "2025 Calendar Year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 2234921,
+      "page_number": 46,
+      "raw_text": "Gross Sales $2,234,921 100.00%"
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Direct Gross Profit",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company Owned Outlet: Albuquerque, New Mexico - 2025 Calendar Year",
+      "outlet_count": 1,
+      "reporting_period": "2025 Calendar Year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1298764,
+      "page_number": 46,
+      "raw_text": "Direct Gross Profit $1,298764 58.11%",
+      "notes": "OCR missing comma; interpreted as $1,298,764"
+    },
+    {
+      "metric_name": "net_profit",
+      "metric_raw": "Direct Gross Profit After Disclosed Expenses and Franchisee Related Expenses",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company Owned Outlet: Albuquerque, New Mexico - 2025 Calendar Year",
+      "outlet_count": 1,
+      "reporting_period": "2025 Calendar Year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 985700,
+      "page_number": 46,
+      "raw_text": "Direct Gross Profit After Disclosed Expenses and Franchisee Related Expenses $985,700 44.10%"
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Gross Sales",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company Owned Outlet: Urbandale, Iowa - 2025 Calendar Year",
+      "outlet_count": 1,
+      "reporting_period": "2025 Calendar Year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 486045,
+      "page_number": 47,
+      "raw_text": "Gross Sales $486,045 100.00%"
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Direct Gross Profit",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company Owned Outlet: Urbandale, Iowa - 2025 Calendar Year",
+      "outlet_count": 1,
+      "reporting_period": "2025 Calendar Year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 243161,
+      "page_number": 47,
+      "raw_text": "Direct Gross Profit $243,161 50.03%"
+    },
+    {
+      "metric_name": "net_profit",
+      "metric_raw": "Direct Gross Profit After Disclosed Expenses and Franchisee Related Expenses",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company Owned Outlet: Urbandale, Iowa - 2025 Calendar Year",
+      "outlet_count": 1,
+      "reporting_period": "2025 Calendar Year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 124832,
+      "page_number": 47,
+      "raw_text": "Direct Gross Profit After Disclosed Expenses and Franchisee Related Expenses $124,832 25.68%"
+    }
+  ]
+}

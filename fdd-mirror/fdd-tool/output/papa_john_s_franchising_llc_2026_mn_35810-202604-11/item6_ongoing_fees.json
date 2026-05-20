@@ -1,0 +1,10 @@
+{
+  "royalty_pct": null,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": null,
+  "fee_notes": "Item 6 table text was not provided in the supplied section text; only Item 10 financing details appeared under the Item 6 header pages. Royalty and marketing fee rates not extractable from provided text.",
+  "raw_excerpt": "Item 6 table not present in supplied text excerpt.",
+  "confidence": 0.1
+}

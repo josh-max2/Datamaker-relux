@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\pb_franchising_spv_llc_2025_mn_35409-202602-04.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0071,
+      "input_tokens": 2317,
+      "cached": 1340,
+      "output_tokens": 250
+    },
+    "item5": {
+      "cost_usd": 0.0151,
+      "input_tokens": 4006,
+      "cached": 1340,
+      "output_tokens": 446
+    },
+    "item6": {
+      "cost_usd": 0.022,
+      "input_tokens": 5048,
+      "cached": 1340,
+      "output_tokens": 698
+    },
+    "item7": {
+      "cost_usd": 0.0089,
+      "input_tokens": 3727,
+      "cached": 1340,
+      "output_tokens": 89
+    },
+    "item19": {
+      "cost_usd": 0.2682,
+      "input_tokens": 18968,
+      "cached": 1340,
+      "output_tokens": 14330,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.2409,
+      "input_tokens": 19579,
+      "cached": 1340,
+      "output_tokens": 12387,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.5622
+}

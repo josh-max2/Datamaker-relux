@@ -1,0 +1,12 @@
+{
+  "legal_name": "AAAC Support Services, LLC",
+  "brand_name": "AAAC Wildlife Removal",
+  "state_of_inc": null,
+  "filing_year": 2025,
+  "issuance_date": "2025-06-30",
+  "website": null,
+  "raw_excerpt": "",
+  "confidence": 0.5,
+  "_partial": true,
+  "_read_error": "Read tool requires pdftoppm (not installed); python invocations blocked by permission system. Used pre-computed known_metadata only."
+}

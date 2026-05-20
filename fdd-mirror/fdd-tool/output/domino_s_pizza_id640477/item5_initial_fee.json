@@ -1,0 +1,6 @@
+{
+  "initial_franchise_fee_low": 0,
+  "initial_franchise_fee_high": 10000,
+  "fee_notes": "Range $0\u2013$10k depending on store type (new construction, refranchising, or transfer). Transfer fee $1.5k. Training fee up to $1.25k. Reservation fee $25k possible for dev agreement non-compliance. Waivable under incentive programs.",
+  "confidence": 0.97
+}

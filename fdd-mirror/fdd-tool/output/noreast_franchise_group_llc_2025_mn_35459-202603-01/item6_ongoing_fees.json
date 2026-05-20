@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5.5,
+  "royalty_min_monthly": 600,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": 150,
+  "tech_fee_monthly": 175,
+  "fee_notes": "Royalty is tiered: 5.5% of annualized monthly GS <$1M; 5.0% for $1M+. Monthly minimum royalty for 1 territory: $0 (mo 1-6), $400 (mo 7-12), $500 (mo 13-24), $600 (mo 25+). Brand Development Fund currently 1% GS or $150/territory/month (max 2% cap). Local marketing 2% GS or $150/territory/month (franchisee-directed). Website fee $100/month. Business Management System license $180/month for up to 10 clients + $12/client over 10. Client satisfaction portal $81/month. Bookkeeping $400/month (first 12 months).",
+  "raw_excerpt": "Royalty: Greater of 5.0% to 5.5% of Gross Sales or Monthly Minimum Royalty Fee. Brand Development Fund: currently the greater of 1% of Gross Sales or $150 per Territory per month. Technology: Currently $175 per month. Website Fee: Currently $100 per month.",
+  "confidence": 0.95
+}

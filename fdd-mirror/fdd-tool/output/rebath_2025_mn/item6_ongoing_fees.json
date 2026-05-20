@@ -1,0 +1,8 @@
+{
+  "royalty_pct": 5.5,
+  "royalty_min_monthly": 650,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": 325,
+  "fee_notes": "Royalty tiered: 5% if territory density \u2265$0.04/person, 6% if <$0.04/person. Minimum weekly: Y1 $150, Y2 $350, Y3 $700, Y4+ $800. Advertising 2% gross sales, minimum weekly: Y1 $75, Y2 $175, Y3 $350, Y4+ $400. Managed Services fee variable; Technology fee tiered by roles, reviewed up to 2x/year. All payments due Thursday of 8th week after contract signature.",
+  "confidence": 0.9
+}

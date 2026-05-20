@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty 6% of gross sales (no minimum). Brand Advertising Fund 2% of gross sales. Local Advertising required at greater of $400 or 3% of gross sales (not currently collected). Technology Fee (not currently implemented) would be greater of $300 or 2% of gross sales if implemented. Additional fees include: non-PGA coach approval ($150-$300), retraining ($185/hr up to 4 people, $50/hr each additional), replacement training ($5,000 for additional people), additional box ($5,200), audit ($1,000-$12,000 if underpaid by 2%+), transfer ($7,500 or $10,000), renewal (greater of $7,500 or 25% of current franchise fee), relocation ($1,000 + third-party costs, ~$2,000-$5,000), late/NSF fees ($100 per NSF + 12% annual interest + $100/week late fee), payment service fee (up to 4%), convention attendance (estimated $1,000/person), supplier evaluation ($100-$500), insurance replacement (costs + 20% admin), customer/warranty issue resolution ($185/hr + $200), non-compliance fee (greater of 1.05x revenue at issue or $400 weekly), indemnification (varies), additional support ($185/hr or custom quote), management fee ($2,000/month + $185/hr), liquidated damages (12-24 months of average royalty).",
+  "raw_excerpt": "Royalty: 6% of gross sales during the previous month. Brand Advertising Fund: 2% of gross sales per month. Local Advertising: The greater of $400 or 3% of gross sales per month. Technology Fee (if implemented): The greater of $300 or 2% of gross sales per month.",
+  "confidence": 0.9
+}

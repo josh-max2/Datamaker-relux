@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}How Long Does It Take to Break Even on a Franchise? A Data-Backed Buyer's Guide{% endblock %}
+{% block description %}Honest answer: it depends on the brand, the cohort you'd land in, and your operating discipline. This guide walks through how to compute breakeven from the actual numbers in any franchisor's FDD, with worked examples and red flags.{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Guides", "url": url_for('guides/')},
+    {"label": "How long to break even", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How Long Does It Take to Break Even on a Franchise? A Data-Backed Buyer's Guide",
+  "author": { "@type": "Person", "name": "FranchiseDepth Editorial", "url": "{{ url_for('about/') }}" },
+  "publisher": { "@type": "Organization", "name": "{{ site_name }}" },
+  "dateModified": "{{ generated_at }}",
+  "mainEntityOfPage": "{{ canonical_url }}",
+  "about": "Franchise breakeven analysis using FDD Items 7 and 19"
+}
+</script>
+{% endblock %}
+{% block content %}
+<article class="guide-page">
+    <header>
+        <h1>How long does it take to break even on a franchise?</h1>
+        <p class="lead">
+            The honest answer: it depends on the brand, the cohort you'd land in, and your operating discipline. The dishonest answer is any specific number — including the one a franchisor or broker quotes you. This guide explains how to compute breakeven from the actual numbers in any franchisor's FDD, what the typical range looks like in our data, and where the math gets misleading.
+        </p>
+        <p class="byline">
+            <span class="dateline">Page updated {{ generated_at }}</span>
+        </p>
+    </header>
+
+    <section>
+        <h2>What "breakeven" actually means</h2>
+        <p>
+            Three different things get called "breakeven" in franchise discussions. Confusing them is the most common reason buyers feel mismatched with the brand they bought into.
+        </p>
+        <ul>
+            <li><strong>Operational breakeven (cash-flow positive):</strong> The outlet's monthly revenue covers monthly operating costs (royalty + rent + labor + supplies + utilities). The franchisee is no longer losing money each month but hasn't recovered any of the initial investment. Typically 3-18 months from opening.</li>
+            <li><strong>Investment breakeven (recovered the initial check):</strong> Cumulative profit since opening equals the total amount you put in (<a class="jargon" href="{{ url_for('methodology/') }}#g-item7" title="See glossary">Item 7</a> total + working-capital reserves). Typically 2-7 years for most franchise concepts.</li>
+            <li><strong>Wage-replacement breakeven:</strong> The franchise has paid you back (a) what you invested + (b) the salary you'd have earned working elsewhere during those years. This is the honest economic break-even — and it's often 5-10+ years for owner-operators.</li>
+        </ul>
+        <p>
+            When a franchisor or broker says "breakeven in 18 months," they almost always mean operational breakeven. That's not the same as recovering your investment. Be specific about which version you're discussing.
+        </p>
+    </section>
+
+    <section>
+        <h2>The arithmetic: how to compute investment breakeven from any FDD</h2>
+        <p>
+            For any franchise that discloses <a class="jargon" href="{{ url_for('methodology/') }}#g-item19" title="See glossary">Item 19</a>, you can compute a defensible investment-breakeven scenario from two numbers:
+        </p>
+        <ol>
+            <li><strong>Total investment</strong> — from Item 7. Use the <em>midpoint</em> of the low/high range, or the High end if you want to plan conservatively. A $250K-$500K Item 7 range → use $375K midpoint or $500K conservative.</li>
+            <li><strong>Estimated annual profit</strong> — derived from Item 19. The franchisor may report this directly (rare) or you'll estimate it as <em>reported revenue × estimated margin</em>.</li>
+        </ol>
+        <p>
+            The formula: <code>breakeven_years = total_investment ÷ annual_profit</code>
+        </p>
+        <p>
+            Trivial in form. Treacherous in inputs. Most of the work is in picking honest values for both sides.
+        </p>
+    </section>
+
+    <section>
+        <h2>Picking the annual-profit input — three preference tiers</h2>
+        <p>
+            The franchisor's Item 19 dictates how confident your annual-profit estimate can be. From most-to-least reliable:
+        </p>
+
+        <h3>Tier 1: Franchisor reports actual net profit</h3>
+        <p>
+            About 10-15% of FDDs report net profit (or EBITDA) directly. When they do, use it. The breakeven calculation reduces to one division.
+        </p>
+        <p class="callout">
+            <strong>Example:</strong> A franchisor discloses median net profit of $85,000 per outlet across "all franchised outlets open 1+ years" with 47 outlets in the cohort. Item 7 midpoint is $310,000. Breakeven = $310K ÷ $85K ≈ <strong>3.6 years</strong>. High confidence.
+        </p>
+
+        <h3>Tier 2: Franchisor reports net margin %</h3>
+        <p>
+            Some FDDs disclose net or operating margin as a percentage of revenue, without reporting net profit in dollars. You multiply this by reported revenue to get implied profit.
+        </p>
+        <p class="callout">
+            <strong>Example:</strong> A franchisor discloses median gross sales of $612,000 and median net operating margin of 11% across the same cohort. Implied net = $612K × 11% = $67,320. Item 7 midpoint is $245,000. Breakeven = $245K ÷ $67.3K ≈ <strong>3.6 years</strong>. Medium-high confidence; assumes the disclosed margin generalizes.
+        </p>
+
+        <h3>Tier 3: Industry-typical margin (when franchisor discloses only revenue)</h3>
+        <p>
+            The majority of disclosed Item 19s give you revenue but not margin. In that case, you apply an industry-typical margin band as a sanity check — never as a forecast. The number you produce is a <em>scenario</em>, not a projection.
+        </p>
+        <p class="callout">
+            <strong>Example:</strong> A cleaning franchise discloses median gross sales of $390,000. The franchisor does not disclose margins. Industry-typical net margins for residential cleaning services run 10-18%. You apply that band: implied net is $39K-$70K, breakeven against a $145K Item 7 midpoint is <strong>2.1-3.7 years</strong>. Lower confidence — the band is broad because the franchisor wouldn't pin it down for you.
+        </p>
+        <p>
+            <strong>This is the level of confidence you have without validation calls.</strong> Tier-3 inputs are why <a href="{{ url_for('guides/validating-franchisee-earnings/') }}">talking to existing franchisees</a> matters so much: real margins from real owners replace the industry band with concrete numbers.
+        </p>
+    </section>
+
+    <section>
+        <h2>What buyers consistently get wrong</h2>
+
+        <h3>Using the Item 7 Low end</h3>
+        <p>
+            The Item 7 Low column assumes the best-case scenario on every line — second-generation space, cheapest equipment options, minimal training travel. Almost no franchisee opens at the Low number. Compute breakeven against the High end or at least the midpoint, not the Low. See the <a href="{{ url_for('guides/understanding-item-7/') }}">Item 7 guide</a> for what's in the range and what isn't.
+        </p>
+
+        <h3>Forgetting to subtract their own salary</h3>
+        <p>
+            Owner-operators often forget that the "profit" in Item 19 doesn't subtract any wages for the owner's time. If the disclosed margin assumes the franchisee is working in the business 60 hours/week for free, your effective return is lower. Reasonable rule: subtract the salary you'd earn doing your previous job from the profit number before computing breakeven against your invested capital.
+        </p>
+
+        <h3>Using a cherry-picked cohort</h3>
+        <p>
+            When a franchisor discloses Item 19 only for "Top 25% performers" or "outlets open 3+ years that submitted complete data," the numbers describe top performers — not typical buyers. Apply industry-typical haircuts (often 30-50%) to estimate what the median or first-quartile buyer experiences. Better: ask current franchisees what their actual numbers are.
+        </p>
+
+        <h3>Ignoring debt service</h3>
+        <p>
+            If you're financing $300K of a $400K investment with an SBA 7(a) loan over 10 years at 9%, your debt service is roughly $46K/year — pure cash out before any profit calculation. Compute breakeven from <em>profit after debt service</em>, not pre-debt EBITDA. Many franchisors quote operating margin pre-debt, which is misleading for buyers using financing.
+        </p>
+
+        <h3>Treating one number as the answer</h3>
+        <p>
+            Breakeven is a range, not a single year. Even with perfect inputs, a 4-year average could mean half of franchisees broke even in 3 years and half in 5+. Quartile data from Item 19 (P25 and P75) — when available — gives you the realistic spread.
+        </p>
+    </section>
+
+    <section>
+        <h2>What the data we've extracted looks like</h2>
+        <p>
+            Across the 26 brands we currently track, here's what arithmetic breakeven looks like by category, using each franchisor's best-disclosed cohort (preferring all-franchised, falling back to tenure-anchored, last-resort performance-anchored):
+        </p>
+        <ul>
+            <li><strong>Junk removal / hauling:</strong> Typically 2-6 years. Higher initial fees but high gross margins. Strongest variability based on territory population density.</li>
+            <li><strong>Residential cleaning:</strong> Typically 2-5 years for the median cohort. Low capital intensity but margin-sensitive to labor cost.</li>
+            <li><strong>Bathroom remodeling (e.g., Re-Bath, Bath Fitter):</strong> Typically 1-3 years for revenue-disclosed cohorts. High ticket per job, but heavy reliance on lead generation.</li>
+            <li><strong>Handyman / multi-trade services:</strong> Typically 2-4 years. Moderate capital, scales with technician headcount.</li>
+            <li><strong>Restoration (water/fire damage):</strong> Highly variable — 1-8 years. Insurance-driven revenue cycle plus heavy equipment investment.</li>
+            <li><strong>Plumbing / HVAC:</strong> Typically 3-7 years for owner-operators. Higher initial investment, established demand.</li>
+        </ul>
+        <p>
+            <em>These are arithmetic scenarios derived from disclosed FDD data, not forecasts.</em> See the per-brand <a href="{{ url_for('') }}">brand pages</a> for each franchisor's specific breakeven scenario with method disclosed (reported net profit / reported margin / industry typical).
+        </p>
+    </section>
+
+    <section>
+        <h2>How to use this for your decision</h2>
+        <ol>
+            <li><strong>Compute breakeven on at least 3 different cohort assumptions:</strong> optimistic (top reported cohort), median (all-franchised reported), conservative (industry-typical haircut on the median). The spread between these tells you how much downside risk is in the model.</li>
+            <li><strong>Stress test against debt:</strong> Re-run the calculation including the annual debt service you'll actually pay. The breakeven number gets noticeably worse.</li>
+            <li><strong>Stress test your runway:</strong> Item 7's "Additional Funds" line is 3 months. Plan for 6-18 months of working capital plus your own living expenses. If you can't fund that, the breakeven horizon doesn't matter — you'll run out of personal runway before reaching it.</li>
+            <li><strong>Validate the inputs:</strong> Five current-franchisee calls will tell you whether the disclosed Item 19 numbers are honest. See the <a href="{{ url_for('guides/validating-franchisee-earnings/') }}">validation-calls playbook</a>.</li>
+            <li><strong>Compare your computed range to industry typical:</strong> If your number is much faster than the category typical above, your inputs are probably too optimistic. If much slower, find out why before signing.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>One more thing — the compliance note</h2>
+        <p>
+            Per FTC §436.5(s) — the federal franchise rule — only the franchisor's own Item 19 disclosure is an authoritative source for any forecast or projection about your potential earnings. Third parties (brokers, consultants, this site) cannot legally make projections about your specific outcome. Every number on this page and on every brand page is an <strong>arithmetic scenario on disclosed data</strong>, not a forecast.
+        </p>
+        <p>
+            That distinction protects you. It means a broker who quotes "you'll be cash-flow positive in 12 months" is making a claim they can't substantiate. Push back. Ask them to show you Item 19 and a quarter of franchisees they validated against. If they can't, the number is a sales pitch, not analysis.
+        </p>
+    </section>
+
+    <section>
+        <h2>Related guides</h2>
+        <ul>
+            <li><a href="{{ url_for('guides/understanding-item-19/') }}">Understanding FDD Item 19</a> — how to read the earnings disclosure</li>
+            <li><a href="{{ url_for('guides/understanding-item-7/') }}">Understanding FDD Item 7</a> — what's actually in the cost range</li>
+            <li><a href="{{ url_for('guides/validating-franchisee-earnings/') }}">Validating franchisee earnings</a> — the highest-leverage research before signing</li>
+            <li><a href="{{ url_for('guides/understanding-item-20/') }}">Understanding FDD Item 20</a> — what closure rate and transfers reveal</li>
+        </ul>
+    </section>
+</article>
+{% endblock %}

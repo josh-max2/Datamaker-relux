@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\club_pilates_franchise_spv_llc_2025_mn_35408-202602-04.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0071,
+      "input_tokens": 2312,
+      "cached": 1340,
+      "output_tokens": 251
+    },
+    "item5": {
+      "cost_usd": 0.0141,
+      "input_tokens": 3909,
+      "cached": 1340,
+      "output_tokens": 400
+    },
+    "item6": {
+      "cost_usd": 0.0133,
+      "input_tokens": 1669,
+      "cached": 1340,
+      "output_tokens": 796
+    },
+    "item7": {
+      "cost_usd": 0.0117,
+      "input_tokens": 4653,
+      "cached": 1340,
+      "output_tokens": 89
+    },
+    "item19": {
+      "cost_usd": 0.4842,
+      "input_tokens": 20911,
+      "cached": 1340,
+      "output_tokens": 28339,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.2401,
+      "input_tokens": 19920,
+      "cached": 1340,
+      "output_tokens": 12266,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.7705
+}

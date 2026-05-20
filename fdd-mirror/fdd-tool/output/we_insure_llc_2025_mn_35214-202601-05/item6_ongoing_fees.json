@@ -1,0 +1,10 @@
+{
+  "royalty_pct": null,
+  "royalty_min_monthly": 1000,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 400,
+  "fee_notes": "This is an insurance franchise with a non-traditional royalty structure. Instead of a percentage of gross sales, the franchisor takes 'Retained Commissions' equal to 25% of sales commissions on new business and 45% on renewal business. Minimum Monthly Retained Commission schedule: months 0-5 = $0, months 6-18 = $600/month, months 19+ = $1,000/month. Monthly Technology Fee is $400 for the first user and $225 for each additional user. Brand Fund Fee is 3% of Franchisee Commissions (not gross sales; Franchisee Commissions = total commissions received by Franchisor attributable to Franchisee's Agency after Franchisor deducts its Retained Commission). Additional recurring fees include: E&O/Cyber Policy premium assessment of $226/month (adjusted annually); New Submissions Fee of $100/month (or 1% of monthly Franchisee Commissions if prior-year premium >= $1,250,000). royalty_pct set to null because royalty is a fixed percentage of carrier-paid commissions (not franchisee gross sales), and royalty_min_monthly reflects the 19+ month minimum of $1,000.",
+  "raw_excerpt": "Franchisor's Retained Commissions: 25% of sales commissions for new business and 45% of sales commissions for renewal business. Minimum Monthly Retained Commission: months 6-18 = $600, months 19 and beyond = $1,000.\n\nMonthly Technology Fee: $400 for the first user and $225 for each additional user.\n\nBrand Fund Fee: 3% of Franchisee Commissions. Monthly.\n\nFranchisee's E&O and Cyber Policy premium assessment: Initially, $226/month; adjusted annually in February in accordance with the size of your book of business.\n\nNew Submissions Fee: $100 per month... if the total amount of premium payments received by Franchisee during the previous calendar year is less than $1,250,000; or (ii) 1% of monthly Franchisee Commission if the total amount of premium payments received by Franchisee during the previous calendar year is equal to or greater than $1,250,000.",
+  "confidence": 0.82
+}

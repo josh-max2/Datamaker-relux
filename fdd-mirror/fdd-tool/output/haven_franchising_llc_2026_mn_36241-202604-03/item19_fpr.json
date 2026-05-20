@@ -1,0 +1,47 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Gross Revenue",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Club #1 (Gladstone, NJ)",
+      "outlet_count": 1,
+      "reporting_period": "2025 calendar year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1552512,
+      "raw_text": "Gross Revenue $1,552,512 100% 18%"
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Gross Profit",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Club #1 (Gladstone, NJ)",
+      "outlet_count": 1,
+      "reporting_period": "2025 calendar year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1472144,
+      "raw_text": "Gross Profit $1,472,144 95% 19%"
+    },
+    {
+      "metric_name": "ebitda",
+      "metric_raw": "EBITDA (Adjusted)",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Club #1 (Gladstone, NJ)",
+      "outlet_count": 1,
+      "reporting_period": "2025 calendar year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 250621,
+      "raw_text": "EBITDA (Adjusted) $250,621 16% 78%",
+      "notes": "Adjusted for owner-operator model (removed $89,595 GM salary), removed certain benefits (401k, dental, vision, health). Royalties and Brand Fund contributions shown as if franchised though location was company-owned."
+    }
+  ],
+  "confidence": 0.9,
+  "notes": "Single company-owned location disclosed. Second location excluded due to material differences (satellite format, below minimum 75-child capacity). Figures are adjusted/pro-forma for franchisee context. EBITDAR (adjusted) also reported at $454,267 (29% margin) but not captured as separate schema metric."
+}

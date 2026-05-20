@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\spring_green_lawn_care_corp_2026_mn_35708-202603-09.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.005,
+      "input_tokens": 1935,
+      "cached": 1340,
+      "output_tokens": 188
+    },
+    "item5": {
+      "cost_usd": 0.0113,
+      "input_tokens": 3059,
+      "cached": 1340,
+      "output_tokens": 386
+    },
+    "item6": {
+      "cost_usd": 0.0163,
+      "input_tokens": 3539,
+      "cached": 1340,
+      "output_tokens": 617
+    },
+    "item7": {
+      "cost_usd": 0.0035,
+      "input_tokens": 1925,
+      "cached": 1340,
+      "output_tokens": 92
+    },
+    "item19": {
+      "cost_usd": 0.1394,
+      "input_tokens": 19167,
+      "cached": 1340,
+      "output_tokens": 5698,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1426,
+      "input_tokens": 15273,
+      "cached": 1340,
+      "output_tokens": 6693,
+      "images_sent": 7
+    }
+  },
+  "total_cost_usd": 0.3181
+}

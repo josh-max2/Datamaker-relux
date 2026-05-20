@@ -1,0 +1,70 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2021,
+      "outlet_type": "franchised",
+      "outlets_start": 432,
+      "outlets_end": 496,
+      "net_change": 64
+    },
+    {
+      "year": 2022,
+      "outlet_type": "franchised",
+      "outlets_start": 496,
+      "outlets_end": 507,
+      "net_change": 11
+    },
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 507,
+      "outlets_end": 528,
+      "net_change": 21
+    },
+    {
+      "year": 2021,
+      "outlet_type": "company-owned",
+      "outlets_start": 326,
+      "outlets_end": 277,
+      "net_change": -49
+    },
+    {
+      "year": 2022,
+      "outlet_type": "company-owned",
+      "outlets_start": 277,
+      "outlets_end": 281,
+      "net_change": 4
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 281,
+      "outlets_end": 285,
+      "net_change": 4
+    },
+    {
+      "year": 2021,
+      "outlet_type": "total",
+      "outlets_start": 758,
+      "outlets_end": 773,
+      "net_change": 15
+    },
+    {
+      "year": 2022,
+      "outlet_type": "total",
+      "outlets_start": 773,
+      "outlets_end": 788,
+      "net_change": 15
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 788,
+      "outlets_end": 813,
+      "net_change": 25
+    }
+  ],
+  "state_year_status": [],
+  "confidence": 0.72,
+  "notes": "Table 1 fully extracted for 2021-2023. Table 3 (state-year status) not present in provided text; only Table 2 (transfers by state) was partially shown and not extracted as it maps to a different schema."
+}

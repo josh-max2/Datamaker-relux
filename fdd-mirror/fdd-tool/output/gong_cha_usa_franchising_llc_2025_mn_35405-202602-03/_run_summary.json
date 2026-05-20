@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\gong_cha_usa_franchising_llc_2025_mn_35405-202602-03.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0064,
+      "input_tokens": 2114,
+      "cached": 1340,
+      "output_tokens": 243
+    },
+    "item5": {
+      "cost_usd": 0.0086,
+      "input_tokens": 2491,
+      "cached": 1340,
+      "output_tokens": 316
+    },
+    "item6": {
+      "cost_usd": 0.0108,
+      "input_tokens": 1442,
+      "cached": 1340,
+      "output_tokens": 673
+    },
+    "item7": {
+      "cost_usd": 0.007,
+      "input_tokens": 3114,
+      "cached": 1340,
+      "output_tokens": 87
+    },
+    "item19": {
+      "cost_usd": 0.0447,
+      "input_tokens": 7974,
+      "cached": 1340,
+      "output_tokens": 1629,
+      "images_sent": 3
+    },
+    "item20": {
+      "cost_usd": 0.1538,
+      "input_tokens": 20715,
+      "cached": 1340,
+      "output_tokens": 6350,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.2313
+}

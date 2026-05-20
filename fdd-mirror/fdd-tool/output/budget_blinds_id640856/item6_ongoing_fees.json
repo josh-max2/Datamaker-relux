@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 3.5,
+  "royalty_min_monthly": 2500,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": 1000,
+  "tech_fee_monthly": 600,
+  "fee_notes": "Royalty is greater of 3.5% of Gross Revenue or $2,500/mo (Tier 1), $1,875/mo (Tier 2), $1,250/mo (Tier 3). National Advertising Fund: Tier 1 $1,000/mo (rising to $1,500 after 1,500 US territories), Tier 2 $750/$1,125, Tier 3 $500/$750. Tech fee $600/mo first territory, $300 per additional territory. Marketing fee is a fixed dollar amount, not a percentage of gross sales.",
+  "raw_excerpt": "Royalty: greater of 3.5% of your Gross Revenue... or $2,500 for a Tier 1 Territory, $1,875 for a Tier 2 Territory or $1,250 for a Tier 3 Territory. Technology Fee: Currently $600 per month for the first territory.",
+  "confidence": 0.95
+}

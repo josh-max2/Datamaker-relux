@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\rusty_taco_franchising_llc_2026_mn_36049-202604-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0056,
+      "input_tokens": 2052,
+      "cached": 1340,
+      "output_tokens": 203
+    },
+    "item5": {
+      "cost_usd": 0.0053,
+      "input_tokens": 1729,
+      "cached": 1340,
+      "output_tokens": 252
+    },
+    "item6": {
+      "cost_usd": 0.0211,
+      "input_tokens": 4232,
+      "cached": 1340,
+      "output_tokens": 801
+    },
+    "item7": {
+      "cost_usd": 0.0083,
+      "input_tokens": 3531,
+      "cached": 1340,
+      "output_tokens": 87
+    },
+    "item19": {
+      "cost_usd": 0.0395,
+      "input_tokens": 6140,
+      "cached": 1340,
+      "output_tokens": 1649,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.09,
+      "input_tokens": 9476,
+      "cached": 1340,
+      "output_tokens": 4348,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.1699
+}

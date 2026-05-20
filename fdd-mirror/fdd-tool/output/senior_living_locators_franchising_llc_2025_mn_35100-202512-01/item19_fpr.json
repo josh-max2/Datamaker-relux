@@ -1,0 +1,85 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Gross Sales",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company Owned Outlet (Fort Mitchell, Kentucky)",
+      "outlet_count": 1,
+      "reporting_period": "2024 Calendar Year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 610347,
+      "raw_text": "Gross Sales $610,347 100.0%"
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Direct Gross Profit",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company Owned Outlet (Fort Mitchell, Kentucky)",
+      "outlet_count": 1,
+      "reporting_period": "2024 Calendar Year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 426465,
+      "raw_text": "Direct Gross Profit $426,465 69.9%"
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Direct Gross Profit Less Disclosed Expenses",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company Owned Outlet (Fort Mitchell, Kentucky)",
+      "outlet_count": 1,
+      "reporting_period": "2024 Calendar Year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 391003,
+      "raw_text": "Direct Gross Profit Less Disclosed Expenses $391,003 64.1%"
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Direct Gross Profit Less Disclosed Expenses and Franchise Related Expenses",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company Owned Outlet (Fort Mitchell, Kentucky)",
+      "outlet_count": 1,
+      "reporting_period": "2024 Calendar Year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 319943,
+      "raw_text": "Direct Gross Profit Less Disclosed Expenses and Franchise Related Expenses $319,943 52.4%"
+    },
+    {
+      "metric_name": "transactions",
+      "metric_raw": "Placements",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company Owned Outlet (Fort Mitchell, Kentucky)",
+      "outlet_count": 1,
+      "reporting_period": "2024 Calendar Year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 147,
+      "raw_text": "Gross Sales $610,347 Placements 147 Gross Sales Per Placement $4,152.02"
+    },
+    {
+      "metric_name": "average_ticket",
+      "metric_raw": "Gross Sales Per Placement",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company Owned Outlet (Fort Mitchell, Kentucky)",
+      "outlet_count": 1,
+      "reporting_period": "2024 Calendar Year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 4152.02,
+      "raw_text": "Gross Sales Per Placement $4,152.02"
+    }
+  ],
+  "confidence": 0.93,
+  "notes": "Data is from one company-owned outlet only; no operational franchise outlets exist. Outlet serves ~600,000 population (equivalent of two territories). Franchise-related expense adjustments are hypothetical calculations applied to company-owned data."
+}

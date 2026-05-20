@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5.5,
+  "royalty_min_monthly": 800,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": 1000,
+  "tech_fee_monthly": 430,
+  "fee_notes": "Royalty minimum scales: months 10-12 $800/mo all territories; months 13-24 $1,500/mo all territories; months 25-36 $2,500/mo all territories; months 37+ $2,500/mo per territory. Marketing: grand opening $10,000 first 90 days; months 4-12 min $500/mo aggregate $10,000; month 13+ greater of $1,000/mo (up to $2,000) or 2% gross revenues. System Marketing Fund: greater of $500 or 1% gross revenue (up to 2%). Internal System Fees $430/mo; Required Software $670/mo. System Platforms Charge $5,000 one-time.",
+  "raw_excerpt": "Royalty Fee 5.5% of Gross Revenue... System Marketing Fund Contribution The greater of $500 or 1% of Gross Revenue. Up to 2% of Gross Revenue. Internal System Fees $430 per month. Required Software $670 per month.",
+  "confidence": 0.88
+}

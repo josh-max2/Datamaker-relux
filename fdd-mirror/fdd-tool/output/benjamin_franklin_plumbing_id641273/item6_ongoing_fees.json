@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 1500,
+  "marketing_fee_pct": 1.5,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 100,
+  "fee_notes": "Royalty: 6% of Gross Revenue or $1,500/month minimum, whichever greater. Brand Fund tiered: 1.5% of first $5M, 1.25% of $5M\u2013$10M, 1% of $10M\u2013$15M, 0.75% of $15M\u2013$20M, 0% above $20M. Local Marketing: required 6% spend (typically direct to vendors). Technology: $100/month base (covers email, software, portals). Additional fees: grand opening marketing ($0\u2013$18k), conference ($0\u2013$1k/attendee), training ($1.5k/trainee remedial/optional), renewal ($5k), transfer ($10k+ or % of price), late fees, interest (12% p.a.).",
+  "raw_excerpt": "Royalty Fee: 6% of Gross Revenue or $1,500 per month (the 'Minimum Royalty'), whichever is greater. Brand Fund: 1.5% of first $5M, tiered down to 0% above $20M. Local Marketing: 6% of calendar year Gross Revenue required. Technology Fee: Currently $100 per month.",
+  "confidence": 0.92
+}

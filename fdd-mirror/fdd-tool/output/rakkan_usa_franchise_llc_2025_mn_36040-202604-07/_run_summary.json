@@ -1,0 +1,38 @@
+{
+  "pdf": "data\\mn_scrape\\rakkan_usa_franchise_llc_2025_mn_36040-202604-07.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0043,
+      "input_tokens": 1557,
+      "cached": 1340,
+      "output_tokens": 215
+    },
+    "item5": {
+      "cost_usd": 0.0043,
+      "input_tokens": 1519,
+      "cached": 1340,
+      "output_tokens": 221
+    },
+    "item6": {
+      "cost_usd": 0.0148,
+      "input_tokens": 2962,
+      "cached": 1340,
+      "output_tokens": 634
+    },
+    "item7": {
+      "cost_usd": 0.0089,
+      "input_tokens": 3748,
+      "cached": 1340,
+      "output_tokens": 86
+    },
+    "item19": {
+      "cost_usd": 0.0328,
+      "input_tokens": 7689,
+      "cached": 1340,
+      "output_tokens": 891,
+      "images_sent": 3
+    }
+  },
+  "total_cost_usd": 0.065
+}

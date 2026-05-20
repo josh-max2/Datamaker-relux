@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 25000,
+  "initial_franchise_fee_high": 35000,
+  "fee_notes": "Lump sum payment is $25,000. Installment plan totals $35,000 ($10,000 due at signing, $25,000 balance in 60 monthly payments of $416.67 starting month 13). Veterans receive 10% discount on non-financed portion. Franchise Fee Forgiveness Program may refund $15,000 or waive financed portion. Apprentice Program and Enterprise Program allow $0 initial fee. In 2025, fees ranged from $0 to $35,000.",
+  "raw_excerpt": "The initial franchise fee for an Agency (the \"Initial Fee\") ranges from $25,000 to $35,000. You may pay the entire Initial Fee in a lump sum, in which case you will pay $25,000. If you, instead, opt to pay the Initial Fee in monthly installments, then the total Initial Fee will equal $35,000.",
+  "confidence": 0.98
+}

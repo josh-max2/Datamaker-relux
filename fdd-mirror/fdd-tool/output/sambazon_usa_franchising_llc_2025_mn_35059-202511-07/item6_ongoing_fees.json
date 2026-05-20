@@ -1,0 +1,8 @@
+{
+  "royalty_pct": 5,
+  "marketing_fee_pct": 2,
+  "fee_notes": "Royalty is 5% of Gross Sales, weekly via EFT; increases by 2% during interim period post-expiration. Brand Development Fee currently 2% (can increase up to 0.5%/year, max 3%). Local Marketing spend 1% of Gross Sales. Local Marketing Groups up to additional 1% of Gross Sales (not yet established). Technology Fee $600/month. POS System fees up to $1,000/month (paid to TOAST & R365). Security System up to $150/month (paid to ADT). Music up to $30/month. Digital Menu Board up to $100/month.",
+  "raw_excerpt": "Royalty Fee 5% of Gross sales Weekly. Brand Development Fee Currently 2% of Gross Sales. Local Marketing spend 1% of Gross Sales. Technology Fee $600 per month.",
+  "tech_fee_monthly": 600,
+  "confidence": 0.96
+}

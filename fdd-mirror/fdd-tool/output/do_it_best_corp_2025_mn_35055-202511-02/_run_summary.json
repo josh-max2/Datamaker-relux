@@ -1,0 +1,38 @@
+{
+  "pdf": "data\\mn_scrape\\do_it_best_corp_2025_mn_35055-202511-02.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0123,
+      "input_tokens": 4168,
+      "cached": 1340,
+      "output_tokens": 227
+    },
+    "item5": {
+      "cost_usd": 0.0096,
+      "input_tokens": 2616,
+      "cached": 1340,
+      "output_tokens": 358
+    },
+    "item6": {
+      "cost_usd": 0.012,
+      "input_tokens": 2656,
+      "cached": 1340,
+      "output_tokens": 507
+    },
+    "item7": {
+      "cost_usd": 0.0031,
+      "input_tokens": 1766,
+      "cached": 1340,
+      "output_tokens": 97
+    },
+    "item19": {
+      "cost_usd": 0.0628,
+      "input_tokens": 21712,
+      "cached": 1340,
+      "output_tokens": 84,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.0998
+}

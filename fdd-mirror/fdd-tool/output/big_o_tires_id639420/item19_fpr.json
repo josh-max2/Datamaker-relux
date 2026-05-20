@@ -1,0 +1,80 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Annual Gross Revenues",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "457 franchised Big O Tires Stores that operated January 1, 2024 through December 31, 2024 with at least 12 consecutive months of operation",
+      "outlet_count": 457,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 2824712.79,
+      "pct_above_avg": 40.9,
+      "page_number": 87,
+      "raw_text": "Of the 457 Part A Reporting Stores...187 Stores, or 40.9%, exceeded the overall average annual Gross Revenues of all Part A Reporting Stores of $2,824,712.79"
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Average Total Income",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "280 franchised Big O Tires Stores (Part B Reporting Stores) operating January 1, 2024 through December 31, 2024 under same ownership",
+      "outlet_count": 280,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 2941799,
+      "page_number": 88,
+      "raw_text": "The average Total Income of all of the Part B Reporting Stores was $2,941,799"
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Gross Profit",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "280 franchised Big O Tires Stores (Part B Reporting Stores)",
+      "outlet_count": 280,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1703602,
+      "page_number": 88,
+      "raw_text": "Gross Profit, 57.9%",
+      "notes": "Value computed as 57.9% of $2,941,799 average Total Income; FDD reports this as a percentage of income"
+    },
+    {
+      "metric_name": "net_profit",
+      "metric_raw": "Net Income From Operations",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "280 franchised Big O Tires Stores (Part B Reporting Stores)",
+      "outlet_count": 280,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 258878,
+      "page_number": 88,
+      "raw_text": "Net Income From Operations, 8.8%",
+      "notes": "Value computed as 8.8% of $2,941,799; excludes taxes. FDD reports as percentage of income."
+    },
+    {
+      "metric_name": "labor_pct",
+      "metric_raw": "Total Labor",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "280 franchised Big O Tires Stores (Part B Reporting Stores)",
+      "outlet_count": 280,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": null,
+      "metric_scope": "franchisee",
+      "value_avg": 26.7,
+      "page_number": 88,
+      "raw_text": "Total Labor, 26.7%"
+    }
+  ],
+  "confidence": 0.72,
+  "notes": "Quartile and Top/Bottom 10% table rows are referenced in the document (pages 88-89) but the actual tabular data with per-quartile dollar figures was not included in the provided text extract. Only narrative summary averages and percentages were extractable. Part A and Part B use different store populations (457 vs 280)."
+}

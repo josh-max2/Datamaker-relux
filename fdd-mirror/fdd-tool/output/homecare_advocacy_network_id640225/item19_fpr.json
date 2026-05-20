@@ -1,0 +1,25 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Gross Revenue",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All 7 Franchised Outlets",
+      "outlet_count": 7,
+      "reporting_period": "June 2024 - May 2025",
+      "value_avg": 49273,
+      "value_median": null,
+      "value_min": 68,
+      "value_max": 106994,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": null,
+      "page_number": 40,
+      "raw_text": "Tables 2-3: Monthly Gross Revenue data for franchised outlets: Muskego WI ($690,699 total), Sioux Falls SD ($256,471), Clearwater FL ($25,853), Omaha NE ($1,132,636), Lincoln NE ($746,873), Cedar Rapids IA ($464,024), Crystal Lake IL ($674,071)",
+      "notes": "81 monthly revenue data points from 7 franchised outlets. Outlets range from 4-59 months in business. Clearwater location includes data point with inconsistent months-in-business value (shows 0 for 9/24 entry). Average calculated from 3,990,627 total revenue across 81 data points."
+    }
+  ],
+  "confidence": 0.85,
+  "notes": "Item 19 present with franchisee revenue data. Document states representations derived from franchisees only. Company-owned outlet data (Table 1, 3 locations) also shown but not primary Item 19 representation per FDD text."
+}

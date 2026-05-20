@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5.5,
+  "royalty_min_monthly": 1000,
+  "marketing_fee_pct": 1.0,
+  "marketing_min_monthly": 500,
+  "tech_fee_monthly": null,
+  "fee_notes": "Monthly Franchise Fee: greater of $1,000 or 1.5% of Gross Sales (base) plus 4% of Gross Sales (growth). Insurance and Marketing Fund Fee: greater of $500 or 1% of Gross Sales; increases to 1.5% if non-compliant. Optional CCC software: $1,545/month (One Innovate) or $1,295/month (One Perform). Central Review Fee: 0.5% of CMIP Gross Sales (up to 2%). Training: $299/year. Non-reporting: $750/month if late.",
+  "raw_excerpt": "Monthly Franchise Fee: Monthly Base Franchise Fee (greater of $1,000 or 1.5% of Gross Sales) plus Monthly Growth Franchise Fee (4% of Gross Sales). Insurance and Marketing Fund Fee: Greater of $500 or 1% of monthly Gross Sales",
+  "confidence": 0.92
+}

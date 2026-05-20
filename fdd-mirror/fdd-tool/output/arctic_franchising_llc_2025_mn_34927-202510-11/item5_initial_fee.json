@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 100000,
+  "initial_franchise_fee_high": 650000,
+  "fee_notes": "Area Representative Fee determined by multiplying territory population by $0.05/person (typically 2M-13M persons). Includes Initial Franchise Fee for first unit franchise. Additional unit franchises at one-third of then-current unit IFF. Not refundable except up to half if franchisor determines trainee failed through no fault of their own.",
+  "raw_excerpt": "The Area Representative Fee is determined by multiplying the population of your Territory by $0.05 per person. Typically, this ranges from 2 million to 13 million persons for a total Area Representative Fee of $100,000 to $650,000.",
+  "confidence": 0.95
+}

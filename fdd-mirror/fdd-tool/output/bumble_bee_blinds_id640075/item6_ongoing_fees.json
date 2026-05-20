@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 500,
+  "marketing_fee_pct": 5,
+  "marketing_min_monthly": 2000,
+  "tech_fee_monthly": 692,
+  "fee_notes": "Royalty tiered by year-to-date gross revenues: 6% ($0-$500k), 5% ($500k-$1M), 4% ($1M+), or $500/month minimum (after 1-year anniversary). Royalty % calculated on cumulative territories. Marketing: franchisee must spend greater of $2,000/month or 5% of gross revenues (spending requirement, not fee to franchisor). Technology $692/month. CRM $400/month + $600 setup. Digital Management $500/month. Special Software $300/month. Contact Center $200-$300/month.",
+  "raw_excerpt": "Royalty Fee: The greater of (i) Royalty Percentage of Gross Revenues; or (ii) the Minimum Royalty Fee. Tiered: 1st tier $0-$500,000 6%; 2nd tier $500,001-$1,000,000 5%; 3rd tier $1,000,001+ 4%. Minimum Royalty $500 per month starting year one-year anniversary. Technology Fee $692 per month.",
+  "confidence": 0.92
+}

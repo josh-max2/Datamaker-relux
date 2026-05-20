@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\daekyo_america_inc_2026_mn_36078-202604-04.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0054,
+      "input_tokens": 1939,
+      "cached": 1340,
+      "output_tokens": 216
+    },
+    "item5": {
+      "cost_usd": 0.0052,
+      "input_tokens": 1678,
+      "cached": 1340,
+      "output_tokens": 252
+    },
+    "item6": {
+      "cost_usd": 0.0104,
+      "input_tokens": 1985,
+      "cached": 1340,
+      "output_tokens": 537
+    },
+    "item7": {
+      "cost_usd": 0.0069,
+      "input_tokens": 3019,
+      "cached": 1340,
+      "output_tokens": 100
+    },
+    "item19": {
+      "cost_usd": 0.0142,
+      "input_tokens": 5504,
+      "cached": 1340,
+      "output_tokens": 84,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.1021,
+      "input_tokens": 12572,
+      "cached": 1340,
+      "output_tokens": 4531,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.1442
+}

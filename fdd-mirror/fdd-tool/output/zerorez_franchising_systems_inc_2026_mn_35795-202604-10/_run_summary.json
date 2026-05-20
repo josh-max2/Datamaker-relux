@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\zerorez_franchising_systems_inc_2026_mn_35795-202604-10.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0057,
+      "input_tokens": 1951,
+      "cached": 1340,
+      "output_tokens": 230
+    },
+    "item5": {
+      "cost_usd": 0.008,
+      "input_tokens": 2129,
+      "cached": 1340,
+      "output_tokens": 348
+    },
+    "item6": {
+      "cost_usd": 0.0255,
+      "input_tokens": 4776,
+      "cached": 1340,
+      "output_tokens": 988
+    },
+    "item7": {
+      "cost_usd": 0.0052,
+      "input_tokens": 2495,
+      "cached": 1340,
+      "output_tokens": 88
+    },
+    "item19": {
+      "cost_usd": 0.057,
+      "input_tokens": 9801,
+      "cached": 1340,
+      "output_tokens": 2079,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.1726,
+      "input_tokens": 17339,
+      "cached": 1340,
+      "output_tokens": 8283,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.274
+}

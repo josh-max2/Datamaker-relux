@@ -1,0 +1,6 @@
+{
+  "has_item19": true,
+  "records": [],
+  "confidence": 0.15,
+  "notes": "Pre-detection flagged no-FPR, but page 48 text explicitly references 'the preceding financial performance representation' and states 'Some outlets have earned this amount.' FPR exists in the document but its section text was not provided in this extraction input \u2014 records cannot be populated."
+}

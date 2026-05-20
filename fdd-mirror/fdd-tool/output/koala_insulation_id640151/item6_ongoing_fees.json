@@ -1,0 +1,10 @@
+{
+  "royalty_pct": null,
+  "royalty_min_monthly": 1218.75,
+  "marketing_fee_pct": 1.0,
+  "marketing_min_monthly": 2000.0,
+  "tech_fee_monthly": 344.0,
+  "fee_notes": "Royalty tiered: 6.5% (up to $1M), 5% ($1M-$2M), 4.5% ($2M-$3M), 3.5% ($3M+); 4% on $25K+ accounts. Minimums: $0 months 0-6, $1,083.33 months 7-12, $1,218.75 month 13+. Brand Fund 1% (max 2%). Local Marketing: greater of $2,000 or 5%. Tech $344/month. Opening Ad $2,500/month.",
+  "raw_excerpt": "Royalty Fee: The greater of Minimum Royalty Fees or Percent-Based Royalty. Brand Fund: Currently 1%, Maximum 2%. Technology Fee: $344 per month. Local Marketing: Greater of $2,000 or 5% of Gross Sales.",
+  "confidence": 0.94
+}

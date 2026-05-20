@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\wi_scrape\\junk_king_id640758.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0098,
+      "input_tokens": 2272,
+      "cached": 0,
+      "output_tokens": 197
+    },
+    "item5": {
+      "cost_usd": 0.0145,
+      "input_tokens": 2584,
+      "cached": 0,
+      "output_tokens": 450
+    },
+    "item6": {
+      "cost_usd": 0.0226,
+      "input_tokens": 3933,
+      "cached": 0,
+      "output_tokens": 721
+    },
+    "item7": {
+      "cost_usd": 0.0078,
+      "input_tokens": 2151,
+      "cached": 0,
+      "output_tokens": 93
+    },
+    "item19": {
+      "cost_usd": 0.099,
+      "input_tokens": 10153,
+      "cached": 0,
+      "output_tokens": 4569,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.2023,
+      "input_tokens": 18741,
+      "cached": 0,
+      "output_tokens": 9739,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.356
+}

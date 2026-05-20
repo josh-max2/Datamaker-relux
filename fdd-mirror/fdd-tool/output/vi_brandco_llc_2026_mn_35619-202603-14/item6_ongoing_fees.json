@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 4.0,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 1.0,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 262.5,
+  "fee_notes": "Royalty is 4.0% of Gross Sales, paid each Tuesday; franchisor may increase royalty up to 18% during breach/default. Marketing Fee is currently 1% of Gross Sales, can be increased by up to 0.5% per year with 60 days notice. Local Marketing is an additional 1% of Gross Sales, with a combined maximum of 3% for both marketing and local marketing. After at least one full fiscal year of operation, franchisee may prepay royalty annually and receive a 10% discount. Technology Support Fees range from $200 to $325 per month (midpoint used: $262.50). Gross Sales exclude tips, sales tax, loyalty redemptions, Free Pie Wednesdays discounts, senior discounts, delivery fees, and other customary promotions or discounts.",
+  "raw_excerpt": "Royalty1,2, 5,7 4.0% of Gross Sales as described in the footnotes below. Each Tuesday with an option to annually prepay after operating the Restaurant for at least one full year\nMarketing Fee1,3, 5 Currently 1% of Gross Sales Each Tuesday Paid at the same time and in the same manner as Royalty\nLocal Marketing3 1% of Gross Sales; may be increased by Village Inn at any time to a combined maximum with local marketing of 3% Upon invoicing Local marketing payable to third-party vendors as required\nTechnology Support Fees $200 to $325 per month As incurred Payable to Village Inn for ongoing technology support",
+  "confidence": 0.92
+}

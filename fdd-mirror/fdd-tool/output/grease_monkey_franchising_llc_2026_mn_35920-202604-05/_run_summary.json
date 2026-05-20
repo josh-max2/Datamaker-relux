@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\grease_monkey_franchising_llc_2026_mn_35920-202604-05.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0067,
+      "input_tokens": 2134,
+      "cached": 1340,
+      "output_tokens": 263
+    },
+    "item5": {
+      "cost_usd": 0.011,
+      "input_tokens": 2834,
+      "cached": 1340,
+      "output_tokens": 408
+    },
+    "item6": {
+      "cost_usd": 0.0117,
+      "input_tokens": 1862,
+      "cached": 1340,
+      "output_tokens": 646
+    },
+    "item7": {
+      "cost_usd": 0.0134,
+      "input_tokens": 5193,
+      "cached": 1340,
+      "output_tokens": 95
+    },
+    "item19": {
+      "cost_usd": 0.2844,
+      "input_tokens": 17317,
+      "cached": 1340,
+      "output_tokens": 15737,
+      "images_sent": 7
+    },
+    "item20": {
+      "cost_usd": 0.1735,
+      "input_tokens": 16094,
+      "cached": 1340,
+      "output_tokens": 8586,
+      "images_sent": 7
+    }
+  },
+  "total_cost_usd": 0.5006
+}

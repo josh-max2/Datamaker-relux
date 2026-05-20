@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\stretch_lab_franchise_spv_llc_2025_mn_35410-202602-04.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.007,
+      "input_tokens": 2300,
+      "cached": 1340,
+      "output_tokens": 247
+    },
+    "item5": {
+      "cost_usd": 0.0147,
+      "input_tokens": 3864,
+      "cached": 1340,
+      "output_tokens": 451
+    },
+    "item6": {
+      "cost_usd": 0.0221,
+      "input_tokens": 4609,
+      "cached": 1340,
+      "output_tokens": 792
+    },
+    "item7": {
+      "cost_usd": 0.0096,
+      "input_tokens": 3977,
+      "cached": 1340,
+      "output_tokens": 87
+    },
+    "item19": {
+      "cost_usd": 0.2931,
+      "input_tokens": 18893,
+      "cached": 1340,
+      "output_tokens": 16002,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.2238,
+      "input_tokens": 18752,
+      "cached": 1340,
+      "output_tokens": 11413,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.5704
+}

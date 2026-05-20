@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\bcc_franchising_llc_2026_mn_35684-202603-12.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0054,
+      "input_tokens": 1982,
+      "cached": 1340,
+      "output_tokens": 206
+    },
+    "item5": {
+      "cost_usd": 0.0087,
+      "input_tokens": 1707,
+      "cached": 1340,
+      "output_tokens": 478
+    },
+    "item6": {
+      "cost_usd": 0.0179,
+      "input_tokens": 2059,
+      "cached": 1340,
+      "output_tokens": 1022
+    },
+    "item7": {
+      "cost_usd": 0.008,
+      "input_tokens": 3455,
+      "cached": 1340,
+      "output_tokens": 84
+    },
+    "item19": {
+      "cost_usd": 0.0426,
+      "input_tokens": 8191,
+      "cached": 1340,
+      "output_tokens": 1441,
+      "images_sent": 3
+    },
+    "item20": {
+      "cost_usd": 0.0876,
+      "input_tokens": 8911,
+      "cached": 1340,
+      "output_tokens": 4302,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.1702
+}

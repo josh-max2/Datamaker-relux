@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\choice_hotels_international_inc_2026_mn_35771-202604-09.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.005,
+      "input_tokens": 1841,
+      "cached": 1340,
+      "output_tokens": 207
+    },
+    "item5": {
+      "cost_usd": 0.0066,
+      "input_tokens": 2063,
+      "cached": 1340,
+      "output_tokens": 267
+    },
+    "item6": {
+      "cost_usd": 0.0476,
+      "input_tokens": 6426,
+      "cached": 1340,
+      "output_tokens": 2128
+    },
+    "item7": {
+      "cost_usd": 0.0312,
+      "input_tokens": 11119,
+      "cached": 1340,
+      "output_tokens": 97
+    },
+    "item19": {
+      "cost_usd": 0.1851,
+      "input_tokens": 14430,
+      "cached": 1340,
+      "output_tokens": 9697,
+      "images_sent": 6
+    },
+    "item20": {
+      "cost_usd": 0.2428,
+      "input_tokens": 19282,
+      "cached": 1340,
+      "output_tokens": 12571,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.5183
+}

@@ -1,0 +1,6 @@
+{
+  "initial_franchise_fee_low": 47200,
+  "initial_franchise_fee_high": 64950,
+  "fee_notes": "Base $59,000 for single territory (~350k pop). Additional $170/1000 people over 350k up to 500k max. Veterans 20% discount ($47,200 minimum). First responders $2,500 discount. Multi-territory discount $10,000 per additional agreement.",
+  "confidence": 0.95
+}

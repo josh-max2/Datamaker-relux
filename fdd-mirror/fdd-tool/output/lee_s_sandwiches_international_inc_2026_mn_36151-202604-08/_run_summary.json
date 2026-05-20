@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\lee_s_sandwiches_international_inc_2026_mn_36151-202604-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0051,
+      "input_tokens": 1934,
+      "cached": 1340,
+      "output_tokens": 192
+    },
+    "item5": {
+      "cost_usd": 0.0071,
+      "input_tokens": 1771,
+      "cached": 1340,
+      "output_tokens": 357
+    },
+    "item6": {
+      "cost_usd": 0.0222,
+      "input_tokens": 3359,
+      "cached": 1340,
+      "output_tokens": 1047
+    },
+    "item7": {
+      "cost_usd": 0.0184,
+      "input_tokens": 6609,
+      "cached": 1340,
+      "output_tokens": 143
+    },
+    "item19": {
+      "cost_usd": 0.0143,
+      "input_tokens": 5570,
+      "cached": 1340,
+      "output_tokens": 82,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.067,
+      "input_tokens": 9079,
+      "cached": 1340,
+      "output_tokens": 2894,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.134
+}

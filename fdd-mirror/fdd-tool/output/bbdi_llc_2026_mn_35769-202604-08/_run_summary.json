@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\bbdi_llc_2026_mn_35769-202604-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0059,
+      "input_tokens": 1992,
+      "cached": 1340,
+      "output_tokens": 233
+    },
+    "item5": {
+      "cost_usd": 0.0066,
+      "input_tokens": 1381,
+      "cached": 1340,
+      "output_tokens": 408
+    },
+    "item6": {
+      "cost_usd": 0.0208,
+      "input_tokens": 2290,
+      "cached": 1340,
+      "output_tokens": 1167
+    },
+    "item7": {
+      "cost_usd": 0.0102,
+      "input_tokens": 4139,
+      "cached": 1340,
+      "output_tokens": 93
+    },
+    "item19": {
+      "cost_usd": 0.1893,
+      "input_tokens": 15182,
+      "cached": 1340,
+      "output_tokens": 9827,
+      "images_sent": 6
+    },
+    "item20": {
+      "cost_usd": 0.0778,
+      "input_tokens": 9070,
+      "cached": 1340,
+      "output_tokens": 3615,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.3106
+}

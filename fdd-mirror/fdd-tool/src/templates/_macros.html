@@ -1,0 +1,43 @@
+{% macro vintage(fdd, page_range=None) %}
+{# Per-section "last verified" line. fdd: dict with filing_year, filing_state,
+   effective_date, retrieved_at. page_range: optional "12–14" string. #}
+<p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
+    Source: <strong>{{ fdd.filing_year }} FDD</strong>{% if fdd.filing_state %} ({{ fdd.filing_state }}){% endif %}{% if page_range %} &middot; pages {{ page_range }}{% endif %}{% if fdd.effective_date %} &middot; issued {{ fdd.effective_date }}{% endif %}{% if fdd.retrieved_at %} &middot; verified {{ fdd.retrieved_at[:10] }}{% endif %}
+</p>
+{% endmacro %}
+
+{% macro breadcrumbs(items) %}
+{# items: list of {label, url}; last item is the current page (no link) #}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <div class="container">
+        <ol>
+        {% for it in items %}
+            <li>
+                {% if not loop.last %}
+                    <a href="{{ it.url }}">{{ it.label }}</a>
+                    <span class="sep" aria-hidden="true">›</span>
+                {% else %}
+                    <span aria-current="page">{{ it.label }}</span>
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ol>
+    </div>
+</nav>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {% for it in items %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "name": {{ it.label|tojson }}{% if it.url and not loop.last %},
+      "item": {{ ((SITE_HOST ~ it.url) if it.url.startswith('/') else it.url)|tojson }}{% endif %}
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endmacro %}

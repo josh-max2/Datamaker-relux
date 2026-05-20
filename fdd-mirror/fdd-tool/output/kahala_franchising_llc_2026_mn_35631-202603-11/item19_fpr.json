@@ -1,0 +1,28 @@
+{
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Average Gross Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All franchised outlets",
+      "outlet_count": 10,
+      "reporting_period": "December 1, 2024 through November 30, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 482450,
+      "value_median": 439545,
+      "value_min": null,
+      "value_max": null,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 50.0,
+      "page_number": 75,
+      "raw_text": "All franchised outlets $482,450 $439,545 10 5 50% 5 50%",
+      "notes": "Cohort excludes outlets that opened for the first time during the past fiscal year. Gross sales defined as total revenue from sales of goods and services less sales tax, discounts, allowances and returns. Data sourced from weekly sales reports provided by franchisees; not audited. 50% of stores met or exceeded both the average and median gross sales."
+    }
+  ],
+  "has_item19": true,
+  "confidence": 0.97,
+  "notes": "Item 19 discloses average and median gross sales for all franchised outlets (existing stores, not first-year openers) for the fiscal period December 1, 2024 through November 30, 2025. 10 stores measured. 5 of 10 (50%) met or exceeded the average; 5 of 10 (50%) met or exceeded the median. No other financial performance representations made."
+}

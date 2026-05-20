@@ -1,0 +1,196 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}What's Negotiable in a Franchise Agreement? An Honest Guide{% endblock %}
+{% block description %}Most franchise agreements are presented as take-it-or-leave-it. They aren't. Here's what franchisors will negotiate, what they won't, and which clauses are worth pushing on — based on which FDD items reveal real leverage points.{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Guides", "url": url_for('guides/')},
+    {"label": "What's negotiable", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What's Negotiable in a Franchise Agreement? An Honest Guide",
+  "author": { "@type": "Person", "name": "FranchiseDepth Editorial", "url": "{{ url_for('about/') }}" },
+  "publisher": { "@type": "Organization", "name": "{{ site_name }}" },
+  "dateModified": "{{ generated_at }}",
+  "mainEntityOfPage": "{{ canonical_url }}",
+  "about": "Negotiable terms in a franchise agreement"
+}
+</script>
+{% endblock %}
+{% block content %}
+<article class="guide-page">
+    <header>
+        <h1>What's negotiable in a franchise agreement?</h1>
+        <p class="lead">
+            Franchisors present their agreement as standard, non-negotiable, "everyone signs the same one." That's mostly true for the brand-equity-critical clauses. It's not true at all for the financial terms. Knowing which is which is the difference between signing the form deal and saving $30K-$100K over the life of your franchise.
+        </p>
+        <p class="byline">
+            <span class="dateline">Page updated {{ generated_at }}</span>
+        </p>
+    </header>
+
+    <section>
+        <h2>The honest framing: two categories of terms</h2>
+        <p>
+            Every franchise agreement clause falls into one of two categories from the franchisor's perspective:
+        </p>
+        <ul>
+            <li><strong>Brand-protection clauses</strong> — operational standards, marketing fund contributions, system requirements, trademark use, supplier compliance, audit rights. Franchisors negotiate these reluctantly because variation undermines brand consistency.</li>
+            <li><strong>Financial / commercial clauses</strong> — fee amounts, payment schedules, territory, term length, renewal terms, financing terms. Franchisors negotiate these regularly because their P&L isn't materially affected by giving you a small concession.</li>
+        </ul>
+        <p>
+            The franchise broker won't tell you this. The franchisor's sales team won't volunteer it. But the field-level reality across franchisors we've researched is that 30-50% of new franchisees negotiate <em>something</em> off the form deal. Almost none get the brand-protection clauses changed; many get meaningful financial concessions.
+        </p>
+    </section>
+
+    <section>
+        <h2>What you can usually negotiate</h2>
+
+        <h3>1. Initial franchise fee (Item 5)</h3>
+        <p>
+            The most commonly-negotiated single term. Franchisors will reduce the fee by 10-30% for:
+        </p>
+        <ul>
+            <li><strong>Multi-unit signings</strong> — second and third outlets often come at 40-60% of the first outlet's fee</li>
+            <li><strong>Veterans (VetFran program)</strong> — typically 10-20% off, sometimes more</li>
+            <li><strong>Existing franchisees expanding</strong> — discounted to retain them</li>
+            <li><strong>Slow-selling territories</strong> — the franchisor wants the geographic coverage and will discount to get a buyer in the door</li>
+        </ul>
+        <p>
+            How to push: ask explicitly. "Is the $50K initial fee firm, or is there flexibility for multi-unit / veteran / your protected-territory situation?" Most franchisors have approved discount structures the sales rep can apply on request.
+        </p>
+
+        <h3>2. Territory definition (Item 12)</h3>
+        <p>
+            Often more important than the fee. Franchise agreements typically grant either an exclusive territory (no other franchisee in your area), a protected territory (limits on franchisor placing competing units), or no territorial protection at all. Negotiable elements:
+        </p>
+        <ul>
+            <li><strong>Territory size</strong> — population, ZIP codes, or radius. Larger ≠ better if it's outside your reasonable service area, but smaller is usually worse</li>
+            <li><strong>Exclusivity vs. protected</strong> — exclusive is stronger. Pushing for exclusivity is a real ask</li>
+            <li><strong>Carve-outs</strong> — many agreements exclude airports, military bases, college campuses. Whether YOUR specific contracts can be included or excluded is sometimes negotiable</li>
+            <li><strong>Population guarantee</strong> — some franchisors will commit to a minimum population/household count in your territory</li>
+        </ul>
+
+        <h3>3. Royalty + marketing-fee structure (Item 6)</h3>
+        <p>
+            Royalty <em>percentages</em> rarely move. But the structure underneath often does:
+        </p>
+        <ul>
+            <li><strong>Royalty caps</strong> — some franchisors will agree to cap royalty at a dollar maximum once revenue crosses a threshold. Saves real money for high-performing outlets</li>
+            <li><strong>Royalty ramp</strong> — paying a reduced royalty for the first 6-12 months while ramping up</li>
+            <li><strong>Marketing-fund holiday</strong> — some franchisors will skip the marketing-fund contribution for the first 60-90 days post-opening</li>
+            <li><strong>Local-marketing credit</strong> — your local marketing spend partially counted against the marketing-fund contribution. Saves you 1-2% effectively</li>
+        </ul>
+
+        <h3>4. Renewal terms (Item 17)</h3>
+        <p>
+            What happens at the end of your initial 10-year term. Common negotiable items:
+        </p>
+        <ul>
+            <li><strong>Renewal fee</strong> — often 25-50% of the then-current initial franchise fee. Push for capping it at a fixed dollar amount</li>
+            <li><strong>Renewal trigger conditions</strong> — limit the franchisor's discretion to refuse renewal</li>
+            <li><strong>Renewal term length</strong> — additional 5- or 10-year terms; longer is generally better for the franchisee</li>
+        </ul>
+
+        <h3>5. Build-out support</h3>
+        <p>
+            Less an FDD clause, more a side-letter item:
+        </p>
+        <ul>
+            <li><strong>Vendor introduction support</strong> — formalize the franchisor introducing you to specific vendors (real estate brokers, contractors)</li>
+            <li><strong>Co-marketing during grand opening</strong> — franchisor contribution to your opening-marketing spend</li>
+            <li><strong>Training extensions</strong> — additional training visits beyond the standard package, at no extra cost</li>
+        </ul>
+
+        <h3>6. Personal guarantee scope</h3>
+        <p>
+            By default, franchise agreements require personal guarantees from owners on virtually all obligations. Negotiable items:
+        </p>
+        <ul>
+            <li><strong>Spousal guarantee</strong> — you can often push to exclude a non-active spouse from the guarantee</li>
+            <li><strong>Sunset on guarantee</strong> — the personal guarantee falls off after, say, 5 years of compliant operation</li>
+            <li><strong>Cap on guarantee amount</strong> — limiting personal exposure to a fixed dollar amount</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>What franchisors almost never negotiate</h2>
+        <p>
+            Don't waste leverage asking for these. They're either core to the brand model or backed by FTC framework you can't change:
+        </p>
+        <ul>
+            <li><strong>System-standard compliance</strong> — brand colors, signage, uniforms, operating hours, menu/service offerings. These are core to the franchise concept</li>
+            <li><strong>Audit rights</strong> — the franchisor's right to inspect your operations and books</li>
+            <li><strong>Required vendor lists</strong> — if a vendor is required, it's almost always required for everyone</li>
+            <li><strong>Termination triggers for material breach</strong> — they need this</li>
+            <li><strong>Trademark license terms</strong> — non-negotiable per IP law fundamentals</li>
+            <li><strong>The FDD itself</strong> — federal disclosure requirements are fixed</li>
+        </ul>
+        <p>
+            Trying to negotiate any of these wastes credibility you'd otherwise spend on the financial terms above.
+        </p>
+    </section>
+
+    <section>
+        <h2>Where leverage comes from</h2>
+        <p>
+            You have more leverage if:
+        </p>
+        <ul>
+            <li><strong>You're signing multiple units</strong> — committing to 3+ outlets gives you real bargaining power</li>
+            <li><strong>The franchisor needs your specific market</strong> — major metro they haven't penetrated, or a market they're trying to expand into</li>
+            <li><strong>You're a credentialed buyer</strong> — relevant industry experience, strong personal financials, prior franchise operator</li>
+            <li><strong>The franchise is mid-tier in popularity</strong> — top-tier brands (the ones with waitlists) have minimal flexibility; bottom-tier franchisors will negotiate almost anything to close a deal</li>
+            <li><strong>You're walking away</strong> — the franchisor knows you have alternatives</li>
+        </ul>
+        <p>
+            You have less leverage if:
+        </p>
+        <ul>
+            <li><strong>You're a first-time franchisee</strong> in a category with strong demand from the brand</li>
+            <li><strong>The franchisor has a waitlist for your territory</strong></li>
+            <li><strong>You've already signed the LOI / discovery-day commitment</strong> — once you've committed publicly, your leverage drops</li>
+            <li><strong>You've publicly named the franchise as your choice</strong> — see above</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How to actually negotiate</h2>
+        <ol>
+            <li><strong>Get the deal in writing first.</strong> Ask for the form Franchise Agreement before discovery day. You can't negotiate what you haven't read.</li>
+            <li><strong>Hire a franchise attorney for FDD review.</strong> $2-5K. They'll flag the specific clauses worth pushing on for your situation. Don't use a general business attorney — franchise law is specialized.</li>
+            <li><strong>Identify your top 3-5 asks.</strong> Don't try to negotiate 20 things. Pick the items with the highest dollar impact + things that materially reduce your downside risk.</li>
+            <li><strong>Negotiate financial items first, brand items last.</strong> If the franchisor refuses everything financial, walk. If they refuse only brand items, you've still won.</li>
+            <li><strong>Ask in writing.</strong> "I'd like to formally propose the following changes to the agreement: ..." Force a formal yes/no rather than a verbal "we don't do that."</li>
+            <li><strong>Expect Side Letters / Addenda, not edits to the agreement itself.</strong> Franchisors rarely change the core agreement document, but they routinely add Side Letters or state-specific Addenda that effectively modify terms.</li>
+            <li><strong>Walk if you can't get any movement.</strong> A franchisor who won't negotiate any term — even a small one — is signaling how the relationship will operate post-signing.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>The compliance note</h2>
+        <p>
+            Franchise law varies by state. Some states (CA, NY, IL, MN, MD, RI, ND, SD, VA, WA, WI) have separate "franchise registration" requirements that limit certain franchisor practices. Your attorney should reference both the FTC franchise rule and your state's specific franchise act when reviewing the agreement.
+        </p>
+        <p>
+            Nothing in this guide is legal advice. Use it to know what's worth asking; use a qualified franchise attorney to actually negotiate.
+        </p>
+    </section>
+
+    <section>
+        <h2>Related guides</h2>
+        <ul>
+            <li><a href="{{ url_for('guides/understanding-item-7/') }}">Understanding FDD Item 7</a> — initial fees + investment cost</li>
+            <li><a href="{{ url_for('guides/understanding-item-19/') }}">Understanding FDD Item 19</a> — earnings data informing the deal economics</li>
+            <li><a href="{{ url_for('guides/understanding-item-20/') }}">Understanding FDD Item 20</a> — outlet activity revealing franchisor leverage in your territory</li>
+            <li><a href="{{ url_for('guides/validating-franchisee-earnings/') }}">Validating franchisee earnings</a> — ask current franchisees which terms they negotiated</li>
+            <li><a href="{{ url_for('guides/sba-7a-franchise-financing/') }}">SBA 7(a) franchise financing</a> — debt terms vs franchise terms</li>
+        </ul>
+    </section>
+</article>
+{% endblock %}

@@ -1,0 +1,6 @@
+{
+  "initial_franchise_fee_low": 0,
+  "initial_franchise_fee_high": 90000,
+  "fee_notes": "IFF varies by Development Area Type ($40k-$90k for standard restaurants) and restaurant type. Pro-rated by term length for gas station and SDO locations. 50% of standard IFF for self-service and SDO locations. Plus $10k for Combo Restaurants. 2025 actual range: $0-$90,000.",
+  "confidence": 0.95
+}

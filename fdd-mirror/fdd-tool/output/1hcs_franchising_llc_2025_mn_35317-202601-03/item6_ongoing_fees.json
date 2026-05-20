@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": 500,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": 1000,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty is greater of 5% of Gross Revenue or Minimum Royalty (starts Month 7: $500/mo, escalates to $4,000/mo by Year 8+, per territory). Brand Fund is 2% of Gross Revenue. LMP minimum: $1,000-$3,000/mo depending on territories and revenue. Tech fee is $6-$15 per email account/month. Additional 5% royalty on out-of-territory revenue.",
+  "raw_excerpt": "Royalty Fee: The greater of (a) 5% of Gross Revenue, or (b) the Minimum Royalty. Brand Fund Contribution: 2% of Gross Revenue.",
+  "confidence": 0.92
+}

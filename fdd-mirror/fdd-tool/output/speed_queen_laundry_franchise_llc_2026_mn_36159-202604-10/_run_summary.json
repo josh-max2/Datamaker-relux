@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\speed_queen_laundry_franchise_llc_2026_mn_36159-202604-10.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.005,
+      "input_tokens": 1624,
+      "cached": 1340,
+      "output_tokens": 251
+    },
+    "item5": {
+      "cost_usd": 0.0071,
+      "input_tokens": 1747,
+      "cached": 1340,
+      "output_tokens": 364
+    },
+    "item6": {
+      "cost_usd": 0.0156,
+      "input_tokens": 2470,
+      "cached": 1340,
+      "output_tokens": 785
+    },
+    "item7": {
+      "cost_usd": 0.0065,
+      "input_tokens": 2892,
+      "cached": 1340,
+      "output_tokens": 94
+    },
+    "item19": {
+      "cost_usd": 0.1177,
+      "input_tokens": 15056,
+      "cached": 1340,
+      "output_tokens": 5080,
+      "images_sent": 6
+    },
+    "item20": {
+      "cost_usd": 0.061,
+      "input_tokens": 8432,
+      "cached": 1340,
+      "output_tokens": 2622,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.2129
+}

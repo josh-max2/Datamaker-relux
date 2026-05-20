@@ -1,0 +1,38 @@
+{
+  "pdf": "data\\wi_scrape\\express_employment_professionals_id640459.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0096,
+      "input_tokens": 2027,
+      "cached": 0,
+      "output_tokens": 234
+    },
+    "item5": {
+      "cost_usd": 0.0129,
+      "input_tokens": 2547,
+      "cached": 0,
+      "output_tokens": 352
+    },
+    "item6": {
+      "cost_usd": 0.0528,
+      "input_tokens": 12677,
+      "cached": 0,
+      "output_tokens": 983
+    },
+    "item7": {
+      "cost_usd": 0.016,
+      "input_tokens": 3950,
+      "cached": 0,
+      "output_tokens": 280
+    },
+    "item20": {
+      "cost_usd": 0.2388,
+      "input_tokens": 19768,
+      "cached": 0,
+      "output_tokens": 11967,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3301
+}

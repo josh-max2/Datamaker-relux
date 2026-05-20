@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\the_lash_franchise_holdings_llc_2026_mn_35660-202603-07.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0061,
+      "input_tokens": 2023,
+      "cached": 1340,
+      "output_tokens": 242
+    },
+    "item5": {
+      "cost_usd": 0.0077,
+      "input_tokens": 1729,
+      "cached": 1340,
+      "output_tokens": 407
+    },
+    "item6": {
+      "cost_usd": 0.009,
+      "input_tokens": 1338,
+      "cached": 1340,
+      "output_tokens": 572
+    },
+    "item7": {
+      "cost_usd": 0.0112,
+      "input_tokens": 4524,
+      "cached": 1340,
+      "output_tokens": 84
+    },
+    "item19": {
+      "cost_usd": 0.0684,
+      "input_tokens": 11646,
+      "cached": 1340,
+      "output_tokens": 2472,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.1676,
+      "input_tokens": 15076,
+      "cached": 1340,
+      "output_tokens": 8396,
+      "images_sent": 7
+    }
+  },
+  "total_cost_usd": 0.2699
+}

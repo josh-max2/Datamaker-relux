@@ -1,0 +1,38 @@
+{
+  "pdf": "data\\mn_scrape\\right_at_home_llc_2026_mn_35989-202604-08.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.006,
+      "input_tokens": 2043,
+      "cached": 1340,
+      "output_tokens": 233
+    },
+    "item5": {
+      "cost_usd": 0.0073,
+      "input_tokens": 1552,
+      "cached": 1340,
+      "output_tokens": 418
+    },
+    "item6": {
+      "cost_usd": 0.0129,
+      "input_tokens": 1418,
+      "cached": 1340,
+      "output_tokens": 815
+    },
+    "item7": {
+      "cost_usd": 0.0025,
+      "input_tokens": 1606,
+      "cached": 1340,
+      "output_tokens": 85
+    },
+    "item19": {
+      "cost_usd": 0.2808,
+      "input_tokens": 20275,
+      "cached": 1340,
+      "output_tokens": 14907,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3095
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\arthur_murray_international_inc_2025_mn_35404-202602-03.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0053,
+      "input_tokens": 1899,
+      "cached": 1340,
+      "output_tokens": 217
+    },
+    "item5": {
+      "cost_usd": 0.0053,
+      "input_tokens": 1348,
+      "cached": 1340,
+      "output_tokens": 325
+    },
+    "item6": {
+      "cost_usd": 0.0199,
+      "input_tokens": 4147,
+      "cached": 1340,
+      "output_tokens": 740
+    },
+    "item7": {
+      "cost_usd": 0.0047,
+      "input_tokens": 2315,
+      "cached": 1340,
+      "output_tokens": 93
+    },
+    "item19": {
+      "cost_usd": 0.166,
+      "input_tokens": 19429,
+      "cached": 1340,
+      "output_tokens": 7420,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1814,
+      "input_tokens": 15275,
+      "cached": 1340,
+      "output_tokens": 9280,
+      "images_sent": 7
+    }
+  },
+  "total_cost_usd": 0.3827
+}

@@ -1,0 +1,28 @@
+{
+  "records": [
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Average Revenue",
+      "cohort_name": "other",
+      "cohort_raw": "Franchised Carl's Jr. Travel Center and Gas and Convenience Restaurants",
+      "outlet_count": 56,
+      "reporting_period": "FY25 (January 30, 2024 to January 27, 2025)",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1586460,
+      "value_median": 1559367,
+      "value_min": 343875,
+      "value_max": 2516000,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 56,
+      "page_number": 66,
+      "raw_text": "Average Revenue FY25 Franchised Carl's Jr. Travel Center and Gas and Convenience Restaurants\nAverage Revenue $1,586,460\nMedian Revenue $1,559,367\n# Met / Exceeded Average 28\n% Met / Exceeded Average 56%\nLowest $343,875\nHighest 2,516,000",
+      "notes": "Cohort covers 56 franchised Travel Center and Gas and Convenience Center restaurants operated by franchisees for the entire 53-week FY25 period. Excludes 950 freestanding locations, 25 college/university/toll plaza/end-cap/inline/airport locations, and 1 restaurant that did not provide complete revenue data. Revenue definition excludes sales taxes and CJR-approved promotional items but includes gift card redemptions."
+    }
+  ],
+  "has_item19": true,
+  "confidence": 0.97,
+  "notes": "Item 19 discloses average revenue for a specific subset of franchised outlets (Travel Center and Gas and Convenience Center format only). The cohort is format-anchored rather than tenure- or performance-anchored, so 'other' is used for cohort_name. All numeric values were clearly legible with no OCR ambiguity. The 56% pct_above_avg corresponds to 28 out of 50 outlets (the document states 28 met/exceeded, and 28/50 = 56%; note outlet count is 56 but only 50 are implied by 28/56 = 50%, suggesting the document may round \u2014 the doc explicitly states both 28 and 56%, so both are captured as disclosed)."
+}

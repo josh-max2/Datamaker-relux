@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Understanding FDD Item 20: What Outlet Activity Tables Really Tell You{% endblock %}
+{% block description %}How to read Item 20 of an FDD: outlet openings, terminations, transfers, non-renewals, what counts as a closure vs. a transition, and how to spot brand-stability problems franchisors don't want highlighted.{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Guides", "url": url_for('guides/')},
+    {"label": "Understanding Item 20", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Understanding FDD Item 20: What Outlet Activity Tables Really Tell You",
+  "author": { "@type": "Person", "name": "FranchiseDepth Editorial", "url": "{{ url_for('about/') }}" },
+  "publisher": { "@type": "Organization", "name": "{{ site_name }}" },
+  "dateModified": "{{ generated_at }}",
+  "mainEntityOfPage": "{{ canonical_url }}",
+  "about": "Franchise Disclosure Document Item 20 — Outlet Activity"
+}
+</script>
+{% endblock %}
+{% block content %}
+<article class="guide-page">
+    <header>
+        <h1>Understanding FDD Item 20</h1>
+        <p class="lead">
+            Item 20 is the section every buyer should read first — and most skip. It's a structured, federally-required record of every outlet that opened, closed, terminated, transferred, or didn't renew over the last three years, plus every current franchisee's contact info. This guide explains how to read it without being misled.
+        </p>
+        <p class="byline">
+            <span class="dateline">Page updated {{ generated_at }}</span>
+        </p>
+    </header>
+
+    <section>
+        <h2>What Item 20 contains</h2>
+        <p>
+            <a class="jargon" href="{{ url_for('methodology/') }}#g-item20" title="See glossary">Item 20</a> is required in every <a class="jargon" href="{{ url_for('methodology/') }}#g-fdd" title="See glossary">FDD</a> and includes five mandatory tables plus the full franchisee contact list. The tables cover the most recent three fiscal years:
+        </p>
+        <ul>
+            <li><strong>Table 1 — Outlets opened, closed, terminated, etc.</strong> National rollup, split by franchised and company-owned.</li>
+            <li><strong>Table 2 — Transfers.</strong> When an existing outlet changed hands (current franchisee sells to a new franchisee). Different from closure.</li>
+            <li><strong>Table 3 — State-by-state outlet activity.</strong> The same opening/closing/transfer detail, broken down by state.</li>
+            <li><strong>Table 4 — Projected openings.</strong> How many new outlets the franchisor expects to sign next year, by state.</li>
+            <li><strong>Table 5 — Franchisee contact list.</strong> Every current franchisee: name, location, phone number.</li>
+        </ul>
+        <p>
+            Table 5 is the most underused single resource in the FDD — it's exactly what <a href="{{ url_for('guides/validating-franchisee-earnings/') }}">validation calls</a> are built on.
+        </p>
+    </section>
+
+    <section>
+        <h2>Closure rate: what counts and what doesn't</h2>
+        <p>
+            Buyers often look at the bottom of Table 1 and compute a simple ratio: outlets closed ÷ outlets at start = closure rate. That's wrong, because "closed" in Table 1 is a catch-all that mixes several different events with very different meanings:
+        </p>
+        <ul>
+            <li><strong>Terminations</strong> — the franchisor ended the agreement, usually for breach (royalty non-payment, brand-standard violations).</li>
+            <li><strong>Non-renewals</strong> — the agreement ended on its scheduled date and one or both parties chose not to extend.</li>
+            <li><strong>Ceased operations for other reasons</strong> — franchisee voluntarily closed (couldn't make money, retired, etc.).</li>
+            <li><strong>Reacquired by franchisor</strong> — the franchisor bought the outlet back, sometimes friendly, sometimes not.</li>
+            <li><strong>Transfers</strong> — current owner sold to a new owner; outlet kept operating, just under new management.</li>
+        </ul>
+        <p>
+            Transfers and reacquisitions are <em>not closures</em>. The outlet continued operating; it just changed hands. Lumping them with terminations inflates the closure rate and makes the brand look worse than it is.
+        </p>
+        <p class="callout">
+            <strong>How {{ site_name }} computes closure rate:</strong>
+            (terminations + non-renewals + ceased-other) ÷ total outlet-years across the disclosed reporting period. Transfers and reacquisitions are excluded. We band the result green &lt; 3%, yellow 3-7%, red &gt; 7% with zero human judgment in the labels — it's purely arithmetic. See <a href="{{ url_for('methodology/') }}#section-7">methodology section 7</a> for the exact formula.
+        </p>
+    </section>
+
+    <section>
+        <h2>Reading the state-by-state table</h2>
+        <p>
+            Table 3 breaks down the same data by state, and this is where you can spot specific problems. Things to look for:
+        </p>
+        <ul>
+            <li><strong>Outlets in your state but no recent openings.</strong> The franchisor isn't actively selling in your market. Often a sign of territorial saturation or pulled investment.</li>
+            <li><strong>Concentrated terminations in one or two states.</strong> Could indicate a regional support failure, a bad regional manager, or supply-chain issues specific to that area.</li>
+            <li><strong>Wave of transfers with no offsetting new outlets.</strong> Existing franchisees are exiting and the franchisor isn't selling replacements. Usually means the franchisor is winding down the brand or the unit economics no longer work.</li>
+            <li><strong>Many "left the system" entries with no terminations.</strong> Franchisor is letting agreements lapse rather than enforcing them. May suggest understaffed enforcement or simply not enough buyer interest to push for renewals.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Transfers: a more nuanced signal than closures</h2>
+        <p>
+            A transfer means a franchisee chose to sell rather than close. This can mean two very different things, and the FDD won't tell you which:
+        </p>
+        <ul>
+            <li><strong>Healthy turnover:</strong> Franchisee successfully built the business, retired or moved on, sold to a new owner who continued operating it. The brand value is high enough that the outlet sold easily.</li>
+            <li><strong>Distress sale:</strong> Franchisee was unprofitable and sold at a discount to avoid termination. The outlet "stayed open" but the original franchisee took a financial loss.</li>
+        </ul>
+        <p>
+            High transfer activity isn't automatically bad, but it's worth asking current franchisees about during <a href="{{ url_for('guides/validating-franchisee-earnings/') }}">validation calls</a>: "Did anyone in your area sell their outlet recently? Do you know why?"
+        </p>
+    </section>
+
+    <section>
+        <h2>Projected openings (Table 4) — the franchisor's prediction</h2>
+        <p>
+            Table 4 lists how many new outlets the franchisor expects to sign next year, by state. Unlike the historical tables, this is forward-looking and entirely the franchisor's own projection — not audited, not regulated.
+        </p>
+        <p>
+            <strong>Use Table 4 as a tone signal, not a fact.</strong> A franchisor projecting 50+ new openings nationally while showing 10 actual openings last year is either ambitious or wishful. Compare projection to historical reality (Table 1 last year's openings) — that ratio tells you the franchisor's self-confidence vs. evidence.
+        </p>
+    </section>
+
+    <section>
+        <h2>The franchisee contact list — the most valuable single page</h2>
+        <p>
+            Table 5 lists every current franchisee's name, outlet location, and phone number. By federal rule, the list must be complete — the franchisor cannot give you only a curated subset. Many FDDs also include franchisees who exited in the most recent year (with last-known contact info).
+        </p>
+        <p>
+            This list exists specifically so prospective buyers can validate the franchisor's claims by talking directly to current owners. The franchisor knows this. Most don't love it. Almost all buyers fail to actually use it.
+        </p>
+        <p>
+            See the <a href="{{ url_for('guides/validating-franchisee-earnings/') }}">validation guide</a> for a structured playbook: who to call, what to ask, what to listen for.
+        </p>
+    </section>
+
+    <section>
+        <h2>Red flags to watch in Item 20</h2>
+        <ul>
+            <li><strong>High closure rate with high transfer rate</strong> — masks distress. The "no closures!" claim hides franchisees who couldn't sell at a normal price and ended up terminating.</li>
+            <li><strong>Outlets opened but contact info missing in Table 5</strong> — newly-signed outlets that haven't started operating. The franchisor is selling agreements faster than franchisees can open. Often a sign of aggressive growth that may not stick.</li>
+            <li><strong>Same outlet appearing in multiple years' termination columns</strong> — re-sold and re-terminated. The location itself may have problems (market saturation, demographics, traffic).</li>
+            <li><strong>Tables don't reconcile</strong> — outlets at start + opened - closed - transferred ≠ outlets at end. The numbers should tie. When they don't, the franchisor's compliance is loose.</li>
+            <li><strong>Contact list significantly shorter than the franchisor's marketing claims</strong> — "200 locations nationwide!" but Item 20 lists 110 franchisees + 30 company-owned = 140 actual outlets. Marketing materials inflate.</li>
+            <li><strong>Multiple terminations in the most recent year by a few franchisees who own several outlets each</strong> — concentration risk. A handful of multi-unit operators leaving can destabilize the network.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How to use Item 20 with the other items</h2>
+        <ol>
+            <li><strong>Compute closure rate yourself</strong> — don't trust franchisor or third-party summaries. Add terminations + non-renewals + ceased-other. Divide by total outlet-years. Compare to the 3% / 7% bands.</li>
+            <li><strong>Cross-check against Item 19's cohort.</strong> If Item 19 cohort is "outlets open 1+ years" and Item 20 shows 30% of outlets closed in their first year, the Item 19 numbers don't represent the typical buyer's first-year experience.</li>
+            <li><strong>Pull contact info for validation calls.</strong> Cross-reference state-by-state activity with the contact list — call franchisees in the states with notable closures or transfers and ask what happened.</li>
+            <li><strong>Compare projected vs actual.</strong> Last year's FDD Table 4 said "50 openings projected for [this year]." This year's Table 1 shows 12 actual openings. That ratio is the franchisor's track record on growth claims.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>How {{ site_name }} reports Item 20</h2>
+        <p>
+            On every <a href="{{ url_for('') }}">brand page</a>:
+        </p>
+        <ul>
+            <li><strong>Outlet growth chart</strong> — Item 20 Table 1 visualized year-by-year, split into franchised vs. company-owned</li>
+            <li><strong>Where they operate</strong> — Item 20 Table 3 top-10 states by outlet count</li>
+            <li><strong>Closure rate badge</strong> — the arithmetic green/yellow/red band, exact percentage, and the underlying numerator and denominator</li>
+            <li><strong>Source FDD link</strong> — direct to the source state portal for the full Table 5 contact list</li>
+        </ul>
+        <p>
+            See <a href="{{ url_for('guides/understanding-item-19/') }}">Understanding Item 19</a> for the earnings side, <a href="{{ url_for('guides/understanding-item-7/') }}">Understanding Item 7</a> for cost, and the <a href="{{ url_for('methodology/') }}">methodology page</a> for our extraction process.
+        </p>
+    </section>
+</article>
+{% endblock %}

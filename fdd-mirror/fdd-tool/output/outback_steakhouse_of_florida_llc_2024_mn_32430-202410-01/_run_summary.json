@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\outback_steakhouse_of_florida_llc_2024_mn_32430-202410-01.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0065,
+      "input_tokens": 2253,
+      "cached": 1340,
+      "output_tokens": 226
+    },
+    "item5": {
+      "cost_usd": 0.0071,
+      "input_tokens": 2227,
+      "cached": 1340,
+      "output_tokens": 268
+    },
+    "item6": {
+      "cost_usd": 0.0092,
+      "input_tokens": 1723,
+      "cached": 1340,
+      "output_tokens": 507
+    },
+    "item7": {
+      "cost_usd": 0.0138,
+      "input_tokens": 5309,
+      "cached": 1340,
+      "output_tokens": 99
+    },
+    "item19": {
+      "cost_usd": 0.0536,
+      "input_tokens": 18634,
+      "cached": 1340,
+      "output_tokens": 89,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1377,
+      "input_tokens": 17622,
+      "cached": 1340,
+      "output_tokens": 5013,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.2278
+}

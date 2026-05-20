@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\kilwin_s_chocolates_franchise_inc_2025_mn_35213-202601-11.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0061,
+      "input_tokens": 2173,
+      "cached": 1340,
+      "output_tokens": 211
+    },
+    "item5": {
+      "cost_usd": 0.0066,
+      "input_tokens": 1958,
+      "cached": 1340,
+      "output_tokens": 289
+    },
+    "item6": {
+      "cost_usd": 0.0323,
+      "input_tokens": 4687,
+      "cached": 1340,
+      "output_tokens": 1460
+    },
+    "item7": {
+      "cost_usd": 0.0093,
+      "input_tokens": 3738,
+      "cached": 1340,
+      "output_tokens": 111
+    },
+    "item19": {
+      "cost_usd": 0.1004,
+      "input_tokens": 12547,
+      "cached": 1340,
+      "output_tokens": 4426,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.1614,
+      "input_tokens": 17017,
+      "cached": 1340,
+      "output_tokens": 7600,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3161
+}

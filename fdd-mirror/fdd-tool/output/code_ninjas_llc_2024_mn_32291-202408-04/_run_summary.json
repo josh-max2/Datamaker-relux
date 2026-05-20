@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\code_ninjas_llc_2024_mn_32291-202408-04.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0063,
+      "input_tokens": 2091,
+      "cached": 1340,
+      "output_tokens": 243
+    },
+    "item5": {
+      "cost_usd": 0.0078,
+      "input_tokens": 1521,
+      "cached": 1340,
+      "output_tokens": 455
+    },
+    "item6": {
+      "cost_usd": 0.0085,
+      "input_tokens": 1332,
+      "cached": 1340,
+      "output_tokens": 539
+    },
+    "item7": {
+      "cost_usd": 0.0101,
+      "input_tokens": 4169,
+      "cached": 1340,
+      "output_tokens": 82
+    },
+    "item19": {
+      "cost_usd": 0.2682,
+      "input_tokens": 13054,
+      "cached": 1340,
+      "output_tokens": 15509,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.1956,
+      "input_tokens": 17863,
+      "cached": 1340,
+      "output_tokens": 9710,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.4965
+}

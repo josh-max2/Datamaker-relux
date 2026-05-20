@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 7,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": 2,
+  "tech_fee_monthly": 150,
+  "fee_notes": "Royalty: 7% of monthly Gross Revenue or Minimum Royalty Fee (whichever is greater). Minimum Royalty escalates from $15/unit months 1-4 to $3,000/month or $15/unit (month 56+). Brand Development Fund: 1% of Gross Revenue or $2/month per Unit managed (whichever greater). Technology Fee: $150/month. Required Business Tools Fee: $975/month (covers CRM, accounting, property management software). Keyrenter Marketing Fee: $925/month. Local Advertising Requirement: $1,425 or 3% of prior month Gross Revenue (whichever greater). Additional fees for non-compliance ($25/day), system modifications (up to $5,000/year, $50,000 term limit), and other services.",
+  "raw_excerpt": "Royalty on Gross Revenue: 7% of monthly Gross Revenue or Minimum Royalty Fee whichever is greater. Technology Fee: $150/month. Required Business Tools Fee: $975/month. Brand Development Fund Contribution: 1% of Gross Revenue or $2 per month per Unit managed whichever greater. Keyrenter Marketing Fee: $925/month.",
+  "confidence": 0.9
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\wi_scrape\\cost_cutters_id639884.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0105,
+      "input_tokens": 2361,
+      "cached": 0,
+      "output_tokens": 227
+    },
+    "item5": {
+      "cost_usd": 0.0166,
+      "input_tokens": 3507,
+      "cached": 0,
+      "output_tokens": 403
+    },
+    "item6": {
+      "cost_usd": 0.0139,
+      "input_tokens": 2647,
+      "cached": 0,
+      "output_tokens": 399
+    },
+    "item7": {
+      "cost_usd": 0.0131,
+      "input_tokens": 3932,
+      "cached": 0,
+      "output_tokens": 89
+    },
+    "item19": {
+      "cost_usd": 0.0369,
+      "input_tokens": 5846,
+      "cached": 0,
+      "output_tokens": 1288,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.1944,
+      "input_tokens": 18172,
+      "cached": 0,
+      "output_tokens": 9326,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.2854
+}

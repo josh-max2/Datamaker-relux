@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 7.75,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2.5,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 156.45,
+  "fee_notes": "License tiered 7.75%-6.25%. MAP tiered 2.5%-2%. Tech $156.45/mo. Call $349.99-$449.99/mo+$25/booking. Convention $1k or $2k penalty.",
+  "raw_excerpt": "License 7.75% first $200k declining. MAP 2.5% first $200k declining. Tech $156.45/month.",
+  "confidence": 0.9
+}

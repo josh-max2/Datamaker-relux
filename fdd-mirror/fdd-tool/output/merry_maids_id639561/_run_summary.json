@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\wi_scrape\\merry_maids_id639561.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0099,
+      "input_tokens": 2159,
+      "cached": 0,
+      "output_tokens": 228
+    },
+    "item5": {
+      "cost_usd": 0.0129,
+      "input_tokens": 3023,
+      "cached": 0,
+      "output_tokens": 256
+    },
+    "item6": {
+      "cost_usd": 0.0282,
+      "input_tokens": 7026,
+      "cached": 0,
+      "output_tokens": 474
+    },
+    "item7": {
+      "cost_usd": 0.0079,
+      "input_tokens": 2182,
+      "cached": 0,
+      "output_tokens": 93
+    },
+    "item19": {
+      "cost_usd": 0.1293,
+      "input_tokens": 14485,
+      "cached": 0,
+      "output_tokens": 5721,
+      "images_sent": 6
+    },
+    "item20": {
+      "cost_usd": 0.2277,
+      "input_tokens": 18081,
+      "cached": 0,
+      "output_tokens": 11563,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.4159
+}

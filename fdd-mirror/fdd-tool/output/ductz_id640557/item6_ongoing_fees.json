@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 10,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 195,
+  "fee_notes": "Royalty 10% of gross sales, deducted weekly via automatic debit. Franchisor may collect minimum royalty if franchisee fails to achieve franchisor-designated minimum gross sales (amount not specified). Brand Marketing Fee up to 1% of gross sales (if established), deducted weekly. Tech fee presently $45/week (~$195/month). Additional fees: training $50\u2013$500 per person; convention up to $1,000; regional meetings $0\u2013$200; transfer 25% of then-current initial fee (min $10,000); renewal 10% of then-current initial fee (2nd+ renewals only); late payment 5% or $50/week; audit $2,500\u2013$6,000 + penalties; non-compliance up to $10,000 (out-of-territory) or $5,000 (other); all deducted via automatic account debit.",
+  "raw_excerpt": "Royalty: 10% of Gross Sales generated; if you fail to achieve the Minimum Gross Sales that we designate we may collect a minimum royalty. Brand Marketing Fee: Up to 1% of Gross Sales, if established. Technology Fee: Our then current fee, which is presently $45 per week.",
+  "confidence": 0.9
+}

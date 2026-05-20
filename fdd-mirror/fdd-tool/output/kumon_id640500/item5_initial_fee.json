@@ -1,0 +1,6 @@
+{
+  "initial_franchise_fee_low": 2000,
+  "initial_franchise_fee_high": 3000,
+  "fee_notes": "Base fee $2,000; increases to $3,000 if English as Foreign Language (EFL) subject is offered. Additional: $2,000 initial materials fee and $2,500 pre-opening marketing required.",
+  "confidence": 0.98
+}

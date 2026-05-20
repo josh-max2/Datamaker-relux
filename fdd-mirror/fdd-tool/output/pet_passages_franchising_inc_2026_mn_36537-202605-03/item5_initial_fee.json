@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 55000,
+  "initial_franchise_fee_high": 95000,
+  "fee_notes": "$55,000 for standard territory (~300,000 Housing Units); $10,000 per additional county up to $95,000 (~500,000 Housing Units); above 500k HUs: $10,000 per ~10,000 HUs. 10% military discount available.",
+  "raw_excerpt": "You must pay us an initial franchise fee in the amount of $55,000.00 for a standard pre-determined protected geographic territory... up to a general maximum initial franchise fee of $95,000",
+  "confidence": 0.98
+}

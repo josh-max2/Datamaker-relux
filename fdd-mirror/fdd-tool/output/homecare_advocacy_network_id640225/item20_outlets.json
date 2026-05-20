@@ -1,0 +1,70 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 8,
+      "outlets_end": 10,
+      "net_change": 2
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 8,
+      "outlets_end": 10,
+      "net_change": 2
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 10,
+      "outlets_end": 12,
+      "net_change": 2
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 10,
+      "outlets_end": 12,
+      "net_change": 2
+    },
+    {
+      "year": 2025,
+      "outlet_type": "franchised",
+      "outlets_start": 12,
+      "outlets_end": 7,
+      "net_change": -5
+    },
+    {
+      "year": 2025,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 3,
+      "net_change": 3
+    },
+    {
+      "year": 2025,
+      "outlet_type": "total",
+      "outlets_start": 12,
+      "outlets_end": 10,
+      "net_change": -2
+    }
+  ],
+  "state_year_status": [],
+  "confidence": 0.92,
+  "notes": "Table 1 (Systemwide Outlet Summary) extracted. Table 3 (state-by-state breakdown) not provided in source text. Significant decline in franchised outlets (12\u21927) offset by new company-owned operations (0\u21923) in fiscal year ended May 31, 2025."
+}

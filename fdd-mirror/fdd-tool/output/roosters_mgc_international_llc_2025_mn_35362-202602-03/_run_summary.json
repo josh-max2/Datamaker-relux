@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\roosters_mgc_international_llc_2025_mn_35362-202602-03.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0061,
+      "input_tokens": 2076,
+      "cached": 1340,
+      "output_tokens": 230
+    },
+    "item5": {
+      "cost_usd": 0.0065,
+      "input_tokens": 1635,
+      "cached": 1340,
+      "output_tokens": 345
+    },
+    "item6": {
+      "cost_usd": 0.0211,
+      "input_tokens": 3772,
+      "cached": 1340,
+      "output_tokens": 893
+    },
+    "item7": {
+      "cost_usd": 0.0063,
+      "input_tokens": 2816,
+      "cached": 1340,
+      "output_tokens": 96
+    },
+    "item19": {
+      "cost_usd": 0.0364,
+      "input_tokens": 5778,
+      "cached": 1340,
+      "output_tokens": 1512,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.1377,
+      "input_tokens": 11257,
+      "cached": 1340,
+      "output_tokens": 7168,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.214
+}

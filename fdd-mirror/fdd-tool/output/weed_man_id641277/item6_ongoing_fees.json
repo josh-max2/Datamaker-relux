@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 7.0,
+  "royalty_min_monthly": 615.765,
+  "marketing_fee_pct": 1.2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty is 7.0% of annual cumulative Net Sales, payable monthly by 5th of each month via ACH; minimum annual royalty is $7,389.18 per Unit Territory for 2026 (CPI-adjusted from $7,000 base in 2023), equating to ~$615.77/month minimum. Advertising Fund contribution is 1.2% of Net Sales (may be revised after Dec 31, 2033; cap of 3%); franchisor matches 50% of franchisee contributions until Dec 31, 2033. Technical Services Participation Fee is 0.25%\u20131.25% of Net Sales beginning January 1, 2027; rate fixed annually within that range through 2031, may increase after Dec 31, 2031; not yet in effect. Interest on overdue amounts: greater of 1.5%/month or WSJ Prime + 5%, not to exceed highest legal rate.",
+  "raw_excerpt": "Royalty Fee1 7.0% of annual cumulative Net Sales 1 Payable by the 5th day of each month for Net Sales during the prior calendar month, to be paid by electronic ACH transfer2\nThe minimum annual Royalty Fee is $7,389.18 per Unit Territory. Each year the minimum amount may be adjusted for inflation, according to the Consumer Price index. The Base Year is November 1, 2023. The minimum amount stated above is for 2026.\nAdvertising Fund Contributions Each month you will contribute 1.2% of Net Sales. This may be revised after December 31, 2033. After that date the rate will not exceed 3% of Net Sales per month.\nTechnical Services Participation Fee2 Each month you will pay a Technical Services Participation Fee of between 0.25% and 1.25% of Net Sales. The Technical Services Participation Fee will commence January 1, 2027.",
+  "confidence": 0.93
+}

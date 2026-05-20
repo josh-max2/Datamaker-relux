@@ -1,0 +1,7 @@
+{
+  "total_investment_low": 391229,
+  "total_investment_high": 1096999,
+  "raw_excerpt": "TOTAL ESTIMATED INITIAL INVESTMENT $391,229 $1,096,999 $401,929 $705,999",
+  "confidence": 0.97,
+  "notes": "Traditional Shop: $391,229-$1,096,999. Value Engineering Shop: $401,929-$705,999. Extracted Traditional Shop range as primary per schema (single low/high). Value Engineering low is $401,929, high is $705,999."
+}

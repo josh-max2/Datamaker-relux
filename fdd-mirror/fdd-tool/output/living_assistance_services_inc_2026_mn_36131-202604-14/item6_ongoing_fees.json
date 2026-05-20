@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 3.5,
+  "royalty_min_monthly": 495,
+  "marketing_fee_pct": 2.5,
+  "marketing_min_monthly": 425,
+  "tech_fee_monthly": 0,
+  "fee_notes": "Royalty tiers down to 3.25% above $125K/mo revenue, 3.0% above $225K/mo. Marketing tiers down to 2.25% above $150K/mo, 2.0% above $250K/mo. Minimums escalate at months 24, 48, 60. 325K pop territory has higher minimums. Tech fee reserved but not currently charged.",
+  "raw_excerpt": "Royalty/Gross Monthly Service Fee: 3.5% of total Gross Revenues; 3.25% after $125,000.00 per month revenues are reached; 3.0% after $225,000.00 per month are reached. Minimum $495.00. Cooperative Advertising: $425.00 per month or 2.5% of your Gross Revenues if higher.",
+  "confidence": 0.95
+}

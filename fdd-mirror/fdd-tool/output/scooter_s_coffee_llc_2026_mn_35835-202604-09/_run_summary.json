@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\scooter_s_coffee_llc_2026_mn_35835-202604-09.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0056,
+      "input_tokens": 1982,
+      "cached": 1340,
+      "output_tokens": 219
+    },
+    "item5": {
+      "cost_usd": 0.0069,
+      "input_tokens": 1934,
+      "cached": 1340,
+      "output_tokens": 313
+    },
+    "item6": {
+      "cost_usd": 0.0201,
+      "input_tokens": 4655,
+      "cached": 1340,
+      "output_tokens": 650
+    },
+    "item7": {
+      "cost_usd": 0.0186,
+      "input_tokens": 6942,
+      "cached": 1340,
+      "output_tokens": 95
+    },
+    "item19": {
+      "cost_usd": 0.363,
+      "input_tokens": 23549,
+      "cached": 1340,
+      "output_tokens": 19729,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1773,
+      "input_tokens": 17237,
+      "cached": 1340,
+      "output_tokens": 8611,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.5914
+}

@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": 1200,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 500,
+  "fee_notes": "Royalty is 5% of Gross Sales with a minimum of $600 semi-monthly (equating to ~$1,200/month minimum). Advertising Contribution: franchisor has the right to require up to 4% of Gross Sales but currently requires 2% of Gross Sales; paid to CSC Affiliate. Cooperative advertising contribution is capped at an additional 1% of Gross Sales. Tech fee (Computer Software and Technology) is not to exceed $500/month; franchisor does not currently provide these services but reserves the right to charge up to that amount. All fees are non-refundable and uniformly imposed.",
+  "raw_excerpt": "Continuing Royalty | 5% of your Gross Sales2 (but at least $600) | Semi-monthly on the 5th and 20th of each month3 | \"Gross Sales\" is defined in Note 2.\nAdvertising Contribution | We have the right to require you to pay up to 4% of your Gross Sales as a Brand Fund contribution; however, we currently require you to pay 2% of Gross Sales4 | Semi-monthly by the 5th and 20th of each month | This Advertising Contribution is paid to CSC Affiliate, which currently provides the advertising services under the Franchise Agreement.\nComputer Software and Technology, Support, and Upgrades | Not to exceed $500 per month (depending on number of users and locations) | As incurred | We and our affiliates may charge you up-front and ongoing (e.g., weekly, monthly, or other) fees for proprietary software or technology licensed to you and related support services; the fee may increase as costs increase. We do not now provide these services and therefore do not have a set charge; we have the right to charge you if we provide these services at a later time and will notify you when we establish the charge.",
+  "confidence": 0.92
+}

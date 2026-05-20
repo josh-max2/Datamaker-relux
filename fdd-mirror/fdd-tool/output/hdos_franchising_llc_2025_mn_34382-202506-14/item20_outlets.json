@@ -1,0 +1,236 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2022,
+      "outlet_type": "franchised",
+      "outlets_start": 17,
+      "outlets_end": 18,
+      "net_change": 1
+    },
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 18,
+      "outlets_end": 18,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 18,
+      "outlets_end": 16,
+      "net_change": -2
+    },
+    {
+      "year": 2022,
+      "outlet_type": "company-owned",
+      "outlets_start": 33,
+      "outlets_end": 32,
+      "net_change": -1
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 32,
+      "outlets_end": 31,
+      "net_change": -1
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 31,
+      "outlets_end": 30,
+      "net_change": -1
+    },
+    {
+      "year": 2022,
+      "outlet_type": "total",
+      "outlets_start": 50,
+      "outlets_end": 50,
+      "net_change": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 50,
+      "outlets_end": 49,
+      "net_change": -1
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 49,
+      "outlets_end": 46,
+      "net_change": -3
+    }
+  ],
+  "state_year_status": [
+    {
+      "year": 2022,
+      "state": "CA",
+      "outlets_start": 8,
+      "outlets_opened": 2,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 1,
+      "outlets_end": 9
+    },
+    {
+      "year": 2023,
+      "state": "CA",
+      "outlets_start": 9,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 1,
+      "outlets_end": 8
+    },
+    {
+      "year": 2024,
+      "state": "CA",
+      "outlets_start": 8,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 1,
+      "outlets_end": 7
+    },
+    {
+      "year": 2022,
+      "state": "HI",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "HI",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2024,
+      "state": "HI",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2022,
+      "state": "NV",
+      "outlets_start": 3,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 3
+    },
+    {
+      "year": 2023,
+      "state": "NV",
+      "outlets_start": 3,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 3
+    },
+    {
+      "year": 2024,
+      "state": "NV",
+      "outlets_start": 3,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 1,
+      "outlets_end": 2
+    },
+    {
+      "year": 2022,
+      "state": "UT",
+      "outlets_start": 5,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 5
+    },
+    {
+      "year": 2023,
+      "state": "UT",
+      "outlets_start": 5,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 6
+    },
+    {
+      "year": 2024,
+      "state": "UT",
+      "outlets_start": 6,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 6
+    },
+    {
+      "year": 2022,
+      "state": "TOTAL",
+      "outlets_start": 17,
+      "outlets_opened": 2,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 1,
+      "outlets_end": 18
+    },
+    {
+      "year": 2023,
+      "state": "TOTAL",
+      "outlets_start": 18,
+      "outlets_opened": 1,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 1,
+      "outlets_end": 18
+    },
+    {
+      "year": 2024,
+      "state": "TOTAL",
+      "outlets_start": 18,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 2,
+      "outlets_end": 16
+    }
+  ],
+  "confidence": 0.98,
+  "notes": "Franchisor is Hot Dog on a Stick. All data sourced from Table 1 and Table 3 of Item 20. Table 1 shows company-owned end-of-year 2024 as 30, but system total end-of-year 2024 is 46 (16 franchised + 30 company-owned = 46), consistent with the document. Note: Table 5 title says 'For 12 Month Period Ending December 31, 2024' but the projections reference fiscal year ending 12/31/25 \u2014 this appears to be a labeling discrepancy in the source document."
+}

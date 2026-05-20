@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\rpm_summit_group_llc_2026_mn_35850-202604-07.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0066,
+      "input_tokens": 2159,
+      "cached": 1340,
+      "output_tokens": 252
+    },
+    "item5": {
+      "cost_usd": 0.0063,
+      "input_tokens": 1718,
+      "cached": 1340,
+      "output_tokens": 316
+    },
+    "item6": {
+      "cost_usd": 0.0277,
+      "input_tokens": 5025,
+      "cached": 1340,
+      "output_tokens": 1082
+    },
+    "item7": {
+      "cost_usd": 0.0024,
+      "input_tokens": 1589,
+      "cached": 1340,
+      "output_tokens": 86
+    },
+    "item19": {
+      "cost_usd": 0.1392,
+      "input_tokens": 21049,
+      "cached": 1340,
+      "output_tokens": 5313,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1633,
+      "input_tokens": 13750,
+      "cached": 1340,
+      "output_tokens": 8375,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.3455
+}

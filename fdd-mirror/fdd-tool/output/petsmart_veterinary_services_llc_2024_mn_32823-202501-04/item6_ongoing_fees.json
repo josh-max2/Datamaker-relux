@@ -1,0 +1,10 @@
+{
+  "royalty_pct": null,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 1.5,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 750,
+  "fee_notes": "Royalty is tiered by annual Hospital Revenue: 2% on first $750,000; 2.5% on $750,001\u2013$1,000,000; 3% on $1,000,001\u2013$1,250,000; 3.5% above $1,250,000 \u2014 rate resets to 2% each new Fiscal Year. No single royalty_pct applies. Brand Fund Contribution currently 1.5% of Hospital Revenue (maximum 2.5%). Local Marketing Expense is 0.5% of Hospital Revenue paid directly to third parties (not to franchisor). Premises License Fee is $10.00/sq ft of Hospital GFA per year, due monthly (1/12th), not payable during the first 365-day Ramp-Up Period. Technology Fee is currently $750/month, revisable on 30 days' notice.",
+  "raw_excerpt": "Franchise Royalty: 2% of the first $750,000 of Hospital Revenue during the Fiscal Year; then 2.5% of Hospital Revenue above $750,000 and up to $1 Million during the Fiscal Year; then 3% of Hospital Revenue above $1 Million and up to $1.25 Million during the Fiscal Year; then 3.5% of Hospital Revenue in excess of $1.25 Million in the Fiscal Year. The royalty rate reverts to 2% at the start of the next Fiscal Year. Monthly.\nBrand Fund Contribution: Up to 2.5% of Hospital Revenue (currently 1.5%). Same as Royalty Fee.\nLocal Marketing Expense: 0.5% of Hospital Revenue. Annually. Not payable to us.\nTechnology Fee: Currently $750 per month. Same as Royalty Fee.",
+  "confidence": 0.92
+}

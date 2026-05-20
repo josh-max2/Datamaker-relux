@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 10,
+  "royalty_min_monthly": 2000,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": 150,
+  "tech_fee_monthly": 250,
+  "fee_notes": "Royalty is the greater of 10% of Gross Revenues or the Minimum Royalty. Minimum Royalty tiers: Year 1 = $0/month, Year 2 = $450/month, Years 3-5 = $950/month, Year 6+ = $2,000/month. Monthly Brand Marketing Fee is a flat $150/month (not a % of sales). Tech fee is Pocomos Sales System at $250/month plus $350 one-time setup; also charges $35 commission on annual contracts and $15 commission on single sprays, payable to vendor.",
+  "raw_excerpt": "Monthly Royalty Fee (1) | The greater of 10% of Gross Revenues or the Minimum Royalty (see Remarks column) (2) | Payable on or before the 10th day of the month via EFT(3) | ... MINIMUM ROYALTY: Year 1: None Year 2: $450 per month Years 3, 4 and 5: $950 per month Year 6 through remainder of term: $2,000 per month\nMonthly Brand Marketing Fee(4) | $150 per month | Payable on or before the 10th day of the month via EFT | Beginning 60 days from Agreement Date through the balance of the term of the Franchise Agreement, the Monthly Brand Marketing Fee will be $150 per month.\nPocomos Sales System | $350 set-up fee $250 monthly charge $35 commission on annual contracts $15 commission on single sprays | Payable to Vendor | You are required to use the Pocomos Sales System which is a call center and routing software program.",
+  "confidence": 0.95
+}

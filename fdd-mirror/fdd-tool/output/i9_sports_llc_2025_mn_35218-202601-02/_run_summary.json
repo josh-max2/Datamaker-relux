@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\i9_sports_llc_2025_mn_35218-202601-02.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.006,
+      "input_tokens": 2089,
+      "cached": 1340,
+      "output_tokens": 222
+    },
+    "item5": {
+      "cost_usd": 0.0117,
+      "input_tokens": 3133,
+      "cached": 1340,
+      "output_tokens": 393
+    },
+    "item6": {
+      "cost_usd": 0.0152,
+      "input_tokens": 3037,
+      "cached": 1340,
+      "output_tokens": 650
+    },
+    "item7": {
+      "cost_usd": 0.009,
+      "input_tokens": 3746,
+      "cached": 1340,
+      "output_tokens": 89
+    },
+    "item19": {
+      "cost_usd": 0.2197,
+      "input_tokens": 16121,
+      "cached": 1340,
+      "output_tokens": 11663,
+      "images_sent": 7
+    },
+    "item20": {
+      "cost_usd": 0.1936,
+      "input_tokens": 15490,
+      "cached": 1340,
+      "output_tokens": 10052,
+      "images_sent": 7
+    }
+  },
+  "total_cost_usd": 0.4552
+}

@@ -1,0 +1,19 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "other",
+      "metric_raw": "Closing Rate",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "all franchisees",
+      "unit_period": null,
+      "metric_scope": "franchisee",
+      "value_avg": 50,
+      "value_median": 46,
+      "raw_text": "The average of all franchisees was 50%. The median was 46%.",
+      "notes": "Closing rate is a sales conversion percentage, not a revenue figure. No outlet count or reporting year stated in the extracted text."
+    }
+  ],
+  "confidence": 0.62,
+  "notes": "Item 19 text only disclosed product mix percentages by service line and a closing rate (avg 50%, median 46%). No gross sales, revenue, or profit figures were present in the extracted pages. Full financial tables may exist on pages 34-42 which were not provided; confidence is low due to likely incomplete section text."
+}

@@ -1,0 +1,98 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "occupancy_pct",
+      "metric_raw": "Average Occupancy Rate",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "1747 Mature Hotels",
+      "outlet_count": 1747,
+      "reporting_period": "2025 fiscal year",
+      "value_avg": 70.1,
+      "value_median": 70.5,
+      "value_min": 26.3,
+      "value_max": 99.0,
+      "pct_above_avg": 52.1
+    },
+    {
+      "metric_name": "average_ticket",
+      "metric_raw": "Average Daily Room Rate (ADR)",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "1747 Mature Hotels",
+      "outlet_count": 1747,
+      "reporting_period": "2025 fiscal year",
+      "value_avg": 136.34,
+      "value_median": 132.07,
+      "value_min": 81.11,
+      "value_max": 272.63,
+      "pct_above_avg": 40.2
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Average RevPAR",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "1747 Mature Hotels",
+      "outlet_count": 1747,
+      "reporting_period": "2025 fiscal year",
+      "value_avg": 95.62,
+      "value_median": 92.47,
+      "value_min": 41.02,
+      "value_max": 249.25,
+      "pct_above_avg": 43.2
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Average Enterprise Contribution",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "1747 Mature Hotels",
+      "outlet_count": 1747,
+      "reporting_period": "2025 fiscal year",
+      "value_avg": 90.3,
+      "value_median": 91.2,
+      "value_min": 40.5,
+      "value_max": 98.7,
+      "pct_above_avg": 58.7
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Average IHG One Rewards Contribution",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "1747 Mature Hotels",
+      "outlet_count": 1747,
+      "reporting_period": "2025 fiscal year",
+      "value_avg": 66.2,
+      "value_median": 68.1,
+      "value_min": 3.8,
+      "value_max": 91.3,
+      "pct_above_avg": 59.4
+    },
+    {
+      "metric_name": "average_ticket",
+      "metric_raw": "Average IHG One Rewards Contribution ADR",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "1747 Mature Hotels",
+      "outlet_count": 1747,
+      "reporting_period": "2025 fiscal year",
+      "value_avg": 141.97,
+      "value_median": 137.68,
+      "value_min": 84.25,
+      "value_max": 281.08,
+      "pct_above_avg": 41.4
+    },
+    {
+      "metric_name": "transactions",
+      "metric_raw": "Average IHG One Rewards Room Nights Contribution",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "1747 Mature Hotels",
+      "outlet_count": 1747,
+      "reporting_period": "2025 fiscal year",
+      "value_avg": 68.1,
+      "value_median": 69.7,
+      "value_min": 11.2,
+      "value_max": 100.1,
+      "pct_above_avg": 58.0
+    }
+  ],
+  "confidence": 0.88,
+  "notes": "Mature Hotels defined as open 2+ years, not in default, no >10% rooms out of service. FDD explicitly states this is historical data only; franchisees are cautioned not to project future performance. Changes in management, market conditions, or economic environment may produce materially different results."
+}

@@ -1,0 +1,171 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Annual Unit Volume",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All 2025 Franchised Restaurants",
+      "outlet_count": 7010,
+      "reporting_period": "2025 fiscal year",
+      "value_avg": 1372069,
+      "value_median": 1297694,
+      "value_min": 65354,
+      "value_max": 6007706,
+      "pct_above_avg": 45
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "1st Quartile (Top 25%)",
+      "outlet_count": 1752,
+      "value_avg": 2154341,
+      "value_median": 2041189,
+      "value_min": 1703327,
+      "value_max": 6007706,
+      "pct_above_avg": 39
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "2nd Quartile",
+      "outlet_count": 1753,
+      "value_avg": 1489962,
+      "value_median": 1488156,
+      "value_min": 1297861,
+      "value_max": 1703007,
+      "pct_above_avg": 50
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "3rd Quartile",
+      "outlet_count": 1752,
+      "value_avg": 1126192,
+      "value_median": 1124919,
+      "value_min": 953095,
+      "value_max": 1297527,
+      "pct_above_avg": 50
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "4th Quartile (Bottom 25%)",
+      "outlet_count": 1753,
+      "value_avg": 718088,
+      "value_median": 753308,
+      "value_min": 65354,
+      "value_max": 952914,
+      "pct_above_avg": 57
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "other",
+      "cohort_raw": "Traditional/Free-standing Pad or Building",
+      "outlet_count": 3169,
+      "value_avg": 1584319,
+      "value_median": 1522154,
+      "value_min": 292090,
+      "value_max": 4704400,
+      "pct_above_avg": 44
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "other",
+      "cohort_raw": "Traditional/Other (Shopping Center/Storefront)",
+      "outlet_count": 2423,
+      "value_avg": 1250245,
+      "value_median": 1175390,
+      "value_min": 190905,
+      "value_max": 3796187,
+      "pct_above_avg": 44
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "other",
+      "cohort_raw": "Non-Traditional/SDO - Gas or C-store",
+      "outlet_count": 900,
+      "value_avg": 1141971,
+      "value_median": 1088513,
+      "value_min": 65354,
+      "value_max": 2971032,
+      "pct_above_avg": 45
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "other",
+      "cohort_raw": "Non-Traditional/SDO - Airport",
+      "outlet_count": 102,
+      "value_avg": 1667646,
+      "value_median": 1551836,
+      "value_min": 88742,
+      "value_max": 6007706,
+      "pct_above_avg": 47
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "other",
+      "cohort_raw": "Non-Traditional/SDO - Other",
+      "outlet_count": 416,
+      "value_avg": 890102,
+      "value_median": 747043,
+      "value_min": 75638,
+      "value_max": 4535673,
+      "pct_above_avg": 37
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "other",
+      "cohort_raw": "Traditional Drive-Thru",
+      "outlet_count": 4161,
+      "value_avg": 1547899,
+      "value_median": 1485494,
+      "value_min": 292090,
+      "value_max": 4704400,
+      "pct_above_avg": 45
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "other",
+      "cohort_raw": "Traditional No Drive-Thru",
+      "outlet_count": 1431,
+      "value_avg": 1124559,
+      "value_median": 1070654,
+      "value_min": 190905,
+      "value_max": 2957745,
+      "pct_above_avg": 44
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Above $3,000,000",
+      "outlet_count": 64
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Above $2,500,000",
+      "outlet_count": 244
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Above $2,000,000",
+      "outlet_count": 844
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Above $1,500,000",
+      "outlet_count": 2269
+    },
+    {
+      "metric_name": "gross_sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Above $1,000,000",
+      "outlet_count": 4348
+    }
+  ],
+  "confidence": 0.92,
+  "notes": "2025 fiscal year data (Dec 30, 2024 - Dec 28, 2025). 7,010 franchised restaurants evaluated (excludes: 314 new openings, 1,261 closed/remodeled, 36 multi-brand, 111 self-serve, 25 part-time/seasonal). AUV equals Gross Sales per Item 19 definition."
+}

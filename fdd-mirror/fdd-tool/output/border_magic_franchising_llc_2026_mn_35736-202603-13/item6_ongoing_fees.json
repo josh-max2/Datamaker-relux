@@ -1,0 +1,9 @@
+{
+  "royalty_pct": 7,
+  "royalty_min_monthly": 1500,
+  "marketing_fee_pct": 0,
+  "tech_fee_monthly": 65,
+  "fee_notes": "Royalty is greater of 7% of Gross Revenue or monthly minimum: Year 1 $750/mo, Year 2 $950/mo, Year 3+ $1,500/mo. National Accounts Fee: 20% of Gross Revenues (optional participation). Marketing Fee currently $0/mo, anticipated up to $200/mo when implemented. Tech fee currently $65/mo, up to $175/mo cap. Local advertising spend recommended at 10% of annual gross revenues.",
+  "raw_excerpt": "Royalty Fee: The greater of 7% of Gross Revenue or minimum monthly: Year 1 - $750/month, Year 2 - $950/month, Year 3 thru remainder of Term - $1,500/month. Technology Fee: Currently $65 per month, but up to $175 per month. Marketing Fee: Currently $0 per month.",
+  "confidence": 0.95
+}

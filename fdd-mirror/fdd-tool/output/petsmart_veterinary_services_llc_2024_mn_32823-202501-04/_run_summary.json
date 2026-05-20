@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\petsmart_veterinary_services_llc_2024_mn_32823-202501-04.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0063,
+      "input_tokens": 2026,
+      "cached": 1340,
+      "output_tokens": 258
+    },
+    "item5": {
+      "cost_usd": 0.0136,
+      "input_tokens": 4023,
+      "cached": 1340,
+      "output_tokens": 344
+    },
+    "item6": {
+      "cost_usd": 0.016,
+      "input_tokens": 4063,
+      "cached": 1340,
+      "output_tokens": 494
+    },
+    "item7": {
+      "cost_usd": 0.0022,
+      "input_tokens": 1529,
+      "cached": 1340,
+      "output_tokens": 83
+    },
+    "item19": {
+      "cost_usd": 0.0139,
+      "input_tokens": 5404,
+      "cached": 1340,
+      "output_tokens": 90,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.0934,
+      "input_tokens": 10801,
+      "cached": 1340,
+      "output_tokens": 4306,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.1455
+}

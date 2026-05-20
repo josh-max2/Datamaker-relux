@@ -1,0 +1,1491 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}{{ brand.brand_name or brand.legal_name }} Franchise Cost, Royalty &amp; Earnings ({{ latest_fdd.filing_year }} FDD){% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": brand.industry|industry_label, "url": url_for('category/' ~ (brand.industry or 'other') ~ '/')},
+    {"label": brand.brand_name or brand.legal_name, "url": canonical_url}
+]) }}{% endblock %}
+{% block description %}{{ brand.brand_name or brand.legal_name }} franchise: initial fee{% if fees and fees.initial_franchise_fee_low %} ${{ '{:,.0f}'.format(fees.initial_franchise_fee_low) }}{% endif %}{% if fees and fees.royalty_pct %}, {{ fees.royalty_pct }}% royalty{% endif %}{% if fees and fees.total_investment_low and fees.total_investment_high %}, ${{ '{:,.0f}'.format(fees.total_investment_low) }}–${{ '{:,.0f}'.format(fees.total_investment_high) }} total investment{% endif %}. Item 19 earnings data + outlet growth from the {{ latest_fdd.filing_year }} FDD.{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block head_extra %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "{{ canonical_url }}#article",
+      "headline": "{{ brand.brand_name or brand.legal_name }} Franchise Cost, Royalty & Earnings ({{ latest_fdd.filing_year }} FDD)",
+      "author": {
+        "@type": "Person",
+        "name": "FranchiseDepth Editorial",
+        "url": "{{ url_for('about/') }}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ site_name }}"
+      },
+      "dateModified": "{{ generated_at }}",
+      {% if latest_fdd.effective_date %}"datePublished": "{{ latest_fdd.effective_date }}",{% endif %}
+      "about": { "@id": "{{ canonical_url }}#franchise" },
+      "mainEntityOfPage": "{{ canonical_url }}"
+    },
+    {
+      "@type": "Product",
+      "@id": "{{ canonical_url }}#franchise",
+      "name": "{{ brand.brand_name or brand.legal_name }} Franchise",
+      "category": "Franchise Opportunity — {{ brand.industry|industry_label }}",
+      "description": "Franchise opportunity for {{ brand.brand_name or brand.legal_name }}, a {{ (brand.industry|industry_label).lower() }} brand. {% if fees and fees.initial_franchise_fee_low %}Initial franchise fee from ${{ '{:,.0f}'.format(fees.initial_franchise_fee_low) }}{% if fees.initial_franchise_fee_high and fees.initial_franchise_fee_high != fees.initial_franchise_fee_low %} to ${{ '{:,.0f}'.format(fees.initial_franchise_fee_high) }}{% endif %}. {% endif %}{% if fees and fees.total_investment_low and fees.total_investment_high %}Total estimated investment ${{ '{:,.0f}'.format(fees.total_investment_low) }}–${{ '{:,.0f}'.format(fees.total_investment_high) }}.{% endif %}",
+      "brand": {
+        "@type": "Organization",
+        "name": "{{ brand.legal_name }}"{% if brand.website %},
+        "url": "{{ brand.website }}"{% endif %}
+      },
+      "url": "{{ canonical_url }}"
+    }
+  ]
+}
+</script>
+{% endblock %}
+{% block content %}
+<article class="brand-page">
+    <header class="brand-header">
+        <h1 id="top">{{ brand.brand_name or brand.legal_name }}</h1>
+        <p class="legal-name">
+            Legal entity: <strong>{{ brand.legal_name }}</strong>
+            {% if brand.state_of_inc %}({{ brand.state_of_inc }}){% endif %}
+        </p>
+        <ul class="brand-meta" aria-label="Page metadata">
+            <li class="meta-badge meta-verified" title="Source FDD downloaded directly from the state filing portal and parsed; numeric values are verbatim from the source PDF.">
+                <span class="meta-icon" aria-hidden="true">✓</span>
+                Verified from {{ latest_fdd.filing_year }} FDD{% if latest_fdd.effective_date %} ({{ latest_fdd.effective_date }}){% endif %} · {{ latest_fdd.filing_state }} portal
+            </li>
+            {% if fdd_age and fdd_age.tier != 'current' %}
+            <li class="meta-badge meta-fdd-age meta-fdd-age-{{ fdd_age.tier }}"
+                title="The source FDD was filed in {{ fdd_age.filing_year }}. Franchisors file annually; older FDDs may not reflect current outlet counts, fees, or Item 19 figures.">
+                {% if fdd_age.tier == 'stale' %}⚠ {% endif %}{{ fdd_age.label }}
+            </li>
+            {% endif %}
+            {% if latest_fdd.retrieved_at %}
+            <li class="meta-badge meta-date" title="When we downloaded the source FDD from the state portal">
+                Source verified {{ latest_fdd.retrieved_at[:10] }}
+            </li>
+            {% endif %}
+            <li class="meta-badge meta-date" title="When this page was last regenerated from the database">
+                Updated {{ generated_at }}
+            </li>
+            {% if reading_time_min %}
+            <li class="meta-badge meta-reading-time" title="Estimated time to read every section on this page at 220 wpm">
+                {{ reading_time_min }} min read
+            </li>
+            {% endif %}
+        </ul>
+    </header>
+
+    {# === TL;DR card: the 5 numbers buyers actually want, in priority order === #}
+    <section class="facts" id="fast-facts" aria-label="Quick facts">
+        {% if fees and fees.total_investment_low and fees.total_investment_high %}
+        <div class="fact fact-hero">
+            <span class="label">Total investment</span>
+            <span class="value">${{ '{:,.0f}'.format(fees.total_investment_low) }} – ${{ '{:,.0f}'.format(fees.total_investment_high) }}</span>
+            <span class="fact-sub">Item 7 of the {{ latest_fdd.filing_year }} FDD</span>
+        </div>
+        {% endif %}
+
+        <div class="fact-grid">
+            {% if ongoing_fees_text and ongoing_fees_text != 'Not separately disclosed' %}
+            <div class="fact fact-medium">
+                <span class="label">Ongoing fees</span>
+                <span class="value">{{ ongoing_fees_text }}</span>
+                <span class="fact-sub">ongoing, per FDD</span>
+            </div>
+            {% endif %}
+
+            {% if total_outlets %}
+            <div class="fact fact-medium">
+                <span class="label">Total outlets</span>
+                <span class="value">{{ '{:,}'.format(total_outlets) }}</span>
+                <span class="fact-sub">latest reporting year</span>
+            </div>
+            {% endif %}
+
+            {% if risk_badge %}
+            <div class="fact fact-medium fact-risk risk-{{ risk_badge.tier }}"
+                 title="Arithmetic bucket from Item 20 closure rate: green <3%, yellow 3-7%, red >7%. Not an editorial judgment of the franchise's quality.">
+                <span class="label">Closure rate</span>
+                <span class="value">
+                    {% if risk_badge.tier == 'green' %}🟢{% elif risk_badge.tier == 'yellow' %}🟡{% else %}🔴{% endif %}
+                    {{ risk_badge.rate_pct }}%
+                </span>
+                <span class="fact-sub">{{ risk_badge.closures }} of {{ '{:,}'.format(risk_badge.starts) }} outlet-years{{ risk_badge.year_span }}</span>
+            </div>
+            {% endif %}
+
+            {% if calculator_defaults and calculator_defaults.revenue_p50 %}
+            <div class="fact fact-medium">
+                <span class="label">Median reported revenue</span>
+                <span class="value">${{ '{:,.0f}'.format(calculator_defaults.revenue_p50) }}</span>
+                <span class="fact-sub">Item 19, {{ calculator_defaults.n_item19_records }} record{{ 's' if calculator_defaults.n_item19_records != 1 else '' }}</span>
+            </div>
+            {% endif %}
+
+            <div class="fact fact-small">
+                <span class="label">Industry</span>
+                <span class="value">{{ brand.industry|industry_label }}</span>
+            </div>
+
+            {% if fees and fees.liquid_capital_required %}
+            <div class="fact fact-small">
+                <span class="label">Liquid capital required</span>
+                <span class="value">${{ '{:,.0f}'.format(fees.liquid_capital_required) }}</span>
+            </div>
+            {% else %}
+            <div class="fact fact-small fact-liquid-missing">
+                <span class="label">Liquid capital required</span>
+                <span class="value muted">Not separately disclosed</span>
+                <span class="fact-sub">industry norm 20-40% of total investment</span>
+            </div>
+            {% endif %}
+        </div>
+
+        <p class="facts-cta">
+            <a href="#cost-calculator">→ Model your scenario in the calculator</a>
+        </p>
+    </section>
+
+    <nav class="page-toc" aria-label="On this page">
+        <span class="page-toc-label">On this page:</span>
+        <a href="#summary">Summary</a>
+        <a href="#fast-facts">Fast facts</a>
+        {% if breakeven and not breakeven.unprofitable %}<a href="#breakeven">Breakeven</a>{% endif %}
+        <a href="#cost-calculator">Cost calculator</a>
+        <a href="#fees-detail">Fees detail</a>
+        {% if disclosure.kind != 'none' %}<a href="#item19">Item 19 earnings</a>{% endif %}
+        <a href="#outlet-growth">Outlet growth</a>
+        <a href="#where-they-operate">Where they operate</a>
+        <a href="#faq">FAQ</a>
+        <a href="#sources">Sources</a>
+    </nav>
+
+    {% if summary and summary.html %}
+    <section class="summary-paragraph" id="summary">
+        <p>{{ summary.html|safe }}</p>
+    </section>
+    {% endif %}
+
+    {% if industry_context %}
+    <section class="industry-context">
+        <p>{{ industry_context }}</p>
+    </section>
+    {% endif %}
+
+    {% if breakeven and not breakeven.unprofitable %}
+    <section class="breakeven-section" id="breakeven">
+        <h2>How long until you recover your investment?</h2>
+        <p class="further-reading"><a href="{{ url_for('guides/franchise-breakeven-how-long/') }}">→ Guide: operational vs investment vs wage-replacement breakeven (three different things)</a></p>
+        <p class="breakeven-headline">
+            Under the scenario described below, breakeven would arrive in
+            <strong>{{ breakeven.low_years }}{% if breakeven.high_years %} – {{ breakeven.high_years }}{% endif %} years.</strong>
+        </p>
+        <p class="notes">
+            <strong>This is not a projection.</strong> It is an arithmetic exercise on data the franchisor already disclosed in this {{ latest_fdd.filing_year }} FDD: investment midpoint of ${{ '{:,.0f}'.format(breakeven.investment_midpoint) }} divided by estimated annual profit.
+            {% if breakeven.method == 'reported_net_profit_dollars' %}
+                The profit figure used is the franchisor's <strong>directly-reported net profit</strong> from Item 19 across {{ breakeven.n_cohorts }} cohort{% if breakeven.n_cohorts != 1 %}s{% endif %}.
+            {% elif breakeven.method == 'reported_net_margin_pct' %}
+                The profit figure used is the franchisor's <strong>directly-reported net income margin</strong> ({{ breakeven.margin_low_pct }}–{{ breakeven.margin_high_pct }}%) applied to their reported revenue.
+            {% else %}
+                The franchisor does not disclose a net-profit figure, so this scenario applies an industry-typical operating margin band of {{ breakeven.margin_low_pct }}–{{ breakeven.margin_high_pct }}% (for {{ breakeven.industry_label.lower() }}) to their reported revenue — a rougher inference, not a measurement.
+            {% endif %}
+            Per <a href="https://www.ftc.gov/business-guidance/resources/franchise-rule-compliance-guide" rel="nofollow">FTC §436.5(s)</a>, the franchisor's own Item 19 disclosure is the authoritative source for any forecast — this scenario is illustrative arithmetic only, with no claim about what any individual buyer will experience. Margins vary by location, owner-operator status, financing terms, and local market. See the Item 19 table below for the raw source figures.
+        </p>
+        {% if breakeven_chart %}
+        <div class="breakeven-chart-wrap">
+            <h3>Breakeven range by cohort</h3>
+            <p class="notes chart-note">Each row shows the optimistic-to-conservative years to recoup the investment midpoint (${{ '{:,.0f}'.format(breakeven_chart.investment_midpoint) }}) for that specific cohort, under the same margin assumption. Wider bars = higher variance across margin scenarios. Cohorts with much higher revenue (e.g., top performers) break even faster; lower-revenue cohorts take longer.</p>
+            <div class="chart-wrap" style="height: {{ 50 + breakeven_chart.cohorts|length * 35 }}px">
+                <canvas id="breakevenChart"></canvas>
+            </div>
+        </div>
+        {% endif %}
+        {% if roi_walkforward %}
+        <div class="roi-chart-wrap">
+            <h3>10-year cumulative profit walk-forward</h3>
+            <p class="notes chart-note">
+                Cumulative profit/loss over 10 years under the same arithmetic scenario as above. Both lines start at <strong>−${{ '{:,.0f}'.format(roi_walkforward.investment_midpoint) }}</strong> at year 0 (the investment midpoint outflow). The optimistic line uses annual profit of <strong>${{ '{:,.0f}'.format(roi_walkforward.annual_profit_high) }}</strong> (high end of disclosed scenario) and crosses zero around year {{ roi_walkforward.low_years }}. The conservative line uses <strong>${{ '{:,.0f}'.format(roi_walkforward.annual_profit_low) }}</strong> and crosses around year {{ roi_walkforward.high_years }}. Not a projection — see compliance note above.
+            </p>
+            <div class="chart-wrap" style="height: 280px">
+                <canvas id="roiChart"></canvas>
+            </div>
+        </div>
+        {% endif %}
+    </section>
+    {% elif breakeven and breakeven.unprofitable %}
+    <section class="breakeven-section">
+        <h2>Estimated breakeven</h2>
+        <p class="muted"><strong>Outlets reported losses on average.</strong> Reported net profit is negative across the cohorts disclosed in this FDD — breakeven is not estimable from these figures.</p>
+    </section>
+    {% elif disclosure.kind != 'none' %}
+    <section class="breakeven-section">
+        <h2>Estimated breakeven</h2>
+        <p class="muted">Cannot be estimated — Item 19 does not include directly-comparable revenue data, or total investment range is missing.</p>
+    </section>
+    {% else %}
+    <section class="breakeven-section">
+        <h2>Estimated breakeven</h2>
+        <p class="muted">Cannot be estimated — this franchisor does not publicly disclose Item 19 financial performance.</p>
+    </section>
+    {% endif %}
+
+    {# === Cost Calculator (F4.7 v3 — simplified, mobile-first) === #}
+    <section class="cost-calculator" id="cost-calculator" aria-labelledby="cost-calculator-heading">
+        <div class="calc-head">
+            <h2 id="cost-calculator-heading">Cost calculator</h2>
+            <details class="calc-disclaimer">
+                <summary>Full disclaimer</summary>
+                <div class="calc-disclaimer-body">
+                    <p><strong>Educational tool, not advice.</strong> This calculator performs arithmetic on inputs you supply. It does not predict or forecast results. Not financial, legal, tax, or investment advice. Consult a franchise attorney, CPA, and financial advisor before investing.</p>
+                    <p><strong>FTC §436.5(s) compliance.</strong> 16 CFR §436.5(s) bars third parties from representing the financial performance of a specific franchise operation. This calculator applies your inputs to a standard arithmetic formula and does not represent any specific outcome. The franchisor's Item 19 is the authoritative source.</p>
+                    <p><strong>Defaults from public filings.</strong> Royalty, marketing, tech fee, and Item 7 investment range default to the figures the franchisor disclosed in the {{ latest_fdd.filing_year }} FDD on record with {{ latest_fdd.filing_state }}. Operating-cost percentage is an industry-typical starting point — adjust to your business plan.</p>
+                    <p><strong>Limitations.</strong> Does not model build-out delays, working-capital draws beyond Y1, depreciation, capex after Y1, lease escalations, franchisor program changes, supplier price shifts, recession scenarios, or anything outside the inputs above.</p>
+                    <p><strong>Affiliate disclosure (16 CFR Part 255).</strong> The "Talk to a franchise consultant" and "Get pre-qualified for SBA financing" buttons are paid referral links. We may earn a commission. Compensation does not change which brands appear here or how their data is presented. See <a href="{{ url_for('affiliate-disclosure/') }}">affiliate disclosure</a>.</p>
+                    <p><strong>Source.</strong> Defaults from <a href="{{ latest_fdd.source_url }}" rel="nofollow noopener">{{ latest_fdd.filing_year }} {{ brand.brand_name or brand.legal_name }} FDD</a> ({{ latest_fdd.filing_state }} portal). See <a href="{{ url_for('methodology/') }}">methodology</a>.</p>
+                </div>
+            </details>
+        </div>
+        <p class="calc-tagline">
+            Adjust three inputs — <strong>revenue</strong>, <strong>investment</strong>, <strong>operating costs</strong> — to model your scenario. Math, not a forecast. Defaults from the {{ latest_fdd.filing_year }} FDD.
+        </p>
+
+        <form class="calc-form" id="cost-calc-form" onsubmit="return false" novalidate>
+
+            {# Output card — first on the page so it's visible without scrolling on mobile. #}
+            <div class="calc-output" aria-live="polite" aria-atomic="true">
+                <div class="calc-metrics">
+                    <div class="calc-metric calc-metric-primary">
+                        <span class="calc-metric-label">Year-1 net<button type="button" class="info" aria-label="What is Year-1 net?" aria-expanded="false" data-tip="Revenue minus all costs in year 1: franchisor fees, operating costs, owner time, tax. Does NOT subtract your upfront investment — that's tracked by payback below.">?</button></span>
+                        <span class="calc-metric-value" id="calc-net-year1">—</span>
+                        <span class="calc-metric-sub">after fees, costs &amp; owner time</span>
+                    </div>
+                    <div class="calc-metric">
+                        <span class="calc-metric-label">Payback<button type="button" class="info" aria-label="What is Payback?" aria-expanded="false" data-tip="Years of cumulative profit needed to recover your full initial investment. '3y' means you break even on the upfront cost in year 3.">?</button></span>
+                        <span class="calc-metric-value" id="calc-payback">—</span>
+                        <span class="calc-metric-sub">years to recover investment</span>
+                    </div>
+                    <div class="calc-metric">
+                        <span class="calc-metric-label">5-yr net<button type="button" class="info" aria-label="What is 5-year net?" aria-expanded="false" data-tip="Cumulative after-tax profit over 5 years MINUS your initial investment. A positive number means you've recouped the upfront cost AND built that much in net wealth. A negative number means you haven't broken even yet at year 5.">?</button></span>
+                        <span class="calc-metric-value" id="calc-cum-5y">—</span>
+                        <span class="calc-metric-sub">after recovering investment</span>
+                    </div>
+                </div>
+
+                <div class="calc-bar" aria-hidden="true">
+                    <div class="calc-bar-segments" id="calc-bar-segments"></div>
+                </div>
+
+                <table class="calc-waterfall" id="calc-waterfall">
+                    {# populated by JS — vertical breakdown of revenue → minus each cost → net #}
+                </table>
+
+                <p class="calc-summary" id="calc-summary"></p>
+            </div>
+
+            {# Three primary knobs. #}
+            <div class="calc-knob">
+                <label class="calc-knob-head" for="calc-revenue">
+                    <span class="calc-knob-label">Annual revenue<button type="button" class="info" aria-label="What is annual revenue?" aria-expanded="false" data-tip="Gross sales per location per year, before any costs. Defaults to the median revenue reported by current franchisees in the FDD's Item 19.">?</button></span>
+                    <span class="calc-knob-value">
+                        <span class="calc-prefix">$</span>
+                        {% if calculator_defaults.revenue %}
+                        <input type="text" inputmode="numeric" autocomplete="off"
+                               id="calc-revenue" aria-describedby="calc-revenue-hint"
+                               value="{{ '{:,}'.format(calculator_defaults.revenue) }}">
+                        {% else %}
+                        <input type="text" inputmode="numeric" autocomplete="off"
+                               id="calc-revenue" aria-describedby="calc-revenue-hint"
+                               placeholder="enter your estimate">
+                        {% endif %}
+                    </span>
+                </label>
+                {% if calculator_defaults.revenue_p25 and calculator_defaults.revenue_p75 and calculator_defaults.revenue_p25 != calculator_defaults.revenue_p75 %}
+                {# Preset labels honestly reflect what the data actually is. For
+                   performance-anchored cohorts (Top/Middle/Bottom Third) we say
+                   so; for natural distributions we use Low/Median/High. #}
+                {% set pa = calculator_defaults.cohort_kind == 'performance_anchored' %}
+                <div class="calc-presets" role="group" aria-label="Revenue scenarios from disclosed cohorts">
+                    <button type="button" class="calc-preset" data-preset="p25" data-value="{{ calculator_defaults.revenue_p25 }}">
+                        {{ 'Bottom tier' if pa else 'Low' }}<span class="calc-preset-amt">${{ '{:,}'.format(calculator_defaults.revenue_p25) }}</span>
+                    </button>
+                    <button type="button" class="calc-preset calc-preset-active" data-preset="p50" data-value="{{ calculator_defaults.revenue_p50 }}">
+                        {{ 'Middle tier' if pa else 'Median' }}<span class="calc-preset-amt">${{ '{:,}'.format(calculator_defaults.revenue_p50) }}</span>
+                    </button>
+                    <button type="button" class="calc-preset" data-preset="p75" data-value="{{ calculator_defaults.revenue_p75 }}">
+                        {{ 'Top tier' if pa else 'High' }}<span class="calc-preset-amt">${{ '{:,}'.format(calculator_defaults.revenue_p75) }}</span>
+                    </button>
+                </div>
+                <p class="calc-knob-hint" id="calc-revenue-hint">
+                    {% if pa %}
+                    Tier values are franchisor-reported cohort buckets (not statistical quartiles).
+                    {% else %}
+                    From {{ calculator_defaults.n_item19_records }} Item 19 record{{ 's' if calculator_defaults.n_item19_records != 1 else '' }} in the {{ latest_fdd.filing_year }} FDD.
+                    {% endif %}
+                </p>
+                {% else %}
+                <p class="calc-knob-hint" id="calc-revenue-hint">
+                    {{ calculator_defaults.revenue_source }}
+                </p>
+                {% endif %}
+            </div>
+
+            <div class="calc-knob">
+                <label class="calc-knob-head" for="calc-investment">
+                    <span class="calc-knob-label">Total investment<button type="button" class="info" aria-label="What is total investment?" aria-expanded="false" data-tip="All upfront costs to open: franchise fee, build-out, equipment, signage, initial inventory, working capital. Comes from Item 7 of the FDD.">?</button></span>
+                    <span class="calc-knob-value">
+                        <span class="calc-prefix">$</span>
+                        <input type="text" inputmode="numeric" autocomplete="off"
+                               id="calc-investment" aria-describedby="calc-investment-hint"
+                               value="{{ '{:,}'.format(calculator_defaults.investment) if calculator_defaults.investment else '200,000' }}">
+                    </span>
+                </label>
+                <p class="calc-knob-hint" id="calc-investment-hint">
+                    {% if calculator_defaults.investment_low and calculator_defaults.investment_high %}
+                    Item 7 range: ${{ '{:,}'.format(calculator_defaults.investment_low) }} – ${{ '{:,}'.format(calculator_defaults.investment_high) }}. Midpoint pre-filled.
+                    {% else %}
+                    Adjust to your expected out-of-pocket plus financed cost.
+                    {% endif %}
+                </p>
+            </div>
+
+            <div class="calc-knob">
+                <label class="calc-knob-head" for="calc-opcost">
+                    <span class="calc-knob-label">Operating costs<button type="button" class="info" aria-label="What are operating costs?" aria-expanded="false" data-tip="Day-to-day costs of running the business as a percent of revenue: cost of goods sold, rent, utilities, employee wages, insurance, admin. Does NOT include royalty or marketing fees — those are separate.">?</button></span>
+                    <span class="calc-knob-value">
+                        <input type="text" inputmode="numeric" autocomplete="off"
+                               id="calc-opcost" aria-describedby="calc-opcost-hint"
+                               value="{{ calculator_defaults.op_cost_pct }}">
+                        <span class="calc-suffix">% of revenue</span>
+                    </span>
+                </label>
+                <p class="calc-knob-hint" id="calc-opcost-hint">
+                    Industry-typical for {{ calculator_defaults.industry_label }}: {{ calculator_defaults.op_cost_pct }}%. Covers COGS + rent + labor + admin. Excludes franchisor fees (shown separately below).
+                </p>
+            </div>
+
+            {# Contractual fees from the FDD — displayed, not inputs. #}
+            <div class="calc-fees" aria-label="Franchisor fees from {{ latest_fdd.filing_year }} FDD">
+                <span class="calc-fees-label">Franchisor fees ({{ latest_fdd.filing_year }} FDD):</span>
+                <ul class="calc-fees-list">
+                    <li>
+                        <span class="calc-fee-name">Royalty<button type="button" class="info" aria-label="What is royalty?" aria-expanded="false" data-tip="A percent of every dollar of revenue paid to the franchisor as ongoing payment. Set by contract — you can't negotiate it down.">?</button></span>
+                        <span class="calc-fee-val">{% if calculator_defaults.royalty %}{{ calculator_defaults.royalty }}% of revenue{% else %}—{% endif %}</span>
+                    </li>
+                    <li>
+                        <span class="calc-fee-name">Marketing fund<button type="button" class="info" aria-label="What is the marketing fund?" aria-expanded="false" data-tip="A percent of revenue paid into the brand's national advertising/marketing pool. The franchisor decides how it's spent.">?</button></span>
+                        <span class="calc-fee-val">{% if calculator_defaults.marketing %}{{ calculator_defaults.marketing }}% of revenue{% else %}—{% endif %}</span>
+                    </li>
+                    {% if calculator_defaults.tech_fee_monthly %}
+                    <li>
+                        <span class="calc-fee-name">Technology fee<button type="button" class="info" aria-label="What is the technology fee?" aria-expanded="false" data-tip="Monthly fee for the brand's required POS, software, or tech stack. Typically a flat dollar amount, not a percent.">?</button></span>
+                        <span class="calc-fee-val">${{ '{:,}'.format(calculator_defaults.tech_fee_monthly) }} / month</span>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+
+            {# Advanced — collapsed by default. #}
+            <details class="calc-advanced">
+                <summary>Advanced assumptions</summary>
+                <div class="calc-advanced-grid">
+                    <label class="calc-adv-field">
+                        <span class="calc-adv-label">Owner time value<button type="button" class="info" aria-label="What is owner time value?" aria-expanded="false" data-tip="What you could earn doing other work in a year (a day job, consulting, etc.). The calc counts this as a cost so the 'net' tells you whether owning beats your alternatives.">?</button></span>
+                        <span class="calc-input-inline">
+                            <span class="calc-prefix">$</span>
+                            <input type="text" inputmode="numeric" autocomplete="off" id="calc-owner-cost" value="50,000">
+                            <span class="calc-suffix">/ yr</span>
+                        </span>
+                        <span class="calc-adv-hint">What you'd earn doing something else.</span>
+                    </label>
+                    <label class="calc-adv-field">
+                        <span class="calc-adv-label">Revenue growth<button type="button" class="info" aria-label="What is revenue growth?" aria-expanded="false" data-tip="Year-over-year revenue increase assumption. 3% roughly matches inflation. Set higher only if you have a specific reason (e.g. a new product launch).">?</button></span>
+                        <span class="calc-input-inline">
+                            <input type="text" inputmode="numeric" autocomplete="off" id="calc-growth" value="3">
+                            <span class="calc-suffix">% / yr</span>
+                        </span>
+                        <span class="calc-adv-hint">3% ≈ inflation. Higher only with reason.</span>
+                    </label>
+                    <label class="calc-adv-field">
+                        <span class="calc-adv-label">Tax on profit<button type="button" class="info" aria-label="What is tax on profit?" aria-expanded="false" data-tip="Combined effective tax rate on your profit: federal income tax + state tax + self-employment tax. 25% is a US ballpark — your actual rate depends on entity structure and state.">?</button></span>
+                        <span class="calc-input-inline">
+                            <input type="text" inputmode="numeric" autocomplete="off" id="calc-tax" value="25">
+                            <span class="calc-suffix">%</span>
+                        </span>
+                        <span class="calc-adv-hint">Federal + state + SE tax ballpark.</span>
+                    </label>
+                </div>
+            </details>
+
+            <div class="calc-actions">
+                <button type="button" class="btn btn-tertiary" id="calc-share-btn">Copy shareable link</button>
+                <button type="button" class="btn btn-tertiary calc-reset" id="calc-reset-btn">Reset to defaults</button>
+                <span class="calc-share-status" id="calc-share-status" aria-live="polite"></span>
+            </div>
+
+            <p class="calc-cta-lead">
+                Numbers looking viable? Two next steps to validate them with people who know this brand specifically:
+                <em class="affiliate-inline-disclosure">Affiliate links — we may earn a commission at no cost to you.</em>
+            </p>
+            <div class="calc-cta-buttons">
+                <a class="btn btn-secondary" href="#" data-cta="franchise-consultant-calc">Talk to a franchise consultant</a>
+                <a class="btn btn-secondary" href="#" data-cta="sba-loan-calc">Get pre-qualified for SBA financing</a>
+            </div>
+        </form>
+
+        {% if calculator_defaults.similar_brand_links %}
+        <div class="calc-similar-brands">
+            <p class="calc-similar-brands-label">Compare similar brands:</p>
+            <ul class="calc-similar-brands-list">
+                {% for s in calculator_defaults.similar_brand_links %}
+                <li><a href="{{ url_for('franchise/' + s.slug + '/') }}#cost-calculator">{{ s.name }} →</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        <script type="application/json" id="calc-defaults">{{ calculator_defaults_json|safe }}</script>
+    </section>
+
+    {% if fees %}
+    <section id="fees-detail">
+        <h2>Fees &amp; investment</h2>
+        {{ ui.vintage(latest_fdd) }}
+        <p class="further-reading"><a href="{{ url_for('guides/understanding-item-7/') }}">→ Guide: how to read Item 7 total investment</a></p>
+
+        {# Above/below-market fee callout: when a brand's royalty or marketing
+           is materially different from the category median in our DB, surface
+           it explicitly. Buyers can't compare to industry norms otherwise. #}
+        {% if fee_benchmark %}
+        <div class="fee-benchmark-callout">
+            <p class="fee-benchmark-intro">
+                vs. <strong>{{ fee_benchmark.industry_label }}</strong> brands in our database
+                (n={{ fee_benchmark.n_peers }}):
+            </p>
+            <ul class="fee-benchmark-list">
+                {% for it in fee_benchmark.deviations %}
+                <li class="fee-benchmark-{{ it.direction }}">
+                    <strong>{{ it.brand_val }}% {{ it.fee }}</strong> is at the
+                    <strong>{{ it.direction }} end</strong> for this category
+                    (median: {{ it.peer_median }}%).
+                    {% set dev = (it.deviation_pct if it.deviation_pct >= 0 else -it.deviation_pct)|int %}
+                    {% if it.direction == 'upper' %}
+                        Over a typical year, this is about {{ dev }}% more in ongoing fees than the category median.
+                    {% else %}
+                        Over a typical year, this is about {{ dev }}% less in ongoing fees than the category median.
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        <table class="data-table">
+            <tbody>
+                {% if fees.initial_franchise_fee_low or fees.initial_franchise_fee_high %}
+                <tr>
+                    <th>Initial franchise fee</th>
+                    <td>
+                        {% if fees.initial_franchise_fee_low and fees.initial_franchise_fee_high and fees.initial_franchise_fee_low != fees.initial_franchise_fee_high %}
+                            ${{ '{:,.0f}'.format(fees.initial_franchise_fee_low) }} – ${{ '{:,.0f}'.format(fees.initial_franchise_fee_high) }}
+                        {% else %}
+                            ${{ '{:,.0f}'.format(fees.initial_franchise_fee_low or fees.initial_franchise_fee_high) }}
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endif %}
+                {% if fees.royalty_pct %}
+                <tr><th>Royalty (% of gross sales)</th><td>{{ fees.royalty_pct }}%</td></tr>
+                {% endif %}
+                {% if fees.marketing_fee_pct %}
+                <tr><th>Marketing/brand fund fee</th><td>{{ fees.marketing_fee_pct }}%</td></tr>
+                {% endif %}
+                {% if fees.tech_fee_monthly %}
+                <tr><th>Technology fee (monthly)</th><td>${{ '{:,.0f}'.format(fees.tech_fee_monthly) }}</td></tr>
+                {% endif %}
+                {% if fees.total_investment_low and fees.total_investment_high %}
+                <tr><th>Total estimated investment</th><td>${{ '{:,.0f}'.format(fees.total_investment_low) }} – ${{ '{:,.0f}'.format(fees.total_investment_high) }}</td></tr>
+                {% endif %}
+                {% if fees.liquid_capital_required %}
+                <tr><th>Liquid capital required</th><td>${{ '{:,.0f}'.format(fees.liquid_capital_required) }}</td></tr>
+                {% endif %}
+                {% if fees.net_worth_required %}
+                <tr><th>Net worth required</th><td>${{ '{:,.0f}'.format(fees.net_worth_required) }}</td></tr>
+                {% endif %}
+            </tbody>
+        </table>
+        {% if fees.fee_notes %}<p class="notes">{{ fees.fee_notes }}</p>{% endif %}
+    </section>
+    {% endif %}
+
+    <section id="item19">
+        <h2><a class="jargon" href="{{ url_for('methodology/') }}#g-item19" title="See glossary: Item 19 is the section of an FDD where franchisors disclose actual financial performance.">Item 19</a> — <a class="jargon" href="{{ url_for('methodology/') }}#g-fpr" title="Financial Performance Representations — the formal name for Item 19 disclosures.">Financial performance representations</a></h2>
+        {{ ui.vintage(latest_fdd, page_range=item19_page_range) }}
+        <p class="further-reading"><a href="{{ url_for('guides/understanding-item-19/') }}">→ Guide: how to read Item 19 without getting cherry-picked</a> · <a href="{{ url_for('guides/validating-franchisee-earnings/') }}">→ Guide: validating earnings with current franchisees</a></p>
+        {% if disclosure.kind == 'none' %}
+            <p class="callout">
+                {{ brand.brand_name or brand.legal_name }} <strong>does not publicly disclose</strong>
+                Item 19 financial performance representations in its {{ latest_fdd.filing_year }} FDD.
+                You can request validation calls with current franchisees (listed in Item 20 of the FDD) to ask about earnings.
+            </p>
+        {% else %}
+            <p class="callout">
+                {% set q = item19_quality %}
+                {% if disclosure.kind == 'supplemental' %}
+                    Based on <strong>supplemental data</strong> the franchisor included in the {{ latest_fdd.filing_year }} FDD
+                    (covering <strong>{{ item19_records|length }}</strong> records). Presented in the FDD but not
+                    labelled as a formal Financial Performance Representation.
+                {% elif q and q.kind == 'broad_distribution' %}
+                    Based on the {{ latest_fdd.filing_year }} FDD, covering <strong>{{ q.n_franchised_cohorts }}</strong>
+                    franchisee cohort{{ 's' if q.n_franchised_cohorts != 1 else '' }} across
+                    <strong>{{ item19_records|length }}</strong> total records. All values verbatim from the FDD.
+                {% elif q and q.kind == 'thin_franchised' %}
+                    Based on the {{ latest_fdd.filing_year }} FDD —
+                    <strong>{{ q.n_franchised_cohorts }}</strong> franchisee cohort{{ 's' if q.n_franchised_cohorts != 1 else '' }}
+                    {%- if q.max_franchised_outlets %} ({{ q.max_franchised_outlets }} outlets at the largest){% endif -%}
+                    , {{ item19_records|length }} total records. See limitations below.
+                {% elif q and q.kind == 'performance_anchored' %}
+                    Based on the {{ latest_fdd.filing_year }} FDD,
+                    <strong>{{ item19_records|length }}</strong> records across franchisor-defined performance buckets
+                    (not statistical quartiles).
+                {% elif q and q.kind in ('affiliate_only', 'longitudinal_affiliate') %}
+                    Based on the {{ latest_fdd.filing_year }} FDD —
+                    <strong>{{ item19_records|length }}</strong> records, but
+                    <strong>only for company-owned / affiliate outlets</strong>. No franchisee data disclosed.
+                {% else %}
+                    Based on the {{ latest_fdd.filing_year }} FDD, covering <strong>{{ item19_records|length }}</strong>
+                    records. All values verbatim from the FDD.
+                {% endif %}
+            </p>
+
+            {# Honest warning for thin / affiliate-only / longitudinal-only / performance-anchored
+               disclosure. We display the data either way, but with a yellow callout so buyers
+               aren't misled by a chart that looks broader than the underlying disclosure. #}
+            {% if item19_quality and item19_quality.warning_html %}
+            <div class="item19-disclosure-warning item19-disclosure-{{ item19_quality.warning_severity }}">
+                {{ item19_quality.warning_html|safe }}
+            </div>
+            {% endif %}
+
+            {% if item19_chart_data %}
+            <div class="chart-wrap">
+                <canvas id="item19Chart" height="280"></canvas>
+            </div>
+            <p class="notes chart-note">
+                {% if item19_quality and item19_quality.kind == 'thin_franchised' %}
+                    Each bar shows one franchisee cohort's reported range. With only {{ item19_quality.n_franchised_cohorts }} cohort{{ 's' if item19_quality.n_franchised_cohorts != 1 else '' }} the chart can't show a distribution — read the table below and validate with Item 20 franchisees.
+                {% elif item19_quality and item19_quality.kind == 'performance_anchored' %}
+                    Each bar is a franchisor-defined performance bucket (Top/Middle/Bottom Third, etc.) — these are <em>not</em> statistical quartiles or percentiles. Use as scenarios, not as a distribution.
+                {% else %}
+                    Each bar shows the reported range (low / median / avg / high) for one cohort + metric + reporting period in the FDD. Hover for exact values.
+                {% endif %}
+            </p>
+            {% endif %}
+
+            <div class="table-scroll">
+            <table class="data-table item19">
+                <thead>
+                    <tr>
+                        <th>Cohort</th>
+                        <th>Metric</th>
+                        <th>Outlets</th>
+                        <th>Period</th>
+                        <th>Average</th>
+                        <th>Median</th>
+                        <th>Low</th>
+                        <th>High</th>
+                        <th>Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for r in item19_records %}
+                    <tr>
+                        <td>{{ r.cohort_raw or r.cohort_name or '' }}</td>
+                        <td>{{ r.metric_raw or r.metric_name }}</td>
+                        <td>{{ r.outlet_count if r.outlet_count is not none else '—' }}</td>
+                        <td>{{ r.reporting_period or '—' }}</td>
+                        <td>{{ fmt_value(r.value_avg, r.metric_raw or r.metric_name) }}</td>
+                        <td>{{ fmt_value(r.value_median, r.metric_raw or r.metric_name) }}</td>
+                        <td>{{ fmt_value(r.value_min, r.metric_raw or r.metric_name) }}</td>
+                        <td>{{ fmt_value(r.value_max, r.metric_raw or r.metric_name) }}</td>
+                        <td>
+                            {% if r.page_number %}
+                                <a href="{{ source_url_for_record(latest_fdd.source_url, r.page_number) }}" rel="nofollow" title="Open source filing, page {{ r.page_number }}">p.{{ r.page_number }}</a>
+                            {% else %}—{% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            </div>
+
+            {# Worst-performer callout: when Item 19 includes a profit metric with a
+               negative low, surface the loss prominently. Most franchise sites bury
+               this in a table column; we make it visible because it's the most
+               important data point about brand outcome variance. #}
+            {% if worst_performer %}
+            <div class="worst-performer-callout">
+                {{ worst_performer.html|safe }}
+            </div>
+            {% endif %}
+        {% endif %}
+    </section>
+
+    {# Mid-page lead capture: most engaged readers reach the Item 19 table; ripe moment to convert. #}
+    {% if FORMSPREE_ID and FORMSPREE_ID != 'PLACEHOLDER_FORM_ID' and disclosure.kind != 'none' %}
+    <aside class="lead-mid" aria-label="Get the FDD Buyer's Checklist">
+        <div class="lead-mid-copy">
+            <p class="lead-mid-headline">Reading Item 19 data is half the work. The other half is knowing what to ask.</p>
+            <p class="lead-mid-sub">Get our free FDD Buyer's Checklist — 4 pages of red flags, validation questions, and what to verify with current franchisees before signing.</p>
+        </div>
+        <form class="lead-form lead-form-mid" method="POST" action="https://formspree.io/f/{{ FORMSPREE_ID }}">
+            <label class="visually-hidden" for="email-{{ brand.slug }}-mid">Email</label>
+            <input type="email" id="email-{{ brand.slug }}-mid" name="email" required
+                   placeholder="you@example.com" autocomplete="email">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true"
+                   style="position:absolute;left:-9999px">
+            <input type="hidden" name="source" value="brand-{{ brand.slug }}-mid-item19">
+            <input type="hidden" name="brand" value="{{ brand.brand_name or brand.legal_name }}">
+            <input type="hidden" name="_next" value="{{ SITE_HOST }}{{ url_for('get-the-checklist/thank-you/') }}">
+            <input type="hidden" name="_subject" value="Your FDD Buyer's Checklist PDF">
+            <button type="submit" class="btn btn-primary">Send me the checklist</button>
+        </form>
+    </aside>
+    {% endif %}
+
+    {% if outlet_summary %}
+    <section id="outlet-growth">
+        <h2>Outlet growth (<a class="jargon" href="{{ url_for('methodology/') }}#g-item20" title="Item 20 of the FDD is the required state-by-state outlet activity table — openings, closures, terminations, transfers per year.">Item 20</a>)</h2>
+        {{ ui.vintage(latest_fdd) }}
+        <p class="further-reading"><a href="{{ url_for('guides/understanding-item-20/') }}">→ Guide: how to read Item 20 (closures vs transfers, state-by-state signals)</a></p>
+        {% if item20_warning %}
+        <div class="item19-disclosure-warning item19-disclosure-warn">
+            {{ item20_warning|safe }}
+        </div>
+        {% endif %}
+        {% if outlet_sparkline %}
+        <p class="outlet-trend">
+            <span class="outlet-trend-text">
+                <strong>{{ '{:,}'.format(outlet_sparkline.start_total) }}</strong> outlets in {{ outlet_sparkline.start_year }} →
+                <strong>{{ '{:,}'.format(outlet_sparkline.end_total) }}</strong> in {{ outlet_sparkline.end_year }}
+                <span class="outlet-trend-delta outlet-trend-{{ outlet_sparkline.direction }}">
+                    {% if outlet_sparkline.direction == 'up' %}▲{% elif outlet_sparkline.direction == 'down' %}▼{% else %}→{% endif %}
+                    {{ outlet_sparkline.pct_change }}%
+                </span>
+            </span>
+            <svg class="outlet-spark" width="{{ outlet_sparkline.width }}" height="{{ outlet_sparkline.height }}"
+                 viewBox="0 0 {{ outlet_sparkline.width }} {{ outlet_sparkline.height }}"
+                 aria-label="{{ outlet_sparkline.start_total }} to {{ outlet_sparkline.end_total }} outlets, {{ outlet_sparkline.pct_change }}% change">
+                <path d="{{ outlet_sparkline.path_d }}" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </p>
+        {% endif %}
+        {% if outlet_chart_data %}
+        <div class="chart-wrap">
+            <canvas id="outletChart" height="240"></canvas>
+        </div>
+        {% endif %}
+        <details class="data-details">
+            <summary>Show year-by-year table</summary>
+            <table class="data-table">
+                <thead><tr><th>Year</th><th>Franchised</th><th>Company-owned</th><th>Total</th></tr></thead>
+                <tbody>
+                    {% for y in outlet_summary %}
+                    <tr>
+                        <td>{{ y.year }}</td>
+                        <td>{{ '{:,}'.format(y.franchised) if y.franchised is not none else '—' }}</td>
+                        <td>{{ '{:,}'.format(y.company_owned) if y.company_owned is not none else '—' }}</td>
+                        <td>{{ '{:,}'.format(y.total) if y.total is not none else '—' }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </details>
+    </section>
+    {% endif %}
+
+    {% if top_states or state_heatmap_svg %}
+    <section id="where-they-operate">
+        <h2>Where they operate</h2>
+        {{ ui.vintage(latest_fdd) }}
+
+        {% if state_heatmap_svg %}
+        <p class="notes">
+            US outlet distribution as of the latest reporting year.
+            {% if state_heatmap_stats %}
+            <strong>{{ '{:,}'.format(state_heatmap_stats.total_outlets_mapped) }}</strong> outlets in
+            <strong>{{ state_heatmap_stats.states_covered }}</strong> US states — largest in
+            <strong>{{ state_heatmap_stats.top_state_name }} ({{ '{:,}'.format(state_heatmap_stats.top_state_outlets) }})</strong>.
+            {# Explain the gap when Item 20 yearly total exceeds the state-by-state sum by >2%.
+               Use outlet_breakdown to attribute the gap correctly: company-owned offices
+               (the common case — Howard Hanna, Bath Fitter) get an explicit note;
+               otherwise fall back to territories / international wording. #}
+            {% set gap = (total_outlets or 0) - (state_heatmap_stats.total_outlets_mapped or 0) %}
+            {% if total_outlets and gap > (0.02 * total_outlets) %}
+            <span class="heatmap-gap-note">
+                {% set co = outlet_breakdown.company_owned_latest %}
+                {% if co and (co - gap)|abs <= (0.10 * total_outlets) %}
+                    Item 20 reports <strong>{{ '{:,}'.format(total_outlets) }}</strong> total outlets,
+                    of which <strong>{{ '{:,}'.format(co) }}</strong> are
+                    <strong>company-owned offices</strong> not eligible for new franchise sales — the
+                    map shows the {{ '{:,}'.format(state_heatmap_stats.total_outlets_mapped) }}
+                    franchised outlets only.
+                {% else %}
+                    Item 20 reports <strong>{{ '{:,}'.format(total_outlets) }}</strong> total outlets
+                    for this brand; the {{ '{:,}'.format(gap) }}-outlet difference is in US
+                    territories or non-US markets and is not shown on this US-state map.
+                {% endif %}
+            </span>
+            {% endif %}
+            {% endif %}
+        </p>
+        <div class="state-heatmap-wrap">
+            {{ state_heatmap_svg|safe }}
+            {{ state_heatmap_legend|safe }}
+        </div>
+        {% endif %}
+
+        {% if top_states %}
+        <details class="state-bars-collapse">
+            <summary>Top {{ top_states|length }} states ranked (bar chart)</summary>
+            <div class="chart-wrap">
+                <canvas id="stateChart" height="240"></canvas>
+            </div>
+        </details>
+        {% endif %}
+    </section>
+    {% endif %}
+
+    <section class="cta">
+        <h2>Considering this franchise?</h2>
+        <p>The FDD data above is a starting point. We don't republish franchisee testimonials — get the required franchisee contact list directly from Item 20 of the source FDD.</p>
+
+        {% if FORMSPREE_ID and FORMSPREE_ID != 'PLACEHOLDER_FORM_ID' %}
+        <div class="lead-inline">
+            <p><strong>Get the FDD Buyer's Checklist — free PDF.</strong> 4 pages of what to look for, what red flags mean, and which questions to ask current franchisees.</p>
+            <form class="lead-form" method="POST" action="https://formspree.io/f/{{ FORMSPREE_ID }}">
+                <label for="email-{{ brand.slug }}">Email</label>
+                <input type="email" id="email-{{ brand.slug }}" name="email" required
+                       placeholder="you@example.com" autocomplete="email">
+                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true"
+                       style="position:absolute;left:-9999px">
+                <input type="hidden" name="source" value="brand-{{ brand.slug }}">
+                <input type="hidden" name="brand" value="{{ brand.brand_name or brand.legal_name }}">
+                <input type="hidden" name="_next" value="{{ SITE_HOST }}{{ url_for('get-the-checklist/thank-you/') }}">
+                <input type="hidden" name="_subject" value="Your FDD Buyer's Checklist PDF">
+                <button type="submit" class="btn btn-primary">Send me the checklist</button>
+            </form>
+            <p class="form-fineprint">One-time delivery + low-volume newsletter. Unsubscribe any time. <a href="{{ url_for('privacy/') }}">Privacy</a>.</p>
+        </div>
+        {% endif %}
+
+        <p class="affiliate-inline-disclosure"><em>The buttons below are affiliate links. We may earn a commission if you book a consultation or apply for financing through these partners — at no cost to you.</em></p>
+        <div class="cta-buttons">
+            <a class="btn btn-secondary" href="#" data-cta="franchise-consultant">Talk to a franchise consultant</a>
+            <a class="btn btn-secondary" href="#" data-cta="sba-loan">Get pre-qualified for SBA financing</a>
+        </div>
+        <p class="notes">
+            These referrals go to independent partners. Compensation does not influence which brands appear on this site or how their data is presented. <a href="{{ url_for('affiliate-disclosure/') }}">Full disclosure</a>.
+        </p>
+    </section>
+
+    {% if faqs %}
+    <section class="faq" id="faq">
+        <h2>Frequently asked questions about {{ brand.brand_name or brand.legal_name }}</h2>
+        {% for faq in faqs %}
+        <details class="faq-item">
+            <summary>{{ faq.question }}</summary>
+            <div class="faq-answer"><p>{{ faq.answer_html|safe }}</p></div>
+        </details>
+        {% endfor %}
+    </section>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {% for faq in faqs %}
+        {
+          "@type": "Question",
+          "name": {{ faq.question|tojson }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ faq.answer_html|striptags|tojson }}
+          }
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ]
+    }
+    </script>
+    {% endif %}
+
+    {% if similar_cheaper %}
+    <section class="similar-cheaper">
+        <h2>Similar {{ (brand.industry|industry_label).lower() }} franchises with lower investment</h2>
+        <p class="notes">Same category, lower total investment range than {{ brand.brand_name or brand.legal_name }}. Sorted by investment low ascending.</p>
+        <div class="related-grid">
+            {% for r in similar_cheaper %}
+            <a class="related-card" href="{{ url_for('franchise/' ~ r.slug ~ '/') }}">
+                <span class="related-name">{{ r.brand_name or r.legal_name }}</span>
+                <span class="related-meta">
+                    {{ r.filing_year or '' }}
+                    {% if r.inv_low and r.inv_high %}
+                        · ${{ '{:,.0f}'.format(r.inv_low) }}–${{ '{:,.0f}'.format(r.inv_high) }}
+                    {% elif r.inv_low %}
+                        · ${{ '{:,.0f}'.format(r.inv_low) }}+
+                    {% endif %}
+                </span>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    {% if related %}
+    <section class="related">
+        <h2>Other {{ (brand.industry|industry_label).lower() }} franchises</h2>
+        <div class="related-grid">
+            {% for r in related %}
+            <a class="related-card" href="{{ url_for('franchise/' ~ r.slug ~ '/') }}">
+                <span class="related-name">{{ r.brand_name or r.legal_name }}</span>
+                <span class="related-meta">
+                    {{ r.filing_year or '' }}
+                    {% if r.fee_low %} · ${{ '{:,.0f}'.format(r.fee_low) }} fee{% endif %}
+                </span>
+            </a>
+            {% endfor %}
+        </div>
+        {% if compare_with %}
+        <h3 class="compare-with-heading">Compare {{ brand.brand_name or brand.legal_name }} head-to-head</h3>
+        <ul class="compare-with-list">
+            {% for c in compare_with %}
+            <li><a href="{% if c.has_static_page %}{{ url_for('compare/' ~ c.pair_slug ~ '/') }}{% else %}{{ url_for('compare/') }}?brands={{ brand.slug }},{{ c.peer_slug }}{% endif %}">{{ brand.brand_name or brand.legal_name }} vs {{ c.brand_name }} →</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </section>
+    {% endif %}
+
+    <section class="sources" id="sources">
+        <h3>Source</h3>
+        <p>
+            Data extracted from the {{ latest_fdd.filing_year }} FDD filed in {{ latest_fdd.filing_state }}
+            {% if latest_fdd.effective_date %}(issuance date: {{ latest_fdd.effective_date }}){% endif %}.
+            <a href="{{ latest_fdd.source_url }}" rel="nofollow">View filing on state portal</a>.
+            See <a href="{{ url_for('methodology/') }}">methodology</a> for our extraction process.
+        </p>
+    </section>
+</article>
+
+{# Chart data is injected as JSON and rendered after the script tag #}
+{% if outlet_chart_data %}
+<script>
+const outletData = {{ outlet_chart_data|tojson }};
+const outletCtx = document.getElementById('outletChart').getContext('2d');
+new Chart(outletCtx, {
+    type: 'bar',
+    data: {
+        labels: outletData.years,
+        datasets: [
+            { label: 'Franchised', data: outletData.franchised, backgroundColor: '#1d4ed8' },
+            { label: 'Company-owned', data: outletData.company_owned, backgroundColor: '#94a3b8' }
+        ]
+    },
+    options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { position: 'bottom' } },
+        scales: { x: { stacked: true }, y: { stacked: true, beginAtZero: true } }
+    }
+});
+</script>
+{% endif %}
+{% if item19_chart_data %}
+<script>
+const i19Data = {{ item19_chart_data|tojson }};
+const i19Ctx = document.getElementById('item19Chart').getContext('2d');
+new Chart(i19Ctx, {
+    type: 'bar',
+    data: {
+        labels: i19Data.labels,
+        datasets: [
+            { label: 'Range (low → high)', data: i19Data.ranges, backgroundColor: '#bfdbfe', borderColor: '#1d4ed8', borderWidth: 1 },
+            { label: 'Median', data: i19Data.medians, type: 'line', borderColor: '#0f172a', backgroundColor: '#0f172a', pointRadius: 4, fill: false, showLine: false }
+        ]
+    },
+    options: {
+        indexAxis: 'y',
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+            legend: { position: 'bottom' },
+            tooltip: { callbacks: {
+                label: ctx => {
+                    if (ctx.dataset.label === 'Median') return `Median: ${i19Data.formatted_medians[ctx.dataIndex]}`;
+                    const [lo, hi] = ctx.raw;
+                    return `Low ${i19Data.formatted_lows[ctx.dataIndex]} → High ${i19Data.formatted_highs[ctx.dataIndex]}`;
+                }
+            }}
+        },
+        scales: { x: { beginAtZero: true, ticks: { callback: v => i19Data.unit_prefix + v.toLocaleString() } } }
+    }
+});
+</script>
+{% endif %}
+{% if state_chart_data %}
+<script>
+const stateData = {{ state_chart_data|tojson }};
+const stCtx = document.getElementById('stateChart').getContext('2d');
+new Chart(stCtx, {
+    type: 'bar',
+    data: { labels: stateData.states, datasets: [{ label: 'Outlets', data: stateData.outlets, backgroundColor: '#1d4ed8' }] },
+    options: {
+        indexAxis: 'y',
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true } }
+    }
+});
+</script>
+{% endif %}
+{% if breakeven_chart %}
+<script>
+const beData = {{ breakeven_chart|tojson }};
+const beCtx = document.getElementById('breakevenChart').getContext('2d');
+new Chart(beCtx, {
+    type: 'bar',
+    data: {
+        labels: beData.cohorts.map(c => c.cohort),
+        datasets: [
+            {
+                label: 'Optimistic → Conservative (years)',
+                data: beData.cohorts.map(c => [c.low_years, c.high_years || c.low_years]),
+                backgroundColor: '#fde68a',
+                borderColor: '#f59e0b',
+                borderWidth: 1,
+                borderSkipped: false,
+                borderRadius: 4
+            },
+            {
+                label: 'Midpoint',
+                data: beData.cohorts.map(c => c.mid_years),
+                type: 'scatter',
+                backgroundColor: '#0f172a',
+                borderColor: '#0f172a',
+                pointRadius: 6,
+                pointStyle: 'circle',
+                showLine: false
+            }
+        ]
+    },
+    options: {
+        indexAxis: 'y',
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+            legend: { position: 'bottom' },
+            tooltip: {
+                callbacks: {
+                    label: ctx => {
+                        const c = beData.cohorts[ctx.dataIndex];
+                        if (ctx.dataset.label === 'Midpoint') {
+                            return `Midpoint: ${c.mid_years} years` + (c.outlet_count ? ` (n=${c.outlet_count})` : '');
+                        }
+                        return `Optimistic ${c.low_years}y → Conservative ${c.high_years || c.low_years}y`;
+                    }
+                }
+            }
+        },
+        scales: {
+            x: {
+                beginAtZero: true,
+                title: { display: true, text: 'Years to breakeven' },
+                ticks: { callback: v => v + 'y' }
+            }
+        }
+    }
+});
+</script>
+{% endif %}
+{% if roi_walkforward %}
+<script>
+const roiData = {{ roi_walkforward|tojson }};
+const roiCtx = document.getElementById('roiChart').getContext('2d');
+new Chart(roiCtx, {
+    type: 'line',
+    data: {
+        labels: roiData.years.map(y => 'Yr ' + y),
+        datasets: [
+            {
+                label: 'Optimistic cumulative',
+                data: roiData.optimistic,
+                borderColor: '#1d4ed8',
+                backgroundColor: 'rgba(29, 78, 216, 0.10)',
+                fill: '+1',
+                tension: 0,
+                pointRadius: 3
+            },
+            {
+                label: 'Conservative cumulative',
+                data: roiData.conservative,
+                borderColor: '#b45309',
+                backgroundColor: 'rgba(180, 83, 9, 0.10)',
+                fill: false,
+                tension: 0,
+                pointRadius: 3
+            }
+        ]
+    },
+    options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+            legend: { position: 'bottom' },
+            tooltip: {
+                callbacks: {
+                    label: ctx => {
+                        const v = ctx.parsed.y;
+                        const sign = v < 0 ? '-' : '';
+                        return ctx.dataset.label + ': ' + sign + '$' + Math.abs(v).toLocaleString();
+                    }
+                }
+            }
+        },
+        scales: {
+            y: {
+                title: { display: true, text: 'Cumulative profit / (loss) $' },
+                ticks: { callback: v => '$' + v.toLocaleString() },
+                grid: {
+                    color: ctx => ctx.tick.value === 0 ? '#0f172a' : '#e2e8f0',
+                    lineWidth: ctx => ctx.tick.value === 0 ? 2 : 1
+                }
+            },
+            x: { title: { display: true, text: 'Years from opening' } }
+        }
+    }
+});
+</script>
+{% endif %}
+
+{# === Cost calculator engine (F4.7 v3 — simplified) === #}
+<script>
+(function() {
+    const form = document.getElementById('cost-calc-form');
+    if (!form) return;
+
+    const $ = id => document.getElementById(id);
+    const fmtUSD = n => {
+        if (n == null || isNaN(n)) return '—';
+        const neg = n < 0;
+        const abs = Math.abs(n);
+        const s = abs >= 1e6
+            ? '$' + (abs/1e6).toFixed(2) + 'M'
+            : '$' + Math.round(abs).toLocaleString('en-US');
+        return neg ? '−' + s : s;
+    };
+    // Parse a number from a text input that may contain commas / dollar signs.
+    const num = id => {
+        const el = $(id);
+        if (!el) return 0;
+        const cleaned = String(el.value).replace(/[^\d.-]/g, '');
+        const n = parseFloat(cleaned);
+        return isFinite(n) ? n : 0;
+    };
+    const pct = id => num(id) / 100;
+
+    // Write a value to an input. For money fields, formats with commas.
+    // Routes ALL writes (initial load, preset click, URL restore, reset) through
+    // this so the displayed string and the underlying number can't drift apart.
+    function setInputValue(id, value, opts) {
+        const el = $(id);
+        if (!el) return;
+        opts = opts || {};
+        if (value == null || value === '' || isNaN(value)) {
+            el.value = '';
+            return;
+        }
+        const n = Math.round(Number(value));
+        el.value = opts.bare ? String(n) : n.toLocaleString('en-US');
+    }
+
+    // Per-brand defaults bundle from server-rendered JSON.
+    let defaults = {};
+    try {
+        const defaultsEl = document.getElementById('calc-defaults');
+        if (defaultsEl) defaults = JSON.parse(defaultsEl.textContent) || {};
+    } catch (e) { defaults = {}; }
+
+    // Comma-format on blur, strip on focus so the field is easy to retype.
+    // Only money fields use commas; percent fields stay bare.
+    const MONEY_FIELDS = ['calc-revenue', 'calc-investment', 'calc-owner-cost'];
+    const BARE_FIELDS  = ['calc-opcost', 'calc-growth', 'calc-tax'];
+
+    function attachInputFormatting() {
+        MONEY_FIELDS.forEach(id => {
+            const el = $(id);
+            if (!el) return;
+            el.addEventListener('focus', () => {
+                el.value = String(el.value).replace(/[^\d.-]/g, '');
+            });
+            el.addEventListener('blur', () => {
+                const n = num(id);
+                setInputValue(id, n);
+            });
+        });
+        // For bare numeric fields just keep digits / decimal.
+        BARE_FIELDS.forEach(id => {
+            const el = $(id);
+            if (!el) return;
+            el.addEventListener('blur', () => {
+                const n = num(id);
+                el.value = n === 0 ? '0' : String(n);
+            });
+        });
+    }
+
+    // Shareable URL state. Just the 6 inputs the user actually controls.
+    const URL_PARAM_MAP = {
+        rev:    'calc-revenue',
+        inv:    'calc-investment',
+        op:     'calc-opcost',
+        owner:  'calc-owner-cost',
+        grow:   'calc-growth',
+        tax:    'calc-tax',
+    };
+
+    function restoreFromURL() {
+        try {
+            const params = new URLSearchParams(window.location.search);
+            let advancedHit = false;
+            for (const [key, id] of Object.entries(URL_PARAM_MAP)) {
+                const v = params.get(key);
+                if (v == null || v === '' || isNaN(parseFloat(v))) continue;
+                if (MONEY_FIELDS.includes(id)) setInputValue(id, parseFloat(v));
+                else $(id).value = String(parseFloat(v));
+                if (['calc-owner-cost', 'calc-growth', 'calc-tax'].includes(id)) advancedHit = true;
+            }
+            if (advancedHit) {
+                const adv = document.querySelector('.calc-advanced');
+                if (adv) adv.open = true;
+            }
+        } catch (e) {}
+    }
+
+    // Capture defaults snapshot at load for Reset.
+    function captureDefaults() {
+        return {
+            rev:   num('calc-revenue'),
+            inv:   num('calc-investment'),
+            op:    num('calc-opcost'),
+            owner: num('calc-owner-cost'),
+            grow:  num('calc-growth'),
+            tax:   num('calc-tax'),
+        };
+    }
+
+    // Preset buttons: revenue quartiles. Only updates revenue.
+    document.querySelectorAll('.calc-preset').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const v = parseFloat(btn.dataset.value);
+            if (!isFinite(v)) return;
+            setInputValue('calc-revenue', v);
+            document.querySelectorAll('.calc-preset').forEach(b => b.classList.remove('calc-preset-active'));
+            btn.classList.add('calc-preset-active');
+            recalc();
+        });
+    });
+
+    // Highlight whichever preset matches the current revenue, if any.
+    function syncPresetHighlight() {
+        const cur = num('calc-revenue');
+        let hit = null;
+        document.querySelectorAll('.calc-preset').forEach(btn => {
+            btn.classList.remove('calc-preset-active');
+            if (Math.round(parseFloat(btn.dataset.value)) === Math.round(cur)) hit = btn;
+        });
+        if (hit) hit.classList.add('calc-preset-active');
+    }
+
+    // Render the colored bar (visual) + vertical waterfall (the math).
+    // Waterfall: Revenue → minus each cost line (with % of revenue) → Year-1 net.
+    // Always shows every line, even zero, so the math is fully audit-able.
+    function renderBar(parts, pcts) {
+        const segs = $('calc-bar-segments');
+        const wf   = $('calc-waterfall');
+        if (!segs || !wf) return;
+        const rev = parts.revenue;
+        if (!rev || rev <= 0) {
+            segs.innerHTML = '';
+            wf.innerHTML = '';
+            return;
+        }
+        const totalCost = parts.royalty + parts.marketing + parts.tech + parts.opCost + parts.owner + parts.tax;
+        const overrun = Math.max(0, totalCost - rev);
+        const netPositive = Math.max(0, rev - totalCost);
+        const denom = Math.max(rev, totalCost);
+        const pctOfBar = v => (v / denom * 100).toFixed(2) + '%';
+
+        const segments = [
+            { label: 'Royalty',    v: parts.royalty,   cls: 'seg-royalty' },
+            { label: 'Marketing',  v: parts.marketing, cls: 'seg-marketing' },
+            { label: 'Tech fee',   v: parts.tech,      cls: 'seg-tech' },
+            { label: 'Operating',  v: parts.opCost,    cls: 'seg-op' },
+            { label: 'Owner time', v: parts.owner,     cls: 'seg-owner' },
+            { label: 'Tax',        v: parts.tax,       cls: 'seg-tax' },
+        ];
+        if (netPositive > 0) segments.push({ label: 'Net to you', v: netPositive, cls: 'seg-net' });
+        else if (overrun > 0) segments.push({ label: 'Loss',       v: overrun,      cls: 'seg-loss' });
+
+        // Bar
+        segs.innerHTML = segments
+            .filter(s => s.v > 0)
+            .map(s => `<span class="calc-seg ${s.cls}" style="width:${pctOfBar(s.v)}" title="${s.label}: ${fmtUSD(s.v)}"></span>`)
+            .join('');
+
+        // Waterfall — vertical itemized list, full math
+        const pct = n => {
+            if (n == null) return '';
+            const fixed = n.toFixed(2).replace(/\.?0+$/, '');
+            return fixed + '%';
+        };
+        // Waterfall always shows full dollar amounts (no $X.XM abbreviation)
+        // so the math adds up line-by-line for an auditor.
+        const fmtFull = n => {
+            if (n == null || isNaN(n)) return '—';
+            const neg = n < 0;
+            const s = '$' + Math.round(Math.abs(n)).toLocaleString('en-US');
+            return neg ? '−' + s : s;
+        };
+        const row = (cls, swatch, label, value, isNeg) => `
+            <tr class="${cls}">
+              <td class="wf-label">${swatch ? `<span class="calc-seg-swatch ${swatch}"></span>` : ''}${label}</td>
+              <td class="wf-value">${isNeg ? '−' : ''}${fmtFull(Math.abs(value))}</td>
+            </tr>`;
+        const netIsLoss = parts.net < 0;
+        wf.innerHTML = [
+            row('wf-revenue',  '',             'Revenue',                                              parts.revenue, false),
+            row('wf-cost',     'seg-royalty',  `Royalty <span class="wf-pct">(${pct(pcts.royalty)})</span>`,    parts.royalty,   true),
+            row('wf-cost',     'seg-marketing',`Marketing <span class="wf-pct">(${pct(pcts.marketing)})</span>`, parts.marketing, true),
+            (parts.tech > 0 ? row('wf-cost', 'seg-tech', 'Tech fee', parts.tech, true) : ''),
+            row('wf-cost',     'seg-op',       `Operating costs <span class="wf-pct">(${pct(pcts.op)})</span>`,  parts.opCost,    true),
+            row('wf-cost',     'seg-owner',    'Owner time',                                            parts.owner,     true),
+            row('wf-cost',     'seg-tax',      `Tax on profit <span class="wf-pct">(${pct(pcts.tax)})</span>`,   parts.tax,       true),
+            row(netIsLoss ? 'wf-net wf-net-loss' : 'wf-net', netIsLoss ? 'seg-loss' : 'seg-net',
+                netIsLoss ? 'Year-1 loss' : 'Year-1 net',
+                parts.net, netIsLoss),
+        ].join('');
+    }
+
+    // Share button — copy current state to clipboard as a URL.
+    const shareBtn = $('calc-share-btn');
+    const shareStatus = $('calc-share-status');
+    if (shareBtn) {
+        shareBtn.addEventListener('click', async () => {
+            const params = new URLSearchParams();
+            for (const [key, id] of Object.entries(URL_PARAM_MAP)) {
+                const v = num(id);
+                if (v) params.set(key, String(Math.round(v)));
+            }
+            const url = window.location.origin + window.location.pathname + '?' + params.toString() + '#cost-calculator';
+            try {
+                await navigator.clipboard.writeText(url);
+                if (shareStatus) {
+                    shareStatus.textContent = 'Link copied';
+                    setTimeout(() => { shareStatus.textContent = ''; }, 2200);
+                }
+            } catch (e) {
+                if (shareStatus) shareStatus.textContent = 'Copy failed';
+            }
+            try { history.replaceState(null, '', '?' + params.toString() + '#cost-calculator'); } catch (e) {}
+        });
+    }
+
+    // Reset button — restore initial values captured on load.
+    let initial;
+    const resetBtn = $('calc-reset-btn');
+    if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+            setInputValue('calc-revenue', initial.rev);
+            setInputValue('calc-investment', initial.inv);
+            $('calc-opcost').value = String(initial.op);
+            setInputValue('calc-owner-cost', initial.owner);
+            $('calc-growth').value = String(initial.grow);
+            $('calc-tax').value = String(initial.tax);
+            recalc();
+        });
+    }
+
+    function recalc() {
+        const revenueY1   = num('calc-revenue');
+        const investment  = num('calc-investment');
+        const opCostPct   = pct('calc-opcost');
+        const royaltyPct  = ({{ calculator_defaults.royalty or 0 }}) / 100;
+        const marketingPct = ({{ calculator_defaults.marketing or 0 }}) / 100;
+        const techMonthly = {{ calculator_defaults.tech_fee_monthly or 0 }};
+        const ownerCost   = num('calc-owner-cost');
+        const growthPct   = pct('calc-growth');
+        const taxRatePct  = pct('calc-tax');
+
+        // 5-year horizon, no debt model (advisor feedback: shorter horizon =
+        // less false precision; debt was an advanced-only input that 95% of
+        // people never touched).
+        const HORIZON = 5;
+        const cumulative = [-investment];
+        let cum = -investment;
+        let payback = null;
+        const y1 = {};
+
+        for (let y = 1; y <= HORIZON; y++) {
+            const revY = revenueY1 * Math.pow(1 + growthPct, y - 1);
+            const royalty   = revY * royaltyPct;
+            const marketing = revY * marketingPct;
+            const tech      = techMonthly * 12;
+            const opCost    = revY * opCostPct;
+            const owner     = ownerCost;
+            const beforeTax = revY - royalty - marketing - tech - opCost - owner;
+            const tax       = beforeTax > 0 ? beforeTax * taxRatePct : 0;
+            const afterTax  = beforeTax - tax;
+            cum += afterTax;
+            cumulative.push(Math.round(cum));
+            if (payback === null && cum >= 0) payback = y;
+            if (y === 1) {
+                Object.assign(y1, {
+                    revenue: revY, royalty, marketing, tech, opCost, owner, tax, net: afterTax,
+                });
+            }
+        }
+
+        // Output metrics.
+        const netEl = $('calc-net-year1');
+        netEl.textContent = fmtUSD(y1.net);
+        netEl.className = 'calc-metric-value ' + (y1.net >= 0 ? 'pos' : 'neg');
+
+        const cum5 = cumulative[HORIZON];
+        const cumEl = $('calc-cum-5y');
+        cumEl.textContent = fmtUSD(cum5);
+        cumEl.className = 'calc-metric-value ' + (cum5 >= 0 ? 'pos' : 'neg');
+
+        const payEl = $('calc-payback');
+        payEl.textContent = payback ? payback + 'y' : '>' + HORIZON + 'y';
+        payEl.className = 'calc-metric-value ' + (payback ? 'pos' : 'neg');
+
+        // Bar + waterfall.
+        renderBar(y1, {
+            royalty:   royaltyPct * 100,
+            marketing: marketingPct * 100,
+            op:        opCostPct * 100,
+            tax:       taxRatePct * 100,
+        });
+
+        // Sensitivity insight — what the cards don't show.
+        // Net is most sensitive to revenue and op-cost%. Show how a 5pp move
+        // in operating costs changes Y1 net at this revenue level.
+        // Δnet ≈ −Δop% × revenue × (1 − taxRate)  when before-tax is positive.
+        const summary = $('calc-summary');
+        const sensitivity = revenueY1 * 0.05 * (1 - (y1.net >= 0 ? taxRatePct : 0));
+        const breakevenOpPct = revenueY1 > 0
+            ? ((revenueY1 - royaltyPct * revenueY1 - marketingPct * revenueY1 - techMonthly * 12 - ownerCost) / revenueY1) * 100
+            : null;
+        if (y1.net < 0) {
+            summary.innerHTML =
+                `Year-1 loses <strong>${fmtUSD(Math.abs(y1.net))}</strong>. ` +
+                (breakevenOpPct != null && breakevenOpPct >= 0
+                    ? `To break even at this revenue, operating costs would need to drop to about <strong>${breakevenOpPct.toFixed(0)}%</strong>.`
+                    : `Revenue would need to rise materially for this unit to be viable.`);
+        } else {
+            summary.innerHTML =
+                `Operating costs are the biggest lever here. A 5-point change in the operating-cost % ` +
+                `moves Year-1 net by about <strong>${fmtUSD(sensitivity)}</strong>` +
+                (breakevenOpPct != null && breakevenOpPct < 100
+                    ? `; you'd turn unprofitable above <strong>${breakevenOpPct.toFixed(0)}%</strong>.`
+                    : `.`);
+        }
+
+        syncPresetHighlight();
+    }
+
+    // ---- Info-icon popovers (hover on desktop, tap-toggle on touch) ----
+    (function setupInfoPopovers() {
+        let pop = null;
+        let activeBtn = null;
+        let pinned = false;  // true after click → popover stays until next click
+
+        function close() {
+            if (pop) { pop.remove(); pop = null; }
+            if (activeBtn) activeBtn.setAttribute('aria-expanded', 'false');
+            activeBtn = null;
+            pinned = false;
+        }
+
+        function open(btn, clicked) {
+            close();
+            pop = document.createElement('div');
+            pop.className = 'info-popover' + (clicked ? ' is-clicked' : '');
+            pop.textContent = btn.dataset.tip || '';
+            pop.setAttribute('role', 'tooltip');
+            document.body.appendChild(pop);
+            // Position centered under the icon, clamped to viewport.
+            const r = btn.getBoundingClientRect();
+            const popR = pop.getBoundingClientRect();
+            const PAD = 8;
+            let left = r.left + r.width / 2 - popR.width / 2;
+            left = Math.max(PAD, Math.min(left, window.innerWidth - popR.width - PAD));
+            // Arrow points to icon center; offset relative to popover's left
+            const arrowX = (r.left + r.width / 2) - left - 6;
+            pop.style.setProperty('--arrow-x', arrowX + 'px');
+            pop.style.left = (left + window.scrollX) + 'px';
+            pop.style.top = (r.bottom + window.scrollY + 8) + 'px';
+            btn.setAttribute('aria-expanded', 'true');
+            activeBtn = btn;
+            pinned = !!clicked;
+        }
+
+        document.addEventListener('click', (e) => {
+            const btn = e.target.closest('.info');
+            if (btn) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (activeBtn === btn && pinned) close();
+                else open(btn, true);
+                return;
+            }
+            if (pop && !e.target.closest('.info-popover')) close();
+        });
+
+        // Hover (desktop only — touch devices fire mouseenter then click; we
+        // ignore the hover-open if it gets clicked immediately after).
+        document.addEventListener('mouseover', (e) => {
+            const btn = e.target.closest('.info');
+            if (!btn || pinned || activeBtn === btn) return;
+            open(btn, false);
+        });
+        document.addEventListener('mouseout', (e) => {
+            const btn = e.target.closest('.info');
+            if (!btn || pinned) return;
+            // Only close if moving outside the icon entirely
+            const next = e.relatedTarget;
+            if (next && (next === btn || btn.contains(next))) return;
+            close();
+        });
+
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+        window.addEventListener('scroll', close, { passive: true, capture: true });
+        window.addEventListener('resize', close);
+    })();
+
+    attachInputFormatting();
+    restoreFromURL();
+    initial = captureDefaults();
+
+    form.addEventListener('input', recalc);
+    form.addEventListener('change', recalc);
+    recalc();
+})();
+</script>
+{% endblock %}

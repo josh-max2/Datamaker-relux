@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\9round_franchising_llc_2026_mn_36028-202604-07.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0051,
+      "input_tokens": 1916,
+      "cached": 1340,
+      "output_tokens": 199
+    },
+    "item5": {
+      "cost_usd": 0.0092,
+      "input_tokens": 1913,
+      "cached": 1340,
+      "output_tokens": 473
+    },
+    "item6": {
+      "cost_usd": 0.012,
+      "input_tokens": 2034,
+      "cached": 1340,
+      "output_tokens": 632
+    },
+    "item7": {
+      "cost_usd": 0.0031,
+      "input_tokens": 1733,
+      "cached": 1340,
+      "output_tokens": 98
+    },
+    "item19": {
+      "cost_usd": 0.0128,
+      "input_tokens": 5177,
+      "cached": 1340,
+      "output_tokens": 60,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.2225,
+      "input_tokens": 18108,
+      "cached": 1340,
+      "output_tokens": 11454,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.2647
+}

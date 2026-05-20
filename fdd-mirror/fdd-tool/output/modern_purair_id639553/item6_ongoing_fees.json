@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 7,
+  "royalty_min_monthly": 1000,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 500,
+  "fee_notes": "Royalty minimum tiered: $1,000/mo (months 13\u201324), $1,500 (25\u201336), $2,000 (37\u201348), $2,500 (49\u201360), $3,000 (61+). Sales Center: 6% of Gross Sales, min $1,000/mo (month 13+). Digital Marketing Management: $1,000/mo (month 7+). Local Advertising Requirement: 5% minimum (recommended 8\u201313%, spent locally not to franchisor). All recurrent fees collected semi-monthly via EFT.",
+  "raw_excerpt": "Royalty Fee: 7% of Gross Sales, subject to Minimum Royalty Fee per Territory beginning in month 13. Brand Fund Contribution: 1% of Gross Sales, semi-monthly. Technology Fee: $500 per month. Sales Center Fee: 6% of Gross Sales, subject to minimum of $1,000 per month beginning month 13.",
+  "confidence": 0.95
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\stanley_industrial_automotive_llc_2026_mn_35960-202604-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0063,
+      "input_tokens": 2062,
+      "cached": 1340,
+      "output_tokens": 250
+    },
+    "item5": {
+      "cost_usd": 0.0078,
+      "input_tokens": 2833,
+      "cached": 1340,
+      "output_tokens": 195
+    },
+    "item6": {
+      "cost_usd": 0.0314,
+      "input_tokens": 4277,
+      "cached": 1340,
+      "output_tokens": 1482
+    },
+    "item7": {
+      "cost_usd": 0.0221,
+      "input_tokens": 8108,
+      "cached": 1340,
+      "output_tokens": 95
+    },
+    "item19": {
+      "cost_usd": 0.1894,
+      "input_tokens": 10825,
+      "cached": 1340,
+      "output_tokens": 10702,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.2492,
+      "input_tokens": 20208,
+      "cached": 1340,
+      "output_tokens": 12812,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.5063
+}

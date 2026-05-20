@@ -1,0 +1,6 @@
+{
+  "initial_franchise_fee_low": 28000,
+  "initial_franchise_fee_high": 45000,
+  "fee_notes": "Base: $45K first franchise, $35K subsequent. Veterans (VetFran): $36K first ($9K discount), $28K subsequent ($7K discount).",
+  "confidence": 0.98
+}

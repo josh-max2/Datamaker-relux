@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 1000,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": 500,
+  "tech_fee_monthly": 195,
+  "fee_notes": "Royalty is 6% of Gross Revenues with a $500/month minimum for the first 12 months, then $1,000/month minimum thereafter. Minimum Royalty does not begin until the 5th day of the second month following completion of initial training (with possible one-month extension). National Branding Fee is the greater of 2% of Gross Revenues or $500/month; franchisor reserves right to increase the National Branding Fund by up to 20% per year. Local Cooperative Advertising currently not applicable but could be up to 3% of Gross Revenues if a cooperative is established. Technology Fee is currently $195/month, subject to increase up to 20% per year plus increases for additional software/tools or third-party vendor price increases.",
+  "raw_excerpt": "Royalty \u2013 Note 1 | 6% of Gross Revenues; $500 monthly minimum for 12 months; $1,000 monthly minimum thereafter | 5th day of each month \u2013 Note 1 | Paid on Gross Revenues for the preceding month \u2013 Note 2\nNational Branding Fee \u2013 Note 3 | Greater of 2% of Gross Revenues or $500 per month | 5th day of each month | See Item 11 for an explanation of the National Branding Fees\nLocal Cooperative Advertising | Currently not applicable. Up to 3% of your Gross Revenues unless a majority of the cooperative members agree on a higher contribution \u2013 Note 4 | Monthly | If an advertising cooperative is established or operating in your area, you must contribute.\nTechnology Fee \u2013 Note 5 | $195 | Monthly | You must pay a fee for technology/proprietary software that we license or make available to you for use in the operation of the business",
+  "confidence": 0.97
+}

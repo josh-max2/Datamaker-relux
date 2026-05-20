@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The FDD Buyer's Checklist — FranchiseDepth</title>
+<style>
+@page {
+    size: letter;
+    margin: 0.85in 0.85in 0.95in 0.85in;
+    @bottom-center {
+        content: "FranchiseDepth.com  ·  2026 Edition  ·  Page " counter(page) " of " counter(pages);
+        font-family: 'Helvetica', 'Arial', sans-serif;
+        font-size: 8.5pt;
+        color: #94a3b8;
+        padding-top: 0.2in;
+    }
+}
+@page :first {
+    margin: 0;
+    @bottom-center { content: none; }
+}
+
+/* --- Base typography --- */
+html {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 11pt;
+    color: #1e293b;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+}
+body { margin: 0; padding: 0; }
+
+h1, h2, h3, h4 {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #0f172a;
+    line-height: 1.25;
+    margin: 0;
+}
+h1 { font-size: 22pt; font-weight: 700; }
+h2 { font-size: 15pt; font-weight: 700; color: #1d4ed8; margin: 0 0 0.4em 0; }
+h3 { font-size: 12pt; font-weight: 700; margin: 1.1em 0 0.3em 0; }
+h4 { font-size: 11pt; font-weight: 700; margin: 0.7em 0 0.2em 0; }
+p  { margin: 0.5em 0; }
+strong { color: #0f172a; font-weight: 700; }
+em { font-style: italic; }
+a { color: #1d4ed8; text-decoration: underline; }
+
+ul, ol { margin: 0.5em 0; padding-left: 1.3em; }
+li { margin: 0.25em 0; }
+
+hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 1.2em 0;
+}
+
+/* --- Page container --- */
+.page {
+    page-break-after: always;
+    position: relative;
+    min-height: 9.4in;
+}
+.page:last-child { page-break-after: auto; }
+
+/* --- Cover --- */
+.cover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e3a8a 100%);
+    color: #fff;
+    height: 11in;
+    width: 8.5in;
+    padding: 1.1in 0.85in;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    page-break-after: always;
+}
+.cover .brand {
+    font-size: 12pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.78);
+    font-weight: 600;
+}
+.cover .brand-mark {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    margin-right: 12px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 36px;
+    font-weight: 800;
+    color: #fff;
+    font-size: 17pt;
+}
+.cover h1 {
+    color: #fff;
+    font-size: 42pt;
+    line-height: 1.12;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0;
+}
+.cover .subtitle {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 16pt;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0.55in 0 0 0;
+    max-width: 5.8in;
+}
+.cover .accent-bar {
+    width: 100px;
+    height: 4px;
+    background: #fff;
+    margin: 0.6in 0 0.2in 0;
+    border-radius: 2px;
+}
+.cover-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 10pt;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding-top: 14pt;
+}
+.cover-meta .left strong { color: #fff; }
+.cover-disclaimer {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 7.5pt;
+    line-height: 1.5;
+    max-width: 5.5in;
+    margin: 0.3in 0 0 0;
+}
+
+/* --- Body pages --- */
+.page-body {
+    padding: 0;
+}
+.page-body .eyebrow {
+    color: #94a3b8;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin-bottom: 4pt;
+}
+.page-body h2 {
+    border-bottom: 2px solid #1d4ed8;
+    padding-bottom: 6pt;
+    margin-bottom: 12pt;
+}
+
+/* --- Red-flag cards --- */
+.red-flag {
+    border-left: 3px solid #dc2626;
+    background: #fef2f2;
+    padding: 9pt 12pt;
+    margin: 8pt 0;
+    border-radius: 0 4pt 4pt 0;
+    page-break-inside: avoid;
+}
+.red-flag .flag-num {
+    color: #dc2626;
+    font-weight: 700;
+    font-size: 9.5pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 2pt;
+}
+.red-flag .flag-title {
+    font-weight: 700;
+    color: #0f172a;
+    font-size: 11.5pt;
+    margin-bottom: 4pt;
+}
+.red-flag p { margin: 3pt 0; font-size: 10.5pt; }
+.red-flag .meta-label {
+    font-weight: 700;
+    color: #7f1d1d;
+    font-size: 9.5pt;
+}
+
+/* --- Question cards --- */
+.question {
+    background: #f0f9ff;
+    border-left: 3px solid #1d4ed8;
+    padding: 10pt 12pt;
+    margin: 8pt 0;
+    border-radius: 0 4pt 4pt 0;
+    page-break-inside: avoid;
+}
+.question .q-num {
+    color: #1d4ed8;
+    font-weight: 700;
+    font-size: 9.5pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.question .q-text {
+    font-weight: 700;
+    color: #0f172a;
+    font-size: 12pt;
+    margin: 3pt 0 5pt 0;
+}
+.question p { font-size: 10.5pt; margin: 3pt 0; }
+
+/* --- Checklist boxes --- */
+.checklist-group {
+    margin: 14pt 0;
+    page-break-inside: avoid;
+}
+.checklist-group h3 {
+    color: #1d4ed8;
+    font-size: 11.5pt;
+    margin-bottom: 6pt;
+    padding-bottom: 3pt;
+    border-bottom: 1px solid #e2e8f0;
+}
+.checklist-item {
+    display: block;
+    padding-left: 22pt;
+    position: relative;
+    margin: 8pt 0;
+    font-size: 10.5pt;
+    line-height: 1.5;
+}
+.checklist-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2pt;
+    width: 12pt;
+    height: 12pt;
+    border: 1.5pt solid #475569;
+    border-radius: 2pt;
+    background: #fff;
+}
+
+/* --- Glossary --- */
+.glossary {
+    column-count: 1;
+}
+.glossary dt {
+    font-weight: 700;
+    color: #1d4ed8;
+    margin-top: 7pt;
+    font-size: 10.5pt;
+}
+.glossary dd {
+    margin: 1pt 0 0 0;
+    color: #334155;
+    font-size: 10pt;
+    line-height: 1.5;
+}
+
+/* --- Call-out / quote --- */
+.callout {
+    background: #fef3c7;
+    border-left: 3px solid #d97706;
+    padding: 10pt 14pt;
+    margin: 14pt 0;
+    border-radius: 0 4pt 4pt 0;
+    font-size: 10.5pt;
+}
+.callout .label {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #92400e;
+    font-size: 9pt;
+    display: block;
+    margin-bottom: 3pt;
+}
+
+.honest-take {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    padding: 12pt 14pt;
+    margin: 14pt 0;
+    border-radius: 4pt;
+    font-style: italic;
+    font-size: 10.5pt;
+    color: #334155;
+}
+.honest-take strong { font-style: normal; color: #0f172a; }
+
+/* --- Next steps section --- */
+.next-step {
+    border: 1px solid #cbd5e1;
+    border-radius: 6pt;
+    padding: 11pt 13pt;
+    margin: 10pt 0;
+    page-break-inside: avoid;
+}
+.next-step h3 {
+    margin: 0 0 4pt 0;
+    color: #1d4ed8;
+    font-size: 12pt;
+}
+.next-step p { font-size: 10.5pt; margin: 3pt 0; }
+.next-step .link-row { font-family: 'Courier New', monospace; font-size: 10pt; color: #1d4ed8; }
+
+/* --- Footer-like sign-off --- */
+.sign-off {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 12pt;
+    margin-top: 22pt;
+    text-align: center;
+    color: #64748b;
+    font-size: 10pt;
+}
+.sign-off strong { color: #1d4ed8; }
+
+/* --- Subtle watermark on data pages --- */
+.watermark::before {
+    content: "franchisedepth.com";
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 70pt;
+    color: rgba(29, 78, 216, 0.04);
+    font-weight: 800;
+    pointer-events: none;
+    z-index: -1;
+    white-space: nowrap;
+}
+</style>
+</head>
+<body>
+
+<!-- ============ PAGE 0: COVER ============ -->
+<section class="cover">
+    <div class="cover-top">
+        <div class="brand">
+            <span class="brand-mark">F</span> FranchiseDepth
+        </div>
+    </div>
+
+    <div class="cover-main">
+        <div class="accent-bar"></div>
+        <h1>The FDD Buyer's<br>Checklist</h1>
+        <p class="subtitle">A no-fluff guide to reading Franchise Disclosure Documents before you invest.</p>
+        <p class="cover-disclaimer">
+            This guide is for educational purposes only. It is not legal, financial, or investment advice.
+            Always consult a franchise attorney and a financial advisor before signing any agreement or
+            transferring any funds.
+        </p>
+    </div>
+
+    <div class="cover-meta">
+        <div class="left">
+            <strong>2026 Edition</strong><br>
+            By FranchiseDepth.com
+        </div>
+        <div class="right" style="text-align: right;">
+            Real data from 120+ FDDs<br>
+            franchisedepth.com
+        </div>
+    </div>
+</section>
+
+<!-- ============ PAGE 1: WHAT IS AN FDD ============ -->
+<section class="page page-body watermark">
+    <div class="eyebrow">Page 1 · The Basics</div>
+    <h2>What an FDD is, and why most buyers don't actually read it</h2>
+
+    <h3>What is a Franchise Disclosure Document?</h3>
+    <p>
+        A Franchise Disclosure Document (FDD) is the legal document a franchisor is required to deliver to
+        every prospective franchisee before they sign anything or pay any money. It exists because of an
+        FTC rule — <strong>16 CFR Part 436</strong> — and it has to be in your hands at least
+        <strong>14 calendar days</strong> before you commit. That 14-day window is your due-diligence
+        period, and it is not optional on the franchisor's side.
+    </p>
+    <p>
+        Every FDD follows the same 23-item structure. That structure is the point. It exists so that you
+        can compare a 2,500-unit national brand to a 12-unit regional concept on the same terms — same
+        sections, same disclosures, same definitions. The FDD is the only document in franchise sales
+        that is standardized this way, which is exactly why reading it carefully gives you a real edge.
+    </p>
+
+    <h3>Why this matters</h3>
+    <p>
+        The typical FDD runs 200 to 400 pages. Most buyers skim the front (Items 1–4, the franchisor
+        history) and then jump to the franchise agreement at the back. That's a mistake. The economic
+        story of a franchise — what it actually costs to open, what franchisees actually earn, and how
+        many of them quit — lives in the middle, in <strong>Items 5, 6, 7, 19, 20, and 21</strong>.
+        Those are the sections this checklist is built to help you read.
+    </p>
+    <p>
+        About 30% of FDDs include no financial performance representation at all. Among those that do,
+        the difference between an honest disclosure and a cherry-picked one is the difference between a
+        good investment and a regret. We'll show you how to tell which is which.
+    </p>
+
+    <h3>The five sections to read carefully</h3>
+    <ul>
+        <li><strong>Item 5 — Initial fees.</strong> What you pay the franchisor up front. Look for tiered fees, multi-unit discounts, and veteran/military credits.</li>
+        <li><strong>Item 6 — Other fees.</strong> Royalty, marketing/brand fund, technology fee, transfer fee, renewal fee, audit fees, and every other recurring cost. This section is where the long-term economics live.</li>
+        <li><strong>Item 7 — Estimated initial investment.</strong> The total range to open, including franchise fee, real estate, equipment, build-out, opening inventory, and working capital. Always read the <em>high</em> number, not the low.</li>
+        <li><strong>Item 19 — Financial Performance Representations.</strong> What franchisees actually earn. The single most-skipped, highest-value section of the document.</li>
+        <li><strong>Item 20 — Outlets and franchisee information.</strong> Open/close/transfer counts by year and by state, plus a contact list for current and recently-departed franchisees.</li>
+    </ul>
+
+    <p class="honest-take">
+        <strong>Bottom line:</strong> if a franchisor cannot or will not back up its sales pitch with the
+        numbers in Items 19 and 20, the pitch is the only thing it has.
+    </p>
+</section>
+
+<!-- ============ PAGE 2: ITEM 19 RED FLAGS ============ -->
+<section class="page page-body watermark">
+    <div class="eyebrow">Page 2 · Reading Item 19</div>
+    <h2>7 red flags in the Financial Performance Representation</h2>
+
+    <p>
+        Item 19 is where franchisors disclose what franchisees earn — or where they admit they aren't
+        going to tell you. The patterns below show up across hundreds of FDDs in our database. Any one
+        of them is a yellow flag. Two or more in the same document is a stop sign.
+    </p>
+
+    <div class="red-flag">
+        <div class="flag-num">Red Flag #1</div>
+        <div class="flag-title">No Item 19 at all</div>
+        <p>
+            About 30% of FDDs include no FPR. It's their legal right — but it leaves you with no
+            disclosed benchmark for what franchisees actually earn. The cleanest version is a flat
+            statement: <em>"We do not make any representations about a franchisee's future financial
+            performance."</em>
+        </p>
+        <p><span class="meta-label">What to ask:</span> Why don't you share earnings data? Will you in writing, today?</p>
+    </div>
+
+    <div class="red-flag">
+        <div class="flag-num">Red Flag #2</div>
+        <div class="flag-title">Cherry-picked subset of franchisees</div>
+        <p>
+            Watch for sentences like <em>"the top 25% of franchisees averaged $1.2M in revenue."</em>
+            The math here is honest — but the framing isn't. The 75% you didn't see did something much
+            less impressive.
+        </p>
+        <p><span class="meta-label">How to verify:</span> Find the footnote that says <em>"the number of franchisees included in this calculation: X."</em> Compare X to the total outlet count in Item 20. If only a third of the system is being reported on, ask what the other two-thirds look like.</p>
+    </div>
+
+    <div class="red-flag">
+        <div class="flag-num">Red Flag #3</div>
+        <div class="flag-title">Revenue, not profit</div>
+        <p>
+            Most Item 19s show gross revenue. A franchise can do $1M in revenue and lose money once
+            royalties (4–10%), marketing fees (1–4%), rent, labor, COGS, and debt service come out.
+            Revenue tells you the top of the funnel. Profit is the only number that matters.
+        </p>
+        <p><span class="meta-label">What to ask:</span> Does the FDD show any profit figure or "earnings before owner's compensation"? If not, why not?</p>
+    </div>
+
+    <div class="red-flag">
+        <div class="flag-num">Red Flag #4</div>
+        <div class="flag-title">Limited geographic representation</div>
+        <p>
+            <em>"Average sales of franchisees operating in suburban markets with 50k+ population."</em>
+            Read this as: "We picked the markets that performed best." Rural locations or urban-core
+            locations may look nothing like that average.
+        </p>
+        <p><span class="meta-label">How to evaluate:</span> Does the FPR cohort match the kind of market <em>you</em> would open in? If not, the number doesn't apply to you.</p>
+    </div>
+
+    <div class="red-flag">
+        <div class="flag-num">Red Flag #5</div>
+        <div class="flag-title">Mean reported, median hidden</div>
+        <p>
+            When a franchisor reports the average (mean) but not the median, the mean is almost always
+            skewed by a few outsized performers. A clean disclosure shows both.
+        </p>
+        <p>
+            <span class="meta-label">Pattern to watch:</span> <em>"Average $850K, median $620K."</em>
+            That tells you the top 20% are doing $1.5M+ and pulling the average up. The typical
+            experience is the median, not the mean. A 30%+ gap between the two is a yellow flag.
+        </p>
+    </div>
+
+    <div class="red-flag">
+        <div class="flag-num">Red Flag #6</div>
+        <div class="flag-title">No breakdown by franchisee tenure</div>
+        <p>
+            <em>"First-year franchisees averaged X"</em> can be misleading. Early stores are often
+            subsidized — by the franchisor's launch promotions, by founder-operator owners, by markets
+            chosen for low competition. The numbers that tell you the truth are <strong>franchisees
+            with 3+ years in business.</strong>
+        </p>
+        <p><span class="meta-label">Look for:</span> A cohort breakdown by years of operation.</p>
+    </div>
+
+    <div class="red-flag">
+        <div class="flag-num">Red Flag #7</div>
+        <div class="flag-title">Vague footnotes</div>
+        <p>
+            FDDs end every Item 19 with footnotes. Phrases like <em>"subject to certain assumptions,"
+            "may not reflect typical results,"</em> and <em>"individual results will vary"</em> are
+            standard. What matters is what else is buried in the footnotes — excluded territories,
+            excluded years, excluded franchisees who closed.
+        </p>
+        <p><span class="meta-label">Rule:</span> Read every footnote. Twice. The deal is in the footnotes.</p>
+    </div>
+
+    <p class="honest-take">
+        <strong>The honest take:</strong> If a franchisor only shows you a cherry-picked slice of its
+        franchisees, and the rest is buried in footnotes, that tells you what they think you'd find
+        if you dug further. The system either earns or it doesn't. The cleanest Item 19s are the ones
+        that show the full distribution — top quartile, median, bottom quartile — and let you decide.
+    </p>
+</section>
+
+<!-- ============ PAGE 3: 5 QUESTIONS ============ -->
+<section class="page page-body watermark">
+    <div class="eyebrow">Page 3 · Validation</div>
+    <h2>5 questions to ask current franchisees</h2>
+
+    <h3>How to find franchisees to call</h3>
+    <p>
+        <strong>Item 20</strong> of the FDD lists every current franchisee, usually with name, location,
+        and contact information. State law in most jurisdictions requires this. The franchisor must
+        also include contact information for franchisees who <em>left</em> the system in the last 12
+        months — those are gold. Always call at least 5 to 10 franchisees, including 2 who exited.
+    </p>
+    <p>
+        Tell them you're considering buying a franchise and ask for 10 minutes. Most will give it.
+        Franchisees who feel they were sold a story (good or bad) are usually eager to share their
+        version of it.
+    </p>
+
+    <div class="question">
+        <div class="q-num">Question 1</div>
+        <div class="q-text">"Did you hit the Item 19 numbers in your first two years?"</div>
+        <p>
+            The simplest yes/no question in this entire process. If most franchisees say no, the Item
+            19 is aspirational. Pay attention to what they reference for the gap — bad location, slow
+            ramp, higher labor costs, competing market.
+        </p>
+    </div>
+
+    <div class="question">
+        <div class="q-num">Question 2</div>
+        <div class="q-text">"What does your monthly P&amp;L look like? Walk me through revenue and biggest expenses."</div>
+        <p>
+            Many will decline. Many will share if you're respectful and clear that you're not a
+            competitor. Focus on royalty as a percentage of revenue, marketing fees, labor, COGS (if
+            food), rent, and debt service. You want a real number for "what % of every dollar I take
+            in actually comes home with me."
+        </p>
+    </div>
+
+    <div class="question">
+        <div class="q-num">Question 3</div>
+        <div class="q-text">"What did the franchisor do that you didn't expect — good or bad?"</div>
+        <p>
+            Surfaces the gap between sales pitch and operating reality. Common answers: mandatory POS
+            or equipment upgrades after you've signed, marketing fee increases, supplier changes, new
+            tech fees that didn't exist when you joined. None of these are necessarily deal-breakers,
+            but they should not be surprises.
+        </p>
+    </div>
+
+    <div class="question">
+        <div class="q-num">Question 4</div>
+        <div class="q-text">"Knowing what you know now — would you do it again?"</div>
+        <p>
+            Direct, sometimes uncomfortable, very revealing. Pay attention to hesitation more than the
+            answer itself. "Yeah, mostly" with a long pause means something different from a confident
+            "yes."
+        </p>
+    </div>
+
+    <div class="question">
+        <div class="q-num">Question 5</div>
+        <div class="q-text">"What do you wish you'd asked the franchisor before signing?"</div>
+        <p>
+            This pulls their whole retrospective into one answer. It also saves you from making the
+            same mistake they made. Almost every franchisee has at least one of these.
+        </p>
+    </div>
+
+    <div class="callout">
+        <span class="label">Bonus question — for franchisees who left</span>
+        <strong>"What's the actual reason you exited?"</strong>
+        The FDD may say <em>"transferred"</em> or <em>"non-renewed,"</em> but the real story is often
+        unit economics that didn't work, a corporate dispute, or a personal-life event the franchisor
+        wouldn't accommodate. The exit data in Item 20 is what they're required to report. The
+        franchisee can tell you what actually happened.
+    </div>
+</section>
+
+<!-- ============ PAGE 4: PRE-INVESTMENT CHECKLIST ============ -->
+<section class="page page-body watermark">
+    <div class="eyebrow">Page 4 · Pre-Investment Checklist</div>
+    <h2>15 yes/no questions to answer before you sign</h2>
+
+    <p>
+        Use this as a literal checklist. If you cannot honestly check every box, do not sign yet —
+        either keep doing diligence or walk away. A franchise is a 10-year commitment minimum. The
+        few weeks it takes to answer these honestly are the cheapest weeks of the deal.
+    </p>
+
+    <div class="checklist-group">
+        <h3>Financial preparation</h3>
+        <div class="checklist-item">I have 6+ months of personal living expenses saved separately from my franchise investment.</div>
+        <div class="checklist-item">My total liquid net worth is at least 1.5× the maximum initial investment listed in Item 7.</div>
+        <div class="checklist-item">I've stress-tested my finances against the franchisor's worst-case Item 19 numbers (not just averages).</div>
+        <div class="checklist-item">I understand royalty as a percentage of <em>revenue</em>, not profit (8% royalty + 2% marketing = 10% off the top forever).</div>
+        <div class="checklist-item">I've calculated my breakeven monthly revenue including realistic labor, rent, royalties, marketing, and debt service.</div>
+    </div>
+
+    <div class="checklist-group">
+        <h3>FDD due diligence</h3>
+        <div class="checklist-item">I've read Items 5, 6, 7, 19, 20, and 21 in their entirety (not summaries).</div>
+        <div class="checklist-item">I've called at least 5 current franchisees and 2 former franchisees.</div>
+        <div class="checklist-item">I've verified the franchisor's bankruptcy history in Item 4.</div>
+        <div class="checklist-item">I've read the franchise agreement in the exhibits and noted what is — and isn't — negotiable.</div>
+        <div class="checklist-item">I understand the renewal terms, transfer restrictions, and post-termination obligations.</div>
+    </div>
+
+    <div class="checklist-group">
+        <h3>Operational reality</h3>
+        <div class="checklist-item">I've spent at least 8 hours observing operations at 2–3 existing locations.</div>
+        <div class="checklist-item">I've talked with my future suppliers if any are designated by the franchisor (Item 8).</div>
+        <div class="checklist-item">I understand the territory protection (or lack of it) in my agreement.</div>
+        <div class="checklist-item">I know what happens if the franchisor goes bankrupt or is acquired.</div>
+        <div class="checklist-item">I have a franchise attorney reviewing the agreement before I sign.</div>
+    </div>
+
+    <p class="honest-take">
+        <strong>The rule:</strong> If you can't honestly check all 15, do not sign. The buyer's
+        remorse cost of a bad franchise — usually 5–7 figures and 3–10 years of your life — is much
+        larger than the cost of being slow.
+    </p>
+</section>
+
+<!-- ============ PAGE 5: GLOSSARY ============ -->
+<section class="page page-body watermark">
+    <div class="eyebrow">Page 5 · Reference</div>
+    <h2>Glossary of FDD terms</h2>
+
+    <p>
+        Every word in an FDD has a specific legal meaning. These are the ones that matter most.
+        For a deeper version of any term, see our methodology page or the brand-specific page on
+        FranchiseDepth.com.
+    </p>
+
+    <dl class="glossary">
+        <dt>Franchise Disclosure Document (FDD)</dt>
+        <dd>The federally required document a franchisor must deliver to a prospective franchisee at least 14 days before any commitment. 23 standardized items.</dd>
+
+        <dt>Item 19 / Financial Performance Representation (FPR)</dt>
+        <dd>The optional section where a franchisor discloses what franchisees actually earn. If included, must be substantiated by evidence the franchisor will share on request.</dd>
+
+        <dt>Item 20</dt>
+        <dd>Outlets and franchisee information — opens, closures, transfers, non-renewals, and terminations by year, plus contact info for current and recently-departed franchisees.</dd>
+
+        <dt>Initial Investment Range (Item 7)</dt>
+        <dd>Total estimated cost to open including franchise fee, equipment, real estate or build-out, opening inventory, training, and working capital for the first 3 months. Always read the high number, not the low.</dd>
+
+        <dt>Royalty</dt>
+        <dd>Percentage of gross sales paid to the franchisor on a recurring basis (usually monthly or weekly). Typically 4–12% across industries. Paid on revenue, not profit.</dd>
+
+        <dt>Marketing Fee / Ad Fund / Brand Fund</dt>
+        <dd>Additional recurring percentage for system-wide advertising. Typically 1–4%. Stacks on top of royalty.</dd>
+
+        <dt>Cure Period</dt>
+        <dd>The window of time you have to fix a franchise agreement violation before the franchisor can terminate you. Length and triggers are in the agreement.</dd>
+
+        <dt>Right of First Refusal (ROFR)</dt>
+        <dd>The franchisor's right to buy your franchise back at the same price an outside buyer offers, before that buyer can complete the purchase. Common; reduces the price of your eventual exit.</dd>
+
+        <dt>Territory</dt>
+        <dd>The geographic area in which you have exclusive rights to operate — or, increasingly often, in which you have <em>no</em> exclusivity. Read this clause carefully.</dd>
+
+        <dt>Renewal Terms</dt>
+        <dd>Conditions for extending the franchise after the initial term ends. Usually includes a renewal fee, a current-form-of-agreement requirement (you sign whatever they're using then, not your original terms), and remodel/upgrade obligations.</dd>
+
+        <dt>Transfer Fee</dt>
+        <dd>The fee you pay to the franchisor when you sell your franchise. Often 3–6% of the sale price. Separate from the ROFR.</dd>
+
+        <dt>Post-Termination Non-Compete</dt>
+        <dd>Restriction on operating a similar business after your franchise ends. Typically 1–3 years and a defined geographic radius. Often the most-negotiated clause in the agreement.</dd>
+
+        <dt>System-Wide Standards</dt>
+        <dd>The franchisor's right to dictate how you operate — sometimes including required suppliers, hours, technology, menu, uniforms, and remodel schedules. The breadth of this clause is the breadth of your independence.</dd>
+
+        <dt>Discovery Day</dt>
+        <dd>In-person meeting at franchisor HQ before signing. A major decision point. Treat it as a two-way evaluation, not a sales pitch you're attending.</dd>
+    </dl>
+
+    <hr>
+
+    <h3>Where to go deeper</h3>
+    <p>
+        Brand-specific data on 120+ franchises: <a href="https://franchisedepth.com/">franchisedepth.com</a>
+    </p>
+    <p>
+        Our methodology and source citations: <a href="https://franchisedepth.com/methodology/">franchisedepth.com/methodology</a>
+    </p>
+    <p>
+        Compare two franchises side-by-side: <a href="https://franchisedepth.com/compare/">franchisedepth.com/compare</a>
+    </p>
+</section>
+
+<!-- ============ PAGE 6: WHAT TO DO NEXT ============ -->
+<section class="page page-body watermark">
+    <div class="eyebrow">Page 6 · What to Do Next</div>
+    <h2>Using this checklist alongside the site</h2>
+
+    <p>
+        This checklist is the framework. FranchiseDepth.com is the data. Together they're the
+        fastest way to evaluate a franchise without paying for a consultant.
+    </p>
+
+    <div class="next-step">
+        <h3>If you're researching a specific brand</h3>
+        <p>Look it up directly. We've extracted Items 5, 6, 7, 19, and 20 for 120+ brands from real, recently-filed FDDs — including the prestige brands buyers actually search for: Subway, McDonald's, Dunkin', Domino's, Planet Fitness, UPS Store, RE/MAX, and more.</p>
+        <p class="link-row">franchisedepth.com/franchise/<em>brand-name</em></p>
+    </div>
+
+    <div class="next-step">
+        <h3>If you're comparing options</h3>
+        <p>Use the side-by-side comparison tool. Pick 2 or 3 brands and see fees, royalty, total investment, outlet trends, and Item 19 disclosure status on the same screen.</p>
+        <p class="link-row">franchisedepth.com/compare</p>
+    </div>
+
+    <div class="next-step">
+        <h3>If you're earlier in the search</h3>
+        <p>Browse by industry — food, fitness, home services, real estate, hospitality — and filter the full brand list by your budget. The homepage has a budget slider built in.</p>
+        <p class="link-row">franchisedepth.com/industries</p>
+    </div>
+
+    <div class="next-step">
+        <h3>If you want deeper reads</h3>
+        <p>Our guides cover the financial math (breakeven, ROI walk-forward), the legal architecture (what's negotiable, Discovery Day), and the structural patterns (Item 7, 19, 20 in detail).</p>
+        <p class="link-row">franchisedepth.com/guides</p>
+    </div>
+
+    <hr>
+
+    <h3>Found this useful?</h3>
+    <p>
+        Forward it to anyone you know who is considering a franchise. There's no watermark for personal
+        sharing, and no sales pitch attached. The more people who go into franchise ownership with eyes
+        open, the better the industry gets.
+    </p>
+
+    <h3>Need to talk to a real expert?</h3>
+    <p>
+        A franchise attorney for legal review of any FDD is $500–$2,500 — money very well spent
+        before signing. A franchise consultant (independent, not a broker on commission from the
+        franchisor) is helpful if you're early-stage and weighing multiple options. We don't take
+        referral fees from either; if you reply to this email and tell us what you're looking at,
+        we'll point you toward resources we trust.
+    </p>
+
+    <div class="sign-off">
+        <p><strong>FranchiseDepth.com</strong> — Real data from real FDDs</p>
+        <p>Questions? Reply to this email or visit <a href="https://franchisedepth.com/contact/">franchisedepth.com/contact</a></p>
+    </div>
+</section>
+
+</body>
+</html>

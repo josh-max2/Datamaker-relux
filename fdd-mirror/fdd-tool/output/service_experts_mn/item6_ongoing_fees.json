@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6.0,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 1.0,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 500,
+  "fee_notes": "Royalty: 6% of Gross Revenue for Start-Up and Refranchise Franchises; Conversion Franchises pay 2% in Year 1, 4% in Year 2, 6% in Year 3+. Royalty paid weekly. Brand Fund Contribution up to 2% of Gross Revenue (currently 1%). Local Marketing required minimum is greater of 6% of Gross Revenue or $32,000/year (8% recommended). Technology Fees: $500/month base (website, 3 Tovuti seats, general tech support) plus $45/month per Office 365 user and $0.55 per NPS survey. Fee increases capped at 10% unless vendor increases exceed 10%.",
+  "raw_excerpt": "Royalty Fee 6% of Gross Revenue for Start-Up Franchises and Refranchises; For Conversion Franchises: 2% of Gross Revenue in Year 1, 4% of Gross Revenue in Year 2, and 6% of Gross Revenue in Year 3 and thereafter | Weekly, unless we designate a different period\nBrand Fund Contribution Up to 2% of Gross Revenue (currently 1%) | Same as Royalty Fee\nLocal Marketing The greater of 6% of Gross Revenue or $32,000 per year. | As incurred\nTechnology Fees $500 per month for website, 3 seats for Tovuti online learning platform, and general technology support; $45 per month per Office 365 user; $0.55 per survey for NPS management system | Monthly",
+  "confidence": 0.97
+}

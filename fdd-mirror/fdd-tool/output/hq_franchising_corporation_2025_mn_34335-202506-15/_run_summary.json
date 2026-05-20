@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\hq_franchising_corporation_2025_mn_34335-202506-15.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0035,
+      "input_tokens": 1345,
+      "cached": 1340,
+      "output_tokens": 206
+    },
+    "item5": {
+      "cost_usd": 0.0033,
+      "input_tokens": 1020,
+      "cached": 1340,
+      "output_tokens": 256
+    },
+    "item6": {
+      "cost_usd": 0.017,
+      "input_tokens": 3273,
+      "cached": 1340,
+      "output_tokens": 723
+    },
+    "item7": {
+      "cost_usd": 0.0054,
+      "input_tokens": 2599,
+      "cached": 1340,
+      "output_tokens": 84
+    },
+    "item19": {
+      "cost_usd": 0.0506,
+      "input_tokens": 17658,
+      "cached": 1340,
+      "output_tokens": 85,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1693,
+      "input_tokens": 16646,
+      "cached": 1340,
+      "output_tokens": 7367,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.2492
+}

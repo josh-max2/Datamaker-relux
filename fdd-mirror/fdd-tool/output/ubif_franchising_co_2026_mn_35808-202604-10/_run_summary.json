@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\ubif_franchising_co_2026_mn_35808-202604-10.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0054,
+      "input_tokens": 2018,
+      "cached": 1340,
+      "output_tokens": 195
+    },
+    "item5": {
+      "cost_usd": 0.0072,
+      "input_tokens": 1806,
+      "cached": 1340,
+      "output_tokens": 357
+    },
+    "item6": {
+      "cost_usd": 0.0229,
+      "input_tokens": 5858,
+      "cached": 1340,
+      "output_tokens": 599
+    },
+    "item7": {
+      "cost_usd": 0.0052,
+      "input_tokens": 2517,
+      "cached": 1340,
+      "output_tokens": 83
+    },
+    "item19": {
+      "cost_usd": 0.0622,
+      "input_tokens": 10540,
+      "cached": 1340,
+      "output_tokens": 2279,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.2767,
+      "input_tokens": 19783,
+      "cached": 1340,
+      "output_tokens": 14729,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3795
+}

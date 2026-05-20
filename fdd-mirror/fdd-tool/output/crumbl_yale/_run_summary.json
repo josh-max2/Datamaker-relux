@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\crumbl_yale.pdf",
+  "body_start_page": 23,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.01,
+      "input_tokens": 2368,
+      "cached": 0,
+      "output_tokens": 194
+    },
+    "item5": {
+      "cost_usd": 0.0102,
+      "input_tokens": 1689,
+      "cached": 0,
+      "output_tokens": 340
+    },
+    "item6": {
+      "cost_usd": 0.0245,
+      "input_tokens": 5752,
+      "cached": 0,
+      "output_tokens": 485
+    },
+    "item7": {
+      "cost_usd": 0.0132,
+      "input_tokens": 3883,
+      "cached": 0,
+      "output_tokens": 104
+    },
+    "item19": {
+      "cost_usd": 0.039,
+      "input_tokens": 7254,
+      "cached": 0,
+      "output_tokens": 1146,
+      "images_sent": 3
+    },
+    "item20": {
+      "cost_usd": 0.2424,
+      "input_tokens": 17910,
+      "cached": 0,
+      "output_tokens": 12576,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3392
+}

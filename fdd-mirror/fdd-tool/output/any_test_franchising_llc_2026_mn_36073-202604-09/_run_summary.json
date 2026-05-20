@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\any_test_franchising_llc_2026_mn_36073-202604-09.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0064,
+      "input_tokens": 2176,
+      "cached": 1340,
+      "output_tokens": 230
+    },
+    "item5": {
+      "cost_usd": 0.0072,
+      "input_tokens": 1644,
+      "cached": 1340,
+      "output_tokens": 392
+    },
+    "item6": {
+      "cost_usd": 0.0146,
+      "input_tokens": 2896,
+      "cached": 1340,
+      "output_tokens": 638
+    },
+    "item7": {
+      "cost_usd": 0.012,
+      "input_tokens": 4756,
+      "cached": 1340,
+      "output_tokens": 89
+    },
+    "item19": {
+      "cost_usd": 0.0654,
+      "input_tokens": 10088,
+      "cached": 1340,
+      "output_tokens": 2581,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.1777,
+      "input_tokens": 15326,
+      "cached": 1340,
+      "output_tokens": 9024,
+      "images_sent": 7
+    }
+  },
+  "total_cost_usd": 0.2833
+}

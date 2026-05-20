@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\reins_usa_franchise_company_inc_2025_mn_35037-202511-05.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0054,
+      "input_tokens": 1941,
+      "cached": 1340,
+      "output_tokens": 212
+    },
+    "item5": {
+      "cost_usd": 0.0079,
+      "input_tokens": 1933,
+      "cached": 1340,
+      "output_tokens": 384
+    },
+    "item6": {
+      "cost_usd": 0.0207,
+      "input_tokens": 5256,
+      "cached": 1340,
+      "output_tokens": 571
+    },
+    "item7": {
+      "cost_usd": 0.0123,
+      "input_tokens": 4831,
+      "cached": 1340,
+      "output_tokens": 92
+    },
+    "item19": {
+      "cost_usd": 0.0352,
+      "input_tokens": 12539,
+      "cached": 1340,
+      "output_tokens": 82,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.1081,
+      "input_tokens": 11527,
+      "cached": 1340,
+      "output_tokens": 4565,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.1896
+}

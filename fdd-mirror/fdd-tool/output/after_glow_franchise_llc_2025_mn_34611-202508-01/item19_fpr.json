@@ -1,0 +1,22 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Annual Gross Revenue",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Cloquet, MN (Company-Owned) 2024",
+      "outlet_count": 1,
+      "reporting_period": "2024 calendar year",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 150000,
+      "page_number": 23,
+      "raw_text": "Approximately $150,000",
+      "notes": "Approximate figure. Single company-owned location with 4 older tanning beds, owner-managed, minimal staffing, self-check model."
+    }
+  ],
+  "confidence": 0.85,
+  "notes": "FPR is for a single company-owned location only. Revenue is approximate and gross (before expenses). Franchisee results may differ significantly."
+}

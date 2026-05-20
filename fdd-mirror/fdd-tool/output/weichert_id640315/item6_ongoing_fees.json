@@ -1,0 +1,9 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 1500,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": 540.35,
+  "fee_notes": "Minimum Monthly Continuing Royalty is $1,000/month for months 3-24, then $1,500/month thereafter. Marketing Fee has minimum of $540.35 and maximum of $1,506.91 per month per office in 2026, both CPI-adjustable annually.",
+  "raw_excerpt": "Continuing Royalty 6% of Gross Revenues or the Minimum Monthly Royalty, whichever is greater. Marketing Fee 2% of Gross Revenues or the Minimum Monthly Marketing Fee, whichever is greater.",
+  "confidence": 0.97
+}

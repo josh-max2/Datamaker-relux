@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 7,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty is 7% of total net sales (net sales = gross sales less sales tax and use tax); late fee of $25/week plus 1.5%/month interest on overdue amounts. National Advertising Fund currently 2% of net sales; franchisor reserves right to increase to 4%. Local Advertising currently 2% of net sales, spent by franchisee on approved advertising. Brand Technology System Support Services: mandatory $840\u2013$1,500/year (paid quarterly), plus up to $3,250/year for optional services \u2014 no flat monthly tech fee disclosed. Additional Training reimbursement up to $1,500/week per individual after first 5 persons. Pre/post-opening assistance reimbursement at cost including $100/day per diem per person.",
+  "raw_excerpt": "Royalty (1, 2) 7% of total net sales; interest on any overdue amount of 1.5% per month and late fee of $25 per week (3) ... National Advertising Fund (1, 2) Currently 2% of total net sales ... Local Advertising (5) Currently 2% of total net sales ... Brand Technology System Support Services (6) Currently, $840-$1,500 per year for mandatory services plus up to $3,250 per year for optional services.",
+  "confidence": 0.9
+}

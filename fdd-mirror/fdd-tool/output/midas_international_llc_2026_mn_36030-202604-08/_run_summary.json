@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\midas_international_llc_2026_mn_36030-202604-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0061,
+      "input_tokens": 2158,
+      "cached": 1340,
+      "output_tokens": 213
+    },
+    "item5": {
+      "cost_usd": 0.0096,
+      "input_tokens": 2348,
+      "cached": 1340,
+      "output_tokens": 412
+    },
+    "item6": {
+      "cost_usd": 0.0389,
+      "input_tokens": 8218,
+      "cached": 1340,
+      "output_tokens": 1190
+    },
+    "item7": {
+      "cost_usd": 0.0229,
+      "input_tokens": 8357,
+      "cached": 1340,
+      "output_tokens": 95
+    },
+    "item19": {
+      "cost_usd": 0.067,
+      "input_tokens": 7719,
+      "cached": 1340,
+      "output_tokens": 3161,
+      "images_sent": 3
+    },
+    "item20": {
+      "cost_usd": 0.2485,
+      "input_tokens": 22048,
+      "cached": 1340,
+      "output_tokens": 12399,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3929
+}

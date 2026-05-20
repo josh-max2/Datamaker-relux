@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\t_b_franchising_systems_inc_2026_mn_35977-202604-10.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0056,
+      "input_tokens": 1783,
+      "cached": 1340,
+      "output_tokens": 255
+    },
+    "item5": {
+      "cost_usd": 0.0066,
+      "input_tokens": 1749,
+      "cached": 1340,
+      "output_tokens": 332
+    },
+    "item6": {
+      "cost_usd": 0.0141,
+      "input_tokens": 3440,
+      "cached": 1340,
+      "output_tokens": 492
+    },
+    "item7": {
+      "cost_usd": 0.0031,
+      "input_tokens": 1765,
+      "cached": 1340,
+      "output_tokens": 96
+    },
+    "item19": {
+      "cost_usd": 0.0646,
+      "input_tokens": 11446,
+      "cached": 1340,
+      "output_tokens": 2256,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.1756,
+      "input_tokens": 13564,
+      "cached": 1340,
+      "output_tokens": 9232,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.2695
+}

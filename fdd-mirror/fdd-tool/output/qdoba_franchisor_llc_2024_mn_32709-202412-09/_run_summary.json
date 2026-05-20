@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\qdoba_franchisor_llc_2024_mn_32709-202412-09.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0056,
+      "input_tokens": 2118,
+      "cached": 1340,
+      "output_tokens": 193
+    },
+    "item5": {
+      "cost_usd": 0.0057,
+      "input_tokens": 1368,
+      "cached": 1340,
+      "output_tokens": 349
+    },
+    "item6": {
+      "cost_usd": 0.023,
+      "input_tokens": 3620,
+      "cached": 1340,
+      "output_tokens": 1049
+    },
+    "item7": {
+      "cost_usd": 0.009,
+      "input_tokens": 3671,
+      "cached": 1340,
+      "output_tokens": 104
+    },
+    "item19": {
+      "cost_usd": 0.1307,
+      "input_tokens": 12598,
+      "cached": 1340,
+      "output_tokens": 6438,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.2385,
+      "input_tokens": 19984,
+      "cached": 1340,
+      "output_tokens": 12142,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.4125
+}

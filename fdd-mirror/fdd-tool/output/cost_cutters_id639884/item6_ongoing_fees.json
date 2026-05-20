@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 400,
+  "marketing_fee_pct": 4,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty is tiered: 4% of Gross Revenues for weeks 1\u201352; increases to 6% (or $100/week minimum, ~$400/month) from week 53 through end of term. Advertising Fee is 4% of Gross Revenues but currently only 1% is collected (3% uncollected). Local Advertising Expenditure requires minimum 1% of Gross Revenues spent locally per quarter (currently not collected). Franchisees purchasing existing company-owned or affiliated salons pay 6% (or $100/week minimum) for the entire term. Electronic Communications Fee up to $500/year. Gift Card ACH Monthly Settlement Service Fee of $10/month per bank account.",
+  "raw_excerpt": "Continuing Fees(2)(3) Weeks 1 through 52: 4% of Gross Revenues(3) Week 53 through end of Franchise Agreement Term: 6% of Gross Revenues or $100 per week, whichever is greater\n\nAdvertising Fees(2)(3) 4% of Gross Revenues (currently 1% is collected and 3% is uncollected)\n\nLocal Advertising Expenditure The difference by which 1% of Gross Revenues for the preceding quarter exceeds your actual expenditure toward local advertising for the preceding quarter. Currently this is not collected.",
+  "confidence": 0.93
+}

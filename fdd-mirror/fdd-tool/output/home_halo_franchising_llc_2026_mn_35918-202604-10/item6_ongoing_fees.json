@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": 1000,
+  "tech_fee_monthly": 750,
+  "fee_notes": "Royalty is greater of 5% of Gross Sales or Minimum Weekly Royalty Fee Requirement (tiered by months in operation per territory, from $144/week at 7-12 months to $1,010/week at 73+ months, not imposed first 6 months). Local marketing min is 2% of monthly Gross Sales or $1,000/territory/month. Tech fee up to $750/month. Care Management System fee: $12/client/month, minimum $200/month.",
+  "raw_excerpt": "Royalty: Greater of 5% of Gross Sales or Minimum Weekly Royalty Fee Requirement. Brand Development Fund: 2% of Gross Sales. Technology: Up to $750 per month.",
+  "confidence": 0.97
+}

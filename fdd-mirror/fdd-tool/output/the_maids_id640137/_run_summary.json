@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\wi_scrape\\the_maids_id640137.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0089,
+      "input_tokens": 1913,
+      "cached": 0,
+      "output_tokens": 213
+    },
+    "item5": {
+      "cost_usd": 0.0109,
+      "input_tokens": 1535,
+      "cached": 0,
+      "output_tokens": 421
+    },
+    "item6": {
+      "cost_usd": 0.0274,
+      "input_tokens": 5467,
+      "cached": 0,
+      "output_tokens": 734
+    },
+    "item7": {
+      "cost_usd": 0.0075,
+      "input_tokens": 2008,
+      "cached": 0,
+      "output_tokens": 97
+    },
+    "item19": {
+      "cost_usd": 0.1043,
+      "input_tokens": 14200,
+      "cached": 0,
+      "output_tokens": 4113,
+      "images_sent": 6
+    },
+    "item20": {
+      "cost_usd": 0.2179,
+      "input_tokens": 16553,
+      "cached": 0,
+      "output_tokens": 11217,
+      "images_sent": 7
+    }
+  },
+  "total_cost_usd": 0.377
+}

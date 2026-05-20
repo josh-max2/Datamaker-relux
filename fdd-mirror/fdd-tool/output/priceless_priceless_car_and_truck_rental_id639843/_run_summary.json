@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\wi_scrape\\priceless_priceless_car_and_truck_rental_id639843.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0095,
+      "input_tokens": 2202,
+      "cached": 0,
+      "output_tokens": 194
+    },
+    "item5": {
+      "cost_usd": 0.0163,
+      "input_tokens": 3301,
+      "cached": 0,
+      "output_tokens": 424
+    },
+    "item6": {
+      "cost_usd": 0.0383,
+      "input_tokens": 7442,
+      "cached": 0,
+      "output_tokens": 1065
+    },
+    "item7": {
+      "cost_usd": 0.0077,
+      "input_tokens": 2050,
+      "cached": 0,
+      "output_tokens": 100
+    },
+    "item19": {
+      "cost_usd": 0.06,
+      "input_tokens": 12079,
+      "cached": 0,
+      "output_tokens": 1582,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.0851,
+      "input_tokens": 9192,
+      "cached": 0,
+      "output_tokens": 3833,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.2168
+}

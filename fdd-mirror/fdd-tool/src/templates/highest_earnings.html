@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Highest Reported Earnings — {{ category_label }} Franchises ({{ filing_year_window }} FDDs){% endblock %}
+{% block description %}{{ brands|length }} {{ category_label|lower }} franchise brands ranked by the headline revenue figure they disclosed in their most recent Item 19 — with cohort labels, sample sizes, and source-FDD links. Not an editorial ranking.{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": category_label, "url": url_for('category/' ~ category_slug ~ '/')},
+    {"label": "Highest reported earnings", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Highest Reported Earnings — {{ category_label }} Franchises",
+  "description": "{{ brands|length }} {{ category_label|lower }} franchise brands ranked by reported revenue from their most recent Item 19 disclosure.",
+  "url": "{{ canonical_url }}",
+  "isPartOf": { "@type": "WebSite", "name": "{{ site_name }}", "url": "{{ SITE_HOST }}{{ url_for('') }}" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ brands|length }},
+    "itemListElement": [
+      {% for b in brands %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "url": "{{ SITE_HOST }}{{ url_for('franchise/' ~ b.slug ~ '/') }}",
+        "name": {{ (b.brand_name or b.legal_name)|tojson }}
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+{% endblock %}
+{% block content %}
+<article>
+    <header>
+        <h1>Highest reported earnings — {{ category_label }} franchises</h1>
+        <p class="lead">
+            {{ brands|length }} {{ category_label|lower }} franchise brands that disclose <a class="jargon" href="{{ url_for('methodology/') }}#g-item19" title="See glossary">Item 19</a> financial performance, ranked by their headline reported revenue from their most recent FDD. Cohort labels are shown so you know what's being compared. <strong>This is not a profitability ranking</strong> — most franchisors report revenue, not net profit, so this page reflects what they chose to disclose.
+        </p>
+        <p class="byline">
+            <span class="dateline">Page updated {{ generated_at }}</span>
+        </p>
+    </header>
+
+    <section class="callout">
+        <p><strong>How to read this ranking honestly:</strong></p>
+        <ul>
+            <li>Brands are ranked by the <strong>most representative number they disclosed</strong> — preferring all-franchised cohorts over performance-anchored ones (Top 10% / Top 25%).</li>
+            <li>When a brand only discloses for a top-performer cohort, we say so in the Cohort column. Those numbers describe top performers, not typical buyers.</li>
+            <li><strong>Revenue is not profit.</strong> A $1M revenue outlet with 4% margin nets $40K. The same revenue at 18% margin nets $180K. The franchisor decides whether to disclose the profit side.</li>
+            <li>Item 19 disclosure is voluntary. Brands not on this list either don't disclose Item 19 at all, or disclose only non-revenue metrics. <a href="{{ url_for('guides/understanding-item-19/') }}">Read the Item 19 guide</a> for context.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ranked by reported revenue</h2>
+        <p class="notes">Click any header to re-sort. Click a brand name for the full Item 19 table + every cohort the franchisor disclosed.</p>
+        <div class="table-scroll">
+        <table class="data-table sortable-table" id="earnings-table">
+            <thead>
+                <tr>
+                    <th data-sort="text">Rank</th>
+                    <th data-sort="text">Brand</th>
+                    <th data-sort="num">Reported {{ "Revenue" if true else "" }}</th>
+                    <th data-sort="text">Metric</th>
+                    <th data-sort="text">Cohort</th>
+                    <th data-sort="num">Outlets</th>
+                    <th data-sort="num">FDD year</th>
+                    <th data-sort="text">Source</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for b in brands %}
+                <tr>
+                    <td data-value="{{ loop.index }}">{{ loop.index }}</td>
+                    <td><a href="{{ url_for('franchise/' ~ b.slug ~ '/') }}">{{ b.brand_name or b.legal_name }}</a></td>
+                    <td data-value="{{ b.value }}"><strong>${{ '{:,.0f}'.format(b.value) }}</strong> <span class="th-note">({{ b.value_label|lower }})</span></td>
+                    <td>{{ b.metric_raw }}</td>
+                    <td>
+                        {{ b.cohort_raw }}
+                        {% if b.cohort_name == 'performance_anchored' %}
+                            <span class="th-note">⚠ top-performer cohort</span>
+                        {% endif %}
+                    </td>
+                    <td data-value="{{ b.outlet_count or 0 }}">{% if b.outlet_count %}{{ b.outlet_count }}{% else %}—{% endif %}</td>
+                    <td data-value="{{ b.filing_year or 0 }}">{{ b.filing_year or '—' }}</td>
+                    <td>
+                        {% if b.page_number and b.source_url %}
+                            <a href="{{ source_url_for_record(b.source_url, b.page_number) }}" rel="nofollow">{{ b.filing_state }} p.{{ b.page_number }}</a>
+                        {% elif b.source_url %}
+                            <a href="{{ b.source_url }}" rel="nofollow">{{ b.filing_state }} FDD</a>
+                        {% else %}—{% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>What this page does not tell you</h2>
+        <p>
+            This page ranks brands by <em>reported revenue from a single cohort</em>. Reasonable next questions a buyer should ask before drawing conclusions:
+        </p>
+        <ul>
+            <li><strong>What does net profit look like at that revenue?</strong> Apply industry-typical margins, or look for a brand that discloses net margin. See each brand's <a class="jargon" href="{{ url_for('methodology/') }}#g-breakeven" title="See glossary">arithmetic breakeven scenario</a> on its brand page.</li>
+            <li><strong>What's the cost to reach that revenue?</strong> Compare against <a class="jargon" href="{{ url_for('methodology/') }}#g-item7" title="See glossary">Item 7</a> total investment.</li>
+            <li><strong>What's the distribution?</strong> Item 19 medians can mask wide variance. Quartile data (P25 / P75) tells you whether the median is realistic for new franchisees.</li>
+            <li><strong>How many outlets are in the cohort?</strong> Small samples (under 10 outlets) have high noise.</li>
+            <li><strong>What did current franchisees actually earn?</strong> Use the <a href="{{ url_for('guides/validating-franchisee-earnings/') }}">validation-call playbook</a> to ask real franchisees in Item 20 directly.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Methodology</h2>
+        <p>
+            For each brand, we picked the most representative revenue figure following this preference order:
+        </p>
+        <ol>
+            <li><strong>Broad cohort</strong> first: <code>all_franchised</code> → <code>all_company_owned</code> → tenure-based (<code>open_X_plus_mo</code>) → top-performer (<code>performance_anchored</code>)</li>
+            <li><strong>Metric:</strong> <code>gross_sales</code> preferred over <code>total_revenue</code> (gross sales is more comparable across brands)</li>
+            <li><strong>Statistic:</strong> median preferred over average (less skewed by top performers)</li>
+        </ol>
+        <p>
+            When only a top-performer cohort was disclosed, we used it but flagged it. See the <a href="{{ url_for('methodology/') }}">methodology page</a> for the full extraction pipeline and the <a href="{{ url_for('guides/understanding-item-19/') }}">Item 19 guide</a> for cohort interpretation.
+        </p>
+    </section>
+</article>
+
+<script>
+// Sortable table (same pattern as category/state pages)
+(function() {
+    const table = document.getElementById('earnings-table');
+    if (!table) return;
+    const tbody = table.querySelector('tbody');
+    const headers = table.querySelectorAll('th[data-sort]');
+    let currentCol = -1, asc = true;
+    headers.forEach((h, idx) => {
+        h.style.cursor = 'pointer';
+        h.addEventListener('click', () => {
+            if (currentCol === idx) asc = !asc; else { currentCol = idx; asc = (idx === 2 ? false : true); }
+            const rows = Array.from(tbody.rows);
+            const type = h.dataset.sort;
+            rows.sort((a, b) => {
+                let av = a.cells[idx].dataset.value ?? a.cells[idx].innerText;
+                let bv = b.cells[idx].dataset.value ?? b.cells[idx].innerText;
+                if (type === 'num') {
+                    av = parseFloat(av) || 0; bv = parseFloat(bv) || 0;
+                    return asc ? av - bv : bv - av;
+                }
+                av = String(av).toLowerCase(); bv = String(bv).toLowerCase();
+                return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+            });
+            rows.forEach(r => tbody.appendChild(r));
+            headers.forEach(x => x.querySelector('.sort-ind')?.remove());
+            const ind = document.createElement('span');
+            ind.className = 'sort-ind'; ind.textContent = asc ? ' ▲' : ' ▼';
+            h.appendChild(ind);
+        });
+    });
+})();
+</script>
+{% endblock %}

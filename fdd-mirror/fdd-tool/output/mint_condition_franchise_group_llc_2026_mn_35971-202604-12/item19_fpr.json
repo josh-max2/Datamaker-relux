@@ -1,0 +1,91 @@
+{
+  "has_item19": true,
+  "confidence": 0.92,
+  "notes": "Master franchise FDD. Reports fiscal year 2025 gross profits for 14 master franchise territories. Data split into System-Wide, Top 50%, and Bottom 50% cohorts. Charlotte NC (*) is company-owned. Two master franchises excluded for <1 year operation.",
+  "records": [
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Total Gross Billings",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "System-Wide (all 14 master franchises, fiscal year 2025)",
+      "outlet_count": 14,
+      "reporting_period": "January 1, 2025 to December 31, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1496234,
+      "value_median": 1115755,
+      "page_number": 39
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Total Gross Profit",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "System-Wide (all 14 master franchises, fiscal year 2025)",
+      "outlet_count": 14,
+      "reporting_period": "January 1, 2025 to December 31, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 480327,
+      "value_median": 316718,
+      "page_number": 39
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Total Gross Billings",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Top 50% (7 highest-performing master franchises)",
+      "outlet_count": 7,
+      "reporting_period": "January 1, 2025 to December 31, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 2600539,
+      "value_median": 2442783,
+      "page_number": 39
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Total Gross Profits",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Top 50% (7 highest-performing master franchises)",
+      "outlet_count": 7,
+      "reporting_period": "January 1, 2025 to December 31, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 825107,
+      "value_median": 751012,
+      "page_number": 39
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Total Gross Billings",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Bottom 50% (7 lowest-performing master franchises)",
+      "outlet_count": 7,
+      "reporting_period": "January 1, 2025 to December 31, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 391928,
+      "value_median": 436231,
+      "page_number": 40
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Total Gross Profit",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Bottom 50% (7 lowest-performing master franchises)",
+      "outlet_count": 7,
+      "reporting_period": "January 1, 2025 to December 31, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 135547,
+      "value_median": 121829,
+      "page_number": 40
+    }
+  ]
+}

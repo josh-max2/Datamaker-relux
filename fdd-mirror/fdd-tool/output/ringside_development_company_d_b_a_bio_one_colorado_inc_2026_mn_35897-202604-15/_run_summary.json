@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\ringside_development_company_d_b_a_bio_one_colorado_inc_2026_mn_35897-202604-15.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0052,
+      "input_tokens": 1861,
+      "cached": 1340,
+      "output_tokens": 218
+    },
+    "item5": {
+      "cost_usd": 0.0077,
+      "input_tokens": 2297,
+      "cached": 1340,
+      "output_tokens": 296
+    },
+    "item6": {
+      "cost_usd": 0.0203,
+      "input_tokens": 4675,
+      "cached": 1340,
+      "output_tokens": 658
+    },
+    "item7": {
+      "cost_usd": 0.0038,
+      "input_tokens": 2042,
+      "cached": 1340,
+      "output_tokens": 87
+    },
+    "item19": {
+      "cost_usd": 0.1082,
+      "input_tokens": 8126,
+      "cached": 1340,
+      "output_tokens": 5828,
+      "images_sent": 3
+    },
+    "item20": {
+      "cost_usd": 0.2279,
+      "input_tokens": 17383,
+      "cached": 1340,
+      "output_tokens": 11958,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3731
+}

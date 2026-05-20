@@ -1,0 +1,38 @@
+{
+  "pdf": "data\\mn_scrape\\living_assistance_services_inc_2026_mn_36131-202604-14.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0052,
+      "input_tokens": 1835,
+      "cached": 1340,
+      "output_tokens": 222
+    },
+    "item5": {
+      "cost_usd": 0.0064,
+      "input_tokens": 1597,
+      "cached": 1340,
+      "output_tokens": 347
+    },
+    "item6": {
+      "cost_usd": 0.0379,
+      "input_tokens": 8179,
+      "cached": 1340,
+      "output_tokens": 1134
+    },
+    "item7": {
+      "cost_usd": 0.0055,
+      "input_tokens": 2608,
+      "cached": 1340,
+      "output_tokens": 89
+    },
+    "item19": {
+      "cost_usd": 0.13,
+      "input_tokens": 7530,
+      "cached": 1340,
+      "output_tokens": 7402,
+      "images_sent": 3
+    }
+  },
+  "total_cost_usd": 0.1851
+}

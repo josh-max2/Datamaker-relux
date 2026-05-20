@@ -1,0 +1,7 @@
+{
+  "total_investment_low": 353500,
+  "total_investment_high": 2807500,
+  "raw_excerpt": "Total (Cleaning Facility) $558,500 $2,807,500; Total (Retail Store) $353,500 $1,179,000",
+  "notes": "Two formats: Cleaning Facility ($558,500-$2,807,500) and Retail Store ($353,500-$1,179,000). Low uses Retail Store low; high uses Cleaning Facility high.",
+  "confidence": 0.95
+}

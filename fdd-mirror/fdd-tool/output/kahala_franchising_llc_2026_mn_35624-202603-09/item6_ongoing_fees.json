@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 0.5,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 75,
+  "fee_notes": "Royalty: greater of 6% weekly gross sales or $150/week for traditional; 6% with no minimum for non-traditional; LA Fitness locations pay flat $750/month (3% annual increase). Advertising: currently 0.5% of weekly gross sales (max 4%); Blimpie/Walmart co-branded NrGize: 2%; LA Fitness locations: 0%. Data/tech fee up to $75/month. POS help desk $55/month.",
+  "raw_excerpt": "Royalty Fee is the greater of the following: (i) 6% of total weekly Gross Sales or (ii) $150 per week. Surcharge is a maximum of $10 per week in addition to the Royalty Fee. Currently, Advertising Fee is .5% of weekly Gross Sales...up to 4% of weekly Gross Sales.",
+  "confidence": 0.93
+}

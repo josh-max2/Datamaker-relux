@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 25000,
+  "initial_franchise_fee_high": null,
+  "fee_notes": "Fee is calculated at $0.15 per person within the Territory, with a minimum of $25,000. No upper cap is stated; the fee scales with Territory population. The fee is fully earned and non-refundable upon payment. No renewal fee is currently charged.",
+  "raw_excerpt": "You are required to pay an initial franchise fee upon signing the Franchise Agreement of $0.15 per person within the Territory identified in the Franchise Agreement with a minimum initial franchise fee of $25,000. The Initial Franchise Fee is deemed fully earned and non-refundable upon payment.",
+  "confidence": 0.82
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\tint_world_llc_2026_mn_36105-202604-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0066,
+      "input_tokens": 2291,
+      "cached": 1340,
+      "output_tokens": 226
+    },
+    "item5": {
+      "cost_usd": 0.0087,
+      "input_tokens": 2425,
+      "cached": 1340,
+      "output_tokens": 338
+    },
+    "item6": {
+      "cost_usd": 0.0186,
+      "input_tokens": 4094,
+      "cached": 1340,
+      "output_tokens": 665
+    },
+    "item7": {
+      "cost_usd": 0.0228,
+      "input_tokens": 8145,
+      "cached": 1340,
+      "output_tokens": 130
+    },
+    "item19": {
+      "cost_usd": 0.1748,
+      "input_tokens": 17697,
+      "cached": 1340,
+      "output_tokens": 8356,
+      "images_sent": 7
+    },
+    "item20": {
+      "cost_usd": 0.1888,
+      "input_tokens": 17658,
+      "cached": 1340,
+      "output_tokens": 9297,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.4204
+}

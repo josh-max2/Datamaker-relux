@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 4.5,
+  "royalty_min_monthly": 1500,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 1300,
+  "fee_notes": "Royalty tiered: 4.5% on $0\u2013$700k gross revenues, 4.0% on $700k\u2013$1.4M, 3.5% on $1.4M\u2013$2.1M, 3.0% on $2.1M\u2013$2.8M, 2.5% on amounts over $2.8M. Minimum annual royalties escalate from $18,000 year 1 to $58,000 year 6. Computer Software Maintenance $0\u2013$15,600 annually depending on Office/Field Users (example: $1,300/month for 4 office + 16 field users). Transfer fee $5,000, audit fees at cost if 2%+ understatement, liquidated damages $65,000 upon termination.",
+  "raw_excerpt": "Royalty Fee Between 2.5% and 4.5% of Gross Revenues based on your total Gross Revenues (see Schedule in Note 1), subject to Minimum Royalty Fees (see Note 2). Payable monthly within 30 days following end of month During each Agreement Year you will pay not less than the Minimum Royalty Fee stated in the schedule. Monthly Royalty 4.5% - On $ 0 to $ 700,000 of Gross Revenues; plus 4.0% - On $ 700,001 to $1,400,000 of Gross Revenues; plus 3.5% - On $1,400,001 to $2,100,000 of Gross Revenues; plus 3.0% - On $2,100,001 to $2,800,000 of Gross Revenues; plus 2.5% - On all Gross Reve nues in excess of $2,800,000.",
+  "confidence": 0.93
+}

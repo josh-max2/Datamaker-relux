@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 8,
+  "royalty_min_monthly": 1000,
+  "marketing_fee_pct": 1.5,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 490,
+  "fee_notes": "Monthly Branding Royalty: 8% for $0-$499,999 YTD revenue; 7% for $500k-$999,999; 6% for $1M-$1.499,999; 5% for $1.5M+, tiered for first 24 months, then greater of tiered amount or $1,000 minimum. National Branding & Marketing Fee 1.5% on first $1.5M revenue annually. Digital Marketing Fee $300-$400/month. Technology Fee $490/month (up to $1,000) for CRM, intranet, email, Google Workspace, QuickBooks. Individual Advertising Investment minimum $40,000-$60,000/year to third parties. Bookkeeping Services $350/month if elected (required first 2 years). Transfer Fee $10,000. Successor Franchise Fee $4,950 or 10% of then-current fee (greater). Various other fees for audits, training, late reports, equipment upgrades, seminars.",
+  "raw_excerpt": "Monthly Branding Royalty: Year-to-Date Gross Revenue $0-$499,999 = 8%; $500,000-$999,999 = 7%; $1,000,000-$1,499,999 = 6%; $1,500,000+ = 5%. Beginning on 24-month anniversary, greater of tiered amount or $1,000 minimum. National Branding & Marketing Fee 1.5% on first $1,500,000 of Gross Revenues. Digital Marketing Fee currently $300/month, up to $400/month. Technology Fee currently $490/month, up to $1,000/month.",
+  "confidence": 0.92
+}

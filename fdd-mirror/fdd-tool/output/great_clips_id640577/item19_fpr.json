@@ -1,0 +1,172 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "other",
+      "metric_raw": "Service Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All 4,158 salons open entire 2025 period",
+      "outlet_count": 4158,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 400667,
+      "value_median": 381782,
+      "value_min": 27439,
+      "value_max": 1037494,
+      "pct_above_avg": 44.35,
+      "page_number": 61
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Product Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All 4,158 salons open entire 2025 period",
+      "outlet_count": 4158,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 10116,
+      "value_median": 8484,
+      "value_min": 0,
+      "value_max": 86446,
+      "pct_above_avg": 38.7,
+      "page_number": 61
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Total Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All 4,158 salons open entire 2025 period",
+      "outlet_count": 4158,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 410783,
+      "value_median": 390685,
+      "value_min": 28036,
+      "value_max": 1082803,
+      "pct_above_avg": 44.44,
+      "page_number": 61
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Service Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "Reporting 2025 Salons (2,376 with complete financial data)",
+      "outlet_count": 2376,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 411368,
+      "value_median": 390960,
+      "page_number": 62
+    },
+    {
+      "metric_name": "other",
+      "metric_raw": "Product Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "Reporting 2025 Salons (2,376 with complete financial data)",
+      "outlet_count": 2376,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 10914,
+      "value_median": 9218,
+      "page_number": 62
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Total Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "Reporting 2025 Salons (2,376 with complete financial data)",
+      "outlet_count": 2376,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 422283,
+      "value_median": 402271,
+      "page_number": 62
+    },
+    {
+      "metric_name": "net_profit",
+      "metric_raw": "Operating Cash Flow",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "Reporting 2025 Salons (2,376 with complete financial data)",
+      "outlet_count": 2376,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 83504,
+      "value_median": 75896,
+      "page_number": 62
+    },
+    {
+      "metric_name": "net_profit",
+      "metric_raw": "Operating Cash Flow",
+      "cohort_name": "other",
+      "cohort_raw": "<$250k annual sales",
+      "outlet_count": 188,
+      "reporting_period": "2025 calendar year",
+      "value_avg": -5248,
+      "page_number": 63
+    },
+    {
+      "metric_name": "net_profit",
+      "metric_raw": "Operating Cash Flow",
+      "cohort_name": "other",
+      "cohort_raw": "$250-$300k annual sales",
+      "outlet_count": 268,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 23321,
+      "page_number": 63
+    },
+    {
+      "metric_name": "net_profit",
+      "metric_raw": "Operating Cash Flow",
+      "cohort_name": "other",
+      "cohort_raw": "$300-$350k annual sales",
+      "outlet_count": 354,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 46711,
+      "page_number": 63
+    },
+    {
+      "metric_name": "net_profit",
+      "metric_raw": "Operating Cash Flow",
+      "cohort_name": "other",
+      "cohort_raw": "$350-$400k annual sales",
+      "outlet_count": 368,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 68492,
+      "page_number": 63
+    },
+    {
+      "metric_name": "net_profit",
+      "metric_raw": "Operating Cash Flow",
+      "cohort_name": "other",
+      "cohort_raw": "$400-$450k annual sales",
+      "outlet_count": 333,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 82502,
+      "page_number": 63
+    },
+    {
+      "metric_name": "net_profit",
+      "metric_raw": "Operating Cash Flow",
+      "cohort_name": "other",
+      "cohort_raw": "$450-$500k annual sales",
+      "outlet_count": 250,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 106798,
+      "page_number": 63
+    },
+    {
+      "metric_name": "net_profit",
+      "metric_raw": "Operating Cash Flow",
+      "cohort_name": "other",
+      "cohort_raw": "$500-$600k annual sales",
+      "outlet_count": 341,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 133950,
+      "page_number": 63
+    },
+    {
+      "metric_name": "net_profit",
+      "metric_raw": "Operating Cash Flow",
+      "cohort_name": "other",
+      "cohort_raw": ">$600k annual sales",
+      "outlet_count": 274,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 188148,
+      "page_number": 63
+    }
+  ],
+  "confidence": 0.9
+}

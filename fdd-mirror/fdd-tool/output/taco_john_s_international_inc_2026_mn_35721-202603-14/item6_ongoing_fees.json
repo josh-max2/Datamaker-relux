@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 4,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": null,
+  "fee_notes": "Royalty is 5% of Net Sales, due 20th of each month. Advertising and Marketing Fee is currently 4% of Net Sales for traditional Restaurants and 2% for non-traditional Restaurants (maximums of 4.25% and 2.25% respectively during Initial Term). Financial Reporting System Fee currently none, capped at $15/month when implemented. Online Learning Management System License Fee currently $240 annually. ADA Extension Fee is 4.5% of monthly average system-wide sales if Development Schedule not met (up to 13 months).",
+  "raw_excerpt": "Royalty 5% of Net Sales Currently due on the 20th day of each month\nAdvertising and Marketing Fees Currently, 4% of Net Sales for traditional Restaurants / Currently, 2% of Net Sales for non-traditional Restaurants Payable at the same time as the Royalty\nFinancial Reporting System Fee Then-current fee Currently, none As incurred (not to exceed $15 per month when initially implemented)\nOnline Learning Management System License Fee Then-current fee Currently, $240 Annually\nExtension Fee 4.5% of the monthly average system-wide sales of both franchised and company-owned outlets in the prior month Due on the 20th of each month",
+  "confidence": 0.92
+}

@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 150,
+  "fee_notes": "Royalty Fee is 5% of biweekly Gross Sales plus a maximum Surcharge of $10/week (currently only applies in NY for additional reporting requirements). Non-traditional locations: 5% royalty with no minimum and no surcharge. Advertising Fee is currently 2% of biweekly Gross Sales (up to 5% maximum); an additional 1% goes to Regional/Cooperative Fund where applicable. Tech/Data Fee is up to $150/month for POS data polling \u2014 currently not charged per Note 6. POS Help Desk Phone Support Maintenance Contract Fee is $55/month. In default/breach, royalties may be increased up to 18% of Gross Sales or 3x the fixed royalty fee. Management Fee of 6% of Gross Sales applies only if franchisor assumes management of the business.",
+  "raw_excerpt": "Royalty Fee and Surcharge (Notes 1 and 9): Royalty Fee is 5% of total biweekly Gross Sales plus a maximum Surcharge of $10 per week (Note 2). Due: Withdrawn electronically from your Depository Account every other Friday (Note 3).\n\nAdvertising Fees (Note 1): Up to 5% of biweekly Gross Sales - Currently, Advertising Fee is 2% of biweekly Gross Sales. Due: Same as Royalty Fee (Note 3). Remarks: Currently, Advertising Fee is 2% of biweekly Gross Sales, which goes to the National Fund. In addition, if a cooperative advertising association exists where the Franchised Business is located, an additional 1% goes to the Regional Fund for your Cooperative (Note 4).\n\nData Fees (Notes 1 and 6): Up to $150 per month (Subject to reasonable annual and/or service enhancement increases). Due: Same as Royalty. Remarks: POS, cloud storage, support and Fee for collecting or polling data from your POS System.\n\nPOS Help Desk Phone Support Maintenance Contract Fee (Note 10): $55 per month. Due: Last Thursday of each month.",
+  "confidence": 0.88
+}

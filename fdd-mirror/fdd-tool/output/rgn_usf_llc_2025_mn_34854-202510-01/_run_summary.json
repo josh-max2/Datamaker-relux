@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\rgn_usf_llc_2025_mn_34854-202510-01.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0055,
+      "input_tokens": 1993,
+      "cached": 1340,
+      "output_tokens": 206
+    },
+    "item5": {
+      "cost_usd": 0.0037,
+      "input_tokens": 1432,
+      "cached": 1340,
+      "output_tokens": 204
+    },
+    "item6": {
+      "cost_usd": 0.0223,
+      "input_tokens": 5928,
+      "cached": 1340,
+      "output_tokens": 540
+    },
+    "item7": {
+      "cost_usd": 0.0087,
+      "input_tokens": 3535,
+      "cached": 1340,
+      "output_tokens": 117
+    },
+    "item19": {
+      "cost_usd": 0.099,
+      "input_tokens": 9579,
+      "cached": 1340,
+      "output_tokens": 4927,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.074,
+      "input_tokens": 13701,
+      "cached": 1340,
+      "output_tokens": 2435,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.2132
+}

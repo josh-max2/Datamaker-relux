@@ -1,0 +1,72 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2025,
+      "outlet_type": "franchised",
+      "outlets_start": 0,
+      "outlets_end": 0,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 0,
+      "outlets_end": 1,
+      "net_change": 1
+    },
+    {
+      "year": 2025,
+      "outlet_type": "company-owned",
+      "outlets_start": 1,
+      "outlets_end": 4,
+      "net_change": 3
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 0,
+      "outlets_end": 1,
+      "net_change": 1
+    },
+    {
+      "year": 2025,
+      "outlet_type": "total",
+      "outlets_start": 1,
+      "outlets_end": 4,
+      "net_change": 3
+    }
+  ],
+  "state_year_status": [
+    {
+      "year": 2024,
+      "state": "TOTAL",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2025,
+      "state": "TOTAL",
+      "outlets_start": 0,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    }
+  ],
+  "confidence": 0.97,
+  "notes": "No franchised outlets exist as of end of 2025. Company-owned outlets: Nevada 2024 opened 1 (end=1 per Table 4 note: outlets_end shown as 0 but Table 1 shows 1 \u2014 Table 1 used as authoritative). Table 4 shows Nevada 2025 opened 2 more for end=3; Total 2025 end=4 per Table 1 (Table 4 shows Total 2025 end=4). Royalty range low set to 6% as minimum disclosed."
+}

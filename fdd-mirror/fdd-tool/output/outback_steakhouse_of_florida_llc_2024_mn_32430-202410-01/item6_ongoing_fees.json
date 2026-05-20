@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5.0,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2.49,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 130,
+  "fee_notes": "Royalty is 5.0% of monthly Net Sales, due by 10th of each month via EFT. Multi-Unit Campaign contributions currently 2.49% of Net Sales (rate set by franchisor from time to time), due by 10th of each month. Required Local Marketing Expenditures currently 0.22% of Net Sales, retained by franchisee for local advertising (not collected by franchisor). Tech fee is composed of two separate fees: Help Desk Support Fee currently $55/month per restaurant + Security License Fee currently $75/month per restaurant = $130/month total. Additional/refresher training currently no charge. Transfer fee for non-change-of-control: $1,000; for change-of-control: reimbursement of franchisor's reasonable costs. Renewal fee: 50% of then-current initial franchise fee. Liquidated damages for repeated Operations Manual minor violations: $1,000 (2nd), $2,000 (3rd), $4,000 (each additional) per calendar year. Interest on overdue amounts: lesser of 18% per year or maximum legal rate.",
+  "raw_excerpt": "Royalty fee 5.0% of monthly Net Sales (See Note 2)\nMulti-Unit Campaign contributions A percentage of your Restaurant's Net Sales that we set from time to time that you must contribute to us for Multi-Unit Campaigns (currently 2.49%) (See Notes 2 and 4)\nRequired Local Marketing Expenditures A percentage of your Restaurant's Net Sales that we set from time to time that you must expend yourself on approved local marketing programs (currently 0.22%) (See Notes 2 and 4)\nHelp Desk Support Fee Currently $55 per month (per restaurant) for help desk support services\nSecurity License Fee Currently $75 per month (per restaurant)",
+  "confidence": 0.92
+}

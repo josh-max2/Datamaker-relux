@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\venture_x_franchising_llc_2025_mn_35501-202603-07.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.007,
+      "input_tokens": 2391,
+      "cached": 1340,
+      "output_tokens": 231
+    },
+    "item5": {
+      "cost_usd": 0.0115,
+      "input_tokens": 2818,
+      "cached": 1340,
+      "output_tokens": 444
+    },
+    "item6": {
+      "cost_usd": 0.0142,
+      "input_tokens": 2605,
+      "cached": 1340,
+      "output_tokens": 668
+    },
+    "item7": {
+      "cost_usd": 0.0116,
+      "input_tokens": 4614,
+      "cached": 1340,
+      "output_tokens": 89
+    },
+    "item19": {
+      "cost_usd": 0.097,
+      "input_tokens": 12624,
+      "cached": 1340,
+      "output_tokens": 4182,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.1051,
+      "input_tokens": 11295,
+      "cached": 1340,
+      "output_tokens": 4986,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.2463
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\lifestyle_publications_llc_2026_mn_36250-202604-08.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0052,
+      "input_tokens": 1856,
+      "cached": 1340,
+      "output_tokens": 220
+    },
+    "item5": {
+      "cost_usd": 0.0088,
+      "input_tokens": 3028,
+      "cached": 1340,
+      "output_tokens": 225
+    },
+    "item6": {
+      "cost_usd": 0.0166,
+      "input_tokens": 3068,
+      "cached": 1340,
+      "output_tokens": 736
+    },
+    "item7": {
+      "cost_usd": 0.0045,
+      "input_tokens": 2278,
+      "cached": 1340,
+      "output_tokens": 87
+    },
+    "item19": {
+      "cost_usd": 0.214,
+      "input_tokens": 14298,
+      "cached": 1340,
+      "output_tokens": 11647,
+      "images_sent": 6
+    },
+    "item20": {
+      "cost_usd": 0.1986,
+      "input_tokens": 17812,
+      "cached": 1340,
+      "output_tokens": 9916,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.4478
+}

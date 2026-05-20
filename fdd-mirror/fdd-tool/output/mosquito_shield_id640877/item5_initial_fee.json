@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 54500,
+  "initial_franchise_fee_high": 54500,
+  "fee_notes": "Fee shown is for single territory (Territory 1). Fee structure is tiered by number of territories: Territory 1=$54,500; Territory 2=$45,000; Territory 3=$35,000; Territory 4=$34,500; etc., down to Territory 10=$23,500. Each territory contains approximately 80,000 single-family homes. Franchisor may allow larger territories at $1.00 per additional single-family home over 80,000. Full initial franchise fee is fully earned and non-refundable.",
+  "raw_excerpt": "Territory Number 1 Initial Franchise Fee $54,500 Cumulative Initial Franchise Fee $54,500. Each territory contains approximately 80,000 single-family homes.",
+  "confidence": 0.98
+}

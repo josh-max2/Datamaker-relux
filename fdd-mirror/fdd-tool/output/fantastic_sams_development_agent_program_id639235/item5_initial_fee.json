@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 35000,
+  "initial_franchise_fee_high": 75000,
+  "fee_notes": "The DA Fee is calculated as $0.05 multiplied by the total population of the DA Territory, paid in a lump sum upon execution of the Development Agent Agreement. The DA Territory typically comprises a population in the range of 700,000 to 1,500,000, resulting in a fee range of $35,000 to $75,000. The fee is fully earned upon execution and is non-refundable.",
+  "raw_excerpt": "Your DA Fee will be an amount equal to $0.05 multiplied by the total population of the DA Territory. Typically, the DA Territory will comprise of population in the range of 700,000 to 1,500,000. Therefore, in such circumstances, the DA Fee will be in the range of $35,000 to $75,000. The DA Fee is fully earned by us upon our execution of the Development Agent Agreement.",
+  "confidence": 0.97
+}

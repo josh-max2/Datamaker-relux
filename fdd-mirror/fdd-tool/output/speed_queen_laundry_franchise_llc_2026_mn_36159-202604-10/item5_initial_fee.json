@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 15000,
+  "initial_franchise_fee_high": 49500,
+  "fee_notes": "Fee varies by store type (Traditional vs. Small Footprint) and by number of units opened. Traditional Store: 1st unit $49,500, 2nd unit $30,000, 3rd and additional $20,000. Small Footprint Store: 1st unit $25,000, 2nd unit $20,000, 3rd and additional $15,000. If an Area Development Agreement is signed, the Initial Area Development Fee equals the full Initial Franchise Fee per store (e.g., 3-unit Traditional ADA = $99,500; 3-unit Small Footprint ADA = $60,000), with credits applied against each store's Initial Franchise Fee. Fee is paid in a lump sum at signing of the Franchise Agreement and is generally non-refundable except if no site is approved within six months.",
+  "raw_excerpt": "The initial franchise fee is as follows:\nNumber of Traditional Stores | Traditional Store \u2013 Initial Franchise Fee\n1st $49,500\n2nd $30,000\n3rd and Additional $20,000\n\nFor Small Footprint Stores, we reduce the initial franchise fee as follows:\nNumber of Small Footprint Stores | Small Footprint Store- Initial Franchise Fee\n1st $25,000\n2nd $20,000\n3rd and Additional $15,000",
+  "confidence": 0.95
+}

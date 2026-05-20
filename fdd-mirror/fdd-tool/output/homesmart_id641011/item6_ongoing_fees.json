@@ -1,0 +1,10 @@
+{
+  "royalty_pct": null,
+  "royalty_min_monthly": 500,
+  "marketing_fee_pct": 4,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 250,
+  "fee_notes": "Royalty structure is complex: greater of (i) $12/agent/month + $120/completed side or (ii) $500/month, plus $25/rental/referral/lease fee. Marketing accrual fund 4% of flat fee transactions (incorporated in flat fee model). Technology fee $250/month per RealSmart Broker system instance. MLS/RETS fee est. $250/month. Annual Membership Fee anticipated but not yet established, charged per agent.",
+  "raw_excerpt": "Royalty Fees: The Royalty Fee you pay us is calculated as: (A) The greater of the collective total of: (i) $12 per agent per month; plus $120 per completed side; or (ii) $500 per month, and (B) $25 per rental, referral, or lease fee collected by Broker... Technology Fee: Currently $250 per month per System Instance of the \"RealSmart BrokerTM\" but we reserve the right to increase this amount at any time.",
+  "confidence": 0.85
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\fazoli_s_franchising_systems_llc_2025_mn_35446-202603-03.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0052,
+      "input_tokens": 1729,
+      "cached": 1340,
+      "output_tokens": 240
+    },
+    "item5": {
+      "cost_usd": 0.0091,
+      "input_tokens": 2261,
+      "cached": 1340,
+      "output_tokens": 397
+    },
+    "item6": {
+      "cost_usd": 0.0171,
+      "input_tokens": 3884,
+      "cached": 1340,
+      "output_tokens": 606
+    },
+    "item7": {
+      "cost_usd": 0.0173,
+      "input_tokens": 6533,
+      "cached": 1340,
+      "output_tokens": 88
+    },
+    "item19": {
+      "cost_usd": 0.1789,
+      "input_tokens": 12688,
+      "cached": 1340,
+      "output_tokens": 9633,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.136,
+      "input_tokens": 9784,
+      "cached": 1340,
+      "output_tokens": 7354,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.3637
+}

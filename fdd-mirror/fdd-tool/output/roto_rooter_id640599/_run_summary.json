@@ -1,0 +1,39 @@
+{
+  "pdf": "data\\wi_scrape\\roto_rooter_id640599.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0084,
+      "input_tokens": 1681,
+      "cached": 0,
+      "output_tokens": 224
+    },
+    "item5": {
+      "cost_usd": 0.0064,
+      "input_tokens": 1198,
+      "cached": 0,
+      "output_tokens": 184
+    },
+    "item6": {
+      "cost_usd": 0.0236,
+      "input_tokens": 3827,
+      "cached": 0,
+      "output_tokens": 805
+    },
+    "item19": {
+      "cost_usd": 0.062,
+      "input_tokens": 20294,
+      "cached": 0,
+      "output_tokens": 73,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.2888,
+      "input_tokens": 19825,
+      "cached": 0,
+      "output_tokens": 15287,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3891
+}

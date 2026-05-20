@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\cpk_franchise_llc_2026_mn_36022-202604-14.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0061,
+      "input_tokens": 2153,
+      "cached": 1340,
+      "output_tokens": 220
+    },
+    "item5": {
+      "cost_usd": 0.0054,
+      "input_tokens": 1602,
+      "cached": 1340,
+      "output_tokens": 283
+    },
+    "item6": {
+      "cost_usd": 0.01,
+      "input_tokens": 1508,
+      "cached": 1340,
+      "output_tokens": 605
+    },
+    "item7": {
+      "cost_usd": 0.0106,
+      "input_tokens": 4238,
+      "cached": 1340,
+      "output_tokens": 103
+    },
+    "item19": {
+      "cost_usd": 0.0347,
+      "input_tokens": 12416,
+      "cached": 1340,
+      "output_tokens": 74,
+      "images_sent": 5
+    },
+    "item20": {
+      "cost_usd": 0.0764,
+      "input_tokens": 11404,
+      "cached": 1340,
+      "output_tokens": 2486,
+      "images_sent": 5
+    }
+  },
+  "total_cost_usd": 0.1434
+}

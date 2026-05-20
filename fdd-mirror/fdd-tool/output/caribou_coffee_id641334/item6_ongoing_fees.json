@@ -1,0 +1,9 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": 500,
+  "marketing_fee_pct": 3,
+  "tech_fee_monthly": 600,
+  "fee_notes": "Cabin and Chalet royalty: 5% of Gross Sales; Kiosk: 6% (4% for airport/university/hospital non-traditional). Minimum royalty $6,000/year ($500/month equivalent). Marketing contribution up to 3% (currently 2% Brand Fund + 1% local). Technology fee estimated $400-$800/store/month.",
+  "raw_excerpt": "Royalty Cabin and Chalet: 5% of Gross Sales Kiosk: 6% of Gross Sales (4% of Gross Sales for Kiosks located in Non-Traditional Facilities that are an airport, university, or hospital location). Marketing Contribution Up to 3% of Gross Sales. Technology Fee approximately $400-$800 per store per month.",
+  "confidence": 0.95
+}

@@ -1,0 +1,8 @@
+{
+  "royalty_pct": 6.5,
+  "royalty_min_monthly": 1500,
+  "marketing_fee_pct": 1,
+  "tech_fee_monthly": 345,
+  "fee_notes": "Royalty tiered: 6.5% ($0\u2013$2M), 5.5% ($2M\u2013$5M), 4.5% (>$5M YTD gross revenue). Min royalty: $1,500 (months 13\u201324), $1,750 (25\u201336), $2,000 (37+). Marketing fee currently 1%, max 2% of gross revenue. Tech fee $345/mo (up to $500). Multiple ongoing fees including bookkeeping $350/mo, technology maintenance, training fees, transfer fee >20% of franchise fee or $10k.",
+  "confidence": 0.98
+}

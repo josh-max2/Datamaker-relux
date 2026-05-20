@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\pizza_ranch_inc_2026_mn_35828-202604-09.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0053,
+      "input_tokens": 1851,
+      "cached": 1340,
+      "output_tokens": 222
+    },
+    "item5": {
+      "cost_usd": 0.0064,
+      "input_tokens": 1697,
+      "cached": 1340,
+      "output_tokens": 331
+    },
+    "item6": {
+      "cost_usd": 0.0102,
+      "input_tokens": 2686,
+      "cached": 1340,
+      "output_tokens": 381
+    },
+    "item7": {
+      "cost_usd": 0.0092,
+      "input_tokens": 3690,
+      "cached": 1340,
+      "output_tokens": 118
+    },
+    "item19": {
+      "cost_usd": 0.1736,
+      "input_tokens": 18983,
+      "cached": 1340,
+      "output_tokens": 8018,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1037,
+      "input_tokens": 12756,
+      "cached": 1340,
+      "output_tokens": 4606,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.3084
+}

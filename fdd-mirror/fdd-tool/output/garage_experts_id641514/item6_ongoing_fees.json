@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 1500,
+  "marketing_fee_pct": 1.5,
+  "marketing_min_monthly": 500,
+  "tech_fee_monthly": 450,
+  "fee_notes": "Royalty: 6% of Gross Sales with tiered reductions (5% at $750k+ annually, 4% at $1.5M+ annually). Minimum monthly royalty varies by territory type and tenure (highest: $1,500 Standard/13+ months). Marketing fee: 1.5% of Gross Sales with tiered minimums by tenure. Technology fee: $450/month first territory, $200 subsequent contiguous, then-current first territory fee for non-contiguous. Additional fees include local advertising (6% gross sales per quarter or $50k year 1), convention attendance ($1,500 first person), transfer fee (25% current franchise fee plus training fees), training courses (up to $500/day for 3+ people).",
+  "raw_excerpt": "Continuing Royalty: 6% of Gross Sales each month subject to minimum amounts varying by time frame and territory (Months 13+: $1,500 Standard/$1,000 Micro). National Advertising Fee: 1.5% of Gross Sales monthly with minimums ($500 Standard 13+/$300 Micro 13+). Technology Fee: Currently $450 per month for the first territory; $200 for second and subsequent contiguous territories.",
+  "confidence": 0.9
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\smoothie_holdings_fc_llc_2026_mn_35869-202604-01.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.006,
+      "input_tokens": 2091,
+      "cached": 1340,
+      "output_tokens": 223
+    },
+    "item5": {
+      "cost_usd": 0.0164,
+      "input_tokens": 4010,
+      "cached": 1340,
+      "output_tokens": 532
+    },
+    "item6": {
+      "cost_usd": 0.0115,
+      "input_tokens": 1583,
+      "cached": 1340,
+      "output_tokens": 690
+    },
+    "item7": {
+      "cost_usd": 0.0142,
+      "input_tokens": 5505,
+      "cached": 1340,
+      "output_tokens": 84
+    },
+    "item19": {
+      "cost_usd": 0.0305,
+      "input_tokens": 6313,
+      "cached": 1340,
+      "output_tokens": 1011,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.0399,
+      "input_tokens": 7178,
+      "cached": 1340,
+      "output_tokens": 1464,
+      "images_sent": 3
+    }
+  },
+  "total_cost_usd": 0.1184
+}

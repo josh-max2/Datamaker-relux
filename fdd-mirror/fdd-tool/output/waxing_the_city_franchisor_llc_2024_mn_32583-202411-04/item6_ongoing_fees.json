@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 799,
+  "fee_notes": "Royalty is the greater of (a) $100/week minimum or (b) 6% of Gross Revenue, paid weekly. Minimum Royalty Fee does not begin until earlier of: first full month after opening or 12 months from signing; waived if working with franchisor real estate team until open. Marketing fund contribution is currently 2% of monthly Gross Revenue, payable monthly; franchisor reserves right to increase up to 3% with 60 days notice. Technology Fee of $799/month covers studio management/POS software, email hosting, website maintenance, and mobile device management. Local advertising minimum of $1,500/month required after Grand Opening period. Grand Opening and Ramp Up Plan requires $25,000 spend on local marketing between lease signing and 90 days after opening. Ongoing product purchases (wax & service products) currently $56,000\u2013$125,750/year; franchisor is sole source supplier.",
+  "raw_excerpt": "Royalty Fee (Note 2) Greater of (a) the Minimum Royalty Fee ($100/week), or (b) 6% of Gross Revenue. Payable on the first Monday of each week for the prior week. (Note 3)\n\nGeneral Advertising and Marketing Fund Contributions Currently 2% of your Gross Revenue each month. Payable on the fifth (5th) day of each month for the prior month. (Note 3) We reserve the right to increase the General Advertising and Marketing Fund Contribution upon 60 days' written notice to you, provided that it will not exceed 3% of monthly Gross Revenue.\n\nTechnology Fee (Note 4) Currently $799 per month Payable on the first (1st) day of each month for the prior month by ACH. (Note 3) You pay this fee to us. We pay most of it to the studio management software provider that will license this software to you. The fee also covers email hosting and our website maintenance. We may increase the Technology Fee upon written notice to you.",
+  "confidence": 0.95
+}

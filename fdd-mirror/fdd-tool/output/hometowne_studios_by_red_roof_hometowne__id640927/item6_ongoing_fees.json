@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5.5,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 3,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 490,
+  "fee_notes": "Royalty 5.5% of Gross Room Revenues. Marketing and Reservation Fee 3% of Gross Room Revenues (subject to increase max 5%). RediRewards Program 2% of qualifying revenue. Tech/PMS fee $490/month base plus $3.85 per room per month (subject to 5% annual increase). Numerous variable fees including booking fees ($6.60-$7.00 GDS; $3.30-$3.60 third-party internet; $1.99-$2.25 direct connect), mobile app ($1.75/booking), distribution commissions (0-25%), and optional services. Multiple conditional/performance fees for quality failures, conferences, training, and audits.",
+  "raw_excerpt": "Royalty: 5.5% of Gross Room Revenues, Payable 20 days after invoice. Marketing and Reservation Fee: 3% of Gross Room Revenues, Payable 20 days after invoice. Reservation Platform/PMS Fee: Currently $490 per month plus $3.85 per room, per month.",
+  "confidence": 0.88
+}

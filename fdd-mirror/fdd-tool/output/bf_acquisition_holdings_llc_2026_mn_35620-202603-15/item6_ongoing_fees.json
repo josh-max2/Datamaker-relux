@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 3,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 55,
+  "fee_notes": "Royalty Fee is 5% of total weekly Gross Sales; an additional Surcharge of up to $10 per week may be charged (currently only in New York). Royalty may increase to up to 18% during breach/default period. Advertising Fee is currently 3% of weekly Gross Sales (cap is 4%). Data Fees up to $75/month for POS data polling. POS Help Desk Phone Support Maintenance Contract Fee is $55/month. Gift Card Redemption Fee is 11-30% of redemption amount. Management Fee is 6% of Gross Sales (plus direct costs) if franchisor assumes management.",
+  "raw_excerpt": "Royalty Fee and Surcharge (Notes 1 and 9): Royalty Fee is 5% of total weekly Gross Sales. Surcharge is a maximum of $10 per week in addition to the Royalty Fee. (Note 2)\nAdvertising Fees (Note 1): Up to 4% of weekly Gross Sales. Currently, Advertising Fee is 3% of weekly Gross Sales, which goes to the Advertising Fund (Note 4).\nData Fees (Notes 1 and 6): Up to $75 per month (Subject to reasonable annual and/or service enhancement increases)\nPOS Help Desk Phone Support Maintenance Contract Fee: $55 per month",
+  "confidence": 0.95
+}

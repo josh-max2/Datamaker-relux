@@ -1,0 +1,96 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Adjusted Gross Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All franchised Traditional Centers",
+      "outlet_count": 5058,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 724293,
+      "pct_above_avg": 45
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Adjusted Gross Sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Top 10%",
+      "outlet_count": 506,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 1248208,
+      "pct_above_avg": 37
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Adjusted Gross Sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Bottom 10%",
+      "outlet_count": 506,
+      "reporting_period": "2025 calendar year",
+      "value_avg": 345790,
+      "pct_above_avg": 59
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Adjusted Gross Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All franchised Traditional Centers",
+      "outlet_count": 4931,
+      "reporting_period": "2024 calendar year",
+      "value_avg": 719842,
+      "pct_above_avg": 45
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Adjusted Gross Sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Top 10%",
+      "outlet_count": 493,
+      "reporting_period": "2024 calendar year",
+      "value_avg": 1225942,
+      "pct_above_avg": 38
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Adjusted Gross Sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Bottom 10%",
+      "outlet_count": 493,
+      "reporting_period": "2024 calendar year",
+      "value_avg": 353236,
+      "pct_above_avg": 60
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Adjusted Gross Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "All franchised Traditional Centers",
+      "outlet_count": 4825,
+      "reporting_period": "2023 calendar year",
+      "value_avg": 721245,
+      "pct_above_avg": 45
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Adjusted Gross Sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Top 10%",
+      "outlet_count": 483,
+      "reporting_period": "2023 calendar year",
+      "value_avg": 1224355,
+      "pct_above_avg": 37
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Adjusted Gross Sales",
+      "cohort_name": "performance_anchored",
+      "cohort_raw": "Bottom 10%",
+      "outlet_count": 483,
+      "reporting_period": "2023 calendar year",
+      "value_avg": 357306,
+      "pct_above_avg": 58
+    }
+  ],
+  "confidence": 0.95
+}

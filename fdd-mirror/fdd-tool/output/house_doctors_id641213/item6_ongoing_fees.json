@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 650,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": 217,
+  "tech_fee_monthly": 910,
+  "fee_notes": "All fees paid weekly on Tuesday basis. Royalty: 6% of Gross Sales with $150/week minimum. Marketing Fund: greater of 2% of Gross Sales or $50/week. Contact Center Fee: tiered from $50\u2013$220/week based on operational stage, max $770/week. Technology Fee: $210/week. Accounting & Advisory: $85/week. Additional fees: Non-Compliance ($1,000\u2013$4,000 per violation), Late/Insufficient Funds ($100 + 1.5% monthly), Renewal (25% of then-current franchise fee or $15,000), Transfer ($20,000 or actual expenses), Annual Convention (varies; $2,000 if not attending), Advertising Cooperative (up to 2% annually), Enforcement costs, Indemnification, and Warranty-related fees.",
+  "raw_excerpt": "Royalty: 6% of Gross Sales; $150 per week minimum, Tuesday, Weekly. Marketing Fund Contribution: The greater of 2% of Gross Sales per week or $50 per week. Technology Fee: $210 per week. All fees except Late Fees earned when paid and non-refundable.",
+  "confidence": 0.92
+}

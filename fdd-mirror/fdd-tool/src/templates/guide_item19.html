@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Understanding FDD Item 19: A Buyer's Guide to Franchise Earnings Data{% endblock %}
+{% block description %}What Item 19 of a Franchise Disclosure Document actually tells you — how to read it, what's optional, what franchisors omit, and how to use the numbers to evaluate a franchise opportunity.{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Guides", "url": url_for('guides/')},
+    {"label": "Understanding Item 19", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Understanding FDD Item 19: A Buyer's Guide to Franchise Earnings Data",
+  "author": { "@type": "Person", "name": "FranchiseDepth Editorial", "url": "{{ url_for('about/') }}" },
+  "publisher": { "@type": "Organization", "name": "{{ site_name }}" },
+  "dateModified": "{{ generated_at }}",
+  "mainEntityOfPage": "{{ canonical_url }}",
+  "about": "Franchise Disclosure Document Item 19 — Financial Performance Representations"
+}
+</script>
+{% endblock %}
+{% block content %}
+<article class="guide-page">
+    <header>
+        <h1>Understanding FDD Item 19</h1>
+        <p class="lead">
+            Item 19 is the section of a Franchise Disclosure Document where franchisors disclose actual financial performance of their existing outlets — revenue, costs, profit. It's also the most-misread, most-cherry-picked section of any FDD. This guide explains what's there, what isn't, and how to read what is.
+        </p>
+        <p class="byline">
+            <span class="dateline">Page updated {{ generated_at }}</span>
+        </p>
+    </header>
+
+    <section>
+        <h2>What Item 19 is</h2>
+        <p>
+            <a class="jargon" href="{{ url_for('methodology/') }}#g-item19" title="See glossary">Item 19</a> is one of 23 required sections in every <a class="jargon" href="{{ url_for('methodology/') }}#g-fdd" title="See glossary">Franchise Disclosure Document</a>. Its formal name is "Financial Performance Representations" — abbreviated <a class="jargon" href="{{ url_for('methodology/') }}#g-fpr" title="See glossary">FPR</a>. It's the only place in the entire FDD where the franchisor can legally tell you what their existing outlets actually earn.
+        </p>
+        <p>
+            That last sentence does a lot of work. Per FTC §436.5(s) — the federal franchise rule — <strong>only the franchisor's own Item 19 is a legally-authoritative source for any forecast or projection about your potential earnings</strong>. A franchise consultant, broker, or third-party analyst (including this site) cannot legally project what your specific outlet will earn. We can describe what franchisors disclosed; we can't tell you what you'll make.
+        </p>
+    </section>
+
+    <section>
+        <h2>The most important thing to know: Item 19 is optional</h2>
+        <p>
+            Franchisors are required to have an Item 19 section in the FDD. They are <strong>not required to put any numbers in it</strong>. If a franchisor doesn't want to disclose financial performance, Item 19 simply says: <em>"We do not make any representations about a franchisee's future financial performance or the past financial performance of company-owned or franchised outlets."</em>
+        </p>
+        <p>
+            That's a legally-protected non-statement. Roughly 30-40% of FDDs we've extracted include no Item 19 numbers at all. Brands with strong financial performance generally disclose; brands with mixed performance generally don't.
+        </p>
+        <p class="callout">
+            <strong>Buyer rule:</strong> "We don't disclose Item 19" is itself a meaningful signal. It doesn't mean the franchise is bad. It does mean you'll have to validate earnings through direct conversations with current franchisees (whose names + contact info the FDD must provide in Item 20).
+        </p>
+    </section>
+
+    <section>
+        <h2>What disclosed Item 19s contain</h2>
+        <p>
+            When franchisors do disclose, they typically include some combination of:
+        </p>
+        <ul>
+            <li><strong>Gross sales / total revenue</strong> — top-line, by outlet or by cohort</li>
+            <li><strong>Gross profit</strong> — revenue minus cost of goods sold</li>
+            <li><strong>Net profit / EBITDA</strong> — much rarer; many FDDs stop at gross sales</li>
+            <li><strong>Margin percentages</strong> — gross margin %, net margin %</li>
+            <li><strong>Distribution statistics</strong> — average, median, top quartile (P75), bottom quartile (P25), highest, lowest</li>
+        </ul>
+        <p>
+            <strong>Watch for what's missing.</strong> Many FDDs disclose only gross sales without any cost or profit data. That's enough to know what outlets sell, but not whether they're profitable. A $1M gross-sales outlet running on 4% margin makes $40K profit; the same outlet on 18% margin makes $180K. The FDD might tell you one of those numbers, both, or neither.
+        </p>
+    </section>
+
+    <section>
+        <h2>Cohorts: subsets of outlets used for reporting</h2>
+        <p>
+            A <a class="jargon" href="{{ url_for('methodology/') }}#g-cohort" title="See glossary">cohort</a> is a subset of outlets the franchisor groups together for reporting. The same FDD might report different financial figures for different cohorts:
+        </p>
+        <ul>
+            <li><strong>All franchised outlets</strong> — the most inclusive cohort, usually most representative of typical buyer experience</li>
+            <li><strong>Outlets open 1+ year / 2+ years / 3+ years</strong> — tenure-based; the franchisor's argument that earlier-stage outlets distort the average</li>
+            <li><strong>Top 10% / Top 25%</strong> — performance-anchored; selectively showing best performers</li>
+            <li><strong>Same-store outlets</strong> — only outlets open the full reporting period (excludes openings + closures)</li>
+            <li><strong>Company-owned outlets</strong> — owned by the franchisor directly; usually higher revenue (better-staffed, prime locations) and not directly comparable to franchisee outlets</li>
+        </ul>
+        <p>
+            <strong>Always check the cohort label before quoting a number.</strong> "$612,000 average revenue" means very different things if it's an all-franchised figure vs. a top-25%-of-company-owned figure.
+        </p>
+    </section>
+
+    <section>
+        <h2>How to read the distribution</h2>
+        <p>
+            Averages can be deeply misleading in franchise data because outlet performance follows a power-law distribution: a handful of top performers can pull the average up sharply while most outlets earn much less. Look for these distribution markers:
+        </p>
+        <ul>
+            <li><strong>Median</strong> — the middle outlet. Less skewed by top performers than the mean. Usually the most representative single number.</li>
+            <li><strong>P25 / P75 (first and third quartiles)</strong> — 25% of outlets earned less than P25, 25% earned more than P75. The spread tells you variance.</li>
+            <li><strong>"% of outlets above average"</strong> — when this number is well below 50%, the distribution is right-skewed (a few high earners drag the mean up). Below 40% is a strong skew signal.</li>
+        </ul>
+        <p>
+            If a franchisor reports only "average" without median or quartile data, treat the number with extra skepticism. Ask current franchisees during validation calls.
+        </p>
+    </section>
+
+    <section>
+        <h2>How buyers should use Item 19</h2>
+        <ol>
+            <li><strong>Identify the cohort.</strong> Is this all franchisees, or a filtered subset?</li>
+            <li><strong>Look at the median, not just the average.</strong> Or at minimum the P25 and P75.</li>
+            <li><strong>Compute the implied profit.</strong> Gross sales × industry-typical margin = rough net. Be conservative on the margin.</li>
+            <li><strong>Compare to the investment.</strong> <a class="jargon" href="{{ url_for('methodology/') }}#g-item7" title="See glossary">Item 7</a> tells you the total cost. Item 19 implies the return. The ratio is your <a class="jargon" href="{{ url_for('methodology/') }}#g-breakeven" title="See glossary">breakeven horizon</a>.</li>
+            <li><strong>Validate with current franchisees.</strong> Item 20 of the FDD must list every existing franchisee's name, location, and phone number. Call them. Ask their actual numbers. Item 19 is the franchisor's framing; franchisee conversations are reality.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Red flags in Item 19</h2>
+        <ul>
+            <li><strong>"Top X%" cohorts without an all-franchised baseline</strong> — selective reporting.</li>
+            <li><strong>Only gross sales, no profit information</strong> — you can't tell if the outlets are profitable.</li>
+            <li><strong>Very small sample size</strong> — fewer than 10 outlets in a cohort = high noise.</li>
+            <li><strong>Outlet count doesn't match Item 20</strong> — franchisor cherry-picked which outlets to include. Subtract Item 19 cohort size from Item 20 total to see how many were excluded.</li>
+            <li><strong>Reporting period of less than 12 months</strong> — seasonality distortion.</li>
+            <li><strong>Heavy footnotes shrinking the cohort definition</strong> — "outlets open more than X months that submitted complete data and weren't in a transition period…" usually means the franchisor is showing only their cleanest data.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Where we go from here</h2>
+        <p>
+            Every brand page on {{ site_name }} extracts the full Item 19 disclosure verbatim — every cohort, every metric, every average and median — with a direct deep-link to the source PDF page so you can verify our extraction against the original document. We make no projections. We just make the data legible.
+        </p>
+        <p>
+            Browse <a href="{{ url_for('') }}">all brands</a>, filter by <a href="{{ url_for('') }}?budget=200000">investment budget</a>, or read the <a href="{{ url_for('methodology/') }}">full methodology</a> for how the extraction works.
+        </p>
+    </section>
+</article>
+{% endblock %}

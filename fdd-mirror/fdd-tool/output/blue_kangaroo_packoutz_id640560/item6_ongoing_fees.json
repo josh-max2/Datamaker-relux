@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 7,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 460,
+  "fee_notes": "Royalty: 7% of Gross Sales (reduces to 6% if annual Gross Sales exceed $1,000,000); Conversion franchises pay 4% year 1, then 7% thereafter. Brand Marketing Fund: 2% of Gross Sales beginning month 13. Technology Fee: $460-$700/month depending on services. Software Fee: $399/month. Multiple other fees including royalty minimum (amount referenced in Note 5, not disclosed in provided excerpt), training fees, convention fees, transfer fees, renewal fee (10% of then-current Initial Franchise Fee), and various late/admin fees.",
+  "raw_excerpt": "Royalty (Note 3): 7% of Gross Sales generated; if Gross Sales exceed $1,000,000, the Royalty will reduce to 6% of Gross Sales for the remainder of the year, and the following year. Conversion Franchises will pay 4% of Gross Sales generated for the first year of the Term and 7% of Gross Sales generated in the remaining years of the Term. Brand Marketing Fund ('Brand Marketing Fee'): 2% of Gross Sales, beginning in month 13 of the Term. Technology Fee: Our then-current fee, which is presently $460-$700 per month depending on services included.",
+  "confidence": 0.92
+}

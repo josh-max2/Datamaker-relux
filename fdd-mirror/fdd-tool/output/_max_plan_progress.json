@@ -1,0 +1,69 @@
+{
+  "results": [
+    {
+      "pdf_path": "data/wi_scrape/aussie_pet_mobile_id640885.pdf",
+      "brand": "aussie-pet-mobile",
+      "ok": false,
+      "elapsed_sec": 10.0,
+      "error": "pe\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.0663261,\n    \"duration_ms\": 6917,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 7s, cost $0.0663\n",
+      "finished_at": "2026-05-19T09:36:21.543525"
+    },
+    {
+      "pdf_path": "data/wi_scrape/five_star_bath_solutions_id640871.pdf",
+      "brand": "five-star-bath-solutions",
+      "ok": true,
+      "elapsed_sec": 126.9,
+      "api_equiv_usd": 0.4376325999999999,
+      "finished_at": "2026-05-19T09:38:28.407569"
+    },
+    {
+      "pdf_path": "data/wi_scrape/homewatch_caregivers_id641535.pdf",
+      "brand": "homewatch-caregivers",
+      "ok": false,
+      "elapsed_sec": 11.7,
+      "error": "pe\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.0663111,\n    \"duration_ms\": 6580,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 7s, cost $0.0663\n",
+      "finished_at": "2026-05-19T09:38:40.116224"
+    },
+    {
+      "pdf_path": "data/wi_scrape/martinizing_id639404.pdf",
+      "brand": "martinizing",
+      "ok": false,
+      "elapsed_sec": 39.2,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.10364085,\n    \"duration_ms\": 35585,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 36s, cost $0.1036\n",
+      "finished_at": "2026-05-19T09:39:19.358899"
+    },
+    {
+      "pdf_path": "data/mn_scrape/mb_franchise_holdings_inc_2024_mn_32579-202411-10.pdf",
+      "brand": "mb-franchise-holdings-inc-2024-mn-32579-202411-10",
+      "ok": false,
+      "elapsed_sec": 4.4,
+      "error": ",\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.053888599999999995,\n    \"duration_ms\": 3629,\n    \"num_turns\": 1\n  },\n  \"ok\": false,\n  \"parse_reason\": \"metadata missing legal_name and brand_name\"\n}\n",
+      "finished_at": "2026-05-19T09:39:23.774601"
+    },
+    {
+      "pdf_path": "data/mn_scrape/school_of_rock_franchising_llc_2026_mn_36006-202604-09.pdf",
+      "brand": "school-of-rock",
+      "ok": false,
+      "elapsed_sec": 20.7,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.07211585,\n    \"duration_ms\": 16578,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 17s, cost $0.0721\n",
+      "finished_at": "2026-05-19T09:39:44.485984"
+    },
+    {
+      "pdf_path": "data/servpro_2014.pdf",
+      "brand": "servpro",
+      "ok": false,
+      "elapsed_sec": 388.4,
+      "error": "  \"speed\": \"standard\",\n    \"total_cost_usd\": 0.8308923,\n    \"duration_ms\": 386839,\n    \"num_turns\": 1\n  },\n  \"ok\": false,\n  \"parse_reason\": \"JSON parse failed: Extra data: line 1 column 3 (char 2)\"\n}\n",
+      "finished_at": "2026-05-19T09:46:12.916494"
+    }
+  ],
+  "started_at": "2026-05-19T09:36:11.547485",
+  "last_updated": "2026-05-19T09:46:12.916494",
+  "totals": {
+    "processed": 7,
+    "ok": 1,
+    "failed": 6,
+    "skipped": 0,
+    "elapsed_sec": 601.4
+  }
+}

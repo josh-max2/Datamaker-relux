@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 500,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": 250,
+  "tech_fee_monthly": 4.2,
+  "fee_notes": "Royalty 6% months 0-6, then 6% or minimum (whichever greater) months 7+. Minimum escalates $0-$5,000/month by year 115+. Brand Fund 1% months 0-6, then tiered $250-$1,000/month. Local Marketing 2% or $1,000/month minimum. Email $4.20-$8.40/account/month. Conference $100/month\u00d712. Transfer 30% current fee, Renewal $1,500, Training $1,000, On-site $1,200/day, Territory Violation 50% revenue.",
+  "raw_excerpt": "Royalty: 6% of Gross Revenues (months 0-6); 6% or minimum royalty (months 7+). Brand Development Fund: 1% (0-6 months) greater of 1% or $250-$1,000 (7+ months). Local Marketing: greater of 2% Gross Revenues or $1,000/month. Email: $4.20-$8.40 per email per month.",
+  "confidence": 0.92
+}

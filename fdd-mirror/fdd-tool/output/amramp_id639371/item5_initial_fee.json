@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 49250,
+  "initial_franchise_fee_high": 98500,
+  "fee_notes": "Calculated at $49,250 per 1,000,000 persons in territory, prorated. Examples: $49,250 (1M pop), $73,875 (1.5M pop), $98,500 (2M pop). Discounts available for existing franchisees purchasing expansion territories. Fully-earned and non-refundable, except partial refund if Initial Training Program not completed.",
+  "raw_excerpt": "The Initial Franchise Fee is $49,250 for each 1,000,000 persons in your franchise territory, and is calculated on a pro rata basis. By way of illustration, the franchise fee for a franchise territory with a population of 1,000,000 persons is $49,250; the franchise fee for a franchise territory with a population of 1,500,000 persons is $73,875; and the franchise fee for a franchise territory with a population of 2,000,000 persons is $98,500.",
+  "confidence": 0.95
+}

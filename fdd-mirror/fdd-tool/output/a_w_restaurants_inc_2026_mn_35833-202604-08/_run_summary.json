@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\a_w_restaurants_inc_2026_mn_35833-202604-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0058,
+      "input_tokens": 2123,
+      "cached": 1340,
+      "output_tokens": 205
+    },
+    "item5": {
+      "cost_usd": 0.0106,
+      "input_tokens": 2051,
+      "cached": 1340,
+      "output_tokens": 539
+    },
+    "item6": {
+      "cost_usd": 0.009,
+      "input_tokens": 1595,
+      "cached": 1340,
+      "output_tokens": 520
+    },
+    "item7": {
+      "cost_usd": 0.0089,
+      "input_tokens": 3684,
+      "cached": 1340,
+      "output_tokens": 98
+    },
+    "item19": {
+      "cost_usd": 0.1414,
+      "input_tokens": 18977,
+      "cached": 1340,
+      "output_tokens": 5873,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.3181,
+      "input_tokens": 20946,
+      "cached": 1340,
+      "output_tokens": 17258,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.4938
+}

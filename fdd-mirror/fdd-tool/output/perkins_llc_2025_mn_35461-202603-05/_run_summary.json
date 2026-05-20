@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\perkins_llc_2025_mn_35461-202603-05.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0064,
+      "input_tokens": 2033,
+      "cached": 1340,
+      "output_tokens": 263
+    },
+    "item5": {
+      "cost_usd": 0.0174,
+      "input_tokens": 4527,
+      "cached": 1340,
+      "output_tokens": 496
+    },
+    "item6": {
+      "cost_usd": 0.0208,
+      "input_tokens": 2644,
+      "cached": 1340,
+      "output_tokens": 1100
+    },
+    "item7": {
+      "cost_usd": 0.0279,
+      "input_tokens": 10024,
+      "cached": 1340,
+      "output_tokens": 95
+    },
+    "item19": {
+      "cost_usd": 0.3266,
+      "input_tokens": 21763,
+      "cached": 1340,
+      "output_tokens": 17660,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1851,
+      "input_tokens": 19393,
+      "cached": 1340,
+      "output_tokens": 8704,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.5842
+}

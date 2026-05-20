@@ -1,0 +1,10 @@
+{
+  "royalty_pct": null,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 1.5,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 285,
+  "fee_notes": "Tiered royalty: 9% on monthly gross sales up to $8,000; 8% on $8,001-$12,000; 7% on $12,001-$15,000; 6% on $15,001-$35,000; plus 2% on amounts over $35,000. Minimum royalty = $0.00383/household. Advertising fund currently 1.5% of monthly gross sales, up to 3% with 60 days notice. Tech/Data Center fee $285/month (can increase 10%/yr).",
+  "raw_excerpt": "Royalty: 9% of monthly gross sales up to $8,000; 8% between $8,001-$12,000; 7% between $12,001-$15,000; 6% between $15,001-$35,000; plus 2% over $35,000. Advertising Fund Fee: Up to 3% of monthly gross sales; currently 1.5%. Message Retrieval, Distribution and Data Center Entry: $285 per month.",
+  "confidence": 0.95
+}

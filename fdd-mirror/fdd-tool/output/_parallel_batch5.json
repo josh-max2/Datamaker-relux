@@ -1,0 +1,378 @@
+{
+  "manifest": "output\\_pilot_mn_batch5.json",
+  "workers": 4,
+  "started_at": "2026-05-19T00:45:06.403839",
+  "total_wall_clock_sec": 377.5,
+  "results": [
+    {
+      "pdf": "data\\mn_scrape\\the_barbers_hairstyling_for_men_women_inc_2025_mn_35368-202602-06.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\the_barbers_hairstyling_for_men_women_inc_2025_mn_35368-202602-06",
+      "elapsed_sec": 130.2,
+      "total_cost_usd": 0.3692,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0079,
+          "input_tokens": 2073,
+          "cached": 1340,
+          "output_tokens": 250
+        },
+        "item5": {
+          "cost_usd": 0.0113,
+          "input_tokens": 2654,
+          "cached": 1340,
+          "output_tokens": 330
+        },
+        "item6": {
+          "cost_usd": 0.0181,
+          "input_tokens": 2710,
+          "cached": 1340,
+          "output_tokens": 769
+        },
+        "item7": {
+          "cost_usd": 0.0104,
+          "input_tokens": 3416,
+          "cached": 1340,
+          "output_tokens": 83
+        },
+        "item19": {
+          "cost_usd": 0.0706,
+          "input_tokens": 19465,
+          "cached": 1340,
+          "output_tokens": 83,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.2509,
+          "input_tokens": 18453,
+          "cached": 1340,
+          "output_tokens": 12352,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\tmc_franchise_corporation_2024_mn_33485-202504-03.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\tmc_franchise_corporation_2024_mn_33485-202504-03",
+      "elapsed_sec": 137.9,
+      "total_cost_usd": 0.3042,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0058,
+          "input_tokens": 1778,
+          "cached": 1340,
+          "output_tokens": 184
+        },
+        "item5": {
+          "cost_usd": 0.0137,
+          "input_tokens": 2855,
+          "cached": 1340,
+          "output_tokens": 438
+        },
+        "item6": {
+          "cost_usd": 0.0438,
+          "input_tokens": 8225,
+          "cached": 1340,
+          "output_tokens": 1108
+        },
+        "item7": {
+          "cost_usd": 0.0081,
+          "input_tokens": 2749,
+          "cached": 1340,
+          "output_tokens": 95
+        },
+        "item19": {
+          "cost_usd": 0.1535,
+          "input_tokens": 15404,
+          "cached": 1340,
+          "output_tokens": 7395,
+          "images_sent": 6
+        },
+        "item20": {
+          "cost_usd": 0.0792,
+          "input_tokens": 14105,
+          "cached": 1340,
+          "output_tokens": 2702,
+          "images_sent": 6
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\waxing_the_city_franchisor_llc_2024_mn_32583-202411-04.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\waxing_the_city_franchisor_llc_2024_mn_32583-202411-04",
+      "elapsed_sec": 162.3,
+      "total_cost_usd": 0.3782,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0073,
+          "input_tokens": 2051,
+          "cached": 1340,
+          "output_tokens": 217
+        },
+        "item5": {
+          "cost_usd": 0.0178,
+          "input_tokens": 4519,
+          "cached": 1340,
+          "output_tokens": 301
+        },
+        "item6": {
+          "cost_usd": 0.0188,
+          "input_tokens": 4760,
+          "cached": 1340,
+          "output_tokens": 541
+        },
+        "item7": {
+          "cost_usd": 0.0056,
+          "input_tokens": 2638,
+          "cached": 1340,
+          "output_tokens": 88
+        },
+        "item19": {
+          "cost_usd": 0.0981,
+          "input_tokens": 12647,
+          "cached": 1340,
+          "output_tokens": 4249,
+          "images_sent": 5
+        },
+        "item20": {
+          "cost_usd": 0.2306,
+          "input_tokens": 18096,
+          "cached": 1340,
+          "output_tokens": 11995,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\whg_franchisor_llc_2024_mn_32347-202409-08.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\whg_franchisor_llc_2024_mn_32347-202409-08",
+      "elapsed_sec": 55.8,
+      "total_cost_usd": 0.1162,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0069,
+          "input_tokens": 2345,
+          "cached": 1340,
+          "output_tokens": 234
+        },
+        "item5": {
+          "cost_usd": 0.0066,
+          "input_tokens": 1720,
+          "cached": 1340,
+          "output_tokens": 336
+        },
+        "item6": {
+          "cost_usd": 0.0363,
+          "input_tokens": 8746,
+          "cached": 1340,
+          "output_tokens": 913
+        },
+        "item7": {
+          "cost_usd": 0.0052,
+          "input_tokens": 2239,
+          "cached": 1340,
+          "output_tokens": 143
+        },
+        "item19": {
+          "cost_usd": 0.014,
+          "input_tokens": 5374,
+          "cached": 1340,
+          "output_tokens": 100,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.0471,
+          "input_tokens": 9184,
+          "cached": 1340,
+          "output_tokens": 1543,
+          "images_sent": 4
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\we_insure_llc_2025_mn_35214-202601-05.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\we_insure_llc_2025_mn_35214-202601-05",
+      "elapsed_sec": 88.2,
+      "total_cost_usd": 0.219,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.004,
+          "input_tokens": 1408,
+          "cached": 1340,
+          "output_tokens": 225
+        },
+        "item6": {
+          "cost_usd": 0.0331,
+          "input_tokens": 9164,
+          "cached": 1340,
+          "output_tokens": 612
+        },
+        "item7": {
+          "cost_usd": 0.0016,
+          "input_tokens": 1220,
+          "cached": 1340,
+          "output_tokens": 107
+        },
+        "item19": {
+          "cost_usd": 0.0135,
+          "input_tokens": 5264,
+          "cached": 1340,
+          "output_tokens": 91,
+          "images_sent": 2
+        },
+        "item20": {
+          "cost_usd": 0.1668,
+          "input_tokens": 13361,
+          "cached": 1340,
+          "output_tokens": 8690,
+          "images_sent": 6
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\take_5_franchisor_spv_llc_2025_mn_35177-202512-02.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\take_5_franchisor_spv_llc_2025_mn_35177-202512-02",
+      "elapsed_sec": 220.3,
+      "total_cost_usd": 0.5303,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0073,
+          "input_tokens": 2002,
+          "cached": 1340,
+          "output_tokens": 227
+        },
+        "item5": {
+          "cost_usd": 0.0072,
+          "input_tokens": 1649,
+          "cached": 1340,
+          "output_tokens": 312
+        },
+        "item6": {
+          "cost_usd": 0.0237,
+          "input_tokens": 4861,
+          "cached": 1340,
+          "output_tokens": 606
+        },
+        "item7": {
+          "cost_usd": 0.0133,
+          "input_tokens": 4137,
+          "cached": 1340,
+          "output_tokens": 95
+        },
+        "item19": {
+          "cost_usd": 0.2623,
+          "input_tokens": 20507,
+          "cached": 1340,
+          "output_tokens": 12603,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.2165,
+          "input_tokens": 19274,
+          "cached": 1340,
+          "output_tokens": 9853,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\young_rembrandts_franchise_inc_2025_mn_35302-202601-04.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\young_rembrandts_franchise_inc_2025_mn_35302-202601-04",
+      "elapsed_sec": 94.6,
+      "total_cost_usd": 0.2146,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.0045,
+          "input_tokens": 1501,
+          "cached": 1340,
+          "output_tokens": 243
+        },
+        "item5": {
+          "cost_usd": 0.0063,
+          "input_tokens": 1588,
+          "cached": 1340,
+          "output_tokens": 343
+        },
+        "item6": {
+          "cost_usd": 0.016,
+          "input_tokens": 3337,
+          "cached": 1340,
+          "output_tokens": 642
+        },
+        "item7": {
+          "cost_usd": 0.0052,
+          "input_tokens": 2504,
+          "cached": 1340,
+          "output_tokens": 86
+        },
+        "item19": {
+          "cost_usd": 0.058,
+          "input_tokens": 9717,
+          "cached": 1340,
+          "output_tokens": 2167,
+          "images_sent": 4
+        },
+        "item20": {
+          "cost_usd": 0.1246,
+          "input_tokens": 11135,
+          "cached": 1340,
+          "output_tokens": 6319,
+          "images_sent": 5
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "pdf": "data\\mn_scrape\\yoga_six_franchise_spv_llc_2025_mn_35411-202602-01.pdf",
+      "out_dir": "C:\\Users\\joshs\\Desktop\\parser\\fdd-tool\\output\\yoga_six_franchise_spv_llc_2025_mn_35411-202602-01",
+      "elapsed_sec": 215.2,
+      "total_cost_usd": 0.523,
+      "items": {
+        "metadata": {
+          "cost_usd": 0.007,
+          "input_tokens": 2286,
+          "cached": 1340,
+          "output_tokens": 250
+        },
+        "item5": {
+          "cost_usd": 0.0153,
+          "input_tokens": 4053,
+          "cached": 1340,
+          "output_tokens": 450
+        },
+        "item6": {
+          "cost_usd": 0.0116,
+          "input_tokens": 1629,
+          "cached": 1340,
+          "output_tokens": 687
+        },
+        "item7": {
+          "cost_usd": 0.0155,
+          "input_tokens": 5936,
+          "cached": 1340,
+          "output_tokens": 90
+        },
+        "item19": {
+          "cost_usd": 0.2912,
+          "input_tokens": 18802,
+          "cached": 1340,
+          "output_tokens": 15891,
+          "images_sent": 8
+        },
+        "item20": {
+          "cost_usd": 0.1825,
+          "input_tokens": 17777,
+          "cached": 1340,
+          "output_tokens": 8852,
+          "images_sent": 8
+        }
+      },
+      "status": "ok"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\mif_l_l_c_2024_mn_32504-202410-02.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0042,
+      "input_tokens": 1472,
+      "cached": 1340,
+      "output_tokens": 225
+    },
+    "item5": {
+      "cost_usd": 0.0077,
+      "input_tokens": 2089,
+      "cached": 1340,
+      "output_tokens": 336
+    },
+    "item6": {
+      "cost_usd": 0.04,
+      "input_tokens": 5480,
+      "cached": 1340,
+      "output_tokens": 1814
+    },
+    "item7": {
+      "cost_usd": 0.0052,
+      "input_tokens": 2400,
+      "cached": 1340,
+      "output_tokens": 105
+    },
+    "item19": {
+      "cost_usd": 0.0142,
+      "input_tokens": 5437,
+      "cached": 1340,
+      "output_tokens": 101,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.0325,
+      "input_tokens": 8093,
+      "cached": 1340,
+      "output_tokens": 786,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.1037
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\hdos_franchising_llc_2025_mn_34382-202506-14.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0046,
+      "input_tokens": 1689,
+      "cached": 1340,
+      "output_tokens": 208
+    },
+    "item5": {
+      "cost_usd": 0.0066,
+      "input_tokens": 1752,
+      "cached": 1340,
+      "output_tokens": 334
+    },
+    "item6": {
+      "cost_usd": 0.0096,
+      "input_tokens": 1372,
+      "cached": 1340,
+      "output_tokens": 606
+    },
+    "item7": {
+      "cost_usd": 0.0106,
+      "input_tokens": 4281,
+      "cached": 1340,
+      "output_tokens": 91
+    },
+    "item19": {
+      "cost_usd": 0.2158,
+      "input_tokens": 18159,
+      "cached": 1340,
+      "output_tokens": 10996,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.0478,
+      "input_tokens": 8394,
+      "cached": 1340,
+      "output_tokens": 1752,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.295
+}

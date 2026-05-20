@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 500,
+  "marketing_fee_pct": 2,
+  "marketing_min_monthly": 750,
+  "tech_fee_monthly": 200,
+  "fee_notes": "Royalty: greater of 6% of Net Billings or tiered minimum ($500 months 0\u201312, $1,000 months 13\u201324, $1,500 months 25\u201336, $2,000 months 37+). Brand Fund: 2% of Net Billings. Local Marketing Commitment: greater of $750/month or 1% of Net Billings (due monthly). Technology fee currently $200/month (webpage, 3 emails, phone, LMS) plus $30/month per additional email. Call Center fee not currently imposed. Additional fees: conference registration (currently $495), training ($750/day), transfer (50% of then-current initial fee), renewal (50% of then-current initial fee), audit, late fees, noncompliance ($250/incident), and various remediation/reimbursement fees.",
+  "raw_excerpt": "TYPE OF FEE: Royalty Fee - Greater of 6% of Net Billings or minimum royalty (O\u201312 mo: $500/mo; 13\u201324 mo: $1,000/mo; 25\u201336 mo: $1,500/mo; 37+: $2,000/mo). Brand Fund Fee - 2% of Net Billings. Local Marketing Commitment - Greater of $750/month or 1% of Net Billings. Technology Fee - Currently $200/month.",
+  "confidence": 0.92
+}

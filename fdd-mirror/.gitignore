@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.venv/
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Source PDFs (bulky + contain franchisor copyrighted text)
+fdd-tool/data/
+# Allow only a marker file in data/ for future-clarity
+!fdd-tool/data/.gitkeep
+# SQLite DB regenerable from output/*.json via scripts/ingest_outputs.py
+fdd-tool/data/db.sqlite
+
+# Pilot manifest (regenerable)
+fdd-tool/output/_pilot_*.json
+
+# Local screenshots from scripts/screenshot_site.py (developer-only, bulky)
+fdd-tool/scripts/_screenshots/
+
+# Per-PDF temp extraction working files (from spawned claude -p extractions)
+fdd-tool/tmp_extract/
+
+# OS junk
+.DS_Store
+Thumbs.db

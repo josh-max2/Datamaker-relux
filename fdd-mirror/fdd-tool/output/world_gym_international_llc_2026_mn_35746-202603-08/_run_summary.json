@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\world_gym_international_llc_2026_mn_35746-202603-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0049,
+      "input_tokens": 1791,
+      "cached": 1340,
+      "output_tokens": 208
+    },
+    "item5": {
+      "cost_usd": 0.0069,
+      "input_tokens": 1502,
+      "cached": 1340,
+      "output_tokens": 400
+    },
+    "item6": {
+      "cost_usd": 0.0128,
+      "input_tokens": 2162,
+      "cached": 1340,
+      "output_tokens": 662
+    },
+    "item7": {
+      "cost_usd": 0.0028,
+      "input_tokens": 1713,
+      "cached": 1340,
+      "output_tokens": 86
+    },
+    "item19": {
+      "cost_usd": 0.0143,
+      "input_tokens": 5541,
+      "cached": 1340,
+      "output_tokens": 88,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.0849,
+      "input_tokens": 8944,
+      "cached": 1340,
+      "output_tokens": 4114,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.1266
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\carl_s_jr_restaurants_llc_2025_mn_35314-202601-02.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0044,
+      "input_tokens": 1629,
+      "cached": 1340,
+      "output_tokens": 211
+    },
+    "item5": {
+      "cost_usd": 0.007,
+      "input_tokens": 1845,
+      "cached": 1340,
+      "output_tokens": 342
+    },
+    "item6": {
+      "cost_usd": 0.0197,
+      "input_tokens": 3450,
+      "cached": 1340,
+      "output_tokens": 862
+    },
+    "item7": {
+      "cost_usd": 0.006,
+      "input_tokens": 2737,
+      "cached": 1340,
+      "output_tokens": 96
+    },
+    "item19": {
+      "cost_usd": 0.0297,
+      "input_tokens": 7946,
+      "cached": 1340,
+      "output_tokens": 635,
+      "images_sent": 3
+    },
+    "item20": {
+      "cost_usd": 0.1181,
+      "input_tokens": 17331,
+      "cached": 1340,
+      "output_tokens": 4647,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.185
+}

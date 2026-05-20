@@ -1,0 +1,70 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 10,
+      "outlets_end": 10,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "franchised",
+      "outlets_start": 10,
+      "outlets_end": 13,
+      "net_change": 3
+    },
+    {
+      "year": 2025,
+      "outlet_type": "franchised",
+      "outlets_start": 13,
+      "outlets_end": 15,
+      "net_change": 2
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "company-owned",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    },
+    {
+      "year": 2025,
+      "outlet_type": "company-owned",
+      "outlets_start": 1,
+      "outlets_end": 1,
+      "net_change": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 11,
+      "outlets_end": 11,
+      "net_change": 0
+    },
+    {
+      "year": 2024,
+      "outlet_type": "total",
+      "outlets_start": 11,
+      "outlets_end": 14,
+      "net_change": 3
+    },
+    {
+      "year": 2025,
+      "outlet_type": "total",
+      "outlets_start": 14,
+      "outlets_end": 16,
+      "net_change": 2
+    }
+  ],
+  "state_year_status": [],
+  "confidence": 0.72,
+  "notes": "Item 20 Table 1 (system-wide master franchise summary) extracted. Table 3 (state-by-state franchised outlet status) text was not provided in the section text, so state_year_status is empty."
+}

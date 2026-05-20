@@ -1,0 +1,88 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Gross Sales",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Affiliate Store \u2013 July 1, 2024 \u2013 June 30, 2025",
+      "outlet_count": 1,
+      "reporting_period": "July 1, 2024 \u2013 June 30, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1129240,
+      "raw_text": "Gross Sales $1,129,240 100.0%"
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Total Prime Profit",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Affiliate Store \u2013 July 1, 2024 \u2013 June 30, 2025",
+      "outlet_count": 1,
+      "reporting_period": "July 1, 2024 \u2013 June 30, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 491418,
+      "raw_text": "Total Prime Profit $491,418 43.5%",
+      "notes": "Total Prime Profit = Gross Sales minus COGS and Labor Costs"
+    },
+    {
+      "metric_name": "ebitda",
+      "metric_raw": "Total Operating Profit",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Affiliate Store \u2013 July 1, 2024 \u2013 June 30, 2025",
+      "outlet_count": 1,
+      "reporting_period": "July 1, 2024 \u2013 June 30, 2025",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 293209,
+      "raw_text": "Total Operating Profit $293,209 26.0%",
+      "notes": "Excludes interest, taxes, depreciation. Does NOT deduct 5% royalty or 2% brand development fee that franchisees will pay."
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Gross Sales",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Affiliate Store \u2013 July 1, 2023 \u2013 June 30, 2024",
+      "outlet_count": 1,
+      "reporting_period": "July 1, 2023 \u2013 June 30, 2024",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1126134,
+      "raw_text": "Gross Sales $1,126,134 100%"
+    },
+    {
+      "metric_name": "gross_profit",
+      "metric_raw": "Total Prime Profit",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Affiliate Store \u2013 July 1, 2023 \u2013 June 30, 2024",
+      "outlet_count": 1,
+      "reporting_period": "July 1, 2023 \u2013 June 30, 2024",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 474342,
+      "raw_text": "Total Prime Profit $474,342 42.1%"
+    },
+    {
+      "metric_name": "ebitda",
+      "metric_raw": "Total Operating Profit",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Affiliate Store \u2013 July 1, 2023 \u2013 June 30, 2024",
+      "outlet_count": 1,
+      "reporting_period": "July 1, 2023 \u2013 June 30, 2024",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 248647,
+      "raw_text": "Total Operating Profit $248,647 22.1%",
+      "notes": "Excludes interest, taxes, depreciation. Does NOT deduct royalty or brand development fees."
+    }
+  ],
+  "confidence": 0.97,
+  "notes": "Only one affiliate-operated store exists; no franchised stores in operation as of disclosure date. Data is unaudited."
+}

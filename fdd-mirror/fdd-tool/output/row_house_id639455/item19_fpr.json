@@ -1,0 +1,25 @@
+{
+  "has_item19": true,
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "Gross Sales",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "47 franchised ROW HOUSE Studios open all of 2024 fiscal year",
+      "outlet_count": 47,
+      "reporting_period": "2024 fiscal year (12-month period ending December 31, 2024)",
+      "reporting_year": 2024,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 325548,
+      "value_median": 314660,
+      "value_min": 65678,
+      "value_max": 582320,
+      "pct_above_avg": 49,
+      "page_number": 61,
+      "raw_text": "Category High Low Average Median | Gross Sales $582,320 $65,678 $325,548 $314,660 | Percent of Studios Who Met or Exceeded the Average: 49%."
+    }
+  ],
+  "confidence": 0.97,
+  "notes": "FDD reports annual gross sales; the text says 'average monthly Gross Sales' but the chart shows values consistent with annual figures ($325K avg). The introductory text says '12-month period' which confirms annual totals, not monthly. Values extracted as annual."
+}

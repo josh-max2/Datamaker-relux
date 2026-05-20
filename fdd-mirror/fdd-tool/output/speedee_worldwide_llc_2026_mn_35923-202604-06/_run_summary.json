@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\speedee_worldwide_llc_2026_mn_35923-202604-06.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0068,
+      "input_tokens": 2115,
+      "cached": 1340,
+      "output_tokens": 272
+    },
+    "item5": {
+      "cost_usd": 0.0078,
+      "input_tokens": 1809,
+      "cached": 1340,
+      "output_tokens": 402
+    },
+    "item6": {
+      "cost_usd": 0.0171,
+      "input_tokens": 1812,
+      "cached": 1340,
+      "output_tokens": 1021
+    },
+    "item7": {
+      "cost_usd": 0.0104,
+      "input_tokens": 4190,
+      "cached": 1340,
+      "output_tokens": 95
+    },
+    "item19": {
+      "cost_usd": 0.245,
+      "input_tokens": 15292,
+      "cached": 1340,
+      "output_tokens": 13516,
+      "images_sent": 6
+    },
+    "item20": {
+      "cost_usd": 0.0745,
+      "input_tokens": 9222,
+      "cached": 1340,
+      "output_tokens": 3361,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.3616
+}

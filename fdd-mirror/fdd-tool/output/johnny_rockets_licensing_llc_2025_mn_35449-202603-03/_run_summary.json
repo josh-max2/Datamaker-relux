@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\johnny_rockets_licensing_llc_2025_mn_35449-202603-03.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0092,
+      "input_tokens": 3335,
+      "cached": 1340,
+      "output_tokens": 190
+    },
+    "item5": {
+      "cost_usd": 0.006,
+      "input_tokens": 1709,
+      "cached": 1340,
+      "output_tokens": 299
+    },
+    "item6": {
+      "cost_usd": 0.0108,
+      "input_tokens": 1492,
+      "cached": 1340,
+      "output_tokens": 662
+    },
+    "item7": {
+      "cost_usd": 0.0039,
+      "input_tokens": 2055,
+      "cached": 1340,
+      "output_tokens": 88
+    },
+    "item19": {
+      "cost_usd": 0.1051,
+      "input_tokens": 9819,
+      "cached": 1340,
+      "output_tokens": 5284,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.1469,
+      "input_tokens": 13318,
+      "cached": 1340,
+      "output_tokens": 7368,
+      "images_sent": 6
+    }
+  },
+  "total_cost_usd": 0.2818
+}

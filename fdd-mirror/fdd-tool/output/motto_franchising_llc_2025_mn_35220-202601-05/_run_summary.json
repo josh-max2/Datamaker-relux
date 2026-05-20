@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\motto_franchising_llc_2025_mn_35220-202601-05.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0062,
+      "input_tokens": 2037,
+      "cached": 1340,
+      "output_tokens": 244
+    },
+    "item5": {
+      "cost_usd": 0.0062,
+      "input_tokens": 1798,
+      "cached": 1340,
+      "output_tokens": 292
+    },
+    "item6": {
+      "cost_usd": 0.0261,
+      "input_tokens": 6316,
+      "cached": 1340,
+      "output_tokens": 715
+    },
+    "item7": {
+      "cost_usd": 0.0024,
+      "input_tokens": 1544,
+      "cached": 1340,
+      "output_tokens": 95
+    },
+    "item19": {
+      "cost_usd": 0.013,
+      "input_tokens": 5141,
+      "cached": 1340,
+      "output_tokens": 77,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.2227,
+      "input_tokens": 18517,
+      "cached": 1340,
+      "output_tokens": 11386,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.2765
+}

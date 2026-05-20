@@ -1,0 +1,297 @@
+{% extends "base.html" %}
+{% block title %}Franchise Cost, Royalty &amp; Earnings Database — {{ total_brands }} Brands from Public FDDs{% endblock %}
+{% block description %}Compare {{ total_brands }} franchise brands by initial fee, royalty rate, total investment, and Item 19 earnings. Data extracted from publicly filed Franchise Disclosure Documents (FDDs).{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "{{ SITE_HOST }}/#organization",
+      "name": "{{ site_name }}",
+      "url": "{{ SITE_HOST }}{{ url_for('') }}",
+      "logo": "{{ SITE_HOST }}{{ url_for('og-image.png') }}",
+      "description": "Franchise financial performance data extracted from publicly filed Franchise Disclosure Documents.",
+      "founder": { "@type": "Person", "name": "FranchiseDepth Editorial" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ SITE_HOST }}/#website",
+      "name": "{{ site_name }}",
+      "url": "{{ SITE_HOST }}{{ url_for('') }}",
+      "publisher": { "@id": "{{ SITE_HOST }}/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "{{ SITE_HOST }}{{ url_for('') }}?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
+{% endblock %}
+{% block content %}
+<section class="hero">
+    <h1>Franchise costs &amp; earnings, side by side.</h1>
+    <p class="lead">
+        We extract initial fees, royalty rates, total investment ranges, and Item&nbsp;19 financial performance data
+        from publicly filed Franchise Disclosure Documents — so you can compare franchises without reading 200&#8209;page PDFs.
+    </p>
+    <p class="stats">
+        <strong>{{ total_brands }}</strong> brands ·
+        <strong>{{ total_records }}</strong> Item&nbsp;19 records ·
+        <strong>{{ total_outlets_tracked|format_int }}</strong> outlets tracked
+    </p>
+    <nav class="category-chips" aria-label="Browse by category">
+        {% for c in categories %}
+        <a class="chip" href="{{ url_for('category/' ~ c.slug ~ '/') }}">
+            {{ c.label }} <span class="chip-count">{{ c.count }}</span>
+        </a>
+        {% endfor %}
+    </nav>
+</section>
+
+<section class="budget-filter" aria-labelledby="home-budget-heading">
+    <h2 id="home-budget-heading">What can you invest?</h2>
+    <p class="notes">Filter the full brand list by max total investment. Brands without a disclosed investment range are always shown.</p>
+    <div class="budget-row">
+        <label for="home-budget-slider">Max total investment:</label>
+        <input type="range" id="home-budget-slider" min="50000" max="1000000" step="5000" value="1000000">
+        <output id="home-budget-display" for="home-budget-slider">$1,000,000</output>
+        <button type="button" id="home-budget-reset" class="btn btn-secondary btn-sm">Reset</button>
+    </div>
+    <p class="budget-count-line"><span id="home-budget-count">{{ brands|length }}</span> of {{ brands|length }} brands shown.</p>
+</section>
+
+<section>
+    <h2>All brands</h2>
+    <div class="brand-list-controls">
+        <input type="search" id="brand-search" placeholder="Search by name..." aria-label="Search brands"
+               oninput="applyFilters()" />
+        <div class="brand-filter-toggles" role="group" aria-label="Filter brand list">
+            <button type="button" class="filter-toggle active" data-mode="all">All brands</button>
+            <button type="button" class="filter-toggle" data-mode="item19">Item 19 disclosed only</button>
+            <button type="button" class="filter-toggle" data-mode="missing">Missing main info</button>
+        </div>
+    </div>
+    <p class="filter-status notes" id="filter-status" hidden></p>
+    <!-- Desktop: data table -->
+    <div class="table-scroll desktop-only">
+    <table class="data-table sortable-table" id="home-brands-table">
+        <thead>
+            <tr>
+                <th data-sort="text">Brand</th>
+                <th data-sort="text">Industry</th>
+                <th data-sort="num">Filing year</th>
+                <th data-sort="text">State</th>
+                <th data-sort="num">Initial fee</th>
+                <th data-sort="num">Investment range</th>
+                <th data-sort="bool">Item 19?</th>
+            </tr>
+        </thead>
+        <tbody id="brands-table">
+            {% for b in brands %}
+            {% set missing_count = (1 if not b.fee_low else 0) + (1 if not b.royalty_pct else 0) + (1 if not b.inv_low else 0) %}
+            <tr data-name="{{ (b.brand_name or b.legal_name)|lower }}" data-inv-low="{{ b.inv_low or '' }}"
+                data-has-item19="{{ '1' if b.has_item19 else '0' }}"
+                data-missing-info="{{ '1' if missing_count >= 2 else '0' }}">
+                <td data-value="{{ (b.brand_name or b.legal_name) }}"><a href="{{ url_for('franchise/' ~ b.slug ~ '/') }}">{{ b.brand_name or b.legal_name }}</a></td>
+                <td data-value="{{ b.industry|industry_label }}">{{ b.industry|industry_label }}</td>
+                <td data-value="{{ b.filing_year or 0 }}">{{ b.filing_year or '—' }}</td>
+                <td data-value="{{ b.filing_state or '' }}">{{ b.filing_state or '—' }}</td>
+                <td data-value="{{ b.fee_low or b.fee_high or 0 }}">
+                    {% if b.fee_low and b.fee_high and b.fee_low != b.fee_high %}
+                        ${{ '{:,.0f}'.format(b.fee_low) }}–${{ '{:,.0f}'.format(b.fee_high) }}
+                    {% elif b.fee_low %}
+                        ${{ '{:,.0f}'.format(b.fee_low) }}
+                    {% elif b.fee_high %}
+                        ${{ '{:,.0f}'.format(b.fee_high) }}
+                    {% else %}—{% endif %}
+                </td>
+                <td data-value="{{ b.inv_low or 0 }}">
+                    {% if b.inv_low and b.inv_high %}${{ '{:,.0f}'.format(b.inv_low) }}–${{ '{:,.0f}'.format(b.inv_high) }}
+                    {% elif b.inv_low %}${{ '{:,.0f}'.format(b.inv_low) }}+
+                    {% else %}—{% endif %}
+                </td>
+                <td data-value="{{ '1' if b.has_item19 else '0' }}">{% if b.has_item19 %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    <!-- Mobile: card list -->
+    <ul class="brand-cards mobile-only" id="brands-cards">
+        {% for b in brands %}
+        {% set missing_count = (1 if not b.fee_low else 0) + (1 if not b.royalty_pct else 0) + (1 if not b.inv_low else 0) %}
+        <li class="brand-card" data-name="{{ (b.brand_name or b.legal_name)|lower }}" data-inv-low="{{ b.inv_low or '' }}"
+            data-has-item19="{{ '1' if b.has_item19 else '0' }}"
+            data-missing-info="{{ '1' if missing_count >= 2 else '0' }}">
+            <a href="{{ url_for('franchise/' ~ b.slug ~ '/') }}">
+                <span class="brand-card-title">{{ b.brand_name or b.legal_name }}</span>
+                <span class="brand-card-meta">
+                    {{ b.industry|industry_label }}
+                    {% if b.filing_year %} · {{ b.filing_year }}{% endif %}
+                    {% if b.has_item19 %} · <span class="badge-yes">Item 19</span>{% endif %}
+                </span>
+                <span class="brand-card-fee">
+                    {% if b.inv_low and b.inv_high %}
+                        Total investment ${{ '{:,.0f}'.format(b.inv_low) }}–${{ '{:,.0f}'.format(b.inv_high) }}
+                    {% elif b.fee_low %}
+                        Initial fee from ${{ '{:,.0f}'.format(b.fee_low) }}
+                    {% endif %}
+                </span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+
+<script>
+// Sortable columns — click any header to sort asc/desc (toggles on repeat click)
+(function() {
+    const table = document.getElementById('home-brands-table');
+    if (!table) return;
+    const tbody = table.querySelector('tbody');
+    const headers = table.querySelectorAll('th[data-sort]');
+    let currentCol = -1, asc = true;
+    headers.forEach((h, idx) => {
+        h.style.cursor = 'pointer';
+        h.addEventListener('click', () => {
+            if (currentCol === idx) asc = !asc; else { currentCol = idx; asc = true; }
+            const rows = Array.from(tbody.rows);
+            const type = h.dataset.sort;
+            rows.sort((a, b) => {
+                let av = a.cells[idx].dataset.value ?? a.cells[idx].innerText;
+                let bv = b.cells[idx].dataset.value ?? b.cells[idx].innerText;
+                if (type === 'num' || type === 'bool') {
+                    av = parseFloat(av) || 0; bv = parseFloat(bv) || 0;
+                    return asc ? av - bv : bv - av;
+                }
+                av = String(av).toLowerCase(); bv = String(bv).toLowerCase();
+                return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+            });
+            rows.forEach(r => tbody.appendChild(r));
+            headers.forEach(x => x.querySelector('.sort-ind')?.remove());
+            const ind = document.createElement('span');
+            ind.className = 'sort-ind'; ind.textContent = asc ? ' ▲' : ' ▼';
+            h.appendChild(ind);
+        });
+    });
+})();
+
+// Unified filter state — combines search, budget, and toggle mode
+const filterState = { mode: 'all', budget: null };
+
+function applyFilters() {
+    const searchInput = document.getElementById('brand-search');
+    const needle = (searchInput?.value || '').trim().toLowerCase();
+    const budgetSlider = document.getElementById('home-budget-slider');
+    const budget = budgetSlider ? parseInt(budgetSlider.value, 10) : Infinity;
+    const budgetActive = budgetSlider && budget < parseInt(budgetSlider.max, 10);
+    let visible = 0;
+
+    document.querySelectorAll("#brands-table tr, #brands-cards li").forEach(el => {
+        const matchesSearch = !needle || el.dataset.name.includes(needle);
+        const invRaw = el.dataset.invLow;
+        const matchesBudget = !budgetActive || !invRaw || invRaw === '0' || parseFloat(invRaw) <= budget;
+        let matchesMode = true;
+        if (filterState.mode === 'item19') {
+            matchesMode = el.dataset.hasItem19 === '1';
+        } else if (filterState.mode === 'missing') {
+            matchesMode = el.dataset.missingInfo === '1';
+        }
+        const show = matchesSearch && matchesBudget && matchesMode;
+        el.style.display = show ? '' : 'none';
+        if (show) visible++;
+    });
+
+    // Each brand has 2 DOM nodes (table row + card); only one displayed at a time per breakpoint
+    const brandCount = Math.floor(visible / 2);
+    const countEl = document.getElementById('home-budget-count');
+    if (countEl) countEl.textContent = brandCount;
+    const statusEl = document.getElementById('filter-status');
+    if (statusEl) {
+        if (filterState.mode === 'all' && !needle && !budgetActive) {
+            statusEl.hidden = true;
+        } else {
+            statusEl.hidden = false;
+            const parts = [];
+            if (filterState.mode === 'item19') parts.push('Item 19 disclosed');
+            if (filterState.mode === 'missing') parts.push('missing main info');
+            if (budgetActive) parts.push('investment ≤ $' + budget.toLocaleString());
+            if (needle) parts.push('"' + needle + '"');
+            statusEl.textContent = `${brandCount} brand${brandCount === 1 ? '' : 's'} match (${parts.join(' · ')})`;
+        }
+    }
+    syncUrl(needle, budgetActive ? budget : null);
+}
+
+function syncUrl(needle, budget) {
+    const url = new URL(window.location);
+    if (needle) url.searchParams.set('q', needle); else url.searchParams.delete('q');
+    if (budget) url.searchParams.set('budget', budget); else url.searchParams.delete('budget');
+    if (filterState.mode !== 'all') url.searchParams.set('filter', filterState.mode);
+    else url.searchParams.delete('filter');
+    history.replaceState({}, '', url);
+}
+
+// Wire up the toggle buttons
+document.querySelectorAll('.filter-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-toggle').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterState.mode = btn.dataset.mode;
+        applyFilters();
+    });
+});
+
+// Initial: honor ?q= and ?budget= and ?filter= from URL
+(function() {
+    const params = new URL(window.location).searchParams;
+    const q = params.get('q');
+    if (q) {
+        const input = document.getElementById('brand-search');
+        if (input) input.value = q;
+    }
+    const slider = document.getElementById('home-budget-slider');
+    const display = document.getElementById('home-budget-display');
+    const fmtUSD = n => '$' + Number(n).toLocaleString('en-US');
+    const initialBudget = params.get('budget');
+    if (slider && initialBudget) {
+        const n = parseInt(initialBudget, 10);
+        if (!isNaN(n)) {
+            slider.value = n;
+            if (display) display.textContent = fmtUSD(n);
+        }
+    }
+    const f = params.get('filter');
+    if (f === 'item19' || f === 'missing') {
+        document.querySelectorAll('.filter-toggle').forEach(b => b.classList.toggle('active', b.dataset.mode === f));
+        filterState.mode = f;
+    }
+    applyFilters();
+})();
+
+// Homepage budget widget (F4.3) — slider events delegate to unified applyFilters
+(function() {
+    const slider = document.getElementById('home-budget-slider');
+    const display = document.getElementById('home-budget-display');
+    const resetBtn = document.getElementById('home-budget-reset');
+    if (!slider) return;
+    const fmtUSD = n => '$' + Number(n).toLocaleString('en-US');
+    slider.addEventListener('input', () => {
+        display.textContent = fmtUSD(parseInt(slider.value, 10));
+        applyFilters();
+    });
+    resetBtn.addEventListener('click', () => {
+        slider.value = slider.max;
+        display.textContent = fmtUSD(parseInt(slider.max, 10));
+        applyFilters();
+    });
+})();
+</script>
+{% endblock %}

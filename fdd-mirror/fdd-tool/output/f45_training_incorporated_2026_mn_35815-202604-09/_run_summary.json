@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\f45_training_incorporated_2026_mn_35815-202604-09.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0052,
+      "input_tokens": 1979,
+      "cached": 1340,
+      "output_tokens": 193
+    },
+    "item5": {
+      "cost_usd": 0.0065,
+      "input_tokens": 2024,
+      "cached": 1340,
+      "output_tokens": 267
+    },
+    "item6": {
+      "cost_usd": 0.0228,
+      "input_tokens": 5462,
+      "cached": 1340,
+      "output_tokens": 667
+    },
+    "item7": {
+      "cost_usd": 0.0054,
+      "input_tokens": 2585,
+      "cached": 1340,
+      "output_tokens": 86
+    },
+    "item19": {
+      "cost_usd": 0.067,
+      "input_tokens": 10382,
+      "cached": 1340,
+      "output_tokens": 2632,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.2253,
+      "input_tokens": 18142,
+      "cached": 1340,
+      "output_tokens": 11636,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3322
+}

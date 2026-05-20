@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 10,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 260,
+  "fee_notes": "Royalty is tiered: 10% of gross sales up to $999,999.99; 9% on sales exceeding $1M; 8% on sales exceeding $2M; 7% on sales exceeding $3M per calendar year. Technology fee presently $60/week. Brand Marketing Fund up to 1% when established. Other fees: conventions max $1,000/person, transfer fee $3,000-$9,900, various nominal fees.",
+  "raw_excerpt": "Royalty: 10% of Gross Sales up to $999,999.99 for each calendar year; 9% of Gross Sales exceeding $1,000,000.00; 8% exceeding $2,000,000.00; 7% exceeding $3,000,000.00. Technology Fee: $60 per week. Brand Marketing Fund: Up to 1% of Gross Sales, when established. Due by automatic debit each Friday.",
+  "confidence": 0.92
+}

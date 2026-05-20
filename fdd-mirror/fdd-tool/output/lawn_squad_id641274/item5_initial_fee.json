@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 15000,
+  "initial_franchise_fee_high": 45000,
+  "fee_notes": "Base fee $45,000 for up to 100,000 SFDUs. Multiple discount programs available: existing franchisee (30%), existing affiliate franchisee ($15,000 for first two), military veteran/active duty (30%), diversity ownership ($5,000). Additional $0.45 per SFDU for territories exceeding 100,000 SFDUs, up to 150,000 max. Additional territory discounts for second and third territories: $35,000 and $24,500 respectively.",
+  "raw_excerpt": "The base initial franchise fee (\"Franchise Fee\") is $45,000, which is for a franchise territory (\"Territory\") with a population of up to 100,000 Single Family Dwelling Units. During the fiscal year 2025, we collected Franchise Fees ranging from $15,000 to $45,000.",
+  "confidence": 0.96
+}

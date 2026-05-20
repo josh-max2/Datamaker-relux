@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 5,
+  "royalty_min_monthly": null,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 150,
+  "fee_notes": "Royalty is greater of 5% gross sales or minimum royalty (biweekly minimums escalate: $250/biweekly period at start through months 12, $500 months 13-24, $750 months 25-36, $1,125 months 37-48, $1,625 months 49-60, $1,875 months 61+). Brand Development Fund is greater of 1% gross sales or $125/biweekly minimum; franchisor reserves right to raise to 2%. Local Advertising Requirement $1,000/month minimum (not included in royalty_pct/marketing_fee_pct fields).",
+  "raw_excerpt": "Royalty: The greater of (i) Five percent (5%) of Gross Sales, or (ii) the Minimum Royalty. Brand Development Fund: The greater of (i) 1% of Gross Sales, or (ii) the Minimum Brand Fund Contribution. Technology Fee: Currently $150 per month.",
+  "confidence": 0.92
+}

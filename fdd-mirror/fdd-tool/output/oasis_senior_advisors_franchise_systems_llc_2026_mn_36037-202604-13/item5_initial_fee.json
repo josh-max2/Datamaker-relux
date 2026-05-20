@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 39304,
+  "initial_franchise_fee_high": 80000,
+  "fee_notes": "The Initial Franchise Fee is variable based on Territory population (calculated at $0.10 per person), typically ranging from $40,000 to $80,000 for territories of 400,000\u2013800,000 people. During the fiscal year ended December 31, 2025, the fee actually ranged from $39,304 to $80,000. A 10% discount is available for qualified veterans (honorable discharge per DD214). Existing franchisees signing an additional Franchise Agreement receive a 20% reduction. A separate non-refundable Business Administration Set-Up Fee (BASF) of $10,000 is also required at signing (waived for existing franchisees adding a territory). The Initial Franchise Fee is generally non-refundable, except that if the franchisor terminates due to failed training, it retains 50%\u201375% of the fee for its direct/indirect expenses and returns the remainder.",
+  "raw_excerpt": "During our fiscal year that ended on December 31, 2025, the Initial Franchise Fee ranged from $39,304 to $80,000 and the BASF ranged from $0 to $10,000. ... The Initial Franchise Fee typically ranges from $40,000 to $80,000.",
+  "confidence": 0.95
+}

@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\soccer_shots_franchising_llc_2026_mn_35766-202604-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0052,
+      "input_tokens": 1954,
+      "cached": 1340,
+      "output_tokens": 200
+    },
+    "item5": {
+      "cost_usd": 0.0054,
+      "input_tokens": 1688,
+      "cached": 1340,
+      "output_tokens": 261
+    },
+    "item6": {
+      "cost_usd": 0.0215,
+      "input_tokens": 4406,
+      "cached": 1340,
+      "output_tokens": 793
+    },
+    "item7": {
+      "cost_usd": 0.0025,
+      "input_tokens": 1575,
+      "cached": 1340,
+      "output_tokens": 92
+    },
+    "item19": {
+      "cost_usd": 0.1108,
+      "input_tokens": 37069,
+      "cached": 1340,
+      "output_tokens": 217,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.2051,
+      "input_tokens": 17265,
+      "cached": 1340,
+      "output_tokens": 10460,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3505
+}

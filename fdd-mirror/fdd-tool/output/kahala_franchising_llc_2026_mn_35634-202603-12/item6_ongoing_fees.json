@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6.0,
+  "royalty_min_monthly": 1733.33,
+  "marketing_fee_pct": 4.0,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 55.0,
+  "fee_notes": "Royalty Fee is the greater of 6% of weekly Gross Sales or $400/week (traditional locations); non-traditional locations pay 6% with no minimum. A Surcharge of up to $10/week may be added for franchises in states with additional reporting requirements (currently only New York). Advertising Fees are up to 4% of weekly Gross Sales (currently 1% to National Fund and 3% to Regional Fund/Cooperative). Data Fees up to $75/month for POS data polling. POS Help Desk Phone Support Maintenance Contract Fee is $55/month. Gift Card Redemption Fee is currently 11% of redemption amount. royalty_min_monthly converted from $400/week \u00d7 52/12 \u2248 $1,733.33. marketing_fee_pct reflects the disclosed maximum of 4%; current rate is 4% (1% national + 3% regional).",
+  "raw_excerpt": "Royalty Fee and Surcharge (Notes 1 and 9): Royalty Fee is the greater of the following: (i) 6% of total weekly Gross Sales or (ii) $400 per week. Surcharge is a maximum of $10 per week in addition to the Royalty Fee.\nAdvertising Fees (Note 1): Up to 4% of weekly Gross Sales. The Advertising Fees are deposited as follows: 1% to the National Fund and 3% to the Regional Fund for your Cooperative or your store.\nData Fees (Notes 1 and 6): Up to $75 per month (Subject to reasonable annual and/or service enhancement increases) for collecting or polling data from your POS System.\nPOS Help Desk Phone Support Maintenance Contract Fee: $55 per month.\nGift Card Redemption Fee: Currently 11% of the amount of the gift card redemption.",
+  "confidence": 0.88
+}

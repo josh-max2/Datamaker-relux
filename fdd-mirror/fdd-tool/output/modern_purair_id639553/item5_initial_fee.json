@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 60000,
+  "initial_franchise_fee_high": 60000,
+  "fee_notes": "Base $60,000 per territory (250,000-person population); +$0.20 per person above threshold. Item 5 also requires: Business Launch Fee ($40,000), Onsite Training Fee ($5,000), Sales Center Platform Fee ($5,000), Grand Opening Project Management Fee ($5,000), Technology Fee ($500/month).",
+  "raw_excerpt": "Your Initial Franchise Fee will be $60,000 for a single Territory containing approximately 250,000 people plus $0.20 per person above 250,000.",
+  "confidence": 0.95
+}

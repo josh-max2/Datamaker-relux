@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\mty_franchising_usa_inc_2026_mn_35637-202603-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0058,
+      "input_tokens": 1965,
+      "cached": 1340,
+      "output_tokens": 232
+    },
+    "item5": {
+      "cost_usd": 0.0054,
+      "input_tokens": 1288,
+      "cached": 1340,
+      "output_tokens": 345
+    },
+    "item6": {
+      "cost_usd": 0.0204,
+      "input_tokens": 4024,
+      "cached": 1340,
+      "output_tokens": 795
+    },
+    "item7": {
+      "cost_usd": 0.0187,
+      "input_tokens": 6993,
+      "cached": 1340,
+      "output_tokens": 86
+    },
+    "item19": {
+      "cost_usd": 0.0126,
+      "input_tokens": 5112,
+      "cached": 1340,
+      "output_tokens": 61,
+      "images_sent": 2
+    },
+    "item20": {
+      "cost_usd": 0.0545,
+      "input_tokens": 8219,
+      "cached": 1340,
+      "output_tokens": 2228,
+      "images_sent": 4
+    }
+  },
+  "total_cost_usd": 0.1173
+}

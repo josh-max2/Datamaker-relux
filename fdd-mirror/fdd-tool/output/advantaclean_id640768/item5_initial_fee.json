@@ -1,0 +1,6 @@
+{
+  "initial_franchise_fee_low": 4250,
+  "initial_franchise_fee_high": 5000,
+  "fee_notes": "$5,000 regular; $4,250 for veterans/active service members/spouses (15% discount). No fee for subsequent agreements.",
+  "confidence": 0.95
+}

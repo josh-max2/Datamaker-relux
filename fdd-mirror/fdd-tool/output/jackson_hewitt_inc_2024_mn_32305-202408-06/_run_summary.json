@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\jackson_hewitt_inc_2024_mn_32305-202408-06.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0062,
+      "input_tokens": 2072,
+      "cached": 1340,
+      "output_tokens": 242
+    },
+    "item5": {
+      "cost_usd": 0.0069,
+      "input_tokens": 1926,
+      "cached": 1340,
+      "output_tokens": 319
+    },
+    "item6": {
+      "cost_usd": 0.0391,
+      "input_tokens": 8206,
+      "cached": 1340,
+      "output_tokens": 1205
+    },
+    "item7": {
+      "cost_usd": 0.0092,
+      "input_tokens": 3788,
+      "cached": 1340,
+      "output_tokens": 99
+    },
+    "item19": {
+      "cost_usd": 0.0418,
+      "input_tokens": 8183,
+      "cached": 1340,
+      "output_tokens": 1391,
+      "images_sent": 3
+    },
+    "item20": {
+      "cost_usd": 0.2357,
+      "input_tokens": 21338,
+      "cached": 1340,
+      "output_tokens": 11689,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.339
+}

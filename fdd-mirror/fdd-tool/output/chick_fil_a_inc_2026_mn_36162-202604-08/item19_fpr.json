@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "annual sales volume",
+      "cohort_name": "other",
+      "cohort_raw": "306 domestic Licensed Units located on college or university campuses, open at least one full calendar year as of December 31, 2025",
+      "outlet_count": 306,
+      "reporting_period": "2025 calendar year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1523567,
+      "value_median": 1279605,
+      "value_min": 275194,
+      "value_max": 4844963,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 40,
+      "page_number": 52,
+      "raw_text": "The median annual sales volume of domestic Licensed Units located on college or university campuses that were open at least one year as of December 31, 2025 was $1,279,605 and the average annual sales volume was $1,523,567 with 123 of the 306 or 40% that did as well or better than $1,523,567 in annual sales. The highest and lowest annual sales volume for these college and university Chick-fil-A Licensed Unit locations open for at least one full calendar year in 2025 was $$4,844,963 and $275,194, respectively.",
+      "notes": "OCR artifact: '$$4,844,963' appears in source \u2014 interpreted as $4,844,963. Cohort is college/university campus Licensed Units (not traditional restaurant franchises). 'annual sales volume' defined as gross receipts excluding sales taxes."
+    },
+    {
+      "metric_name": "gross_sales",
+      "metric_raw": "annual sales volume",
+      "cohort_name": "other",
+      "cohort_raw": "100 domestic Licensed Units located at hospitals, businesses, industries or airports, open at least one full calendar year as of December 31, 2025",
+      "outlet_count": 100,
+      "reporting_period": "2025 calendar year",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 3711024,
+      "value_median": 3224813,
+      "value_min": 161753,
+      "value_max": 12238143,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 46,
+      "page_number": 53,
+      "raw_text": "domestic Licensed Units located at hospitals, businesses, industries or airports that were open at least one year as of December 31, 2025 was $3,224,813, and the average annual sales volume was $3,711,024 with 46 of the 100 or 46% that did as well or better than $3,711,024 in annual sales. The highest and lowest annual sales volume for these hospital, business, industry and airport Chick-fil-A Licensed Unit locations open for at least one full calendar year in 2025 was $12,238,143 and $161,753, respectively.",
+      "notes": "Cohort is hospital/business/industry/airport Licensed Units (not traditional restaurant franchises). 'annual sales volume' defined as gross receipts excluding sales taxes. No costs or operating expenses reflected in these figures."
+    }
+  ],
+  "has_item19": true,
+  "confidence": 0.95,
+  "notes": "Item 19 covers only Chick-fil-A Licensed Units (424 total, 406 open at least one full calendar year), NOT the ~2,863 company-operated and franchised Operator Chick-fil-A Restaurants. Two cohorts reported: college/university campuses (306 units) and hospitals/businesses/industries/airports (100 units). Data as of December 31, 2025. One OCR artifact noted: '$$4,844,963' interpreted as $4,844,963. No cost or profitability data disclosed \u2014 only gross sales volumes."
+}

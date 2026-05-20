@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}Franchise Buying Guides — {{ site_name }}{% endblock %}
+{% block description %}Plain-English guides to evaluating franchise opportunities: how to read an FDD, what Item 19 means, how breakeven works, what to ask current franchisees.{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Guides", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Franchise Buying Guides",
+  "url": "{{ canonical_url }}",
+  "isPartOf": { "@type": "WebSite", "name": "{{ site_name }}", "url": "{{ SITE_HOST }}{{ url_for('') }}" }
+}
+</script>
+{% endblock %}
+{% block content %}
+<article>
+    <h1>Franchise buying guides</h1>
+    <p class="lead">Plain-English guides to evaluating a franchise opportunity. Every recommendation here cross-references the actual data we've extracted from publicly filed FDDs.</p>
+
+    <section>
+        <h2>Available guides</h2>
+        <ul class="guide-list">
+            <li>
+                <a href="{{ url_for('guides/understanding-item-19/') }}"><strong>Understanding FDD Item 19</strong></a>
+                <p>What Item 19 actually tells you, what's optional, how to read the cohort labels, and how to use the numbers without getting cherry-picked by the franchisor's framing.</p>
+            </li>
+            <li>
+                <a href="{{ url_for('guides/understanding-item-7/') }}"><strong>Understanding FDD Item 7 (total investment)</strong></a>
+                <p>The line items that surprise first-time buyers, what's not in the range, and how to use the High end honestly. Why the headline "$150K to open" usually isn't enough.</p>
+            </li>
+            <li>
+                <a href="{{ url_for('guides/validating-franchisee-earnings/') }}"><strong>How to validate franchise earnings before signing</strong></a>
+                <p>The single highest-leverage research you can do — direct calls with current franchisees from the Item 20 list. Who to call, what to ask, what to trust. 10 questions every call should cover.</p>
+            </li>
+            <li>
+                <a href="{{ url_for('guides/understanding-item-20/') }}"><strong>Understanding FDD Item 20 (outlet activity + closures)</strong></a>
+                <p>How to read closure rate vs transfers, what the state-by-state table reveals about brand stability, and why "outlets closed" is a catch-all that mixes very different events.</p>
+            </li>
+            <li>
+                <a href="{{ url_for('guides/franchise-breakeven-how-long/') }}"><strong>How long does it take to break even on a franchise?</strong></a>
+                <p>Operational breakeven vs investment breakeven vs wage-replacement breakeven — three different things that get called the same word. How to compute defensible numbers from Items 7 and 19, and the typical ranges we see by category.</p>
+            </li>
+            <li>
+                <a href="{{ url_for('guides/sba-7a-franchise-financing/') }}"><strong>SBA 7(a) franchise financing: how eligibility actually works now</strong></a>
+                <p>The SBA Franchise Directory was discontinued in 2023. Eligibility is now decided per-lender, per-deal. What the lender actually checks, how to find out if a brand passes, and how to stress-test the deal economics.</p>
+            </li>
+            <li>
+                <a href="{{ url_for('guides/whats-negotiable-in-a-franchise-agreement/') }}"><strong>What's negotiable in a franchise agreement?</strong></a>
+                <p>The financial terms (initial fee, royalty structure, renewal, territory) are negotiable far more often than franchisors admit. The brand-protection clauses aren't. How to tell the difference and where leverage comes from.</p>
+            </li>
+            <li>
+                <a href="{{ url_for('guides/evaluating-discovery-day/') }}"><strong>How to evaluate a franchise discovery day</strong></a>
+                <p>Discovery day is when the franchisor evaluates you — and when you should be evaluating them. Specific questions to ask each leadership role, behaviors to observe, red flags that warrant walking out, and the 72-hour rule for the inevitable post-day euphoria.</p>
+            </li>
+        </ul>
+        <p class="notes">More guides coming: how to negotiate franchise agreement terms, how to choose your protected territory, and how to evaluate franchisor support quality during discovery day.</p>
+    </section>
+</article>
+{% endblock %}

@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 1600,
+  "marketing_fee_pct": 1,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 55,
+  "fee_notes": "Royalty Fee is the greater of 6% of weekly Gross Sales or $400/week minimum (traditional locations); non-traditional locations pay 6% with no minimum. Minimum weekly royalty of $400 converts to approximately $1,600/month. A Surcharge of up to $10/week may be added for franchisees in states with additional reporting requirements (currently only New York). Advertising Fee is currently 1% of weekly Gross Sales (up to 4% maximum). Data Fees up to $75/month for POS data polling. POS Help Desk/Maintenance Contract Fee is $55/month. In the event of breach/default, Royalties may be increased to up to 18% of Gross Sales or 3x the fixed Royalty Fee for a minimum 14-day period.",
+  "raw_excerpt": "Royalty Fee and Surcharge (Notes 1 and 9): Royalty Fee is the greater of the following: (i) 6% of total weekly Gross Sales or (ii) $400 per week. Surcharge is a maximum of $10 per week in addition to the Royalty Fee.\n\nAdvertising Fees (Note 1): Up to 4% of weekly Gross Sales. Currently, Advertising Fee is 1% of weekly Gross Sales, which goes to the Advertising Fund (Note 4).\n\nData Fees (Notes 1 and 6): Up to $75 per month (Subject to reasonable annual and/or service enhancement increases).\n\nPOS Help Desk Phone Support Maintenance Contract Fee: $55 per month.\n\nNote 2: For traditional Great Steak restaurants, the Royalty Fee will be the greater of: (i) 6% of the total weekly Gross Sales or (ii) $400 per week. For non-traditional Great Steak restaurants, the Royalty Fee is 6% of total weekly Gross Sales with no minimum royalty.",
+  "confidence": 0.92
+}

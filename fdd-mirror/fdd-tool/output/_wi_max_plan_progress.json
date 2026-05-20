@@ -1,0 +1,1268 @@
+{
+  "started_at": "2026-05-19T10:09:04.347550",
+  "results": [
+    {
+      "pdf_path": "data/wi_scrape/popeyes_louisiana_kitchen_id640387.pdf",
+      "brand": "POPEYES LOUISIANA KITCHEN",
+      "ok": false,
+      "elapsed_sec": 240.8,
+      "error": "\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.4416315999999999,\n    \"duration_ms\": 230258,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 230s, cost $0.4416\n",
+      "finished_at": "2026-05-19T10:13:05.195263"
+    },
+    {
+      "pdf_path": "data/wi_scrape/sonic_drive_ins_id640453.pdf",
+      "brand": "Sonic Drive-Ins",
+      "ok": false,
+      "elapsed_sec": 93.8,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.3310691,\n    \"duration_ms\": 88433,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 89s, cost $0.3311\n",
+      "finished_at": "2026-05-19T10:14:38.984092"
+    },
+    {
+      "pdf_path": "data/wi_scrape/five_guys_id639672.pdf",
+      "brand": "FIVE GUYS",
+      "ok": false,
+      "elapsed_sec": 75.4,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.29029285,\n    \"duration_ms\": 69903,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 70s, cost $0.2903\n",
+      "finished_at": "2026-05-19T10:15:54.400693"
+    },
+    {
+      "pdf_path": "data/wi_scrape/wing_stop_id641151.pdf",
+      "brand": "WING-STOP\u00ae",
+      "ok": false,
+      "elapsed_sec": 89.7,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2930621,\n    \"duration_ms\": 83927,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 84s, cost $0.2931\n",
+      "finished_at": "2026-05-19T10:17:24.109089"
+    },
+    {
+      "pdf_path": "data/wi_scrape/buffalo_wild_wings_id640448.pdf",
+      "brand": "Buffalo Wild Wings\u00ae",
+      "ok": false,
+      "elapsed_sec": 76.1,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.30096985,\n    \"duration_ms\": 71936,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 72s, cost $0.3010\n",
+      "finished_at": "2026-05-19T10:18:40.162450"
+    },
+    {
+      "pdf_path": "data/wi_scrape/firehouse_subs_restaurant_id640423.pdf",
+      "brand": "Firehouse Subs\u00ae Restaurant",
+      "ok": false,
+      "elapsed_sec": 438.2,
+      "error": "eed\": \"standard\",\n    \"total_cost_usd\": 0.8918754,\n    \"duration_ms\": 431207,\n    \"num_turns\": 1\n  },\n  \"ok\": false,\n  \"parse_reason\": \"JSON parse failed: Expecting value: line 1 column 1 (char 0)\"\n}\n",
+      "finished_at": "2026-05-19T10:25:58.315005"
+    },
+    {
+      "pdf_path": "data/wi_scrape/quiznos_id639852.pdf",
+      "brand": "Quiznos",
+      "ok": false,
+      "elapsed_sec": 165.1,
+      "error": " \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.3395001,\n    \"duration_ms\": 160672,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 161s, cost $0.3395\n",
+      "finished_at": "2026-05-19T10:28:43.385750"
+    },
+    {
+      "pdf_path": "data/wi_scrape/charleys_charleys_philly_steaks_charley__id641332.pdf",
+      "brand": "\"Charleys\u00ae\", \"Charleys Philly Steaks\u00ae\", \"Charley's Grilled Subs\u00ae\", \"Charleys Philly Steaks Wings ? Philly Steaks\u00ae,\" and \"Charleys Cheesesteaks Wings\"",
+      "ok": false,
+      "elapsed_sec": 115.7,
+      "error": " \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2931471,\n    \"duration_ms\": 113372,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 113s, cost $0.2931\n",
+      "finished_at": "2026-05-19T10:30:39.084430"
+    },
+    {
+      "pdf_path": "data/wi_scrape/smoothie_king_id640867.pdf",
+      "brand": "Smoothie King",
+      "ok": false,
+      "elapsed_sec": 186.6,
+      "error": "\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.47026709999999994,\n    \"duration_ms\": 183184,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 183s, cost $0.4703\n",
+      "finished_at": "2026-05-19T10:33:45.665080"
+    },
+    {
+      "pdf_path": "data/wi_scrape/jamba_id640666.pdf",
+      "brand": "Jamba",
+      "ok": false,
+      "elapsed_sec": 87.3,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.26166459999999997,\n    \"duration_ms\": 82055,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 82s, cost $0.2617\n",
+      "finished_at": "2026-05-19T10:35:12.987275"
+    },
+    {
+      "pdf_path": "data/wi_scrape/cinnabon_id640665.pdf",
+      "brand": "Cinnabon",
+      "ok": false,
+      "elapsed_sec": 102.4,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.3537951,\n    \"duration_ms\": 96283,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 96s, cost $0.3538\n",
+      "finished_at": "2026-05-19T10:36:55.431755"
+    },
+    {
+      "pdf_path": "data/wi_scrape/tim_hortons_id640330.pdf",
+      "brand": "Tim Hortons",
+      "ok": false,
+      "elapsed_sec": 30.4,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.11908435,\n    \"duration_ms\": 19739,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 20s, cost $0.1191\n",
+      "finished_at": "2026-05-19T10:37:25.788875"
+    },
+    {
+      "pdf_path": "data/wi_scrape/caribou_coffee_id641334.pdf",
+      "brand": "Caribou Coffee",
+      "ok": false,
+      "elapsed_sec": 44.7,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2037186,\n    \"duration_ms\": 40617,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 41s, cost $0.2037\n",
+      "finished_at": "2026-05-19T10:38:10.521337"
+    },
+    {
+      "pdf_path": "data/wi_scrape/7_brew_id639247.pdf",
+      "brand": "7 BREW",
+      "ok": false,
+      "elapsed_sec": 156.4,
+      "error": "\"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.35317785,\n    \"duration_ms\": 152937,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 153s, cost $0.3532\n",
+      "finished_at": "2026-05-19T10:40:46.877220"
+    },
+    {
+      "pdf_path": "data/wi_scrape/biggby_coffee_id641503.pdf",
+      "brand": "BIGGBY COFFEE",
+      "ok": false,
+      "elapsed_sec": 65.2,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2468231,\n    \"duration_ms\": 61134,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 61s, cost $0.2468\n",
+      "finished_at": "2026-05-19T10:41:52.069876"
+    },
+    {
+      "pdf_path": "data/wi_scrape/baskin_robbins_id640452.pdf",
+      "brand": "Baskin-Robbins",
+      "ok": false,
+      "elapsed_sec": 95.2,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.29881435,\n    \"duration_ms\": 89119,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 89s, cost $0.2988\n",
+      "finished_at": "2026-05-19T10:43:27.300902"
+    },
+    {
+      "pdf_path": "data/wi_scrape/dq_grill_chill_id640430.pdf",
+      "brand": "DQ Grill & Chill",
+      "ok": false,
+      "elapsed_sec": 118.6,
+      "error": "\"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.34943485,\n    \"duration_ms\": 112149,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 112s, cost $0.3494\n",
+      "finished_at": "2026-05-19T10:45:25.859207"
+    },
+    {
+      "pdf_path": "data/wi_scrape/carvel_id640663.pdf",
+      "brand": "Carvel",
+      "ok": false,
+      "elapsed_sec": 64.7,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2513266,\n    \"duration_ms\": 59330,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 59s, cost $0.2513\n",
+      "finished_at": "2026-05-19T10:46:30.530942"
+    },
+    {
+      "pdf_path": "data/wi_scrape/hooters_id641519.pdf",
+      "brand": "Hooters",
+      "ok": false,
+      "elapsed_sec": 61.4,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.23575459999999998,\n    \"duration_ms\": 57231,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 57s, cost $0.2358\n",
+      "finished_at": "2026-05-19T10:47:31.896618"
+    },
+    {
+      "pdf_path": "data/wi_scrape/snap_fitness_id639261.pdf",
+      "brand": "Snap Fitness",
+      "ok": false,
+      "elapsed_sec": 88.9,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.25697435,\n    \"duration_ms\": 83568,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 84s, cost $0.2570\n",
+      "finished_at": "2026-05-19T10:49:00.801175"
+    },
+    {
+      "pdf_path": "data/wi_scrape/row_house_id639455.pdf",
+      "brand": "Row House",
+      "ok": false,
+      "elapsed_sec": 73.3,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.21515059999999997,\n    \"duration_ms\": 70292,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 70s, cost $0.2152\n",
+      "finished_at": "2026-05-19T10:50:14.136401"
+    },
+    {
+      "pdf_path": "data/wi_scrape/camp_bow_wow_id641544.pdf",
+      "brand": "Camp Bow Wow",
+      "ok": false,
+      "elapsed_sec": 82.1,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.28104685,\n    \"duration_ms\": 76784,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 77s, cost $0.2810\n",
+      "finished_at": "2026-05-19T10:51:36.239219"
+    },
+    {
+      "pdf_path": "data/wi_scrape/stretch_zone_id641460.pdf",
+      "brand": "Stretch Zone",
+      "ok": false,
+      "elapsed_sec": 12.6,
+      "error": "age\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.13514235000000002,\n    \"duration_ms\": 7374,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 8s, cost $0.1351\n",
+      "finished_at": "2026-05-19T10:51:48.854915"
+    },
+    {
+      "pdf_path": "data/wi_scrape/better_homes_and_gardens_real_estate_id640556.pdf",
+      "brand": "Better Homes and Gardens Real Estate",
+      "ok": false,
+      "elapsed_sec": 78.0,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.30153485,\n    \"duration_ms\": 69983,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 70s, cost $0.3015\n",
+      "finished_at": "2026-05-19T10:53:06.805499"
+    },
+    {
+      "pdf_path": "data/wi_scrape/weichert_id640315.pdf",
+      "brand": "Weichert",
+      "ok": false,
+      "elapsed_sec": 90.0,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.27250885,\n    \"duration_ms\": 85021,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 85s, cost $0.2725\n",
+      "finished_at": "2026-05-19T10:54:36.855477"
+    },
+    {
+      "pdf_path": "data/wi_scrape/sotheby_s_international_realty_id640572.pdf",
+      "brand": "Sotheby's International Realty",
+      "ok": false,
+      "elapsed_sec": 87.3,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2679206,\n    \"duration_ms\": 80813,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 81s, cost $0.2679\n",
+      "finished_at": "2026-05-19T10:56:04.178965"
+    },
+    {
+      "pdf_path": "data/wi_scrape/engel_v_lkers_residential_real_estate_br_id641404.pdf",
+      "brand": "Engel & V\u00f6lkers Residential Real Estate Brokerage",
+      "ok": false,
+      "elapsed_sec": 70.5,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.28678310000000007,\n    \"duration_ms\": 66189,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 66s, cost $0.2868\n",
+      "finished_at": "2026-05-19T10:57:14.670466"
+    },
+    {
+      "pdf_path": "data/wi_scrape/compass_by_margaritaville_id641496.pdf",
+      "brand": "Compass by Margaritaville",
+      "ok": false,
+      "elapsed_sec": 31.9,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1746376,\n    \"duration_ms\": 25854,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 26s, cost $0.1746\n",
+      "finished_at": "2026-05-19T10:57:46.589711"
+    },
+    {
+      "pdf_path": "data/wi_scrape/exit_realty_upper_midwest_id639680.pdf",
+      "brand": "EXIT Realty Upper Midwest",
+      "ok": false,
+      "elapsed_sec": 108.6,
+      "error": " \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2642141,\n    \"duration_ms\": 104407,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 105s, cost $0.2642\n",
+      "finished_at": "2026-05-19T10:59:35.204842"
+    },
+    {
+      "pdf_path": "data/wi_scrape/property_management_inc_id640731.pdf",
+      "brand": "Property Management Inc.",
+      "ok": false,
+      "elapsed_sec": 102.2,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.3038386,\n    \"duration_ms\": 98255,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 98s, cost $0.3038\n",
+      "finished_at": "2026-05-19T11:01:17.357620"
+    },
+    {
+      "pdf_path": "data/wi_scrape/handyman_connection_id640331.pdf",
+      "brand": "Handyman Connection",
+      "ok": false,
+      "elapsed_sec": 68.9,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.24864559999999997,\n    \"duration_ms\": 64594,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 65s, cost $0.2486\n",
+      "finished_at": "2026-05-19T11:02:26.307749"
+    },
+    {
+      "pdf_path": "data/wi_scrape/two_maids_a_mop_id640873.pdf",
+      "brand": "Two Maids & A Mop",
+      "ok": false,
+      "elapsed_sec": 289.6,
+      "error": "\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.48025484999999996,\n    \"duration_ms\": 286676,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 287s, cost $0.4803\n",
+      "finished_at": "2026-05-19T11:07:15.936085"
+    },
+    {
+      "pdf_path": "data/wi_scrape/heaven_s_best_and_heaven_s_best_carpet_c_id640146.pdf",
+      "brand": "Heaven's Best and Heaven's Best Carpet Cleaning",
+      "ok": false,
+      "elapsed_sec": 76.6,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.27865435,\n    \"duration_ms\": 73230,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 73s, cost $0.2787\n",
+      "finished_at": "2026-05-19T11:08:32.584199"
+    },
+    {
+      "pdf_path": "data/wi_scrape/jan_pro_franchise_development_of_northea_id639717.pdf",
+      "brand": "Jan-Pro Franchise Development of Northeast Wisconsin",
+      "ok": false,
+      "elapsed_sec": 89.2,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.30852235000000006,\n    \"duration_ms\": 86311,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 86s, cost $0.3085\n",
+      "finished_at": "2026-05-19T11:10:01.796696"
+    },
+    {
+      "pdf_path": "data/wi_scrape/college_hunks_hauling_junk_and_college_h_id641511.pdf",
+      "brand": "College Hunks Hauling Junk and College Hunks Moving",
+      "ok": false,
+      "elapsed_sec": 123.0,
+      "error": "\"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.36943585,\n    \"duration_ms\": 118471,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 119s, cost $0.3694\n",
+      "finished_at": "2026-05-19T11:12:04.787463"
+    },
+    {
+      "pdf_path": "data/wi_scrape/kitchen_tune_up_id640306.pdf",
+      "brand": "Kitchen Tune-Up",
+      "ok": false,
+      "elapsed_sec": 154.5,
+      "error": " \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.3579006,\n    \"duration_ms\": 151824,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 152s, cost $0.3579\n",
+      "finished_at": "2026-05-19T11:14:39.324539"
+    },
+    {
+      "pdf_path": "data/wi_scrape/closets_by_design_id641538.pdf",
+      "brand": "CLOSETS BY DESIGN",
+      "ok": false,
+      "elapsed_sec": 84.7,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2540156,\n    \"duration_ms\": 77446,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 77s, cost $0.2540\n",
+      "finished_at": "2026-05-19T11:16:03.992238"
+    },
+    {
+      "pdf_path": "data/wi_scrape/budget_blinds_id640856.pdf",
+      "brand": "Budget Blinds",
+      "ok": false,
+      "elapsed_sec": 37.5,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1598076,\n    \"duration_ms\": 33797,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 34s, cost $0.1598\n",
+      "finished_at": "2026-05-19T11:16:41.512000"
+    },
+    {
+      "pdf_path": "data/wi_scrape/mosquito_authority_id641652.pdf",
+      "brand": "Mosquito Authority",
+      "ok": false,
+      "elapsed_sec": 111.3,
+      "error": "\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.31461985000000003,\n    \"duration_ms\": 103863,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 104s, cost $0.3146\n",
+      "finished_at": "2026-05-19T11:18:32.848799"
+    },
+    {
+      "pdf_path": "data/wi_scrape/u_s_lawns_id640840.pdf",
+      "brand": "U.S. LAWNS",
+      "ok": false,
+      "elapsed_sec": 190.8,
+      "error": "\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.41518560000000004,\n    \"duration_ms\": 187175,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 187s, cost $0.4152\n",
+      "finished_at": "2026-05-19T11:21:43.602968"
+    },
+    {
+      "pdf_path": "data/wi_scrape/hand_stone_massage_and_facial_spa_id640845.pdf",
+      "brand": "Hand & Stone Massage and Facial Spa",
+      "ok": false,
+      "elapsed_sec": 109.1,
+      "error": "\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.32407959999999997,\n    \"duration_ms\": 103893,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 104s, cost $0.3241\n",
+      "finished_at": "2026-05-19T11:23:32.730917"
+    },
+    {
+      "pdf_path": "data/wi_scrape/elements_massage_id640737.pdf",
+      "brand": "Elements Massage",
+      "ok": false,
+      "elapsed_sec": 119.6,
+      "error": " \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.3190501,\n    \"duration_ms\": 115428,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 115s, cost $0.3191\n",
+      "finished_at": "2026-05-19T11:25:32.375651"
+    },
+    {
+      "pdf_path": "data/wi_scrape/drybar_id640745.pdf",
+      "brand": "Drybar",
+      "ok": false,
+      "elapsed_sec": 103.2,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.30826234999999996,\n    \"duration_ms\": 98914,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 99s, cost $0.3083\n",
+      "finished_at": "2026-05-19T11:27:15.572452"
+    },
+    {
+      "pdf_path": "data/wi_scrape/european_wax_center_id641625.pdf",
+      "brand": "European Wax Center",
+      "ok": false,
+      "elapsed_sec": 103.7,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.3196001,\n    \"duration_ms\": 96375,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 96s, cost $0.3196\n",
+      "finished_at": "2026-05-19T11:28:59.232643"
+    },
+    {
+      "pdf_path": "data/wi_scrape/cookie_cutters_haircuts_for_kids_id640425.pdf",
+      "brand": "COOKIE CUTTERS HAIRCUTS FOR KIDS",
+      "ok": false,
+      "elapsed_sec": 77.5,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.21697385,\n    \"duration_ms\": 74566,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 75s, cost $0.2170\n",
+      "finished_at": "2026-05-19T11:30:16.695503"
+    },
+    {
+      "pdf_path": "data/wi_scrape/jiffy_lube_id640520.pdf",
+      "brand": "Jiffy Lube",
+      "ok": false,
+      "elapsed_sec": 644.7,
+      "error": "\n{\n  \"last_attempt_at\": \"2026-05-19 11:41:01\",\n  \"elapsed_sec\": 600,\n  \"model\": \"sonnet\",\n  \"prompt_chars\": 91623,\n  \"page_count\": 628,\n  \"item19_no_fpr\": false,\n  \"ok\": false,\n  \"error\": \"TIMEOUT\"\n}\n",
+      "finished_at": "2026-05-19T11:41:01.432536"
+    },
+    {
+      "pdf_path": "data/wi_scrape/valvoline_instant_oil_change_id640069.pdf",
+      "brand": "Valvoline Instant Oil Change",
+      "ok": false,
+      "elapsed_sec": 260.4,
+      "error": "\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.5072708499999999,\n    \"duration_ms\": 257496,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 258s, cost $0.5073\n",
+      "finished_at": "2026-05-19T11:45:21.863889"
+    },
+    {
+      "pdf_path": "data/wi_scrape/big_o_tires_id639420.pdf",
+      "brand": "Big O Tires",
+      "ok": false,
+      "elapsed_sec": 134.6,
+      "error": " \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2946786,\n    \"duration_ms\": 125252,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 125s, cost $0.2947\n",
+      "finished_at": "2026-05-19T11:47:36.508753"
+    },
+    {
+      "pdf_path": "data/wi_scrape/tuffy_auto_service_centers_tuffy_tire_au_id639366.pdf",
+      "brand": "Tuffy Auto Service Centers/Tuffy Tire & Auto Serv",
+      "ok": false,
+      "elapsed_sec": 40.8,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.16131109999999999,\n    \"duration_ms\": 38115,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 38s, cost $0.1613\n",
+      "finished_at": "2026-05-19T11:48:17.359888"
+    },
+    {
+      "pdf_path": "data/wi_scrape/days_inn_days_inn_by_wyndham_days_hotel__id640621.pdf",
+      "brand": "Days Inn, Days Inn by Wyndham, Days Hotel and Days Inn & Suites",
+      "ok": false,
+      "elapsed_sec": 130.3,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.29247734999999997,\n    \"duration_ms\": 86745,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 87s, cost $0.2925\n",
+      "finished_at": "2026-05-19T11:50:27.696321"
+    },
+    {
+      "pdf_path": "data/wi_scrape/surestay_collection_by_best_western_id640282.pdf",
+      "brand": "\"SureStay Collection by Best Western\u00ae\"",
+      "ok": false,
+      "elapsed_sec": 32.3,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1706646,\n    \"duration_ms\": 30181,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 30s, cost $0.1707\n",
+      "finished_at": "2026-05-19T11:50:59.967240"
+    },
+    {
+      "pdf_path": "data/wi_scrape/hampton_inn_hampton_inn_and_suites_id640540.pdf",
+      "brand": "Hampton Inn; Hampton Inn and Suites",
+      "ok": false,
+      "elapsed_sec": 314.3,
+      "error": "\"standard\",\n    \"total_cost_usd\": 0.8611051999999999,\n    \"duration_ms\": 306061,\n    \"num_turns\": 1\n  },\n  \"ok\": false,\n  \"parse_reason\": \"JSON parse failed: Extra data: line 1 column 16 (char 15)\"\n}\n",
+      "finished_at": "2026-05-19T11:56:14.240430"
+    },
+    {
+      "pdf_path": "data/wi_scrape/the_standardx_id639330.pdf",
+      "brand": "The StandardX",
+      "ok": false,
+      "elapsed_sec": 27.6,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1499801,\n    \"duration_ms\": 22226,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 22s, cost $0.1500\n",
+      "finished_at": "2026-05-19T11:56:41.815617"
+    },
+    {
+      "pdf_path": "data/wi_scrape/tryp_by_wyndham_id640649.pdf",
+      "brand": "TRYP by Wyndham",
+      "ok": false,
+      "elapsed_sec": 100.3,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1942236,\n    \"duration_ms\": 63103,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 63s, cost $0.1942\n",
+      "finished_at": "2026-05-19T11:58:22.101477"
+    },
+    {
+      "pdf_path": "data/wi_scrape/la_quinta_inn_suites_and_la_quinta_by_wy_id640629.pdf",
+      "brand": "La Quinta Inn & Suites and La Quinta by Wyndham",
+      "ok": false,
+      "elapsed_sec": 112.7,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2952271,\n    \"duration_ms\": 73691,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 74s, cost $0.2952\n",
+      "finished_at": "2026-05-19T12:00:14.847988"
+    },
+    {
+      "pdf_path": "data/wi_scrape/super_8_super_8_by_wyndham_id640628.pdf",
+      "brand": "Super 8, Super 8 by Wyndham",
+      "ok": false,
+      "elapsed_sec": 113.3,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2934926,\n    \"duration_ms\": 74654,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 75s, cost $0.2935\n",
+      "finished_at": "2026-05-19T12:02:08.167052"
+    },
+    {
+      "pdf_path": "data/wi_scrape/red_roof_inn_red_roof_inn_and_suites_red_id640917.pdf",
+      "brand": "Red Roof Inn, Red Roof Inn and Suites, Red Roof PLUS+, Red Roof PLUS+ and Suites",
+      "ok": false,
+      "elapsed_sec": 107.9,
+      "error": " \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.3912461,\n    \"duration_ms\": 105653,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 106s, cost $0.3912\n",
+      "finished_at": "2026-05-19T12:03:56.079691"
+    },
+    {
+      "pdf_path": "data/wi_scrape/edible_and_edible_arrangements_id639328.pdf",
+      "brand": "EDIBLE\u00ae and EDIBLE ARRANGEMENTS\u00ae",
+      "ok": false,
+      "elapsed_sec": 99.8,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2988386,\n    \"duration_ms\": 95543,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 96s, cost $0.2988\n",
+      "finished_at": "2026-05-19T12:05:35.842658"
+    },
+    {
+      "pdf_path": "data/wi_scrape/wireless_zone_id640656.pdf",
+      "brand": "Wireless Zone",
+      "ok": false,
+      "elapsed_sec": 456.4,
+      "error": "\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.9186724499999999,\n    \"duration_ms\": 452012,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 452s, cost $0.9187\n",
+      "finished_at": "2026-05-19T12:13:12.291208"
+    },
+    {
+      "pdf_path": "data/wi_scrape/mathnasium_learning_centers_mathnasium_c_id641614.pdf",
+      "brand": "Mathnasium Learning Centers, Mathnasium Centers, Mathnasium The Math Learning Center, and Mathnasium",
+      "ok": false,
+      "elapsed_sec": 158.5,
+      "error": "\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.36745035000000004,\n    \"duration_ms\": 153930,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 154s, cost $0.3675\n",
+      "finished_at": "2026-05-19T12:15:50.819108"
+    },
+    {
+      "pdf_path": "data/wi_scrape/huntington_learning_center_id641005.pdf",
+      "brand": "Huntington Learning Center",
+      "ok": false,
+      "elapsed_sec": 83.9,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.29630960000000006,\n    \"duration_ms\": 78037,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 78s, cost $0.2963\n",
+      "finished_at": "2026-05-19T12:17:14.744036"
+    },
+    {
+      "pdf_path": "data/wi_scrape/mad_science_id639560.pdf",
+      "brand": "Mad Science",
+      "ok": false,
+      "elapsed_sec": 76.4,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2738781,\n    \"duration_ms\": 68748,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 69s, cost $0.2739\n",
+      "finished_at": "2026-05-19T12:18:31.166833"
+    },
+    {
+      "pdf_path": "data/wi_scrape/the_goddard_school_id641500.pdf",
+      "brand": "The Goddard School",
+      "ok": false,
+      "elapsed_sec": 145.3,
+      "error": "\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.42171860000000005,\n    \"duration_ms\": 136726,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 137s, cost $0.4217\n",
+      "finished_at": "2026-05-19T12:20:56.433356"
+    },
+    {
+      "pdf_path": "data/wi_scrape/primrose_schools_id641260.pdf",
+      "brand": "PRIMROSE SCHOOLS",
+      "ok": false,
+      "elapsed_sec": 124.2,
+      "error": "\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.38720760000000004,\n    \"duration_ms\": 117946,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 118s, cost $0.3872\n",
+      "finished_at": "2026-05-19T12:23:00.605356"
+    },
+    {
+      "pdf_path": "data/wi_scrape/kiddie_academy_educational_child_care_id640465.pdf",
+      "brand": "Kiddie Academy Educational Child Care",
+      "ok": false,
+      "elapsed_sec": 86.7,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.3167966,\n    \"duration_ms\": 82436,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 82s, cost $0.3168\n",
+      "finished_at": "2026-05-19T12:24:27.278762"
+    },
+    {
+      "pdf_path": "data/wi_scrape/lightbridge_academy_id640933.pdf",
+      "brand": "Lightbridge Academy",
+      "ok": false,
+      "elapsed_sec": 56.0,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.20564785,\n    \"duration_ms\": 51691,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 52s, cost $0.2056\n",
+      "finished_at": "2026-05-19T12:25:23.306260"
+    },
+    {
+      "pdf_path": "data/wi_scrape/spherion_staffing_id641749.pdf",
+      "brand": "Spherion Staffing",
+      "ok": false,
+      "elapsed_sec": 84.0,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.30089635,\n    \"duration_ms\": 80336,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 80s, cost $0.3009\n",
+      "finished_at": "2026-05-19T12:26:47.284189"
+    },
+    {
+      "pdf_path": "data/wi_scrape/petland_id641459.pdf",
+      "brand": "Petland",
+      "ok": false,
+      "elapsed_sec": 54.9,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2108311,\n    \"duration_ms\": 51046,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 51s, cost $0.2108\n",
+      "finished_at": "2026-05-19T12:27:42.176107"
+    },
+    {
+      "pdf_path": "data/wi_scrape/dogtopia_id641000.pdf",
+      "brand": "Dogtopia",
+      "ok": false,
+      "elapsed_sec": 294.5,
+      "error": "\"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.55600335,\n    \"duration_ms\": 289359,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 289s, cost $0.5560\n",
+      "finished_at": "2026-05-19T12:32:36.650425"
+    },
+    {
+      "pdf_path": "data/wi_scrape/hounds_town_usa_id641471.pdf",
+      "brand": "Hounds Town USA",
+      "ok": false,
+      "elapsed_sec": 222.8,
+      "error": "\"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.41528735,\n    \"duration_ms\": 217960,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 218s, cost $0.4153\n",
+      "finished_at": "2026-05-19T12:36:19.414354"
+    },
+    {
+      "pdf_path": "data/wi_scrape/fastsigns_id641543.pdf",
+      "brand": "FASTSIGNS",
+      "ok": false,
+      "elapsed_sec": 91.1,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.27892510000000004,\n    \"duration_ms\": 82908,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 83s, cost $0.2789\n",
+      "finished_at": "2026-05-19T12:37:50.510277"
+    },
+    {
+      "pdf_path": "data/wi_scrape/image360_signs_by_tomorrow_or_signs_now_id640473.pdf",
+      "brand": "Image360, Signs By Tomorrow or Signs Now",
+      "ok": false,
+      "elapsed_sec": 99.7,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.31988735,\n    \"duration_ms\": 95921,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 96s, cost $0.3199\n",
+      "finished_at": "2026-05-19T12:39:30.234251"
+    },
+    {
+      "pdf_path": "data/wi_scrape/minuteman_press_id640316.pdf",
+      "brand": "Minuteman Press",
+      "ok": false,
+      "elapsed_sec": 31.5,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.25369185,\n    \"duration_ms\": 28493,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 28s, cost $0.2537\n",
+      "finished_at": "2026-05-19T12:40:01.753327"
+    },
+    {
+      "pdf_path": "data/wi_scrape/alphagraphics_id641166.pdf",
+      "brand": "AlphaGraphics",
+      "ok": false,
+      "elapsed_sec": 96.6,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.3018566,\n    \"duration_ms\": 92048,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 92s, cost $0.3019\n",
+      "finished_at": "2026-05-19T12:41:38.354368"
+    },
+    {
+      "pdf_path": "data/wi_scrape/mr_transmission_milex_id641403.pdf",
+      "brand": "Mr. Transmission/Milex",
+      "ok": false,
+      "elapsed_sec": 85.2,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.24765035,\n    \"duration_ms\": 82167,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 82s, cost $0.2477\n",
+      "finished_at": "2026-05-19T12:43:03.563856"
+    },
+    {
+      "pdf_path": "data/wi_scrape/bambu_id640863.pdf",
+      "brand": "Bambu",
+      "ok": false,
+      "elapsed_sec": 55.8,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.19357059999999998,\n    \"duration_ms\": 51920,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 52s, cost $0.1936\n",
+      "finished_at": "2026-05-19T12:43:59.373840"
+    },
+    {
+      "pdf_path": "data/wi_scrape/toppers_pizza_id640952.pdf",
+      "brand": "Toppers Pizza",
+      "ok": false,
+      "elapsed_sec": 66.7,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2218346,\n    \"duration_ms\": 62334,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 62s, cost $0.2218\n",
+      "finished_at": "2026-05-19T12:45:06.077532"
+    },
+    {
+      "pdf_path": "data/wi_scrape/goosehead_insurance_id640351.pdf",
+      "brand": "Goosehead Insurance",
+      "ok": false,
+      "elapsed_sec": 85.5,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.27402435,\n    \"duration_ms\": 80187,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 80s, cost $0.2740\n",
+      "finished_at": "2026-05-19T12:46:31.566029"
+    },
+    {
+      "pdf_path": "data/wi_scrape/brightway_insurance_id641593.pdf",
+      "brand": "Brightway Insurance",
+      "ok": false,
+      "elapsed_sec": 98.4,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.30503335,\n    \"duration_ms\": 92151,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 92s, cost $0.3050\n",
+      "finished_at": "2026-05-19T12:48:09.979116"
+    },
+    {
+      "pdf_path": "data/mn_scrape/hthm_franchising_llc_2026_mn_36199-202604-09.pdf",
+      "brand": "Heart to Home Meals",
+      "ok": false,
+      "elapsed_sec": 44.2,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1558551,\n    \"duration_ms\": 40026,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 40s, cost $0.1559\n",
+      "finished_at": "2026-05-19T15:25:09.597678"
+    },
+    {
+      "pdf_path": "data/mn_scrape/jpar_franchising_llc_2026_mn_36127-202604-12.pdf",
+      "brand": "JPAR JPAR - REAL ESTATE",
+      "ok": false,
+      "elapsed_sec": 53.1,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.19139485,\n    \"duration_ms\": 49859,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 50s, cost $0.1914\n",
+      "finished_at": "2026-05-19T15:26:02.674254"
+    },
+    {
+      "pdf_path": "data/mn_scrape/children_s_music_academy_franchising_inc_2026_mn_35997-202604-03.pdf",
+      "brand": "CHILDREN'S MUSIC ACADEMY",
+      "ok": false,
+      "elapsed_sec": 34.5,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.13301785,\n    \"duration_ms\": 31350,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 31s, cost $0.1330\n",
+      "finished_at": "2026-05-19T15:26:37.131103"
+    },
+    {
+      "pdf_path": "data/mn_scrape/the_sports_bra_franchise_llc_2026_mn_35860-202604-08.pdf",
+      "brand": "The Sports Bra",
+      "ok": false,
+      "elapsed_sec": 34.6,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.15899435,\n    \"duration_ms\": 30738,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 31s, cost $0.1590\n",
+      "finished_at": "2026-05-19T15:27:11.682248"
+    },
+    {
+      "pdf_path": "data/mn_scrape/tails_n_trails_franchise_llc_2026_mn_35558-202603-01.pdf",
+      "brand": "Tails N' Trails",
+      "ok": false,
+      "elapsed_sec": 21.0,
+      "error": "Ignoring wrong pointing object 10066 0 (offset 0)\nIgnoring wrong pointing object 10067 0 (offset 0)\nIgnoring wrong pointing object 10068 0 (offset 0)\nIgnoring wrong pointing object 10069 0 (offset 0)\n",
+      "finished_at": "2026-05-19T15:27:32.692880"
+    },
+    {
+      "pdf_path": "data/mn_scrape/pet_passages_franchising_inc_2026_mn_36537-202605-03.pdf",
+      "brand": "Pet Passages",
+      "ok": false,
+      "elapsed_sec": 57.2,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.19828384999999998,\n    \"duration_ms\": 53793,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 54s, cost $0.1983\n",
+      "finished_at": "2026-05-19T15:28:29.943201"
+    },
+    {
+      "pdf_path": "data/mn_scrape/810_franchise_concepts_llc_2026_mn_36198-202604-11.pdf",
+      "brand": "810 Entertainment",
+      "ok": false,
+      "elapsed_sec": 39.1,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.15227860000000004,\n    \"duration_ms\": 36242,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 36s, cost $0.1523\n",
+      "finished_at": "2026-05-19T15:29:09.072342"
+    },
+    {
+      "pdf_path": "data/mn_scrape/act_franchising_corporation_2026_mn_36130-202604-08.pdf",
+      "brand": "\"Autism Care Therapy\" and \"ACT\"",
+      "ok": false,
+      "elapsed_sec": 23.2,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.14460984999999998,\n    \"duration_ms\": 18751,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 19s, cost $0.1446\n",
+      "finished_at": "2026-05-19T15:29:32.289025"
+    },
+    {
+      "pdf_path": "data/mn_scrape/gc_franchising_systems_inc_2026_mn_36027-202604-08.pdf",
+      "brand": "G.C. Franchising Systems, Inc. dba The Growth Coach",
+      "ok": false,
+      "elapsed_sec": 32.4,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.15884910000000002,\n    \"duration_ms\": 28976,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 29s, cost $0.1588\n",
+      "finished_at": "2026-05-19T15:30:04.666396"
+    },
+    {
+      "pdf_path": "data/mn_scrape/jl_beers_franchising_inc_2026_mn_36109-202604-08.pdf",
+      "brand": "JL BEERS",
+      "ok": false,
+      "elapsed_sec": 21.6,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.11768985,\n    \"duration_ms\": 19544,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 20s, cost $0.1177\n",
+      "finished_at": "2026-05-19T15:30:26.284022"
+    },
+    {
+      "pdf_path": "data/mn_scrape/managemowed_franchising_llc_2026_mn_35797-202604-09.pdf",
+      "brand": "MANAGEMOWED",
+      "ok": false,
+      "elapsed_sec": 49.6,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.17239585000000002,\n    \"duration_ms\": 47859,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 48s, cost $0.1724\n",
+      "finished_at": "2026-05-19T15:31:15.874083"
+    },
+    {
+      "pdf_path": "data/mn_scrape/project_lean_nation_franchising_inc_2026_mn_35280-202601-14.pdf",
+      "brand": "Project LeanNation",
+      "ok": false,
+      "elapsed_sec": 263.6,
+      "error": " \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.4289381,\n    \"duration_ms\": 260406,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 261s, cost $0.4289\n",
+      "finished_at": "2026-05-19T15:35:39.453438"
+    },
+    {
+      "pdf_path": "data/mn_scrape/fas_tes_franchise_systems_llc_2026_mn_36093-202604-02.pdf",
+      "brand": "FASTEST LABS",
+      "ok": false,
+      "elapsed_sec": 276.7,
+      "error": "\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.5454285999999999,\n    \"duration_ms\": 272267,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 272s, cost $0.5454\n",
+      "finished_at": "2026-05-19T15:40:16.140776"
+    },
+    {
+      "pdf_path": "data/mn_scrape/f_c_franchising_systems_inc_2026_mn_36108-202604-01.pdf",
+      "brand": "F.C. FRANCHISING SYSTEMS, INC DBA FRESH COAT",
+      "ok": false,
+      "elapsed_sec": 122.3,
+      "error": " \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2960316,\n    \"duration_ms\": 118300,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 118s, cost $0.2960\n",
+      "finished_at": "2026-05-19T15:42:18.437327"
+    },
+    {
+      "pdf_path": "data/mn_scrape/social_indoor_franchising_llc_2026_mn_36060-202604-09.pdf",
+      "brand": "SOCIAL INDOOR",
+      "ok": false,
+      "elapsed_sec": 56.2,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.17715585,\n    \"duration_ms\": 48200,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 48s, cost $0.1772\n",
+      "finished_at": "2026-05-19T15:43:14.638385"
+    },
+    {
+      "pdf_path": "data/mn_scrape/bor_franchising_llc_2026_mn_36052-202604-08.pdf",
+      "brand": "BOR RESTORATION",
+      "ok": false,
+      "elapsed_sec": 74.4,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.22883910000000002,\n    \"duration_ms\": 69772,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 70s, cost $0.2288\n",
+      "finished_at": "2026-05-19T15:44:29.026700"
+    },
+    {
+      "pdf_path": "data/mn_scrape/accor_franchising_us_llc_2026_mn_35940-202604-08.pdf",
+      "brand": "MGALLERY HOTEL COLLECTION",
+      "ok": false,
+      "elapsed_sec": 23.2,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.14114885,\n    \"duration_ms\": 20895,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 21s, cost $0.1411\n",
+      "finished_at": "2026-05-19T15:44:52.252083"
+    },
+    {
+      "pdf_path": "data/mn_scrape/usa_ninja_challenge_franchising_llc_2026_mn_35908-202604-10.pdf",
+      "brand": "USA NINJA CHALLENGE",
+      "ok": false,
+      "elapsed_sec": 68.1,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.21731085,\n    \"duration_ms\": 62797,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 63s, cost $0.2173\n",
+      "finished_at": "2026-05-19T15:46:00.379868"
+    },
+    {
+      "pdf_path": "data/mn_scrape/sign_gypsies_franchising_llc_2026_mn_36075-202604-06.pdf",
+      "brand": "SIGN GYPSIES",
+      "ok": false,
+      "elapsed_sec": 98.2,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.24740985000000001,\n    \"duration_ms\": 95711,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 96s, cost $0.2474\n",
+      "finished_at": "2026-05-19T15:47:38.586918"
+    },
+    {
+      "pdf_path": "data/mn_scrape/up_closets_franchising_llc_2026_mn_35987-202604-06.pdf",
+      "brand": "Up Closets",
+      "ok": false,
+      "elapsed_sec": 70.7,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1941646,\n    \"duration_ms\": 67013,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 67s, cost $0.1942\n",
+      "finished_at": "2026-05-19T15:48:49.238198"
+    },
+    {
+      "pdf_path": "data/mn_scrape/mulberry_s_franchising_llc_2026_mn_35964-202604-02.pdf",
+      "brand": "Mulberry's Garment Care (Unit Franchise Offering)",
+      "ok": false,
+      "elapsed_sec": 20.6,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1452171,\n    \"duration_ms\": 17475,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 17s, cost $0.1452\n",
+      "finished_at": "2026-05-19T15:49:09.867508"
+    },
+    {
+      "pdf_path": "data/mn_scrape/home_halo_franchising_llc_2026_mn_35918-202604-10.pdf",
+      "brand": "Home Halo",
+      "ok": false,
+      "elapsed_sec": 42.3,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.15997935000000002,\n    \"duration_ms\": 37502,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 38s, cost $0.1600\n",
+      "finished_at": "2026-05-19T15:49:52.143608"
+    },
+    {
+      "pdf_path": "data/mn_scrape/fujisan_franchising_corp_2026_mn_35611-202603-08.pdf",
+      "brand": "FUJISAN ASIAN BAR KIOSKS",
+      "ok": false,
+      "elapsed_sec": 96.7,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.27138085,\n    \"duration_ms\": 92178,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 92s, cost $0.2714\n",
+      "finished_at": "2026-05-19T15:51:28.795198"
+    },
+    {
+      "pdf_path": "data/mn_scrape/ferncrest_franchising_llc_2026_mn_35488-202603-10.pdf",
+      "brand": "Ferncrest",
+      "ok": false,
+      "elapsed_sec": 23.6,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1190631,\n    \"duration_ms\": 20870,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 21s, cost $0.1191\n",
+      "finished_at": "2026-05-19T15:51:52.395818"
+    },
+    {
+      "pdf_path": "data/mn_scrape/haven_franchising_llc_2026_mn_36241-202604-03.pdf",
+      "brand": "HAVEN",
+      "ok": false,
+      "elapsed_sec": 34.6,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.20231935000000004,\n    \"duration_ms\": 29965,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 30s, cost $0.2023\n",
+      "finished_at": "2026-05-19T15:52:27.020241"
+    },
+    {
+      "pdf_path": "data/mn_scrape/mint_condition_franchise_group_llc_2026_mn_35971-202604-12.pdf",
+      "brand": "MINT CONDITION",
+      "ok": false,
+      "elapsed_sec": 31.5,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.14948935,\n    \"duration_ms\": 27646,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 28s, cost $0.1495\n",
+      "finished_at": "2026-05-19T15:52:58.486793"
+    },
+    {
+      "pdf_path": "data/mn_scrape/layne_s_chicken_franchising_llc_2026_mn_35973-202604-08.pdf",
+      "brand": "LAYNE'S CHICKEN FINGERS",
+      "ok": false,
+      "elapsed_sec": 43.0,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.15647060000000002,\n    \"duration_ms\": 32770,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 33s, cost $0.1565\n",
+      "finished_at": "2026-05-19T15:53:41.494733"
+    },
+    {
+      "pdf_path": "data/mn_scrape/pet_wants_franchise_systems_llc_2026_mn_35926-202604-12.pdf",
+      "brand": "PET WANTS",
+      "ok": false,
+      "elapsed_sec": 105.5,
+      "error": "\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.28051485000000004,\n    \"duration_ms\": 101500,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 102s, cost $0.2805\n",
+      "finished_at": "2026-05-19T15:55:27.012092"
+    },
+    {
+      "pdf_path": "data/mn_scrape/one_you_love_homecare_franchising_llc_2026_mn_35949-202604-04.pdf",
+      "brand": "ONE YOU LOVE HOMECARE",
+      "ok": false,
+      "elapsed_sec": 108.5,
+      "error": "\"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.26540485,\n    \"duration_ms\": 104596,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 105s, cost $0.2654\n",
+      "finished_at": "2026-05-19T15:57:15.524407"
+    },
+    {
+      "pdf_path": "data/mn_scrape/rush_bowls_franchising_llc_2026_mn_35936-202604-12.pdf",
+      "brand": "RUSH BOWLS",
+      "ok": false,
+      "elapsed_sec": 63.3,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.22787634999999998,\n    \"duration_ms\": 59238,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 59s, cost $0.2279\n",
+      "finished_at": "2026-05-19T15:58:18.776729"
+    },
+    {
+      "pdf_path": "data/mn_scrape/cascadia_pizza_co_franchising_llc_2026_mn_35651-202603-03.pdf",
+      "brand": "Cascadia Pizza Co Franchising LLC",
+      "ok": false,
+      "elapsed_sec": 52.6,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2007356,\n    \"duration_ms\": 47865,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 48s, cost $0.2007\n",
+      "finished_at": "2026-05-19T15:59:11.411685"
+    },
+    {
+      "pdf_path": "data/mn_scrape/los_campeones_franchising_llc_2026_mn_36031-202604-08.pdf",
+      "brand": "Los Campeones",
+      "ok": false,
+      "elapsed_sec": 49.3,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.15350534999999998,\n    \"duration_ms\": 46927,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 47s, cost $0.1535\n",
+      "finished_at": "2026-05-19T16:00:00.684860"
+    },
+    {
+      "pdf_path": "data/mn_scrape/mold_medics_franchising_llc_2026_mn_36041-202604-09.pdf",
+      "brand": "Mold Medics",
+      "ok": false,
+      "elapsed_sec": 27.1,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.12499384999999999,\n    \"duration_ms\": 24023,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 24s, cost $0.1250\n",
+      "finished_at": "2026-05-19T16:00:27.790683"
+    },
+    {
+      "pdf_path": "data/mn_scrape/epcon_communitites_franchising_llc_2026_mn_35999-202604-08.pdf",
+      "brand": "EPCON COMMUNITIES",
+      "ok": false,
+      "elapsed_sec": 62.8,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.24028909999999998,\n    \"duration_ms\": 57734,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 58s, cost $0.2403\n",
+      "finished_at": "2026-05-19T16:01:30.606554"
+    },
+    {
+      "pdf_path": "data/mn_scrape/grout_doctor_global_franchise_corp_2026_mn_35958-202604-07.pdf",
+      "brand": "The Grout Doctor",
+      "ok": false,
+      "elapsed_sec": 92.5,
+      "error": "Ignoring wrong pointing object 1 65536 (offset 0)\nIgnoring wrong pointing object 1 65536 (offset 0)\n",
+      "finished_at": "2026-05-19T16:03:03.099704"
+    },
+    {
+      "pdf_path": "data/mn_scrape/fantasy_claw_arcade_franchise_llc_2026_mn_35991-202604-07.pdf",
+      "brand": "Fantasy Claw Arcade",
+      "ok": false,
+      "elapsed_sec": 22.2,
+      "error": "fset 0)\nIgnoring wrong pointing object 358 0 (offset 0)\nIgnoring wrong pointing object 371 0 (offset 0)\nIgnoring wrong pointing object 372 0 (offset 0)\nIgnoring wrong pointing object 373 0 (offset 0)\n",
+      "finished_at": "2026-05-19T16:03:25.304016"
+    },
+    {
+      "pdf_path": "data/mn_scrape/ems_to_you_franchising_co_inc_2026_mn_35967-202604-04.pdf",
+      "brand": "EMS To You",
+      "ok": false,
+      "elapsed_sec": 25.0,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1243601,\n    \"duration_ms\": 21908,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 22s, cost $0.1244\n",
+      "finished_at": "2026-05-19T16:03:50.330720"
+    },
+    {
+      "pdf_path": "data/mn_scrape/granite_garage_floors_franchising_llc_2026_mn_35947-202604-10.pdf",
+      "brand": "GRANITE GARAGE FLOORS",
+      "ok": false,
+      "elapsed_sec": 63.2,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2027546,\n    \"duration_ms\": 59960,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 60s, cost $0.2028\n",
+      "finished_at": "2026-05-19T16:04:53.528841"
+    },
+    {
+      "pdf_path": "data/mn_scrape/golftrk_franchising_llc_2026_mn_35911-202604-07.pdf",
+      "brand": "GolfTRK Franchising, LLC",
+      "ok": false,
+      "elapsed_sec": 32.5,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.13378735,\n    \"duration_ms\": 29360,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 29s, cost $0.1338\n",
+      "finished_at": "2026-05-19T16:05:25.995242"
+    },
+    {
+      "pdf_path": "data/mn_scrape/crispy_cones_franchising_llc_2026_mn_35818-202604-09.pdf",
+      "brand": "Crispy Cones",
+      "ok": false,
+      "elapsed_sec": 39.3,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.16314335000000002,\n    \"duration_ms\": 35976,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 36s, cost $0.1631\n",
+      "finished_at": "2026-05-19T16:06:05.255708"
+    },
+    {
+      "pdf_path": "data/mn_scrape/2nd_family_franchising_llc_2026_mn_35627-202603-08.pdf",
+      "brand": "2ND FAMILY HOMECARE AND SUPPORT SERVICES",
+      "ok": false,
+      "elapsed_sec": 39.9,
+      "error": "fset 0)\nIgnoring wrong pointing object 232 0 (offset 0)\nIgnoring wrong pointing object 234 0 (offset 0)\nIgnoring wrong pointing object 299 0 (offset 0)\nIgnoring wrong pointing object 424 0 (offset 0)\n",
+      "finished_at": "2026-05-19T16:06:45.154419"
+    },
+    {
+      "pdf_path": "data/mn_scrape/usa_insulation_franchise_llc_2026_mn_35944-202604-10.pdf",
+      "brand": "USA INSULATION",
+      "ok": false,
+      "elapsed_sec": 66.1,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.24247084999999996,\n    \"duration_ms\": 62232,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 62s, cost $0.2425\n",
+      "finished_at": "2026-05-19T16:07:51.212159"
+    },
+    {
+      "pdf_path": "data/mn_scrape/rytech_franchising_llc_2026_mn_35796-202604-19.pdf",
+      "brand": "Rytech Restoration",
+      "ok": false,
+      "elapsed_sec": 77.7,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.23067109999999996,\n    \"duration_ms\": 74294,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 74s, cost $0.2307\n",
+      "finished_at": "2026-05-19T16:09:08.902503"
+    },
+    {
+      "pdf_path": "data/mn_scrape/mty_franchising_usa_inc_2026_mn_35642-202603-18.pdf",
+      "brand": "The Counter",
+      "ok": false,
+      "elapsed_sec": 32.5,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.14391084999999998,\n    \"duration_ms\": 25717,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 26s, cost $0.1439\n",
+      "finished_at": "2026-05-19T16:09:41.410219"
+    },
+    {
+      "pdf_path": "data/mn_scrape/kahala_franchising_llc_2026_mn_35624-202603-09.pdf",
+      "brand": "NRGIZE LIFESTYLE CAFE",
+      "ok": false,
+      "elapsed_sec": 46.0,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.20796610000000001,\n    \"duration_ms\": 39246,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 39s, cost $0.2080\n",
+      "finished_at": "2026-05-19T16:10:27.439132"
+    },
+    {
+      "pdf_path": "data/mn_scrape/kahala_franchising_llc_2026_mn_35600-202603-09.pdf",
+      "brand": "KAHALA COFFEE TRADERS",
+      "ok": false,
+      "elapsed_sec": 40.1,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1701181,\n    \"duration_ms\": 34667,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 35s, cost $0.1701\n",
+      "finished_at": "2026-05-19T16:11:07.540935"
+    },
+    {
+      "pdf_path": "data/mn_scrape/atwork_franchise_inc_2026_mn_35711-202603-13.pdf",
+      "brand": "ATWORK",
+      "ok": false,
+      "elapsed_sec": 84.1,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.29020260000000003,\n    \"duration_ms\": 81244,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 81s, cost $0.2902\n",
+      "finished_at": "2026-05-19T16:12:31.644917"
+    },
+    {
+      "pdf_path": "data/mn_scrape/mty_franchising_usa_inc_2026_mn_35641-202603-08.pdf",
+      "brand": "BUILT CUSTOM BURGERS",
+      "ok": false,
+      "elapsed_sec": 30.1,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1527761,\n    \"duration_ms\": 23641,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 24s, cost $0.1528\n",
+      "finished_at": "2026-05-19T16:13:01.789983"
+    },
+    {
+      "pdf_path": "data/mn_scrape/silbar_franchise_group_corporation_2026_mn_35865-202604-09.pdf",
+      "brand": "Silbar Security",
+      "ok": false,
+      "elapsed_sec": 50.0,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.16021960000000002,\n    \"duration_ms\": 48060,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 48s, cost $0.1602\n",
+      "finished_at": "2026-05-19T16:13:51.764295"
+    },
+    {
+      "pdf_path": "data/mn_scrape/border_magic_franchising_llc_2026_mn_35736-202603-13.pdf",
+      "brand": "BORDER MAGIC",
+      "ok": false,
+      "elapsed_sec": 64.7,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.20572535000000003,\n    \"duration_ms\": 60902,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 61s, cost $0.2057\n",
+      "finished_at": "2026-05-19T16:14:56.467204"
+    },
+    {
+      "pdf_path": "data/mn_scrape/le_village_cowork_franchising_llc_2025_mn_35013-202510-06.pdf",
+      "brand": "Le Village Cowork",
+      "ok": false,
+      "elapsed_sec": 27.8,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.16435785,\n    \"duration_ms\": 23549,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 24s, cost $0.1644\n",
+      "finished_at": "2026-05-19T16:15:24.316662"
+    },
+    {
+      "pdf_path": "data/mn_scrape/dkl_franchising_llc_2025_mn_35032-202511-08.pdf",
+      "brand": "DAKOTA LONDON\u00e2\u0084\u00a2",
+      "ok": false,
+      "elapsed_sec": 43.8,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.18528485,\n    \"duration_ms\": 42370,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 42s, cost $0.1853\n",
+      "finished_at": "2026-05-19T16:16:08.107530"
+    },
+    {
+      "pdf_path": "data/mn_scrape/arctic_franchising_llc_2025_mn_34926-202510-11.pdf",
+      "brand": "Arctic Elevation - Unit Franchise Offering",
+      "ok": false,
+      "elapsed_sec": 32.7,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.21012060000000002,\n    \"duration_ms\": 29075,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 29s, cost $0.2101\n",
+      "finished_at": "2026-05-19T16:16:40.778942"
+    },
+    {
+      "pdf_path": "data/mn_scrape/arctic_franchising_llc_2025_mn_34927-202510-11.pdf",
+      "brand": "Arctic Elevation - Area Representative Franchise Offering",
+      "ok": false,
+      "elapsed_sec": 26.4,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1631116,\n    \"duration_ms\": 23213,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 23s, cost $0.1631\n",
+      "finished_at": "2026-05-19T16:17:07.228600"
+    },
+    {
+      "pdf_path": "data/mn_scrape/vital_care_franchisor_llc_2025_mn_35170-202512-16.pdf",
+      "brand": "Vital Care",
+      "ok": false,
+      "elapsed_sec": 101.3,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.31857684999999997,\n    \"duration_ms\": 97058,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 97s, cost $0.3186\n",
+      "finished_at": "2026-05-19T16:18:48.550011"
+    },
+    {
+      "pdf_path": "data/mn_scrape/true_north_restoration_franchising_llc_2025_mn_35060-202511-09.pdf",
+      "brand": "True North",
+      "ok": false,
+      "elapsed_sec": 34.8,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.15179785,\n    \"duration_ms\": 33316,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 33s, cost $0.1518\n",
+      "finished_at": "2026-05-19T16:19:23.334895"
+    },
+    {
+      "pdf_path": "data/mn_scrape/io_franchising_llc_2025_mn_35499-202603-07.pdf",
+      "brand": "Intelligent Office",
+      "ok": false,
+      "elapsed_sec": 40.8,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.18353985,\n    \"duration_ms\": 39012,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 39s, cost $0.1835\n",
+      "finished_at": "2026-05-19T16:20:04.164606"
+    },
+    {
+      "pdf_path": "data/mn_scrape/ia_franchising_llc_2025_mn_35497-202603-07.pdf",
+      "brand": "Intelligent Assistant",
+      "ok": false,
+      "elapsed_sec": 21.6,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.13394235,\n    \"duration_ms\": 19693,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 20s, cost $0.1339\n",
+      "finished_at": "2026-05-19T16:20:25.778785"
+    },
+    {
+      "pdf_path": "data/mn_scrape/agile_pursuits_franchising_inc_2025_mn_35467-202603-03.pdf",
+      "brand": "Tide Laundromat",
+      "ok": false,
+      "elapsed_sec": 41.5,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.15198835,\n    \"duration_ms\": 39823,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 40s, cost $0.1520\n",
+      "finished_at": "2026-05-19T16:21:07.245744"
+    },
+    {
+      "pdf_path": "data/mn_scrape/swig_franchising_llc_2025_mn_35042-202511-06.pdf",
+      "brand": "Swig",
+      "ok": false,
+      "elapsed_sec": 58.7,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.19402785,\n    \"duration_ms\": 53279,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 53s, cost $0.1940\n",
+      "finished_at": "2026-05-19T16:22:05.944207"
+    },
+    {
+      "pdf_path": "data/mn_scrape/bft_franchise_spv_llc_2025_mn_35407-202602-04.pdf",
+      "brand": "BFT",
+      "ok": false,
+      "elapsed_sec": 93.6,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2765711,\n    \"duration_ms\": 90510,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 91s, cost $0.2766\n",
+      "finished_at": "2026-05-19T16:23:39.519315"
+    },
+    {
+      "pdf_path": "data/mn_scrape/dze_franchisor_llc_2025_mn_34638-202508-27.pdf",
+      "brand": "Dazzler Select",
+      "ok": false,
+      "elapsed_sec": 28.2,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1368801,\n    \"duration_ms\": 22287,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 22s, cost $0.1369\n",
+      "finished_at": "2026-05-19T16:24:07.704680"
+    },
+    {
+      "pdf_path": "data/mn_scrape/cloudbound_franchise_group_llc_2025_mn_34856-202510-02.pdf",
+      "brand": "Cloudbound",
+      "ok": false,
+      "elapsed_sec": 21.6,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.11166759999999999,\n    \"duration_ms\": 18082,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 18s, cost $0.1117\n",
+      "finished_at": "2026-05-19T16:24:29.348985"
+    },
+    {
+      "pdf_path": "data/mn_scrape/1hcs_franchising_llc_2025_mn_35317-202601-03.pdf",
+      "brand": "1Heart Caregiver Services",
+      "ok": false,
+      "elapsed_sec": 41.8,
+      "error": "e\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.15649435000000003,\n    \"duration_ms\": 39108,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 39s, cost $0.1565\n",
+      "finished_at": "2026-05-19T16:25:11.177537"
+    },
+    {
+      "pdf_path": "data/mn_scrape/a1_kitchen_bath_franchising_llc_2025_mn_35316-202601-03.pdf",
+      "brand": "The Designery",
+      "ok": false,
+      "elapsed_sec": 61.9,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2531091,\n    \"duration_ms\": 57126,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 57s, cost $0.2531\n",
+      "finished_at": "2026-05-19T16:26:13.122084"
+    },
+    {
+      "pdf_path": "data/mn_scrape/advanced_fresh_concepts_franchise_corp_2025_mn_35184-202512-11.pdf",
+      "brand": "Freshly Go",
+      "ok": false,
+      "elapsed_sec": 26.4,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1307571,\n    \"duration_ms\": 24414,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 24s, cost $0.1308\n",
+      "finished_at": "2026-05-19T16:26:39.535341"
+    },
+    {
+      "pdf_path": "data/mn_scrape/oakwell_franchising_llc_2025_mn_35075-202511-05.pdf",
+      "brand": "Oakwell Beer Spa",
+      "ok": false,
+      "elapsed_sec": 36.9,
+      "error": "total_cost_usd\": 0.16777809999999999,\n    \"duration_ms\": 33818,\n    \"num_turns\": 1\n  },\n  \"ok\": false,\n  \"parse_reason\": \"JSON parse failed: Expecting ',' delimiter: line 1 column 8246 (char 8245)\"\n}\n",
+      "finished_at": "2026-05-19T16:27:16.424289"
+    },
+    {
+      "pdf_path": "data/mn_scrape/after_glow_franchise_llc_2025_mn_34611-202508-01.pdf",
+      "brand": "After Glow Tanning & Beauty Bar",
+      "ok": false,
+      "elapsed_sec": 16.7,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.0962706,\n    \"duration_ms\": 15143,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 15s, cost $0.0963\n",
+      "finished_at": "2026-05-19T16:27:33.107123"
+    },
+    {
+      "pdf_path": "data/mn_scrape/shah_s_halal_franchising_inc_2025_mn_34729-202509-09.pdf",
+      "brand": "Shah's Halal",
+      "ok": false,
+      "elapsed_sec": 57.9,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1861396,\n    \"duration_ms\": 54525,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 55s, cost $0.1861\n",
+      "finished_at": "2026-05-19T16:28:31.015629"
+    },
+    {
+      "pdf_path": "data/mn_scrape/psp_franchise_operations_spv_llc_2025_mn_35160-202512-01.pdf",
+      "brand": "PSP",
+      "ok": false,
+      "elapsed_sec": 117.7,
+      "error": "\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.34790435000000003,\n    \"duration_ms\": 112307,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 112s, cost $0.3479\n",
+      "finished_at": "2026-05-19T16:30:28.678299"
+    },
+    {
+      "pdf_path": "data/mn_scrape/millie_s_franchising_llc_2025_mn_34996-202510-10.pdf",
+      "brand": "Millie's Homemade Ice Cream Millie's Ice Cream & Coffee",
+      "ok": false,
+      "elapsed_sec": 35.3,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1328526,\n    \"duration_ms\": 32653,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 33s, cost $0.1329\n",
+      "finished_at": "2026-05-19T16:31:03.959729"
+    },
+    {
+      "pdf_path": "data/mn_scrape/millie_s_franchising_llc_2025_mn_34996-202510-06.pdf",
+      "brand": "Millie's Ice Cream & Coffee Millie's Homemade Ice Cream",
+      "ok": false,
+      "elapsed_sec": 38.6,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1344521,\n    \"duration_ms\": 36351,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 36s, cost $0.1345\n",
+      "finished_at": "2026-05-19T16:31:42.584378"
+    },
+    {
+      "pdf_path": "data/mn_scrape/restopros_franchising_llc_2025_mn_35171-202512-03.pdf",
+      "brand": "RestoPros",
+      "ok": false,
+      "elapsed_sec": 88.6,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2270531,\n    \"duration_ms\": 86300,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 86s, cost $0.2271\n",
+      "finished_at": "2026-05-19T16:33:11.180585"
+    },
+    {
+      "pdf_path": "data/mn_scrape/1_800_radiator_franchisor_spv_llc_2025_mn_35183-202512-05.pdf",
+      "brand": "1-800-Radiator & A/C",
+      "ok": false,
+      "elapsed_sec": 214.3,
+      "error": "\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.4740103499999999,\n    \"duration_ms\": 210221,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 210s, cost $0.4740\n",
+      "finished_at": "2026-05-19T16:36:45.443298"
+    },
+    {
+      "pdf_path": "data/mn_scrape/abra_franchisor_spv_llc_2025_mn_35181-202512-04.pdf",
+      "brand": "Abra Auto Body & Glass Repair",
+      "ok": false,
+      "elapsed_sec": 45.7,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.1672571,\n    \"duration_ms\": 42102,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 42s, cost $0.1673\n",
+      "finished_at": "2026-05-19T16:37:31.113245"
+    },
+    {
+      "pdf_path": "data/mn_scrape/fusa_franchisor_spv_llc_2025_mn_35179-202512-02.pdf",
+      "brand": "Fix Auto",
+      "ok": false,
+      "elapsed_sec": 86.0,
+      "error": "\": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.2713891,\n    \"duration_ms\": 81915,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 82s, cost $0.2714\n",
+      "finished_at": "2026-05-19T16:38:57.134215"
+    },
+    {
+      "pdf_path": "data/mn_scrape/senior_living_locators_franchising_llc_2025_mn_35100-202512-01.pdf",
+      "brand": "Trua Senior Living Locators",
+      "ok": false,
+      "elapsed_sec": 36.0,
+      "error": ": \"message\"\n      }\n    ],\n    \"speed\": \"standard\",\n    \"total_cost_usd\": 0.14684985,\n    \"duration_ms\": 31826,\n    \"num_turns\": 1\n  },\n  \"ok\": true,\n  \"parse_reason\": \"ok\"\n}\n\nOK in 32s, cost $0.1468\n",
+      "finished_at": "2026-05-19T16:39:33.106010"
+    },
+    {
+      "pdf_path": "data/mn_scrape/sambazon_usa_franchising_llc_2025_mn_35059-202511-07.pdf",
+      "brand": "Sambazon",
+      "ok": false,
+      "elapsed_sec": 36.6,
+      "error": "parsing for Object Streams\nparsing for Object Streams\nparsing for Object Streams\n",
+      "finished_at": "2026-05-19T16:40:09.690801"
+    }
+  ],
+  "totals": {
+    "processed": 78,
+    "ok": 0,
+    "failed": 78,
+    "skipped": 0,
+    "elapsed_sec": 4544.3
+  }
+}

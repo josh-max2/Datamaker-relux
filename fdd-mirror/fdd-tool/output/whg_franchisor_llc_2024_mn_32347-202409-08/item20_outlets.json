@@ -1,0 +1,203 @@
+{
+  "yearly_summary": [
+    {
+      "year": 2021,
+      "outlet_type": "franchised",
+      "outlets_start": 5,
+      "outlets_end": 5,
+      "net_change": 0
+    },
+    {
+      "year": 2022,
+      "outlet_type": "franchised",
+      "outlets_start": 5,
+      "outlets_end": 4,
+      "net_change": -1
+    },
+    {
+      "year": 2023,
+      "outlet_type": "franchised",
+      "outlets_start": 4,
+      "outlets_end": 2,
+      "net_change": -2
+    },
+    {
+      "year": 2021,
+      "outlet_type": "company-owned",
+      "outlets_start": 4,
+      "outlets_end": 4,
+      "net_change": 0
+    },
+    {
+      "year": 2022,
+      "outlet_type": "company-owned",
+      "outlets_start": 4,
+      "outlets_end": 4,
+      "net_change": 0
+    },
+    {
+      "year": 2023,
+      "outlet_type": "company-owned",
+      "outlets_start": 4,
+      "outlets_end": 9,
+      "net_change": 5
+    },
+    {
+      "year": 2021,
+      "outlet_type": "total",
+      "outlets_start": 9,
+      "outlets_end": 9,
+      "net_change": 0
+    },
+    {
+      "year": 2022,
+      "outlet_type": "total",
+      "outlets_start": 9,
+      "outlets_end": 8,
+      "net_change": -1
+    },
+    {
+      "year": 2023,
+      "outlet_type": "total",
+      "outlets_start": 8,
+      "outlets_end": 11,
+      "net_change": 3
+    }
+  ],
+  "state_year_status": [
+    {
+      "year": 2021,
+      "state": "CO",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2022,
+      "state": "CO",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "CO",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 0
+    },
+    {
+      "year": 2021,
+      "state": "MN",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2022,
+      "state": "MN",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2023,
+      "state": "MN",
+      "outlets_start": 1,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2021,
+      "state": "TX",
+      "outlets_start": 3,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 3
+    },
+    {
+      "year": 2022,
+      "state": "TX",
+      "outlets_start": 3,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 1,
+      "outlets_end": 2
+    },
+    {
+      "year": 2023,
+      "state": "TX",
+      "outlets_start": 2,
+      "outlets_opened": 0,
+      "outlets_terminated": 1,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 1
+    },
+    {
+      "year": 2021,
+      "state": "TOTAL",
+      "outlets_start": 5,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 5
+    },
+    {
+      "year": 2022,
+      "state": "TOTAL",
+      "outlets_start": 5,
+      "outlets_opened": 0,
+      "outlets_terminated": 0,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 1,
+      "outlets_end": 4
+    },
+    {
+      "year": 2023,
+      "state": "TOTAL",
+      "outlets_start": 4,
+      "outlets_opened": 0,
+      "outlets_terminated": 2,
+      "outlets_nonrenewed": 0,
+      "outlets_reacquired": 0,
+      "outlets_ceased_other": 0,
+      "outlets_end": 2
+    }
+  ],
+  "confidence": 0.95,
+  "notes": "Table 1: The 2023 franchised outlets_end value of 2 is footnoted (footnote 5) stating one franchised location in San Antonio, Texas, terminated in fiscal year 2024 \u2014 meaning the end-of-2023 count was actually 2 at the time of the FDD disclosure. Table 3: Texas 2023 outlets_end of 1 is also footnoted (footnote 8) with the same San Antonio termination note occurring in fiscal year 2024. The net_change of +5 for company-owned 2023 is shown as \"+5\" in the source. All values extracted directly from tables with no ambiguity. Document is WaterWalk MB Q3/2024 FDD covering years 2021-2023."
+}

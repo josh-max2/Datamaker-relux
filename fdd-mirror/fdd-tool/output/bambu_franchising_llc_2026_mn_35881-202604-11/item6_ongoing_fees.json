@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 4,
+  "royalty_min_monthly": 850,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": 575,
+  "tech_fee_monthly": 80,
+  "fee_notes": "Royalty Fee is 4% of actual annual Net Revenues, paid as $850/month minimum with semiannual reconciliation (July 15 and January 15). Net Revenues defined as total gross revenue less sales taxes, refunds, rebates, discounts, tips, and merchant service fees. Marketing and Technology Fee is a flat $575/month (not a % of sales), subject to increase based on underlying vendor costs. POS System Fee of $80/month paid to third-party supplier (not to franchisor). During relocation closure period, franchisee must continue paying $850/month Royalty Fee.",
+  "raw_excerpt": "Royalty Fee1, 2, 3, 6 | 4% of your actual annual Net Revenues | Payable $850 per month on the 1st day of each month starting with the first full month after you open your Bamb\u016b shoppe, with semiannual reconciliation payments due on the 15th day after June 30th and December 31st | Payable by electronic transfer of funds which we will deduct from your bank account.\n\nMarketing and Technology Fee1, 2 | As of the date of this Disclosure Document, $575 per month, subject to increase annually in accordance with any increase in our underlying vendor costs for the marketing and technology products and services | Payable on the 1st day of each month | The Marketing and Technology Fee is payable by electronic transfer of funds from your bank account.\n\nPOS System Fee5 | As of the date of this Disclosure Document, $80 per month, but subject to increase by the third party supplier | Monthly | You must acquire and use the point-of-sale system that we designate and pay the monthly fee to the third party service provider.",
+  "confidence": 0.95
+}

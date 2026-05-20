@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 6,
+  "royalty_min_monthly": 1200,
+  "marketing_fee_pct": null,
+  "marketing_min_monthly": null,
+  "tech_fee_monthly": 50,
+  "fee_notes": "Royalty is 6% of Gross Monthly Sales with a minimum of US$1,200/month, due before the 10th of the following month. Marketing Fund contribution percentage has not yet been determined and is only applicable once a Marketing Fund is established. Software Service Fee of $50/month covers software license, system usage, updates, and support. Printed advertising and marketing materials cost US$1,000 as incurred upon written request.",
+  "raw_excerpt": "Royalty Fees: 6% of the Gross Monthly Sales, minimum US$1,200 per month. Payable before the 10th of the next month.\nSoftware Service Fee: $50 per month. Payable monthly along with the Royalty Fee.\nMarketing Fund Contributions (note 2): Certain percentage of Gross Monthly Sales, not yet determined. Payable before the 10th of the next month.\nPrinted Advertising and Marketing Materials: US$1,000. As incurred.",
+  "confidence": 0.9
+}

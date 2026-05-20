@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\stanley_steemer_international_inc_2026_mn_35913-202604-08.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0053,
+      "input_tokens": 1974,
+      "cached": 1340,
+      "output_tokens": 200
+    },
+    "item5": {
+      "cost_usd": 0.0091,
+      "input_tokens": 2308,
+      "cached": 1340,
+      "output_tokens": 386
+    },
+    "item6": {
+      "cost_usd": 0.0328,
+      "input_tokens": 6232,
+      "cached": 1340,
+      "output_tokens": 1182
+    },
+    "item7": {
+      "cost_usd": 0.0083,
+      "input_tokens": 3520,
+      "cached": 1340,
+      "output_tokens": 92
+    },
+    "item19": {
+      "cost_usd": 0.0929,
+      "input_tokens": 10950,
+      "cached": 1340,
+      "output_tokens": 4245,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.239,
+      "input_tokens": 23214,
+      "cached": 1340,
+      "output_tokens": 11529,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3874
+}

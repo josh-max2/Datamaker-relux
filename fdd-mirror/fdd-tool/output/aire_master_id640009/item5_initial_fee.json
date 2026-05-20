@@ -1,0 +1,6 @@
+{
+  "initial_franchise_fee_low": 30000,
+  "initial_franchise_fee_high": 100000,
+  "fee_notes": "Fee calculated at $0.10 per capita in territory with $30k minimum. $4,000 minimum inventory purchase required and added as part of initial fee. Veterans discount: 10% for honorably discharged with 1+ years service.",
+  "confidence": 0.95
+}

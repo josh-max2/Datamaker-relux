@@ -1,0 +1,9 @@
+{
+  "royalty_pct": 7,
+  "royalty_min_monthly": 625,
+  "marketing_fee_pct": 2,
+  "tech_fee_monthly": 200,
+  "fee_notes": "Royalty is greater of 7% of Gross Revenue or Minimum Royalty. Minimum Royalty: $0 months 1-6, $625/mo months 7-24, $1,021/mo months 25-48, $1,459/mo months 49-84, $1,750/mo after month 84. National Brand Fund: 2% monthly Gross Revenue. Local/Regional Ad Coop: 1-2% (not yet established). QBO: $140/mo. Lab Management Software: $109/mo. Transfer Fee: $15,000 plus $7,500 escrow for professional fees.",
+  "raw_excerpt": "Royalty Fee: Greater of 7% of Gross Revenue or the Minimum Royalty due... National Brand Fund 2% of monthly Gross Revenue... Technology Fee $200 monthly fee",
+  "confidence": 0.95
+}

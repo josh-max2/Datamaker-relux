@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\wi_scrape\\mosquito_sheriff_id639310.pdf",
+  "body_start_page": 2,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0132,
+      "input_tokens": 3336,
+      "cached": 0,
+      "output_tokens": 212
+    },
+    "item5": {
+      "cost_usd": 0.0098,
+      "input_tokens": 1660,
+      "cached": 0,
+      "output_tokens": 324
+    },
+    "item6": {
+      "cost_usd": 0.0124,
+      "input_tokens": 1700,
+      "cached": 0,
+      "output_tokens": 484
+    },
+    "item7": {
+      "cost_usd": 0.0072,
+      "input_tokens": 1953,
+      "cached": 0,
+      "output_tokens": 89
+    },
+    "item19": {
+      "cost_usd": 0.0228,
+      "input_tokens": 7274,
+      "cached": 0,
+      "output_tokens": 62,
+      "images_sent": 3
+    },
+    "item20": {
+      "cost_usd": 0.0569,
+      "input_tokens": 6805,
+      "cached": 0,
+      "output_tokens": 2433,
+      "images_sent": 3
+    }
+  },
+  "total_cost_usd": 0.1222
+}

@@ -1,0 +1,9 @@
+{
+  "royalty_pct": 20,
+  "royalty_min_monthly": 600,
+  "marketing_fee_pct": 2,
+  "tech_fee_monthly": 590,
+  "fee_notes": "Royalty is 20% of Gross Revenues on new business (initial term policies) or 50% on renewal business, subject to Minimum Royalty. Minimum Royalty starts at $600/mo at month 6, escalating to $1,800/mo by month 121+. Corporate agent launches have higher minimums ($2,400-$6,000). Marketing Contribution up to 2% not currently required. Tech fee is $590/mo for first user, $420 each additional user, capped at 15% annual increase.",
+  "raw_excerpt": "Royalty Fee 20% of Gross Revenues on Approved Insurance Products in their initial term and 50% of Gross Revenues on Approved Insurance Products in their renewal terms, subject to the Minimum Royalty | Marketing Contribution Up to 2% of Gross Revenues | Technology Fee Currently, $590 for the first user and $420 for each additional user",
+  "confidence": 0.95
+}

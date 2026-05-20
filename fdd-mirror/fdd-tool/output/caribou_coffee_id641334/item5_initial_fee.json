@@ -1,0 +1,7 @@
+{
+  "initial_franchise_fee_low": 15000,
+  "initial_franchise_fee_high": 30000,
+  "fee_notes": "Chalet: $30,000; Cabin: $30,000; Kiosk (non-traditional): $15,000; Kiosk in university or hospital: $7,000",
+  "raw_excerpt": "Chalet $30,000 Cabin $30,000 Kiosk (non-traditional) $15,000; $7,000 for Kiosks located in a Non-Traditional Facility that is a university or hospital.",
+  "confidence": 0.98
+}

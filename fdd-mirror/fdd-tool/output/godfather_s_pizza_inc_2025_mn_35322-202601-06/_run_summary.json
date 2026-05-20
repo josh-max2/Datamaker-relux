@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\godfather_s_pizza_inc_2025_mn_35322-202601-06.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0047,
+      "input_tokens": 1732,
+      "cached": 1340,
+      "output_tokens": 207
+    },
+    "item5": {
+      "cost_usd": 0.0109,
+      "input_tokens": 2619,
+      "cached": 1340,
+      "output_tokens": 444
+    },
+    "item6": {
+      "cost_usd": 0.0131,
+      "input_tokens": 2893,
+      "cached": 1340,
+      "output_tokens": 535
+    },
+    "item7": {
+      "cost_usd": 0.0081,
+      "input_tokens": 3451,
+      "cached": 1340,
+      "output_tokens": 88
+    },
+    "item19": {
+      "cost_usd": 0.054,
+      "input_tokens": 18839,
+      "cached": 1340,
+      "output_tokens": 72,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.2159,
+      "input_tokens": 17827,
+      "cached": 1340,
+      "output_tokens": 10178,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3066
+}

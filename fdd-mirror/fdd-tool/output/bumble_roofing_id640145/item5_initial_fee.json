@@ -1,0 +1,6 @@
+{
+  "initial_franchise_fee_low": 49500,
+  "initial_franchise_fee_high": 49500,
+  "fee_notes": "Standard $49,500 for territories \u2264100k households. Additional Household Fee $0.25/household if territory exceeds 100k. VetFran discount 15%, Multi-Territory discount tiered 30-40%, Existing Franchisee 20%, Employee discount up to 50%.",
+  "confidence": 0.99
+}

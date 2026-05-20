@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Average Revenue",
+      "cohort_name": "all_franchised",
+      "cohort_raw": "Franchised Hardee's Freestanding Restaurants",
+      "outlet_count": 1208,
+      "reporting_period": "FY25 (January 30, 2024 to January 27, 2025)",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1288025,
+      "value_median": 1238549,
+      "value_min": 399797,
+      "value_max": 3604413,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 44.9,
+      "page_number": 69,
+      "raw_text": "Average Revenue FY25 Franchised Hardee's Freestanding Restaurants\nAverage Revenue $1,288,025\nMedian Revenue $1,238,549\n# Met / Exceeded Average 542\n% Met / Exceeded Average 44.9%\nLowest $399,797\nHighest $3,604,413",
+      "notes": "53-week fiscal year period. 1,208 franchised restaurants included. 542 met or exceeded average. Excludes non-freestanding locations and restaurants that did not provide complete revenue data for FY25."
+    },
+    {
+      "metric_name": "total_revenue",
+      "metric_raw": "Average Revenue",
+      "cohort_name": "all_company_owned",
+      "cohort_raw": "Company-Owned Hardee's Freestanding Restaurants",
+      "outlet_count": 190,
+      "reporting_period": "FY25 (January 30, 2024 to January 27, 2025)",
+      "reporting_year": 2025,
+      "unit_period": "annual",
+      "metric_scope": "franchisee",
+      "value_avg": 1343292,
+      "value_median": 1256683,
+      "value_min": 559632,
+      "value_max": 2421185,
+      "percentile_25": null,
+      "percentile_75": null,
+      "pct_above_avg": 44.7,
+      "page_number": 70,
+      "raw_text": "Average Revenue FY25 Company-Owned Hardee's Freestanding Restaurants\nAverage Revenue $1,343,292\nMedian Revenue $1,256,683\n# Met / Exceeded Average 85\n% Met / Exceeded Average 44.7%\nLowest $559,632\nHighest $2,421,185",
+      "notes": "53-week fiscal year period. 190 company-operated restaurants included. 85 met or exceeded average. Excludes non-freestanding locations and restaurants that did not provide complete revenue data for FY25."
+    }
+  ],
+  "has_item19": true,
+  "confidence": 0.98,
+  "notes": "Item 19 discloses average revenue only (no cost/profit data). Two cohorts reported: franchised freestanding and company-owned freestanding restaurants for FY25 (53-week period January 30, 2024 to January 27, 2025). Total included outlets: 1,398 (1,208 franchised + 190 company-owned) out of 1,571 total system restaurants. Revenue definition excludes sales taxes and stored value gift card sales, but includes redemptions."
+}

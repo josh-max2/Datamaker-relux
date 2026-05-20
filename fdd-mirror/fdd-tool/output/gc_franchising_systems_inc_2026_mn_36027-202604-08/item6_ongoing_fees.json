@@ -1,0 +1,10 @@
+{
+  "royalty_pct": 10,
+  "royalty_min_monthly": 750,
+  "marketing_fee_pct": 3,
+  "marketing_min_monthly": 500,
+  "tech_fee_monthly": 150,
+  "fee_notes": "Royalty minimum is $750/month for first 12 months, then $1,000/month. Additional required monthly fee: $175/month Cloverleaf consulting. Tech fee of $150/month includes ~$105 to franchisor and ~$20 to third-party vendor.",
+  "raw_excerpt": "Royalty fee: 10% of Gross Revenues; $750 monthly minimum for 12 months; $1,000 monthly minimum thereafter. National Branding Fee: 3% of Gross Revenues; $500/month minimum. Technology/Software License Fee: $150 per month.",
+  "confidence": 0.97
+}

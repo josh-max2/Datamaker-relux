@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block title %}How to Evaluate a Franchise Discovery Day: A Buyer's Guide{% endblock %}
+{% block description %}Discovery day is when the franchisor evaluates you — and when you should be evaluating them. What to ask, what to observe, what red flags look like in person, and how to use the day for diligence rather than getting sold.{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block breadcrumbs %}{{ ui.breadcrumbs([
+    {"label": "Home", "url": url_for('')},
+    {"label": "Guides", "url": url_for('guides/')},
+    {"label": "Evaluating discovery day", "url": canonical_url}
+]) }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Evaluate a Franchise Discovery Day: A Buyer's Guide",
+  "author": { "@type": "Person", "name": "FranchiseDepth Editorial", "url": "{{ url_for('about/') }}" },
+  "publisher": { "@type": "Organization", "name": "{{ site_name }}" },
+  "dateModified": "{{ generated_at }}",
+  "mainEntityOfPage": "{{ canonical_url }}",
+  "about": "Franchise discovery day — evaluation guide for prospective franchisees"
+}
+</script>
+{% endblock %}
+{% block content %}
+<article class="guide-page">
+    <header>
+        <h1>How to evaluate a franchise discovery day</h1>
+        <p class="lead">
+            Discovery day is the franchisor's structured sales event — usually a one- or two-day visit to their headquarters where they meet you, you meet their leadership, and they decide whether to offer you a franchise. Most buyers go in primed to be evaluated. They should also be evaluating, methodically and with a checklist. This guide is that checklist.
+        </p>
+        <p class="byline">
+            <span class="dateline">Page updated {{ generated_at }}</span>
+        </p>
+    </header>
+
+    <section>
+        <h2>What discovery day actually is</h2>
+        <p>
+            Discovery day is the franchisor's last filter before they extend an offer. The format varies — half a day to two full days, in-person at HQ or hybrid — but the structure is consistent:
+        </p>
+        <ul>
+            <li><strong>Brand overview presentation</strong> by their sales team / VP of franchising</li>
+            <li><strong>Tour of headquarters + operations support center</strong></li>
+            <li><strong>Meetings with department heads:</strong> training, marketing, supply chain, real estate, IT</li>
+            <li><strong>Meet the founder/CEO</strong> (if it's a smaller franchisor; larger ones substitute a senior franchisor exec)</li>
+            <li><strong>Often: an outlet visit</strong> to see operations live</li>
+            <li><strong>Final commercial conversation</strong> — confirming territory, terms, signing readiness</li>
+        </ul>
+        <p>
+            By the time you're invited to discovery day, the franchisor has already screened your finances, your industry experience, and your general fit. They're making sure you're not crazy or wildly mismatched with the brand. <em>You</em> should be answering an equally important question: are these the people you want to be in a 10-year contract with?
+        </p>
+    </section>
+
+    <section>
+        <h2>Before the day: what to do</h2>
+        <ol>
+            <li><strong>Read the FDD cover to cover.</strong> Not just Items 7 and 19. All 23 items. Make a list of questions where the disclosure was vague.</li>
+            <li><strong>Run <a href="{{ url_for('guides/validating-franchisee-earnings/') }}">validation calls</a> first.</strong> Don't wait until after discovery day. By the time you're at HQ you should already know what current franchisees report — so you can ask the franchisor about gaps between their pitch and franchisee reality.</li>
+            <li><strong>Compute your <a href="{{ url_for('guides/franchise-breakeven-how-long/') }}">breakeven scenario</a></strong> against the High end of Item 7. Have a specific number you're going to confirm during the day.</li>
+            <li><strong>List your top 5-8 questions in writing.</strong> Bring them. Ask them. Don't trust yourself to remember in the moment when you're being warmly hosted.</li>
+            <li><strong>Have your franchise attorney review the FDD</strong> beforehand. Their flagged questions go on your list too.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Questions to ask the franchisor's team</h2>
+
+        <h3>For the CEO / founder</h3>
+        <ul>
+            <li>"What's the single biggest thing you wish franchisees understood about the business that they don't always get?"</li>
+            <li>"What's the longest-tenured franchisee in the system? Why are they still here?"</li>
+            <li>"What's a recent decision you made that you knew franchisees would push back on?"</li>
+            <li>"How do you handle a franchisee who's actively unhappy? Walk me through what's happened recently."</li>
+        </ul>
+
+        <h3>For the head of franchise support / operations</h3>
+        <ul>
+            <li>"What's the ratio of support staff to franchisees? Who do I call when something breaks at 11pm on a Saturday?"</li>
+            <li>"How often does a field-support rep visit each outlet? What does the visit cover?"</li>
+            <li>"What's a typical operational issue you've helped a franchisee through in the last 30 days?"</li>
+            <li>"Show me your training calendar for new franchisees. Walk me through the first 90 days."</li>
+        </ul>
+
+        <h3>For the head of marketing / brand fund</h3>
+        <ul>
+            <li>"Of the marketing fund I contribute, what percentage reaches my specific market? Show me last year's spend breakdown."</li>
+            <li>"What does the franchisor handle nationally vs what each franchisee is expected to do locally?"</li>
+            <li>"What's your average customer acquisition cost? How has it trended over 3 years?"</li>
+            <li>"How do you handle competitive franchisor activity in my market — when another franchisee opens nearby?"</li>
+        </ul>
+
+        <h3>For supply chain / procurement</h3>
+        <ul>
+            <li>"What percentage of my operating spend goes through franchisor-approved suppliers vs free-market?"</li>
+            <li>"What's the markup on key items vs what I could source independently?"</li>
+            <li>"Do any of the required suppliers have a financial relationship with the franchisor or its principals? (Required FDD disclosure but worth confirming verbally.)"</li>
+        </ul>
+
+        <h3>For real estate</h3>
+        <ul>
+            <li>"Who finds and signs the lease in my territory — me, or the franchisor?"</li>
+            <li>"What demographics actually predict performance? Show me 3 strong-performing outlets and 3 weak ones, and the trade-area data behind both."</li>
+            <li>"What's your minimum population requirement, and how strict is it?"</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>What to observe (not just ask)</h2>
+        <p>
+            Words during discovery day are coached. Behaviors aren't. Watch:
+        </p>
+        <ul>
+            <li><strong>How franchisor staff talk about franchisees who exited.</strong> Defensive, dismissive ("they didn't follow the system"), or empathetic ("we should have caught it earlier")? The third version usually means a healthier franchisor culture.</li>
+            <li><strong>Whether you meet the same people more than once.</strong> If marketing, ops, and support are all the same two people in different hats, the support infrastructure is thinner than the org chart suggests.</li>
+            <li><strong>How they answer hard questions.</strong> A franchisor who says "let me get the right person to answer that" or "I don't have that data with me; I'll send it tonight" is more honest than one who improvises.</li>
+            <li><strong>The outlet visit's authenticity.</strong> Is it a real working outlet during normal hours, or a corporate "training store" that's been prepped? If you can't see a normal franchisee outlet during regular operation, that's a flag.</li>
+            <li><strong>Tone with you vs tone with their team.</strong> How does the franchisor speak to their own employees when they think you're not listening? It's how they'll speak to you when you're a franchisee.</li>
+            <li><strong>How quickly they push for commitment.</strong> "We'll need a signed deposit by Friday to hold your territory" is a sales pitch dressed as urgency. Real territories don't disappear in 72 hours.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Red flags worth walking out for</h2>
+        <ul>
+            <li><strong>They won't let you talk to franchisees who weren't on their pre-selected list.</strong> Item 20 of the FDD lists every franchisee. You have a federal right to call any of them. A franchisor steering you away from open-list outreach is hiding something.</li>
+            <li><strong>They volunteer "We don't recommend [Brand attorney X] — they're hostile to franchisors."</strong> Translation: that attorney negotiates hard for franchisees. The franchisor wants you using a softer reviewer.</li>
+            <li><strong>They tell you about earnings outside of Item 19.</strong> Per FTC §436.5(s), this is illegal. If a salesperson tells you "you can expect $500K in year one," walk out. The franchisor is putting itself at FTC risk and you in their cross-hairs as a witness.</li>
+            <li><strong>They can't explain a specific Item 19 cohort to you.</strong> If their own VP of franchising can't articulate why they chose a top-25% cohort over an all-franchised one, they don't understand their own disclosure — or they're hoping you won't.</li>
+            <li><strong>Multiple recent terminations the franchisor describes as "those franchisees were a bad fit."</strong> Maybe true. Probably not. Worth a follow-up validation call to those exact franchisees if you can find them.</li>
+            <li><strong>Aggressive deadline pressure.</strong> "Discovery day is today; we need you to sign by next Friday." A reasonable franchisor will give you 4-8 weeks to do diligence after discovery day. A pressure deadline is a sales tactic, not a real constraint.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>After the day: the 72-hour test</h2>
+        <p>
+            Discovery day environments are designed to feel good. Headquarters tours, warm hospitality, executives giving you focused attention. Many buyers leave excited, sign deposits within a week, and only later realize they didn't actually verify the substance.
+        </p>
+        <p>
+            Use the 72-hour rule: <strong>do not commit financially within 72 hours of discovery day.</strong> Use that window for:
+        </p>
+        <ol>
+            <li>One more <a href="{{ url_for('guides/validating-franchisee-earnings/') }}">validation call</a> — specifically ask about anything the franchisor presented that you couldn't verify in the moment</li>
+            <li>Your attorney's final FDD review with your follow-up questions answered</li>
+            <li>A spreadsheet review of your computed <a href="{{ url_for('guides/franchise-breakeven-how-long/') }}">breakeven math</a> against any updated numbers from the day</li>
+            <li>A serious conversation with your spouse / partner / co-investor that doesn't include the franchisor</li>
+        </ol>
+        <p>
+            If after 72 hours you still want to sign, sign. If you find yourself rationalizing answers you'd flagged before discovery day ("they're probably right"), pause longer. The 10-year contract you're about to enter won't pause for you.
+        </p>
+    </section>
+
+    <section>
+        <h2>What to bring</h2>
+        <ul>
+            <li>Printed copy of the FDD with your annotations</li>
+            <li>Your written question list (in order of importance — you may not get to all)</li>
+            <li>Notebook + pen (laptop closed except for explicit reference; you'll observe more without a screen)</li>
+            <li>Validation-call notes — useful for asking the franchisor about discrepancies</li>
+            <li>Your computed breakeven scenarios at multiple cohort assumptions</li>
+            <li>If you're bringing a spouse / co-investor: a pre-trip agreement on who's asking what so you don't duplicate</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Related guides</h2>
+        <ul>
+            <li><a href="{{ url_for('guides/validating-franchisee-earnings/') }}">Validating franchisee earnings</a> — do this BEFORE discovery day</li>
+            <li><a href="{{ url_for('guides/understanding-item-19/') }}">Understanding FDD Item 19</a> — what the franchisor's earnings claims actually disclose</li>
+            <li><a href="{{ url_for('guides/whats-negotiable-in-a-franchise-agreement/') }}">What's negotiable in a franchise agreement</a> — discovery day is the natural moment to surface negotiation asks</li>
+            <li><a href="{{ url_for('guides/franchise-breakeven-how-long/') }}">How long to break even on a franchise?</a> — confirm the math holds with whatever new numbers the franchisor presents</li>
+            <li><a href="{{ url_for('guides/sba-7a-franchise-financing/') }}">SBA 7(a) franchise financing</a> — ask about their lender relationships during the day</li>
+        </ul>
+    </section>
+</article>
+{% endblock %}

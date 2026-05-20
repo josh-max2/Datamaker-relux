@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\wi_scrape\\mr_handyman_id640769.pdf",
+  "body_start_page": 3,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0094,
+      "input_tokens": 2161,
+      "cached": 0,
+      "output_tokens": 195
+    },
+    "item5": {
+      "cost_usd": 0.0129,
+      "input_tokens": 2109,
+      "cached": 0,
+      "output_tokens": 441
+    },
+    "item6": {
+      "cost_usd": 0.0166,
+      "input_tokens": 1844,
+      "cached": 0,
+      "output_tokens": 741
+    },
+    "item7": {
+      "cost_usd": 0.0076,
+      "input_tokens": 2052,
+      "cached": 0,
+      "output_tokens": 94
+    },
+    "item19": {
+      "cost_usd": 0.0628,
+      "input_tokens": 10291,
+      "cached": 0,
+      "output_tokens": 2127,
+      "images_sent": 4
+    },
+    "item20": {
+      "cost_usd": 0.2108,
+      "input_tokens": 18619,
+      "cached": 0,
+      "output_tokens": 10332,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.3202
+}

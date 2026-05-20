@@ -1,0 +1,45 @@
+{
+  "pdf": "data\\mn_scrape\\gac_franchising_llc_2025_mn_35448-202603-03.pdf",
+  "body_start_page": 1,
+  "items": {
+    "metadata": {
+      "cost_usd": 0.0041,
+      "input_tokens": 1520,
+      "cached": 1340,
+      "output_tokens": 213
+    },
+    "item5": {
+      "cost_usd": 0.0058,
+      "input_tokens": 1674,
+      "cached": 1340,
+      "output_tokens": 296
+    },
+    "item6": {
+      "cost_usd": 0.022,
+      "input_tokens": 6079,
+      "cached": 1340,
+      "output_tokens": 491
+    },
+    "item7": {
+      "cost_usd": 0.014,
+      "input_tokens": 5427,
+      "cached": 1340,
+      "output_tokens": 91
+    },
+    "item19": {
+      "cost_usd": 0.3464,
+      "input_tokens": 19199,
+      "cached": 1340,
+      "output_tokens": 19496,
+      "images_sent": 8
+    },
+    "item20": {
+      "cost_usd": 0.1754,
+      "input_tokens": 16909,
+      "cached": 1340,
+      "output_tokens": 8554,
+      "images_sent": 8
+    }
+  },
+  "total_cost_usd": 0.5678
+}
