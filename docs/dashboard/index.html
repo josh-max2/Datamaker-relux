@@ -457,10 +457,15 @@ a:hover { color: var(--text-primary); }
 
     /* Charts — stack 1-col with bounded height */
     .charts-row { grid-template-columns: 1fr !important; gap: 10px; margin-bottom: 16px; }
-    .chart-card { padding: 12px; border-radius: 10px; }
+    .chart-card { padding: 12px; border-radius: 10px; max-width: 100%; overflow: hidden; }
     .chart-card h3 { font-size: 11px; margin: 0 0 6px; }
-    .chart-wrap { height: 180px !important; }
+    .chart-wrap { height: 180px !important; width: 100% !important; max-width: 100% !important; }
     .chart-wrap[style*="320px"] { height: 240px !important; }
+    /* Chart.js writes inline width="640" on canvas — force fluid */
+    .chart-wrap canvas { max-width: 100% !important; width: 100% !important; height: 100% !important; }
+    /* Same for the layout parent */
+    .layout, .main { max-width: 100%; min-width: 0; }
+    .main { overflow-x: hidden; }
 
     /* Scatter legend wraps tighter */
     .chart-legend { font-size: 11px; gap: 10px; padding-top: 6px; }
