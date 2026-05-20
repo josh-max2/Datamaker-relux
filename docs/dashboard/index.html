@@ -1042,8 +1042,8 @@ let charts = { industry: null, investment: null, royalty: null };
 // in theory but visually dim due to small font + canvas anti-aliasing.
 function chartTextColor() {
   return document.documentElement.getAttribute('data-theme') === 'light'
-    ? '#475569'   // slate-600: high contrast on white
-    : '#CBD5E1';  // slate-300: high contrast on dark elevated surface
+    ? '#0F172A'   // near-black slate-900 on white — definitive contrast
+    : '#F2F3F5';  // near-white text-primary on dark — definitive contrast
 }
 function chartGridColor() {
   return document.documentElement.getAttribute('data-theme') === 'light'
