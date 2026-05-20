@@ -352,6 +352,44 @@ a:hover { color: var(--text-primary); }
     border-top: 1px solid var(--bg-elevated); text-align: center;
 }
 
+/* Drawer close button — hidden on desktop, shown on mobile (overridden below) */
+.sidebar .drawer-close { display: none; }
+
+/* KPI strip — 2-tile only, use repeat(2, 1fr) on desktop instead of repeat(4, 1fr).
+   The previous 4-col grid wasted the right half of the dashboard hero row. */
+.kpi-strip { grid-template-columns: repeat(2, 1fr) !important; max-width: 720px; }
+
+/* Chart legend (under scatter) — dashboard is self-contained so the global
+   .chart-legend rules from style.css don't reach it. Re-declare locally. */
+.chart-legend {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 10px 4px 4px;
+    font: 400 12px/1.4 var(--font-body);
+    color: var(--text-secondary);
+}
+.chart-legend .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.chart-legend .legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex: 0 0 auto;
+}
+
+/* Industry donut: when there are >10 categories, the Chart.js legend
+   (positioned right) cuts off labels like "Au..." "Te...". Give the
+   donut chart-card more vertical room so the legend wraps to 2 columns. */
+@media (min-width: 1100px) {
+    .charts-row {
+        grid-template-columns: 1.5fr 1fr 1fr !important;
+    }
+}
+
 /* ===== Light mode for dashboard (since this page is self-contained
    and doesn't load the global style.css, its tokens need their own
    light-mode override block.) ===== */
@@ -468,6 +506,7 @@ html[data-theme="light"] .sidebar-backdrop { background: rgba(15, 23, 42, 0.5); 
         padding-right: 40px;
     }
     .sidebar .drawer-close {
+        display: inline-flex !important;
         position: absolute;
         top: calc(14px + env(safe-area-inset-top, 0px));
         right: 14px;
@@ -967,9 +1006,10 @@ function royaltyClass(v) {
 }
 function investmentClass(v) {
   if (v == null) return 'val-muted';
-  if (v <= 100000) return 'val-good';
-  if (v <= 500000) return '';
-  return 'val-warn';
+  if (v <= 100000)  return 'val-good';   // ≤$100K buyer-friendly green
+  if (v <= 500000)  return '';            // $100K-$500K standard
+  if (v <= 1000000) return 'val-warn';    // $500K-$1M elevated amber
+  return 'val-bad';                       // >$1M high red (was conflated with elevated)
 }
 
 function renderKPIs(filtered) {
