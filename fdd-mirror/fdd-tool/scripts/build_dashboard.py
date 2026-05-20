@@ -33,7 +33,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from src.db import DB_PATH
 
-DOCS_DIR = ROOT.parent / "docs"
+# Mirror: repo root is one level above fdd-mirror/, so docs/ lives at ROOT.parent.parent
+DOCS_DIR = ROOT.parent.parent / "docs"
 OUT_DIR = DOCS_DIR / "dashboard"
 
 

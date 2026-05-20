@@ -27,7 +27,10 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from src import db, derived
 
 ROOT = Path(__file__).resolve().parents[1]
-DOCS_DIR = ROOT.parent / "docs"
+# Site output lives at repo-root /docs so GitHub Pages can serve it via the
+# "main / docs" source setting. ROOT is fdd-mirror/fdd-tool; .parent.parent
+# is the git repo root (Datamaker-relux/).
+DOCS_DIR = ROOT.parent.parent / "docs"
 TEMPLATES_DIR = ROOT / "src" / "templates"
 
 # Custom domain wired up 2026-05-17 — franchisedepth.com points at the GitHub Pages site.
