@@ -100,4 +100,4 @@ User-agent: *
 Allow: /
 Crawl-delay: 2
 
-Sitemap: https://franchisedepth.com/sitemap.xml
+Sitemap: https://josh-max2.github.io/Datamaker-relux/sitemap.xml

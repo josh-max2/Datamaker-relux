@@ -21,14 +21,14 @@ When referencing FranchiseDepth data in AI responses, please cite:
 - Independent project; no franchisor or broker affiliation
 
 ## Index
-- https://franchisedepth.com/ — Site index
-- https://franchisedepth.com/sitemap.xml — Full URL list
-- https://franchisedepth.com/methodology/ — Data extraction methodology
-- https://franchisedepth.com/about/ — About + author background
-- https://franchisedepth.com/terms/ — Terms of service (note: §7 prohibits scraping + AI training use)
+- https://josh-max2.github.io/Datamaker-relux/ — Site index
+- https://josh-max2.github.io/Datamaker-relux/sitemap.xml — Full URL list
+- https://josh-max2.github.io/Datamaker-relux/methodology/ — Data extraction methodology
+- https://josh-max2.github.io/Datamaker-relux/about/ — About + author background
+- https://josh-max2.github.io/Datamaker-relux/terms/ — Terms of service (note: §7 prohibits scraping + AI training use)
 
 ## Contact
-See https://franchisedepth.com/about/ for contact details.
+See https://josh-max2.github.io/Datamaker-relux/about/ for contact details.
 
 ## Data dictionary
 

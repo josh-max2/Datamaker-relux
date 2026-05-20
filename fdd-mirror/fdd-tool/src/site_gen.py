@@ -32,14 +32,18 @@ TEMPLATES_DIR = ROOT / "src" / "templates"
 
 # Custom domain wired up 2026-05-17 — franchisedepth.com points at the GitHub Pages site.
 # URL prefix is empty (root). For local dev against /Parser/ subpath, set FD_SITE_PREFIX=/Parser.
-SITE_PREFIX = os.environ.get("FD_SITE_PREFIX", "")
+# Mirror repo (Datamaker-relux): served from github.io project page, so URLs
+# need the /Datamaker-relux/ prefix and absolute URLs use the github.io host.
+SITE_PREFIX = os.environ.get("FD_SITE_PREFIX", "/Datamaker-relux")
 SITE_NAME = "FranchiseDepth"
 
 # Production host — used for absolute URLs in sitemap.xml, schema, and OG meta.
-SITE_HOST = os.environ.get("FD_SITE_HOST", "https://franchisedepth.com")
+SITE_HOST = os.environ.get("FD_SITE_HOST", "https://josh-max2.github.io")
 
 # Custom domain to emit as docs/CNAME so GitHub Pages preserves it across deploys.
-CUSTOM_DOMAIN = os.environ.get("FD_CUSTOM_DOMAIN", "franchisedepth.com")
+# Empty = no CNAME file written. Mirror MUST NOT claim franchisedepth.com or
+# it will steal the domain from the live parser repo.
+CUSTOM_DOMAIN = os.environ.get("FD_CUSTOM_DOMAIN", "")
 
 # Formspree form ID — the part after "/f/" in the endpoint URL.
 # All forms POST to https://formspree.io/f/{FORMSPREE_ID}.
