@@ -1381,18 +1381,24 @@ els.body.addEventListener('change', (e) => {
   updateCompareBtn();
 });
 
-// Select-all-visible
-document.getElementById('check-all').addEventListener('change', (e) => {
-  const visibleSlugs = [...els.body.querySelectorAll('.row-check')].map(cb => cb.dataset.slug);
-  if (e.target.checked) {
-    visibleSlugs.forEach(s => selectedSlugs.add(s));
-  } else {
-    visibleSlugs.forEach(s => selectedSlugs.delete(s));
-  }
-  saveSelected(); updateCompareBtn();
-  // Re-render to flip the row checkboxes
-  rerender();
-});
+// Select-all-visible — #check-all is rendered dynamically by renderHeader(),
+// so it doesn't exist at script-load. renderHeader() attaches the change
+// listener itself (see line ~1175). This duplicate block is left for clarity
+// but null-guarded to prevent a TypeError that previously halted all later
+// init (KPI hooks, chart instantiation, table populate).
+const checkAllInit = document.getElementById('check-all');
+if (checkAllInit) {
+  checkAllInit.addEventListener('change', (e) => {
+    const visibleSlugs = [...els.body.querySelectorAll('.row-check')].map(cb => cb.dataset.slug);
+    if (e.target.checked) {
+      visibleSlugs.forEach(s => selectedSlugs.add(s));
+    } else {
+      visibleSlugs.forEach(s => selectedSlugs.delete(s));
+    }
+    saveSelected(); updateCompareBtn();
+    rerender();
+  });
+}
 
 // Open compare modal
 document.getElementById('compare-btn').addEventListener('click', () => {
