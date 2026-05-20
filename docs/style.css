@@ -2947,7 +2947,253 @@ html[data-theme="light"] .data-table tbody tr:hover { background: rgba(0, 0, 0, 
 html[data-theme="light"] .chip-count { background: rgba(0, 0, 0, 0.06); }
 html[data-theme="light"] .chip:hover { background: rgba(0, 0, 0, 0.04); }
 
-/* Theme toggle button */
+/* ===========================================================================
+   BATCH 2 — overhaul pass refinements
+   Items 1-3, 5-9, 11, 12, 13, 15 + supporting motion/density tweaks.
+   =========================================================================== */
+
+/* --- Item 2: kill serif on wordmark + display H1; keep serif ONLY on
+   editorial routes (/methodology, /guides/*) where it earns the signal. --- */
+.site-header a.brand,
+.display, h1.display, h2.display,
+.hero-luxury .display {
+    font-family: var(--font-body) !important;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+}
+/* Editorial routes still get the serif if they want it (loaded selectively
+   via .editorial-route on body — not auto-applied; opt-in only.) */
+body.editorial-route h1, body.editorial-route h2 {
+    font-family: var(--font-display, 'Source Serif 4', 'Tiempos Headline', Georgia, serif);
+    font-weight: 400;
+}
+
+/* --- Item 3: tabular + lining numerics on every datum surface. --- */
+.featured-stat-val,
+.stat-tile-value,
+.fact-hero .value,
+.fact-grid .fact .value,
+.calc-metric-value,
+.calc-knob-value input[type="text"],
+.calc-input-inline input[type="text"],
+.calc-fee-val,
+.aggregates .value,
+.data-table td[data-value],
+.calc-waterfall .wf-value,
+.compare-table td,
+.tier-badge {
+    font-variant-numeric: tabular-nums lining-nums !important;
+    font-feature-settings: "tnum" 1, "lnum" 1 !important;
+}
+/* Hero stat figures get the editorial-mono treatment. */
+.featured-stat-val, .stat-tile-value, .fact-hero .value {
+    font-family: var(--font-mono);
+    font-weight: 500;
+}
+
+/* --- Item 1: calc-summary IS the cream callout. Force accent-quiet treatment. --- */
+.calc-summary {
+    background: var(--accent-quiet) !important;
+    border: none;
+    border-left: 3px solid var(--accent) !important;
+    border-radius: 0 6px 6px 0;
+    padding: 12px 14px;
+    color: var(--text-primary) !important;
+}
+.calc-summary strong { color: var(--text-primary) !important; }
+
+/* Generic .callout was warning-tinted in Phase A; the Item-19 footnote one
+   genuinely is informational so move it to accent-quiet too. */
+.callout {
+    background: var(--accent-quiet);
+    border-left: 3px solid var(--accent);
+    color: var(--text-primary);
+}
+.callout strong { color: var(--text-primary); }
+
+/* --- Item 8: stacked bar segments → viz token palette + positive net --- */
+.seg-royalty   { background: var(--viz-1); }
+.seg-marketing { background: var(--viz-4); }
+.seg-tech      { background: var(--viz-3); }
+.seg-op        { background: var(--viz-5); }
+.seg-owner     { background: var(--viz-2); }
+.seg-tax       { background: rgba(255, 255, 255, 0.18); }
+.seg-net       { background: var(--positive); }
+.seg-loss      { background: var(--negative); }
+.calc-bar-segments { background: rgba(255, 255, 255, 0.06); }
+
+/* --- Item 9: tone .compare-share-btn to outline-only --- */
+.compare-share-btn {
+    background: transparent !important;
+    color: var(--accent) !important;
+    border: 1px solid var(--border-default) !important;
+    font-weight: 500;
+}
+.compare-share-btn:hover {
+    background: rgba(107, 138, 255, 0.08) !important;
+    color: var(--accent-hover) !important;
+    border-color: var(--accent) !important;
+}
+
+/* --- Item 11: cross-category caveat — promote from italic gray to accent block --- */
+#compare-output-note,
+.compare-page .notes#compare-output-note {
+    font-style: normal;
+    background: rgba(107, 138, 255, 0.06);
+    border-left: 3px solid var(--accent);
+    padding: 12px 14px;
+    border-radius: 0 6px 6px 0;
+    color: var(--text-primary);
+    margin: 12px 0 16px;
+}
+
+/* --- Item 5: outlet-growth tier color when delta carries data-tier --- */
+.outlet-trend-delta[data-tier="positive"] { color: var(--positive) !important; }
+.outlet-trend-delta[data-tier="negative"] { color: var(--negative) !important; }
+/* Inline trend deltas in tables also adopt tier coloring */
+[data-trend-tier="positive"] { color: var(--positive); }
+[data-trend-tier="negative"] { color: var(--negative); }
+
+/* --- Item 12: category chips — tier-scaled font size by count bucket --- */
+.chip[data-count-tier="lg"]  { font-size: 1rem;    padding: .5rem 1rem; }
+.chip[data-count-tier="md"]  { font-size: 0.9rem;  padding: .4rem .85rem; }
+.chip[data-count-tier="sm"]  { font-size: 0.78rem; padding: .3rem .7rem; opacity: 0.85; }
+.chip[data-count-tier="sm"] .chip-count { font-size: .68rem; }
+
+/* --- Item 13: hero positioning line (moat) --- */
+.moat-line {
+    margin: 4px 0 18px;
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    letter-spacing: -0.005em;
+}
+.moat-line strong { color: var(--text-primary); font-weight: 600; }
+.moat-line .dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    background: var(--positive);
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: 1px;
+}
+
+/* --- Item 4 (pragmatic): demote .fact-small in brand hero --- */
+.fact-grid .fact.fact-small {
+    background: transparent;
+    border: none;
+    padding: 8px 14px;
+    grid-column: span 1;
+}
+.fact-grid .fact.fact-small .value { font-size: 0.95rem; font-family: var(--font-body); font-weight: 500; color: var(--text-secondary); }
+.fact-grid .fact.fact-small .label { font-size: 10px; opacity: 0.7; }
+
+/* --- Trust line pill row (item 10) --- */
+.brand-meta {
+    display: flex; flex-wrap: wrap;
+    gap: 6px 8px;
+    margin: 10px 0 18px;
+    padding: 0;
+    list-style: none;
+}
+.brand-meta .meta-badge {
+    display: inline-flex; align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-subtle);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    list-style: none;
+}
+.brand-meta .meta-icon { color: var(--positive); font-weight: 700; }
+.brand-meta .meta-badge.meta-verified { border-color: rgba(16, 185, 129, 0.25); }
+.brand-meta .meta-badge.meta-verified::before {
+    content: ""; display: inline-block; width: 6px; height: 6px;
+    background: var(--positive); border-radius: 50%; margin-right: 2px;
+}
+.brand-meta .meta-badge.meta-date::before {
+    content: ""; display: inline-block; width: 6px; height: 6px;
+    background: var(--text-tertiary); border-radius: 50%; margin-right: 2px;
+}
+.brand-meta .meta-badge.meta-reading-time { color: var(--text-tertiary); }
+
+/* --- Density bumps on table rows (spec mention: Carta/Pitchbook 44-48px) --- */
+#home-brands-table td, .data-table.sortable-table td,
+.compare-table td, .compare-table th { padding: 12px 16px !important; }
+#home-brands-table thead th, .data-table.sortable-table thead th { padding: 14px 16px !important; }
+
+/* --- Brand link tone in tables (spec: #A4B8FF, weight 500, underline-on-hover) --- */
+.data-table a, .compare-table a, #home-brands-table a {
+    color: #A4B8FF;
+    text-decoration: none;
+    font-weight: 500;
+}
+.data-table a:hover, .compare-table a:hover, #home-brands-table a:hover {
+    text-decoration: underline;
+    color: var(--accent);
+}
+
+/* --- Filter toggle group: stronger active state (spec) --- */
+.filter-toggle.active {
+    background: rgba(107, 138, 255, 0.16) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid rgba(107, 138, 255, 0.32);
+    font-weight: 600;
+}
+.filter-toggle {
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+/* --- Section dividers between major page sections --- */
+.section-divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 48px 0;
+}
+
+/* --- Calculator stat labels match site stat-label convention --- */
+.calc-metric-label {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+/* --- Newsletter / footer subscribe button = accent + 44px height --- */
+.footer-signup-row button,
+.lead-form .btn,
+.lead-form-mid .btn {
+    background: var(--accent);
+    color: var(--text-inverse);
+    border: none;
+    border-radius: 6px;
+    padding: 0 20px;
+    min-height: 44px;
+    font-weight: 600;
+}
+.footer-signup-row button:hover,
+.lead-form .btn:hover,
+.lead-form-mid .btn:hover { background: var(--accent-hover); }
+.footer-signup-row input[type="email"],
+.lead-form input[type="email"],
+.lead-form-mid input[type="email"] { min-height: 44px; }
+
+/* --- FTC disclosure link color matches the warning box tone --- */
+.site-footer .ftc-disclosure a { color: #B45309; text-decoration: underline; }
+.site-footer .ftc-disclosure a:hover { color: #92400E; }
+
+/* --- Header layout: search to right of nav (spec) — flex order --- */
+.site-header .container { gap: 16px; }
+.site-header nav { order: 2; }
+.header-search { order: 3; margin-left: auto; }
+.site-header a.brand { order: 1; }
+
+/* --- Theme toggle button --- */
 .theme-toggle {
     display: inline-flex;
     align-items: center;
