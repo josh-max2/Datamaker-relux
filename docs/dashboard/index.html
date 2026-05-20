@@ -476,10 +476,18 @@ a:hover { color: var(--text-primary); }
     .actions { display: flex; gap: 8px; }
     .actions .btn { flex: 1; min-height: 44px; font-size: 13px; }
 
-    /* Table — horizontal scroll with sticky first col */
+    /* Table — horizontal scroll lives INSIDE .results card; page itself doesn't scroll */
+    .results { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     .master-table { font-size: 12px; min-width: 640px; }
     .master-table thead th { padding: 10px 8px; font-size: 10px; }
     .master-table td { padding: 10px 8px; }
+    /* Sticky first column for scannability while scrolling */
+    .master-table thead th:nth-child(3),
+    .master-table tbody td:nth-child(3) {
+        position: sticky; left: 0;
+        background: var(--bg-elevated);
+        z-index: 2;
+    }
 
     .compare-fab { right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); padding: 12px 18px; font-size: 13px; }
 }
