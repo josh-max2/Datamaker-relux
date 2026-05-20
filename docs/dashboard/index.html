@@ -406,7 +406,9 @@ a:hover { color: var(--text-primary); }
    and doesn't load the global style.css, its tokens need their own
    light-mode override block.) ===== */
 html[data-theme="light"] {
-    --bg-base:        #FAFBFC;
+    /* Match global style.css — page bg noticeably darker than card surfaces
+       so .kpi-tile / .chart-card / .results pop in light mode. */
+    --bg-base:        #ECEFF3;
     --bg-elevated:    #FFFFFF;
     --bg-overlay:     #F1F5F9;
     --bg-canvas:      #FFFFFF;

@@ -3279,10 +3279,17 @@ button.compare-share-btn {
    Boot script in <head> sets the attribute before stylesheet renders.
    =========================================================================== */
 html[data-theme="light"] {
-    --bg-base:        #FAFBFC;
+    /* Page background noticeably darker than card surfaces so white .card /
+       .hero-luxury / .featured-stats / .kpi-tile blocks pop instead of
+       blending into the page. Hierarchy from bottom to top:
+         inset (recessed)     #E2E8F0   — slightly darker than page
+         base  (page)         #ECEFF3   — soft warm gray, the page bg
+         surface-2 (table-th) #F1F5F9   — between page and white
+         surface-1 (cards)    #FFFFFF   — pure white, sits above everything  */
+    --bg-base:        #ECEFF3;
     --bg-surface-1:   #FFFFFF;
     --bg-surface-2:   #F1F5F9;
-    --bg-inset:       #E5E7EB;
+    --bg-inset:       #E2E8F0;
     --bg-elevated:    var(--bg-surface-1);
     --bg-overlay:     var(--bg-surface-2);
     --bg-canvas:      var(--bg-surface-1);
@@ -3312,7 +3319,7 @@ html[data-theme="light"] {
     --negative:        #B91C1C;
     --negative-quiet:  rgba(185, 28, 28, 0.08);
 }
-html[data-theme="light"] .page-toc { background: rgba(250, 251, 252, 0.92); }
+html[data-theme="light"] .page-toc { background: rgba(236, 239, 243, 0.92); }
 html[data-theme="light"] #home-brands-table tr:hover td,
 html[data-theme="light"] .data-table tbody tr:hover { background: rgba(0, 0, 0, 0.03); }
 
