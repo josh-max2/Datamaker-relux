@@ -62,21 +62,29 @@
     --negative-quiet:  rgba(239, 68, 68, 0.10);
 
     /* legacy alias tokens still referenced by selectors */
-    --accent-primary:  var(--accent);
+    /* Bug fix: --accent-primary was originally mint-green semantic-positive in the
+       light-theme palette; aliasing it to --accent (blue) broke val-good cells on
+       the dashboard. Point it at --positive instead. */
+    --accent-primary:  var(--positive);
     --accent-info:     var(--accent);
     --accent-warning:  var(--warning);
     --accent-danger:   var(--negative);
     --accent-gold:     #D4AF37;
 
-    /* --- Data viz — 5-color qualitative ramp (spec) + legacy 8-slot --- */
-    --viz-1: #6B8AFF;
-    --viz-2: #10B981;
-    --viz-3: #F59E0B;
-    --viz-4: #A78BFA;
-    --viz-5: #64748B;
+    /* --- Data viz — extended to 10 tokens for dashboard donut (v3 §3) --- */
+    --viz-1:  #6B8AFF;   /* primary blue */
+    --viz-2:  #10B981;   /* emerald */
+    --viz-3:  #F59E0B;   /* amber */
+    --viz-4:  #A78BFA;   /* violet */
+    --viz-5:  #64748B;   /* slate */
+    --viz-6:  #06B6D4;   /* cyan */
+    --viz-7:  #EC4899;   /* pink */
+    --viz-8:  #84CC16;   /* lime */
+    --viz-9:  #F97316;   /* orange */
+    --viz-10: #8B5CF6;   /* purple */
     --data-1: var(--viz-1); --data-2: var(--viz-2); --data-3: var(--viz-3);
-    --data-4: var(--viz-4); --data-5: var(--viz-5); --data-6: #34D399;
-    --data-7: #FBBF24;       --data-8: #818CF8;
+    --data-4: var(--viz-4); --data-5: var(--viz-5); --data-6: var(--viz-6);
+    --data-7: var(--viz-7); --data-8: var(--viz-8);
 
     /* --- Shadows --- */
     --shadow-card:  0 8px 24px -8px rgba(0, 0, 0, 0.5);
@@ -2961,6 +2969,179 @@ h3 { color: var(--text-primary); }
 .compare-table thead tr th[scope="col"]:nth-of-type(4) { border-bottom: 2px solid var(--viz-3); }
 .compare-table thead tr th[scope="col"]:nth-of-type(5) { border-bottom: 2px solid var(--viz-4); }
 .compare-table thead tr th[scope="col"]:nth-of-type(6) { border-bottom: 2px solid var(--viz-5); }
+
+/* ===========================================================================
+   BATCH 4 — v3 spec fixes
+   Belt-and-suspenders on persistent serif (FAILURES 1+2); pill-row force
+   (FAILURE 3); share-btn force-outline (FAILURE 5); new dashboard patterns.
+   Last block in stylesheet, so it wins the cascade where !important is used.
+   =========================================================================== */
+
+/* --- FAILURES 1 + 2: kill serif on wordmark + EVERY H1 (no class needed) --- */
+.site-header a.brand,
+.site-header .brand,
+nav .brand,
+.brand[href],
+.wordmark,
+.site-logo,
+.navbar-brand,
+header [data-component="logo"] {
+    font-family: var(--font-body) !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    font-size: 18px !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1 !important;
+}
+
+/* Catch-all H1 — including the dashboard's bare <h1> with no class. */
+h1, .h1, .display, h1.display, h2.display, .hero-luxury .display,
+.hero-title, .page-title, .brand-page-title, .dashboard-title {
+    font-family: var(--font-body) !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    letter-spacing: -0.02em !important;
+}
+/* Also kill the deprecated gradient text-clip on .display which made some H1s
+   render as transparent on backgrounds — keep solid primary color. */
+.display, .hero-luxury .display {
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: var(--text-primary) !important;
+    background-clip: initial !important;
+    color: var(--text-primary) !important;
+}
+
+/* --- FAILURE 3: trust line pill row hard-forced --- */
+.brand-meta {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    margin: 12px 0 24px !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+.brand-meta .meta-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    padding: 4px 10px !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid var(--border-subtle) !important;
+    border-radius: 999px !important;
+    font: 500 11px/1.4 var(--font-body) !important;
+    color: var(--text-secondary) !important;
+    list-style: none !important;
+}
+.brand-meta .meta-icon { display: none !important; }
+.brand-meta .meta-badge::before {
+    content: "" !important;
+    display: inline-block !important;
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 50% !important;
+    background: var(--text-tertiary) !important;
+    flex: 0 0 auto !important;
+}
+.brand-meta .meta-badge.meta-verified::before { background: var(--positive) !important; }
+.brand-meta .meta-badge.meta-verified         { border-color: rgba(16, 185, 129, 0.25) !important; }
+.brand-meta .meta-badge[data-tier="warning"]::before  { background: var(--warning) !important; }
+.brand-meta .meta-badge[data-tier="warning"]          { border-color: rgba(245, 158, 11, 0.25) !important; }
+.brand-meta .meta-badge[data-tier="negative"]::before { background: var(--negative) !important; }
+.brand-meta .meta-badge[data-tier="negative"]         { border-color: rgba(239, 68, 68, 0.25) !important; }
+
+/* --- FAILURE 5: compare-share-btn force outline (id + class double-anchor) --- */
+#compare-share-btn,
+.compare-share-btn,
+button.compare-share-btn {
+    background: transparent !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-default) !important;
+    border-radius: 6px !important;
+    padding: 8px 14px !important;
+    font: 500 13px/1 var(--font-body) !important;
+    height: 36px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+#compare-share-btn:hover,
+.compare-share-btn:hover {
+    background: rgba(255, 255, 255, 0.04) !important;
+    border-color: var(--border-strong) !important;
+    color: var(--text-primary) !important;
+}
+#compare-share-btn .share-icon,
+.compare-share-btn .share-icon { color: var(--accent) !important; }
+.compare-share-btn .share-label { color: var(--text-primary) !important; }
+
+/* --- NEW PATTERN F: industry-chip (dashboard table + homepage future) --- */
+.industry-chip {
+    display: inline-block;
+    padding: 2px 10px;
+    background: var(--accent-quiet);
+    border: 1px solid rgba(107, 138, 255, 0.20);
+    border-radius: 999px;
+    font: 500 11px/1.4 var(--font-body);
+    color: var(--accent);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background var(--dur-quick) var(--ease-out),
+                border-color var(--dur-quick) var(--ease-out);
+}
+.industry-chip:hover {
+    background: rgba(107, 138, 255, 0.18);
+    border-color: rgba(107, 138, 255, 0.40);
+    color: var(--accent-hover);
+}
+
+/* --- NEW PATTERN D: investment-range semantic coloring (v3 §6.17) --- */
+.investment-standard { color: var(--text-primary); }
+.investment-elevated { color: var(--warning); }
+.investment-high     { color: var(--warning); font-weight: 500; }
+
+/* --- NEW 2: dashboard scatter chart-legend below the chart --- */
+.chart-legend {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 10px 4px 4px;
+    font: 400 12px/1.4 var(--font-body);
+    color: var(--text-secondary);
+}
+.chart-legend .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.chart-legend .legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex: 0 0 auto;
+}
+
+/* --- NEW 3: info-icon next to dashboard "ROYALTY" column header --- */
+.master-table th .info,
+.master-table th .col-info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    margin-left: 4px;
+    border: 1px solid var(--border-default);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--text-tertiary);
+    font: 500 9px/1 var(--font-body);
+    cursor: help;
+    vertical-align: middle;
+    text-transform: none;
+    letter-spacing: 0;
+}
+.master-table th .col-info:hover { color: var(--text-primary); border-color: var(--border-strong); }
+
 
 
 /* ===========================================================================

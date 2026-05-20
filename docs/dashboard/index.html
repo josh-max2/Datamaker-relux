@@ -460,7 +460,7 @@ a:hover { color: var(--text-primary); }
   </div>
   <div class="actions">
     <button class="btn" id="f-reset">Reset</button>
-    <button class="btn btn-primary" id="f-copy">Copy URL</button>
+    <button class="btn" id="f-copy">Copy URL</button>
   </div>
 </aside>
 
@@ -497,6 +497,11 @@ a:hover { color: var(--text-primary); }
 <div class="chart-card" style="margin-bottom: 20px;">
   <h3>Revenue vs royalty — find the franchisee-friendly outliers (high revenue, low royalty)</h3>
   <div class="chart-wrap" style="height: 320px;"><canvas id="chartScatter"></canvas></div>
+  <div class="chart-legend" role="presentation">
+    <span class="legend-item"><span class="legend-dot" style="background: rgba(52,211,153,1)"></span>Broad Item 19 disclosure</span>
+    <span class="legend-item"><span class="legend-dot" style="background: rgba(251,191,36,1)"></span>Thin Item 19 disclosure</span>
+    <span class="legend-item"><span class="legend-dot" style="background: rgba(148,163,184,0.8)"></span>No Item 19 disclosed</span>
+  </div>
 </div>
 
 <div class="results">
@@ -609,7 +614,7 @@ const COLUMNS = [
        return `<span class="${cls}">${lo} – ${hi}</span>`;
      } },
   { key: 'royalty',        label: 'Royalty',            sort: 'royalty',        align: 'num',   default: true,
-     tip: 'Ongoing royalty % from Item 6',
+     tip: 'Ongoing royalty % from Item 6. Coloring: green-bold ≤6%, neutral 7–9%, red-bold >9% (above-market).',
      render: b => `<span class="${royaltyClass(b.royalty)}">${fmtPct(b.royalty)}</span>` },
   { key: 'marketing',      label: 'Marketing fee',      sort: 'marketing',      align: 'num',   default: false,
      tip: 'Marketing/brand-fund % from Item 6',
@@ -778,8 +783,12 @@ function renderCharts(filtered) {
   charts.industry = new Chart(document.getElementById('chartIndustry').getContext('2d'), {
     type: 'doughnut',
     data: { labels: indEntries.map(e => e[0]), datasets: [{ data: indEntries.map(e => e[1]),
-              backgroundColor: ['#5573CC','#5573CC','#06b6d4','#0891b2','#0e7490','#155e75',
-                                '#10B981','#10B981','#059669','#F59E0B','#f59e0b','#a78bfa'] }] },
+              backgroundColor: indEntries.map((_, i) => {
+                // Deterministic viz-token cycling through extended 10-color palette
+                const VIZ = ['#6B8AFF','#10B981','#F59E0B','#A78BFA','#64748B',
+                             '#06B6D4','#EC4899','#84CC16','#F97316','#8B5CF6'];
+                return VIZ[i % VIZ.length];
+              }) }] },
     options: {
       plugins: {
         legend: { position: 'right',
