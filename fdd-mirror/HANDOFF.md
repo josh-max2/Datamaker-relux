@@ -1,8 +1,10 @@
-# FDD Tool — Handoff
+# FDD Tool — Handoff (Datamaker-relux mirror)
 
-Cross-session resume doc. Read this first when picking the project back up.
+Cross-session resume doc. Read this first when picking the mirror back up.
 
-**Last updated:** 2026-05-18 (F4.7 v2 calculator upgrades — quartile presets, percentile context, breakdown, industry callouts, share URL)
+> **This is the design-mirror repo (`josh-max2/Datamaker-relux`).** Code mirrors `josh-max2/Parser`; visual / design changes land here first so `franchisedepth.com` stays untouched. **Live preview:** https://josh-max2.github.io/Datamaker-relux/. Mirror-specific design status lives in §19 of `PROJECT_TRACKER.md`.
+
+**Last updated:** 2026-05-19 evening (Phase 1 luxury redesign shipped on this mirror: typography + dark palette + hero + featured stats + Item 19 badges + combined-fee callout + sticky-tab repaint)
 **Owner:** Josh
 **Master tracker:** [PROJECT_TRACKER.md](./PROJECT_TRACKER.md) — single source of truth across methodology, features, ops, changelog
 **Build spec:** [fdd_tool_build_spec.md](./fdd_tool_build_spec.md) (original plan, preserved for context)
@@ -15,43 +17,44 @@ Buyer-facing database of franchise financial performance data, sourced from publ
 
 ---
 
-## Current state (2026-05-18)
+## Current state (2026-05-19 evening)
 
-**Live at https://franchisedepth.com.** HTTPS active, custom domain via Porkbun, GitHub Pages from `docs/` on `main`. Sitemap submitted to GSC (791 pages discovered); IndexNow pinged Bing/Yandex/Seznam/Naver (790 URLs).
+**Live at https://franchisedepth.com.** HTTPS active, custom domain via Porkbun, GitHub Pages from `docs/` on `main`. Sitemap submitted to GSC; IndexNow pinged Bing/Yandex/Seznam/Naver.
 
 | Surface | Stat |
 |---|---|
-| Brands in DB | 123 (incl. 23 prestige: Subway, McDonald's, Dunkin', Domino's, Planet Fitness, UPS Store, H&R Block, RE/MAX, etc.) |
-| HTML pages on site | 794 |
-| Brands with Item 19 disclosed | 67 |
-| Item 19 records | 926 |
-| Item 20 location rows | 12,805 |
-| State pages | 51 |
-| Pillar guides | 8 |
-| Compare pages (static, in-category pairs) | 275 |
-| Per-brand US state heatmap | 85/95+ brands w/ ≥3 US states |
-| Lead magnet | FDD Buyer's Checklist PDF (10 pages, 178 KB) at `/lead-magnets/fdd-buyers-checklist.pdf` |
-| Cost per FDD (v2 avg) | $0.17 (target was <$0.25) |
-| Audit issues | 0 |
+| **Brands in DB** | **461** (+338 from baseline 123 this session) |
+| HTML pages on site | ~3,400 (461 brand + 2,410 capped compare + 51 state + 28 category + 8 guide + 9 report + dashboard) |
+| Brands with Item 19 disclosed | 316 |
+| Item 19 records | 5,448 |
+| Item 20 location rows | 43,575 |
+| Industries with brands | 28 (all 184 prior NULL brands placed) |
+| Compare pages (static) | 2,410 (capped — both brands need item19 + ≥100 outlets) |
+| **Customer-facing reports** | **9 — `/reports/` hub + 8 ranking pages** |
+| **Internal dashboard** | **`/dashboard/` v6 — interactive filters, 4 Chart.js viz, customizable columns, multi-select compare modal, ★ Watchlist, CSV export** |
+| **Luxury redesign preview** | **https://josh-max2.github.io/Datamaker-relux/** (separate mirror repo — Inter+IBM Plex Mono+Source Serif 4, dark palette) |
+| Audit | 0 tier-1 fails · 18 tier-2 (non-blocking) |
 
-**Pipeline:** v2 single-prompt Haiku extraction is the default ($0.17/FDD avg); v1 vision pipeline retained as quality-fallback. Pre-flight + post-validation guards, token tracking, pipeline-status dashboard.
+**Today's brand-count expansion (123 → 461) via three batches:**
+1. **MN CARDS 185-brand batch** (+189 net, ~$57 API spend, parallel pools, ~75 min wall-clock)
+2. **WI portal Max-plan batch** (+74 net, $0 marginal via `claude -p`, ~2.5 hours sequential)
+3. **MN long-tail Max-plan batch** (+75 net, $0 marginal via `claude -p`, ~2.5 hours sequential)
 
-**Per-brand pages** now include sortable Item 19 table, US-state outlet heatmap, 10-year ROI walk-forward chart, peer comparison links, and an interactive cost calculator with:
-- Pessimistic / Median / Optimistic preset buttons sourced from that brand's Item 19 quartile distribution
-- Live percentile-rank context line under revenue input
-- Itemized Y1 money-flow breakdown (revenue → minus 10 cost lines → Y1 net)
-- Industry-benchmark callouts (royalty / marketing / investment vs same-category peer medians)
-- Similar-brand calculator cross-links (top 4 industry peers by outlet count)
-- Shareable URL: query-string state sync of all 16 inputs
+Plus 184 NULL-industry brands manually placed (curated `scripts/fix_null_industries.py`), and Item 19 chart Tier 1.1 fix (chart suppressed on `longitudinal_affiliate` / `affiliate_only` brands).
 
-**What's queued (post-calculator):**
+**Pipeline:** Default = `extract_v2.py` via `claude -p` (Max plan, $0 marginal). API path (`extract.py`) retained for parallel-pool acceleration. Survey/download/extract orchestrators: `survey_wi_missing.py` + `download_wi_candidates.py` + `wi_max_plan_pipeline.py` + `filter_mn_longtail.py` + `max_plan_extract_loop.py` (sequential with localStorage checkpoint).
 
-1. **Dedup work** before multi-state scrape — single brand can file in WI + CA + MN + ... and we need entity resolution before ingesting from more than one portal. Decision rule: legal_name fuzzy + NAICS check, or SHA-256 on PDF bytes for exact-duplicate filings.
-2. **MN CARDS expansion** — direct PDF URLs work without Playwright (vs. WI's ASP.NET form). Estimated +500-700 brands once dedup is in place.
-3. **Attorney review** of calculator + Item 19 framing — timeline in tracker is "before $2.5k/mo revenue or significant traffic." Not urgent given per-brand pattern is industry-standard, but don't skip.
-4. **Pillar 5 (off-page distribution)** — owner-execution work, not Claude Code.
+**State-portal map for future expansion:** Only MN + WI publish FDDs as downloadable PDFs. CA / IL / NY / MD / VA / WA / IN / etc. show registration metadata only — actual FDDs need a Public Records Act request. Tested via CA DocQnet/FRANSES (Microsoft Dynamics CRM portal): "No related documents for this search result." Net: no more brands accessible without a different acquisition strategy.
 
-Full open work list in `PROJECT_TRACKER.md` §4 (features) and §11 (deferred / blocked items).
+**What's queued:**
+
+1. **Phase 4 Tier 1.2 — calculator math sanity warnings** (Domino's-style implausible Y1 net check)
+2. **Phase 4 Tier 2 — TL;DR Key Facts card** (compact, AEO-citation-friendly) at the top of each brand page
+3. **Phase 4 Tier 4 — paid-tier validation** (waitlist form + `/pricing/` preview + "Best Performing" SEO pages). No engineering until 4 gates green: ≥50 waitlist + ≥5 consultant calls + 500 brands + §16 complete.
+4. **Brand-page polish** (deferred from feedback): Item 19 revenue-distribution callout, lead-form consolidation (3→2), compare-similar-brands visual differentiation.
+5. **Mirror redesign Phase 2-3** (Datamaker-relux only): more chart customization, editorial pull-quotes, premium loading states. Mirror serves at github.io subpath; parser repo untouched.
+
+Full open work list in `PROJECT_TRACKER.md` §16 (Phase 4 quality fixes), §17 (paid tier strategy), §18 (revenue projections).
 
 ---
 

@@ -1,7 +1,7 @@
 # FranchiseDepth — Master Project Tracker
 
-**Last updated:** 2026-05-18 (F4.7 v2 calculator upgrades shipped — quartile presets, percentile context, breakdown, industry callouts, share URL)
-**Status:** Site live at https://franchisedepth.com · 123 brands · 794 pages · per-brand calculator now uses Item 19 distribution + industry peer medians
+**Last updated:** 2026-05-19 evening (dashboard v6 + /reports/ + industry recat + compare cap + luxury redesign on Datamaker-relux mirror)
+**Status:** Site live at https://franchisedepth.com · 461 brands · ~10k HTML pages · interactive dashboard at /dashboard/ · customer-facing rankings at /reports/ · luxury redesign in preview at https://josh-max2.github.io/Datamaker-relux/
 **Owner:** Josh
 
 > Single source of truth across methodology, features, launch tasks, and operations.
@@ -17,20 +17,22 @@
 | **Live site URL** | https://franchisedepth.com | — | HTTPS active; redirect to HTTPS pending (Pages setting) |
 | **Brands in DB** | 461 | 500 | +338 from baseline 123. **Phase 4 strategy: brand expansion harvested via MN long-tail (+75 net) — now near 500 cap** |
 | **Phase 4 quality block (§16)** | 8/16 done | 16/16 | Done: worst-performer callout, royalty flag, robots.txt AI bots, fdd_age_badge helper, Item 19 thin-disclosure audit, FDD age sweep, **Item 19 chart fix (Tier 1.1 — chart suppressed for affiliate-only kinds, adaptive label, warning banner)**, **misleading "cohort × metric" label fixed**. Pending: calculator sanity, TL;DR card, sticky tabs, byline, waitlist, /pricing/, /best-of/ pages |
-| **HTML pages on site** | ~9500 | — | 386 brand pages + compare/state/category/leaderboard/guide; grows with each ingest |
+| **HTML pages on site** | ~3,400 | — | 461 brand + 2,410 capped compare + 51 state + 28 category + 8 guide + 9 report + dashboard. Compare pages capped to brands with item19+≥100 outlets (was on track for ~10k, now 2,410). |
 | **Pillar guides shipped** | 8 | 30-50 | Pillar 3 progress |
 | **State pages** | 51 | 50 | target met |
-| **Compare pages (static, per-pair)** | 275 | grows N²/2 with brands | auto-generated; in-category only |
-| **Compare pages (interactive tool, v2)** | 1 | — | F4.4 ✅ — 11 comparison rows, closure-rate badge, shareable URLs via `?brands=…` |
+| **Compare pages (static, per-pair)** | 2,410 | capped on eligibility | item19 disclosed AND ≥100 outlets on BOTH brands. 199 of 461 brands eligible. |
+| **Compare pages (interactive tool)** | 1 | — | `/compare/?brands=A,B,C` — 11 comparison rows, closure-rate badge, shareable URLs |
+| **Customer-facing reports** | 9 | — | `/reports/` hub + 8 ranking pages (top-earning, largest, cheapest, fastest-growing, lowest-royalty, most-transparent, newest, by-category). ItemList JSON-LD. "Reports" in nav. |
 | **Per-brand US state heatmap** | 85/95+ | — | inline SVG tile grid, quintile color, on every brand with ≥3 US states |
-| **Homepage filter toggles** | All / Item 19 / Missing info | — | 67 brands with Item 19, 7 missing main info |
+| **Homepage filter toggles** | All / Item 19 / Missing info | — | 461 brands, 316 with Item 19 |
 | **FDD Buyer's Checklist PDF** | ✅ shipped | — | 10 pages, 178KB, at `/lead-magnets/fdd-buyers-checklist.pdf` |
 | **Sitemap submitted to GSC** | ✅ | — | **791 pages discovered**, status Success |
 | **IndexNow** | ✅ | — | 790 URLs submitted (Bing/Yandex/Seznam/Naver) |
 | **Item 19 records in DB** | 5,448 | — | across 316 disclosed-Item-19 brands |
 | **Item 20 location rows** | 43,575 | — | per-state outlet data; powers heatmaps |
 | **Audit issues** | 0 tier-1 | 0 | clean; 18 tier-2 warnings (outlet sum mismatches, affiliate-only disclosures) |
-| **Internal dashboard** | live | — | /dashboard/ — KPIs, coverage gauges, industry dist, top performers; noindex |
+| **Internal dashboard** | v6 | — | `/dashboard/` — left-sidebar filters, hero quick-start chips, 4 Chart.js viz (industry doughnut click-to-filter, investment-tier bar, royalty bar, revenue×royalty scatter with friendly-zone), master sortable table with customizable columns (15 cols defined, multi-select dropdown, localStorage), bottom multi-select action bar (Compare side-by-side modal + Export selected CSV + Clear), ★ Watchlist (localStorage), URL filter persistence, CSV export, color-coded royalty/investment cells. noindex+nofollow. |
+| **Luxury redesign preview** | live (mirror) | — | https://josh-max2.github.io/Datamaker-relux/ — Inter + IBM Plex Mono + Source Serif 4 typography, Bloomberg/Linear-inspired dark palette, hero gradient, featured 3-col stat block, sticky tabs, Item 19 quality badges. Parser repo untouched. |
 | **Cost per FDD (v2 avg)** | ~$0.17 | <$0.25 | target beaten |
 | **Cost per FDD (v1 fallback, Haiku)** | ~$0.23-0.30 | <$0.50 | Haiku-mode |
 | **API-equiv $ for +90 brands** | ~$25-30 | — | $0 actual on Max plan |
@@ -779,6 +781,75 @@
 
 ---
 
+## 19. Datamaker-relux mirror — luxury redesign sandbox
+
+> **This repo is a design experimentation fork of the live parser repo.** Code mirrors `josh-max2/Parser`; design changes land here first so the live `franchisedepth.com` is untouched. Deploys to `https://josh-max2.github.io/Datamaker-relux/` via GitHub Pages from `main` / `/docs`.
+
+### 19.1 Why two repos
+| | Parser repo | Mirror repo |
+|---|---|---|
+| GitHub | `josh-max2/Parser` | `josh-max2/Datamaker-relux` |
+| Domain | `franchisedepth.com` | `josh-max2.github.io/Datamaker-relux/` |
+| Purpose | Production data + content | Visual / design experiments |
+| `SITE_HOST` | `https://franchisedepth.com` | `https://josh-max2.github.io` |
+| `SITE_PREFIX` | empty | `/Datamaker-relux` |
+| `CUSTOM_DOMAIN` (CNAME) | `franchisedepth.com` | empty (must NOT claim the domain) |
+| Local path | `C:\Users\joshs\Desktop\parser\` | `C:\Users\joshs\Desktop\Datamaker-relux\fdd-mirror\` |
+| Pages source | `main` / `/docs` | `main` / `/docs` |
+
+### 19.2 Phase 1 luxury redesign — SHIPPED 2026-05-19
+
+| Item | Status | Where |
+|---|---|---|
+| Inter (400-700) + IBM Plex Mono (400-600) + Source Serif 4 (500-700) via Google Fonts | ✅ | `base.html` head + dashboard inline `<head>` |
+| CSS variables for dark palette (Bloomberg/Linear-inspired) | ✅ | top of `style.css` |
+| Hero treatment: eyebrow + display h1 with gradient + subhead | ✅ | `index.html`, `brand.html`, dashboard hero |
+| Featured 3-column stat block on homepage (mono tabular numerics) | ✅ | `index.html` |
+| Industry chip active states (filled accent on active, transparent otherwise) | ✅ | `style.css` |
+| 48px search field with `/` keyboard shortcut + count placeholder | ✅ | `index.html` |
+| Item 19 column → quality badges (✓ Broad / △ Limited / — None) | ✅ | `fetch_brand_summaries()` returns `i19_quality` |
+| Table density: 14px row padding + subtle hover | ✅ | `style.css` |
+| Combined royalty + marketing callout on brand pages | ✅ | `fee_benchmark_callout()` extended; renders amber ⚠️ + $-on-$500K |
+| Sticky section tabs repainted for dark theme | ✅ | `page-toc` re-tokened against luxury palette |
+| Closure-rate placeholder column | 🟡 | column defined; data 0% populated (re-extract needed) |
+
+### 19.3 Pages serving fix — SHIPPED 2026-05-19
+
+- CNAME inherited from parser import → would have stolen `franchisedepth.com` from production. **Deleted** + `CUSTOM_DOMAIN` default emptied in mirror's `site_gen.py`.
+- Output relocated `fdd-mirror/docs/` → repo-root `/docs/` (one level higher in tree) so GitHub Pages `main`/`/docs` source picks it up.
+- Three path constants retargeted (`DOCS_DIR` in `site_gen.py`, `build_dashboard.py`, `build_reports.py`).
+
+### 19.4 Phase 2 brand-page polish — DEFERRED
+
+Per the brand-page feedback that landed today, three items remain:
+| Item | Notes |
+|---|---|
+| Item 19 revenue-distribution callout | Top vs bottom quartile insight surfaced as a card below Item 19 table |
+| Lead form consolidation (3 → 2) | Currently 3 Formspree forms per brand page; consolidate to 2 |
+| Compare-similar-brands visual differentiation | Top-of-section minimalist links (kept) vs bottom cards (new) |
+
+### 19.5 Phase 3-4 — PLANNED
+
+- Editorial pull-quote treatment on brand pages
+- Premium loading states (skeleton shimmer scaffolding already in `style.css`)
+- Custom Chart.js tooltip styling matching the dark palette
+- Status badge variants (premium/caution/muted) for Item 19 quality + other signals
+- Onboarding flow / subscription page styling (only after paid-tier validation gates in §17.3 are green)
+
+### 19.6 Promotion path (mirror → production)
+
+When a design phase is approved on the mirror, port changes to the parser repo via cherry-pick or selective copy of:
+- `fdd-tool/src/templates/style.css` (CSS variables + overlay)
+- `fdd-tool/src/templates/base.html` (Google Fonts head)
+- `fdd-tool/src/templates/index.html` (hero + featured-stats + search)
+- `fdd-tool/src/templates/brand.html` (eyebrow + display class + combined fee callout)
+- `fdd-tool/src/derived.py` (extended `fee_benchmark_callout` w/ combined check)
+- `fdd-tool/scripts/build_dashboard.py` (dashboard inline CSS upgrades)
+
+Do NOT port: mirror's `site_gen.py` overrides for `SITE_PREFIX` / `SITE_HOST` / `CUSTOM_DOMAIN` — those are mirror-specific. Do NOT port the empty CNAME — production needs `franchisedepth.com`.
+
+---
+
 ## 18. Revenue projections (updated 2026-05-19)
 
 | Scenario | Year 1 Total | Year 2 Total | Year 2 Exit MRR |
@@ -813,6 +884,14 @@ Inputs underlying these scenarios: 386 brands shipping today → 500 by Q3 2026 
 | 2026-05-17 late night | **Homepage filter toggles (F3.3)**. 3-state segmented control: All brands / Item 19 disclosed only (67) / Missing main info (7). Combines with existing search + budget slider in unified `applyFilters()`. URL-sync via `?filter=item19` / `?filter=missing` query param + `?q=` and `?budget=`. Data attributes on each row + card (`data-has-item19`, `data-missing-info`). "Missing main info" defined as 2+ of fee/royalty/investment fields NULL. |
 | 2026-05-17 late night | **GSC sitemap submission succeeded — 791 pages discovered**. Initial submission returned "Couldn't fetch" (cache propagation lag) then resolved on resubmission. Google now has full surface; indexing typically 2-7 days for first batch, 2-4 weeks for full crawl. IndexNow ping (790 URLs) already fanned out to Bing/Yandex/Seznam/Naver. |
 | 2026-05-17 late night | **Data accuracy audit + stub fix**. Built `scripts/audit_data_quality.py` with 5 checks: schema (file presence/parse), range sanity (fees, royalty, investment within plausible bounds), cross-field consistency (low ≤ high), PDF spot-check (raw_excerpt grep-back into source PDF), confidence flag aggregation. Key findings: **PDF spot-check 95% verification rate** (LLM not hallucinating — quoted excerpts ARE in PDFs), 0 cross-field consistency violations across 88 brands. Surfaced 18 brands with `_read_error` stub outputs from early v1 attempts before pdftoppm was removed. **Fixed 7 fully-stub brands** (101 Mobility, Aire Serv, Dryer Vent Wizard, AdvantaClean, Aire-Master, Alair Homes, CertaPro Franchising) by deleting output dirs + re-running `extract_v2.py`. Cost: $0.89 API-equiv (~$0 actual on Max plan). Item 19 records: 717 → 797 (+80). Brands in DB: 88 → 92. Remaining 19 audit issues are different problem class (parse errors, missing files) for later. |
+| 2026-05-19 evening | **Luxury redesign work shipped on Datamaker-relux mirror (separate repo).** Imported parser HEAD; applied Phase 1 design: Inter + IBM Plex Mono + Source Serif 4 typography via Google Fonts; CSS variable palette (Bloomberg/Linear-inspired dark theme — `--bg-base #0A0E14`, layered elevations, restrained accents); hero gradient on `h1` with eyebrow + subhead; featured 3-column stat block with mono tabular numerics; industry chip active states (filled accent on active, transparent on inactive); 48px search field with `/` keyboard shortcut and live count placeholder; Item 19 column → green/amber/gray quality badges (✓ Broad / △ Limited / — None); table density bumped to 14px padding with subtle row hover; combined royalty+marketing callout on brand pages (1-800-GOT-JUNK 8%+8%=16% case → flagged with ⚠️ + $-on-$500K-revenue example); sticky section tabs repainted with dark-glass backdrop-filter. Phase 1 commits: `3cc440d` (luxury foundation) → `41d64161` (homepage polish) → `dc4c2a1b` (brand-page polish). Also fixed Pages serving: deleted inherited `franchisedepth.com` CNAME (would have stolen the live domain), retargeted `SITE_PREFIX`/`SITE_HOST` to `/Datamaker-relux` + `josh-max2.github.io`, moved generated docs from `fdd-mirror/docs/` to repo-root `/docs/` so GitHub Pages "main/docs" source picks them up. Live preview: https://josh-max2.github.io/Datamaker-relux/. Parser repo (`josh-max2/Parser` → `franchisedepth.com`) untouched. |
+| 2026-05-19 afternoon | **Dashboard v3 → v6 — interactive decision-support layout.** v3: hero with 6 preset chips, left sticky sidebar of 9 filters, master sortable table replacing 4 separate top-N tables, 3 Chart.js viz (industry doughnut + investment-tier bar + royalty-rate bar), URL-encoded filter persistence, CSV export, color-coded royalty/investment cells, 'noindex,nofollow'. v4: bottom-fixed multi-select action bar (Compare side-by-side / Export selected CSV / Clear), 15-row side-by-side compare modal with Chart.js outlet-trajectory sparklines per brand, revenue-vs-royalty log-scale scatter chart with "franchisee-friendly zone" overlay + Item-19-quality dot colors + click-to-open-brand. v5: ★ Watchlist (localStorage-backed, separate from compare-selection) + sidebar "show watchlist only" filter; worst-performer floor row in compare modal; outlet-history sparkline in compare modal. v6 (per UX feedback): customizable columns (15 columns defined, multi-select dropdown, localStorage persistence), consolidated to ONE master sortable table, hero with quick-start preset chips, Industry donut click-to-filter + percentage tooltips, scatter fix (0/5/10/15/20% x-axis ticks, log-y with clean $100K/$1M/$10M labels, friendly-zone overlay, Item-19-quality colors), tooltip system via `data-tip`, watchlist as checkbox not dropdown, timestamp moved sidebar→footer, KPI strip cut 4 tiles → 2. |
+| 2026-05-19 afternoon | **/reports/ customer-facing hub shipped (8 ranking pages + hub at /reports/).** Pages: top-earning-franchises, largest-franchises-by-outlets, cheapest-franchises-under-100k, cheapest-franchises-under-250k, fastest-growing-franchises, lowest-royalty-franchises, most-transparent-franchises, newest-franchises. Each page has 25 brands, ItemList JSON-LD schema, OG/Twitter meta, related-reports block, CTA back to brand pages. Hub at /reports/ with card grid + explainer. "Reports" added to main site nav. `python scripts/build_reports.py` wired into `site_gen.py` so a single regen produces everything. |
+| 2026-05-19 afternoon | **Industry recategorization — 184 NULL-industry brands placed.** Manually-curated brand-slug→industry mapping in `scripts/fix_null_industries.py` covering all 184 brands. Cross-verified each brand's actual business before assignment. **Before: 184 brands NULL (47% of corpus). After: 0 NULL — all 461 classified.** Notable shifts: food-quick-service 52→124 (+72), fitness-wellness 14→28, retail-services 5→23, education 8→22, pet-services 8→18, senior-care 13→23. Impact: category pages now have meaningful counts, comparison-tool pairings activate within-category for previously-NULL brands (Five Guys ↔ Buffalo Wild Wings etc.), industry distribution chart on `/dashboard/` reflects real coverage. |
+| 2026-05-19 afternoon | **Static compare pages capped from ~10k → 2,410.** Previously generated C(N,2) per industry = ~10,000 static compare pages at 461 brands; most had no SEO value (low-outlet × low-outlet pairs nobody searches for). New eligibility: BOTH brands must have item19 disclosed AND ≥100 total outlets in latest item20. Result: 199 of 461 brands eligible → 2,410 high-intent compare pages kept. Brand-page "Compare head-to-head" links resolve to static `/compare/A-vs-B/` when both eligible, otherwise interactive `/compare/?brands=A,B`. Also hardened `site_gen.py` rmtree with WinError-145 retry to survive Windows Defender file locks during regen. |
+| 2026-05-19 afternoon | **Phase 4 Tier 1.1 — Item 19 chart thin-disclosure fix.** Pre-existing `item19_disclosure_quality()` in `src/derived.py` already classified disclosure kinds (longitudinal_affiliate / affiliate_only / thin_franchised / performance_anchored / broad_distribution / none). Two new behaviors in `site_gen.py` + `brand.html`: (a) chart construction SKIPPED when kind ∈ {longitudinal_affiliate, affiliate_only} so brands like Planet Fitness, Popeyes, Peet's Coffee no longer render the misleading multi-bar chart that read as "5 different franchisees" when it was really one company-owned outlet across years; (b) chart-note label is now adaptive per disclosure kind (replaces the misleading "one cohort × metric combination" generic text on thin-disclosure brands). Verified on 7 sample brands. Also bundled: `find_section()` pdf_utils patch (lone-heading + bare-number "5. INITIAL FEES" + TOC dot-leader filter) to recover Arby's, Famous Dave's, BrightStar, Matco Tools extracts. |
+| 2026-05-19 afternoon | **Phase 4 Tier 1.3 — FDD age audit closed.** `audit_fdd_age.py` sweeps every brand's latest FDD, buckets by age, outputs markdown + CSV. Snapshot: 290 brands at current year (2026, 75%), 74 at 1yr (2025), 18 at 2yr (2024), 1 at 3yr (Crumbl 2023), 0 at 4+yr, 3 unknown year (advantaclean / johnny-rockets / mosquito-sheriff — WI-era stubs). Data-freshness state much healthier than Phase 4 strategy doc implied; Crumbl is the only brand the strategy explicitly flagged. |
+| 2026-05-19 afternoon | **State-portal survey for next public-FDD source closed.** Probed ~15 state franchise registration portals (CA, IL, NY, MD, VA, WA, IN, MI, RI, SD, NJ, etc.). **Only MN and WI publish FDDs as downloadable PDFs.** Everyone else (incl. CA's DocQnet via FRANSES — Microsoft Dynamics CRM portal) lists registration metadata only — actual FDDs require a Public Records Act request. CA detail page confirmed: "No related documents for this search result." Net: no more brands accessible without a different acquisition strategy (PRA mail requests, paid aggregators, or direct franchisor IR pages). |
 | 2026-05-19 | **MN long-tail batch + dashboard ship — DB jumps 386 → 461 brands (+75 net via claude -p).** Filter pass on MN's 424 previously-excluded brands identified 86 candidates with franchise-indicator legal-name patterns AND not already in DB. Downloaded 83 (3 fails), extracted 76 of 78 new ones (97% success). Notable adds: JL Beers, Sports Bra, Tails N' Trails, Pet Passages, JPAR Real Estate, Up Closets, ACT Autism Care Therapy, Mulberry's Garment Care, Layne's Chicken Fingers, MGallery Hotel, Project LeanNation, ManageMowed, Pizza Inn, Ferncrest, Haven, Sign Gypsies, BOR Restoration, USA Ninja Challenge. **Internal dashboard shipped at /dashboard/** — KPI tiles, coverage gauges (item19 71%, item20 74%, fees 96%), industry distribution (food-QSR leads), investment tiers, royalty histogram, top performers, most/least-expensive, recent additions, filing-state coverage, data freshness. Self-contained HTML, noindex. Also Tier 1.3 FDD age audit closed: 290 brands at current year (75%), only 22 are 2+ years old. Final state: 461 franchisors, 466 fdds, 5,448 item19 records (316 brands), 43,575 item20 rows. Audit: 0 tier-1, 18 tier-2 warnings. |
 | 2026-05-19 | **Phase 4 strategy doc imported — new sections 16/17/18 added.** Strategic pause: stop adding brands past 386 until quality fixes in §16 ship. Tier-1 priorities: (a) Item 19 thin-disclosure chart misrepresentation (172 brands flagged; Dumpster Dudez confirmed — 5 dots all for the same 1-outlet "sole affiliate" cohort 2021-25); (b) calculator math sanity warnings (Domino's-style implausible Y1 net); (c) FDD age audit + re-extract queue (Crumbl 2023 priority). Tier-2: TL;DR Key Facts card, sticky section tabs, site-owner byline + about page rebuild. Tier-3: robots.txt for AI search bots (✅ already done). Tier-4 (paid-tier validation, no engineering yet): waitlist form + /pricing/ preview + "Best Performing" SEO pages. Section 17 captures the paid-tier strategy: Researcher $29/mo + Professional $79/mo (founding members lock 50% off; first 100 only). Engineering BLOCKED until 4 validation gates green (≥50 waitlist, ≥5 consultant calls, 500 brands, §16 complete). Update-log line is part of audit, not deployment work. |
 | 2026-05-19 | **WI portal Max-plan batch — DB jumps 312 → 386 brands (+74 net via `claude -p`, $0 marginal API cost).** Surveyed WI for the 193 recognizable brands missing from DB; 85 had Registered filings. Downloaded 79 net-new PDFs via Playwright scraper (6 dedup hits against existing wi_scrape). Extracted 77 of 79 sequentially via `extract_v2.py` (claude -p, sonnet, single-shot all-items prompt) at ~2 min/PDF over ~2.5 hours. 2 stubborn fails (Jiffy Lube, Firehouse Subs — claude session quirks). Notable additions: **Hyatt, Wyndham, Best Western, Days Inn, Hampton Inn, La Quinta, Super 8, Red Roof Inn, Popeyes, Sonic, Wingstop, Five Guys, Buffalo Wild Wings, Cinnabon, Smoothie King, Jamba Juice, Tim Hortons, Caribou, Dairy Queen, Baskin-Robbins, Carvel, Hooters, Mathnasium, Goddard, Primrose, Kiddie Academy, Toppers Pizza, Mr. Transmission, Engel & Völkers, Better Homes & Gardens, Realty Executives, College Hunks, Two Men and a Truck, Budget Blinds, Mosquito Squad, Big O Tires, Tuffy, U.S. Lawns, Hand & Stone, Drybar, European Wax, Petland, Dogtopia, FastSigns, AlphaGraphics, Minuteman Press**. Pipeline: `survey_wi_missing.py` (substring/prefix recognition match, dedup against DB keys + fuzzy substring) → `download_wi_candidates.py` (Playwright, SHA dedup, resume-safe per-PDF save) → `wi_max_plan_pipeline.py` (sequential extract_v2.py, periodic ingest+audit). Final stats: 386 franchisors, 389 fdds, 5,186 item19 records (274 brands with item19), 39,112 item20 rows. Audit: 0 tier-1, 9 tier-2 warnings. |
