@@ -188,9 +188,11 @@
 
     /* ---------- compare-page outlet growth coloring ---------- */
     // The compare page renders growth values like "▲ +4.3%" / "▼ -10.6%" inside <td>s
-    // built by the compare JS. We post-process to add data-tier so existing CSS hooks fire.
-    function bootCompareGrowthColor() {
-        var rows = document.querySelectorAll('#cmp-rows tr, .compare-table tbody tr');
+    // built by the compare JS. The table is populated dynamically when the user picks
+    // brands, so we (a) run once on DOMContentLoaded and (b) install a MutationObserver
+    // that re-runs every time the table body content changes.
+    function applyCompareGrowthColor() {
+        var rows = document.querySelectorAll('#cmp-rows tr, #compare-output-body tr, .compare-table tbody tr');
         rows.forEach(function (row) {
             // Identify the outlet-growth row by its row label text
             var labelCell = row.querySelector('th[scope="row"], td:first-child');
@@ -216,6 +218,18 @@
                 row.classList.add('row--derived');
             }
         });
+    }
+
+    function bootCompareGrowthColor() {
+        applyCompareGrowthColor();
+        // Re-apply whenever the compare table body changes (brand picked/unpicked).
+        var targets = [
+            document.getElementById('compare-output-body'),
+            document.getElementById('cmp-rows')
+        ].filter(Boolean);
+        if (!targets.length || !window.MutationObserver) return;
+        var mo = new MutationObserver(function () { applyCompareGrowthColor(); });
+        targets.forEach(function (t) { mo.observe(t, { childList: true, subtree: true }); });
     }
 
     /* ---------- 5-yr net info tooltip wiring ---------- */

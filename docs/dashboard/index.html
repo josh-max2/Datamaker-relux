@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex,nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js" defer></script>
 <style>
 :root {
@@ -498,9 +498,9 @@ a:hover { color: var(--text-primary); }
   <h3>Revenue vs royalty — find the franchisee-friendly outliers (high revenue, low royalty)</h3>
   <div class="chart-wrap" style="height: 320px;"><canvas id="chartScatter"></canvas></div>
   <div class="chart-legend" role="presentation">
-    <span class="legend-item"><span class="legend-dot" style="background: rgba(52,211,153,1)"></span>Broad Item 19 disclosure</span>
-    <span class="legend-item"><span class="legend-dot" style="background: rgba(251,191,36,1)"></span>Thin Item 19 disclosure</span>
-    <span class="legend-item"><span class="legend-dot" style="background: rgba(148,163,184,0.8)"></span>No Item 19 disclosed</span>
+    <span class="legend-item"><span class="legend-dot" style="background: var(--positive);"></span>Broad Item 19 disclosure</span>
+    <span class="legend-item"><span class="legend-dot" style="background: var(--warning);"></span>Thin Item 19 disclosure</span>
+    <span class="legend-item"><span class="legend-dot" style="background: var(--text-tertiary);"></span>No Item 19 disclosed</span>
   </div>
 </div>
 
@@ -614,7 +614,7 @@ const COLUMNS = [
        return `<span class="${cls}">${lo} – ${hi}</span>`;
      } },
   { key: 'royalty',        label: 'Royalty',            sort: 'royalty',        align: 'num',   default: true,
-     tip: 'Ongoing royalty % from Item 6. Coloring: green-bold ≤6%, neutral 7–9%, red-bold >9% (above-market).',
+     tip: 'Ongoing royalty % from Item 6. Coloring: green-bold ≤7%, amber-bold 7–9%, red-bold >9% (above-market). See /methodology/#thresholds-cutoffs.',
      render: b => `<span class="${royaltyClass(b.royalty)}">${fmtPct(b.royalty)}</span>` },
   { key: 'marketing',      label: 'Marketing fee',      sort: 'marketing',      align: 'num',   default: false,
      tip: 'Marketing/brand-fund % from Item 6',
@@ -746,9 +746,9 @@ function escHtml(s) {
 // Color-coding heuristics
 function royaltyClass(v) {
   if (v == null) return 'val-muted';
-  if (v <= 6) return 'val-good';
-  if (v <= 9) return '';
-  return 'val-bad';
+  if (v <= 7) return 'val-good';        // ≤7% buyer-friendly (at or below median)
+  if (v <= 9) return 'val-warn';        // 7-9% above median, within typical band
+  return 'val-bad';                     // >9% materially above-market
 }
 function investmentClass(v) {
   if (v == null) return 'val-muted';
@@ -836,10 +836,17 @@ function renderCharts(filtered) {
   if (charts.investment) charts.investment.destroy();
   charts.investment = new Chart(document.getElementById('chartInvestment').getContext('2d'), {
     type: 'bar',
-    data: { labels: tiers.map(t => t.label), datasets: [{ data: tCounts, backgroundColor: '#5573CC' }] },
+    data: { labels: tiers.map(t => t.label), datasets: [{ data: tCounts,
+              // Semantic coloring per Q5: <$100K green, $100K-$500K neutral, $500K-$1M amber, >$1M red
+              backgroundColor: tiers.map(t => {
+                if (t.max <= 100000)   return '#10B981';   // <$100K — buyer-friendly
+                if (t.max <= 500000)   return '#6B8AFF';   // $100K-$500K — standard
+                if (t.max <= 1000000)  return '#F59E0B';   // $500K-$1M — elevated
+                return '#EF4444';                          // >$1M — high
+              }) }] },
     options: { plugins: { legend: { display: false } }, scales: {
-        x: { ticks: { color: '#9CA3AF', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.10)' } },
-        y: { ticks: { color: '#9CA3AF', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.10)' }, beginAtZero: true }
+        x: { ticks: { color: '#9CA3AF', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.04)' } },
+        y: { ticks: { color: '#9CA3AF', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.04)' }, beginAtZero: true }
     }, maintainAspectRatio: false }
   });
 
@@ -859,8 +866,8 @@ function renderCharts(filtered) {
     data: { labels: rb.map(t => t.label), datasets: [{ data: rbCounts,
               backgroundColor: rb.map((_, i) => i < 3 ? '#10B981' : i < 4 ? '#F59E0B' : '#EF4444') }] },
     options: { plugins: { legend: { display: false } }, scales: {
-        x: { ticks: { color: '#9CA3AF', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.10)' } },
-        y: { ticks: { color: '#9CA3AF', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.10)' }, beginAtZero: true }
+        x: { ticks: { color: '#9CA3AF', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.04)' } },
+        y: { ticks: { color: '#9CA3AF', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.04)' }, beginAtZero: true }
     }, maintainAspectRatio: false }
   });
 
@@ -873,9 +880,10 @@ function renderCharts(filtered) {
       name: b.name, slug: b.slug, industry: b.industry_label,
       i19_quality: b.i19_quality,
     }));
-  const colorFor = q => q === 'broad' ? 'rgba(52,211,153,0.7)'
-                     : q === 'thin'  ? 'rgba(251,191,36,0.7)'
-                     :                  'rgba(148,163,184,0.5)';
+  // Item 19 disclosure 3-way semantic map (v3 §11.A): broad=--positive, thin=--warning, none=--text-tertiary
+  const colorFor = q => q === 'broad' ? 'rgba(16, 185, 129, 0.75)'
+                     : q === 'thin'  ? 'rgba(245, 158, 11, 0.75)'
+                     :                  'rgba(107, 114, 128, 0.55)';
   if (charts.scatter) charts.scatter.destroy();
   // Friendly-zone overlay plugin
   const friendlyZonePlugin = {
@@ -886,12 +894,12 @@ function renderCharts(filtered) {
       const xRoy = scales.x.getPixelForValue(6);   // royalty <=6%
       const yRev = scales.y.getPixelForValue(500000); // revenue >=$500K
       ctx.save();
-      ctx.fillStyle = 'rgba(52,211,153,0.08)';
+      ctx.fillStyle = 'rgba(16, 185, 129, 0.08)';
       ctx.fillRect(chartArea.left, chartArea.top, xRoy - chartArea.left, yRev - chartArea.top);
-      ctx.strokeStyle = 'rgba(52,211,153,0.3)';
+      ctx.strokeStyle = 'rgba(16, 185, 129, 0.30)';
       ctx.setLineDash([4, 4]);
       ctx.strokeRect(chartArea.left, chartArea.top, xRoy - chartArea.left, yRev - chartArea.top);
-      ctx.fillStyle = 'rgba(52,211,153,0.6)';
+      ctx.fillStyle = 'rgba(16, 185, 129, 0.60)';
       ctx.font = '600 11px -apple-system, sans-serif';
       ctx.fillText('Franchisee-friendly zone (low royalty, high revenue)',
                    chartArea.left + 8, chartArea.top + 18);
@@ -939,7 +947,7 @@ function renderCharts(filtered) {
             stepSize: 5,
             callback: v => v + '%',
           },
-          grid: { color: 'rgba(255,255,255,0.10)' },
+          grid: { color: 'rgba(255,255,255,0.04)' },
           min: 0, max: 25,
         },
         y: {
@@ -955,7 +963,7 @@ function renderCharts(filtered) {
               return null;  // suppress fractional log ticks (kills the $0M duplicates)
             },
           },
-          grid: { color: 'rgba(255,255,255,0.10)' },
+          grid: { color: 'rgba(255,255,255,0.04)' },
           min: 100000,
         }
       },

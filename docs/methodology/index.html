@@ -47,7 +47,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/Datamaker-relux/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Datamaker-relux/style.css">
     <script>(function(){try{var t=localStorage.getItem('fd-theme');if(!t){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 </head>
@@ -305,6 +305,61 @@
         <dt id="g-breakeven">Arithmetic breakeven scenario</dt>
         <dd>Total investment midpoint ÷ estimated annual profit. We pick the profit figure in this preference order: franchisor-reported net profit dollars → franchisor-reported net margin % → industry-typical margin. <strong>This is not a projection.</strong> Per FTC §436.5(s), only the franchisor's Item 19 disclosure is an authoritative source.</dd>
     </dl>
+
+    <h2 id="thresholds-cutoffs">12. Thresholds &amp; cutoffs</h2>
+    <p>
+        Every threshold-based color the site applies is published here. Linked from each
+        page that shows threshold-colored data. Calibrated against the franchise industry's
+        actual operating bands, not arbitrary cutoffs.
+    </p>
+
+    <h3>Closure rate (Item 20)</h3>
+    <ul>
+        <li><strong style="color: var(--positive);">Green</strong> — &lt; 3% (low closure pressure)</li>
+        <li><strong style="color: var(--warning);">Amber</strong> — 3–7% (industry-baseline range)</li>
+        <li><strong style="color: var(--negative);">Red</strong> — &gt; 7% (elevated closure pressure)</li>
+    </ul>
+    <p class="notes">
+        Computed as (terminations + non-renewals + ceased-other) ÷ total outlet-years
+        across disclosed reporting years. Transfers and reacquisitions excluded.
+    </p>
+
+    <h3>Royalty rate (Item 6)</h3>
+    <ul>
+        <li><strong style="color: var(--positive);">Green</strong> — ≤ 7% (at or below the franchise median)</li>
+        <li><strong style="color: var(--warning);">Amber</strong> — 7–9% (above median, within typical band)</li>
+        <li><strong style="color: var(--negative);">Red</strong> — &gt; 9% (materially above-market)</li>
+    </ul>
+
+    <h3>Investment tier (Item 7 high end)</h3>
+    <ul>
+        <li><strong>Standard</strong> — &lt; $500K (no color flag)</li>
+        <li><strong style="color: var(--warning);">Elevated</strong> — $500K – $1M (subtle warning)</li>
+        <li><strong style="color: var(--warning);">High</strong> — ≥ $1M (warning + 500-weight)</li>
+    </ul>
+
+    <h3>Item 19 disclosure depth</h3>
+    <ul>
+        <li><strong style="color: var(--positive);">Broad</strong> — 3+ distinct franchisee cohorts</li>
+        <li><strong style="color: var(--warning);">Thin</strong> — 1–2 franchisee cohorts, OR affiliate-only at any cohort count</li>
+        <li><strong style="color: var(--text-tertiary);">None</strong> — no Item 19 disclosed</li>
+    </ul>
+    <p class="notes">
+        Affiliate-only disclosures (Item 19 covering company-owned or affiliate outlets only)
+        are tagged thin regardless of cohort count, because the financial profile of affiliates
+        materially differs from independent franchisees.
+    </p>
+
+    <h3>FDD freshness (trust pill color)</h3>
+    <ul>
+        <li><strong style="color: var(--positive);">Green</strong> — ≤ 6 months since filing</li>
+        <li><strong style="color: var(--warning);">Amber</strong> — 6–12 months</li>
+        <li><strong style="color: var(--negative);">Red</strong> — &gt; 12 months</li>
+    </ul>
+    <p class="notes">
+        FDDs are typically re-filed annually. A filing older than 12 months may not reflect
+        current fees, financial performance, or outlet counts.
+    </p>
 
     <h2>Source code</h2>
     <p>
