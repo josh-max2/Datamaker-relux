@@ -28,7 +28,7 @@
     --accent-primary: var(--accent-primary);
     --accent-warning: #F59E0B;
     --accent-danger:  #EF4444;
-    --accent-info:    #60A5FA;
+    --accent-info:    #5573CC;
     --accent-gold:    #D4AF37;
     --ease: cubic-bezier(0.4, 0, 0.2, 1);
     --dur-fast: 150ms; --dur: 200ms;
@@ -355,6 +355,7 @@ a:hover { color: var(--text-primary); }
     border-top: 1px solid var(--bg-elevated); text-align: center;
 }
 </style>
+    <script>(function(){try{var t=localStorage.getItem('fd-theme');if(!t){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 </head>
 <body>
 
@@ -536,7 +537,7 @@ a:hover { color: var(--text-primary); }
 </div>
 
 <!-- Footer with build timestamp + noindex marker -->
-<footer class="dash-footer">Generated 2026-05-19 22:12 · noindex/nofollow · internal-only</footer>
+<footer class="dash-footer">Generated 2026-05-19 22:41 · noindex/nofollow · internal-only</footer>
 
 <!-- Compare modal -->
 <div id="compare-modal" class="modal" style="display:none;">
@@ -777,7 +778,7 @@ function renderCharts(filtered) {
   charts.industry = new Chart(document.getElementById('chartIndustry').getContext('2d'), {
     type: 'doughnut',
     data: { labels: indEntries.map(e => e[0]), datasets: [{ data: indEntries.map(e => e[1]),
-              backgroundColor: ['#60A5FA','#60A5FA','#06b6d4','#0891b2','#0e7490','#155e75',
+              backgroundColor: ['#5573CC','#5573CC','#06b6d4','#0891b2','#0e7490','#155e75',
                                 '#10B981','#10B981','#059669','#F59E0B','#f59e0b','#a78bfa'] }] },
     options: {
       plugins: {
@@ -826,7 +827,7 @@ function renderCharts(filtered) {
   if (charts.investment) charts.investment.destroy();
   charts.investment = new Chart(document.getElementById('chartInvestment').getContext('2d'), {
     type: 'bar',
-    data: { labels: tiers.map(t => t.label), datasets: [{ data: tCounts, backgroundColor: '#60A5FA' }] },
+    data: { labels: tiers.map(t => t.label), datasets: [{ data: tCounts, backgroundColor: '#5573CC' }] },
     options: { plugins: { legend: { display: false } }, scales: {
         x: { ticks: { color: '#9CA3AF', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.10)' } },
         y: { ticks: { color: '#9CA3AF', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.10)' }, beginAtZero: true }
@@ -1252,7 +1253,7 @@ document.getElementById('compare-btn').addEventListener('click', () => {
       type: 'line',
       data: { labels: b.outlet_history.map(p => p[0]),
               datasets: [{ data: b.outlet_history.map(p => p[1]),
-                           borderColor: '#60A5FA', backgroundColor: 'rgba(56,189,248,0.15)',
+                           borderColor: '#5573CC', backgroundColor: 'rgba(56,189,248,0.15)',
                            tension: 0.3, fill: true, pointRadius: 2, borderWidth: 2 }] },
       options: { plugins: { legend: { display: false }, tooltip: { callbacks: {
                     label: ctx => `${ctx.parsed.x ? ctx.parsed.x : ctx.label}: ${ctx.parsed.y.toLocaleString()} outlets`
