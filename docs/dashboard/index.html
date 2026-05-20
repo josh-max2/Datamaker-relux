@@ -1036,6 +1036,25 @@ function renderKPIs(filtered) {
 // ===== Charts =====
 let charts = { industry: null, investment: null, royalty: null };
 
+// Theme-aware color helpers for Chart.js (Chart.js renders to canvas — needs hex,
+// can't use CSS vars directly). User reported donut labels reading near-black
+// against dark surface; #9CA3AF at 10px on #131923 was ~5.7:1 contrast — readable
+// in theory but visually dim due to small font + canvas anti-aliasing.
+function chartTextColor() {
+  return document.documentElement.getAttribute('data-theme') === 'light'
+    ? '#475569'   // slate-600: high contrast on white
+    : '#CBD5E1';  // slate-300: high contrast on dark elevated surface
+}
+function chartGridColor() {
+  return document.documentElement.getAttribute('data-theme') === 'light'
+    ? 'rgba(15, 23, 42, 0.06)'
+    : 'rgba(255, 255, 255, 0.04)';
+}
+// Re-render charts when user flips theme so colors stay theme-appropriate
+new MutationObserver(() => {
+  if (typeof rerender === 'function') rerender();
+}).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
 function renderCharts(filtered) {
   // industry doughnut
   const indCounts = {};
@@ -1059,7 +1078,7 @@ function renderCharts(filtered) {
     options: {
       plugins: {
         legend: { position: 'right',
-                  labels: { color: '#9CA3AF', font: { size: 10 }, boxWidth: 8, padding: 6,
+                  labels: { color: chartTextColor(), font: { size: 10 }, boxWidth: 8, padding: 6,
                             generateLabels: chart => {
                               const data = chart.data;
                               return data.labels.map((label, i) => ({
@@ -1112,8 +1131,8 @@ function renderCharts(filtered) {
                 return '#EF4444';                          // >$1M — high
               }) }] },
     options: { plugins: { legend: { display: false } }, scales: {
-        x: { ticks: { color: '#9CA3AF', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.04)' } },
-        y: { ticks: { color: '#9CA3AF', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.04)' }, beginAtZero: true }
+        x: { ticks: { color: chartTextColor(), font: { size: 10 } }, grid: { color: chartGridColor() } },
+        y: { ticks: { color: chartTextColor(), font: { size: 10 } }, grid: { color: chartGridColor() }, beginAtZero: true }
     }, maintainAspectRatio: false }
   });
 
@@ -1133,8 +1152,8 @@ function renderCharts(filtered) {
     data: { labels: rb.map(t => t.label), datasets: [{ data: rbCounts,
               backgroundColor: rb.map((_, i) => i < 3 ? '#10B981' : i < 4 ? '#F59E0B' : '#EF4444') }] },
     options: { plugins: { legend: { display: false } }, scales: {
-        x: { ticks: { color: '#9CA3AF', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.04)' } },
-        y: { ticks: { color: '#9CA3AF', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.04)' }, beginAtZero: true }
+        x: { ticks: { color: chartTextColor(), font: { size: 10 } }, grid: { color: chartGridColor() } },
+        y: { ticks: { color: chartTextColor(), font: { size: 10 } }, grid: { color: chartGridColor() }, beginAtZero: true }
     }, maintainAspectRatio: false }
   });
 
@@ -1208,20 +1227,20 @@ function renderCharts(filtered) {
       },
       scales: {
         x: {
-          title: { display: true, text: 'Royalty %', color: '#9CA3AF' },
+          title: { display: true, text: 'Royalty %', color: chartTextColor() },
           ticks: {
-            color: '#9CA3AF',
+            color: chartTextColor(),
             stepSize: 5,
             callback: v => v + '%',
           },
-          grid: { color: 'rgba(255,255,255,0.04)' },
+          grid: { color: chartGridColor() },
           min: 0, max: 25,
         },
         y: {
-          title: { display: true, text: 'Top median revenue (log scale)', color: '#9CA3AF' },
+          title: { display: true, text: 'Top median revenue (log scale)', color: chartTextColor() },
           type: 'logarithmic',
           ticks: {
-            color: '#9CA3AF',
+            color: chartTextColor(),
             callback: v => {
               if (v === 1e5)  return '$100K';
               if (v === 1e6)  return '$1M';
@@ -1230,7 +1249,7 @@ function renderCharts(filtered) {
               return null;  // suppress fractional log ticks (kills the $0M duplicates)
             },
           },
-          grid: { color: 'rgba(255,255,255,0.04)' },
+          grid: { color: chartGridColor() },
           min: 100000,
         }
       },
