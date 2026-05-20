@@ -3294,8 +3294,11 @@ html[data-theme="light"] {
 
     --text-primary:   #0F172A;
     --text-secondary: #475569;
-    --text-tertiary:  #94A3B8;
-    --text-muted:     #CBD5E1;
+    /* WCAG AA fix: light-mode --text-tertiary was #94A3B8 (slate-400) — gives only
+       ~3.0:1 contrast on white, failed for the eyebrow / micro-labels. Bumped to
+       slate-500 (#64748B ≈ 5.0:1) so eyebrow + tertiary text are readable. */
+    --text-tertiary:  #64748B;
+    --text-muted:     #94A3B8;
     --text-inverse:   #FFFFFF;
 
     --accent:         #2563EB;
@@ -3312,8 +3315,33 @@ html[data-theme="light"] {
 html[data-theme="light"] .page-toc { background: rgba(250, 251, 252, 0.92); }
 html[data-theme="light"] #home-brands-table tr:hover td,
 html[data-theme="light"] .data-table tbody tr:hover { background: rgba(0, 0, 0, 0.03); }
-html[data-theme="light"] .chip-count { background: rgba(0, 0, 0, 0.06); }
-html[data-theme="light"] .chip:hover { background: rgba(0, 0, 0, 0.04); }
+
+/* Category chips in light mode — dark-mode chip styling (transparent bg + 12%
+   black border) makes the pill shape invisible against a white page. Give
+   chips a visible tint + a more present border + slightly darker text so the
+   pill registers as a tap target. */
+html[data-theme="light"] .chip,
+html[data-theme="light"] .category-chips .chip {
+    background: #F1F3F5;
+    border-color: #D1D5DB;
+    color: #1F2937;
+}
+html[data-theme="light"] .chip:hover,
+html[data-theme="light"] .category-chips .chip:hover {
+    background: #E5E7EB;
+    border-color: #9CA3AF;
+    color: #0F172A;
+}
+html[data-theme="light"] .chip-count,
+html[data-theme="light"] .category-chips .chip-count {
+    background: rgba(0, 0, 0, 0.08);
+    color: #475569;
+}
+/* Industry chips inside tables also need a touch more presence in light mode */
+html[data-theme="light"] .industry-chip {
+    background: rgba(37, 99, 235, 0.10);
+    border-color: rgba(37, 99, 235, 0.25);
+}
 
 /* ===========================================================================
    BATCH 2 — overhaul pass refinements
