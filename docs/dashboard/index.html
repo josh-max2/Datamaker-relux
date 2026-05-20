@@ -394,13 +394,11 @@ a:hover { color: var(--text-primary); }
 }
 
 /* Industry donut: when there are >10 categories, the Chart.js legend
-   (positioned right) cuts off labels like "Au..." "Te...". Give the
-   donut chart-card enough horizontal room so the 2-column legend can
-   show full labels. 1.8fr provides ~50% more horizontal space than
-   the two bar-chart cards on its right. */
+   (positioned right) cuts off labels like "Automotive Services" /
+   "Tech Services". Give the donut chart-card more horizontal room. */
 @media (min-width: 1100px) {
     .charts-row {
-        grid-template-columns: 1.8fr 1fr 1fr !important;
+        grid-template-columns: 2fr 1fr 1fr !important;
     }
 }
 
@@ -1061,7 +1059,7 @@ function renderCharts(filtered) {
     options: {
       plugins: {
         legend: { position: 'right',
-                  labels: { color: '#9CA3AF', font: { size: 10 }, boxWidth: 10,
+                  labels: { color: '#9CA3AF', font: { size: 10 }, boxWidth: 8, padding: 6,
                             generateLabels: chart => {
                               const data = chart.data;
                               return data.labels.map((label, i) => ({
