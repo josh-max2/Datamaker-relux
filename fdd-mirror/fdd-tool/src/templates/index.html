@@ -35,17 +35,30 @@
 </script>
 {% endblock %}
 {% block content %}
-<section class="hero">
-    <h1>Franchise costs &amp; earnings, side by side.</h1>
-    <p class="lead">
-        We extract initial fees, royalty rates, total investment ranges, and Item&nbsp;19 financial performance data
-        from publicly filed Franchise Disclosure Documents — so you can compare franchises without reading 200&#8209;page PDFs.
+<section class="hero hero-luxury">
+    <p class="eyebrow">FranchiseDepth Analytics</p>
+    <h1 class="display">Franchise costs &amp; earnings, side by side.</h1>
+    <p class="subhead">
+        We extract initial fees, royalty rates, total investment ranges, and Item&nbsp;19
+        financial performance data from publicly filed FDDs. Compare franchises without
+        reading 200-page PDFs.
     </p>
-    <p class="stats">
-        <strong>{{ total_brands }}</strong> brands ·
-        <strong>{{ total_records }}</strong> Item&nbsp;19 records ·
-        <strong>{{ total_outlets_tracked|format_int }}</strong> outlets tracked
-    </p>
+
+    <div class="featured-stats" role="list">
+        <div class="featured-stat" role="listitem">
+            <div class="featured-stat-val">{{ total_brands }}</div>
+            <div class="featured-stat-label">Brands analyzed</div>
+        </div>
+        <div class="featured-stat" role="listitem">
+            <div class="featured-stat-val">{{ total_records|format_int }}</div>
+            <div class="featured-stat-label">Item 19 records extracted</div>
+        </div>
+        <div class="featured-stat" role="listitem">
+            <div class="featured-stat-val">{{ total_outlets_tracked|format_int }}</div>
+            <div class="featured-stat-label">Outlets tracked across all FDDs</div>
+        </div>
+    </div>
+
     <nav class="category-chips" aria-label="Browse by category">
         {% for c in categories %}
         <a class="chip" href="{{ url_for('category/' ~ c.slug ~ '/') }}">
@@ -70,8 +83,12 @@
 <section>
     <h2>All brands</h2>
     <div class="brand-list-controls">
-        <input type="search" id="brand-search" placeholder="Search by name..." aria-label="Search brands"
-               oninput="applyFilters()" />
+        <div class="brand-search-wrap">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input type="search" id="brand-search" placeholder="Search {{ total_brands }} franchises…"
+                   aria-label="Search brands" oninput="applyFilters()" />
+            <kbd class="search-kbd" aria-hidden="true">/</kbd>
+        </div>
         <div class="brand-filter-toggles" role="group" aria-label="Filter brand list">
             <button type="button" class="filter-toggle active" data-mode="all">All brands</button>
             <button type="button" class="filter-toggle" data-mode="item19">Item 19 disclosed only</button>
@@ -117,7 +134,11 @@
                     {% elif b.inv_low %}${{ '{:,.0f}'.format(b.inv_low) }}+
                     {% else %}—{% endif %}
                 </td>
-                <td data-value="{{ '1' if b.has_item19 else '0' }}">{% if b.has_item19 %}Yes{% else %}No{% endif %}</td>
+                <td data-value="{{ '2' if b.i19_quality == 'broad' else '1' if b.i19_quality == 'thin' else '0' }}">
+                    {% if b.i19_quality == 'broad' %}<span class="i19-badge i19-broad" title="Broad disclosure — 3+ cohorts">✓ Verified</span>
+                    {% elif b.i19_quality == 'thin' %}<span class="i19-badge i19-thin" title="Limited disclosure — 1-2 cohorts or affiliate-only">△ Limited</span>
+                    {% else %}<span class="i19-badge i19-none" title="No Item 19 disclosure">— Not disclosed</span>{% endif %}
+                </td>
             </tr>
             {% endfor %}
         </tbody>
@@ -293,5 +314,15 @@ document.querySelectorAll('.filter-toggle').forEach(btn => {
         applyFilters();
     });
 })();
+
+// "/" keyboard shortcut focuses the brand search (don't intercept when
+// user is already typing in an input)
+document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) {
+        e.preventDefault();
+        const search = document.getElementById('brand-search');
+        if (search) { search.focus(); search.select(); }
+    }
+});
 </script>
 {% endblock %}

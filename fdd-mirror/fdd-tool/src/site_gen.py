@@ -783,6 +783,21 @@ def fetch_brand_summaries(conn: sqlite3.Connection) -> list[dict]:
         rb = compute_risk_badge(conn, s["fdd_id"])
         s["closure_rate_pct"] = rb["rate_pct"] if rb else None
         s["closure_tier"] = rb["tier"] if rb else None
+        # Item 19 disclosure quality — drives the color-coded badge on the
+        # homepage and category tables. Three buckets:
+        #   broad: 3+ distinct revenue cohorts (multi-cohort disclosure)
+        #   thin: 1-2 cohorts OR mostly affiliate (single-outlet) data
+        #   none: no item19 revenue cohorts at all
+        i19_q = conn.execute("""
+            SELECT COUNT(DISTINCT cohort_raw) AS n_cohorts,
+                   SUM(CASE WHEN cohort_name LIKE '%affiliate%' OR cohort_name LIKE '%company%' THEN 1 ELSE 0 END) AS n_aff
+            FROM item19_records
+            WHERE fdd_id = ? AND metric_name IN ('gross_sales','total_revenue')
+        """, (s["fdd_id"],)).fetchone()
+        if i19_q and i19_q[0]:
+            s["i19_quality"] = "broad" if i19_q[0] >= 3 else "thin"
+        else:
+            s["i19_quality"] = "none"
 
         # Outlet growth: latest year vs prior year (TOTAL row)
         growth_rows = conn.execute("""
