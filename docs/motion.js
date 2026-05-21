@@ -171,19 +171,126 @@
         });
     }
 
-    /* ---------- slash-to-focus search keyboard shortcut ---------- */
+    /* ---------- slash-OR-cmdK to focus search keyboard shortcut ---------- */
     function bootSearchHotkey() {
         var input = document.getElementById('header-search-input');
         if (!input) return;
         document.addEventListener('keydown', function (e) {
-            if (e.key !== '/') return;
             var t = e.target;
-            // Don't hijack when user is typing in an input/textarea/contenteditable
-            if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
-            e.preventDefault();
-            input.focus();
-            input.select();
+            var inField = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
+            // Cmd+K (Mac) / Ctrl+K (Win/Linux)
+            if ((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) {
+                e.preventDefault();
+                input.focus();
+                input.select();
+                return;
+            }
+            // "/" — only when not typing in another field
+            if (e.key === '/' && !inField) {
+                e.preventDefault();
+                input.focus();
+                input.select();
+            }
         });
+        // Click on the search-trigger button (if present, separate from input) focuses input
+        document.querySelectorAll('[data-action="open-search"]').forEach(function (btn) {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                input.focus();
+                input.select();
+            });
+        });
+    }
+
+    /* ---------- header: sticky-scroll state, dropdown, mobile drawer ---------- */
+    function bootHeader() {
+        var header = document.querySelector('.site-header');
+        if (!header) return;
+
+        // 1. Scroll state: data-scrolled="true" after 8px
+        var ticking = false;
+        function updateScrolled() {
+            var scrolled = window.scrollY > 8;
+            header.setAttribute('data-scrolled', scrolled ? 'true' : 'false');
+            ticking = false;
+        }
+        window.addEventListener('scroll', function () {
+            if (!ticking) {
+                requestAnimationFrame(updateScrolled);
+                ticking = true;
+            }
+        }, { passive: true });
+        updateScrolled();
+
+        // 2. Active-page indication
+        var currentPath = window.location.pathname.replace(/\/+$/, '') || '/';
+        document.querySelectorAll('.primary-nav .nav-link[href]').forEach(function (link) {
+            var href = link.getAttribute('href').replace(/\/+$/, '') || '/';
+            // Exact match OR (non-root href that prefixes current path)
+            if (href === currentPath || (href !== '/Datamaker-relux' && href !== '/' && currentPath.indexOf(href) === 0)) {
+                link.setAttribute('aria-current', 'page');
+            }
+        });
+
+        // 3. Dropdown: hover-intent (desktop) + click toggle (universal) + outside-click + Escape
+        document.querySelectorAll('.nav-link--dropdown').forEach(function (trigger) {
+            var item = trigger.closest('.nav-item--has-dropdown');
+            var hoverTimer;
+            function open()  { trigger.setAttribute('aria-expanded', 'true');  }
+            function close() { trigger.setAttribute('aria-expanded', 'false'); }
+            trigger.addEventListener('click', function (e) {
+                e.preventDefault();
+                trigger.getAttribute('aria-expanded') === 'true' ? close() : open();
+            });
+            if (window.matchMedia && window.matchMedia('(hover: hover)').matches) {
+                item.addEventListener('mouseenter', function () { clearTimeout(hoverTimer); open(); });
+                item.addEventListener('mouseleave', function () { hoverTimer = setTimeout(close, 150); });
+            }
+            document.addEventListener('click', function (e) { if (!item.contains(e.target)) close(); });
+            document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+        });
+
+        // 4. Mobile drawer
+        var menuToggle = document.querySelector('.menu-toggle');
+        var drawer    = document.getElementById('mobile-nav');
+        var backdrop  = document.querySelector('.drawer-backdrop');
+        if (menuToggle && drawer) {
+            var savedScrollY = 0;
+            function lockBody() {
+                savedScrollY = window.scrollY;
+                document.body.style.top = '-' + savedScrollY + 'px';
+                document.body.classList.add('scroll-locked');
+            }
+            function unlockBody() {
+                document.body.classList.remove('scroll-locked');
+                document.body.style.top = '';
+                window.scrollTo(0, savedScrollY);
+            }
+            function openMenu() {
+                drawer.setAttribute('aria-hidden', 'false');
+                if (backdrop) backdrop.setAttribute('aria-hidden', 'false');
+                menuToggle.setAttribute('aria-expanded', 'true');
+                lockBody();
+            }
+            function closeMenu() {
+                drawer.setAttribute('aria-hidden', 'true');
+                if (backdrop) backdrop.setAttribute('aria-hidden', 'true');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                unlockBody();
+            }
+            menuToggle.addEventListener('click', function () {
+                drawer.getAttribute('aria-hidden') === 'true' ? openMenu() : closeMenu();
+            });
+            document.querySelectorAll('[data-action="close-menu"]').forEach(function (el) {
+                el.addEventListener('click', closeMenu);
+            });
+            drawer.querySelectorAll('a').forEach(function (a) {
+                a.addEventListener('click', closeMenu);
+            });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && drawer.getAttribute('aria-hidden') === 'false') closeMenu();
+            });
+        }
     }
 
     /* ---------- compare-page outlet growth coloring ---------- */
@@ -244,6 +351,7 @@
         bootFreshnessTier();
         bootSearchHotkey();
         bootCompareGrowthColor();
+        bootHeader();
     }
 
     if (document.readyState === 'loading') {

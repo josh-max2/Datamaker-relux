@@ -53,25 +53,48 @@
 </head>
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
-    <header class="site-header">
+    <header class="site-header" id="site-header">
         <div class="container">
-            <a class="brand" href="/Datamaker-relux/">FranchiseDepth</a>
-            <div class="header-search" role="search">
-                <input type="search" id="header-search-input" placeholder="Search brands…"
-                       aria-label="Search franchise brands" autocomplete="off">
-                <kbd class="search-kbd">/</kbd>
-                <ul id="header-search-results" class="header-search-results" role="listbox" hidden></ul>
-            </div>
-            <nav>
-                <a href="/Datamaker-relux/">All Brands</a>
-                <a href="/Datamaker-relux/reports/">Reports</a>
-                <a href="/Datamaker-relux/compare/">Compare</a>
-                <a href="/Datamaker-relux/recent/">Recent</a>
-                <a href="/Datamaker-relux/guides/">Guides</a>
-                <a href="/Datamaker-relux/methodology/">Methodology</a>
-                <a href="/Datamaker-relux/about/">About</a>
+            <div class="site-header-inner">
+                <a class="brand" href="/Datamaker-relux/" aria-label="FranchiseDepth, home">
+                    <svg class="brand-mark" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="2" y="2" width="9" height="9" rx="1.5" fill="var(--accent)" opacity="0.95"/>
+                        <rect x="13" y="2" width="9" height="9" rx="1.5" fill="var(--accent)" opacity="0.55"/>
+                        <rect x="2" y="13" width="9" height="9" rx="1.5" fill="var(--accent)" opacity="0.55"/>
+                        <rect x="13" y="13" width="9" height="9" rx="1.5" fill="var(--accent)" opacity="0.95"/>
+                    </svg>
+                    <span class="brand-wordmark">FranchiseDepth</span>
+                </a>
+                <nav class="primary-nav" aria-label="Primary">
+                    <ul>
+                        <li class="nav-item nav-item--has-dropdown">
+                            <button type="button" class="nav-link nav-link--dropdown" aria-expanded="false" aria-controls="browse-menu">
+                                Browse
+                                <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" class="chevron"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+                            <div id="browse-menu" class="dropdown-menu" role="menu">
+                                <a href="/Datamaker-relux/" role="menuitem" class="dropdown-item"><span class="dropdown-item-title">All Brands</span><span class="dropdown-item-sub">469 franchises tracked</span></a>
+                                <a href="/Datamaker-relux/recent/" role="menuitem" class="dropdown-item"><span class="dropdown-item-title">Recent FDDs</span><span class="dropdown-item-sub">Newest filings</span></a>
+                                <a href="/Datamaker-relux/industries/" role="menuitem" class="dropdown-item"><span class="dropdown-item-title">Industries</span><span class="dropdown-item-sub">Browse by category</span></a>
+                                <div class="dropdown-divider" role="separator"></div>
+                                <a href="/Datamaker-relux/guides/" role="menuitem" class="dropdown-item"><span class="dropdown-item-title">Guides</span><span class="dropdown-item-sub">How to read an FDD</span></a>
+                                <a href="/Datamaker-relux/about/" role="menuitem" class="dropdown-item"><span class="dropdown-item-title">About</span><span class="dropdown-item-sub">Why FranchiseDepth exists</span></a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="/Datamaker-relux/compare/" class="nav-link">Compare</a></li>
+                        <li class="nav-item"><a href="/Datamaker-relux/reports/" class="nav-link">Reports</a></li>
+                        <li class="nav-item"><a href="/Datamaker-relux/methodology/" class="nav-link">Methodology</a></li>
+                    </ul>
+                </nav>
+                <div class="header-search" role="search">
+                    <input type="search" id="header-search-input" placeholder="Search 469 brands…" aria-label="Search franchise brands" autocomplete="off">
+                    <kbd class="search-kbd">⌘K</kbd>
+                    <ul id="header-search-results" class="header-search-results" role="listbox" hidden></ul>
+                </div>
                 <button type="button" class="theme-toggle" aria-label="Toggle dark / light theme" title="Toggle theme"><span class="theme-icon-moon" aria-hidden="true">◐</span><span class="theme-icon-sun" aria-hidden="true">☀</span></button>
-            </nav>
+                <a href="/Datamaker-relux/alerts/" class="cta-primary">Get FDD Alerts <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 5h6M5.5 2l3 3-3 3" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+            </div>
         </div>
     </header>
 <nav class="breadcrumbs" aria-label="Breadcrumb">
@@ -471,5 +494,28 @@
         });
     })();
     </script>
+<aside id="mobile-nav" class="mobile-nav-drawer" aria-hidden="true" aria-label="Mobile navigation">
+    <div class="drawer-header">
+        <a href="/Datamaker-relux/" class="brand"><svg class="brand-mark" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="9" height="9" rx="1.5" fill="var(--accent)" opacity="0.95"/><rect x="13" y="2" width="9" height="9" rx="1.5" fill="var(--accent)" opacity="0.55"/><rect x="2" y="13" width="9" height="9" rx="1.5" fill="var(--accent)" opacity="0.55"/><rect x="13" y="13" width="9" height="9" rx="1.5" fill="var(--accent)" opacity="0.95"/></svg><span>FranchiseDepth</span></a>
+        <button type="button" class="close" aria-label="Close menu" data-action="close-menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <div class="drawer-search-wrap">
+        <input type="search" placeholder="Search 469 brands…" aria-label="Search franchise brands" autocomplete="off" id="mobile-search-input">
+    </div>
+    <nav aria-label="Mobile primary">
+        <a href="/Datamaker-relux/">All Brands <span class="badge">469</span></a>
+        <a href="/Datamaker-relux/recent/">Recent FDDs</a>
+        <a href="/Datamaker-relux/industries/">Industries</a>
+        <a href="/Datamaker-relux/compare/">Compare</a>
+        <a href="/Datamaker-relux/reports/">Reports</a>
+        <a href="/Datamaker-relux/methodology/">Methodology</a>
+        <a href="/Datamaker-relux/guides/">Guides</a>
+        <a href="/Datamaker-relux/about/">About</a>
+    </nav>
+    <div class="drawer-footer">
+        <a href="/Datamaker-relux/alerts/" class="cta-primary cta-primary--full">Get FDD Alerts</a>
+    </div>
+</aside>
+<div class="drawer-backdrop" data-action="close-menu" aria-hidden="true"></div>
 </body>
 </html>
