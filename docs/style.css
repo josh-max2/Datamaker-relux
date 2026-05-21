@@ -3765,7 +3765,12 @@ html[data-theme="light"] .site-header .theme-toggle .theme-icon-sun  { display: 
         margin-bottom: 16px;
         border-bottom: 1px solid var(--border-subtle);
     }
-    .drawer-header .brand { font-size: 14px; }
+    .drawer-header .brand {
+        font-size: 14px;
+        text-decoration: none !important;
+        color: var(--text-primary) !important;
+    }
+    .drawer-header .brand span { color: var(--text-primary); text-decoration: none; }
     .drawer-header .close {
         width: 40px; height: 40px;
         display: inline-flex; align-items: center; justify-content: center;
