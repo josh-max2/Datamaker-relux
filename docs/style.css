@@ -3410,13 +3410,13 @@ html[data-theme="light"] .site-header[data-scrolled="true"] {
 @media (min-width: 960px) {
     .site-header > .container { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
 }
-/* Children sizing */
-.site-header-inner .brand           { flex: 0 0 auto; order: 1; }
-.site-header-inner .primary-nav     { flex: 0 1 auto; order: 2; }
-.site-header-inner .header-search   { flex: 0 1 320px; order: 3; margin-left: auto !important; }
-.site-header-inner .theme-toggle    { flex: 0 0 auto; order: 4; }
-.site-header-inner .cta-primary     { flex: 0 0 auto; order: 5; }
-.site-header-inner .menu-toggle     { flex: 0 0 auto; order: 6; }
+/* Children sizing — !important on order to beat any legacy order: declarations */
+.site-header-inner .brand           { flex: 0 0 auto !important; order: 1 !important; }
+.site-header-inner .primary-nav     { flex: 0 1 auto !important; order: 2 !important; }
+.site-header-inner .header-search   { flex: 0 1 320px !important; order: 3 !important; margin-left: auto !important; }
+.site-header-inner .theme-toggle    { flex: 0 0 auto !important; order: 4 !important; }
+.site-header-inner .cta-primary     { flex: 0 0 auto !important; order: 5 !important; }
+.site-header-inner .menu-toggle     { flex: 0 0 auto !important; order: 6 !important; }
 
 /* Brand mark + wordmark */
 .site-header a.brand {
@@ -3546,11 +3546,10 @@ html[data-theme="light"] .dropdown-menu {
 /* Search trigger — uses existing #header-search-input inside, styled like a button */
 .site-header .header-search {
     position: relative;
-    justify-self: end;
     flex: 0 1 320px !important;
     max-width: 320px !important;
-    order: initial !important;
-    margin: 0 !important;
+    order: 3 !important;
+    margin: 0 0 0 auto !important;     /* margin-left: auto pushes to the right */
 }
 .site-header .header-search input[type="search"] {
     width: 100%;
@@ -4081,11 +4080,10 @@ body.editorial-route h1, body.editorial-route h2 {
 .site-footer .ftc-disclosure a { color: #B45309; text-decoration: underline; }
 .site-footer .ftc-disclosure a:hover { color: #92400E; }
 
-/* --- Header layout: search to right of nav (spec) — flex order --- */
+/* --- Header layout: superseded by the .site-header-inner flex spec
+       in the HEADER REDESIGN block. The legacy order: declarations below
+       are kept for any non-redesigned chrome (none expected). --- */
 .site-header .container { gap: 16px; }
-.site-header nav { order: 2; }
-.header-search { order: 3; margin-left: auto; }
-.site-header a.brand { order: 1; }
 
 /* --- Theme toggle button --- */
 .theme-toggle {
