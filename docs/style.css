@@ -3388,25 +3388,35 @@ html[data-theme="light"] .site-header[data-scrolled="true"] {
     box-shadow: 0 1px 12px rgba(15, 23, 42, 0.06);
 }
 
-/* Inner row */
+/* Inner row — flex for predictable left-to-right placement.
+   Grid was reordering items unpredictably because of legacy
+   .site-header .container { display: flex } interactions. */
 .site-header-inner {
-    display: grid;
-    grid-template-columns: auto 1fr auto auto auto;
+    display: flex !important;
     align-items: center;
-    gap: 24px;
+    gap: 20px;
     height: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 100%;
 }
 .site-header > .container {
+    display: flex !important;
+    align-items: center;
     padding-left: 1rem !important;
     padding-right: 1rem !important;
     height: 100%;
     max-width: 1400px !important;
+    flex-wrap: nowrap !important;
 }
 @media (min-width: 960px) {
     .site-header > .container { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
 }
+/* Children sizing */
+.site-header-inner .brand           { flex: 0 0 auto; order: 1; }
+.site-header-inner .primary-nav     { flex: 0 1 auto; order: 2; }
+.site-header-inner .header-search   { flex: 0 1 320px; order: 3; margin-left: auto !important; }
+.site-header-inner .theme-toggle    { flex: 0 0 auto; order: 4; }
+.site-header-inner .cta-primary     { flex: 0 0 auto; order: 5; }
+.site-header-inner .menu-toggle     { flex: 0 0 auto; order: 6; }
 
 /* Brand mark + wordmark */
 .site-header a.brand {
