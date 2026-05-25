@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!-- fd-fingerprint:283877064e7f -->
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>(function(){try{var t=localStorage.getItem('fd-theme');if(!t){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+    <script>(function(){try{var t=localStorage.getItem('fd-theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <meta name="google-site-verification" content="K4jBh7vFO-rr4gxM9JotDwBeAtCWdXOm7bEwSMsfv3I"><meta name="fo-verify" content="7eb2e7cf-9f84-459a-b48f-64cf7a609967"><meta name="impact-site-verification" value="83778c12-e712-4dd7-9e77-9ffb6329f776">    <title>FranchiseDepth Dashboard — Internal Decision Support</title>
     <meta name="description" content="Filter 631 franchise brands by industry, investment, royalty, and Item 19 disclosure. Charts, watchlist, CSV export. Built from publicly filed FDDs.">
 
@@ -1366,11 +1366,26 @@ a { color: var(--accent); }
 }
 .quadrant-tile:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
 .quadrant-tile.selected { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
-/* Neutral encoding: single accent, position carries meaning (no green/red verdict). */
-.quadrant-tile .q-count { font-size: 19px; font-weight: 700; line-height: 1; color: var(--text-primary); }
-.quadrant-tile .q-label { font-size: 14px; font-weight: 650; color: var(--text-primary); }
+/* FIX4: quality-coded tiles (owner override of the neutral version) */
+.quadrant-tile { border-left-width: 3px; }
+.quadrant-tile .q-head { display: flex; align-items: center; gap: 7px; }
+.quadrant-tile .q-icon { font-size: 15px; }
+.quadrant-tile .q-name { font-size: 14px; font-weight: 700; color: var(--text-primary); }
+.quadrant-tile .q-count { font-size: 36px; font-weight: 600; line-height: 1.1; color: var(--text-primary); }
+.quadrant-tile .q-desc { font-size: 11px; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: .04em; }
 .quadrant-tile .q-egs { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
 .quadrant-tile .q-egs-empty { color: var(--text-tertiary); font-style: italic; }
+.q-stars   { background: rgba(74,222,128,0.08);  border-left-color: var(--positive); }
+.q-premium { background: rgba(251,191,36,0.06);  border-left-color: var(--warning); }
+.q-watch   { background: rgba(148,163,184,0.05); border-left-color: var(--text-tertiary); }
+.q-avoid   { background: rgba(248,113,113,0.06); border-left-color: var(--negative); }
+.q-stars .q-count { color: var(--positive); }
+.q-avoid .q-count { color: var(--negative); }
+/* axis labels around the matrix */
+.quadrant-frame { margin-top: 6px; }
+.qx-axis { font-size: 10.5px; letter-spacing: .04em; text-transform: uppercase; color: var(--text-tertiary); text-align: center; margin: 0 0 6px 24px; }
+.quadrant-body { display: grid; grid-template-columns: 18px 1fr; gap: 6px; align-items: stretch; }
+.qy-axis { writing-mode: vertical-rl; text-align: center; font-size: 10.5px; letter-spacing: .04em; text-transform: uppercase; color: var(--text-tertiary); }
 /* Active-filter state: dim the three unselected tiles so the selection is unmistakable */
 .quadrant-wrap.has-selection .quadrant-tile:not(.selected) { opacity: .5; }
 .quadrant-wrap.has-selection .quadrant-tile:not(.selected):hover { opacity: .8; }
@@ -1415,6 +1430,48 @@ a { color: var(--accent); }
 .activity-feed li { font-size: 13px; color: var(--text-secondary); display: flex; gap: 8px; align-items: baseline; }
 .activity-feed li .dot { color: var(--accent); font-size: 9px; line-height: 1.6; }
 .activity-feed li strong { color: var(--text-primary); font-weight: 600; }
+
+/* ===== FIX2: clean hero + 2-col with activity feed ===== */
+.hero-inner { display: flex; gap: 28px; align-items: flex-start; }
+.hero-main { flex: 1 1 auto; min-width: 0; }
+.dashboard-title { margin: 0 0 6px; font-size: 26px; letter-spacing: -0.01em; color: var(--text-primary); }
+.dashboard-subtitle { margin: 0 0 10px; font-size: 14px; color: var(--text-tertiary); }
+.dashboard-disclaimer-link { display: flex; gap: 16px; margin-bottom: 16px; }
+.dashboard-disclaimer-link a { font-size: 12.5px; color: var(--text-secondary); text-decoration: none; }
+.dashboard-disclaimer-link a:hover { color: var(--accent); }
+
+/* ===== FIX5: activity feed widget (top-right of hero) ===== */
+.dashboard-activity-feed {
+    flex: 0 0 300px; align-self: stretch;
+    border: 1px solid var(--border-subtle); border-radius: var(--r-card);
+    background: var(--bg-surface-1); padding: 14px 16px;
+}
+.activity-feed-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.activity-feed-header h3 { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--text-secondary); flex: 1; }
+.activity-feed-icon { font-size: 13px; }
+.activity-feed-collapse { border: 0; background: none; color: var(--text-tertiary); font-size: 16px; line-height: 1; cursor: pointer; padding: 0 4px; }
+.dashboard-activity-feed.collapsed .activity-feed-list,
+.dashboard-activity-feed.collapsed .activity-feed-more { display: none; }
+.activity-feed-list { list-style: none; margin: 0 0 10px; padding: 0; display: flex; flex-direction: column; gap: 9px; }
+.activity-feed-list li { display: flex; flex-direction: column; gap: 1px; }
+.activity-time { font-size: 10.5px; color: var(--text-tertiary); font-variant-numeric: tabular-nums; }
+.activity-text { font-size: 12.5px; color: var(--text-primary); line-height: 1.35; }
+.activity-feed-more { font-size: 12px; color: var(--accent); text-decoration: none; }
+@media (max-width: 900px) { .hero-inner { flex-direction: column; } .dashboard-activity-feed { flex-basis: auto; width: 100%; } }
+
+/* ===== FIX3: three-tier card hierarchy ===== */
+/* Tier 1 — hero KPI stats: most prominent */
+.kpi-card-3 {
+    background: var(--bg-surface-2); border: 1px solid var(--border-default);
+    border-radius: 12px; padding: 24px;
+}
+.kpi-card-3 .big { font-size: 32px; font-weight: 700; color: var(--accent); }
+.kpi-card-3 .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--text-tertiary); }
+/* Tier 2 — data sections: bordered, standard */
+.chart-card { background: var(--bg-surface-1); border: 1px solid var(--border-subtle); padding: 20px; }
+.chart-card .chart-title { font-size: 13px; text-transform: uppercase; letter-spacing: .03em; color: var(--text-tertiary); font-weight: 600; }
+/* Tier 3 — insight cards: subtle, supporting */
+.insight-card { background: transparent; border: 1px solid var(--border-subtle); border-radius: 8px; padding: 14px; }
 </style>
 </head>
 <body>
@@ -1519,24 +1576,13 @@ a { color: var(--accent); }
 <main id="main-content">
 <div class="hero">
   <div class="hero-inner">
-    <h1>Find the right franchise.</h1>
-    <p class="lede"><strong id="hero-count">631</strong> brands · Item 7 fees + Item 20 outlets on all · Item 19 financials on 416 (66%) · filter and compare.</p>
-    <div class="provenance">
-      <span class="dot"></span>
-      <strong>631</strong> brands <span class="sep">·</span>
-      <strong>622</strong> FDDs <span class="sep">·</span>
-      <strong>94%</strong> filed in 2025-2026 <span class="sep">·</span>
-      last ingested 2026-05-25 <span class="sep">·</span>
-      100% source-cited
+    <div class="hero-main">
+    <h1 class="dashboard-title">Find the right franchise.</h1>
+    <p class="dashboard-subtitle">631 brands · 416 disclose Item 19 financials · last updated 2026-05-25</p>
+    <div class="dashboard-disclaimer-link">
+      <a href="/methodology/#composite-risk-score">How we calculate risk scores →</a>
+      <a href="/terms/">Disclaimer →</a>
     </div>
-    <p class="dash-disclaimer" style="margin:10px 0 0;font-size:11.5px;line-height:1.5;color:var(--text-tertiary);max-width:760px;">
-      <strong>About the Composite Risk Score:</strong> it is a decision-support composite we calculate
-      from publicly disclosed FDD data, using <em>editorially-chosen sub-weights</em> you can inspect and
-      change under <span style="white-space:nowrap;">⚖ Risk weights</span>. It is our analysis, not a
-      recommendation, rating, or prediction — and not investment, legal, or financial advice. Always read
-      the source FDD and consult a franchise attorney and financial advisor.
-      <a href="/methodology/#composite-risk-score" style="color:var(--accent);">How the composite is calculated →</a>
-    </p>
     <!-- v7 #14: time-machine year slider -->
     <div class="time-machine" id="time-machine">
       <span class="tm-label">⏰ Time machine</span>
@@ -1555,6 +1601,8 @@ a { color: var(--accent); }
       <button class="chip" data-preset="affordable"      data-tip="Investment low under $50K">Under $50K to start</button>
       <button class="chip" data-preset="fastest-growing" data-tip="Outlet growth +20% or more over the disclosed Item 20 window">Fastest growing</button>
     </div>
+    </div>
+    <aside class="dashboard-activity-feed"><div class="activity-feed-header"><span class="activity-feed-icon">📡</span><h3>Recent updates</h3><button type="button" class="activity-feed-collapse" aria-label="Collapse">−</button></div><ul class="activity-feed-list"><li><span class="activity-time">May 25</span><span class="activity-text">204 state × investment-tier report pages added</span></li><li><span class="activity-time">May 25</span><span class="activity-text">Glossary expanded to 69 terms</span></li><li><span class="activity-time">May 24</span><span class="activity-text">63 automotive &amp; fitness brands re-classified into sub-categories</span></li><li><span class="activity-time">May 24</span><span class="activity-text">Item 19 data-quality pass — 5 OCR corrections</span></li><li><span class="activity-time">May 20</span><span class="activity-text">Corpus expanded 461 → 631 brands (NASAA multi-state)</span></li></ul><a href="/methodology/" class="activity-feed-more">How the data is built →</a></aside>
   </div>
 </div>
 
@@ -1763,7 +1811,13 @@ a { color: var(--accent); }
   </div>
   <div class="chart-card chart-wide">
     <h3 class="chart-title">Revenue × royalty matrix — click a quadrant to filter the table</h3>
-    <div id="quadrantMatrix" class="quadrant-wrap"></div>
+    <div class="quadrant-frame">
+      <div class="qx-axis">← Lower royalty &nbsp;&nbsp;&nbsp; Higher royalty →</div>
+      <div class="quadrant-body">
+        <div class="qy-axis">↑ Higher revenue &nbsp;&nbsp;&nbsp; Lower revenue ↓</div>
+        <div id="quadrantMatrix" class="quadrant-wrap"></div>
+      </div>
+    </div>
     <p class="quadrant-note" id="quadrantNote"></p>
   </div>
   <div class="chart-card chart-wide chart-tall">
@@ -1850,7 +1904,7 @@ a { color: var(--accent); }
 </button>
 
 <!-- Footer with build timestamp + noindex marker -->
-<footer class="dash-footer">Generated 2026-05-25 12:09 · noindex/nofollow · internal-only</footer>
+<footer class="dash-footer">Generated 2026-05-25 12:32 · noindex/nofollow · internal-only</footer>
 
 <!-- v7 #13: Risk-weight slider drawer (bottom-right, collapsed by default) -->
 <aside id="weight-drawer" class="weight-drawer">
@@ -2887,10 +2941,10 @@ window.addEventListener('resize', () => {
 let quadrantSelected = null;  // 'stars'|'premium'|'watch'|'avoid'|null — UI state, checked after sidebar filters
 // Neutral descriptors (owner decision) — label by what's measured, no verdict.
 const QUADRANTS = [
-  { key: 'stars',   label: 'High Rev · Low Royalty' },
-  { key: 'premium', label: 'High Rev · High Royalty' },
-  { key: 'watch',   label: 'Low Rev · Low Royalty' },
-  { key: 'avoid',   label: 'Low Rev · High Royalty' },
+  { key: 'stars',   icon: '⭐', name: 'Stars',   desc: 'High Rev · Low Royalty' },
+  { key: 'premium', icon: '💎', name: 'Premium', desc: 'High Rev · High Royalty' },
+  { key: 'watch',   icon: '⚠',  name: 'Watch',   desc: 'Low Rev · Low Royalty' },
+  { key: 'avoid',   icon: '❌', name: 'Avoid',   desc: 'Low Rev · High Royalty' },
 ];
 function quadrantOf(b) {
   // Fixed corpus boundaries (QUADRANT_BOUNDS) — not recomputed per render.
@@ -2912,9 +2966,10 @@ function renderQuadrant(set) {
     const list = buckets[q.key].slice().sort((a, b) => (b.top_revenue || 0) - (a.top_revenue || 0));
     const egs = list.slice(0, 2).map(b => escHtml(b.name)).join(', ');
     const on = quadrantSelected === q.key;
-    return `<button type="button" class="quadrant-tile${on ? ' selected' : ''}" data-q="${q.key}" aria-pressed="${on}">
+    return `<button type="button" class="quadrant-tile q-${q.key}${on ? ' selected' : ''}" data-q="${q.key}" aria-pressed="${on}">
+      <span class="q-head"><span class="q-icon">${q.icon}</span><span class="q-name">${q.name}</span></span>
       <span class="q-count">${list.length}</span>
-      <span class="q-label">${q.label}</span>
+      <span class="q-desc">${q.desc}</span>
       ${egs ? `<span class="q-egs">e.g. ${egs}${list.length > 2 ? '…' : ''}</span>` : '<span class="q-egs q-egs-empty">none in view</span>'}
     </button>`;
   }).join('');
@@ -2924,7 +2979,7 @@ function renderQuadrant(set) {
     const revM = (QUADRANT_BOUNDS.rev_med / 1e6).toFixed(2).replace(/0+$/, '').replace(/\.$/, '');
     const bound = `Split at revenue $${revM}M (corpus median) and royalty ${QUADRANT_BOUNDS.roy_pct}% · ${noData} brands excluded — no disclosed revenue`;
     note.innerHTML = quadrantSelected
-      ? `<span class="quadrant-active-chip">Showing: ${QUADRANTS.find(x => x.key === quadrantSelected).label} <button type="button" id="quadrantClear" aria-label="Clear quadrant filter">✕</button></span> <span class="quadrant-bound">${bound}</span>`
+      ? `<span class="quadrant-active-chip">Showing: ${QUADRANTS.find(x => x.key === quadrantSelected).name} <button type="button" id="quadrantClear" aria-label="Clear quadrant filter">✕</button></span> <span class="quadrant-bound">${bound}</span>`
       : `<span class="quadrant-bound">${bound}</span>`;
   }
 }
@@ -2985,12 +3040,24 @@ document.getElementById('quadrantMatrix').addEventListener('click', (e) => {
   const tile = e.target.closest('.quadrant-tile');
   if (!tile) return;
   const q = tile.dataset.q;
-  quadrantSelected = (quadrantSelected === q) ? null : q;
+  const wasOn = quadrantSelected === q;
+  quadrantSelected = wasOn ? null : q;
   rerender();
+  // §3.2/FIX4: on select, scroll the brands table into view
+  if (!wasOn) { const r = document.querySelector('.results'); if (r) r.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
 });
 document.getElementById('quadrantNote').addEventListener('click', (e) => {
   if (e.target.id === 'quadrantClear') { quadrantSelected = null; rerender(); }
 });
+// §3.3 activity-feed collapse toggle
+(function () {
+  const fc = document.querySelector('.activity-feed-collapse');
+  if (fc) fc.addEventListener('click', () => {
+    const fed = fc.closest('.dashboard-activity-feed');
+    const collapsed = fed.classList.toggle('collapsed');
+    fc.textContent = collapsed ? '+' : '−';
+  });
+})();
 
 // ===== Wire events =====
 ['search','industry','invMin','invMax','royMin','royMax','outletsMin','state','item19','watchlist','tag'].forEach(k => {
