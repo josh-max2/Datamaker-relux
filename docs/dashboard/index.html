@@ -166,7 +166,9 @@ a { color: var(--accent); }
     max-width: 1600px; margin: 0 auto;
     padding: 0 32px;
 }
-.hero h1 { margin: 0 0 4px; font-size: 26px; color: var(--text-primary); letter-spacing: -0.01em; }
+/* (Removed legacy ".hero h1" font-size:26px rule — its (0,1,1) specificity was
+   silently overriding .dashboard-title 42px (0,1,0). The hero's only h1 IS
+   .dashboard-title, which sets all of margin/size/color/letter-spacing.) */
 .hero .lede { margin: 0 0 18px; color: var(--text-tertiary); font-size: 14px; }
 .hero .lede strong { color: var(--accent); }
 .preset-chips { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -1441,6 +1443,19 @@ a { color: var(--accent); }
 .activity-feed li .dot { color: var(--accent); font-size: 9px; line-height: 1.6; }
 .activity-feed li strong { color: var(--text-primary); font-weight: 600; }
 
+/* ===================================================================
+ * POLISH LAYER — SimilarWeb spec hierarchy
+ *
+ * IMPORTANT: rules here must beat legacy .hero / .container / base.css
+ * rules in specificity. If a polish rule isn't winning the cascade, the
+ * legacy rule needs to be DELETED, not overridden with !important.
+ *
+ * Audit before adding new rules: search for the same selector elsewhere
+ * in build_dashboard.py AND style.css. Delete the older rule if it's
+ * legacy. (e.g. the ".hero h1" font-size:26px rule silently overrode
+ * .dashboard-title 42px for three iterations — see deletion above.)
+ * =================================================================== */
+
 /* ===== FIX2: clean hero + 2-col with activity feed ===== */
 .hero-inner { display: flex; gap: 28px; align-items: flex-start; }
 .hero-main { flex: 1 1 auto; min-width: 0; }
@@ -1926,7 +1941,7 @@ a { color: var(--accent); }
 </button>
 
 <!-- Footer with build timestamp + noindex marker -->
-<footer class="dash-footer">Generated 2026-05-25 14:08 · noindex/nofollow · internal-only</footer>
+<footer class="dash-footer">Generated 2026-05-25 15:35 · noindex/nofollow · internal-only</footer>
 
 <!-- v7 #13: Risk-weight slider drawer (bottom-right, collapsed by default) -->
 <aside id="weight-drawer" class="weight-drawer">
