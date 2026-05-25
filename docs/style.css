@@ -2294,6 +2294,31 @@ a:hover { color: var(--accent-hover); }
 .legal-entity-line { font-size: .8rem; color: var(--text-secondary); margin: .4rem 0 0; }
 .about-entity-note { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle); }
 
+/* === §2 brand-profile tab system === */
+.brand-page .page-toc { display: none; }  /* tabs replace the on-page TOC */
+.brand-tabs {
+    position: sticky; top: var(--header-height, 56px); z-index: 50;
+    display: flex; gap: 2px; flex-wrap: nowrap; overflow-x: auto;
+    margin: 18px 0 24px; padding: 0;
+    border-bottom: 1px solid var(--border-subtle);
+    background: var(--bg-base); -webkit-overflow-scrolling: touch;
+}
+.brand-tab {
+    flex: 0 0 auto; border: 0; background: none; font: inherit;
+    font-size: 14px; font-weight: 500; color: var(--text-secondary);
+    padding: 11px 14px; cursor: pointer; white-space: nowrap;
+    border-bottom: 2px solid transparent; margin-bottom: -1px;
+    transition: color .12s ease, border-color .12s ease;
+}
+.brand-tab:hover { color: var(--text-primary); }
+.brand-tab.active { color: var(--text-primary); border-bottom-color: var(--accent); }
+.tab-panel[hidden] { display: none; }
+/* §2.7: print expands every panel so PDF export captures all content */
+@media print {
+    .tab-panel[hidden] { display: block !important; }
+    .brand-tabs { display: none !important; }
+}
+
 /* Inline affiliate disclosure above CTA buttons */
 .affiliate-inline-disclosure {
     margin: .5rem 0 .35rem;

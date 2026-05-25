@@ -230,6 +230,16 @@
         </p>
     </header>
 
+    <nav class="brand-tabs" id="brand-tabs" role="tablist" aria-label="Brand sections">
+        <button class="brand-tab active" role="tab" data-tab="overview" aria-selected="true">Overview</button>
+        <button class="brand-tab" role="tab" data-tab="revenue" aria-selected="false">Revenue</button>
+        <button class="brand-tab" role="tab" data-tab="outlets" aria-selected="false">Outlet Network</button>
+        <button class="brand-tab" role="tab" data-tab="investment" aria-selected="false">Investment &amp; Fees</button>
+        <button class="brand-tab" role="tab" data-tab="validate" aria-selected="false">Validate</button>
+        <button class="brand-tab" role="tab" data-tab="compare" aria-selected="false">Compare</button>
+    </nav>
+
+    <div class="tab-panel" data-tab="overview">
     <section class="facts" id="fast-facts" aria-label="Quick facts">
         <div class="fact fact-hero">
             <span class="label">Total investment</span>
@@ -302,6 +312,7 @@
         <p>It sits alongside 15 other tech services franchises in our database with a higher-than-typical investment requirement. Other tech services franchises tracked here include Cloudbound and CMIT Solutions. By outlet count (254), Any Lab Test Now is one of the larger operators in this category.</p>
     </section>
 
+    </div>    <div class="tab-panel" data-tab="validate" hidden>
     <section class="breakeven-section" id="breakeven">
         <h2>How long until you recover your investment?</h2>
         <p class="further-reading"><a href="/Datamaker-relux/guides/franchise-breakeven-how-long/">→ Guide: operational vs investment vs wage-replacement breakeven (three different things)</a></p>
@@ -531,6 +542,7 @@ Industry-typical for Tech Services: 40%. Covers COGS + rent + labor + admin. Exc
         <script type="application/json" id="calc-defaults">{"revenue": 240000, "revenue_source": "Median across 5 disclosed cohorts \u2014 no broad-cohort data, so this is the best signal available", "revenue_p25": 150000, "revenue_p50": 240000, "revenue_p75": 330000, "investment": 250000, "investment_low": 180000, "investment_high": 320000, "royalty": 7, "marketing": 2, "tech_fee_monthly": 350, "op_cost_pct": 40, "gross_bookings_caveat": false, "industry_label": "Tech Services", "similar_brand_links": [{"slug": "signal", "name": "Signal"}, {"slug": "regus", "name": "Regus"}, {"slug": "eos-worldwide", "name": "EOS Worldwide"}, {"slug": "ubreakifix-by-asurion", "name": "UBREAKIFIX BY ASURION"}], "brand_name": "Any Lab Test Now", "brand_slug": "any-lab-test-now", "filing_year": 2026, "n_item19_records": 5, "cohort_kind": "performance_anchored", "ongoing_fees_text": "7% royalty + 2% marketing", "disclosure_kind": "formal", "disclosure_label": "Item 19 financial performance representations", "outlet_breakdown": {"latest_year": 2025, "total_latest": 254, "franchised_latest": 247, "company_owned_latest": 7}, "op_cost_generic_pct": 40, "op_cost_clamped": false}</script>
     </section>
 
+    </div>    <div class="tab-panel" data-tab="investment" hidden>
     <section id="fees-detail">
         <h2>Fees &amp; investment</h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -555,6 +567,7 @@ Industry-typical for Tech Services: 40%. Covers COGS + rent + labor + admin. Exc
         </table>
 <p class="notes">Standard Initial Franchise Fee is $54,500 for a Stand-Alone Business and $27,200 for a Micro Market Business. Reduced fees apply for existing franchisees opening additional locations (as low as $13,600 for Micro Market or $27,200 for Stand-Alone on 7th+ unit). A 10% discount is offered to honorably discharged U.S. veterans via the IFA VetFran Program. During fiscal year ended December 31, 2025, fees actually ranged from $5,450 (ARCPoint franchisee incentive program) to $54,500. An additional Initial Training Fee of $7,500 is required. MUD Agreement fees are calculated as the full Initial Franchise Fee for the first unit plus 50% for each additional committed unit; MUD Fees ranged from $5,450 to $40,875 in the last fiscal year. All fees are fully earned upon payment with no refunds.</p>    </section>
 
+    </div>    <div class="tab-panel" data-tab="revenue" hidden>
     <section id="item19">
         <h2><a class="jargon" href="/Datamaker-relux/methodology/#g-item19" title="See glossary: Item 19 is the section of an FDD where franchisors disclose actual financial performance.">Item 19</a> — <a class="jargon" href="/Datamaker-relux/methodology/#g-fpr" title="Financial Performance Representations — the formal name for Item 19 disclosures.">Financial performance representations</a></h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -704,6 +717,7 @@ Industry-typical for Tech Services: 40%. Covers COGS + rent + labor + admin. Exc
         </form>
     </aside>
 
+    </div>    <div class="tab-panel" data-tab="outlets" hidden>
     <section id="outlet-growth">
         <h2>Outlet growth (<a class="jargon" href="/Datamaker-relux/methodology/#g-item20" title="Item 20 of the FDD is the required state-by-state outlet activity table — openings, closures, terminations, transfers per year.">Item 20</a>)</h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -788,7 +802,8 @@ Industry-typical for Tech Services: 40%. Covers COGS + rent + labor + admin. Exc
         </details>
     </section>
 
-<section class="considering-franchise">
+</div>    <div class="tab-panel" data-tab="compare" hidden>
+    <section class="considering-franchise">
         <h2>Considering this franchise?</h2>
         <p class="subtitle">The FDD data above is a starting point. Three concrete next steps, in the order most buyers tackle them:</p>
 
@@ -1012,7 +1027,7 @@ Industry-typical for Tech Services: 40%. Covers COGS + rent + labor + admin. Exc
         </div>
     </section>
 
-    <section class="sources" id="sources">
+    </div>    <section class="sources" id="sources">
         <h3>Source</h3>
         <p>
             Data extracted from the 2026 FDD filed in MN
@@ -1686,6 +1701,38 @@ new Chart(roiCtx, {
     form.addEventListener('input', recalc);
     form.addEventListener('change', recalc);
     recalc();
+    window.fdRecalc = recalc;  // §2: lets the tab system refresh rampChart on Validate-show
+})();
+</script>
+<script>
+/* §2 brand-profile tab system — wrap-in-place panels; one visible at a time.
+   Charts init at 0×0 while their panel is hidden, so resize() on show. */
+(function () {
+  var tabs = [].slice.call(document.querySelectorAll('.brand-tab'));
+  var panels = [].slice.call(document.querySelectorAll('.tab-panel'));
+  if (!tabs.length) return;
+  function showTab(name) {
+    panels.forEach(function (p) { p.hidden = (p.dataset.tab !== name); });
+    tabs.forEach(function (t) {
+      var on = t.dataset.tab === name;
+      t.classList.toggle('active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    document.querySelectorAll('.tab-panel[data-tab="' + name + '"] canvas').forEach(function (c) {
+      if (window.Chart) { var ch = Chart.getChart(c); if (ch) ch.resize(); }
+    });
+    if (name === 'validate' && typeof window.fdRecalc === 'function') window.fdRecalc();
+  }
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      showTab(t.dataset.tab);
+      history.replaceState(null, '', '#' + t.dataset.tab);
+      var nav = document.getElementById('brand-tabs');
+      if (nav) window.scrollTo({ top: nav.offsetTop - 8, behavior: 'smooth' });
+    });
+  });
+  var hash = (location.hash || '').replace('#', '');
+  showTab(tabs.some(function (t) { return t.dataset.tab === hash; }) ? hash : 'overview');
 })();
 </script>
     </main>

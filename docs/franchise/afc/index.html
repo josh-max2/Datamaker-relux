@@ -229,6 +229,16 @@
         </p>
     </header>
 
+    <nav class="brand-tabs" id="brand-tabs" role="tablist" aria-label="Brand sections">
+        <button class="brand-tab active" role="tab" data-tab="overview" aria-selected="true">Overview</button>
+        <button class="brand-tab" role="tab" data-tab="revenue" aria-selected="false">Revenue</button>
+        <button class="brand-tab" role="tab" data-tab="outlets" aria-selected="false">Outlet Network</button>
+        <button class="brand-tab" role="tab" data-tab="investment" aria-selected="false">Investment &amp; Fees</button>
+        <button class="brand-tab" role="tab" data-tab="validate" aria-selected="false">Validate</button>
+        <button class="brand-tab" role="tab" data-tab="compare" aria-selected="false">Compare</button>
+    </nav>
+
+    <div class="tab-panel" data-tab="overview">
     <section class="facts" id="fast-facts" aria-label="Quick facts">
         <div class="fact fact-hero">
             <span class="label">Total investment</span>
@@ -289,6 +299,7 @@
         <p>It sits alongside 156 other food quick service franchises in our database with a higher-than-typical investment requirement. Other food quick service franchises tracked here include 16 Handles and 7 BREW.</p>
     </section>
 
+    </div>    <div class="tab-panel" data-tab="validate" hidden>
     <section class="breakeven-section" id="breakeven">
         <h2>How long until you recover your investment?</h2>
         <p class="further-reading"><a href="/Datamaker-relux/guides/franchise-breakeven-how-long/">→ Guide: operational vs investment vs wage-replacement breakeven (three different things)</a></p>
@@ -507,6 +518,7 @@ Set to 72% — raised from the Food Quick Service industry-typical 70% so the de
         <script type="application/json" id="calc-defaults">{"revenue": 1650000, "revenue_source": "Median of 1 broad franchised cohort in this FDD", "revenue_p25": null, "revenue_p50": null, "revenue_p75": null, "investment": 1250000, "investment_low": 950000, "investment_high": 1525000, "royalty": 6, "marketing": 1, "tech_fee_monthly": 275, "op_cost_pct": 72, "gross_bookings_caveat": false, "industry_label": "Food Quick Service", "similar_brand_links": [{"slug": "subway", "name": "Subway"}, {"slug": "mcdonald-s", "name": "McDonald's"}, {"slug": "dunkin", "name": "Dunkin'"}, {"slug": "domino-s", "name": "Domino's"}], "brand_name": "AFC", "brand_slug": "afc", "filing_year": 2026, "n_item19_records": 1, "cohort_kind": "performance_anchored", "ongoing_fees_text": "6% royalty + 1% marketing", "disclosure_kind": "formal", "disclosure_label": "Item 19 financial performance representations", "outlet_breakdown": {"latest_year": 2024, "total_latest": 386, "franchised_latest": 304, "company_owned_latest": 82}, "op_cost_generic_pct": 70, "op_cost_clamped": true}</script>
     </section>
 
+    </div>    <div class="tab-panel" data-tab="investment" hidden>
     <section id="fees-detail">
         <h2>Fees &amp; investment</h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -545,6 +557,7 @@ Set to 72% — raised from the Food Quick Service industry-typical 70% so the de
         </table>
 <p class="notes">Standard fee $60,000; reduced to $50,000 for 1st Additional Franchise under ADA and $45,000 for each subsequent; $45,000 per center for concurrent conversion of 2 businesses into Conversion Centers</p>    </section>
 
+    </div>    <div class="tab-panel" data-tab="revenue" hidden>
     <section id="item19">
         <h2><a class="jargon" href="/Datamaker-relux/methodology/#g-item19" title="See glossary: Item 19 is the section of an FDD where franchisors disclose actual financial performance.">Item 19</a> — <a class="jargon" href="/Datamaker-relux/methodology/#g-fpr" title="Financial Performance Representations — the formal name for Item 19 disclosures.">Financial performance representations</a></h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -931,6 +944,7 @@ Set to 72% — raised from the Food Quick Service industry-typical 70% so the de
         </form>
     </aside>
 
+    </div>    <div class="tab-panel" data-tab="outlets" hidden>
     <section id="outlet-growth">
         <h2>Outlet growth (<a class="jargon" href="/Datamaker-relux/methodology/#g-item20" title="Item 20 of the FDD is the required state-by-state outlet activity table — openings, closures, terminations, transfers per year.">Item 20</a>)</h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -983,7 +997,8 @@ Set to 72% — raised from the Food Quick Service industry-typical 70% so the de
     </section>
 
 
-<section class="considering-franchise">
+</div>    <div class="tab-panel" data-tab="compare" hidden>
+    <section class="considering-franchise">
         <h2>Considering this franchise?</h2>
         <p class="subtitle">The FDD data above is a starting point. Three concrete next steps, in the order most buyers tackle them:</p>
         <p class="further-reading">New to food / QSR franchises? Read <a href="/Datamaker-relux/guides/evaluating-a-food-franchise/">how to evaluate a food / QSR franchise →</a> — the economics specific to this category.</p>
@@ -1186,7 +1201,7 @@ Set to 72% — raised from the Food Quick Service industry-typical 70% so the de
         </div>
     </section>
 
-    <section class="sources" id="sources">
+    </div>    <section class="sources" id="sources">
         <h3>Source</h3>
         <p>
             Data extracted from the 2026 FDD filed in MN
@@ -1875,6 +1890,38 @@ new Chart(roiCtx, {
     form.addEventListener('input', recalc);
     form.addEventListener('change', recalc);
     recalc();
+    window.fdRecalc = recalc;  // §2: lets the tab system refresh rampChart on Validate-show
+})();
+</script>
+<script>
+/* §2 brand-profile tab system — wrap-in-place panels; one visible at a time.
+   Charts init at 0×0 while their panel is hidden, so resize() on show. */
+(function () {
+  var tabs = [].slice.call(document.querySelectorAll('.brand-tab'));
+  var panels = [].slice.call(document.querySelectorAll('.tab-panel'));
+  if (!tabs.length) return;
+  function showTab(name) {
+    panels.forEach(function (p) { p.hidden = (p.dataset.tab !== name); });
+    tabs.forEach(function (t) {
+      var on = t.dataset.tab === name;
+      t.classList.toggle('active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    document.querySelectorAll('.tab-panel[data-tab="' + name + '"] canvas').forEach(function (c) {
+      if (window.Chart) { var ch = Chart.getChart(c); if (ch) ch.resize(); }
+    });
+    if (name === 'validate' && typeof window.fdRecalc === 'function') window.fdRecalc();
+  }
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      showTab(t.dataset.tab);
+      history.replaceState(null, '', '#' + t.dataset.tab);
+      var nav = document.getElementById('brand-tabs');
+      if (nav) window.scrollTo({ top: nav.offsetTop - 8, behavior: 'smooth' });
+    });
+  });
+  var hash = (location.hash || '').replace('#', '');
+  showTab(tabs.some(function (t) { return t.dataset.tab === hash; }) ? hash : 'overview');
 })();
 </script>
     </main>

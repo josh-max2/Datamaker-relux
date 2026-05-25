@@ -230,6 +230,16 @@
         </p>
     </header>
 
+    <nav class="brand-tabs" id="brand-tabs" role="tablist" aria-label="Brand sections">
+        <button class="brand-tab active" role="tab" data-tab="overview" aria-selected="true">Overview</button>
+        <button class="brand-tab" role="tab" data-tab="revenue" aria-selected="false">Revenue</button>
+        <button class="brand-tab" role="tab" data-tab="outlets" aria-selected="false">Outlet Network</button>
+        <button class="brand-tab" role="tab" data-tab="investment" aria-selected="false">Investment &amp; Fees</button>
+        <button class="brand-tab" role="tab" data-tab="validate" aria-selected="false">Validate</button>
+        <button class="brand-tab" role="tab" data-tab="compare" aria-selected="false">Compare</button>
+    </nav>
+
+    <div class="tab-panel" data-tab="overview">
     <section class="facts" id="fast-facts" aria-label="Quick facts">
         <div class="fact fact-hero">
             <span class="label">Total investment</span>
@@ -302,6 +312,7 @@
         <p>It sits alongside 22 other pet services franchises in our database with an investment requirement in line with category peers. Other pet services franchises tracked here include Aussie Pet Mobile and Bark Busters. With 22 outlets, AAAC Wildlife Removal is on the smaller side of this category.</p>
     </section>
 
+    </div>    <div class="tab-panel" data-tab="validate" hidden>
     <section class="breakeven-section" id="breakeven">
         <h2>How long until you recover your investment?</h2>
         <p class="further-reading"><a href="/Datamaker-relux/guides/franchise-breakeven-how-long/">→ Guide: operational vs investment vs wage-replacement breakeven (three different things)</a></p>
@@ -531,6 +542,7 @@ Industry-typical for Pet Services: 55%. Covers COGS + rent + labor + admin. Excl
         <script type="application/json" id="calc-defaults">{"revenue": 290000, "revenue_source": "Median across 4 disclosed cohorts \u2014 no broad-cohort data, so this is the best signal available", "revenue_p25": 220000, "revenue_p50": 350000, "revenue_p75": 350000, "investment": 110000, "investment_low": 60000, "investment_high": 160000, "royalty": 7, "marketing": 1, "tech_fee_monthly": 250, "op_cost_pct": 55, "gross_bookings_caveat": false, "industry_label": "Pet Services", "similar_brand_links": [{"slug": "pet-supplies-plus", "name": "Pet Supplies Plus"}, {"slug": "mighty-dog-roofing", "name": "Mighty Dog Roofing"}, {"slug": "wild-birds-unlimited", "name": "WILD BIRDS UNLIMITED"}, {"slug": "dogtopia", "name": "Dogtopia"}], "brand_name": "AAAC Wildlife Removal", "brand_slug": "aaac-wildlife-removal", "filing_year": 2025, "n_item19_records": 4, "cohort_kind": "natural", "ongoing_fees_text": "7% royalty + 1% marketing", "disclosure_kind": "formal", "disclosure_label": "Item 19 financial performance representations", "outlet_breakdown": {"latest_year": 2024, "total_latest": 22, "franchised_latest": 22, "company_owned_latest": 0}, "op_cost_generic_pct": 55, "op_cost_clamped": false}</script>
     </section>
 
+    </div>    <div class="tab-panel" data-tab="investment" hidden>
     <section id="fees-detail">
         <h2>Fees &amp; investment</h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -569,6 +581,7 @@ Industry-typical for Pet Services: 55%. Covers COGS + rent + labor + admin. Excl
         </table>
 <p class="notes">Fee varies by territory population size: &lt;500k=$35k, 500k-1M=$45k, 1M-2M=$50k, 2M+=$55k. Veterans receive 10% discount. Multi-unit discounts available: 25% off 2nd unit, 30% off 3rd, 35% off 4th, 40% off 5th+. Credit available for existing customers in territory.</p>    </section>
 
+    </div>    <div class="tab-panel" data-tab="revenue" hidden>
     <section id="item19">
         <h2><a class="jargon" href="/Datamaker-relux/methodology/#g-item19" title="See glossary: Item 19 is the section of an FDD where franchisors disclose actual financial performance.">Item 19</a> — <a class="jargon" href="/Datamaker-relux/methodology/#g-fpr" title="Financial Performance Representations — the formal name for Item 19 disclosures.">Financial performance representations</a></h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -681,6 +694,7 @@ Industry-typical for Pet Services: 55%. Covers COGS + rent + labor + admin. Excl
         </form>
     </aside>
 
+    </div>    <div class="tab-panel" data-tab="outlets" hidden>
     <section id="outlet-growth">
         <h2>Outlet growth (<a class="jargon" href="/Datamaker-relux/methodology/#g-item20" title="Item 20 of the FDD is the required state-by-state outlet activity table — openings, closures, terminations, transfers per year.">Item 20</a>)</h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -763,7 +777,8 @@ Industry-typical for Pet Services: 55%. Covers COGS + rent + labor + admin. Excl
         </details>
     </section>
 
-<section class="considering-franchise">
+</div>    <div class="tab-panel" data-tab="compare" hidden>
+    <section class="considering-franchise">
         <h2>Considering this franchise?</h2>
         <p class="subtitle">The FDD data above is a starting point. Three concrete next steps, in the order most buyers tackle them:</p>
 
@@ -980,7 +995,7 @@ Industry-typical for Pet Services: 55%. Covers COGS + rent + labor + admin. Excl
         </div>
     </section>
 
-    <section class="sources" id="sources">
+    </div>    <section class="sources" id="sources">
         <h3>Source</h3>
         <p>
             Data extracted from the 2025 FDD filed in WI
@@ -1683,6 +1698,38 @@ new Chart(roiCtx, {
     form.addEventListener('input', recalc);
     form.addEventListener('change', recalc);
     recalc();
+    window.fdRecalc = recalc;  // §2: lets the tab system refresh rampChart on Validate-show
+})();
+</script>
+<script>
+/* §2 brand-profile tab system — wrap-in-place panels; one visible at a time.
+   Charts init at 0×0 while their panel is hidden, so resize() on show. */
+(function () {
+  var tabs = [].slice.call(document.querySelectorAll('.brand-tab'));
+  var panels = [].slice.call(document.querySelectorAll('.tab-panel'));
+  if (!tabs.length) return;
+  function showTab(name) {
+    panels.forEach(function (p) { p.hidden = (p.dataset.tab !== name); });
+    tabs.forEach(function (t) {
+      var on = t.dataset.tab === name;
+      t.classList.toggle('active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    document.querySelectorAll('.tab-panel[data-tab="' + name + '"] canvas').forEach(function (c) {
+      if (window.Chart) { var ch = Chart.getChart(c); if (ch) ch.resize(); }
+    });
+    if (name === 'validate' && typeof window.fdRecalc === 'function') window.fdRecalc();
+  }
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      showTab(t.dataset.tab);
+      history.replaceState(null, '', '#' + t.dataset.tab);
+      var nav = document.getElementById('brand-tabs');
+      if (nav) window.scrollTo({ top: nav.offsetTop - 8, behavior: 'smooth' });
+    });
+  });
+  var hash = (location.hash || '').replace('#', '');
+  showTab(tabs.some(function (t) { return t.dataset.tab === hash; }) ? hash : 'overview');
 })();
 </script>
     </main>

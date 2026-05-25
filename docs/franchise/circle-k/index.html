@@ -233,6 +233,16 @@
         </p>
     </header>
 
+    <nav class="brand-tabs" id="brand-tabs" role="tablist" aria-label="Brand sections">
+        <button class="brand-tab active" role="tab" data-tab="overview" aria-selected="true">Overview</button>
+        <button class="brand-tab" role="tab" data-tab="revenue" aria-selected="false">Revenue</button>
+        <button class="brand-tab" role="tab" data-tab="outlets" aria-selected="false">Outlet Network</button>
+        <button class="brand-tab" role="tab" data-tab="investment" aria-selected="false">Investment &amp; Fees</button>
+        <button class="brand-tab" role="tab" data-tab="validate" aria-selected="false">Validate</button>
+        <button class="brand-tab" role="tab" data-tab="compare" aria-selected="false">Compare</button>
+    </nav>
+
+    <div class="tab-panel" data-tab="overview">
     <section class="facts" id="fast-facts" aria-label="Quick facts">
         <div class="fact fact-hero">
             <span class="label">Total investment</span>
@@ -300,6 +310,7 @@
         <p>It sits alongside 37 other retail services franchises in our database with a higher-than-typical investment requirement. Other retail services franchises tracked here include 7-Eleven and Aaron&#39;s. By outlet count (4,631), Circle K is one of the larger operators in this category.</p>
     </section>
 
+    </div>    <div class="tab-panel" data-tab="validate" hidden>
     <section class="breakeven-section" id="breakeven">
         <h2>How long until you recover your investment?</h2>
         <p class="further-reading"><a href="/Datamaker-relux/guides/franchise-breakeven-how-long/">→ Guide: operational vs investment vs wage-replacement breakeven (three different things)</a></p>
@@ -514,6 +525,7 @@ Set to 72% — raised from the Retail Services industry-typical 60% so the defau
         <script type="application/json" id="calc-defaults">{"revenue": 1450000, "revenue_source": "Median of 1 broad franchised cohort in this FDD", "revenue_p25": null, "revenue_p50": null, "revenue_p75": null, "investment": 5700000, "investment_low": 3100000, "investment_high": 8300000, "royalty": 3.5, "marketing": null, "tech_fee_monthly": null, "op_cost_pct": 72, "gross_bookings_caveat": false, "industry_label": "Retail Services", "similar_brand_links": [{"slug": "7-eleven", "name": "7-Eleven"}, {"slug": "the-ups-store", "name": "The UPS Store"}, {"slug": "ace-hardware", "name": "Ace Hardware"}, {"slug": "do-it-best", "name": "Do it Best"}], "brand_name": "Circle K", "brand_slug": "circle-k", "filing_year": 2025, "n_item19_records": 1, "cohort_kind": "performance_anchored", "ongoing_fees_text": "3.5% royalty", "disclosure_kind": "formal", "disclosure_label": "Item 19 financial performance representations", "outlet_breakdown": {"latest_year": 2025, "total_latest": 4631, "franchised_latest": 54, "company_owned_latest": 4577}, "op_cost_generic_pct": 60, "op_cost_clamped": true}</script>
     </section>
 
+    </div>    <div class="tab-panel" data-tab="investment" hidden>
     <section id="fees-detail">
         <h2>Fees &amp; investment</h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -550,6 +562,7 @@ Set to 72% — raised from the Retail Services industry-typical 60% so the defau
         </table>
 <p class="notes">Standard single-unit fee. Multiple units: $15,000 for 2nd-5th, $10,000 for 6-9, $7,500 for 10-19, $5,000 for 20+. Conversion discount: 25% off. Vet Fran: 10% discount available.</p>    </section>
 
+    </div>    <div class="tab-panel" data-tab="revenue" hidden>
     <section id="item19">
         <h2><a class="jargon" href="/Datamaker-relux/methodology/#g-item19" title="See glossary: Item 19 is the section of an FDD where franchisors disclose actual financial performance.">Item 19</a> — <a class="jargon" href="/Datamaker-relux/methodology/#g-fpr" title="Financial Performance Representations — the formal name for Item 19 disclosures.">Financial performance representations</a></h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -1009,6 +1022,7 @@ Set to 72% — raised from the Retail Services industry-typical 60% so the defau
         </form>
     </aside>
 
+    </div>    <div class="tab-panel" data-tab="outlets" hidden>
     <section id="outlet-growth">
         <h2>Outlet growth (<a class="jargon" href="/Datamaker-relux/methodology/#g-item20" title="Item 20 of the FDD is the required state-by-state outlet activity table — openings, closures, terminations, transfers per year.">Item 20</a>)</h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -1093,7 +1107,8 @@ Set to 72% — raised from the Retail Services industry-typical 60% so the defau
         </details>
     </section>
 
-<section class="considering-franchise">
+</div>    <div class="tab-panel" data-tab="compare" hidden>
+    <section class="considering-franchise">
         <h2>Considering this franchise?</h2>
         <p class="subtitle">The FDD data above is a starting point. Three concrete next steps, in the order most buyers tackle them:</p>
 
@@ -1317,7 +1332,7 @@ Set to 72% — raised from the Retail Services industry-typical 60% so the defau
         </div>
     </section>
 
-    <section class="sources" id="sources">
+    </div>    <section class="sources" id="sources">
         <h3>Source</h3>
         <p>
             Data extracted from the 2025 FDD filed in UNKNOWN
@@ -2020,6 +2035,38 @@ new Chart(roiCtx, {
     form.addEventListener('input', recalc);
     form.addEventListener('change', recalc);
     recalc();
+    window.fdRecalc = recalc;  // §2: lets the tab system refresh rampChart on Validate-show
+})();
+</script>
+<script>
+/* §2 brand-profile tab system — wrap-in-place panels; one visible at a time.
+   Charts init at 0×0 while their panel is hidden, so resize() on show. */
+(function () {
+  var tabs = [].slice.call(document.querySelectorAll('.brand-tab'));
+  var panels = [].slice.call(document.querySelectorAll('.tab-panel'));
+  if (!tabs.length) return;
+  function showTab(name) {
+    panels.forEach(function (p) { p.hidden = (p.dataset.tab !== name); });
+    tabs.forEach(function (t) {
+      var on = t.dataset.tab === name;
+      t.classList.toggle('active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    document.querySelectorAll('.tab-panel[data-tab="' + name + '"] canvas').forEach(function (c) {
+      if (window.Chart) { var ch = Chart.getChart(c); if (ch) ch.resize(); }
+    });
+    if (name === 'validate' && typeof window.fdRecalc === 'function') window.fdRecalc();
+  }
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      showTab(t.dataset.tab);
+      history.replaceState(null, '', '#' + t.dataset.tab);
+      var nav = document.getElementById('brand-tabs');
+      if (nav) window.scrollTo({ top: nav.offsetTop - 8, behavior: 'smooth' });
+    });
+  });
+  var hash = (location.hash || '').replace('#', '');
+  showTab(tabs.some(function (t) { return t.dataset.tab === hash; }) ? hash : 'overview');
 })();
 </script>
     </main>

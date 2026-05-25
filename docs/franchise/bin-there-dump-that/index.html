@@ -230,6 +230,16 @@
         </p>
     </header>
 
+    <nav class="brand-tabs" id="brand-tabs" role="tablist" aria-label="Brand sections">
+        <button class="brand-tab active" role="tab" data-tab="overview" aria-selected="true">Overview</button>
+        <button class="brand-tab" role="tab" data-tab="revenue" aria-selected="false">Revenue</button>
+        <button class="brand-tab" role="tab" data-tab="outlets" aria-selected="false">Outlet Network</button>
+        <button class="brand-tab" role="tab" data-tab="investment" aria-selected="false">Investment &amp; Fees</button>
+        <button class="brand-tab" role="tab" data-tab="validate" aria-selected="false">Validate</button>
+        <button class="brand-tab" role="tab" data-tab="compare" aria-selected="false">Compare</button>
+    </nav>
+
+    <div class="tab-panel" data-tab="overview">
     <section class="facts" id="fast-facts" aria-label="Quick facts">
         <div class="fact fact-hero">
             <span class="label">Total investment</span>
@@ -302,6 +312,7 @@
         <p>It sits alongside 12 other moving franchises in our database with a higher-than-typical investment requirement. Other moving franchises tracked here include 1-800-GOT-JUNK? and 1-800-PACKOUTS.</p>
     </section>
 
+    </div>    <div class="tab-panel" data-tab="validate" hidden>
     <section class="breakeven-section" id="breakeven">
         <h2>How long until you recover your investment?</h2>
         <p class="further-reading"><a href="/Datamaker-relux/guides/franchise-breakeven-how-long/">→ Guide: operational vs investment vs wage-replacement breakeven (three different things)</a></p>
@@ -531,6 +542,7 @@ Set to 54% — raised from the Moving industry-typical 50% so the default profit
         <script type="application/json" id="calc-defaults">{"revenue": 280000, "revenue_source": "Median of 3 broad franchised cohorts in this FDD", "revenue_p25": 280000, "revenue_p50": 280000, "revenue_p75": 310000, "investment": 220000, "investment_low": 130000, "investment_high": 310000, "royalty": null, "marketing": null, "tech_fee_monthly": 500, "op_cost_pct": 54, "gross_bookings_caveat": false, "industry_label": "Moving", "similar_brand_links": [{"slug": "smash-my-trash", "name": "Smash My Trash"}, {"slug": "two-men-and-a-truck", "name": "Two Men and a Truck"}, {"slug": "junk-king", "name": "Junk King"}, {"slug": "1-800-got-junk", "name": "1-800-GOT-JUNK?"}], "brand_name": "Bin There Dump That", "brand_slug": "bin-there-dump-that", "filing_year": 2026, "n_item19_records": 3, "cohort_kind": "natural", "ongoing_fees_text": "$500/month combined fees", "disclosure_kind": "formal", "disclosure_label": "Item 19 financial performance representations", "outlet_breakdown": {"latest_year": 2025, "total_latest": null, "franchised_latest": 244, "company_owned_latest": null}, "op_cost_generic_pct": 50, "op_cost_clamped": true}</script>
     </section>
 
+    </div>    <div class="tab-panel" data-tab="investment" hidden>
     <section id="fees-detail">
         <h2>Fees &amp; investment</h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -553,6 +565,7 @@ Set to 54% — raised from the Moving industry-typical 50% so the default profit
         </table>
 <p class="notes">Varies by territory population. Base fee $29,000 plus $1,000 per 25,000 persons over 125,000 base population.</p>    </section>
 
+    </div>    <div class="tab-panel" data-tab="revenue" hidden>
     <section id="item19">
         <h2><a class="jargon" href="/Datamaker-relux/methodology/#g-item19" title="See glossary: Item 19 is the section of an FDD where franchisors disclose actual financial performance.">Item 19</a> — <a class="jargon" href="/Datamaker-relux/methodology/#g-fpr" title="Financial Performance Representations — the formal name for Item 19 disclosures.">Financial performance representations</a></h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -731,6 +744,7 @@ Set to 54% — raised from the Moving industry-typical 50% so the default profit
         </form>
     </aside>
 
+    </div>    <div class="tab-panel" data-tab="outlets" hidden>
     <section id="outlet-growth">
         <h2>Outlet growth (<a class="jargon" href="/Datamaker-relux/methodology/#g-item20" title="Item 20 of the FDD is the required state-by-state outlet activity table — openings, closures, terminations, transfers per year.">Item 20</a>)</h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -808,7 +822,8 @@ Set to 54% — raised from the Moving industry-typical 50% so the default profit
         </details>
     </section>
 
-<section class="considering-franchise">
+</div>    <div class="tab-panel" data-tab="compare" hidden>
+    <section class="considering-franchise">
         <h2>Considering this franchise?</h2>
         <p class="subtitle">The FDD data above is a starting point. Three concrete next steps, in the order most buyers tackle them:</p>
         <p class="further-reading">New to home-services franchises? Read <a href="/Datamaker-relux/guides/evaluating-a-home-services-franchise/">how to evaluate a home-services franchise →</a> — the economics specific to this category.</p>
@@ -1022,7 +1037,7 @@ Set to 54% — raised from the Moving industry-typical 50% so the default profit
         </div>
     </section>
 
-    <section class="sources" id="sources">
+    </div>    <section class="sources" id="sources">
         <h3>Source</h3>
         <p>
             Data extracted from the 2026 FDD filed in WI
@@ -1725,6 +1740,38 @@ new Chart(roiCtx, {
     form.addEventListener('input', recalc);
     form.addEventListener('change', recalc);
     recalc();
+    window.fdRecalc = recalc;  // §2: lets the tab system refresh rampChart on Validate-show
+})();
+</script>
+<script>
+/* §2 brand-profile tab system — wrap-in-place panels; one visible at a time.
+   Charts init at 0×0 while their panel is hidden, so resize() on show. */
+(function () {
+  var tabs = [].slice.call(document.querySelectorAll('.brand-tab'));
+  var panels = [].slice.call(document.querySelectorAll('.tab-panel'));
+  if (!tabs.length) return;
+  function showTab(name) {
+    panels.forEach(function (p) { p.hidden = (p.dataset.tab !== name); });
+    tabs.forEach(function (t) {
+      var on = t.dataset.tab === name;
+      t.classList.toggle('active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    document.querySelectorAll('.tab-panel[data-tab="' + name + '"] canvas').forEach(function (c) {
+      if (window.Chart) { var ch = Chart.getChart(c); if (ch) ch.resize(); }
+    });
+    if (name === 'validate' && typeof window.fdRecalc === 'function') window.fdRecalc();
+  }
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      showTab(t.dataset.tab);
+      history.replaceState(null, '', '#' + t.dataset.tab);
+      var nav = document.getElementById('brand-tabs');
+      if (nav) window.scrollTo({ top: nav.offsetTop - 8, behavior: 'smooth' });
+    });
+  });
+  var hash = (location.hash || '').replace('#', '');
+  showTab(tabs.some(function (t) { return t.dataset.tab === hash; }) ? hash : 'overview');
 })();
 </script>
     </main>

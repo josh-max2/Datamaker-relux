@@ -230,6 +230,16 @@
         </p>
     </header>
 
+    <nav class="brand-tabs" id="brand-tabs" role="tablist" aria-label="Brand sections">
+        <button class="brand-tab active" role="tab" data-tab="overview" aria-selected="true">Overview</button>
+        <button class="brand-tab" role="tab" data-tab="revenue" aria-selected="false">Revenue</button>
+        <button class="brand-tab" role="tab" data-tab="outlets" aria-selected="false">Outlet Network</button>
+        <button class="brand-tab" role="tab" data-tab="investment" aria-selected="false">Investment &amp; Fees</button>
+        <button class="brand-tab" role="tab" data-tab="validate" aria-selected="false">Validate</button>
+        <button class="brand-tab" role="tab" data-tab="compare" aria-selected="false">Compare</button>
+    </nav>
+
+    <div class="tab-panel" data-tab="overview">
     <section class="facts" id="fast-facts" aria-label="Quick facts">
         <div class="fact fact-hero">
             <span class="label">Total investment</span>
@@ -303,6 +313,7 @@
         <p>It sits alongside 156 other food quick service franchises in our database with a higher-than-typical investment requirement. Other food quick service franchises tracked here include 16 Handles and 7 BREW. By outlet count (1,338), Cinnabon is one of the larger operators in this category.</p>
     </section>
 
+    </div>    <div class="tab-panel" data-tab="validate" hidden>
     <section class="breakeven-section" id="breakeven">
         <h2>How long until you recover your investment?</h2>
         <p class="further-reading"><a href="/Datamaker-relux/guides/franchise-breakeven-how-long/">→ Guide: operational vs investment vs wage-replacement breakeven (three different things)</a></p>
@@ -528,6 +539,7 @@ Industry-typical for Food Quick Service: 70%. Covers COGS + rent + labor + admin
         <script type="application/json" id="calc-defaults">{"revenue": 600000, "revenue_source": "Median of 3 broad franchised cohorts in this FDD", "revenue_p25": 160000, "revenue_p50": 600000, "revenue_p75": 1225000, "investment": 480000, "investment_low": 260000, "investment_high": 700000, "royalty": 6, "marketing": 2.5, "tech_fee_monthly": null, "op_cost_pct": 70, "gross_bookings_caveat": false, "industry_label": "Food Quick Service", "similar_brand_links": [{"slug": "subway", "name": "Subway"}, {"slug": "mcdonald-s", "name": "McDonald's"}, {"slug": "dunkin", "name": "Dunkin'"}, {"slug": "domino-s", "name": "Domino's"}], "brand_name": "Cinnabon", "brand_slug": "cinnabon", "filing_year": 2026, "n_item19_records": 3, "cohort_kind": "performance_anchored", "ongoing_fees_text": "6% royalty + 2.5% marketing", "disclosure_kind": "formal", "disclosure_label": "Item 19 financial performance representations", "outlet_breakdown": {"latest_year": 2025, "total_latest": 1338, "franchised_latest": 1310, "company_owned_latest": 28}, "op_cost_generic_pct": 70, "op_cost_clamped": false}</script>
     </section>
 
+    </div>    <div class="tab-panel" data-tab="investment" hidden>
     <section id="fees-detail">
         <h2>Fees &amp; investment</h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -551,6 +563,7 @@ Industry-typical for Food Quick Service: 70%. Covers COGS + rent + labor + admin
         </table>
 <p class="notes">Full Bakery: $35,500; Express Bakery: $8,000; Concession Bakery: $5,500; Auntie Anne&#39;s Co-Branded: $71,000 ($35,500 to Auntie Anne&#39;s); Carvel Co-Branded: $71,000 ($35,500 to Carvel). VetFran discount: $20,000 for Full Bakery. During 2025, franchisees paid $1,000 to $30,500.</p>    </section>
 
+    </div>    <div class="tab-panel" data-tab="revenue" hidden>
     <section id="item19">
         <h2><a class="jargon" href="/Datamaker-relux/methodology/#g-item19" title="See glossary: Item 19 is the section of an FDD where franchisors disclose actual financial performance.">Item 19</a> — <a class="jargon" href="/Datamaker-relux/methodology/#g-fpr" title="Financial Performance Representations — the formal name for Item 19 disclosures.">Financial performance representations</a></h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -807,6 +820,7 @@ Industry-typical for Food Quick Service: 70%. Covers COGS + rent + labor + admin
         </form>
     </aside>
 
+    </div>    <div class="tab-panel" data-tab="outlets" hidden>
     <section id="outlet-growth">
         <h2>Outlet growth (<a class="jargon" href="/Datamaker-relux/methodology/#g-item20" title="Item 20 of the FDD is the required state-by-state outlet activity table — openings, closures, terminations, transfers per year.">Item 20</a>)</h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -891,7 +905,8 @@ Industry-typical for Food Quick Service: 70%. Covers COGS + rent + labor + admin
         </details>
     </section>
 
-<section class="considering-franchise">
+</div>    <div class="tab-panel" data-tab="compare" hidden>
+    <section class="considering-franchise">
         <h2>Considering this franchise?</h2>
         <p class="subtitle">The FDD data above is a starting point. Three concrete next steps, in the order most buyers tackle them:</p>
         <p class="further-reading">New to food / QSR franchises? Read <a href="/Datamaker-relux/guides/evaluating-a-food-franchise/">how to evaluate a food / QSR franchise →</a> — the economics specific to this category.</p>
@@ -1116,7 +1131,7 @@ Industry-typical for Food Quick Service: 70%. Covers COGS + rent + labor + admin
         </div>
     </section>
 
-    <section class="sources" id="sources">
+    </div>    <section class="sources" id="sources">
         <h3>Source</h3>
         <p>
             Data extracted from the 2026 FDD filed in WI
@@ -1819,6 +1834,38 @@ new Chart(roiCtx, {
     form.addEventListener('input', recalc);
     form.addEventListener('change', recalc);
     recalc();
+    window.fdRecalc = recalc;  // §2: lets the tab system refresh rampChart on Validate-show
+})();
+</script>
+<script>
+/* §2 brand-profile tab system — wrap-in-place panels; one visible at a time.
+   Charts init at 0×0 while their panel is hidden, so resize() on show. */
+(function () {
+  var tabs = [].slice.call(document.querySelectorAll('.brand-tab'));
+  var panels = [].slice.call(document.querySelectorAll('.tab-panel'));
+  if (!tabs.length) return;
+  function showTab(name) {
+    panels.forEach(function (p) { p.hidden = (p.dataset.tab !== name); });
+    tabs.forEach(function (t) {
+      var on = t.dataset.tab === name;
+      t.classList.toggle('active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    document.querySelectorAll('.tab-panel[data-tab="' + name + '"] canvas').forEach(function (c) {
+      if (window.Chart) { var ch = Chart.getChart(c); if (ch) ch.resize(); }
+    });
+    if (name === 'validate' && typeof window.fdRecalc === 'function') window.fdRecalc();
+  }
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      showTab(t.dataset.tab);
+      history.replaceState(null, '', '#' + t.dataset.tab);
+      var nav = document.getElementById('brand-tabs');
+      if (nav) window.scrollTo({ top: nav.offsetTop - 8, behavior: 'smooth' });
+    });
+  });
+  var hash = (location.hash || '').replace('#', '');
+  showTab(tabs.some(function (t) { return t.dataset.tab === hash; }) ? hash : 'overview');
 })();
 </script>
     </main>

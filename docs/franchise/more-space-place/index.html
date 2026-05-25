@@ -233,6 +233,16 @@
         </p>
     </header>
 
+    <nav class="brand-tabs" id="brand-tabs" role="tablist" aria-label="Brand sections">
+        <button class="brand-tab active" role="tab" data-tab="overview" aria-selected="true">Overview</button>
+        <button class="brand-tab" role="tab" data-tab="revenue" aria-selected="false">Revenue</button>
+        <button class="brand-tab" role="tab" data-tab="outlets" aria-selected="false">Outlet Network</button>
+        <button class="brand-tab" role="tab" data-tab="investment" aria-selected="false">Investment &amp; Fees</button>
+        <button class="brand-tab" role="tab" data-tab="validate" aria-selected="false">Validate</button>
+        <button class="brand-tab" role="tab" data-tab="compare" aria-selected="false">Compare</button>
+    </nav>
+
+    <div class="tab-panel" data-tab="overview">
     <section class="facts" id="fast-facts" aria-label="Quick facts">
         <div class="fact fact-hero">
             <span class="label">Total investment</span>
@@ -305,6 +315,7 @@
         <p>It sits alongside 24 other outdoor franchises in our database with a higher-than-typical investment requirement. Other outdoor franchises tracked here include American Poolplayers Association and Archadeck Outdoor Living. With 27 outlets, More Space Place is on the smaller side of this category.</p>
     </section>
 
+    </div>    <div class="tab-panel" data-tab="validate" hidden>
     <section class="breakeven-section" id="breakeven">
         <h2>How long until you recover your investment?</h2>
         <p class="further-reading"><a href="/Datamaker-relux/guides/franchise-breakeven-how-long/">→ Guide: operational vs investment vs wage-replacement breakeven (three different things)</a></p>
@@ -534,6 +545,7 @@ Set to 64% — raised from the Outdoor industry-typical 45% so the default profi
         <script type="application/json" id="calc-defaults">{"revenue": 2700000, "revenue_source": "Median across 3 disclosed cohorts \u2014 no broad-cohort data, so this is the best signal available", "revenue_p25": 1425000, "revenue_p50": 2700000, "revenue_p75": 4800000, "investment": 210000, "investment_low": 160000, "investment_high": 250000, "royalty": 5, "marketing": null, "tech_fee_monthly": 100, "op_cost_pct": 64, "gross_bookings_caveat": false, "industry_label": "Outdoor", "similar_brand_links": [{"slug": "lawn-doctor", "name": "Lawn Doctor"}, {"slug": "mosquito-authority", "name": "Mosquito Authority"}, {"slug": "card-my-yard", "name": "Card My Yard"}, {"slug": "mosquito-shield", "name": "MOSQUITO SHIELD"}], "brand_name": "More Space Place", "brand_slug": "more-space-place", "filing_year": 2026, "n_item19_records": 3, "cohort_kind": "natural", "ongoing_fees_text": "5% royalty", "disclosure_kind": "formal", "disclosure_label": "Item 19 financial performance representations", "outlet_breakdown": {"latest_year": 2025, "total_latest": 27, "franchised_latest": 26, "company_owned_latest": 1}, "op_cost_generic_pct": 45, "op_cost_clamped": true}</script>
     </section>
 
+    </div>    <div class="tab-panel" data-tab="investment" hidden>
     <section id="fees-detail">
         <h2>Fees &amp; investment</h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -571,6 +583,7 @@ Set to 64% — raised from the Outdoor industry-typical 45% so the default profi
         </table>
 <p class="notes">Fee varies by number of territories purchased: $59,500 for 1 territory, $99,500 for 2 ($49,750 each), $134,500 for 3 ($44,833.33 each), $164,500 for 4 ($41,125 each), $194,500 for 5 ($38,900 each). Multi-territory discount requires all franchise agreements signed simultaneously. A 25% veteran&#39;s discount is available for honorably discharged veterans owning 51%+ of the franchised business (applied to first franchised business only), which would reduce the single-territory fee to $44,625. Fees are nonrefundable. Franchisor may negotiate fee for existing operators opening additional locations or takeovers.</p>    </section>
 
+    </div>    <div class="tab-panel" data-tab="revenue" hidden>
     <section id="item19">
         <h2><a class="jargon" href="/Datamaker-relux/methodology/#g-item19" title="See glossary: Item 19 is the section of an FDD where franchisors disclose actual financial performance.">Item 19</a> — <a class="jargon" href="/Datamaker-relux/methodology/#g-fpr" title="Financial Performance Representations — the formal name for Item 19 disclosures.">Financial performance representations</a></h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -762,6 +775,7 @@ Set to 64% — raised from the Outdoor industry-typical 45% so the default profi
         </form>
     </aside>
 
+    </div>    <div class="tab-panel" data-tab="outlets" hidden>
     <section id="outlet-growth">
         <h2>Outlet growth (<a class="jargon" href="/Datamaker-relux/methodology/#g-item20" title="Item 20 of the FDD is the required state-by-state outlet activity table — openings, closures, terminations, transfers per year.">Item 20</a>)</h2>
         <p class="data-vintage" title="The source filing's issue date and when we downloaded it.">
@@ -846,7 +860,8 @@ Set to 64% — raised from the Outdoor industry-typical 45% so the default profi
         </details>
     </section>
 
-<section class="considering-franchise">
+</div>    <div class="tab-panel" data-tab="compare" hidden>
+    <section class="considering-franchise">
         <h2>Considering this franchise?</h2>
         <p class="subtitle">The FDD data above is a starting point. Three concrete next steps, in the order most buyers tackle them:</p>
         <p class="further-reading">New to home-services franchises? Read <a href="/Datamaker-relux/guides/evaluating-a-home-services-franchise/">how to evaluate a home-services franchise →</a> — the economics specific to this category.</p>
@@ -1071,7 +1086,7 @@ Set to 64% — raised from the Outdoor industry-typical 45% so the default profi
         </div>
     </section>
 
-    <section class="sources" id="sources">
+    </div>    <section class="sources" id="sources">
         <h3>Source</h3>
         <p>
             Data extracted from the 2026 FDD filed in MN
@@ -1774,6 +1789,38 @@ new Chart(roiCtx, {
     form.addEventListener('input', recalc);
     form.addEventListener('change', recalc);
     recalc();
+    window.fdRecalc = recalc;  // §2: lets the tab system refresh rampChart on Validate-show
+})();
+</script>
+<script>
+/* §2 brand-profile tab system — wrap-in-place panels; one visible at a time.
+   Charts init at 0×0 while their panel is hidden, so resize() on show. */
+(function () {
+  var tabs = [].slice.call(document.querySelectorAll('.brand-tab'));
+  var panels = [].slice.call(document.querySelectorAll('.tab-panel'));
+  if (!tabs.length) return;
+  function showTab(name) {
+    panels.forEach(function (p) { p.hidden = (p.dataset.tab !== name); });
+    tabs.forEach(function (t) {
+      var on = t.dataset.tab === name;
+      t.classList.toggle('active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    document.querySelectorAll('.tab-panel[data-tab="' + name + '"] canvas').forEach(function (c) {
+      if (window.Chart) { var ch = Chart.getChart(c); if (ch) ch.resize(); }
+    });
+    if (name === 'validate' && typeof window.fdRecalc === 'function') window.fdRecalc();
+  }
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      showTab(t.dataset.tab);
+      history.replaceState(null, '', '#' + t.dataset.tab);
+      var nav = document.getElementById('brand-tabs');
+      if (nav) window.scrollTo({ top: nav.offsetTop - 8, behavior: 'smooth' });
+    });
+  });
+  var hash = (location.hash || '').replace('#', '');
+  showTab(tabs.some(function (t) { return t.dataset.tab === hash; }) ? hash : 'overview');
 })();
 </script>
     </main>
