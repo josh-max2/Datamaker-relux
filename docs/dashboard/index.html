@@ -1434,11 +1434,12 @@ a { color: var(--accent); }
 /* ===== FIX2: clean hero + 2-col with activity feed ===== */
 .hero-inner { display: flex; gap: 28px; align-items: flex-start; }
 .hero-main { flex: 1 1 auto; min-width: 0; }
-.dashboard-title { margin: 0 0 6px; font-size: 26px; letter-spacing: -0.01em; color: var(--text-primary); }
-.dashboard-subtitle { margin: 0 0 10px; font-size: 14px; color: var(--text-tertiary); }
-.dashboard-disclaimer-link { display: flex; gap: 16px; margin-bottom: 16px; }
-.dashboard-disclaimer-link a { font-size: 12.5px; color: var(--text-secondary); text-decoration: none; }
+.dashboard-title { margin: 0 0 8px; font-size: 42px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; color: var(--text-primary); }
+.dashboard-subtitle { margin: 0 0 16px; font-size: 15px; color: var(--text-secondary); }
+.dashboard-disclaimer-link { display: flex; gap: 16px; margin-bottom: 16px; font-size: 13px; }
+.dashboard-disclaimer-link a { color: var(--text-tertiary); text-decoration: none; }
 .dashboard-disclaimer-link a:hover { color: var(--accent); }
+@media (max-width: 720px) { .dashboard-title { font-size: 32px; } }
 
 /* ===== FIX5: activity feed widget (top-right of hero) ===== */
 .dashboard-activity-feed {
@@ -1459,19 +1460,30 @@ a { color: var(--accent); }
 .activity-feed-more { font-size: 12px; color: var(--accent); text-decoration: none; }
 @media (max-width: 900px) { .hero-inner { flex-direction: column; } .dashboard-activity-feed { flex-basis: auto; width: 100%; } }
 
-/* ===== FIX3: three-tier card hierarchy ===== */
-/* Tier 1 — hero KPI stats: most prominent */
+/* ===== Card hierarchy: KPI (primary) > insight (secondary) > data sections (tertiary) ===== */
+/* FIX A — KPI hero cards: the most prominent elements on the page */
 .kpi-card-3 {
-    background: var(--bg-surface-2); border: 1px solid var(--border-default);
-    border-radius: 12px; padding: 24px;
+    background: var(--bg-surface-2);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 28px 24px;
+    transition: transform .15s ease, box-shadow .15s ease;
 }
-.kpi-card-3 .big { font-size: 32px; font-weight: 700; color: var(--accent); }
-.kpi-card-3 .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--text-tertiary); }
+.kpi-card-3:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+.kpi-card-3 .lbl { font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 12px; }
+.kpi-card-3 .big { font-size: 44px; font-weight: 700; line-height: 1; color: var(--accent); font-variant-numeric: tabular-nums; letter-spacing: -.02em; margin-bottom: 8px; }
+.kpi-card-3 .ctx { font-size: 13px; color: var(--text-secondary); }
 /* Tier 2 — data sections: bordered, standard */
 .chart-card { background: var(--bg-surface-1); border: 1px solid var(--border-subtle); padding: 20px; }
 .chart-card .chart-title { font-size: 13px; text-transform: uppercase; letter-spacing: .03em; color: var(--text-tertiary); font-weight: 600; }
-/* Tier 3 — insight cards: subtle, supporting */
-.insight-card { background: transparent; border: 1px solid var(--border-subtle); border-radius: 8px; padding: 14px; }
+/* FIX C — insight cards: editorial callouts, role-distinct from KPI cards */
+.insight-strip { grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0; }
+.insight-card { background: transparent; border: 1px solid var(--border-subtle); border-radius: 8px; padding: 14px 16px; cursor: pointer; transition: border-color .15s ease, background .15s ease; }
+.insight-card:hover { border-color: var(--accent); background: var(--accent-quiet); transform: none; box-shadow: none; }
+.insight-card .hdr { font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+.insight-card .ttl { font-size: 14px; font-weight: 600; color: var(--text-primary); line-height: 1.3; margin-bottom: 4px; }
+.insight-card .sub { font-size: 12px; color: var(--text-tertiary); line-height: 1.4; }
+@media (max-width: 768px) { .insight-strip { grid-template-columns: repeat(2, 1fr); } }
 </style>
 </head>
 <body>
@@ -1904,7 +1916,7 @@ a { color: var(--accent); }
 </button>
 
 <!-- Footer with build timestamp + noindex marker -->
-<footer class="dash-footer">Generated 2026-05-25 13:19 · noindex/nofollow · internal-only</footer>
+<footer class="dash-footer">Generated 2026-05-25 13:36 · noindex/nofollow · internal-only</footer>
 
 <!-- v7 #13: Risk-weight slider drawer (bottom-right, collapsed by default) -->
 <aside id="weight-drawer" class="weight-drawer">
@@ -4029,7 +4041,7 @@ function renderInsightStrip(insights) {
     return;
   }
   strip.hidden = false;
-  strip.innerHTML = insights.cards.slice(0, 5).map((c, i) => `
+  strip.innerHTML = insights.cards.slice(0, 4).map((c, i) => `
     <button class="insight-card" data-card="${i}" type="button">
       <div class="hdr">${escHtml(c.hdr || 'Insight')}</div>
       <div class="ttl">${escHtml(c.ttl)}</div>

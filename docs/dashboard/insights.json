@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T13:19",
+  "generated_at": "2026-05-25T13:36",
   "n_brands": 631,
   "cards": [
     {
@@ -50,16 +50,6 @@
       "action": {
         "reset": true,
         "sortKey": "risk_score",
-        "sortDir": "desc"
-      }
-    },
-    {
-      "hdr": "FRESH FILINGS",
-      "ttl": "591 brands filed in 2025-2026",
-      "sub": "Most current disclosures in the corpus",
-      "action": {
-        "reset": true,
-        "sortKey": "filing_year",
         "sortDir": "desc"
       }
     }
