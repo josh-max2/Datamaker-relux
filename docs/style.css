@@ -5,10 +5,9 @@
 :root {
     /* --- Typography --- */
     --font-body:    'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    /* Source Serif is killed for product surfaces; --font-display now aliases body.
-       Editorial routes can opt-in via body.editorial-route (kept distinct fallback). */
-    --font-display: var(--font-body);
-    --font-mono:    'IBM Plex Mono', 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+    /* Display/headings use Inter Tight (optical-size-style tight headings). */
+    --font-display: 'Inter Tight', 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono:    'JetBrains Mono', 'SF Mono', Consolas, Menlo, monospace;
     --font-sans:    var(--font-body);   /* v2 spec alias */
 
     /* --- Surfaces (strict dark hierarchy) --- */
@@ -35,9 +34,10 @@
     --text-inverse:    #0A0E14;   /* on rare light surface */
 
     /* --- Accent (replaces electric blue everywhere) --- */
-    --accent:         #6B8AFF;
-    --accent-hover:   #8AA3FF;
-    --accent-quiet:   rgba(107, 138, 255, 0.12);
+    --accent:         #3b82f6;
+    --accent-hover:   #2563eb;
+    --accent-quiet:   rgba(59, 130, 246, 0.08);
+    --accent-strong:  #1d4ed8;
     --accent-faint:   rgba(107, 138, 255, 0.06);  /* v2 spec — softer tint for callout-insight */
 
     /* --- State heat map sequential ramp (v2 §3) --- */
@@ -150,8 +150,8 @@ body {
     font-family: var(--font-body);
     color: var(--text-primary);
     background: var(--bg-base);
-    line-height: 1.55;
-    font-feature-settings: "ss01", "cv11";  /* Inter's stylistic sets â€” subtle premium feel */
+    line-height: 1.5;
+    font-feature-settings: "cv11", "ss01", "ss03";  /* Inter stylistic sets — premium feel */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -362,8 +362,21 @@ main { padding: 2rem 0 4rem; }
 h1 { font-size: 1.9rem; margin: 0 0 .75rem; line-height: 1.2; }
 h2 { font-size: 1.35rem; margin: 2rem 0 .75rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: .35rem; }
 h3 { font-size: 1.05rem; margin: 1.25rem 0 .5rem; }
-p { margin: 0 0 1rem; }
+p { margin: 0 0 1rem; line-height: 1.55; }
 a { color: var(--accent); }
+
+/* === Typography upgrade: Inter Tight display headings + tabular numerics === */
+h1, h2, h3, .dashboard-title, .kpi-card-3 .big, .brand-hero-title,
+.brand-header h1, .quadrant-tile .q-count {
+    font-family: var(--font-display);
+    font-feature-settings: "cv11";
+    letter-spacing: -0.02em;
+}
+.num, td.num, .stat-value, .kpi-card-3 .big, .trend-value, .zscore-badge,
+.brand-hero-stats .stat-value, .q-count, .kpi-val {
+    font-variant-numeric: tabular-nums;
+}
+.small, .meta { font-size: 13px; line-height: 1.5; }
 a:hover { color: var(--accent-hover); }
 
 /* Hero */
@@ -4005,8 +4018,8 @@ header [data-component="logo"] {
 /* Catch-all H1 — including the dashboard's bare <h1> with no class. */
 h1, .h1, .display, h1.display, h2.display, .hero-luxury .display,
 .hero-title, .page-title, .brand-page-title, .dashboard-title {
-    font-family: var(--font-body) !important;
-    font-weight: 600 !important;
+    font-family: var(--font-display) !important;  /* Inter Tight — clean sans display, not serif */
+    font-weight: 700 !important;
     font-style: normal !important;
     letter-spacing: -0.02em !important;
 }
@@ -4186,9 +4199,10 @@ html[data-theme="light"] {
     --text-muted:     #94A3B8;
     --text-inverse:   #FFFFFF;
 
-    --accent:         #2563EB;
-    --accent-hover:   #1D4ED8;
-    --accent-quiet:   rgba(37, 99, 235, 0.08);
+    --accent:         #3b82f6;
+    --accent-hover:   #2563eb;
+    --accent-quiet:   rgba(59, 130, 246, 0.08);
+    --accent-strong:  #1d4ed8;
 
     --positive:        #047857;
     --positive-quiet:  rgba(4, 120, 87, 0.10);
