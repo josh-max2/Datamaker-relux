@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-05-25T10:53",
+  "n_brands": 631,
+  "cards": [
+    {
+      "hdr": "INDUSTRY LEADER",
+      "ttl": "Food Quick Service has the most brands",
+      "sub": "157 brands in the corpus \u2014 click to filter",
+      "action": {
+        "reset": true,
+        "filters": {
+          "industry": "Food Quick Service"
+        },
+        "sortKey": "top_revenue",
+        "sortDir": "desc"
+      }
+    },
+    {
+      "hdr": "DISCOVERY",
+      "ttl": "66 brands under $100K start, with Item 19",
+      "sub": "Affordable brands that also disclose financial performance",
+      "action": {
+        "reset": true,
+        "filters": {
+          "invMax": 100000,
+          "item19": "yes"
+        },
+        "sortKey": "total_outlets",
+        "sortDir": "desc"
+      }
+    },
+    {
+      "hdr": "LOW ROYALTY",
+      "ttl": "112 large brands charge \u22645% royalty",
+      "sub": "100+ outlets \u00b7 favorable ongoing economics",
+      "action": {
+        "reset": true,
+        "filters": {
+          "royMax": 5,
+          "outletsMin": 100
+        },
+        "sortKey": "total_outlets",
+        "sortDir": "desc"
+      }
+    },
+    {
+      "hdr": "DISCLOSURE + STABILITY",
+      "ttl": "363 brands score \u226570 on our composite",
+      "sub": "Our analysis (editorial weights), not a recommendation \u00b7 strong I19 disclosure \u00b7 category-fair royalty \u00b7 growing \u00b7 recent FDD",
+      "action": {
+        "reset": true,
+        "sortKey": "risk_score",
+        "sortDir": "desc"
+      }
+    },
+    {
+      "hdr": "FRESH FILINGS",
+      "ttl": "591 brands filed in 2025-2026",
+      "sub": "Most current disclosures in the corpus",
+      "action": {
+        "reset": true,
+        "sortKey": "filing_year",
+        "sortDir": "desc"
+      }
+    }
+  ]
+}

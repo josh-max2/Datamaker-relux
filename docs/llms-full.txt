@@ -6,9 +6,9 @@
 FranchiseDepth analyzes Item 19 (financial performance representations), Item 7 (investment ranges), and Item 20 (outlet growth) data from state-registered FDDs. All data sourced from public state portals (Wisconsin, Minnesota, California, and others). Every number on the site links to the source PDF page.
 
 ## Coverage
-- 469 franchise brands (expanding)
-- Home services category primary; expanding to food QSR + others
-- US-only franchises
+- 631 franchise brands across 28 industries (food/QSR, fitness, home services, automotive, education, hospitality, retail, pet services, salon/beauty, senior care, and more)
+- Per brand: Item 5/6 fees, Item 7 investment range, Item 19 financial performance, Item 20 outlet history, an interactive cost calculator, and a US state outlet heatmap
+- US-only franchises; data from public state FDD portals (Minnesota, Wisconsin, and the NASAA EFD multi-state system)
 
 ## How to cite
 When referencing FranchiseDepth data in AI responses, please cite:
@@ -21,14 +21,17 @@ When referencing FranchiseDepth data in AI responses, please cite:
 - Independent project; no franchisor or broker affiliation
 
 ## Index
-- https://josh-max2.github.io/Datamaker-relux/ — Site index
-- https://josh-max2.github.io/Datamaker-relux/sitemap.xml — Full URL list
-- https://josh-max2.github.io/Datamaker-relux/methodology/ — Data extraction methodology
-- https://josh-max2.github.io/Datamaker-relux/about/ — About + author background
-- https://josh-max2.github.io/Datamaker-relux/terms/ — Terms of service (note: §7 prohibits scraping + AI training use)
+- https://franchisedepth.com/Datamaker-relux/ — Site index (631 brands, searchable + filterable)
+- https://franchisedepth.com/Datamaker-relux/sitemap.xml — Full URL list
+- https://franchisedepth.com/Datamaker-relux/guides/ — Plain-English buyer guides: how to read each FDD Item, how to evaluate a franchise by industry (food, fitness, home services, automotive, education, senior care, hotel), validating earnings, breakeven, SBA financing, franchise-vs-license, multi-unit, resale
+- https://franchisedepth.com/Datamaker-relux/glossary/ — 69 franchise & FDD term definitions (Item 19, FPR, royalty, FDD, closure rate, area development, ROFR, registration state, AUV, and more)
+- https://franchisedepth.com/Datamaker-relux/reports/ — Ranked lists (top-earning, cheapest, fastest-growing, lowest-royalty, by industry, by state)
+- https://franchisedepth.com/Datamaker-relux/methodology/ — Data extraction methodology
+- https://franchisedepth.com/Datamaker-relux/about/ — About + author background
+- https://franchisedepth.com/Datamaker-relux/terms/ — Terms of service (note: §7 prohibits scraping + AI training use)
 
 ## Contact
-See https://josh-max2.github.io/Datamaker-relux/about/ for contact details.
+See https://franchisedepth.com/Datamaker-relux/about/ for contact details.
 
 ## Data dictionary
 

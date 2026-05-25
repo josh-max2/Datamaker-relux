@@ -61,6 +61,30 @@
     --negative:        #EF4444;
     --negative-quiet:  rgba(239, 68, 68, 0.10);
 
+    /* === SimilarWeb-pattern rebuild tokens (spec §A) ===
+       The rebuild spec uses a different token vocabulary than this codebase.
+       Bridge it via aliases so rebuild CSS can use the spec names verbatim
+       and still inherit the real dark/light theme system. */
+    --bg-page:               var(--bg-base);
+    --bg-surface:            var(--bg-surface-1);
+    --accent-primary:        var(--accent);
+    --accent-primary-hover:  var(--accent-hover);
+    --accent-text:           #FFFFFF;
+    --color-success:         var(--positive);
+    --color-danger:          var(--negative);
+    --bg-input:              var(--bg-inset);
+    --border-color:          var(--border-default);
+    --paywall-overlay-bg:    rgba(10, 14, 20, 0.85);
+    --paywall-blur-strength: 6px;
+    --paywall-cta-bg:        var(--accent);
+    --paywall-cta-text:      #FFFFFF;
+    --header-height:         56px;
+    --sidebar-width:         280px;
+    --tab-active-border:     2px;
+    --tab-active-color:      var(--accent);
+    --trend-up-bg:           rgba(74, 222, 128, 0.10);
+    --trend-down-bg:         rgba(248, 113, 113, 0.10);
+
     /* legacy alias tokens still referenced by selectors */
     /* Bug fix: --accent-primary was originally mint-green semantic-positive in the
        light-theme palette; aliasing it to --accent (blue) broke val-good cells on
@@ -215,6 +239,74 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
 /* "For your budget" filter on category pages (F3.2) */
 .budget-filter { background: var(--accent-quiet); border: 1px solid var(--border-default); border-radius: 8px; padding: 1rem 1.25rem; margin: 1rem 0 1.5rem; }
 .budget-filter h2 { border: none; padding: 0; margin: 0 0 .35rem; font-size: 1.1rem; }
+
+/* §16.6 follow-up — sub-category cross-link strip on parent category pages.
+   Only renders when sub_groups is present (passed only to parent renders by
+   site_gen.main; sub-category pages don't recurse into a strip-of-self). */
+.sub-cat-strip {
+    margin: 1.25rem 0 1.5rem;
+}
+.sub-cat-strip h2 {
+    font-size: 1.05rem;
+    margin: 0 0 0.5rem;
+    border: none;
+    padding: 0;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+.sub-cat-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+.sub-cat-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem 0.7rem 0.35rem 0.85rem;
+    background: var(--bg-surface-1);
+    border: 1px solid var(--border-default);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: border-color 0.12s, background 0.12s;
+}
+.sub-cat-chip:hover {
+    border-color: var(--accent);
+    background: var(--accent-quiet);
+    color: var(--text-primary);
+}
+.sub-cat-chip-name { font-weight: 500; }
+.sub-cat-chip-count {
+    display: inline-block;
+    min-width: 1.6em;
+    padding: 0.1em 0.45em;
+    background: var(--bg-elevated);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    color: var(--text-tertiary);
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Brand-page sub-category chip (next to Industry label in the facts grid).
+   Smaller + softer than the parent chip strip — just a typographic accent. */
+.fact .value .subcat-chip {
+    display: inline-block;
+    padding: 0.05em 0.5em;
+    background: var(--accent-quiet);
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+.fact .value .subcat-chip:hover { background: var(--bg-elevated); }
+.fact .value .subcat-chip-sep {
+    margin: 0 0.15em;
+    color: var(--text-tertiary);
+}
 .budget-row { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; margin: .85rem 0 .5rem; }
 .budget-row label { font-weight: 500; color: var(--text-primary); }
 .budget-row input[type="range"] { flex: 1 1 240px; max-width: 480px; accent-color: var(--accent); }
@@ -225,6 +317,17 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
 
 /* Comparison page (F5.1) */
 .compare-page .compare-header { margin-bottom: 1.5rem; }
+.compare-page .compare-disclosure {
+    background: var(--bg-elevated);
+    border-left: 3px solid var(--viz-3);
+    padding: 10px 14px;
+    margin: 0.75rem 0 1rem;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: var(--text-secondary);
+    border-radius: 4px;
+}
+.compare-page .compare-disclosure strong { color: var(--text-primary); }
 .compare-table th[scope="row"] { text-align: left; background: var(--bg-inset); width: 33%; font-weight: 600; }
 .compare-table th[scope="col"] { background: var(--accent); color: #fff; }
 .compare-table th[scope="col"] a { color: #fff; text-decoration: underline; }
@@ -234,6 +337,23 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
 .compare-with-heading { font-size: 1rem; margin-top: 1.5rem; }
 .compare-with-list { list-style: none; padding: 0; }
 .compare-with-list li { margin: .35rem 0; }
+/* §20.4.6 — soft inline loan CTA above the peer-comparison list.
+   Italicized + secondary color so it reads as supplemental, not promotional.
+   Hidden via Jinja guard when no lender program active. */
+.compare-with-cta {
+    margin: 0.5rem 0 0.85rem;
+    font-size: 0.92rem;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+.compare-with-cta a {
+    font-style: normal;
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+.compare-with-cta a:hover { color: var(--accent-hover); }
 .compare-with-list a { color: var(--accent); text-decoration: none; font-weight: 500; }
 .compare-with-list a:hover { text-decoration: underline; }
 
@@ -531,7 +651,96 @@ a:hover { color: var(--accent-hover); }
     font-size: 0.9rem;
 }
 
-/* Output card â€” first on the page so it's visible on mobile load */
+/* Promoted disclosure banner — the legal-exposure mitigation.
+   Surfaces the steady-state-vs-year-1 distinction + FTC §436.5(s) language
+   ABOVE the calculator output (not buried in the collapsed Full Disclaimer). */
+.calc-disclosure-banner {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-default);
+    border-left: 3px solid var(--viz-3);
+    border-radius: 6px;
+    padding: 0.85rem 1rem 0.65rem;
+    margin: 0 0 1.25rem;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+.calc-disclosure-headline {
+    margin: 0 0 0.4rem;
+    color: var(--text-primary);
+    font-size: 0.92rem;
+}
+.calc-disclosure-points {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+.calc-disclosure-points li { margin-bottom: 0.35rem; }
+.calc-disclosure-points li:last-child { margin-bottom: 0; }
+.calc-disclosure-points strong { color: var(--text-primary); }
+
+/* Inline confidence label (next to the revenue knob). */
+.calc-confidence {
+    margin: 0.5rem 0 0;
+    padding: 0.5rem 0.7rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    color: var(--text-secondary);
+    background: var(--bg-surface-1);
+    border-left: 3px solid var(--text-tertiary);
+}
+.calc-confidence-high   { border-left-color: var(--positive); }
+.calc-confidence-medium { border-left-color: var(--viz-3); }
+.calc-confidence-low    { border-left-color: var(--negative); }
+.calc-confidence strong { color: var(--text-primary); }
+
+/* §16.2 — calculator math sanity warning. Same visual family as
+   .calc-confidence but semantically distinct (warns about implausible math
+   at defaults; the confidence label rates the underlying disclosure). */
+.calc-sanity-warning {
+    margin: 0.75rem 0 0;
+    padding: 0.6rem 0.85rem;
+    border-radius: 4px;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    background: var(--bg-surface-1);
+    border-left: 3px solid var(--text-tertiary);
+}
+.calc-sanity-warn { border-left-color: var(--viz-3); }
+.calc-sanity-flag { border-left-color: var(--negative); }
+
+/* Ramp curve container — illustrative chart below the steady-state output. */
+.calc-ramp {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border-subtle);
+}
+.calc-ramp-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.calc-ramp-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+.calc-ramp-sub {
+    font-size: 0.82rem;
+    color: var(--text-tertiary);
+}
+.calc-ramp-note {
+    margin: 0.65rem 0 0;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: var(--text-tertiary);
+}
+.calc-ramp-note strong { color: var(--text-secondary); }
+
+/* Output card — first on the page so it's visible on mobile load */
 .calc-output {
     background: var(--bg-surface-1);
     border: 1px solid var(--border-default);
@@ -1257,9 +1466,33 @@ a:hover { color: var(--accent-hover); }
 
 /* State outlet heatmap (per-brand) */
 .state-heatmap-wrap {
-    margin: 1rem 0 1.25rem;
+    margin: 1rem auto 1.25rem;
     max-width: 560px;
 }
+/* §20.4.2 — soft contextual CTA below the state heatmap. Single italicized
+   line, secondary text color so it reads as supplemental orientation, not
+   promotional. Hidden via Jinja guard when Mercury inactive. */
+.heatmap-contextual-cta {
+    max-width: 640px;
+    margin: 0.25rem auto 1rem;
+    padding: 0;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    text-align: center;
+}
+.heatmap-contextual-cta strong {
+    font-style: normal;
+    color: var(--text-primary);
+}
+.heatmap-contextual-cta a {
+    font-style: normal;
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.heatmap-contextual-cta a:hover { color: var(--accent-hover); }
 .state-heatmap {
     width: 100%;
     height: auto;
@@ -1384,6 +1617,40 @@ a:hover { color: var(--accent-hover); }
 .guide-page h3 { margin-top: 1.5rem; }
 .guide-page section { margin-bottom: 1.75rem; }
 
+/* §20.4.4 — SBA guide contextual lender CTA. Soft inline card at the
+   natural pivot from "understand SBA eligibility" to "find an actual
+   lender." Not banner-styled; reads as a contextual recommendation. */
+.guide-contextual-cta {
+    margin: 1.5rem 0 0;
+    padding: 1rem 1.1rem 1.1rem;
+    background: var(--accent-quiet);
+    border: 1px solid var(--border-default);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+}
+.guide-contextual-cta > p:first-child { margin-top: 0; }
+.guide-contextual-cta .lender-paths {
+    margin: 0.6rem 0;
+    padding-left: 1.2rem;
+}
+.guide-contextual-cta .lender-paths li {
+    margin: 0.4rem 0;
+    line-height: 1.5;
+}
+.guide-contextual-cta .lender-paths li a {
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.guide-contextual-cta .lender-paths li a:hover { color: var(--accent-hover); }
+.guide-contextual-cta .affiliate-inline-disclosure {
+    display: block;
+    margin: 0.6rem 0 0;
+    font-size: 0.82rem;
+    color: var(--text-tertiary);
+}
+
 /* Jargon tooltips (F4.11) â€” dotted underline, hover for native title tooltip, click â†’ glossary */
 .jargon {
     color: inherit;
@@ -1427,6 +1694,10 @@ a:hover { color: var(--accent-hover); }
 .data-table tbody tr:hover { background: var(--bg-inset); }
 .data-table.item19 th, .data-table.item19 td { white-space: nowrap; }
 .data-table.item19 td:first-child { white-space: normal; min-width: 200px; }
+.data-table.item19 td.i19-anomaly { cursor: help; }
+.data-table.item19 td.i19-anomaly .i19-anomaly-mark { color: var(--warning); font-size: .9em; }
+.i19-anomaly-note { font-size: .8rem; color: var(--text-tertiary); margin: -.5rem 0 1rem; }
+.i19-anomaly-note .i19-anomaly-mark { color: var(--warning); }
 
 .callout {
     background: var(--warning-quiet);
@@ -1442,6 +1713,421 @@ a:hover { color: var(--accent-hover); }
 .cta { background: var(--accent-quiet); border: 1px solid var(--border-default); border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0; }
 .cta h2 { border: none; padding: 0; margin: 0 0 .35rem; }
 .cta-buttons { display: flex; gap: .75rem; flex-wrap: wrap; margin: .75rem 0; }
+
+/* §20.3.3 — "Considering this franchise?" 3-card layout.
+   Replaced the previous stacked structure. 3 cards: validation /
+   consultant / financing. Stacks 1-col on mobile, 3-col at ≥768px.
+   Each card has icon + h3 + body + CTA in a flex-column so footers
+   align across cards regardless of body-text length. */
+.considering-franchise {
+    background: var(--accent-quiet);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+}
+.considering-franchise h2 {
+    border: none;
+    padding: 0;
+    margin: 0 0 .35rem;
+}
+.considering-franchise .subtitle {
+    margin: 0 0 1rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+.considering-franchise .affiliate-inline-disclosure {
+    display: block;
+    margin: 0 0 1rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+.three-card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 0 0 1rem;
+}
+@media (min-width: 768px) {
+    .three-card-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.next-step-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-surface-1);
+    border: 1px solid var(--border-subtle);
+    border-radius: 6px;
+    padding: 1rem 1.1rem 1.1rem;
+}
+.next-step-card .card-icon {
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+.next-step-card h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.02rem;
+    line-height: 1.3;
+    border: none;
+    padding: 0;
+}
+.next-step-card p {
+    margin: 0 0 0.85rem;
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.45;
+    flex: 1;  /* push CTA to card bottom for vertical alignment across cards */
+}
+.next-step-card p strong { color: var(--text-primary); }
+.next-step-card .card-cta {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 0.45rem 0.85rem;
+    background: var(--accent);
+    color: var(--text-inverse);
+    border-radius: 4px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--accent);
+    cursor: pointer;
+    transition: background 0.12s, border-color 0.12s;
+}
+.next-step-card .card-cta:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+}
+.next-step-card .card-cta-secondary {
+    background: transparent;
+    color: var(--accent);
+}
+.next-step-card .card-cta-secondary:hover {
+    background: var(--accent-quiet);
+    color: var(--accent-hover);
+}
+.next-step-card .card-email-capture {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+.next-step-card .card-email-capture input[type="email"] {
+    padding: 0.45rem 0.65rem;
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    font-size: 0.92rem;
+    background: var(--bg-base);
+    color: var(--text-primary);
+}
+.next-step-card .card-email-capture button {
+    /* uses .card-cta styles via overlap — kept inline so CSS is self-contained */
+    padding: 0.45rem 0.85rem;
+    background: var(--accent);
+    color: var(--text-inverse);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.12s, border-color 0.12s;
+}
+.next-step-card .card-email-capture button:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+}
+.next-step-card .card-fineprint {
+    margin: 0;
+    font-size: 0.78rem;
+    color: var(--text-tertiary);
+}
+.next-step-card .card-fineprint a {
+    color: var(--text-tertiary);
+    text-decoration: underline;
+}
+
+/* §17.2.3 — pricing-page card-price line. Used by waitlist + pricing tier cards. */
+.next-step-card .card-price {
+    margin: 0 0 .5rem;
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+}
+.next-step-card .card-price s { color: var(--text-tertiary); margin-right: .35rem; }
+.next-step-card .card-price strong { color: var(--text-primary); font-weight: 700; }
+
+/* §17.2.3 — pricing feature-comparison matrix */
+.pricing-table {
+    margin: 1rem 0;
+}
+.pricing-table th[scope="row"].pricing-group {
+    text-align: left;
+    background: var(--bg-surface-1);
+    color: var(--text-primary);
+    font-weight: 700;
+    padding-top: .9rem;
+    padding-bottom: .55rem;
+    border-top: 1px solid var(--border-default);
+}
+.pricing-table td {
+    padding: .55rem .75rem;
+    line-height: 1.4;
+}
+.pricing-table td:nth-child(2),
+.pricing-table td:nth-child(3),
+.pricing-table td:nth-child(4) {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+.pricing-table thead th {
+    text-align: center;
+    background: var(--bg-surface-1);
+    color: var(--text-primary);
+    font-weight: 600;
+}
+.pricing-table thead th:first-child { text-align: left; }
+
+/* §17.2.3 — pricing-cta block at bottom of pricing page */
+.pricing-cta {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    background: var(--bg-surface-1);
+    border-radius: 6px;
+    text-align: center;
+}
+.pricing-cta h2 { margin-top: 0; }
+.pricing-cta .btn-lg { font-size: 1.05rem; padding: .75rem 1.5rem; }
+
+/* §17.2.3 — small "see full pricing" link inline in waitlist h2 */
+.pricing-detail-link {
+    font-size: .85rem;
+    font-weight: 400;
+    color: var(--accent);
+    margin-left: .5rem;
+}
+
+/* §17.2.3-SPEC — pricing page rebuild (hero toggle, tier cards, enterprise) */
+.pricing-hero { text-align: center; margin-bottom: 2rem; }
+.pricing-hero .lead { max-width: 640px; margin: .5rem auto 1.25rem; }
+.pricing-intro-note {
+    max-width: 680px; margin: 1rem auto 0; font-size: .82rem;
+    color: var(--text-tertiary); line-height: 1.5;
+}
+.pricing-toggle {
+    display: inline-flex; gap: 4px; padding: 4px;
+    background: var(--bg-surface-1); border: 1px solid var(--border-subtle);
+    border-radius: 999px;
+}
+.pricing-toggle-btn {
+    border: 0; background: transparent; color: var(--text-secondary);
+    font: inherit; font-size: .9rem; padding: .5rem 1.1rem; min-height: 44px;
+    border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: .4rem;
+}
+.pricing-toggle-btn.is-active { background: var(--accent); color: #fff; }
+.pricing-toggle-btn .toggle-badge {
+    font-size: .68rem; text-transform: uppercase; letter-spacing: .03em;
+    background: var(--accent-quiet); color: var(--accent); padding: 2px 6px; border-radius: 6px;
+}
+.pricing-toggle-btn.is-active .toggle-badge { background: rgba(255,255,255,.22); color: #fff; }
+
+.pricing-card-grid {
+    display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin: 1.5rem 0;
+}
+@media (min-width: 768px) { .pricing-card-grid { grid-template-columns: repeat(3, 1fr); align-items: start; } }
+.pricing-card {
+    position: relative; background: var(--bg-surface-1);
+    border: 1px solid var(--border-subtle); border-radius: 10px; padding: 1.5rem;
+    display: flex; flex-direction: column;
+}
+.pricing-card-popular { border: 2px solid var(--accent); padding: 1.75rem 1.5rem; }
+.pricing-popular-badge {
+    position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+    background: var(--accent); color: #fff; font-size: .72rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: .04em; padding: 4px 12px; border-radius: 999px; white-space: nowrap;
+}
+.pricing-tier-name { margin: 0 0 .15rem; font-size: 1.3rem; }
+.pricing-tier-for { margin: 0 0 .75rem; font-size: .85rem; color: var(--text-tertiary); min-height: 2.4em; }
+.pricing-price { margin: .25rem 0; }
+.pricing-price .price-amount { font-size: 2rem; }
+.pricing-price .price-period { color: var(--text-tertiary); font-size: .9rem; }
+.price-sub { margin: .1rem 0 .25rem; font-size: .82rem; color: var(--text-secondary); min-height: 1.2em; }
+.price-founding { margin: .1rem 0 1rem; font-size: .82rem; color: var(--accent); }
+.pricing-cta { width: 100%; text-align: center; }
+.pricing-feature-head { font-size: .82rem; font-weight: 600; color: var(--text-secondary); margin: 1rem 0 .4rem; }
+.pricing-feature-list { list-style: none; padding: 0; margin: .5rem 0 0; }
+.pricing-feature-list li { padding: .3rem 0 .3rem 1.4rem; position: relative; font-size: .9rem; line-height: 1.4; }
+.pricing-feature-list li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+
+.pricing-enterprise { margin: 1.5rem 0 2.5rem; }
+.pricing-enterprise-card {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;
+    background: var(--accent-quiet); border: 1px solid var(--border-subtle);
+    border-radius: 10px; padding: 1.5rem;
+}
+.pricing-enterprise-card h2 { margin: 0 0 .35rem; }
+.pricing-enterprise-body { flex: 1 1 420px; }
+.pricing-enterprise-body p { margin: 0; color: var(--text-secondary); }
+
+.signup-plan-banner {
+    background: var(--accent-quiet); border-left: 3px solid var(--accent);
+    padding: .75rem 1rem; border-radius: 6px; margin: 1rem 0; font-size: .92rem;
+}
+
+/* §20.4.1 — End-of-page Next Steps bundle (brand pages). 2-col grid on
+   desktop, stacks on mobile. Action column hides entirely when no
+   affiliate program is active (grid switches to 1-col). */
+.page-end-next-steps {
+    margin: 2.5rem 0 1rem;
+    padding: 1.5rem;
+    background: var(--bg-surface-1);
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+}
+.page-end-next-steps h2 {
+    margin: 0 0 .25rem;
+    font-size: 1.35rem;
+    color: var(--text-primary);
+}
+.page-end-next-steps .subtitle {
+    margin: 0 0 1.25rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+.next-steps-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+}
+@media (min-width: 720px) {
+    .next-steps-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .next-steps-grid-1col { grid-template-columns: 1fr; max-width: 640px; }
+}
+.research-paths h3, .action-paths h3 {
+    margin: 0 0 .65rem;
+    font-size: 1.05rem;
+    color: var(--text-primary);
+}
+.research-paths ul, .action-paths ul.action-list {
+    margin: 0;
+    padding-left: 1.1rem;
+    list-style: disc;
+    line-height: 1.65;
+}
+.research-paths ul li, .action-paths ul.action-list li {
+    margin-bottom: .4rem;
+    color: var(--text-secondary);
+}
+.research-paths a, .action-paths a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+.research-paths a:hover, .action-paths a:hover {
+    color: var(--accent-hover);
+}
+.action-paths p {
+    margin: 0 0 .65rem;
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+}
+.page-end-disclosure {
+    margin-top: 1rem;
+    font-size: 0.82rem;
+    color: var(--text-tertiary);
+    line-height: 1.5;
+}
+
+.considering-franchise > .notes {
+    margin: 0;
+    font-size: 0.82rem;
+    color: var(--text-tertiary);
+}
+
+/* §20.3.2 (scoped-down) — Sticky financing CTA on brand pages. Fixed
+   bottom-right; reveals via .visible after IntersectionObserver fires;
+   hidden on mobile (cookie banner already competes for footer space). */
+.brand-sticky-cta {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 320px;
+    z-index: 50;  /* below cookie banner (9000) and persona modal (9500) */
+    background: var(--bg-surface-1);
+    border: 1px solid var(--border-default);
+    border-left: 4px solid var(--accent);
+    border-radius: 6px;
+    padding: 1rem 1.25rem .75rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .15);
+    /* hidden-until-revealed: opacity + slight slide-up, transition on .visible */
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 200ms ease-out, transform 200ms ease-out;
+    pointer-events: none;
+}
+.brand-sticky-cta.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.brand-sticky-cta-close {
+    position: absolute;
+    top: .35rem;
+    right: .5rem;
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: var(--text-tertiary);
+    cursor: pointer;
+    padding: .25rem .5rem;
+    border-radius: 3px;
+}
+.brand-sticky-cta-close:hover { color: var(--text-primary); background: var(--bg-inset); }
+.brand-sticky-cta-eyebrow {
+    margin: 0 0 .25rem;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: var(--text-tertiary);
+}
+.brand-sticky-cta-body {
+    margin: 0 0 .75rem;
+    font-size: .9rem;
+    line-height: 1.4;
+    color: var(--text-primary);
+}
+.brand-sticky-cta-action {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff !important;
+    text-decoration: none;
+    padding: .55rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: .9rem;
+}
+.brand-sticky-cta-action:hover { background: var(--accent-hover); }
+.brand-sticky-cta-disclosure {
+    margin: .6rem 0 0;
+    font-size: .7rem;
+    color: var(--text-tertiary);
+}
+@media (max-width: 900px) {
+    .brand-sticky-cta { display: none !important; }
+}
+
+/* Screen-reader-only utility for the email input label */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 .btn { display: inline-block; padding: .65rem 1.15rem; border-radius: 4px; text-decoration: none; font-weight: 600; }
 .btn-primary { background: var(--accent); color: #fff; }
 .btn-primary:hover { background: var(--accent-hover); color: #fff; }
@@ -1603,6 +2289,10 @@ a:hover { color: var(--accent-hover); }
 .site-footer .ftc-disclosure a { color: var(--warning); font-weight: 500; }
 .site-footer .disclaimer { margin-bottom: .75rem; }
 .site-footer .meta { color: var(--text-secondary); }
+/* Operating-entity attribution (footer + about page). Smaller + muted so it
+   reads as a legal footnote, not body copy. */
+.legal-entity-line { font-size: .8rem; color: var(--text-secondary); margin: .4rem 0 0; }
+.about-entity-note { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle); }
 
 /* Inline affiliate disclosure above CTA buttons */
 .affiliate-inline-disclosure {
@@ -1660,7 +2350,7 @@ a:hover { color: var(--accent-hover); }
 }
 #fd-consent-banner .fd-consent-text { max-width: 720px; line-height: 1.5; }
 #fd-consent-banner a { color: var(--accent); }
-#fd-consent-banner .fd-consent-actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+#fd-consent-banner .fd-consent-actions { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
 .fd-btn-pri, .fd-btn-sec {
     padding: .5rem 1rem; border-radius: 4px; cursor: pointer; font-weight: 600;
     border: 1px solid transparent; font-size: .9rem;
@@ -1669,6 +2359,19 @@ a:hover { color: var(--accent-hover); }
 .fd-btn-pri:hover { background: var(--accent-hover); }
 .fd-btn-sec { background: transparent; color: var(--bg-inset); border-color: var(--text-secondary); }
 .fd-btn-sec:hover { background: var(--text-primary); }
+/* #45 — Tertiary action for "Customize" so the consent banner reads as
+   one clear primary (Accept) + one equally-weighted opt-out (Reject)
+   + one quieter "configure" link. Eliminates the cos1 3-button visual
+   competition flagged in the UX audit, without compromising GDPR
+   fairness (Accept and Reject keep equal visual weight). */
+.fd-btn-tertiary {
+    padding: .5rem .75rem; border-radius: 4px; cursor: pointer;
+    font-weight: 500; font-size: .9rem;
+    background: transparent; color: inherit;       /* picks up banner foreground reliably in both themes */
+    opacity: .8;
+    border: none; text-decoration: underline; text-underline-offset: 3px;
+}
+.fd-btn-tertiary:hover { color: var(--accent); opacity: 1; text-decoration: none; }
 
 /* Customize modal (overlay) */
 #fd-consent-modal {
@@ -1860,6 +2563,60 @@ a:hover { color: var(--accent-hover); }
 .report-cta h2 { margin: 0 0 .5rem; font-size: 1.15rem; color: #0c4a6e; }
 .report-cta p { margin: 0; color: #075985; }
 .report-cta a { color: #0c4a6e; font-weight: 600; }
+
+/* §17.2.2 — Waitlist signup on every /reports/ landing page. Surface-elevated
+   card with email-input + button row; matches the §17.2.1 /waitlist/ visual
+   pattern but inline. */
+.report-waitlist {
+    margin-top: 2rem; padding: 1.5rem;
+    background: var(--bg-surface-1); border: 1px solid var(--border-default); border-radius: 8px;
+}
+.report-waitlist h2 { margin: 0 0 .5rem; font-size: 1.2rem; color: var(--text-primary); }
+.report-waitlist > p { margin: 0 0 1rem; color: var(--text-secondary); line-height: 1.5; }
+.report-waitlist-form {
+    display: flex; gap: .5rem; flex-wrap: wrap; align-items: stretch;
+    margin: 1rem 0 .75rem;
+}
+.report-waitlist-form input[type="email"] {
+    flex: 1 1 280px; min-width: 200px;
+    padding: .55rem .75rem; font-size: 1rem;
+    background: var(--bg-base); color: var(--text-primary);
+    border: 1px solid var(--border-default); border-radius: 4px;
+}
+.report-waitlist-form input[type="email"]:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.report-waitlist-form .btn-primary {
+    flex: 0 0 auto; padding: .55rem 1.25rem; font-weight: 600;
+    background: var(--accent); color: #fff; border: 1px solid var(--accent);
+    border-radius: 4px; cursor: pointer; font-size: 1rem;
+}
+.report-waitlist-form .btn-primary:hover { background: var(--accent-hover); }
+.report-waitlist-fineprint {
+    margin: .5rem 0 0; font-size: .85rem; color: var(--text-tertiary);
+}
+.report-waitlist-fineprint a { color: var(--accent); }
+.visually-hidden {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+    clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+
+/* §19.14 Phase A — dashboard funnel CTA. Soft inline strip between the
+   header and the ranking list (or above the report grid on the hub).
+   Visually distinct from .report-cta (which is a destination block) — the
+   funnel CTA is a one-line invitation to a different surface. */
+.report-funnel-cta {
+    margin: 0 0 1.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-surface-1);
+    border-left: 3px solid var(--accent);
+    border-radius: 4px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+.report-funnel-cta p { margin: 0; }
+.report-funnel-cta a { color: var(--accent); font-weight: 600; }
+.report-funnel-cta a:hover { color: var(--accent-hover); text-decoration: underline; }
+.report-funnel-cta-hub { margin-bottom: 2rem; }
 
 .report-related { margin-top: 2.5rem; }
 .report-related h2 { margin: 0 0 .75rem; font-size: 1.1rem; color: var(--text-primary); }
@@ -2531,32 +3288,104 @@ h1 { font-weight: 600; }
     .stat-tile-grid.cols-5 .stat-tile:nth-child(5) { grid-column: 1 / -1; }
 }
 
-/* --- Mobile: compare-table → stacked cards under 640px --- */
-@media (max-width: 639px) {
-    .compare-table, .compare-table thead, .compare-table tbody, .compare-table tr, .compare-table th, .compare-table td {
-        display: block;
-        width: 100%;
+/* --- Mobile compare layout (replaces the old stacked-cards layout) ----------
+   The old @media (max-width: 639px) rule turned each <tr> into a card with
+   label+A+B stacked vertically. That broke the side-by-side mechanic that
+   /compare/ exists for. Replaced with a server-rendered .mobile-compare
+   block: sticky header (brand names in 2-or-3-col grid) + per-metric rows
+   where the label gets its own row and the values sit in a 2-or-3-col grid.
+   Same data as desktop, just restructured for narrow viewports.
+   --n-brands is set by the template (2 for static /compare/A-vs-B/, 2 or 3
+   for the interactive /compare/ tool).                                    */
+
+.mobile-compare { display: none; }  /* default hidden; revealed at <768px */
+
+@media (max-width: 767px) {
+    /* Hide desktop table, show mobile structure */
+    .compare-page .table-scroll,
+    .compare-tool .table-scroll { display: none; }
+    .compare-page .mobile-compare,
+    .compare-tool .mobile-compare { display: block; }
+
+    .mobile-compare {
+        --n-brands: 2;
+        margin: 1rem 0 2rem;
     }
-    .compare-table thead { display: none; }
-    .compare-table tr {
-        background: var(--bg-surface-1);
-        border: 1px solid var(--border-subtle);
-        border-radius: 8px;
-        padding: 12px 14px;
-        margin-bottom: 12px;
+    .mobile-compare[data-n="3"] { --n-brands: 3; }
+
+    .mobile-compare-header {
+        position: sticky;
+        top: 60px;  /* below the luxury site-header (~60px tall) */
+        background: var(--bg-base);
+        display: grid;
+        grid-template-columns: repeat(var(--n-brands), 1fr);
+        gap: 8px;
+        padding: 12px 0;
+        margin-bottom: 4px;
+        border-bottom: 1px solid var(--border-default);
+        z-index: 10;
     }
-    .compare-table th[scope="row"] {
-        background: transparent;
-        font-size: 0.78rem;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: var(--text-secondary);
-        padding-bottom: 4px;
+    .mobile-compare-header .brand-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
-    .compare-table td {
-        padding: 4px 0 8px;
+    .mobile-compare-header .brand-name a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .mobile-compare-header .brand-name.brand-a { color: var(--viz-1); }
+    .mobile-compare-header .brand-name.brand-b { color: var(--viz-2); }
+    .mobile-compare-header .brand-name.brand-c { color: var(--viz-3); }
+
+    .mobile-compare-row {
+        padding: 14px 0 12px;
         border-bottom: 1px solid var(--border-subtle);
     }
+    .mobile-compare-row .row-label {
+        display: block;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--text-tertiary);
+        margin-bottom: 8px;
+    }
+    .mobile-compare-row .row-label .th-note {
+        display: inline;
+        font-weight: 400;
+        text-transform: none;
+        letter-spacing: 0;
+        color: var(--text-tertiary);
+        margin-left: 0.25em;
+    }
+    .mobile-compare-row .row-values {
+        display: grid;
+        grid-template-columns: repeat(var(--n-brands), 1fr);
+        gap: 8px;
+    }
+    .mobile-compare-row .value-cell {
+        font-size: 15px;
+        line-height: 1.4;
+        border-left: 3px solid;
+        padding-left: 10px;
+        color: var(--text-primary);
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+    .mobile-compare-row .value-cell.brand-a { border-color: var(--viz-1); }
+    .mobile-compare-row .value-cell.brand-b { border-color: var(--viz-2); }
+    .mobile-compare-row .value-cell.brand-c { border-color: var(--viz-3); }
+    .mobile-compare-row .value-cell .th-note {
+        display: block;
+        margin-top: 2px;
+        margin-left: 0;
+        font-size: 12px;
+        color: var(--text-tertiary);
+    }
+    .mobile-compare-row .value-cell .muted { color: var(--text-tertiary); }
 }
 
 /* --- Mobile: category chip cap (.category-chips-collapsed shows max 8) --- */
@@ -3316,6 +4145,13 @@ html[data-theme="light"] {
     --positive-quiet:  rgba(4, 120, 87, 0.10);
     --warning:         #B45309;
     --warning-quiet:   rgba(180, 83, 9, 0.10);
+
+    /* SimilarWeb rebuild (§A) light overrides — the alias tokens follow the
+       real tokens above automatically; only the hardcoded rgba ones need this. */
+    --paywall-overlay-bg: rgba(255, 255, 255, 0.92);
+    --trend-up-bg:        rgba(22, 163, 74, 0.08);
+    --trend-down-bg:      rgba(220, 38, 38, 0.08);
+    --accent-text:        #FFFFFF;
     --negative:        #B91C1C;
     --negative-quiet:  rgba(185, 28, 28, 0.08);
 }
@@ -3735,7 +4571,7 @@ html[data-theme="light"] .site-header .theme-toggle .theme-icon-sun  { display: 
         width: min(90vw, 360px);
         background: var(--bg-base);
         border-left: 1px solid var(--border-default);
-        z-index: 100;
+        z-index: 9500;
         transform: translateX(100%);
         transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
         padding: calc(16px + env(safe-area-inset-top, 0px)) 20px calc(20px + env(safe-area-inset-bottom, 0px));
@@ -3750,7 +4586,7 @@ html[data-theme="light"] .site-header .theme-toggle .theme-icon-sun  { display: 
         background: rgba(0, 0, 0, 0.60);
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
-        z-index: 99;
+        z-index: 9499;
         opacity: 0;
         pointer-events: none;
         transition: opacity 280ms ease-out;

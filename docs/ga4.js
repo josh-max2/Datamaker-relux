@@ -58,6 +58,17 @@
       if (cta) {
         gtag('event', 'cta_click', { cta_id: cta, page_path: location.pathname });
       }
+      // §19.14 dashboard funnel click — links with data-funnel-source attribute
+      // (added on /reports/ pages, category pages, brand pages, etc. that
+      // funnel readers into /dashboard/). source = where they clicked from;
+      // target = which preset/sort lands. Lets us measure CTR per surface.
+      var src = a.dataset.funnelSource || a.closest('[data-funnel-source]')?.dataset.funnelSource;
+      if (src) {
+        var tgt = a.dataset.funnelTarget || a.closest('[data-funnel-target]')?.dataset.funnelTarget || '';
+        gtag('event', 'dashboard_funnel_click', {
+          source_surface: src, source_target: tgt, page_path: location.pathname,
+        });
+      }
       // Outbound click — different origin from current
       try {
         var u = new URL(a.href, location.href);

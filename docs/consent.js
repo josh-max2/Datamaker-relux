@@ -29,14 +29,20 @@
     banner.setAttribute('aria-label', 'Cookie consent');
     banner.innerHTML =
       '<div class="fd-consent-text">' +
-        'We use a minimal set of cookies for site functionality. ' +
-        'With your consent we also enable anonymous analytics ' +
-        '(Google Analytics 4 + Microsoft Clarity heatmaps) to understand which pages help buyers most. ' +
-        'You can change this anytime via the footer link. ' +
-        '<a href="/privacy/">Privacy policy</a>.' +
+        // #43 + #36 — Compressed copy. Kept just GDPR-required disclosures:
+        // purpose ("cookies + analytics"), tool names by category (GA4,
+        // Clarity), opt-out via Privacy link. Originally 3 sentences (~280
+        // chars / 5 mobile lines) → #43 cut to 1 sentence (~73 chars /
+        // 2 mobile lines) → #36 trims to ~45 chars / 1 mobile line at 414px.
+        // Cannot go shorter without dropping the GDPR-named tools (GA4 +
+        // Clarity), which would weaken transparency. The audit's "1-line
+        // bar with [Customize] [Accept] only" would also violate GDPR
+        // fairness (Reject must be visually equal to Accept) — declined.
+        'Cookies + analytics (GA4 + Clarity). ' +
+        '<a href="/privacy/" aria-label="Privacy policy">Privacy</a>.' +
       '</div>' +
       '<div class="fd-consent-actions">' +
-        '<button type="button" class="fd-btn-sec" id="fd-c-customize">Customize</button>' +
+        '<button type="button" class="fd-btn-tertiary" id="fd-c-customize">Customize</button>' +
         '<button type="button" class="fd-btn-sec" id="fd-c-reject">Reject all</button>' +
         '<button type="button" class="fd-btn-pri" id="fd-c-accept">Accept all</button>' +
       '</div>';

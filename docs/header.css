@@ -1,0 +1,341 @@
+/* =============================================================================
+   §1 SimilarWeb/Koyfin-pattern header — rebuild spec §1
+   Loads AFTER style.css, so these rules override the prior luxury-header block.
+   New components (mega-menus, header-actions, drawer accordion) use new class
+   names to avoid cascade fights with legacy selectors.
+   ============================================================================= */
+
+/* ---- Bar ---- */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--bg-page);
+    border-bottom: 1px solid transparent;
+    transition: border-color .2s ease, background .2s ease, box-shadow .2s ease;
+}
+.site-header[data-scrolled="true"] {
+    background: color-mix(in srgb, var(--bg-page) 82%, transparent);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-bottom-color: var(--border-subtle);
+}
+.site-header .container { gap: 0; }
+.site-header .site-header-inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: var(--header-height);
+    min-height: var(--header-height);
+}
+
+/* Override the legacy "HEADER REDESIGN" order:!important rules (style.css
+   ~4250) that targeted the OLD flat header. The new structure is
+   brand | primary-nav | header-actions; the action items now live INSIDE
+   .header-actions, so the old descendant rules mis-order them. */
+.site-header-inner > .brand          { order: 0 !important; flex: 0 0 auto !important; }
+.site-header-inner > .primary-nav    { order: 1 !important; flex: 1 1 auto !important; }
+.site-header-inner > .header-actions { order: 2 !important; flex: 0 0 auto !important; margin-left: auto !important; }
+.header-actions > .header-search { order: 1 !important; flex: 0 0 auto !important; margin-left: 0 !important; }
+.header-actions > .theme-toggle  { order: 2 !important; flex: 0 0 auto !important; }
+.header-actions > .header-signin { order: 3 !important; }
+.header-actions > .header-cta    { order: 4 !important; }
+.header-actions > .menu-toggle   { order: 5 !important; }
+
+/* ---- Brand ---- */
+.site-header .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    margin-right: 8px;
+    flex: 0 0 auto;
+}
+.site-header .brand-mark { width: 24px; height: 24px; }
+.site-header .brand-wordmark {
+    font-weight: 650;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: var(--text-primary);
+}
+
+/* ---- Primary nav ---- */
+.primary-nav { flex: 1 1 auto; }
+.primary-nav .nav-root {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.primary-nav .nav-item { position: relative; }
+.primary-nav .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    height: 36px;
+    padding: 0 12px;
+    border: 0;
+    background: none;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    border-radius: var(--r-md);
+    cursor: pointer;
+    text-decoration: none;
+    transition: color .12s ease, background .12s ease;
+}
+.primary-nav .nav-link:hover,
+.primary-nav .megamenu-trigger[aria-expanded="true"] { color: var(--text-primary); }
+.primary-nav .megamenu-trigger:hover { background: var(--accent-quiet); }
+.primary-nav .nav-link .chevron { transition: transform .15s ease; opacity: .7; }
+.primary-nav .megamenu-trigger[aria-expanded="true"] .chevron { transform: rotate(180deg); }
+
+/* Active route: text-primary + 2px accent underline */
+.primary-nav .nav-link.is-active {
+    color: var(--text-primary);
+    box-shadow: inset 0 calc(-1 * var(--tab-active-border)) 0 var(--tab-active-color);
+    border-radius: 0;
+}
+
+/* ---- Mega-menu panels ---- */
+.megamenu {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    z-index: 1001;
+    display: grid;
+    gap: 20px 28px;
+    padding: 18px 20px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--r-lg);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.30);
+    opacity: 0;
+    transform: translateY(-4px);
+    pointer-events: none;
+    transition: opacity .15s ease, transform .15s ease;
+}
+.has-megamenu.open > .megamenu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.megamenu--3col { grid-template-columns: repeat(3, 1fr); width: 720px; max-width: 92vw; }
+.megamenu--2col { grid-template-columns: repeat(2, 1fr); width: 480px; max-width: 92vw; }
+.megamenu--1col { grid-template-columns: 1fr; width: 280px; max-width: 92vw; }
+/* keep right-edge menus from overflowing the viewport */
+.nav-item:nth-last-child(-n+2) .megamenu { left: auto; right: 0; }
+
+.mm-col-head {
+    margin: 0 0 8px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+}
+.mm-link {
+    display: block;
+    padding: 7px 10px;
+    margin: 0 -10px;
+    border-radius: var(--r-md);
+    text-decoration: none;
+    transition: background .12s ease;
+}
+.mm-link:hover { background: var(--accent-quiet); }
+.mm-link-title { display: block; font-size: 14px; font-weight: 500; color: var(--text-primary); }
+.mm-link:hover .mm-link-title { color: var(--accent); }
+.mm-link-sub { display: block; font-size: 12px; color: var(--text-tertiary); margin-top: 1px; }
+
+/* ---- Header actions (right cluster) ---- */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 0 0 auto;
+}
+.header-actions .header-search { position: relative; }
+.header-actions .header-search input {
+    width: 200px;
+    height: 34px;
+    padding: 0 32px 0 12px;
+    font-size: 13px;
+    color: var(--text-primary);
+    background: var(--bg-input);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--r-md);
+    transition: border-color .12s ease, width .15s ease;
+}
+.header-actions .header-search input:focus {
+    outline: none;
+    border-color: var(--accent);
+    width: 240px;
+}
+.header-actions .search-kbd {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    color: var(--text-tertiary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 3px;
+    padding: 1px 4px;
+    pointer-events: none;
+}
+.header-actions .theme-toggle {
+    flex: 0 0 auto;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--r-md);
+    background: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+.header-actions .theme-toggle:hover { color: var(--text-primary); border-color: var(--border-default); }
+.header-signin {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 0 6px;
+    white-space: nowrap;
+}
+.header-signin:hover { color: var(--text-primary); }
+.cta-primary.header-cta {
+    display: inline-flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 18px;
+    font-size: 14px;
+    font-weight: 600;
+    /* Crisp emerald pinned across BOTH themes — the legacy .cta-primary green
+       darkens to a muddy tone in light mode (reviewer B1). */
+    color: #FFFFFF !important;
+    background: #10B981 !important;
+    border-radius: var(--r-md);
+    text-decoration: none !important;
+    white-space: nowrap;
+    transition: background .12s ease;
+}
+.cta-primary.header-cta:hover { background: #0EA372 !important; }
+/* Divider between the utility group (search+theme) and auth group (Sign In+CTA) */
+.header-actions .header-signin { border-left: 1px solid var(--border-subtle); padding-left: 14px; margin-left: 2px; }
+.menu-toggle {
+    display: none;
+    flex: 0 0 auto;
+    width: 38px; height: 38px;
+    align-items: center; justify-content: center;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--r-md);
+    background: none;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+/* ---- Responsive: collapse to drawer < 980px (nav) and < 768px (full) ---- */
+@media (max-width: 1080px) {
+    .header-actions .header-search input { width: 150px; }
+    .header-actions .header-search input:focus { width: 180px; }
+}
+@media (max-width: 980px) {
+    .primary-nav { display: none; }
+    .menu-toggle { display: inline-flex; }
+}
+@media (max-width: 768px) {
+    .header-actions .header-search,
+    .header-actions .header-signin,
+    .header-actions .header-cta { display: none; }
+}
+
+/* ---- Mobile drawer accordion ---- */
+.drawer-accordion { display: flex; flex-direction: column; padding: 8px 0; }
+.drawer-acc-group { border-bottom: 1px solid var(--border-subtle); }
+.drawer-acc-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 14px 20px;
+    border: 0;
+    background: none;
+    font: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+.drawer-acc-trigger .acc-chevron { transition: transform .18s ease; color: var(--text-tertiary); }
+.drawer-acc-trigger[aria-expanded="true"] .acc-chevron { transform: rotate(180deg); }
+.drawer-acc-panel {
+    display: none;
+    flex-direction: column;
+    padding: 0 20px 12px;
+}
+.drawer-acc-group.open .drawer-acc-panel { display: flex; }
+.drawer-acc-panel a {
+    padding: 9px 12px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-radius: var(--r-md);
+}
+.drawer-acc-panel a:hover { background: var(--accent-quiet); color: var(--text-primary); }
+.drawer-flat-link {
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-subtle);
+}
+.drawer-footer { display: flex; flex-direction: column; gap: 10px; padding: 16px 20px; }
+.drawer-signin {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 8px;
+}
+.drawer-signin:hover { color: var(--text-primary); }
+
+/* §1 review B3: sub-grouping inside the mobile Product accordion */
+.drawer-subhead {
+    margin: 12px 12px 2px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+}
+.drawer-acc-panel > .drawer-subhead:first-child { margin-top: 2px; }
+/* clearer Sign In in the drawer footer + bigger chevrons */
+.drawer-signin { border: 1px solid var(--border-default); border-radius: var(--r-md); }
+.acc-chevron { font-size: 16px; }
+
+/* §1 review B1: light mode — resting nav links were too pale on near-white.
+   Darken to slate-700 so they read as interactive; hover → near-black. */
+html[data-theme="light"] .primary-nav .nav-link { color: #334155; }
+html[data-theme="light"] .primary-nav .nav-link:hover,
+html[data-theme="light"] .primary-nav .megamenu-trigger[aria-expanded="true"] { color: #0F172A; }
+html[data-theme="light"] .header-signin { color: #334155; }
+html[data-theme="light"] .mm-link-sub { color: var(--text-tertiary); }
+
+.drawer-footer .cta-primary,
+.drawer-footer .cta-primary--full {
+    display: block;
+    text-align: center;
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent-text) !important;
+    background: var(--accent-primary);
+    border-radius: var(--r-md);
+    text-decoration: none !important;
+}
+.drawer-footer .cta-primary:hover { background: var(--accent-primary-hover); }
