@@ -2319,6 +2319,30 @@ a:hover { color: var(--accent-hover); }
     .brand-tabs { display: none !important; }
 }
 
+/* === §8 trend / z-score badges (reusable) === */
+.trend-badge { display: inline-flex; align-items: center; gap: 2px; font-size: 11px; font-weight: 500; padding: 2px 6px; border-radius: 4px; font-variant-numeric: tabular-nums; }
+.trend-up { background: var(--trend-up-bg); color: var(--positive); }
+.trend-down { background: var(--trend-down-bg); color: var(--negative); }
+.trend-flat { background: var(--bg-inset); color: var(--text-tertiary); }
+.trend-arrow { font-size: 10px; line-height: 1; }
+.zscore-badge { display: inline-flex; align-items: center; gap: 3px; font-size: 11px; font-weight: 600; padding: 2px 6px; border-radius: 4px; font-variant-numeric: tabular-nums; }
+.zscore-pos { background: var(--trend-up-bg); color: var(--positive); }
+.zscore-neg { background: var(--trend-down-bg); color: var(--negative); }
+.zscore-flat { background: var(--bg-inset); color: var(--text-tertiary); }
+.zscore-label { color: var(--text-tertiary); font-weight: 500; }
+
+/* === §2.2 brand stat-card hero === */
+.brand-hero-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 18px 0 4px; }
+.brand-hero-stats .stat-card { border: 1px solid var(--border-subtle); border-radius: var(--r-card, 10px); padding: 14px 16px; background: var(--bg-surface-1); }
+.brand-hero-stats .stat-label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-tertiary); margin-bottom: 5px; }
+.brand-hero-stats .stat-value { display: block; font-size: 20px; font-weight: 700; color: var(--text-primary); line-height: 1.15; }
+.brand-hero-stats .stat-delta { margin-top: 5px; display: inline-flex; align-items: center; gap: 6px; }
+.brand-hero-stats .stat-delta-note { font-size: 11px; color: var(--text-tertiary); }
+.brand-hero-stats .stat-health-green { color: var(--positive); }
+.brand-hero-stats .stat-health-yellow { color: var(--warning); }
+.brand-hero-stats .stat-health-red { color: var(--negative); }
+@media (max-width: 720px) { .brand-hero-stats { grid-template-columns: repeat(2, 1fr); } }
+
 /* Inline affiliate disclosure above CTA buttons */
 .affiliate-inline-disclosure {
     margin: .5rem 0 .35rem;
