@@ -117,6 +117,18 @@ the spec's top bar only homed the 7 filters + 3 actions. Resolution:
 
 ## Change log
 
+### Polish round — external-agent 8.5→9.0 list (2026-05-26)
+Addressed the reviewer's 7-item list (judgment applied per "as needed"):
+- ✅ **#1 empty score-distribution band** → added a functional **"⚖ Set Your Score weights →"** CTA in the prompt (opens the weights drawer) instead of a dead gap.
+- ✅ **#3 methodology/disclaimer links** → from weak gray text to **bordered pills with accent icons** ("? How Your Score works", "ⓘ Disclaimer").
+- ✅ **#4 insight-card asymmetry** → trimmed the "Financial Disclosure" card sub to match the others' length (insights.json).
+- ✅ **#5 weights drawer clipped** → added `max-height: calc(100vh - 72px); overflow-y:auto` — drawer now fully visible (verified box top 411 / bottom 900 at 900px vh).
+- ⏭ **#2 move Year/Filing-state to Tools** → SKIPPED (judgment): bar already `flex-wrap`s gracefully <1100px; relocating live controls = high-risk/low-reward narrow-width-only gain.
+- ✅ **#6 σ-badge colors** → VERIFIED already favorability-coded (`directional = z×polarity` → z-good/z-bad/z-neut green/red/slate; no yellow class). The "cream" was royalty cell coloring, a separate thing. No change — wouldn't "fix" working logic.
+- ✅ **#7 Map view** → VERIFIED functional (tile-map renders 190 state tiles w/ outlet counts). Kept (not half-shipped).
+- **MEDIAN REVENUE header** "clip" → not reproducing at standard width (table scrolls-x); narrow-viewport artifact. No change.
+- Verified: 0 console errors. Shots: `polish2_*`. (Reviewer's meta-rec — diminishing returns, pivot to launch-prep/source-port — noted.)
+
 ### Members-only gate — REMOVED for testing (2026-05-25)
 - Owner: **no pay gates or blocks while testing.** The mock login/disclosure interstitial (committed `f395b61dc`) was reverted (`7ffdaeae6`) so the dashboard is freely accessible. The prototype lives on in `scripts/_apply_gate.py` — re-run it to bring the gate back when the member tier + attorney-approved disclosure are ready. (Persona "What brings you here?" modal is left as-is — skippable, pre-existing, not a gate; flag if it should go too.)
 

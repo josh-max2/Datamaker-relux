@@ -1307,6 +1307,7 @@ a { color: var(--accent); }
     border-radius: 8px 0 0 0; padding: 0;
     transform: translateY(100%); transition: transform .25s ease;
     width: 320px; box-shadow: var(--shadow-lg);
+    max-height: calc(100vh - 72px); overflow-y: auto;
 }
 .weight-drawer.open { transform: translateY(0); }
 .weight-toggle-btn {
@@ -1427,9 +1428,12 @@ a { color: var(--accent); }
 .hero-main { flex: 1 1 auto; min-width: 0; }
 .dashboard-title { margin: 0 0 8px; font-family: var(--font-display, 'Inter Tight', 'Inter', sans-serif); font-size: 42px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; color: var(--text-primary); }
 .dashboard-subtitle { margin: 0 0 16px; font-size: 15px; color: var(--text-secondary); }
-.dashboard-disclaimer-link { display: flex; gap: 16px; margin-bottom: 16px; font-size: 13px; }
-.dashboard-disclaimer-link a { color: var(--text-tertiary); text-decoration: none; }
-.dashboard-disclaimer-link a:hover { color: var(--accent); }
+.dashboard-disclaimer-link { display: flex; gap: 10px; margin-bottom: 16px; font-size: 12px; flex-wrap: wrap; }
+.dashboard-disclaimer-link a { display: inline-flex; align-items: center; gap: 6px; color: var(--text-secondary);
+    text-decoration: none; border: 1px solid var(--border-color); border-radius: 999px; padding: 4px 12px;
+    transition: border-color .12s, color .12s; }
+.dashboard-disclaimer-link a span { font-weight: 700; color: var(--accent); }
+.dashboard-disclaimer-link a:hover { color: var(--accent); border-color: var(--accent); }
 @media (max-width: 720px) { .dashboard-title { font-size: 32px; } }
 
 /* ===== FIX5: activity feed widget (top-right of hero) ===== */
@@ -1688,8 +1692,8 @@ body.score-unset #weight-toggle-btn { background: var(--accent); color: #fff; bo
     <h1 class="dashboard-title">Find the right franchise.</h1>
     <p class="dashboard-subtitle">631 brands · 416 disclose Item 19 financials · last updated 2026-05-25</p>
     <div class="dashboard-disclaimer-link">
-      <a href="/methodology/#composite-risk-score">How Your Score works →</a>
-      <a href="/terms/">Disclaimer →</a>
+      <a href="/methodology/#composite-risk-score"><span aria-hidden="true">?</span> How Your Score works</a>
+      <a href="/terms/"><span aria-hidden="true">ⓘ</span> Disclaimer</a>
     </div>
     <div class="preset-chips" style="margin-top: 14px;">
       <button class="chip" data-preset="best-roi"        data-tip="100+ outlets, investment low under $200K, royalty under 7%">Best ROI under $200K</button>
@@ -1915,7 +1919,7 @@ body.score-unset #weight-toggle-btn { background: var(--accent); color: #fff; bo
   <div class="chart-card chart-wide chart-tall">
     <h3 class="chart-title">Your Score distribution by industry — IQR boxes show median, whiskers show full range <span style="font-weight:400;color:var(--text-tertiary);font-size:0.85em;">(your analysis from disclosed data using your weights, not a rating)</span></h3>
     <div class="chart-canvas-wrapper"><canvas id="chartRiskBox"></canvas></div>
-    <div class="score-prompt" id="score-prompt">Set <strong>Your Score weights</strong> (the ⚖ button, bottom-right) to see how brands distribute by your composite. No score is computed until you set your priorities.</div>
+    <div class="score-prompt" id="score-prompt"><p style="margin:0 0 16px;">Set <strong>Your Score weights</strong> to see how brands distribute by your composite. No score is computed until you set your priorities.</p><button type="button" class="empty-state-cta" onclick="document.getElementById('weight-toggle-btn').click()">⚖ Set Your Score weights →</button></div>
   </div>
 </section>
 

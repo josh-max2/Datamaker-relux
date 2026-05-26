@@ -46,7 +46,7 @@
     {
       "hdr": "FINANCIAL DISCLOSURE",
       "ttl": "Brands that disclose Item 19 earnings",
-      "sub": "Franchisors that published financial performance in their latest FDD \u2014 click to filter",
+      "sub": "Published Item 19 performance \u2014 click to filter",
       "action": {
         "reset": true,
         "filters": {
