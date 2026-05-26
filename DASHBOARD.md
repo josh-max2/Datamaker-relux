@@ -50,6 +50,7 @@ before/after PNGs once per major section. Same outcome, runs here.
 - **HTML** 1850–1858: chart-title "Revenue × royalty matrix…", `.quadrant-frame` → `.quadrant-body` → `#quadrantMatrix.quadrant-wrap`, `.quadrant-note#quadrantNote`
 - **JS**: `QUADRANT_BOUNDS`@2072; comment 2607–2608; block 2977–3086 (`quadrantSelected`, `QUADRANTS`, `quadrantOf()`, `renderQuadrant()`, `renderQuadrant` call inside `rerender()`, click handlers on `#quadrantMatrix` + `#quadrantNote`, `quadrantClear`)
 - ⚠ Removing only the HTML leaves dead JS that throws on init (`getElementById('quadrantMatrix')` → null). Delete all three layers + the `renderQuadrant()` call site in one pass, then confirm console clean.
+- ✅ **DONE 2026-05-25** via `scripts/_apply_s3a_quadrant.py` (owner request): removed CSS block, the `<div class="chart-card chart-wide">` card, JS defs (`quadrantSelected`/`QUADRANTS`/`quadrantOf`/`renderQuadrant`/`QUADRANT_BOUNDS`), the `rerender()` filter+call, the afClearAll reset, and both click handlers. 0 console errors; filtering regression PASS. (3 stale code-comments mentioning "quadrant" left — non-executing, harmless.)
 
 ### "Corpus Coverage" duplicate (remove in §3.2)
 - The "CORPUS COVERAGE" card after the KPIs restates the KPI info (416/631 = 66%, 28 industries). Locate + delete.
@@ -74,7 +75,7 @@ before/after PNGs once per major section. Same outcome, runs here.
 | 0 | Harness + baseline + this doc | ✅ done |
 | 1 | Foundation — top filter bar (remove sidebar) | ✅ SHIP (Opus reviewed) |
 | 2 | Tab navigation skeleton | ✅ SHIP (Opus reviewed) |
-| 3 | Dashboard tab content (incl. quadrant + corpus-coverage removal) | ☐ |
+| 3 | Dashboard tab content (incl. quadrant + corpus-coverage removal) | ◐ quadrant removed; rest pending |
 | 4 | Placeholder tabs (Compare / Watchlist / Reports) | ☐ |
 | 5 | Activity feed → header bell dropdown | ☐ |
 | 6 | Mobile responsive | ☐ |
