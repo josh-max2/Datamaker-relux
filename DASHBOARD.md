@@ -117,6 +117,9 @@ the spec's top bar only homed the 7 filters + 3 actions. Resolution:
 
 ## Change log
 
+### Members-only gate — REMOVED for testing (2026-05-25)
+- Owner: **no pay gates or blocks while testing.** The mock login/disclosure interstitial (committed `f395b61dc`) was reverted (`7ffdaeae6`) so the dashboard is freely accessible. The prototype lives on in `scripts/_apply_gate.py` — re-run it to bring the gate back when the member tier + attorney-approved disclosure are ready. (Persona "What brings you here?" modal is left as-is — skippable, pre-existing, not a gate; flag if it should go too.)
+
 ### Composite-score reframe — "Your Score" (2026-05-25, owner litigation directive)
 - **Goal:** the score is the USER's, not ours — N/A until the user sets weights; renamed off "risk"; framed as their analysis. (Phase 1 of the [[project-composite-score-reframe]] direction; login-gate + attorney disclosure copy = Phase 2, needs auth infra.)
 - **Applied via:** `scripts/_apply_score_reframe.py` (idempotent). Verify: `scripts/_verify_reframe.py`.
