@@ -97,7 +97,8 @@ Owner wants ongoing general-appeal review (centering/alignment/balance), not jus
 - ✅ **FIXED §3:** light-mode filter-pill value contrast (`[data-theme=light] .filter-value → --text-primary`).
 - ✅ **FIXED §3:** donut legend clip ("Real Es…") — donut widened to 1.4fr; legend now shows all incl. "Real Estate (21)".
 - ✅ **FIXED §3:** risk-score mini-bars now proportional (was fixed 24px dash → 42px track + fill width=score%).
-- ☐ **§3 NICE (Opus, owner's call):** (a) insight-card eyebrow baselines don't align (cards center independently) → `align-items:flex-start`; (b) donut Automotive/Pet oranges near-identical → nudge a hue; (c) **donut shows top 12 of 28 industries (~139 brands absent) — regulated-domain honesty: add "Other (139)" wedge or "Top 12 shown" caption.**
+- ✅ **FIXED (polish):** donut honesty — top-12 now joined by a neutral-gray non-clickable **"+N more industries"** slice so all brands are represented (tooltip % over true total; click guarded). Automotive/Pet ambers differentiated (`#fbbf24` vs `#ea580c`).
+- ☐ **NICE remaining:** (a) insight-card eyebrow baselines (verify still an issue post-KPI-fix; `align-items:flex-start` if so); (b) mobile: donut legend wraps ~6 lines + box-plot y-axis tight at 390px; (c) light-mode general polish pass.
 
 ---
 

@@ -2597,15 +2597,23 @@ function renderCharts(filtered) {
     const k = b.industry_label || 'Other';
     indCounts[k] = (indCounts[k] || 0) + 1;
   });
-  const indEntries = Object.entries(indCounts).sort((a, b) => b[1] - a[1]).slice(0, 12);
+  const _allInd = Object.entries(indCounts).sort((a, b) => b[1] - a[1]);
+  const indEntries = _allInd.slice(0, 12);
   if (charts.industry) charts.industry.destroy();
   if (typeof Chart === 'undefined') return; // chart.js not loaded yet
-  const indTotal = indEntries.reduce((s, e) => s + e[1], 0);
+  // Honesty: roll the remaining industries into a neutral "Other" slice so all
+  // brands are represented (not just the top 12 of ~28). Not click-to-filter.
+  const _otherCount = _allInd.slice(12).reduce((s, e) => s + e[1], 0);
+  const _otherN = _allInd.length - 12;
+  const indLabels = indEntries.map(e => e[0]);
+  const indData = indEntries.map(e => e[1]);
+  const indColors = ['#3b82f6','#0ea5e9','#06b6d4','#0891b2','#0e7490','#155e75',
+                     '#34d399','#10b981','#059669','#fbbf24','#ea580c','#a78bfa'];
+  if (_otherCount > 0) { indLabels.push(`+${_otherN} more industries`); indData.push(_otherCount); indColors.push('#64748b'); }
+  const indTotal = indData.reduce((s, n) => s + n, 0);
   charts.industry = new Chart(document.getElementById('chartIndustry').getContext('2d'), {
     type: 'doughnut',
-    data: { labels: indEntries.map(e => e[0]), datasets: [{ data: indEntries.map(e => e[1]),
-              backgroundColor: ['#3b82f6','#0ea5e9','#06b6d4','#0891b2','#0e7490','#155e75',
-                                '#34d399','#10b981','#059669','#fbbf24','#f59e0b','#a78bfa'] }] },
+    data: { labels: indLabels, datasets: [{ data: indData, backgroundColor: indColors }] },
     options: {
       plugins: {
         legend: { position: 'right',
@@ -2633,8 +2641,9 @@ function renderCharts(filtered) {
       cutout: '55%', maintainAspectRatio: false,
       onClick: (e, items) => {
         if (!items.length) return;
-        const label = indEntries[items[0].index][0];
-        els.industry.value = label;
+        const i = items[0].index;
+        if (i >= indEntries.length) return; // "Other" aggregate — not a filterable industry
+        els.industry.value = indEntries[i][0];
         rerender();
       },
     }
