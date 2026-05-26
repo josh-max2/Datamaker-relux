@@ -73,7 +73,7 @@ before/after PNGs once per major section. Same outcome, runs here.
 |---|---|---|
 | 0 | Harness + baseline + this doc | ✅ done |
 | 1 | Foundation — top filter bar (remove sidebar) | ✅ SHIP (Opus reviewed) |
-| 2 | Tab navigation skeleton | ☐ |
+| 2 | Tab navigation skeleton | ✅ SHIP (Opus reviewed) |
 | 3 | Dashboard tab content (incl. quadrant + corpus-coverage removal) | ☐ |
 | 4 | Placeholder tabs (Compare / Watchlist / Reports) | ☐ |
 | 5 | Activity feed → header bell dropdown | ☐ |
@@ -115,6 +115,14 @@ the spec's top bar only homed the 7 filters + 3 actions. Resolution:
 ### §X.Y — <title>  (<date>)
 - Goal / Edits (file:line) / Before→After shots / Vision verdict / Console / Opus
 -->
+
+### §2 — Tab navigation skeleton  (2026-05-25)
+- **Goal:** tab bar (Dashboard/Compare/Watchlist/Reports) between hero and filter bar; Dashboard = default + all existing content; Compare/Watchlist = empty-states, Reports = link grid; filter bar persistent; filter state persists across tabs; hash routing.
+- **Applied via:** `scripts/_apply_s2.py` (idempotent). Verify: `scripts/_verify_s2.py`.
+- **Edits (`docs/dashboard/index.html`):** tab bar `<nav.dashboard-tabs>` before filter bar; `.layout` marked `#tab-panel-dashboard.tab-panel`; 3 sibling panels before the action-bar; tab CSS + hash-routing JS (`fdSwitchTab`, chart.resize-on-show). **Bug fix:** `writeURL()` now appends `location.hash` so filter-URL-sync no longer strips the active tab (was breaking deep-links + wiping the tab on filter change). No watchlist badge (per §0).
+- **Before→After:** `s2_after_*`, `s2_tab_compare/watchlist/reports.png`.
+- **Functional (`_verify_s2.py`):** PASS — default=dashboard; 4 charts on dashboard; tab clicks swap panels + set hash; deep-link `#reports` reload opens Reports; filter (Food QSR→157) persists across tab round-trip; 0 console errors.
+- **Opus:** ITERATE→resolved. Must-fix was Reports grid orphan card (auto-fit 5+1) → `repeat(3,1fr)` balanced 3×2. Also addressed NICE: empty-state icons → circular containers; +8px top spacing on tab bar. Verdict otherwise SHIP-class (placement, accent-underline active state, empty-states, filter-chip persistence).
 
 ### §1 — Top filter bar (remove sidebar)  (2026-05-25)
 - **Goal:** remove left sidebar; all filters in a horizontal sticky top bar that persists; relocate every control (preserve IDs so the filter engine is untouched); move Time Machine into a Year pill; preserve all power features in `Tools ▾`.

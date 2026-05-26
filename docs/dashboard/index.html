@@ -1566,6 +1566,42 @@ a { color: var(--accent); }
   .active-filters-row { padding: 0 16px; }
 }
 /* end §1 filter bar */
+
+/* ===== §2 Tab navigation ===== */
+.dashboard-tabs { display: flex; gap: 2px; padding: 8px 32px 0; max-width: 1600px; margin: 0 auto;
+  border-bottom: 1px solid var(--border-color); }
+.dashboard-tab { display: inline-flex; align-items: center; gap: 6px; background: transparent;
+  border: none; border-bottom: 2px solid transparent; margin-bottom: -1px; padding: 11px 14px;
+  font-size: 13px; font-weight: 600; font-family: inherit; color: var(--text-tertiary); cursor: pointer;
+  transition: color .12s, border-color .12s; }
+.dashboard-tab:hover { color: var(--text-primary); }
+.dashboard-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+.tab-panel[hidden] { display: none; }
+.tab-panel-extra { max-width: 1600px; margin: 0 auto; padding: 0 32px; }
+.tab-empty-state { display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; max-width: 520px; margin: 0 auto; padding: 88px 24px; }
+.tab-empty-icon { font-size: 26px; width: 64px; height: 64px; display: flex; align-items: center;
+  justify-content: center; margin: 0 auto 14px; border-radius: 50%; background: var(--bg-surface);
+  border: 1px solid var(--border-color); color: var(--accent); }
+.tab-empty-state h2 { font-size: 22px; font-weight: 700; color: var(--text-primary); margin: 8px 0; letter-spacing: -.01em; }
+.tab-empty-state p { font-size: 14px; color: var(--text-secondary); line-height: 1.55; margin: 0 0 22px; }
+.empty-state-cta { background: var(--accent); border: none; color: #fff; font-size: 13px; font-weight: 600;
+  padding: 10px 18px; border-radius: 6px; cursor: pointer; text-decoration: none; display: inline-block; }
+.empty-state-cta:hover { filter: brightness(1.08); }
+.reports-tab-head { padding: 28px 0 4px; }
+.reports-tab-head h2 { font-size: 24px; font-weight: 700; margin: 0 0 6px; letter-spacing: -.01em; }
+.reports-tab-head p { font-size: 14px; color: var(--text-secondary); margin: 0 0 18px; max-width: 560px; }
+.reports-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; padding-bottom: 40px; }
+@media (max-width: 900px) { .reports-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .reports-grid { grid-template-columns: 1fr; } }
+.report-card { background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 8px;
+  padding: 16px; text-decoration: none; color: var(--text-primary); display: block;
+  transition: border-color .12s, background .12s; }
+.report-card:hover { border-color: var(--accent); background: var(--bg-elevated); }
+.report-card-title { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+.report-card-meta { font-size: 12px; color: var(--text-tertiary); }
+@media (max-width: 900px) { .dashboard-tabs, .tab-panel-extra { padding-left: 16px; padding-right: 16px; } }
+/* end §2 tabs */
 </style>
 </head>
 <body>
@@ -1690,6 +1726,12 @@ a { color: var(--accent); }
 </div>
 
 
+<nav class="dashboard-tabs" role="tablist" aria-label="Dashboard sections">
+  <button class="dashboard-tab active" role="tab" id="tab-btn-dashboard" data-tab="dashboard" aria-selected="true" aria-controls="tab-panel-dashboard">Dashboard</button>
+  <button class="dashboard-tab" role="tab" id="tab-btn-compare" data-tab="compare" aria-selected="false" aria-controls="tab-panel-compare">Compare</button>
+  <button class="dashboard-tab" role="tab" id="tab-btn-watchlist" data-tab="watchlist" aria-selected="false" aria-controls="tab-panel-watchlist">Watchlist</button>
+  <button class="dashboard-tab" role="tab" id="tab-btn-reports" data-tab="reports" aria-selected="false" aria-controls="tab-panel-reports">Reports</button>
+</nav>
 <div class="dashboard-filter-bar" id="dashboard-filter-bar">
   <div class="filter-bar-inner">
     <div class="fb-search"><input type="text" id="f-search" placeholder="Search brands…" aria-label="Search brands"></div>
@@ -1842,7 +1884,7 @@ a { color: var(--accent); }
   <div class="active-filters-row"><div class="active-filters" id="activeFilters" hidden></div></div>
 </div>
 
-<div class="layout">
+<div class="layout tab-panel" id="tab-panel-dashboard" role="tabpanel" aria-labelledby="tab-btn-dashboard">
 
 <main class="main">
 
@@ -1963,6 +2005,39 @@ a { color: var(--accent); }
 </div>
 
 </main>
+</div>
+
+<div id="tab-panel-compare" class="tab-panel tab-panel-extra" role="tabpanel" aria-labelledby="tab-btn-compare" hidden>
+  <div class="tab-empty-state">
+    <div class="tab-empty-icon">⇄</div>
+    <h2>Compare brands side-by-side</h2>
+    <p>Pick brands from the Dashboard tab to line up investment ranges, royalty rates, outlet trajectories, and Item 19 disclosures.</p>
+    <button class="empty-state-cta" data-goto-tab="dashboard">Go to Dashboard →</button>
+  </div>
+</div>
+
+<div id="tab-panel-watchlist" class="tab-panel tab-panel-extra" role="tabpanel" aria-labelledby="tab-btn-watchlist" hidden>
+  <div class="tab-empty-state">
+    <div class="tab-empty-icon">★</div>
+    <h2>Track brands across filings</h2>
+    <p>Save brands to a watchlist and get notified when new FDDs are filed, royalty rates change, or Item 19 disclosures expand. Coming with the Pro tier.</p>
+    <a class="empty-state-cta" href="/pricing/">See pricing →</a>
+  </div>
+</div>
+
+<div id="tab-panel-reports" class="tab-panel tab-panel-extra" role="tabpanel" aria-labelledby="tab-btn-reports" hidden>
+  <div class="reports-tab-head">
+    <h2>Reports</h2>
+    <p>Editorial rankings and analyses built from the corpus — each a curated view of the data.</p>
+  </div>
+  <div class="reports-grid">
+    <a href="/reports/top-earning-franchises/" class="report-card"><div class="report-card-title">Top-earning franchises</div><div class="report-card-meta">Item 19, by median revenue</div></a>
+    <a href="/reports/cheapest-franchises/" class="report-card"><div class="report-card-title">Cheapest to start</div><div class="report-card-meta">Investment under $100K</div></a>
+    <a href="/reports/fastest-growing/" class="report-card"><div class="report-card-title">Fastest growing</div><div class="report-card-meta">Net outlet additions YoY</div></a>
+    <a href="/reports/lowest-royalty/" class="report-card"><div class="report-card-title">Lowest royalty</div><div class="report-card-meta">5% or lower of gross sales</div></a>
+    <a href="/reports/most-transparent/" class="report-card"><div class="report-card-title">Most transparent</div><div class="report-card-meta">Strongest Item 19 disclosures</div></a>
+    <a href="/reports/" class="report-card"><div class="report-card-title">View all reports →</div><div class="report-card-meta">60+ ranked landings</div></a>
+  </div>
 </div>
 
 <!-- Bottom action bar (appears when ≥1 items selected) -->
@@ -2381,7 +2456,7 @@ function writeURL() {
   p.set('sortKey', sortState.key);
   p.set('sortDir', sortState.dir);
   if (viewMode && viewMode !== 'table') p.set('view', viewMode);
-  const newUrl = window.location.pathname + (p.toString() ? '?' + p.toString() : '');
+  const newUrl = window.location.pathname + (p.toString() ? '?' + p.toString() : '') + (window.location.hash || '');
   window.history.replaceState(null, '', newUrl);
 }
 
@@ -5010,6 +5085,48 @@ franchise consultant referrals and SBA lender referrals when you click a referra
     var vs=document.getElementById('views-select'); if(vs) vs.addEventListener('change', function(){ setTimeout(syncPills,60); });
     var fr=document.getElementById('f-reset'); if(fr) fr.addEventListener('click', function(){ setTimeout(syncPills,60); });
     syncPills();
+  }
+  if(document.readyState!=='loading') init(); else document.addEventListener('DOMContentLoaded', init);
+})();
+</script>
+<script>
+/* §2 tab routing: hash-driven, chart.resize on show, filter DOM persists across tabs */
+(function(){
+  var TABS=['dashboard','compare','watchlist','reports']; var current='dashboard';
+  function resizeCharts(name){
+    if(!window.Chart) return;
+    document.querySelectorAll('#tab-panel-'+name+' canvas').forEach(function(c){
+      var ch=Chart.getChart(c); if(ch) ch.resize();
+    });
+  }
+  function switchTo(name, push){
+    if(TABS.indexOf(name)<0) return;
+    document.querySelectorAll('.dashboard-tab').forEach(function(t){
+      var on=t.dataset.tab===name; t.classList.toggle('active',on); t.setAttribute('aria-selected', on?'true':'false');
+    });
+    document.querySelectorAll('.tab-panel').forEach(function(p){
+      var pt=p.id.replace('tab-panel-',''); p.hidden = pt!==name;
+    });
+    resizeCharts(name);
+    if(push){ history.pushState(null,'', window.location.pathname + window.location.search + '#' + name); }
+    if(name!==current && name!=='dashboard'){ try{ window.scrollTo({top:0,behavior:'instant'}); }catch(e){ window.scrollTo(0,0); } }
+    current=name;
+    if(window.fdSyncPills) window.fdSyncPills();
+  }
+  window.fdSwitchTab=switchTo;
+  function init(){
+    var hash=(window.location.hash||'').replace('#','');
+    switchTo(TABS.indexOf(hash)>=0?hash:'dashboard', false);
+    document.querySelectorAll('.dashboard-tab').forEach(function(t){
+      t.addEventListener('click', function(){ switchTo(t.dataset.tab, true); });
+    });
+    document.querySelectorAll('[data-goto-tab]').forEach(function(b){
+      b.addEventListener('click', function(){ switchTo(b.getAttribute('data-goto-tab'), true); });
+    });
+    window.addEventListener('hashchange', function(){
+      var h=(window.location.hash||'').replace('#','')||'dashboard';
+      if(TABS.indexOf(h)>=0 && h!==current) switchTo(h,false);
+    });
   }
   if(document.readyState!=='loading') init(); else document.addEventListener('DOMContentLoaded', init);
 })();
