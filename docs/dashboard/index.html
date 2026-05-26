@@ -991,9 +991,10 @@ a { color: var(--accent); }
 .risk-badge.risk-mid  { background: rgba(251,191,36,0.15); color: var(--warning); }
 .risk-badge.risk-low  { background: rgba(248,113,113,0.15); color: var(--danger); }
 .risk-badge .bar {
-    display: inline-block; width: 24px; height: 4px; border-radius: 2px;
-    background: currentColor; opacity: 0.4;
+    display: inline-block; width: 42px; height: 5px; border-radius: 3px;
+    background: var(--border-color); overflow: hidden; vertical-align: middle;
 }
+.risk-badge .bar-fill { display: block; height: 100%; border-radius: 3px; background: currentColor; }
 .risk-subs-grid {
     display: grid; grid-template-columns: auto auto; gap: 2px 10px;
     font-size: 11px; line-height: 1.4;
@@ -1351,6 +1352,11 @@ a { color: var(--accent); }
 /* §3.1 consistent card radius + a touch more breathing room between sections */
 .chart-card { border-radius: var(--r-card); }
 .charts-grid { margin-top: 32px; }
+/* §3.4 distribution charts row — donut wider than the two histograms */
+.distributions-row { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 12px; margin-top: 32px; }
+.distributions-row .chart-card { min-height: 320px; }
+@media (max-width: 1199px) { .distributions-row { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 767px) { .distributions-row { grid-template-columns: 1fr; } }
 .kpi-strip { margin-bottom: 32px; }
 
 
@@ -1470,6 +1476,7 @@ a { color: var(--accent); }
 .filter-pill .filter-label { color: var(--text-tertiary); }
 .filter-pill[data-active="true"] .filter-label { color: var(--accent-text); }
 .filter-pill .filter-value { font-weight: 600; color: inherit; }
+[data-theme="light"] .filter-pill .filter-value { color: var(--text-primary); }
 .filter-chevron { font-size: 9px; opacity: .6; }
 .filter-bar-actions { margin-left: auto; display: flex; gap: 6px; flex-shrink: 0; }
 .filter-action-btn { display: inline-flex; align-items: center; gap: 5px; background: transparent;
@@ -1851,8 +1858,6 @@ a { color: var(--accent); }
   </div>
 </div>
 
-<div class="activity-feed"><h4>Corpus coverage</h4><ul><li><span class="dot">●</span><span><strong>416</strong> of 631 brands disclose Item 19 financials (66%)</span></li><li><span class="dot">●</span><span><strong>28</strong> industries covered</span></li></ul></div>
-
 <!-- v7: Decision-support insight strip (populated from insights.json) -->
 <div class="insight-strip" id="insight-strip" hidden></div>
 
@@ -1862,20 +1867,22 @@ a { color: var(--accent); }
   <button class="tm-banner-clear" id="tm-banner-clear">Back to latest</button>
 </div>
 
-<!-- Unified 12-col chart grid: 3× compact (span 4) + 2× wide-tall (span 12) -->
-<section class="charts-grid">
-  <div class="chart-card chart-compact">
+<!-- §3.4: distribution charts — donut gets extra width (1.4fr) -->
+<div class="distributions-row">
+  <div class="chart-card">
     <h3 class="chart-title">Industry mix</h3>
     <div class="chart-canvas-wrapper"><canvas id="chartIndustry"></canvas></div>
   </div>
-  <div class="chart-card chart-compact">
+  <div class="chart-card">
     <h3 class="chart-title">Investment-tier distribution</h3>
     <div class="chart-canvas-wrapper"><canvas id="chartInvestment"></canvas></div>
   </div>
-  <div class="chart-card chart-compact">
+  <div class="chart-card">
     <h3 class="chart-title">Royalty-rate distribution</h3>
     <div class="chart-canvas-wrapper"><canvas id="chartRoyalty"></canvas></div>
   </div>
+</div>
+<section class="charts-grid">
   <div class="chart-card chart-wide chart-tall">
     <h3 class="chart-title">Composite risk-score distribution by industry — IQR boxes show median, whiskers show full range <span style="font-weight:400;color:var(--text-tertiary);font-size:0.85em;">(our analysis from disclosed data, not a rating)</span></h3>
     <div class="chart-canvas-wrapper"><canvas id="chartRiskBox"></canvas></div>
@@ -2260,7 +2267,7 @@ function riskBadge(b) {
     ['FDD age (10%)', subs.age],
   ];
   const tipLines = rows.map(([l, v]) => `${l}: ${v == null ? 'n/a' : v}`).join(' · ');
-  return `<span class="risk-badge ${riskClass(b.risk_score)}" data-risk-slug="${escHtml(b.slug)}" title="${escHtml(tipLines)}">${b.risk_score}<span class="bar"></span></span>`;
+  return `<span class="risk-badge ${riskClass(b.risk_score)}" data-risk-slug="${escHtml(b.slug)}" title="${escHtml(tipLines)}">${b.risk_score}<span class="bar"><i class="bar-fill" style="width:${b.risk_score}%"></i></span></span>`;
 }
 
 // Column definitions (drives table header + body + Columns toggle menu)

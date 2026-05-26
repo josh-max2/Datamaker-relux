@@ -75,7 +75,7 @@ before/after PNGs once per major section. Same outcome, runs here.
 | 0 | Harness + baseline + this doc | ✅ done |
 | 1 | Foundation — top filter bar (remove sidebar) | ✅ SHIP (Opus reviewed) |
 | 2 | Tab navigation skeleton | ✅ SHIP (Opus reviewed) |
-| 3 | Dashboard tab content (incl. quadrant + corpus-coverage removal) | ◐ quadrant removed; rest pending |
+| 3 | Dashboard tab content (incl. quadrant + corpus-coverage removal) | ✅ SHIP (Opus reviewed) |
 | 4 | Placeholder tabs (Compare / Watchlist / Reports) | ☐ |
 | 5 | Activity feed → header bell dropdown | ☐ |
 | 6 | Mobile responsive | ☐ |
@@ -94,7 +94,10 @@ Owner wants ongoing general-appeal review (centering/alignment/balance), not jus
 - ☐ **§3 (table):** Brands-table Risk Score mini-bars look near-identical across 96/90/72/100/84 — bind bar width to score, widen dynamic range.
 - ☐ **verify §3:** Insight cards row bottom-edge evenness (grid stretch looks OK post-KPI-fix; reconfirm).
 - ☐ **nice:** unify card radii/treatment (KPI softer vs insight flatter); hero risk/disclaimer links low-emphasis; table industry pills all-flat-blue (category color-coding?); footer "Generated…noindex" dev strip should be gated so it can't leak to prod.
-- ☐ **logged:** light-mode filter-pill value contrast flat (from §1 review).
+- ✅ **FIXED §3:** light-mode filter-pill value contrast (`[data-theme=light] .filter-value → --text-primary`).
+- ✅ **FIXED §3:** donut legend clip ("Real Es…") — donut widened to 1.4fr; legend now shows all incl. "Real Estate (21)".
+- ✅ **FIXED §3:** risk-score mini-bars now proportional (was fixed 24px dash → 42px track + fill width=score%).
+- ☐ **§3 NICE (Opus, owner's call):** (a) insight-card eyebrow baselines don't align (cards center independently) → `align-items:flex-start`; (b) donut Automotive/Pet oranges near-identical → nudge a hue; (c) **donut shows top 12 of 28 industries (~139 brands absent) — regulated-domain honesty: add "Other (139)" wedge or "Top 12 shown" caption.**
 
 ---
 
@@ -116,6 +119,13 @@ the spec's top bar only homed the 7 filters + 3 actions. Resolution:
 ### §X.Y — <title>  (<date>)
 - Goal / Edits (file:line) / Before→After shots / Vision verdict / Console / Opus
 -->
+
+### §3 — Dashboard tab content  (2026-05-25)
+- **Goal:** remove quadrant + Corpus Coverage duplicate; order KPIs→insights→distributions→box→table; donut wider (1.4/1/1); fix risk-score bars; light-mode pill contrast.
+- **Edits (`docs/dashboard/index.html`):** §3.4 quadrant removed (see ledger; `_apply_s3a_quadrant.py`); removed `.activity-feed` "Corpus coverage" card; wrapped the 3 distribution charts in `.distributions-row` (grid 1.4fr/1fr/1fr), risk box stays full-width `.charts-grid`; `.risk-badge .bar` fixed 24px → 42px track + `.bar-fill` width=`${risk_score}%` (badge markup updated); `[data-theme=light] .filter-value` → `--text-primary`.
+- **Before→After:** `s3_after_*`, element shots `s3_distributions-row.png`, `s3_results.png`.
+- **Verified:** 0 console errors; filtering/tabs/deep-link regression PASS.
+- **Opus:** **SHIP** (4/4: corpus gone, donut legend unclipped incl. "Real Estate (21)", risk bars proportional 72<100, order correct; 0 must-fix). 3 NICE deferred (see polish backlog).
 
 ### §2 — Tab navigation skeleton  (2026-05-25)
 - **Goal:** tab bar (Dashboard/Compare/Watchlist/Reports) between hero and filter bar; Dashboard = default + all existing content; Compare/Watchlist = empty-states, Reports = link grid; filter bar persistent; filter state persists across tabs; hash routing.
