@@ -128,7 +128,8 @@ the spec's top bar only homed the 7 filters + 3 actions. Resolution:
   - Personas now sort by `top_revenue` (neutral fact), not the user-driven score.
   - `insights.json`: removed the "363 brands score ≥70 on our composite" card → neutral "Brands that disclose Item 19 earnings" (no house verdict).
 - **Verified (`_verify_reframe.py`):** on load 0 score badges / cells show "—" / `body.score-unset` / box-plot prompt visible; after setting one weight → 300 scores compute, prompt clears, box-plot renders; header = "YOUR SCORE ⓘ"; 0 console errors. Fixed a flex letter-stack bug in the prompt (→ block text).
-- **NOT done (Phase 2, gated):** dashboard login-gating + the disclosure-at-login copy (needs real auth backend §17.4 + attorney-written copy). Sub-scores (closure proxy etc.) remain our interpretation of FDD facts — attorney to confirm the framing holds.
+- **Opus review = ITERATE → fixed.** Reframe lands (column/box-plot prompt/KPIs read as user-owned). Must-fix it caught: hero link still said "How we calculate risk scores →" → renamed **"How Your Score works →"**; swept all user-facing "risk score" strings (box-plot dataset label, CSV header, 3 PDF labels → "Your Score"). NICEs done: emphasized `#weight-toggle-btn` (accent) when `score-unset` so the entry point is obvious; collapsed the box-plot card void; prompt block-flow fix.
+- **NOT done (Phase 2, gated):** dashboard login-gating + the disclosure-at-login copy (needs real auth backend §17.4 + attorney-written copy). **Attorney to confirm:** (a) the green/amber/red badge thresholds (≥70/≥45) are OUR cutoffs applied to the user's composite — arguably still editorializing; (b) the "Disclaimer →"/methodology copy covers the scoring framing + "not our rating"; (c) sub-scores (closure proxy etc.) remain our interpretation of FDD facts. (Flagged by Opus.)
 
 
 <!-- Template:
