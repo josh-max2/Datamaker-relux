@@ -117,6 +117,20 @@ the spec's top bar only homed the 7 filters + 3 actions. Resolution:
 
 ## Change log
 
+### Composite-score reframe — "Your Score" (2026-05-25, owner litigation directive)
+- **Goal:** the score is the USER's, not ours — N/A until the user sets weights; renamed off "risk"; framed as their analysis. (Phase 1 of the [[project-composite-score-reframe]] direction; login-gate + attorney disclosure copy = Phase 2, needs auth infra.)
+- **Applied via:** `scripts/_apply_score_reframe.py` (idempotent). Verify: `scripts/_verify_reframe.py`.
+- **Edits (`docs/dashboard/index.html` + `insights.json`):**
+  - `recomputeRiskScores()` gated on `weightsSet` (= localStorage has a saved weight set) → every brand `risk_score = null` until the user sets weights; `saveWeights()` flips `weightsSet=true` (the existing slider→save wiring is the "fill them out" trigger); `w-reset` now CLEARS back to N/A.
+  - Table column `Risk score` → **`Your Score ⓘ`** + tooltip "based on the weights YOU select… your analysis, not our rating."
+  - Drawer `⚖ Risk weights` → `⚖ Your Score weights`; body copy reframed to the user's analysis; toggle button + tip renamed.
+  - Box-plot title → "Your Score distribution… (your analysis using your weights, not a rating)"; axis labels → "Your Score"; **`#score-prompt` shown via `body.score-unset`** until weights set (canvas hidden); drill panel + compare-row label → "Your Score".
+  - Personas now sort by `top_revenue` (neutral fact), not the user-driven score.
+  - `insights.json`: removed the "363 brands score ≥70 on our composite" card → neutral "Brands that disclose Item 19 earnings" (no house verdict).
+- **Verified (`_verify_reframe.py`):** on load 0 score badges / cells show "—" / `body.score-unset` / box-plot prompt visible; after setting one weight → 300 scores compute, prompt clears, box-plot renders; header = "YOUR SCORE ⓘ"; 0 console errors. Fixed a flex letter-stack bug in the prompt (→ block text).
+- **NOT done (Phase 2, gated):** dashboard login-gating + the disclosure-at-login copy (needs real auth backend §17.4 + attorney-written copy). Sub-scores (closure proxy etc.) remain our interpretation of FDD facts — attorney to confirm the framing holds.
+
+
 <!-- Template:
 ### §X.Y — <title>  (<date>)
 - Goal / Edits (file:line) / Before→After shots / Vision verdict / Console / Opus

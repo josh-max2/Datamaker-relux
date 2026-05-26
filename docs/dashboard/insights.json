@@ -44,12 +44,15 @@
       }
     },
     {
-      "hdr": "DISCLOSURE + STABILITY",
-      "ttl": "363 brands score \u226570 on our composite",
-      "sub": "Our analysis (editorial weights), not a recommendation \u00b7 strong I19 disclosure \u00b7 category-fair royalty \u00b7 growing \u00b7 recent FDD",
+      "hdr": "FINANCIAL DISCLOSURE",
+      "ttl": "Brands that disclose Item 19 earnings",
+      "sub": "Franchisors that published financial performance in their latest FDD \u2014 click to filter",
       "action": {
         "reset": true,
-        "sortKey": "risk_score",
+        "filters": {
+          "item19": "yes"
+        },
+        "sortKey": "top_revenue",
         "sortDir": "desc"
       }
     }

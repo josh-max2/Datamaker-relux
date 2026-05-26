@@ -1570,6 +1570,13 @@ a { color: var(--accent); }
 .report-card-meta { font-size: 12px; color: var(--text-tertiary); }
 @media (max-width: 900px) { .dashboard-tabs, .tab-panel-extra { padding-left: 16px; padding-right: 16px; } }
 /* end §2 tabs */
+
+/* Composite-score reframe: prompt shown until the user sets weights */
+.score-prompt { display: none; }
+body.score-unset .chart-card.chart-tall .chart-canvas-wrapper { display: none; }
+body.score-unset #score-prompt { display: block; text-align: center;
+  padding: 72px 24px; color: var(--text-tertiary);
+  font-size: 14px; line-height: 1.6; max-width: 560px; margin: 0 auto; }
 </style>
 </head>
 <body>
@@ -1903,8 +1910,9 @@ a { color: var(--accent); }
 </div>
 <section class="charts-grid">
   <div class="chart-card chart-wide chart-tall">
-    <h3 class="chart-title">Composite risk-score distribution by industry — IQR boxes show median, whiskers show full range <span style="font-weight:400;color:var(--text-tertiary);font-size:0.85em;">(our analysis from disclosed data, not a rating)</span></h3>
+    <h3 class="chart-title">Your Score distribution by industry — IQR boxes show median, whiskers show full range <span style="font-weight:400;color:var(--text-tertiary);font-size:0.85em;">(your analysis from disclosed data using your weights, not a rating)</span></h3>
     <div class="chart-canvas-wrapper"><canvas id="chartRiskBox"></canvas></div>
+    <div class="score-prompt" id="score-prompt">Set <strong>Your Score weights</strong> (the ⚖ button, bottom-right) to see how brands distribute by your composite. No score is computed until you set your priorities.</div>
   </div>
 </section>
 
@@ -1931,7 +1939,7 @@ a { color: var(--accent); }
         <button class="btn" id="cols-btn" data-tip="Toggle which columns appear in the table">Columns ▾</button>
         <div class="cols-menu" id="cols-menu" hidden></div>
       </div>
-      <button class="weight-toggle-btn" id="weight-toggle-btn" data-tip="Adjust how each sub-score weights into the composite risk score">⚖ Risk weights</button>
+      <button class="weight-toggle-btn" id="weight-toggle-btn" data-tip="Set your priority weights — Your Score is computed from the weights you choose">⚖ Your Score weights</button>
       <button class="btn" id="pdf-list-export" data-tip="Generate a PDF summary report of the filtered list">📄 PDF list</button>
       <button class="btn btn-primary" id="csv-export" data-tip="Download the filtered set as CSV (all columns, not just visible)">Export CSV</button>
     </div>
@@ -2024,14 +2032,14 @@ a { color: var(--accent); }
 <!-- v7 #13: Risk-weight slider drawer (bottom-right, collapsed by default) -->
 <aside id="weight-drawer" class="weight-drawer">
   <div class="weight-drawer-head" id="weight-drawer-head">
-    <h3>⚖ Risk weights</h3>
+    <h3>⚖ Your Score weights</h3>
     <span class="toggle" id="weight-drawer-toggle">▲</span>
   </div>
   <div class="weight-drawer-body">
     <div style="font-size:11px;color:#94a3b8;margin-bottom:10px;line-height:1.4;">
-      Re-weight the composite. Changes recompute every brand's risk score in real-time.
-      These weights are an <strong>editorial choice</strong>, not an industry standard — the score
-      is our analysis of disclosed FDD data, not a recommendation or rating.
+      Set how much each factor matters to <strong>you</strong>. Your Score is computed from
+      disclosed FDD data using <strong>the weights you select</strong> — it's your own analysis,
+      not our rating. Until you set weights, every brand's score shows N/A.
     </div>
     <div class="weight-row">
       <label>Closure proxy <span class="v"><span id="w-closure-v">40</span>%</span></label>
@@ -2055,7 +2063,7 @@ a { color: var(--accent); }
     </div>
     <div class="weight-total">Total: <strong id="w-total">100</strong>% (re-normalized on apply)</div>
     <div class="weight-actions">
-      <button class="btn" id="w-reset">Reset to defaults</button>
+      <button class="btn" id="w-reset">Clear my weights (back to N/A)</button>
     </div>
   </div>
 </aside>
@@ -2175,7 +2183,7 @@ const PERSONAS = {
   buyer: {
     label: 'Buyer', icon: '🔍',
     desc: 'Researching to buy a single franchise',
-    sortKey: 'risk_score', sortDir: 'desc',
+    sortKey: 'top_revenue', sortDir: 'desc',
     filters: {},
     cols: ['name','industry_label','risk_score','total_outlets','inv_range','royalty','top_revenue','i19_status'],
     view: 'card',
@@ -2199,7 +2207,7 @@ const PERSONAS = {
   lender: {
     label: 'Lender', icon: '🏦',
     desc: 'SBA underwriting · risk screening',
-    sortKey: 'risk_score', sortDir: 'desc',
+    sortKey: 'top_revenue', sortDir: 'desc',
     filters: { item19: 'yes' },
     cols: ['name','risk_score','filing_year','i19_status','total_outlets','growth_pct','inv_range','worst_floor'],
     view: 'table',
@@ -2319,8 +2327,8 @@ const COLUMNS = [
   { key: 'total_outlets',  label: 'Outlets',            sort: 'total_outlets',  align: 'num',   default: true,
      tip: 'Total outlets in the latest year of Item 20 (franchised + company-owned)',
      render: b => fmtNum(b.total_outlets) },
-  { key: 'risk_score',     label: 'Risk score',         sort: 'risk_score',     align: 'num',   default: true,
-     tip: 'Our decision-support composite, 0-100 (higher = lower risk), from disclosed FDD data with editorial weights: closure 40% / royalty vs category 15% / Item 19 quality 20% / outlet growth 15% / FDD age 10%. Sub-scores with no disclosed data are dropped and their weight redistributes. Our analysis, not a recommendation. Hover a badge for sub-scores; see /methodology/#composite-risk-score.',
+  { key: 'risk_score',     label: 'Your Score ⓘ',   sort: 'risk_score',     align: 'num',   default: true,
+     tip: 'Your Score — based on the weights YOU select. N/A until you open "Your Score weights" (the scale button, bottom-right) and set your priorities; then it is computed from disclosed FDD factors (closure, royalty vs category, Item 19 quality, outlet growth, FDD age) using your weights. Your analysis, not our rating. Hover a badge for sub-scores; see /methodology/#composite-risk-score.',
      render: b => riskBadge(b) },
   { key: 'inv_range',      label: 'Investment range',   sort: 'investment_low', align: 'num',   default: true,
      tip: 'Item 7 total initial investment range (low - high)',
@@ -2737,7 +2745,7 @@ function renderRiskBox(filtered) {
                                 titleColor: '#f8fafc', bodyColor: '#e2e8f0', padding: 10 } },
         scales: {
           x: { min: 0, max: 100,
-                title: { display: true, text: 'Composite risk score (higher = lower risk)', color: TC.label },
+                title: { display: true, text: 'Your Score (higher = lower risk)', color: TC.label },
                 ticks: { color: TC.text, font: { size: 10 } }, grid: { color: TC.grid } },
           y: { ticks: { color: TC.text, font: { size: 11 } }, grid: { color: TC.grid } }
         },
@@ -2766,7 +2774,7 @@ function renderRiskBox(filtered) {
         plugins: { legend: { labels: { color: TC.text } } },
         scales: {
           x: { min: 0, max: 100, stacked: false,
-                title: { display: true, text: 'Composite risk score (higher = lower risk)', color: TC.label },
+                title: { display: true, text: 'Your Score (higher = lower risk)', color: TC.label },
                 ticks: { color: TC.text, font: { size: 10 } }, grid: { color: TC.grid } },
           y: { stacked: false, ticks: { color: TC.text, font: { size: 11 } }, grid: { color: TC.grid } }
         },
@@ -3278,7 +3286,7 @@ document.getElementById('compare-btn').addEventListener('click', () => {
   if (!picked.length) return;
   const rows = [
     ['Industry',          b => `<span class="ind">${escHtml(b.industry_label)}</span>`],
-    ['Composite risk',    b => riskBadge(b)],
+    ['Your Score',         b => riskBadge(b)],
     ['Outlet trajectory', b => `<canvas class="sparkline" data-slug="${escHtml(b.slug)}"></canvas>`],
     ['Total outlets',     b => fmtNum(b.total_outlets)],
     ['Outlet growth',     b => b.growth_pct == null ? '—' : `<span class="${b.growth_pct > 5 ? 'growth-up' : b.growth_pct < -5 ? 'growth-down' : 'growth-flat'}">${b.growth_pct > 0 ? '+' : ''}${b.growth_pct}%</span> <span class="val-muted">${b.growth_span || ''}</span>`],
@@ -3701,9 +3709,12 @@ function renderTagFilterOptions() {
 // ===== v7 #13: Custom risk weights =====
 const WEIGHTS_KEY = 'fd-dashboard-weights';
 const DEFAULT_WEIGHTS = { closure: 40, royalty: 15, i19: 20, growth: 15, age: 10 };
+let weightsSet = localStorage.getItem(WEIGHTS_KEY) !== null;  // "Your Score" stays N/A until the user sets weights
 let activeWeights = JSON.parse(localStorage.getItem(WEIGHTS_KEY) || 'null') || {...DEFAULT_WEIGHTS};
-function saveWeights() { localStorage.setItem(WEIGHTS_KEY, JSON.stringify(activeWeights)); }
+function saveWeights() { weightsSet = true; localStorage.setItem(WEIGHTS_KEY, JSON.stringify(activeWeights)); }
 function recomputeRiskScores() {
+  document.body.classList.toggle('score-unset', !weightsSet);
+  if (!weightsSet) { BRANDS.forEach(b => { b.risk_score = null; }); return; }  // no user weights -> no score
   BRANDS.forEach(b => {
     const subs = b.risk_subs || {};
     const present = ['closure','royalty','i19','growth','age'].filter(k => subs[k] != null);
@@ -3860,7 +3871,7 @@ function openDrill(slug) {
 
   const html = `
     <div class="drill-section">
-      <h3>Composite risk score</h3>
+      <h3>Your Score</h3>
       <div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;">
         <div style="font-size:42px;font-weight:800;color:${riskColor(b.risk_score)};line-height:1;">${b.risk_score == null ? '—' : b.risk_score}<span style="font-size:14px;color:#64748b;font-weight:500;">/100</span></div>
         <div style="color:#94a3b8;font-size:12px;line-height:1.4;">Higher = lower risk. Sub-scores below; weights re-normalize when data missing.</div>
@@ -4637,8 +4648,9 @@ document.getElementById('weight-drawer-head').addEventListener('click', () => {
   });
 });
 document.getElementById('w-reset').addEventListener('click', () => {
+  localStorage.removeItem(WEIGHTS_KEY);
+  weightsSet = false;
   activeWeights = {...DEFAULT_WEIGHTS};
-  saveWeights();
   updateWeightDisplays();
   recomputeRiskScores();
   rerender();
