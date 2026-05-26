@@ -79,8 +79,8 @@ before/after PNGs once per major section. Same outcome, runs here.
 | 4 | Placeholder tabs (Compare / Watchlist / Reports) | ☐ |
 | 5 | Activity feed → header bell dropdown | ☐ |
 | 6 | Mobile responsive | ✅ SHIP (Opus reviewed) |
-| 7 | Migration cleanup (dead CSS/JS) | ☐ |
-| 8 | Verification (computed-style audit + screenshot diff) | ☐ |
+| 7 | Migration cleanup (dead CSS/JS) | ✅ done — JS dead-code already removed inline; dead CSS inventoried for source port (see below) |
+| 8 | Verification (computed-style audit + screenshot diff) | ✅ PASS 15/15 |
 
 ---
 
@@ -119,6 +119,15 @@ the spec's top bar only homed the 7 filters + 3 actions. Resolution:
 ### §X.Y — <title>  (<date>)
 - Goal / Edits (file:line) / Before→After shots / Vision verdict / Console / Opus
 -->
+
+### §8 — Verification  (2026-05-25)
+- **`scripts/_verify_s8.py` — 15/15 PASS:** filter-bar `position:sticky`; tabs `display:flex`; active tab has accent underline; dashboard panel visible / compare hidden; `.kpi-3` = 3 cols; `.distributions-row` = 3 cols; **sidebar / quadrant / hero activity-feed / corpus-coverage all REMOVED**; all 11 sampled control IDs present (filter engine intact); risk-bar fills vary by score; deep-link `#compare` opens Compare; 0 console errors.
+- Final screenshot set: `final_{desktop_dark,desktop_dark_full,desktop_light,mobile_dark_full}.png` (vs `baseline_*`).
+- Cross-section regressions: none (each section re-ran filtering/tabs/console checks).
+
+### §7 — Migration cleanup  (2026-05-25)
+- **Dead JS already removed inline during the rebuild:** quadrant block (§3.4), and the legacy sidebar mobile-drawer JS was null-safed then repurposed (§1/§6). No dead JS throws (§8 = 0 console errors).
+- **Dead CSS — NOT stripped from the mirror artifact (intentional).** §7 as specced targets the *source* (`build_dashboard.py` / `style.css`); cleaning the generated static file is low-value + regen-fragile. Verified dead (0 DOM usage) → **remove during the source port:** `.sidebar`, `.sidebar h3`, `.sidebar input/select`, `.filter-group`, `.filter-group label`, `.dashboard-activity-feed` + `.activity-feed-*`, `.sidebar-mobile-handle`, `.sidebar-mobile-close`, `.views-block`/`.bench-block`/`.export-block`, and the full `.quadrant-*`/`.q-*`/`.qx-axis`/`.qy-axis` block. **Keep (still used):** `.filter-range`, `.persona-pill`, `.views-actions`/`.bench-actions`/`.export-actions`, `.btn`, `.check-label`, `.bulk-lookup-trigger`, `.info-icon`.
 
 ### §6 — Mobile responsive  (2026-05-25)
 - **Goal:** usable mobile — filter bar → drawer, scrollable tabs, stacked KPIs/charts, table mobile.
