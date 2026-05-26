@@ -1580,34 +1580,6 @@ body.score-unset #score-prompt { display: block; text-align: center;
 /* collapse the box-plot card's void + make the weights button the obvious entry point */
 body.score-unset .chart-card.chart-tall { min-height: auto; }
 body.score-unset #weight-toggle-btn { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 600; }
-
-/* ===== Members-only gate + disclosure (preview) ===== */
-.screener-gate { position: fixed; inset: 0; z-index: 200; display: flex; align-items: center;
-  justify-content: center; padding: 24px; background: rgba(8,12,20,0.82); backdrop-filter: blur(6px); }
-.screener-gate[hidden] { display: none; }
-.screener-gate-card { max-width: 480px; width: 100%; background: var(--bg-surface);
-  border: 1px solid var(--border-color); border-radius: 14px; padding: 28px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
-.sg-badge { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: .08em;
-  text-transform: uppercase; color: var(--accent-text); background: var(--bg-accent-soft);
-  border: 1px solid var(--accent); border-radius: 999px; padding: 3px 10px; margin-bottom: 14px; }
-.screener-gate-card h2 { font-size: 22px; font-weight: 700; color: var(--text-primary);
-  margin: 0 0 8px; letter-spacing: -.01em; }
-.sg-lede { font-size: 14px; color: var(--text-secondary); line-height: 1.5; margin: 0 0 16px; }
-.sg-disclosure { background: var(--bg-page); border: 1px solid var(--border-color);
-  border-radius: 8px; padding: 14px; margin-bottom: 18px; }
-.sg-disclosure-h { font-size: 12px; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;
-  display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.sg-draft { font-size: 9px; font-weight: 700; letter-spacing: .06em; color: #fbbf24;
-  border: 1px solid #fbbf24; border-radius: 4px; padding: 1px 6px; }
-.sg-disclosure p { font-size: 12px; color: var(--text-tertiary); line-height: 1.55; margin: 0; }
-.sg-actions { display: flex; flex-direction: column; gap: 8px; }
-.sg-btn { display: block; text-align: center; font-size: 13px; font-weight: 600; padding: 11px 16px;
-  border-radius: 8px; cursor: pointer; text-decoration: none; border: 1px solid var(--border-color);
-  background: transparent; color: var(--text-secondary); font-family: inherit; }
-.sg-btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-.sg-note { font-size: 11px; color: var(--text-tertiary); text-align: center; margin-top: 12px; }
-body.gate-open { overflow: hidden; }
 </style>
 </head>
 <body>
@@ -2056,24 +2028,6 @@ body.gate-open { overflow: hidden; }
   <span>Filters</span>
   <span class="fab-count" id="mobile-filter-count">0</span>
 </button>
-
-<!-- Members-only gate + disclosure (PREVIEW — mock, not real auth) -->
-<div id="screener-gate" class="screener-gate" hidden role="dialog" aria-modal="true" aria-labelledby="sg-title">
-  <div class="screener-gate-card">
-    <div class="sg-badge">Members only · Preview</div>
-    <h2 id="sg-title">Sign in to use the Screener</h2>
-    <p class="sg-lede">The FranchiseDepth Screener is a members-only research tool. Create a free account or sign in to continue.</p>
-    <div class="sg-disclosure">
-      <div class="sg-disclosure-h">How "Your Score" works <span class="sg-draft">DRAFT · pending legal review</span></div>
-      <p>"Your Score" is <strong>your own analysis</strong>, computed from public Franchise Disclosure Document (FDD) data using <strong>weights you choose</strong>. It is not a rating, ranking, endorsement, or recommendation by FranchiseDepth, and it does not predict any result. No score is shown until you set your own weights. All figures come from public FDD filings and may be out of date — verify against the current FDD and seek professional advice before any decision. By continuing you acknowledge this.</p>
-    </div>
-    <div class="sg-actions">
-      <a class="sg-btn sg-btn-primary" href="/signup/">Create free account</a>
-      <button type="button" class="sg-btn" id="sg-continue">I understand — continue to preview</button>
-    </div>
-    <div class="sg-note">Preview only — not real authentication. Real sign-in ships with the member tier.</div>
-  </div>
-</div>
 
 <!-- Footer with build timestamp + noindex marker -->
 <footer class="dash-footer">Generated 2026-05-25 16:08 · noindex/nofollow · internal-only</footer>
@@ -5092,21 +5046,6 @@ franchise consultant referrals and SBA lender referrals when you click a referra
     });
   }
   if(document.readyState!=='loading') init(); else document.addEventListener('DOMContentLoaded', init);
-})();
-</script>
-<script>
-/* Mock members-only gate (preview). Real auth = member-tier backend (not built). */
-(function(){
-  var KEY = 'fd-screener-access';
-  var gate = document.getElementById('screener-gate');
-  if (!gate) return;
-  if (localStorage.getItem(KEY) === 'accepted') { gate.hidden = true; return; }
-  gate.hidden = false; document.body.classList.add('gate-open');
-  var btn = document.getElementById('sg-continue');
-  if (btn) btn.addEventListener('click', function(){
-    try { localStorage.setItem(KEY, 'accepted'); } catch(e){}
-    gate.hidden = true; document.body.classList.remove('gate-open');
-  });
 })();
 </script>
 </body>
