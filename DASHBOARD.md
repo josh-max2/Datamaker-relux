@@ -117,6 +117,10 @@ the spec's top bar only homed the 7 filters + 3 actions. Resolution:
 
 ## Change log
 
+### Full E2E interaction audit (2026-05-26) — `scripts/_e2e_audit.py`
+Playwright sweep: clicked every control, hovered tooltip elements, asserted expected state changes, collected all console/page errors. **37 PASS / 0 FAIL / 0 console errors / 0 page errors.** Covered: 4 tabs (panel+hash), search, all 7 filter pills (each filters), active chips + clear-all, all 11 Tools controls present, z-badge toggle, bulk-lookup modal, 6 preset chips, insight cards (apply filter), Your Score compute-on-set + reset-to-N/A, 3 charts on canvas, table column sort, view modes table/cards/map (map = 190 tiles), row star/pin/multi-select→compare-bar/drill-down open+close, columns menu, CSV export, 33 [data-tip] hovers.
+- **Found + fixed (real):** (1) `.action-bar` z-60 sat under the weight-drawer z-80 → could cover the compare buttons → bumped to **z-90**. (2) "Fastest growing" chip tooltip promised "+20% or more" (a filter) but the preset is **sort-only** (no growth filter input exists) → tooltip corrected to "Sorted by outlet growth — highest first."
+
 ### Polish round — external-agent 8.5→9.0 list (2026-05-26)
 Addressed the reviewer's 7-item list (judgment applied per "as needed"):
 - ✅ **#1 empty score-distribution band** → added a functional **"⚖ Set Your Score weights →"** CTA in the prompt (opens the weights drawer) instead of a dead gap.
