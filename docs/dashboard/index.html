@@ -189,7 +189,7 @@ a { color: var(--accent); }
    hero band above shares the same outer constraint so it aligns with
    the grid below. */
 .layout {
-    display: grid; grid-template-columns: 240px 1fr; gap: 24px;
+    display: block;
     padding: 0 32px; max-width: 1600px; margin: 0 auto;
 }
 .sidebar {
@@ -202,7 +202,7 @@ a { color: var(--accent); }
     margin: 0 0 8px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;
     color: var(--text-tertiary); font-weight: 600;
 }
-.main { padding: 18px 24px; }
+.main { padding: 24px 0 48px; width: 100%; }
 
 @media (max-width: 900px) {
   .layout { grid-template-columns: 1fr; }
@@ -1509,6 +1509,64 @@ a { color: var(--accent); }
 .insight-card .ttl { font-size: 14px; font-weight: 600; color: var(--text-primary); line-height: 1.3; margin-bottom: 4px; }
 .insight-card .sub { font-size: 12px; color: var(--text-tertiary); line-height: 1.4; }
 @media (max-width: 768px) { .insight-strip { grid-template-columns: repeat(2, 1fr); } }
+
+/* ===== §1 Top filter bar (replaces the left sidebar) ===== */
+.dashboard-filter-bar { position: sticky; top: var(--header-height, 56px); z-index: 40;
+  background: var(--bg-page); border-bottom: 1px solid var(--border-color); }
+.filter-bar-inner { display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  padding: 12px 32px; max-width: 1600px; margin: 0 auto; }
+.fb-search { flex-shrink: 0; }
+.fb-search input { width: 180px; padding: 7px 11px; font-size: 13px; font-family: inherit;
+  background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-secondary); }
+.fb-search input:focus { outline: none; border-color: var(--accent); color: var(--text-primary); }
+.filter-pill-wrap { position: relative; flex-shrink: 0; }
+.filter-pill { display: inline-flex; align-items: center; gap: 6px; background: var(--bg-surface);
+  border: 1px solid var(--border-color); border-radius: 6px; padding: 7px 12px; font-size: 12px;
+  font-family: inherit; color: var(--text-secondary); white-space: nowrap; cursor: pointer;
+  transition: border-color .12s, color .12s; }
+.filter-pill:hover { border-color: var(--accent); color: var(--text-primary); }
+.filter-pill[data-active="true"] { background: var(--bg-accent-soft); border-color: var(--accent); color: var(--accent-text); }
+.filter-pill .filter-label { color: var(--text-tertiary); }
+.filter-pill[data-active="true"] .filter-label { color: var(--accent-text); }
+.filter-pill .filter-value { font-weight: 600; color: inherit; }
+.filter-chevron { font-size: 9px; opacity: .6; }
+.filter-bar-actions { margin-left: auto; display: flex; gap: 6px; flex-shrink: 0; }
+.filter-action-btn { display: inline-flex; align-items: center; gap: 5px; background: transparent;
+  border: 1px solid var(--border-color); color: var(--text-secondary); font-size: 12px;
+  font-family: inherit; padding: 7px 12px; border-radius: 6px; cursor: pointer; white-space: nowrap;
+  transition: border-color .12s, color .12s; }
+.filter-action-btn:hover { border-color: var(--accent); color: var(--text-primary); }
+.filter-popover { position: absolute; top: calc(100% + 5px); left: 0; z-index: 50; min-width: 230px;
+  background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35); padding: 12px; }
+.filter-popover[hidden] { display: none; }
+.filter-popover > select, .filter-popover input[type="number"], .filter-popover input[type="text"] {
+  width: 100%; padding: 6px 9px; background: var(--bg-page); border: 1px solid var(--border-color);
+  border-radius: 5px; color: var(--text-secondary); font-size: 13px; font-family: inherit; }
+.filter-popover .filter-range { display: flex; gap: 6px; align-items: center; }
+.filter-popover .filter-range .dash { color: var(--text-muted); }
+.filter-popover-year { min-width: 270px; }
+.filter-popover-year .time-machine { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.filter-popover-tools { left: auto; right: 0; min-width: 290px; max-height: 72vh; overflow-y: auto; }
+.tools-group { padding: 10px 0; border-bottom: 1px solid var(--border-color); }
+.tools-group:first-child { padding-top: 0; }
+.tools-group:last-child { border-bottom: none; padding-bottom: 0; }
+.tools-group-label, .tools-sub-label { display: block; font-size: 10px; text-transform: uppercase;
+  letter-spacing: .05em; color: var(--text-tertiary); font-weight: 700; margin-bottom: 6px; }
+.tools-group > select { width: 100%; padding: 6px 9px; background: var(--bg-page);
+  border: 1px solid var(--border-color); border-radius: 5px; color: var(--text-secondary);
+  font-size: 13px; font-family: inherit; margin-bottom: 6px; }
+.tools-group .check-label { display: flex; align-items: center; gap: 6px; font-size: 12px;
+  color: var(--text-secondary); margin-bottom: 6px; }
+.tools-group .views-actions, .tools-group .bench-actions, .tools-group .export-actions,
+.tools-group.actions { display: flex; gap: 6px; }
+.tools-group .persona-pill { width: 100%; }
+.active-filters-row { max-width: 1600px; margin: 0 auto; padding: 0 32px; }
+@media (max-width: 900px) {
+  .filter-bar-inner { padding: 12px 16px; }
+  .active-filters-row { padding: 0 16px; }
+}
+/* end §1 filter bar */
 </style>
 </head>
 <body>
@@ -1620,16 +1678,6 @@ a { color: var(--accent); }
       <a href="/methodology/#composite-risk-score">How we calculate risk scores →</a>
       <a href="/terms/">Disclaimer →</a>
     </div>
-    <!-- v7 #14: time-machine year slider -->
-    <div class="time-machine" id="time-machine">
-      <span class="tm-label">⏰ Time machine</span>
-      <input type="range" id="tm-slider" class="tm-slider"
-             min="2020" max="2026" step="1" value="2026"
-             aria-label="View brand outlet counts as of this year">
-      <span class="tm-year" id="tm-year">2026</span>
-      <button class="tm-reset" id="tm-reset" disabled>Latest</button>
-    </div>
-
     <div class="preset-chips" style="margin-top: 14px;">
       <button class="chip" data-preset="best-roi"        data-tip="100+ outlets, investment low under $200K, royalty under 7%">Best ROI under $200K</button>
       <button class="chip" data-preset="top-food"        data-tip="Industry = food-quick-service, sorted by median revenue">Top food brands</button>
@@ -1643,44 +1691,17 @@ a { color: var(--accent); }
   </div>
 </div>
 
-<div class="layout">
 
-<aside class="sidebar" id="sidebar">
-  <span class="sidebar-mobile-handle" aria-hidden="true"></span>
-  <button class="sidebar-mobile-close" id="sidebar-mobile-close" aria-label="Close filters">×</button>
-  <button class="persona-pill" id="persona-pill" data-tip="Switch ICP preset (sort, default columns, filters)">
-    <div>
-      <div class="p-label">Mode</div>
-      <div class="p-value" id="persona-name">Buyer</div>
-    </div>
-    <span class="p-edit">Change ›</span>
-  </button>
-
-  <div class="views-block">
-    <h2>Saved views</h2>
-    <!-- IDP-2 (2026-05-24 audit): bind every filter label to its control via
-         for=, add aria-labels to every standalone control so screen readers
-         announce purpose instead of just "combobox". -->
-    <select id="views-select" aria-label="Load a saved view">
-      <option value="">— Load a view —</option>
-    </select>
-    <div class="views-actions">
-      <button class="btn" id="view-save" data-tip="Save current filters + sort + columns + persona under a name">Save current</button>
-      <button class="btn" id="view-delete" data-tip="Delete the currently selected saved view">Delete</button>
-    </div>
-  </div>
-
-  <!-- IDP-3 (2026-05-24 audit): Filters / Pinned brands / Brands are top-level
-       page sections, promoted from h3 to h2 so the heading hierarchy is
-       h1 -> h2 -> h3 instead of h1 -> h3 (a screen-reader navigation gap). -->
-  <h2>Filters</h2>
-  <div class="filter-group">
-    <label for="f-search">Search</label>
-    <input type="text" id="f-search" placeholder="brand name…">
-  </div>
-  <div class="filter-group">
-    <label for="f-industry">Industry</label>
-    <select id="f-industry">
+<div class="dashboard-filter-bar" id="dashboard-filter-bar">
+  <div class="filter-bar-inner">
+    <div class="fb-search"><input type="text" id="f-search" placeholder="Search brands…" aria-label="Search brands"></div>
+    <div class="filter-pill-wrap" data-pop="industry">
+      <button type="button" class="filter-pill" aria-haspopup="true" aria-expanded="false">
+        <span class="filter-label">Industry</span>
+        <span class="filter-value" data-pv="industry">All</span>
+        <span class="filter-chevron" aria-hidden="true">▾</span>
+      </button>
+      <div class="filter-popover " hidden><select id="f-industry">
       <option value="">All (28)</option>
       <option value="Automotive Services">Automotive Services</option>
 <option value="B2B Supplies">B2B Supplies</option>
@@ -1710,98 +1731,125 @@ a { color: var(--accent); }
 <option value="Staffing Employment">Staffing Employment</option>
 <option value="Tax Financial">Tax Financial</option>
 <option value="Tech Services">Tech Services</option>
-    </select>
-  </div>
-  <div class="filter-group">
-    <label for="f-inv-min">Investment range (low)</label>
-    <div class="filter-range">
-      <input type="number" id="f-inv-min" placeholder="min $">
-      <span class="dash">–</span>
-      <input type="number" id="f-inv-max" placeholder="max $" aria-label="Investment range maximum">
+    </select></div>
     </div>
-  </div>
-  <div class="filter-group">
-    <label for="f-roy-min">Royalty %</label>
-    <div class="filter-range">
-      <input type="number" id="f-roy-min" placeholder="min" step="0.5">
-      <span class="dash">–</span>
-      <input type="number" id="f-roy-max" placeholder="max" step="0.5" aria-label="Royalty maximum">
+    <div class="filter-pill-wrap" data-pop="investment">
+      <button type="button" class="filter-pill" aria-haspopup="true" aria-expanded="false">
+        <span class="filter-label">Investment</span>
+        <span class="filter-value" data-pv="investment">Any</span>
+        <span class="filter-chevron" aria-hidden="true">▾</span>
+      </button>
+      <div class="filter-popover " hidden><div class="filter-range"><input type="number" id="f-inv-min" placeholder="min $"><span class="dash">–</span><input type="number" id="f-inv-max" placeholder="max $" aria-label="Investment range maximum"></div></div>
     </div>
-  </div>
-  <div class="filter-group">
-    <label for="f-outlets-min">Min outlets</label>
-    <input type="number" id="f-outlets-min" placeholder="0">
-  </div>
-  <div class="filter-group">
-    <label for="f-state">Filing state</label>
-    <select id="f-state">
+    <div class="filter-pill-wrap" data-pop="royalty">
+      <button type="button" class="filter-pill" aria-haspopup="true" aria-expanded="false">
+        <span class="filter-label">Royalty</span>
+        <span class="filter-value" data-pv="royalty">Any</span>
+        <span class="filter-chevron" aria-hidden="true">▾</span>
+      </button>
+      <div class="filter-popover " hidden><div class="filter-range"><input type="number" id="f-roy-min" placeholder="min" step="0.5"><span class="dash">–</span><input type="number" id="f-roy-max" placeholder="max" step="0.5" aria-label="Royalty maximum"></div></div>
+    </div>
+    <div class="filter-pill-wrap" data-pop="item19">
+      <button type="button" class="filter-pill" aria-haspopup="true" aria-expanded="false">
+        <span class="filter-label">Item 19</span>
+        <span class="filter-value" data-pv="item19">Either</span>
+        <span class="filter-chevron" aria-hidden="true">▾</span>
+      </button>
+      <div class="filter-popover " hidden><select id="f-item19">
+      <option value="">Either</option>
+      <option value="yes">Yes (disclosed)</option>
+      <option value="no">No</option>
+    </select></div>
+    </div>
+    <div class="filter-pill-wrap" data-pop="state">
+      <button type="button" class="filter-pill" aria-haspopup="true" aria-expanded="false">
+        <span class="filter-label">Filing state</span>
+        <span class="filter-value" data-pv="state">Any</span>
+        <span class="filter-chevron" aria-hidden="true">▾</span>
+      </button>
+      <div class="filter-popover " hidden><select id="f-state">
       <option value="">Any</option>
       <option value="MN">MN</option>
 <option value="UNKNOWN">UNKNOWN</option>
 <option value="WI">WI</option>
-    </select>
+    </select></div>
+    </div>
+    <div class="filter-pill-wrap" data-pop="outlets">
+      <button type="button" class="filter-pill" aria-haspopup="true" aria-expanded="false">
+        <span class="filter-label">Min outlets</span>
+        <span class="filter-value" data-pv="outlets">Any</span>
+        <span class="filter-chevron" aria-hidden="true">▾</span>
+      </button>
+      <div class="filter-popover " hidden><input type="number" id="f-outlets-min" placeholder="0"></div>
+    </div>
+    <div class="filter-pill-wrap" data-pop="year">
+      <button type="button" class="filter-pill" aria-haspopup="true" aria-expanded="false">
+        <span class="filter-label">Year</span>
+        <span class="filter-value" data-pv="year">2026</span>
+        <span class="filter-chevron" aria-hidden="true">▾</span>
+      </button>
+      <div class="filter-popover filter-popover-year" hidden><div class="time-machine" id="time-machine">
+      <span class="tm-label">⏰ Time machine</span>
+      <input type="range" id="tm-slider" class="tm-slider"
+             min="2020" max="2026" step="1" value="2026"
+             aria-label="View brand outlet counts as of this year">
+      <span class="tm-year" id="tm-year">2026</span>
+      <button class="tm-reset" id="tm-reset" disabled>Latest</button>
+    </div></div>
+    </div>
+    <div class="filter-bar-actions">
+      <div class="filter-pill-wrap" data-pop="tools">
+        <button type="button" class="filter-action-btn" aria-haspopup="true" aria-expanded="false">⚙ Tools <span class="filter-chevron" aria-hidden="true">▾</span></button>
+        <div class="filter-popover filter-popover-tools" hidden>
+  <div class="tools-group">
+    <div class="tools-group-label">Mode</div>
+    <button class="persona-pill" id="persona-pill" data-tip="Switch ICP preset (sort, default columns, filters)"><div><div class="p-label">Mode</div><div class="p-value" id="persona-name">Buyer</div></div><span class="p-edit">Change ›</span></button>
   </div>
-  <div class="filter-group">
-    <label for="f-item19">Has Item 19?</label>
-    <select id="f-item19">
-      <option value="">Either</option>
-      <option value="yes">Yes (disclosed)</option>
-      <option value="no">No</option>
-    </select>
+  <div class="tools-group">
+    <div class="tools-group-label">Saved views</div>
+    <select id="views-select" aria-label="Load a saved view"><option value="">— Load a view —</option></select>
+    <div class="views-actions"><button class="btn" id="view-save" data-tip="Save current filters + sort + columns + persona">Save current</button><button class="btn" id="view-delete" data-tip="Delete the selected saved view">Delete</button></div>
   </div>
-  <div class="filter-group">
+  <div class="tools-group">
+    <div class="tools-group-label">Display</div>
     <label class="check-label"><input type="checkbox" id="f-watchlist"> Show only my watchlist</label>
-  </div>
-  <div class="filter-group">
-    <label class="check-label"><input type="checkbox" id="f-show-z"> Show Z-score badges <span class="info-icon" data-tip="Show how each cell compares to its industry median (e.g. +1.2σ vs QSR median 6.3%)">?</span></label>
-  </div>
-  <div class="filter-group">
-    <label for="f-tag">My tags <span class="info-icon" data-tip="Filter to brands tagged with the selected label. Add tags in the drill-down panel.">?</span></label>
+    <label class="check-label"><input type="checkbox" id="f-show-z"> Show Z-score badges</label>
+    <label class="tools-sub-label" for="f-tag">My tags</label>
     <select id="f-tag">
       <option value="">Any</option>
     </select>
   </div>
-
-  <h3>Custom benchmark <span class="info-icon" data-tip="When active, Z-score badges compare each brand to your benchmark set (instead of the brand's category). Useful when your comparison universe differs from the auto-category.">?</span></h3>
-  <div class="bench-block">
-    <select id="bench-select" aria-label="Active benchmark set">
-      <option value="">Category median (default)</option>
-    </select>
-    <div class="bench-actions">
-      <button class="btn" id="bench-save" data-tip="Save the currently filtered set as a named benchmark">Save filtered set</button>
-      <button class="btn" id="bench-delete" data-tip="Delete the selected benchmark">Delete</button>
-    </div>
+  <div class="tools-group">
+    <div class="tools-group-label">Custom benchmark</div>
+    <select id="bench-select" aria-label="Active benchmark set"><option value="">Category median (default)</option></select>
+    <div class="bench-actions"><button class="btn" id="bench-save" data-tip="Save the filtered set as a benchmark">Save filtered set</button><button class="btn" id="bench-delete" data-tip="Delete the selected benchmark">Delete</button></div>
     <div id="bench-active-pill" hidden></div>
   </div>
-
-  <h3>Export presets <span class="info-icon" data-tip="One-click CSV exports saved with filters + columns + sort. Useful for repeating reports.">?</span></h3>
-  <div class="export-block">
-    <select id="export-select" aria-label="Export preset">
-      <option value="">— Choose a preset —</option>
-    </select>
-    <div class="export-actions">
-      <button class="btn btn-primary" id="export-run" data-tip="Run the selected preset and download CSV">Run</button>
-      <button class="btn" id="export-save" data-tip="Save current filters + columns + sort as a preset">Save</button>
-      <button class="btn" id="export-delete" data-tip="Delete the selected preset">×</button>
+  <div class="tools-group">
+    <div class="tools-group-label">Export presets</div>
+    <select id="export-select" aria-label="Export preset"><option value="">— Choose a preset —</option></select>
+    <div class="export-actions"><button class="btn btn-primary" id="export-run" data-tip="Run the selected preset and download CSV">Run</button><button class="btn" id="export-save" data-tip="Save current filters + columns + sort as a preset">Save</button><button class="btn" id="export-delete" data-tip="Delete the selected preset">×</button></div>
+  </div>
+  <div class="tools-group">
+    <button class="bulk-lookup-trigger" id="bulk-lookup-trigger" style="width:100%;" data-tip="Paste a list of brand names — fuzzy-matched, populates compare set">📋 Bulk lookup…</button>
+    <button class="bulk-lookup-trigger" id="wizard-trigger" style="width:100%;margin-top:8px;background:var(--bg-accent-soft);color:var(--accent-text);border-color:var(--accent);" data-tip="4-step guided flow: budget, industry, Item 19, brand size">🧭 Guided picker…</button>
+  </div>
+  <div class="tools-group actions">
+    <button class="btn" id="f-reset">Reset</button>
+    <button class="btn btn-primary" id="f-copy" data-tip="Copy a shareable URL of the current filters">Copy URL</button>
+  </div></div>
+      </div>
     </div>
   </div>
-  <div class="actions">
-    <button class="btn" id="f-reset">Reset</button>
-    <button class="btn btn-primary" id="f-copy">Copy URL</button>
-  </div>
+  <div class="active-filters-row"><div class="active-filters" id="activeFilters" hidden></div></div>
+</div>
 
-  <div style="margin-top: 16px;">
-    <button class="bulk-lookup-trigger" id="bulk-lookup-trigger" style="width: 100%;" data-tip="Paste a list of brand names (one per line) — fuzzy-matched against the corpus, populates compare set">📋 Bulk lookup…</button>
-  </div>
-  <div style="margin-top: 8px;">
-    <button class="bulk-lookup-trigger" id="wizard-trigger" style="width: 100%; background: var(--bg-accent-soft); color: var(--accent-text); border-color: var(--accent);" data-tip="4-step guided flow to narrow brands by budget, industry, Item 19, and brand size">🧭 Guided picker…</button>
-  </div>
-</aside>
+<div class="layout">
 
 <main class="main">
 
 <!-- §3.4: active-filter chips (above KPIs); populated by renderActiveFilters() -->
-<div class="active-filters" id="activeFilters" hidden></div>
+
 
 <div class="kpi-3">
   <div class="kpi-card-3" data-tip="Brands matching the current filter set, out of 631 in the corpus">
@@ -4308,16 +4356,16 @@ document.getElementById('compare-pdf').addEventListener('click', () => {
 
 // ===== v7 §20 Mobile drawer =====
 function openMobileDrawer() {
-  document.getElementById('sidebar').classList.add('mobile-open');
+  var sb = document.getElementById('sidebar'); if (sb) sb.classList.add('mobile-open');
   document.body.classList.add('mobile-drawer-open');
 }
 function closeMobileDrawer() {
-  document.getElementById('sidebar').classList.remove('mobile-open');
+  var sb = document.getElementById('sidebar'); if (sb) sb.classList.remove('mobile-open');
   document.body.classList.remove('mobile-drawer-open');
 }
-document.getElementById('mobile-filter-fab').addEventListener('click', openMobileDrawer);
-document.getElementById('sidebar-mobile-close').addEventListener('click', closeMobileDrawer);
-document.getElementById('mobile-drawer-backdrop').addEventListener('click', closeMobileDrawer);
+var _mff = document.getElementById('mobile-filter-fab'); if (_mff) _mff.addEventListener('click', openMobileDrawer);
+var _smc = document.getElementById('sidebar-mobile-close'); if (_smc) _smc.addEventListener('click', closeMobileDrawer);
+var _mdb = document.getElementById('mobile-drawer-backdrop'); if (_mdb) _mdb.addEventListener('click', closeMobileDrawer);
 // Update active-filter count badge on the FAB
 function updateMobileFilterCount() {
   let n = 0;
@@ -4915,5 +4963,58 @@ franchise consultant referrals and SBA lender referrals when you click a referra
         });
     })();
     </script>
+<script>
+/* §1 filter-bar: popover open/close + pill-label sync (engine reads controls by ID, untouched) */
+(function(){
+  function wraps(){ return Array.prototype.slice.call(document.querySelectorAll('.dashboard-filter-bar .filter-pill-wrap')); }
+  function closeAll(except){
+    wraps().forEach(function(w){
+      if(w===except) return;
+      var p=w.querySelector(':scope > .filter-popover'); if(p) p.hidden=true;
+      var b=w.querySelector(':scope > button'); if(b) b.setAttribute('aria-expanded','false');
+    });
+  }
+  function money(v){ v=+v; if(!v) return null; return v>=1000 ? '$'+Math.round(v/1000)+'K' : '$'+v; }
+  function val(id){ var e=document.getElementById(id); return e?e.value:''; }
+  function setPV(key,txt,active){
+    var el=document.querySelector('[data-pv="'+key+'"]'); if(!el) return;
+    el.textContent=txt; var pill=el.closest('.filter-pill'); if(pill) pill.dataset.active = active ? 'true':'false';
+  }
+  function syncPills(){
+    var ind=document.getElementById('f-industry');
+    setPV('industry', ind&&ind.value ? ind.options[ind.selectedIndex].text : 'All', ind&&ind.value);
+    var im=val('f-inv-min'), ix=val('f-inv-max');
+    setPV('investment', (im||ix) ? ((money(im)||'$0')+'–'+(money(ix)||'∞')) : 'Any', im||ix);
+    var rm=val('f-roy-min'), rx=val('f-roy-max');
+    setPV('royalty', (rm||rx) ? ((rm||'0')+'–'+(rx||'∞')+'%') : 'Any', rm||rx);
+    var it=val('f-item19'); setPV('item19', it==='yes'?'Disclosed':it==='no'?'Not disclosed':'Either', it);
+    var st=val('f-state'); setPV('state', st||'Any', st);
+    var ou=val('f-outlets-min'); setPV('outlets', ou?('≥'+ou):'Any', ou);
+    var yr=document.getElementById('tm-year'); var yt=yr?yr.textContent.trim():'2026';
+    setPV('year', yt, yt!=='2026' && yt!=='Latest');
+  }
+  window.fdSyncPills=syncPills;
+  function init(){
+    wraps().forEach(function(w){
+      var btn=w.querySelector(':scope > button'); var pop=w.querySelector(':scope > .filter-popover');
+      if(!btn||!pop) return;
+      btn.addEventListener('click', function(e){ e.stopPropagation();
+        var willOpen=pop.hidden; closeAll(w); pop.hidden=!willOpen; btn.setAttribute('aria-expanded', String(willOpen)); });
+      pop.addEventListener('click', function(e){ e.stopPropagation(); });
+    });
+    document.addEventListener('click', function(){ closeAll(null); });
+    document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeAll(null); });
+    ['f-industry','f-inv-min','f-inv-max','f-roy-min','f-roy-max','f-item19','f-state','f-outlets-min','tm-slider'].forEach(function(id){
+      var e=document.getElementById(id); if(!e) return;
+      e.addEventListener('change', syncPills); e.addEventListener('input', syncPills);
+    });
+    document.querySelectorAll('.preset-chips .chip').forEach(function(c){ c.addEventListener('click', function(){ setTimeout(syncPills,60); }); });
+    var vs=document.getElementById('views-select'); if(vs) vs.addEventListener('change', function(){ setTimeout(syncPills,60); });
+    var fr=document.getElementById('f-reset'); if(fr) fr.addEventListener('click', function(){ setTimeout(syncPills,60); });
+    syncPills();
+  }
+  if(document.readyState!=='loading') init(); else document.addEventListener('DOMContentLoaded', init);
+})();
+</script>
 </body>
 </html>
