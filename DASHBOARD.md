@@ -83,6 +83,20 @@ before/after PNGs once per major section. Same outcome, runs here.
 
 ---
 
+## Polish backlog — from Opus general-appeal audit (2026-05-25)
+
+Owner wants ongoing general-appeal review (centering/alignment/balance), not just spec compliance. Findings:
+
+- ✅ **FIXED §1b:** Hero + 3 KPI cards filled only left ~55% (dead space right). Cause: `.kpi-3` used `repeat(auto-fit, minmax(220px,280px)) + justify-content:start` (leftover from when `.main` was the narrow right column). → `repeat(3, 1fr)`. Now full-width/balanced.
+- ✅ **FIXED §1b:** Recent-updates activity feed removed from hero (owner request) — supersedes spec §5 relocation.
+- ☐ **§3 (charts):** Industry Mix donut legend clips "Real Es…" — widen legend column / wrap label.
+- ☐ **§3 (table):** Brands-table Risk Score mini-bars look near-identical across 96/90/72/100/84 — bind bar width to score, widen dynamic range.
+- ☐ **verify §3:** Insight cards row bottom-edge evenness (grid stretch looks OK post-KPI-fix; reconfirm).
+- ☐ **nice:** unify card radii/treatment (KPI softer vs insight flatter); hero risk/disclaimer links low-emphasis; table industry pills all-flat-blue (category color-coding?); footer "Generated…noindex" dev strip should be gated so it can't leak to prod.
+- ☐ **logged:** light-mode filter-pill value contrast flat (from §1 review).
+
+---
+
 ## §1 design decision (owner, 2026-05-25)
 
 **Preserve all power-user features in a "Tools ▾" menu.** The real sidebar holds 8 blocks;
