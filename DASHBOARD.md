@@ -117,6 +117,13 @@ the spec's top bar only homed the 7 filters + 3 actions. Resolution:
 
 ## Change log
 
+### Members-only gate + disclosure (PREVIEW mock) (2026-05-25)
+- **Goal:** preview the owner's "dashboard = login-only, score-framing disclosed at login." Phase-2 UX preview only — **not real auth** (that's a member-tier backend, §17.4 blocked).
+- **Applied via:** `scripts/_apply_gate.py` (idempotent). `_preview_mirror.py` now seeds `fd-screener-access=accepted` so dashboard shots bypass it; `_shot_elem.py` (no seed) captures the gate.
+- **Edits (`docs/dashboard/index.html`):** `#screener-gate` fixed interstitial (z-200, blurred backdrop) shown by default; "I understand — continue" sets `localStorage fd-screener-access=accepted` + hides; disclosure box marked **DRAFT · pending legal review**.
+- **Disclosure copy is DRAFT for the attorney** — "Your Score is your own analysis… not a rating/ranking/endorsement/recommendation… no score until you set weights… verify against current FDD… by continuing you acknowledge." Do NOT treat as final legal text.
+- **Verified:** gate shows on fresh visit; "continue" reveals + persists; dashboard bypasses when accepted; 0 console errors. Shot: `gate_screener-gate.png`.
+
 ### Composite-score reframe — "Your Score" (2026-05-25, owner litigation directive)
 - **Goal:** the score is the USER's, not ours — N/A until the user sets weights; renamed off "risk"; framed as their analysis. (Phase 1 of the [[project-composite-score-reframe]] direction; login-gate + attorney disclosure copy = Phase 2, needs auth infra.)
 - **Applied via:** `scripts/_apply_score_reframe.py` (idempotent). Verify: `scripts/_verify_reframe.py`.
