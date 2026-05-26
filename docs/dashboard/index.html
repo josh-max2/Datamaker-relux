@@ -821,29 +821,41 @@ a { color: var(--accent); }
   .chip { padding: 12px 16px; }
   /* Insight cards — bigger tap area */
   .insight-card { min-height: 88px; }
-  /* Sidebar becomes a bottom-up drawer on mobile.
-     Trigger: floating filter button at bottom-right.
-     Closed (default): drawer translated below viewport.
-     Open: drawer slides up over content. */
-  .layout { grid-template-columns: 1fr; gap: 0; padding: 0 12px; }
-  .sidebar {
+  .layout { padding: 0 12px; }
+  /* §6: the top filter bar becomes a bottom-sheet drawer on mobile,
+     opened by the floating "Filters" FAB. Closed by default (off-screen). */
+  .dashboard-filter-bar {
     position: fixed; bottom: 0; left: 0; right: 0; top: auto;
-    height: auto; max-height: 80vh; overflow-y: auto;
+    max-height: 82vh; overflow-y: auto;
     background: var(--bg-page);
-    border-top: 1px solid var(--border-color);
-    border-right: none;
+    border-top: 1px solid var(--border-color); border-bottom: none;
     border-radius: 16px 16px 0 0;
-    transform: translateY(100%);
-    transition: transform .25s ease;
-    z-index: 70;
-    padding: 18px 20px 90px;
-    box-shadow: 0 -4px 24px rgba(0,0,0,0.4);
+    transform: translateY(100%); transition: transform .25s ease;
+    z-index: 70; box-shadow: 0 -4px 24px rgba(0,0,0,0.4);
+    padding-bottom: 84px;
   }
-  .sidebar.mobile-open { transform: translateY(0); }
+  .dashboard-filter-bar.mobile-open { transform: translateY(0); z-index: 80; }
+  .dashboard-filter-bar::before {
+    content: ''; display: block; width: 40px; height: 4px; margin: 12px auto 2px;
+    background: var(--border-strong); border-radius: 2px;
+  }
+  .filter-bar-inner { flex-direction: column; align-items: stretch; flex-wrap: nowrap; padding: 8px 18px 12px; gap: 10px; }
+  .fb-search, .fb-search input { width: 100%; }
+  .filter-pill-wrap { width: 100%; }
+  .filter-pill, .filter-action-btn { width: 100%; justify-content: space-between; }
+  .filter-bar-actions { margin-left: 0; width: 100%; }
+  /* popovers render inline within the drawer (no off-screen clipping) */
+  .filter-popover { position: static; min-width: 0; width: 100%; box-shadow: none; margin-top: 6px; }
+  .filter-popover-tools { left: auto; right: auto; max-height: none; }
+  .active-filters-row { padding: 8px 18px; }
+  /* §6: tab strip scrolls horizontally instead of clipping */
+  .dashboard-tabs { overflow-x: auto; scrollbar-width: none; }
+  .dashboard-tabs::-webkit-scrollbar { display: none; }
+  .dashboard-tab { flex-shrink: 0; }
   /* Floating button to open the drawer — fixed bottom-left */
   .mobile-filter-fab {
     display: flex;
-    position: fixed; bottom: 16px; left: 16px; z-index: 75;
+    position: fixed; bottom: 16px; right: 16px; z-index: 85;
     background: var(--accent-primary); color: white;
     border: none; border-radius: 50px;
     padding: 14px 22px;
@@ -869,6 +881,13 @@ a { color: var(--accent); }
   }
   /* Stop body scroll when drawer open */
   body.mobile-drawer-open { overflow: hidden; }
+  /* §6: hide the FAB while the drawer is open so it can't occlude the bottom
+     rows — close via the backdrop. */
+  body.mobile-drawer-open .mobile-filter-fab { display: none; }
+  /* §6: brands toolbar — stack heading above the controls so "Brands" can't
+     get squeezed into a vertical letter-stack. */
+  .results-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .results-header h3 { white-space: nowrap; }
   /* Backdrop when drawer is open */
   .mobile-drawer-backdrop {
     display: none; position: fixed; inset: 0; background: var(--backdrop); z-index: 65;
@@ -4300,15 +4319,18 @@ document.getElementById('compare-pdf').addEventListener('click', () => {
 
 // ===== v7 §20 Mobile drawer =====
 function openMobileDrawer() {
-  var sb = document.getElementById('sidebar'); if (sb) sb.classList.add('mobile-open');
+  var bar = document.getElementById('dashboard-filter-bar'); if (bar) bar.classList.add('mobile-open');
   document.body.classList.add('mobile-drawer-open');
 }
 function closeMobileDrawer() {
-  var sb = document.getElementById('sidebar'); if (sb) sb.classList.remove('mobile-open');
+  var bar = document.getElementById('dashboard-filter-bar'); if (bar) bar.classList.remove('mobile-open');
   document.body.classList.remove('mobile-drawer-open');
 }
-var _mff = document.getElementById('mobile-filter-fab'); if (_mff) _mff.addEventListener('click', openMobileDrawer);
-var _smc = document.getElementById('sidebar-mobile-close'); if (_smc) _smc.addEventListener('click', closeMobileDrawer);
+var _mff = document.getElementById('mobile-filter-fab');
+if (_mff) _mff.addEventListener('click', function () {
+  var bar = document.getElementById('dashboard-filter-bar');
+  if (bar && bar.classList.contains('mobile-open')) closeMobileDrawer(); else openMobileDrawer();
+});
 var _mdb = document.getElementById('mobile-drawer-backdrop'); if (_mdb) _mdb.addEventListener('click', closeMobileDrawer);
 // Update active-filter count badge on the FAB
 function updateMobileFilterCount() {

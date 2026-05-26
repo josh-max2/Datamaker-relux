@@ -78,7 +78,7 @@ before/after PNGs once per major section. Same outcome, runs here.
 | 3 | Dashboard tab content (incl. quadrant + corpus-coverage removal) | ✅ SHIP (Opus reviewed) |
 | 4 | Placeholder tabs (Compare / Watchlist / Reports) | ☐ |
 | 5 | Activity feed → header bell dropdown | ☐ |
-| 6 | Mobile responsive | ☐ |
+| 6 | Mobile responsive | ✅ SHIP (Opus reviewed) |
 | 7 | Migration cleanup (dead CSS/JS) | ☐ |
 | 8 | Verification (computed-style audit + screenshot diff) | ☐ |
 
@@ -119,6 +119,12 @@ the spec's top bar only homed the 7 filters + 3 actions. Resolution:
 ### §X.Y — <title>  (<date>)
 - Goal / Edits (file:line) / Before→After shots / Vision verdict / Console / Opus
 -->
+
+### §6 — Mobile responsive  (2026-05-25)
+- **Goal:** usable mobile — filter bar → drawer, scrollable tabs, stacked KPIs/charts, table mobile.
+- **Edits (`docs/dashboard/index.html`, all in `@media (max-width:767px)`):** repurposed the dead `.sidebar` drawer infra → the top filter bar is now a **bottom-sheet drawer** opened by the existing FAB (`openMobileDrawer/closeMobileDrawer` retargeted to `#dashboard-filter-bar`; FAB toggles); pills full-width, popovers render **inline** (`position:static`, no clipping); `.dashboard-filter-bar.mobile-open` z-index 80 (beats the §1 z-40 rule via higher specificity) so it sits above the backdrop; FAB z-85 + **hidden while drawer open** (was occluding bottom rows); tab strip `overflow-x:auto`; `.results-header` stacks column (fixed "Brands" vertical letter-wrap). KPIs/distributions already stack; `#view-table` already scrolls-x (cards view is the mobile default).
+- **Verified (`_verify_s6.py`):** FAB opens drawer; popover opens inline; Food QSR→157; FAB badge→"Filters 1"; FAB hides when open; backdrop closes; FAB returns; desktop filter bar still inline/sticky (not regressed); 0 console errors.
+- **Opus:** **SHIP** after 3 must-fixes (FAB occlusion → hide-when-open; sheet bottom padding; "Brands" heading vertical-stack → results-header column). NICE deferred: donut legend wraps ~6 lines at 390px, box-plot y-axis tight on mobile, toolbar buttons 3 ragged rows, hero chip vertical gap.
 
 ### §3 — Dashboard tab content  (2026-05-25)
 - **Goal:** remove quadrant + Corpus Coverage duplicate; order KPIs→insights→distributions→box→table; donut wider (1.4/1/1); fix risk-score bars; light-mode pill contrast.
